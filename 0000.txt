@@ -1,0 +1,14 @@
+>boiling pt, freezing pt, electronegativity
+
+>n = m/M calcn, conc = n/V
+>uncertainty
+>also, tidy the converter style
+
+>safety information
+
+>molecules
+>something that outputs an image molecular structure?
+>3D view?
+>database
+
+>electrochemical cell

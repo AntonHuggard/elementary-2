@@ -1,0 +1,141 @@
+h1 {
+    font-family: 'Sen', sans-serif;
+    text-align: center; 
+    color: white; 
+    font-size: 40px;
+    font-weight: normal;
+}
+
+
+.c {
+    margin: auto;
+    width: 50%;
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    transition: width 1s;
+}
+
+.srch-wrppr {
+    background-color: white;
+}
+
+.srch {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.periodic_table {
+    transition: width 1s;
+}
+
+.element {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    background-color: #fbff00;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    transition-duration: 0.25s;
+}
+.element:hover {
+    background-color: white;
+    color: #fbff00;
+    border-radius: 0px;
+}
+.grp1 {
+    background-color: red;
+    color: white;	
+}
+.grp1:hover { color: red; }
+.grp2 {
+    background-color: #9966ff;
+    color: white;
+}
+.grp2:hover { color: #9966ff; }
+.non-D-block-metal {
+    background-color: #99e600;
+}
+.non-D-block-metal:hover { color: #99e600; }
+.non-metal {
+    background-color: cyan;
+}
+.non-metal:hover { color: cyan; }
+.grp18 {
+    background-color: #80FF00;
+    color: white;
+}
+.grp18:hover { color: #80FF00; }
+.lnthd {
+    background-color: #5900b3;
+    color: white;
+}
+.lnthd:hover { color: #5900b3; }
+.actnd {
+    background-color: #000099;
+    color: white;
+}
+.actnd:hover { color: #000099; }
+.lq {
+    border: 3px solid white;
+}
+.mtlld {
+    background-color: #0080FF;
+}
+.mtlld:hover { color: #0080FF; }
+
+
+#element_pop-up {
+    z-index:3;
+    display:none;
+    padding-top:100px;
+    position:fixed;
+    left:0; top:0; 
+    width:100%; height:100%; /* mute entire screen */
+    overflow:auto; 
+    background-color:rgba(0,0,0,0.2);
+    
+}
+
+.modal_content {
+    margin:auto;
+    background-color:#fff;
+    position:relative;
+    padding:10px;
+    outline:0;
+    width:600px;
+    border-radius: 15px;
+    background-color:rgb(22, 54, 114);
+    color: white;
+    border:4px solid white;
+    font-family: 'Rubik', sans-serif;
+}
+
+h2 {
+    font-family: 'Sen', sans-serif;
+    margin: 10px;
+    padding-left: 30px; 
+    color: white; 
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.close_modal_btn {
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 3px 10px;
+    font-size: 25px;
+    border-radius: 20px;
+    outline: none;
+    float: right;
+}
+.close_modal_btn:hover {
+    background-color: rgb(233, 0, 0);
+}

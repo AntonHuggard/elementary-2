@@ -1,0 +1,257 @@
+<!doctype html5>
+
+<html>
+<head>
+	<title> Elementary </title>
+	<link rel="stylesheet" href="elementary.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
+	<script src = "elementary.js"></script> 
+</head>
+
+<body style="margin: 0px; background-image: linear-gradient(to right, #4d8bff, #66c2ff, #66c2ff, #66c2ff, #4d8bff);">
+	
+	<br><br> <br>
+
+	
+	<h1 class = "c" style = "border: none;"> 
+		periodic table of elements 
+	</h1> <br> <br> <br>
+	
+
+	<div class = "c srch-wrppr" style = "border: none;">
+		<input class = "srch" id="myInput" type="search" placeholder = "Search for an element" onkeyup="search_elements();">
+	</div>
+
+	<br />	<br />
+
+	<table class = "c" id = "periodic_table"> 
+		<tr>
+			<td><button class="element grp1" onclick = 
+				"show_modal('Hydrogen', 1, 1.008, -259.16, -252.879, 
+				'1766 by Henry Cavendish', 'hydrogen means <em>water-former</em> in Greek', '2.20')"
+				>H</button>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><button class="element grp18" onclick = 
+				"show_modal('Helium', 2, 4.002, -272.20, -268.928, 
+				'1868 by Pierre Janssen & Norman Lockyer', 'from the Greek word for the sun, <em>Helios</em>')"
+			>He</button>
+			</td>
+		</tr>
+		<tr>
+			<td><button class="element grp1" onclick = "show_modal()">Li</button></td>
+			<td><button class="element grp2" onclick = "show_modal()">Be</button></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><button class="element mtlld" onclick = "show_modal()">B</button></td>
+			<td><button class="element non-metal" onclick = "show_modal()">C</button></td>
+			<td><button class="element non-metal" onclick = "show_modal()">N</button></td>
+			<td><button class="element non-metal" onclick = "show_modal()">O</button></td>
+			<td><button class="element non-metal" onclick = "show_modal()">F</button></td>
+			<td><button class="element grp18" onclick = "show_modal()">Ne</button></td>
+		</tr>
+		<tr>
+			<td><button class="element grp1" onclick = "show_modal()">Na</button></td>
+			<td><button class="element grp2" onclick = "show_modal()">Mg</button></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><button class="element non-D-block-metal" onclick = "show_modal()">Al</button></td>
+			<td><button class="element mtlld" onclick = "show_modal()">Si</button></td>
+			<td><button class="element non-metal"onclick = "show_modal()">P</button></td>
+			<td><button class="element non-metal" onclick = "show_modal()">S</button></td>
+			<td><button class="element non-metal" onclick = "show_modal()">Cl</button></td>
+			<td><button class="element grp18" onclick = "show_modal()">Ar</button></td>
+		</tr>
+		<tr>
+			<td><button class="element grp1" onclick = "show_modal()">K</button></td>
+			<td><button class="element grp2" onclick = "show_modal()">Ca</button></td>
+			<td><button class="element" onclick = "show_modal()">Sc</button></td>
+			<td><button class="element" onclick = "show_modal()">Ti</button></td>
+			<td><button class="element" onclick = "show_modal()">V</button></td>
+			<td><button class="element" onclick = "show_modal()">Cr</button></td>
+			<td><button class="element" onclick = "show_modal()">Mn</button></td>
+			<td><button class="element" onclick = "show_modal()">Fe</button></td>
+			<td><button class="element" onclick = "show_modal()">Co</button></td>
+			<td><button class="element" onclick = "show_modal()">Ni</button></td>
+			<td><button class="element" onclick = "show_modal()">Cu</button></td>
+			<td><button class="element" onclick = "show_modal()">Zn</button></td>
+			<td><button class="element non-D-block-metal" onclick = "show_modal()">Ga</button></td>
+			<td><button class="element mtlld" onclick = "show_modal()">Ge</button></td>
+			<td><button class="element mtlld" onclick = "show_modal()">As</button></td>
+			<td><button class="element non-metal" onclick = "show_modal()">Se</button></td>
+			<td><button class="element non-metal lq" onclick = "show_modal()">Br</button></td>
+			<td><button class="element grp18" onclick = "show_modal()">Kr</button></td>
+		</tr>
+		<tr>
+			<td><button class="element grp1" onclick = "show_modal()">Rb</button></td>
+			<td><button class="element grp2" onclick = "show_modal()">Sr</button></td>
+			<td><button class="element" onclick = "show_modal()">Y</button></td>
+			<td><button class="element" onclick = "show_modal()">Zr</button></td>
+			<td><button class="element" onclick = "show_modal()">Nb</button></td>
+			<td><button class="element" onclick = "show_modal()">Mo</button></td>
+			<td><button class="element" onclick = "show_modal()">Tc</button></td>
+			<td><button class="element" onclick = "show_modal()">Ru</button></td>
+			<td><button class="element" onclick = "show_modal()">Rh</button></td>
+			<td><button class="element" onclick = "show_modal()">Pd</button></td>
+			<td><button class="element" onclick = "show_modal()">Ag</button></td>
+			<td><button class="element" onclick = "show_modal()">Cd</button></td>
+			<td><button class="element non-D-block-metal" onclick = "show_modal()">In</button></td>
+			<td><button class="element non-D-block-metal" onclick = "show_modal()">Sn</button></td>
+			<td><button class="element mtlld" onclick = "show_modal()">Sb</button></td>
+			<td><button class="element mtlld" onclick = "show_modal()">Te</button></td>
+			<td><button class="element non-metal" onclick = "show_modal()">I</button></td>
+			<td><button class="element grp18" onclick = "show_modal()">Xe</button></td>
+		</tr>
+		<tr>
+			<td><button class="element grp1" onclick = "show_modal()">Cs</button></td>
+			<td><button class="element grp2" onclick = "show_modal()">Ba</button></td>
+			<td></td>
+			<td><button class="element" onclick = "show_modal()">Hf</button></td>
+			<td><button class="element" onclick = "show_modal()">Ta</button></td>
+			<td><button class="element" onclick = "show_modal()">W</button></td>
+			<td><button class="element" onclick = "show_modal()">Re</button></td>
+			<td><button class="element" onclick = "show_modal()">Os</button></td>
+			<td><button class="element" onclick = "show_modal()">Ir</button></td>
+			<td><button class="element" onclick = "show_modal()">Pt</button></td>
+			<td><button class="element" onclick = "show_modal()">Au</button></td>
+			<td><button class="element lq" onclick = "show_modal()">Hg</button></td>
+			<td><button class="element non-D-block-metal" onclick = "show_modal()">Ti</button></td>
+			<td><button class="element non-D-block-metal" onclick = "show_modal()">Pb</button></td>
+			<td><button class="element non-D-block-metal" onclick = "show_modal()">Bi</button></td>
+			<td><button class="element mtlld" onclick = "show_modal()">Po</button></td>
+			<td><button class="element non-metal" onclick = "show_modal()">At</button></td>
+			<td><button class="element grp18" onclick = "show_modal()">Rn</button></td>
+		</tr>
+		<tr>
+			<td><button class="element grp1" onclick = "show_modal()">Fr</button></td>
+			<td><button class="element grp2" onclick = "show_modal()">Ra</button></td>
+			<td></td>
+			<td><button class="element" onclick = "show_modal()">Rf</button></td>
+			<td><button class="element" onclick = "show_modal()">Db</button></td>
+			<td><button class="element" onclick = "show_modal()">Sg</button></td>
+			<td><button class="element" onclick = "show_modal()">Bh</button></td>
+			<td><button class="element" onclick = "show_modal()">Hs</button></td>
+			<td><button class="element" onclick = "show_modal()">Mt</button></td>
+			<td><button class="element" onclick = "show_modal()">Ds</button></td>
+			<td><button class="element" onclick = "show_modal()">Rg</button></td>
+			<td><button class="element" onclick = "show_modal()">Cn</button></td>
+			<td><button class="element non-D-block-metal" onclick = "show_modal()">Nh</button></td>
+			<td><button class="element non-D-block-metal" onclick = "show_modal()">Fl</button></td>
+			<td><button class="element non-D-block-metal" onclick = "show_modal()">Mc</button></td>
+			<td><button class="element non-D-block-metal" onclick = "show_modal()">Lv</button></td>
+			<td><button class="element mtlld" onclick = "show_modal()">Ts</button></td>
+			<td><button class="element grp18" onclick = "show_modal()">Og</button></td>
+		</tr>
+		<tr><td><button class="element" style="opacity: 0%;"></button></td></tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><button class="element lnthd" onclick = "show_modal()">La</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Ce</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Pr</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Nd</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Pm</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Sm</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Eu</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Gd</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Tb</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Dy</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Ho</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Er</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Tm</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Yb</button></td>
+			<td><button class="element lnthd" onclick = "show_modal()">Lu</button></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><button class="element actnd" onclick = "show_modal()">Ac</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Th</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Pa</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">U</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Np</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Pu</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Am</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Cm</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Bk</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Cf</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Es</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Fm</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Md</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">No</button></td>
+			<td><button class="element actnd" onclick = "show_modal()">Lr</button></td>
+		</tr>
+	</table>
+	
+	<br /> <br /> <br />
+
+	<h1 class = "c" style = "border: none;"> 
+		unit converter & constants
+	</h1>
+
+	<br />
+	
+	<div class = "c" style = "text-align: center;">
+		MASS
+		<p>
+			<input id = "input_Kg" type = "number" placeholder = "Mass (Kgs)"
+			oninput = "wght_convtr(this.value)" onchange = "wght_convtr(this.value)">
+
+			Grams: <span id = "outputGrams"></span>
+		</p>
+
+		TEMPERATURE
+		<p>
+			<input id = "input_C" type = "number" placeholder = "Temperature (deg C)"
+			oninput = "temp_convtr(this.value)" onchange = "temp_convtr(this.value)">
+
+			Kelvin: <span id = "output_temp_K"></span> &nbsp;
+			Fahrenheit: <span id = "output_temp_F"></span>
+		</p>
+
+		AVOGADRO CONSTANT &nbsp N<sub>A</sub> = 6.02214076 x 10<sup>23</sup> mol<sup>-1</sup> <br>
+		DISSOCIATION CONSTANT &nbsp K<sub>W</sub> = [H<sub>3</sub>O<sup>+</sup>] x [OH<sup>-</sup>] = 10<sup>-14</sup>
+
+
+	</div>
+
+
+	<br><br><br><br><br><br><br><br>
+
+	<div id = "element_pop-up" style = "display: none;"></div> 
+
+</body>
+</html>
