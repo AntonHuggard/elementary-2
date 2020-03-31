@@ -9,7 +9,7 @@ function show_modal(elmt_nm = 'Element', atmc_num = 'X', atmc_mss = 'Y', MP = 0,
                 &times 
             </button>
         </div>
-        <img src = \"resources/${elmt_nm}.png\" style = \"width: 25%; float: left; padding: 10px;\">
+        <img src = \"${elmt_nm}.png\" style = \"width: 25%; float: left; padding: 10px;\">
         <p>
             Atomic Number: ${atmc_num} <br> Relative Atomic Mass: ${atmc_mss} <br> Melting Point: ${MP} <sup>o</sup>C <br>
             Boiling Point: ${BP} <sup>o</sup>C <br> Electronegativity: ${EN}
