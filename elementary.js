@@ -1,64 +1,66 @@
-function show_modal(elmt_nm = 'Element', atmc_num = 'X', atmc_mss = 'Y', MP = 0, BP = 0, discvry = 'UNKNOWN', etym = 'from the Latin Elementum', EN = 'no data') {
+function search_function() {
+
+    const query = document.getElementById("element_io").value.toUpperCase();
+
+    function check_query(q) {
+        return q.includes(query);
+    }
+    
+    var elements = document.getElementsByClassName("element");
+    
+    if (query.length < 3) {
+        for (var i = 0; i < elements.length; i++) {
+
+            elements[i].style.opacity = "25%";
+
+            chemical_symbol = elements[i].innerText.toUpperCase().toString();
+
+            if ( !(chemical_symbol == "") && (chemical_symbol.includes(query)) ) {
+                elements[i].style.opacity = "100%";
+            }
+        }
+    
+    } else {
+        for (var i = 0; i < elements.length; i++) {
+
+            elements[i].style.opacity = "25%";
+
+            const attributes = elements[i].className.toUpperCase().split(" ");
+            attributes.shift(); // deletes the universal 'element' class from list
+
+            if (attributes.filter(check_query) != "") {
+                elements[i].style.opacity = "100%";
+            }
+        }
+    }
+}
+
+
+function show_modal(elmt_nm = 'Element', atmc_num = 'X', atmc_mss = 'Y', MP = 0, BP = 0, 
+                discvry = 'UNKNOWN', etym = 'from the Latin Elementum', EN = 'no data', display_radioactive = 'none',
+                details = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero ut enim accumsan maximus id ut nisl. Etiam placerat magna ac ante varius pretium. Cras in metus nec risus pharetra semper.'
+                ) {
     
     const modal_code = 
-    `<div class = \"modal_content\">
-        <div class = \"container\">
-            <div>
-            <h2 style = \"display: inline-block;\">${elmt_nm}</h2>
-            <button class = \"close_modal_btn\" onclick = \"document.getElementById('element_pop-up').style.display='none'\">
-                &times 
-            </button>
+    `<div class = "modal_content">
+        <div class = "grid-container">
+                <div class = "item1">${elmt_nm}</div>
+            <button class = "item2" onclick = \"document.getElementById('element_pop-up').style.display='none'\">&times</button>
+            <img class = "item3" src ="${elmt_nm}.png">
+            <div class = "item4">
+                Atomic Number: ${atmc_num} <br> Relative Atomic Mass: ${atmc_mss} <br> Melting Point: ${MP} <sup>o</sup>C <br>
+                Boiling Point: ${BP} <sup>o</sup>C <br> Electronegativity: ${EN} <br> <br>
+                Discovered: ${discvry} <br> Etymology: ${etym} <br> <br>
+            </div>
+            <img class = "item5" src ="radioactv.png" style = "display:${display_radioactive}">
+            <button class = "item6">6</button>
+            <div class = "item7">
+                ${details}
+            </div>
         </div>
-        <img src = \"${elmt_nm}.png\" style = \"width: 25%; float: left; padding: 10px;\">
-        <p>
-            Atomic Number: ${atmc_num} <br> Relative Atomic Mass: ${atmc_mss} <br> Melting Point: ${MP} <sup>o</sup>C <br>
-            Boiling Point: ${BP} <sup>o</sup>C <br> Electronegativity: ${EN}
-            <br><br> Discovered: ${discvry} <br> Etymology: ${etym}
-        </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero ut enim accumsan maximus id ut nisl. Etiam placerat magna ac ante varius pretium. Cras in metus nec risus pharetra semper.</p>
-        </div>
-    </div>` ;
+    </div>`;
+
     document.getElementById('element_pop-up').innerHTML = modal_code ;
     document.getElementById('element_pop-up').style.display = "block" ;
 
-}
-
-function search_elements() {
-    var input, filter, table;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    table = document.getElementById("periodic_table");
-
-    if (filter != "") {
-        for (var i = 0, cell; cell = table.getElementsByTagName('td')[i]; i++) {
-
-            var element_code = cell.innerText.toUpperCase();
-            element_code.toString();
-      
-            if (!(element_code.includes(filter))) {
-                cell.style.opacity = "25%";
-                cell.style.transition = "opacity 0.3s";
-            } 
-            else {
-                cell.style.transition = "opacity 0.5s";
-                cell.style.opacity = "100%";
-            }
-          }         
-    } else {
-        for (var i = 0, cell; cell = table.getElementsByTagName('td')[i]; i++) {
-            cell.style.transition = "opacity 0.5s";
-            cell.style.opacity = "100%";
-        }
-    }
-
-}
-
-
-function wght_convtr(val_kgs) {
-    document.getElementById("outputGrams").innerHTML = val_kgs * 1000;
-}
-
-function temp_convtr(val_deg_C) {
-    document.getElementById("output_temp_K").innerHTML = val_deg_C + (273.16);
-    document.getElementById("output_temp_F").innerHTML = val_deg_C * (9/5) + 32;
 }

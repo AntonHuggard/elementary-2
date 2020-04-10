@@ -2,256 +2,179 @@
 
 <html>
 <head>
-	<title> Elementary </title>
-	<link rel="stylesheet" href="elementary.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
-	<script src = "elementary.js"></script> 
+    <title> Searchable Periodic Table </title>
+    <link rel="stylesheet" href="elementary.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
+    <script src = "elementary.js"></script>    
 </head>
-
 <body style="margin: 0px; background-image: linear-gradient(to right, #4d8bff, #66c2ff, #66c2ff, #66c2ff, #4d8bff);">
-	
-	<br><br> <br>
 
-	
-	<h1 class = "c" style = "border: none;"> 
-		periodic table of elements 
-	</h1> <br> <br> <br>
-	
+    <h1 class = "centre" style = "border: none; padding: 50px 0px 40px 0px;"> 
+		&#9883;
+    </h1>
 
-	<div class = "c srch-wrppr" style = "border: none;">
-		<input class = "srch" id="myInput" type="search" placeholder = "Search for an element" onkeyup="search_elements();">
-	</div>
+    <h2 class = "centre" style = "border: none; padding: 10px 0px 20px 0px;">
+        elementary 
+    </h2>
+    
+    <div class = "element_search_container centre" style = "border: none;">
+        <input type = "text" id = "element_io" onkeyup="search_function()" placeholder="Search elements... " style = "float: left;">
+        <img src="mgnf_glss_gry.png" />
+    </div>    
+    
+    <div class = "periodic_table centre" style = "width: 1000px; height: 525; padding-top: 15px;">
+        <button class = "element alkali_metals hydrogen" onclick = 
+            "show_modal('Hydrogen', 1, 1.008, -259.16, -252.879, 
+                        '1766 by Henry Cavendish', 'from greek, <em>water-former</em>', '2.20', 'none', 
+                        'One reliable proton with a trusty electron. She ain\'t much but she gets the job done.')">H</button>
+        <button class = "filler_btn-1 void_btn"></button>
+        <button class = "element  helium non-metals noble gas" onclick = 
+            "show_modal('Helium', 2, 4.002, -272.20, -268.928, 
+                '1868 by Pierre Janssen & Norman Lockyer', 'from the Greek word for the sun, <em>Helios</em>')">He</button>
+        
+        <button class = "element lithium alkali_metals" onclick=
+            "show_modal('Lithium', 3, 6.938, 180.5, 1330,
+                '1821 by English chemist William Thomas Brande', 'from the Greek <em>lithos</em>, meaning stone', 0.98)">Li</button>
+        <button class = "element beryllium alkaline_earth_metals" onclick=
+            "show_modal('Beryllium', 4, 9.012, 1287, 2469,
+                'indepedently by Friedrich Wöhler and Antoine Bussy, 1828', 'from the mineral beryl', 1.57)">Be</button>
+        <button class = "filler_btn-2 void_btn"></button>
+        <button class = "element boron metalloid" onclick="show_modal()">B</button>
+        <button class = "element carbon non-metals" onclick="show_modal()">C</button>
+        <button class = "element nitrogen non-metals" onclick="show_modal()">N</button>
+        <button class = "element oxygen non-metals" onclick="show_modal()">O</button>
+        <button class = "element fluorine halogens non-metals" onclick="show_modal()">F</button>
+        <button class = "element neon non-metals noble gas" onclick="show_modal()">Ne</button>
 
-	<br />	<br />
+        <button class = "element sodium alkali_metals" onclick="show_modal('Sodium', 11)">Na</button>
+        <button class = "element magnesium alkaline_earth_metals" onclick="show_modal()">Mg</button>
+        <button class = "element aluminium metaux_pauvres metals" onclick="show_modal()">Al</button>
+        <button class = "element silicon metalloid" onclick="show_modal()">Si</button>
+        <button class = "element phosphorus non-metals" onclick="show_modal()">P</button>
+        <button class = "element sulfur sulphur brimstone non-metals" onclick="show_modal()">S</button>
+        <button class = "element chlorine halogens non-metals" onclick="show_modal()">Cl</button>
+        <button class = "element argon non-metals noble gas" onclick="show_modal()">Ar</button>
 
-	<table class = "c" id = "periodic_table"> 
-		<tr>
-			<td><button class="element grp1" onclick = 
-				"show_modal('Hydrogen', 1, 1.008, -259.16, -252.879, 
-				'1766 by Henry Cavendish', 'hydrogen means <em>water-former</em> in Greek', '2.20')"
-				>H</button>
-			</td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td><button class="element grp18" onclick = 
-				"show_modal('Helium', 2, 4.002, -272.20, -268.928, 
-				'1868 by Pierre Janssen & Norman Lockyer', 'from the Greek word for the sun, <em>Helios</em>')"
-			>He</button>
-			</td>
-		</tr>
-		<tr>
-			<td><button class="element grp1" onclick = "show_modal()">Li</button></td>
-			<td><button class="element grp2" onclick = "show_modal()">Be</button></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td><button class="element mtlld" onclick = "show_modal()">B</button></td>
-			<td><button class="element non-metal" onclick = "show_modal()">C</button></td>
-			<td><button class="element non-metal" onclick = "show_modal()">N</button></td>
-			<td><button class="element non-metal" onclick = "show_modal()">O</button></td>
-			<td><button class="element non-metal" onclick = "show_modal()">F</button></td>
-			<td><button class="element grp18" onclick = "show_modal()">Ne</button></td>
-		</tr>
-		<tr>
-			<td><button class="element grp1" onclick = "show_modal()">Na</button></td>
-			<td><button class="element grp2" onclick = "show_modal()">Mg</button></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td><button class="element non-D-block-metal" onclick = "show_modal()">Al</button></td>
-			<td><button class="element mtlld" onclick = "show_modal()">Si</button></td>
-			<td><button class="element non-metal"onclick = "show_modal()">P</button></td>
-			<td><button class="element non-metal" onclick = "show_modal()">S</button></td>
-			<td><button class="element non-metal" onclick = "show_modal()">Cl</button></td>
-			<td><button class="element grp18" onclick = "show_modal()">Ar</button></td>
-		</tr>
-		<tr>
-			<td><button class="element grp1" onclick = "show_modal()">K</button></td>
-			<td><button class="element grp2" onclick = "show_modal()">Ca</button></td>
-			<td><button class="element" onclick = "show_modal()">Sc</button></td>
-			<td><button class="element" onclick = "show_modal()">Ti</button></td>
-			<td><button class="element" onclick = "show_modal()">V</button></td>
-			<td><button class="element" onclick = "show_modal()">Cr</button></td>
-			<td><button class="element" onclick = "show_modal()">Mn</button></td>
-			<td><button class="element" onclick = "show_modal()">Fe</button></td>
-			<td><button class="element" onclick = "show_modal()">Co</button></td>
-			<td><button class="element" onclick = "show_modal()">Ni</button></td>
-			<td><button class="element" onclick = "show_modal()">Cu</button></td>
-			<td><button class="element" onclick = "show_modal()">Zn</button></td>
-			<td><button class="element non-D-block-metal" onclick = "show_modal()">Ga</button></td>
-			<td><button class="element mtlld" onclick = "show_modal()">Ge</button></td>
-			<td><button class="element mtlld" onclick = "show_modal()">As</button></td>
-			<td><button class="element non-metal" onclick = "show_modal()">Se</button></td>
-			<td><button class="element non-metal lq" onclick = "show_modal()">Br</button></td>
-			<td><button class="element grp18" onclick = "show_modal()">Kr</button></td>
-		</tr>
-		<tr>
-			<td><button class="element grp1" onclick = "show_modal()">Rb</button></td>
-			<td><button class="element grp2" onclick = "show_modal()">Sr</button></td>
-			<td><button class="element" onclick = "show_modal()">Y</button></td>
-			<td><button class="element" onclick = "show_modal()">Zr</button></td>
-			<td><button class="element" onclick = "show_modal()">Nb</button></td>
-			<td><button class="element" onclick = "show_modal()">Mo</button></td>
-			<td><button class="element" onclick = "show_modal()">Tc</button></td>
-			<td><button class="element" onclick = "show_modal()">Ru</button></td>
-			<td><button class="element" onclick = "show_modal()">Rh</button></td>
-			<td><button class="element" onclick = "show_modal()">Pd</button></td>
-			<td><button class="element" onclick = "show_modal()">Ag</button></td>
-			<td><button class="element" onclick = "show_modal()">Cd</button></td>
-			<td><button class="element non-D-block-metal" onclick = "show_modal()">In</button></td>
-			<td><button class="element non-D-block-metal" onclick = "show_modal()">Sn</button></td>
-			<td><button class="element mtlld" onclick = "show_modal()">Sb</button></td>
-			<td><button class="element mtlld" onclick = "show_modal()">Te</button></td>
-			<td><button class="element non-metal" onclick = "show_modal()">I</button></td>
-			<td><button class="element grp18" onclick = "show_modal()">Xe</button></td>
-		</tr>
-		<tr>
-			<td><button class="element grp1" onclick = "show_modal()">Cs</button></td>
-			<td><button class="element grp2" onclick = "show_modal()">Ba</button></td>
-			<td></td>
-			<td><button class="element" onclick = "show_modal()">Hf</button></td>
-			<td><button class="element" onclick = "show_modal()">Ta</button></td>
-			<td><button class="element" onclick = "show_modal()">W</button></td>
-			<td><button class="element" onclick = "show_modal()">Re</button></td>
-			<td><button class="element" onclick = "show_modal()">Os</button></td>
-			<td><button class="element" onclick = "show_modal()">Ir</button></td>
-			<td><button class="element" onclick = "show_modal()">Pt</button></td>
-			<td><button class="element" onclick = "show_modal()">Au</button></td>
-			<td><button class="element lq" onclick = "show_modal()">Hg</button></td>
-			<td><button class="element non-D-block-metal" onclick = "show_modal()">Ti</button></td>
-			<td><button class="element non-D-block-metal" onclick = "show_modal()">Pb</button></td>
-			<td><button class="element non-D-block-metal" onclick = "show_modal()">Bi</button></td>
-			<td><button class="element mtlld" onclick = "show_modal()">Po</button></td>
-			<td><button class="element non-metal" onclick = "show_modal()">At</button></td>
-			<td><button class="element grp18" onclick = "show_modal()">Rn</button></td>
-		</tr>
-		<tr>
-			<td><button class="element grp1" onclick = "show_modal()">Fr</button></td>
-			<td><button class="element grp2" onclick = "show_modal()">Ra</button></td>
-			<td></td>
-			<td><button class="element" onclick = "show_modal()">Rf</button></td>
-			<td><button class="element" onclick = "show_modal()">Db</button></td>
-			<td><button class="element" onclick = "show_modal()">Sg</button></td>
-			<td><button class="element" onclick = "show_modal()">Bh</button></td>
-			<td><button class="element" onclick = "show_modal()">Hs</button></td>
-			<td><button class="element" onclick = "show_modal()">Mt</button></td>
-			<td><button class="element" onclick = "show_modal()">Ds</button></td>
-			<td><button class="element" onclick = "show_modal()">Rg</button></td>
-			<td><button class="element" onclick = "show_modal()">Cn</button></td>
-			<td><button class="element non-D-block-metal" onclick = "show_modal()">Nh</button></td>
-			<td><button class="element non-D-block-metal" onclick = "show_modal()">Fl</button></td>
-			<td><button class="element non-D-block-metal" onclick = "show_modal()">Mc</button></td>
-			<td><button class="element non-D-block-metal" onclick = "show_modal()">Lv</button></td>
-			<td><button class="element mtlld" onclick = "show_modal()">Ts</button></td>
-			<td><button class="element grp18" onclick = "show_modal()">Og</button></td>
-		</tr>
-		<tr><td><button class="element" style="opacity: 0%;"></button></td></tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td><button class="element lnthd" onclick = "show_modal()">La</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Ce</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Pr</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Nd</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Pm</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Sm</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Eu</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Gd</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Tb</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Dy</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Ho</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Er</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Tm</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Yb</button></td>
-			<td><button class="element lnthd" onclick = "show_modal()">Lu</button></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td><button class="element actnd" onclick = "show_modal()">Ac</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Th</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Pa</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">U</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Np</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Pu</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Am</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Cm</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Bk</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Cf</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Es</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Fm</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Md</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">No</button></td>
-			<td><button class="element actnd" onclick = "show_modal()">Lr</button></td>
-		</tr>
-	</table>
-	
-	<br /> <br /> <br />
+        <button class = "element potassium banana alkali_metals" onclick="show_modal('Potassium', 19)">K</button>
+        <button class = "element calcium alkaline_earth_metals" onclick="show_modal()">Ca</button>
+        <button class = "element scandium transition-metals" onclick="show_modal()">Sc</button>
+        <button class = "element titanium transition-metals" onclick="show_modal()">Ti</button>
+        <button class = "element vanadium transition-metals" onclick="show_modal()">V</button>
+        <button class = "element chromium transition-metals" onclick="show_modal()">Cr</button>
+        <button class = "element manganese transition-metals" onclick="show_modal()">Mn</button>
+        <button class = "element iron ferrum transition-metals" onclick="show_modal()">Fe</button>
+        <button class = "element cobalt transition-metals" onclick="show_modal()">Co</button>
+        <button class = "element nickel transition-metals" onclick="show_modal()">Ni</button>
+        <button class = "element copper transition-metals" onclick="show_modal()">Cu</button>
+        <button class = "element zinc transition-metals" onclick="show_modal()">Zn</button>
+        <button class = "element gallium metaux_pauvres metals" onclick="show_modal()">Ga</button>
+        <button class = "element germanium metalloid" onclick="show_modal()">Ge</button>
+        <button class = "element arsenic metalloid" onclick="show_modal()">As</button>
+        <button class = "element selenium non-metals" onclick="show_modal()">Se</button>
+        <button class = "element bromine halogens non-metals liquid" onclick="show_modal()">Br</button>
+        <button class = "element krypton non-metals noble gas" onclick="show_modal()">Kr</button>
 
-	<h1 class = "c" style = "border: none;"> 
-		unit converter & constants
-	</h1>
+        <button class = "element rubidium alkali_metals" onclick="show_modal()">Rb</button>
+        <button class = "element strontium alkaline_earth_metals" onclick="show_modal()">Sr</button>
+        <button class = "element yttrium transition-metals" onclick="show_modal()">Y</button>
+        <button class = "element zirconium transition-metals" onclick="show_modal()">Zr</button>
+        <button class = "element niobium transition-metals" onclick="show_modal()">Nb</button>
+        <button class = "element molybdenum mblybdenum transition-metals" onclick="show_modal()">Mo</button>
+        <button class = "element technetium transition-metals" onclick="show_modal()">Tc</button>
+        <button class = "element ruthenium transition-metals" onclick="show_modal()">Ru</button>
+        <button class = "element rhodium transition-metals" onclick="show_modal()">Rh</button>
+        <button class = "element palladium transition-metals" onclick="show_modal()">Pd</button>
+        <button class = "element silver transition-metals" onclick="show_modal()">Ag</button>
+        <button class = "element cadmium transition-metals" onclick="show_modal()">Cd</button>
+        <button class = "element indium metaux_pauvres metals" onclick="show_modal()">In</button>
+        <button class = "element tin metaux_pauvres metals" onclick="show_modal()">Sn</button>
+        <button class = "element antimony metalloid" onclick="show_modal()">Sb</button>
+        <button class = "element tellurium metalloid" onclick="show_modal()">Te</button>
+        <button class = "element iodine halogens non-metals" onclick="show_modal()">I</button>
+        <button class = "element xenon non-metals noble gas" onclick="show_modal()">Xe</button>
 
-	<br />
-	
-	<div class = "c" style = "text-align: center;">
-		MASS
-		<p>
-			<input id = "input_Kg" type = "number" placeholder = "Mass (Kgs)"
-			oninput = "wght_convtr(this.value)" onchange = "wght_convtr(this.value)">
+        <button class = "element caesium alkali_metals" onclick="show_modal()">Cs</button>
+        <button class = "element barium alkaline_earth_metals" onclick="show_modal()">Ba</button>
+        <button class = "filler_btn-3 void_btn"></button>
+        <button class = "element hafnium transition-metals" onclick="show_modal()">Hf</button>
+        <button class = "element tantalum transition-metals" onclick="show_modal()">Ta</button>
+        <button class = "element tungsten wolfram transition-metals" onclick="show_modal()">W</button>
+        <button class = "element rhenium transition-metals" onclick="show_modal()">Re</button>
+        <button class = "element osmium transition-metals" onclick="show_modal()">Os</button>
+        <button class = "element iridium transition-metals" onclick="show_modal()">Ir</button>
+        <button class = "element platinum transition-metals" onclick="show_modal()">Pt</button>
+        <button class = "element gold transition-metals" onclick="show_modal()">Au</button>
+        <button class = "element mercury liquid transition-metals" onclick="show_modal()">Hg</button>
+        <button class = "element thallium metaux_pauvres metals" onclick="show_modal()">Ti</button>
+        <button class = "element lead metaux_pauvres metals" onclick="show_modal()">Pb</button>
+        <button class = "element bismuth metaux_pauvres metals" onclick="show_modal()">Bi</button>
+        <button class = "element polonium metaux_pauvres metals radioactive" onclick="show_modal()">Po</button>
+        <button class = "element astatine halogens metalloid radioactive" onclick="show_modal()">At</button>
+        <button class = "element radon non-metals noble gas radioactive" onclick="show_modal()">Rn</button>
 
-			Grams: <span id = "outputGrams"></span>
-		</p>
+        <button class = "element francium alkali_metals radioactive" onclick="show_modal()">Fr</button>
+        <button class = "element radium alkaline_earth_metals radioactive" onclick="show_modal()">Ra</button>
+        <button class = "element rutherfordium radioactive transition-metals" onclick=
+            "show_modal('Rutherfordium', 104, '(226)', 2100, 5500, '1964 in the Soviet Union. Confirmed 1969, USA.', 
+                'named after Sir Ernest Rutherford', 'no data', 'block', 
+                'No element on the periodic table is named after an Australian.')">Rf</button>
+        <button class = "element dubnium radioactive transition-metals" onclick="show_modal()">Db</button>
+        <button class = "element seaborgium radioactive transition-metals" onclick="show_modal()">Sg</button>
+        <button class = "element bohrium radioactive transition-metals" onclick="show_modal()">Bh</button>
+        <button class = "element hassium radioactive transition-metals" onclick="show_modal()">Hs</button>
+        <button class = "element meitnerium radioactive transition-metals" onclick="show_modal()">Mt</button>
+        <button class = "element darmstadtium radioactive transition-metals" onclick="show_modal()">Ds</button>
+        <button class = "element roentgenium radioactive transition-metals" onclick="show_modal()">Rg</button>
+        <button class = "element copernicium radioactive transition-metals" onclick="show_modal()">Cn</button>
+        <button class = "element nihonium unknown radioactive" onclick="show_modal()">Nh</button>
+        <button class = "element flevorium unknown radioactive" onclick="show_modal()">Fl</button>
+        <button class = "element moscovium unknown radioactive " onclick="show_modal()">Mc</button>
+        <button class = "element livermorium unknown radioactive " onclick="show_modal()">Lv</button>
+        <button class = "element tennessine unknown radioactive " onclick="show_modal()">Ts</button>
+        <button class = "element oganesson unknown radioactive" onclick="show_modal()">Og</button>
 
-		TEMPERATURE
-		<p>
-			<input id = "input_C" type = "number" placeholder = "Temperature (deg C)"
-			oninput = "temp_convtr(this.value)" onchange = "temp_convtr(this.value)">
+        <button class = "lower void_btn"></button>
 
-			Kelvin: <span id = "output_temp_K"></span> &nbsp;
-			Fahrenheit: <span id = "output_temp_F"></span>
-		</p>
+        <button class = "filler_btn-4 void_btn"></button>
+        
+        <button class = "element lanthanum lanthanoid lanthanide metals" onclick="show_modal()">La</button>
+        <button class = "element cerium lanthanoid lanthanide metals" onclick="show_modal()">Ce</button>
+        <button class = "element praseodymium lanthanoid lanthanide metals" onclick="show_modal()">Pr</button>
+        <button class = "element neodymium lanthanoid lanthanide metals" onclick="show_modal()">Nd</button>
+        <button class = "element promethium radioactive lanthanoid lanthanide metals" onclick="show_modal()">Pm</button>
+        <button class = "element samarium lanthanoid lanthanide metals" onclick="show_modal()">Sm</button>
+        <button class = "element europium lanthanoid lanthanide metals" onclick="show_modal()">Eu</button>
+        <button class = "element gadolinium lanthanoid lanthanide metals" onclick="show_modal()">Gd</button>
+        <button class = "element terbium lanthanoid lanthanide metals" onclick="show_modal()">Tb</button>
+        <button class = "element dysprosium lanthanoid lanthanide metals" onclick="show_modal()">Dy</button>
+        <button class = "element holmium lanthanoid lanthanide metals" onclick="show_modal()">Ho</button>
+        <button class = "element erbium lanthanoid lanthanide metals" onclick="show_modal()">Er</button>
+        <button class = "element thulium lanthanoid lanthanide metals" onclick="show_modal()">Tm</button>
+        <button class = "element ytterbium lanthanoid lanthanide metals" onclick="show_modal()">Yb</button>
+        <button class = "element lutetium lanthanoid lanthanide metals" onclick="show_modal()">Lu</button>
+        <button class = "void_btn"></button>
+    
+        <button class = "element actinium radioactive actinoid actinide metals" onclick="show_modal()">Ac</button>
+        <button class = "element thorium radioactive actinoid actinide metals" onclick="show_modal()">Th</button>
+        <button class = "element protactinium radioactive actinoid actinide metals" onclick="show_modal()">Pa</button>
+        <button class = "element uranium radioactive actinoid actinide metals" onclick="show_modal()">U</button>
+        <button class = "element neptunium radioactive actinoid actinide metals" onclick="show_modal()">Np</button>
+        <button class = "element plutonium radioactive actinoid actinide metals" onclick="show_modal()">Pu</button>
+        <button class = "element americium radioactive actinoid actinide metals" onclick="show_modal()">Am</button>
+        <button class = "element curium radioactive actinoid actinide metals" onclick="show_modal()">Cm</button>
+        <button class = "element berkelium radioactive actinoid actinide metals" onclick="show_modal()">Bk</button>
+        <button class = "element californium radioactive actinoid actinide metals" onclick="show_modal()">Cf</button>
+        <button class = "element einsteinium radioactive actinoid actinide metals" onclick="show_modal()">Es</button>
+        <button class = "element fermium radioactive actinoid actinide metals" onclick="show_modal()">Fm</button>
+        <button class = "element medelevium radioactive actinoid actinide metals" onclick="show_modal()">Md</button>
+        <button class = "element nobelium radioactive actinoid actinide metals" onclick="show_modal()">No</button>
+        <button class = "element lawrencium radioactive actinoid actinide metals" onclick="show_modal()">Lr</button>
+    </div>
 
-		AVOGADRO CONSTANT &nbsp N<sub>A</sub> = 6.02214076 x 10<sup>23</sup> mol<sup>-1</sup> <br>
-		DISSOCIATION CONSTANT &nbsp K<sub>W</sub> = [H<sub>3</sub>O<sup>+</sup>] x [OH<sup>-</sup>] = 10<sup>-14</sup>
+    <div id = "element_pop-up" style = "display: none;"></div> 
 
-
-	</div>
-
-
-	<br><br><br><br><br><br><br><br>
-
-	<div id = "element_pop-up" style = "display: none;"></div> 
+    <p style = "padding-bottom: 20px;"></p>
 
 </body>
+
 </html>
