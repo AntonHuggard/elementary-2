@@ -40,13 +40,74 @@ function show_modal(elmt_nm = 'Element', atmc_num = 'X', atmc_mss = 'Y', MP = 0,
                 discvry = 'UNKNOWN', etym = 'from the Latin Elementum', EN = 'no data', display_radioactive = 'none',
                 details = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero ut enim accumsan maximus id ut nisl. Etiam placerat magna ac ante varius pretium. Cras in metus nec risus pharetra semper.'
                 ) {
+
+    // get data about the element to draw the svg tile
+    const element_name_lower = elmt_nm.toLowerCase();
+    var group, elmt_code;
+    if (element_name_lower == "element") {
+        elmt_code = "El";
+        group = "fish";
+    } else {
+        elmt_code = document.getElementById(element_name_lower).innerText;
+        const classes = document.getElementById(element_name_lower).className.toUpperCase().split(" ");
+        group = classes[2].toLowerCase();
+    }
+
+    
+    
+    // style stored outside html doesn't seem to be accessible
+    var fill_colour;
+    var text_colour = "black";
+    if (group == "alkali_metals") {
+        fill_colour = "red";
+        text_colour = "white";
+    } else if (group == "alkaline_earth_metals") {
+        fill_colour = "#9966ff";
+        text_colour = "white";
+    } else if ( group == "metaux_pauvres") {
+        fill_colour = "#80FF00";
+    } else if (group == "metalloid") {
+        fill_colour = "rgb(255, 187, 0)";
+    } else if (group == "non-metals") {
+        fill_colour = "cyan";
+    } else if (group == "noble") {
+        fill_colour = "rgb(199, 0, 156)";
+        text_colour = "white";
+    } else if (group == "lanthanoid") {
+        fill_colour = "#5900b3";
+        text_colour = "white";
+    } else if (group == "actinoid") {
+        fill_colour = "#000099";
+        text_colour = "white";
+    } else {
+        fill_colour = "#fbff00";
+    }
+
+    const svg_code = `
+    <svg class = "item3" width="100%" height="300">
+        <style>
+            .chemical_symbol { 
+                font: bold 90px sans-serif;
+                fill: ${text_colour};
+            }
+            .number {
+                font: bold 40px sans-serif;
+                fill: ${text_colour};
+            }
+        </style>
+        <rect width = "100%" height = "100%" style = "fill: white" />
+        <rect x = "5%" y = "3%" width = "90%" height = "94%" style = "fill: ${fill_colour}" />
+        <text x="75%" y="15%" dominant-baseline="middle" text-anchor="middle" class="number">${atmc_num}</text>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="chemical_symbol">${elmt_code}</text>
+        <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" class="number">${atmc_mss}</text>
+    </svg>`;
     
     const modal_code = 
     `<div class = "modal_content">
         <div class = "grid-container">
                 <div class = "item1">${elmt_nm}</div>
             <button class = "item2" onclick = \"document.getElementById('element_pop-up').style.display='none'\">&times</button>
-            <img class = "item3" src ="${elmt_nm}.png">
+            ${svg_code}
             <div class = "item4">
                 Atomic Number: ${atmc_num} <br> Relative Atomic Mass: ${atmc_mss} <br> Melting Point: ${MP} <sup>o</sup>C <br>
                 Boiling Point: ${BP} <sup>o</sup>C <br> Electronegativity: ${EN} <br> <br>

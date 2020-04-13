@@ -23,152 +23,190 @@
     </div>    
     
     <div class = "periodic_table centre" style = "width: 1000px; height: 525; padding-top: 15px;">
-        <button class = "element alkali_metals hydrogen" onclick = 
+        <button class = "element hydrogen alkali_metals" id = "hydrogen" onclick = 
             "show_modal('Hydrogen', 1, 1.008, -259.16, -252.879, 
                         '1766 by Henry Cavendish', 'from greek, <em>water-former</em>', '2.20', 'none', 
                         'One reliable proton with a trusty electron. She ain\'t much but she gets the job done.')">H</button>
         <button class = "filler_btn-1 void_btn"></button>
-        <button class = "element  helium non-metals noble gas" onclick = 
+        <button class = "element helium noble gas non-metals noble gas" id = "helium" onclick = 
             "show_modal('Helium', 2, 4.002, -272.20, -268.928, 
                 '1868 by Pierre Janssen & Norman Lockyer', 'from the Greek word for the sun, <em>Helios</em>')">He</button>
         
-        <button class = "element lithium alkali_metals" onclick=
+        <button class = "element lithium alkali_metals" id = "lithium" onclick=
             "show_modal('Lithium', 3, 6.938, 180.5, 1330,
                 '1821 by English chemist William Thomas Brande', 'from the Greek <em>lithos</em>, meaning stone', 0.98)">Li</button>
-        <button class = "element beryllium alkaline_earth_metals" onclick=
+        <button class = "element beryllium alkaline_earth_metals" id = "beryllium" onclick=
             "show_modal('Beryllium', 4, 9.012, 1287, 2469,
                 'indepedently by Friedrich Wöhler and Antoine Bussy, 1828', 'from the mineral beryl', 1.57)">Be</button>
         <button class = "filler_btn-2 void_btn"></button>
-        <button class = "element boron metalloid" onclick="show_modal()">B</button>
-        <button class = "element carbon non-metals" onclick="show_modal()">C</button>
-        <button class = "element nitrogen non-metals" onclick="show_modal()">N</button>
-        <button class = "element oxygen non-metals" onclick="show_modal()">O</button>
-        <button class = "element fluorine halogens non-metals" onclick="show_modal()">F</button>
-        <button class = "element neon non-metals noble gas" onclick="show_modal()">Ne</button>
+        <button class = "element boron metalloid" id = "boron" onclick=
+            "show_modal('Boron', 5, 10.806, 2076, 3927, 
+            '1808 by Sir Humphry Davy, Joseph Louis Gay-Lussac & Louis Jacques Thenard', 'from Borax', 2.04)">B</button>
+        <button class = "element carbon non-metals" id = "carbon" onclick=
+            "show_modal('Carbon', 6, 12.0096, 3642, 6588,
+                'Unknown. The Egyptians and Sumerians had diamonds before 3000 BC', 
+                ' comes from the Latin carbo for coal and charcoal', 2.55)">C</button>
+        <button class = "element nitrogen non-metals" id = "nitrogen" onclick=
+            "show_modal('Nitrogen', 7, 14.006, -210, -195.795, '1772 by Scottish physician Daniel Rutherford',
+                'from the French <em>nitrogène</em>, which means <em>Potassium nitrate-producing</em>', 3.04)">N</button>
+        <button class = "element oxygen non-metals" id = "oxygen" onclick=
+            "show_modal('Oxygen', 8, 15.999, '−218.79', '−182.962', 
+                'Unknown. Either a Polish alchemist in 1604 or in 1771–2 by Swedish pharmacist Carl Wilhelm Scheele',
+                'Coined in 1777 by Antoine Lavoisier', 3.44)">O</button>
+        <button class = "element fluorine non-metals halogens" id = "fluorine" onclick=
+            "show_modal('Fluorine', 9, 18.998, '−219.67', '−188.11',
+                '1886 by Henri Moissan (after 74 years of effort by many chemists)',
+                'from the Latin <em>fluo</em>, <em>to flow</em>', 3.98, 'none', 'The most Electronegative element')">F</button>
+        <button class = "element neon noble gas non-metals" id = "neon" onclick=
+            "show_modal('Neon', 10, 20.1797, '−248.59', '−246.046',
+                '1898 by British chemists Sir William Ramsay & Morris W. Travers',
+                'Greek equivalent of <em>Novum</em> (Latin for <em>new</em>)')">Ne</button>
 
-        <button class = "element sodium alkali_metals" onclick="show_modal('Sodium', 11)">Na</button>
-        <button class = "element magnesium alkaline_earth_metals" onclick="show_modal()">Mg</button>
-        <button class = "element aluminium metaux_pauvres metals" onclick="show_modal()">Al</button>
-        <button class = "element silicon metalloid" onclick="show_modal()">Si</button>
-        <button class = "element phosphorus non-metals" onclick="show_modal()">P</button>
-        <button class = "element sulfur sulphur brimstone non-metals" onclick="show_modal()">S</button>
-        <button class = "element chlorine halogens non-metals" onclick="show_modal()">Cl</button>
-        <button class = "element argon non-metals noble gas" onclick="show_modal()">Ar</button>
+        <button class = "element sodium alkali_metals" id = "sodium" onclick=
+            "show_modal('Sodium', 11, 22.989, '97.794', '882.940', '1807 by Humphry Davy',
+                'Unknown. Its symbol is derived from Natronium/Natrium', 0.93, 'none', 
+                'Natronium was proposed in 1809, eventually shortened to natrium. This is derived from Natron, a naturally ocurring sodium-containing compound found in Egypt')"
+                >Na</button>
+        <button class = "element magnesium alkaline_earth_metals" id = "magnesium" onclick=
+            "show_modal('Magnesium', 12, 24.304, 650, 1091, '1808 by Humphry Davy',
+                'from Magnesia, a Greek region', 1.31)">Mg</button>
+        <button class = "element aluminium metaux_pauvres metals" id = "aluminium" onclick=
+            "show_modal('Aluminium', 13, 26.981, 660.32, 2470, '1824 by Hans Christian Ørsted (Denmark)',
+                'Named after Aluminia (which is named after Alum)', 1.61, 'none',
+                'Alum has been known about (and used) since Antiquity. The oldest surviving written record of it comes from Herodotus (pretty old). Historically, Alum has been used as a dye &, during the crusades, as currency. What I\'m trying to get at here is that the etymology is ultimately unknown.')"
+                >Al</button>
+        <button class = "element silicon metalloid" id = "silicon" onclick=
+            "show_modal('Silicon', 14, 28.084, 1414, 3538, '1823 by Jöns Jacob Berzelius',
+                'from flint in Latin; <em>silex</em> or <em>silicis</em>', 1.90)">Si</button>
+        <button class = "element phosphorus non-metals" id = "phosphorus" onclick=
+            "show_modal('Phosphorus', 15, 30.973, 44.15, 280.5, '1669 by German Alchemist Hennig Brand. Properly discovered by Antoine Lavoisier in 1777',
+                'from the Ancient Greek name for Venus, translates as <em>light-bearer</em>', 2.19, 'none',
+                '<br>This is the funniest discovery of an element. Phosphorus was discovered when Brand was following a recipe using water, alum, salteptre, and urine to turn metals into silver. He captured the fumes of boiling urine. These turned into a glowing green liquid (phosphorus), hence the name light-bearer.')"
+                >P</button>
+        <button class = "element sulfur sulphur brimstone non-metals" id = "sulphur" onclick=
+            "show_modal('Sulphur', 16, 32.059, 115.21, 444.6, 'Before to 2000 BC, China. Properly discovered by Antoine Lavoisier in 1777',
+                'derived from Latin <em>sulpur</em>', 2.58)">S</button>
+        <button class = "element chlorine halogens non-metals" id = "chlorine" onclick=
+            "show_modal('Chlorine', 17, 35.446, '−101.5', '−34.04', '1774 by Carl Wilhelm Scheele (Sweden/Germany)',
+                'from Ancient Greek <em>Khloros</em> (pale-green)', 3.16)">Cl</button>
+        <button class = "element argon noble gas non-metals" id = "argon" onclick=
+            "show_modal('Argon', 18, 39.792, '−189.34', '−185.848', '1894 by Lord Rayleigh and William Ramsay',
+                'Derived from the Greek word for lazy')">Ar</button>
 
-        <button class = "element potassium banana alkali_metals" onclick="show_modal('Potassium', 19)">K</button>
-        <button class = "element calcium alkaline_earth_metals" onclick="show_modal()">Ca</button>
-        <button class = "element scandium transition-metals" onclick="show_modal()">Sc</button>
-        <button class = "element titanium transition-metals" onclick="show_modal()">Ti</button>
-        <button class = "element vanadium transition-metals" onclick="show_modal()">V</button>
-        <button class = "element chromium transition-metals" onclick="show_modal()">Cr</button>
-        <button class = "element manganese transition-metals" onclick="show_modal()">Mn</button>
-        <button class = "element iron ferrum transition-metals" onclick="show_modal()">Fe</button>
-        <button class = "element cobalt transition-metals" onclick="show_modal()">Co</button>
-        <button class = "element nickel transition-metals" onclick="show_modal()">Ni</button>
-        <button class = "element copper transition-metals" onclick="show_modal()">Cu</button>
-        <button class = "element zinc transition-metals" onclick="show_modal()">Zn</button>
-        <button class = "element gallium metaux_pauvres metals" onclick="show_modal()">Ga</button>
-        <button class = "element germanium metalloid" onclick="show_modal()">Ge</button>
-        <button class = "element arsenic metalloid" onclick="show_modal()">As</button>
-        <button class = "element selenium non-metals" onclick="show_modal()">Se</button>
-        <button class = "element bromine halogens non-metals liquid" onclick="show_modal()">Br</button>
-        <button class = "element krypton non-metals noble gas" onclick="show_modal()">Kr</button>
+        <button class = "element potassium banana alkali_metals" id = "potassium" onclick="show_modal('Potassium', 19)">K</button>
+        <button class = "element calcium alkaline_earth_metals" id = "calcium" onclick="show_modal()">Ca</button>
+        <button class = "element scandium transition-metals" id = "scandium" onclick="show_modal()">Sc</button>
+        <button class = "element titanium transition-metals" id = "titanium" onclick="show_modal()">Ti</button>
+        <button class = "element vanadium transition-metals" id = "vanadium" onclick="show_modal()">V</button>
+        <button class = "element chromium transition-metals" id = "chromium" onclick="show_modal()">Cr</button>
+        <button class = "element manganese transition-metals" id = "manganese" onclick="show_modal()">Mn</button>
+        <button class = "element iron ferrum transition-metals" id = "iron" onclick="show_modal()">Fe</button>
+        <button class = "element cobalt transition-metals" id = "cobalt" onclick="show_modal()">Co</button>
+        <button class = "element nickel transition-metals" id = "nickel" onclick="show_modal()">Ni</button>
+        <button class = "element copper transition-metals" id = "copper" onclick="show_modal()">Cu</button>
+        <button class = "element zinc transition-metals" id = "zinc" onclick="show_modal()">Zn</button>
+        <button class = "element gallium metaux_pauvres metals" id = "gallium" onclick="show_modal()">Ga</button>
+        <button class = "element germanium metalloid" id = "germanium" onclick="show_modal()">Ge</button>
+        <button class = "element arsenic metalloid" id = "arsenic" onclick="show_modal()">As</button>
+        <button class = "element selenium non-metals" id = "selenium" onclick="show_modal()">Se</button>
+        <button class = "element bromine halogens non-metals liquid" id = "bromine" onclick="show_modal()">Br</button>
+        <button class = "element krypton non-metals noble gas" id = "krypton" onclick="show_modal()">Kr</button>
 
-        <button class = "element rubidium alkali_metals" onclick="show_modal()">Rb</button>
-        <button class = "element strontium alkaline_earth_metals" onclick="show_modal()">Sr</button>
-        <button class = "element yttrium transition-metals" onclick="show_modal()">Y</button>
-        <button class = "element zirconium transition-metals" onclick="show_modal()">Zr</button>
-        <button class = "element niobium transition-metals" onclick="show_modal()">Nb</button>
-        <button class = "element molybdenum mblybdenum transition-metals" onclick="show_modal()">Mo</button>
-        <button class = "element technetium transition-metals" onclick="show_modal()">Tc</button>
-        <button class = "element ruthenium transition-metals" onclick="show_modal()">Ru</button>
-        <button class = "element rhodium transition-metals" onclick="show_modal()">Rh</button>
-        <button class = "element palladium transition-metals" onclick="show_modal()">Pd</button>
-        <button class = "element silver transition-metals" onclick="show_modal()">Ag</button>
-        <button class = "element cadmium transition-metals" onclick="show_modal()">Cd</button>
-        <button class = "element indium metaux_pauvres metals" onclick="show_modal()">In</button>
-        <button class = "element tin metaux_pauvres metals" onclick="show_modal()">Sn</button>
-        <button class = "element antimony metalloid" onclick="show_modal()">Sb</button>
-        <button class = "element tellurium metalloid" onclick="show_modal()">Te</button>
-        <button class = "element iodine halogens non-metals" onclick="show_modal()">I</button>
-        <button class = "element xenon non-metals noble gas" onclick="show_modal()">Xe</button>
+        <button class = "element rubidium alkali_metals" id = "" onclick="show_modal()">Rb</button>
+        <button class = "element strontium alkaline_earth_metals" id = "" onclick="show_modal()">Sr</button>
+        <button class = "element yttrium transition-metals" id = "" onclick="show_modal()">Y</button>
+        <button class = "element zirconium transition-metals" id = "" onclick="show_modal()">Zr</button>
+        <button class = "element niobium transition-metals" id = "" onclick="show_modal()">Nb</button>
+        <button class = "element molybdenum mblybdenum transition-metals" id = "" onclick="show_modal()">Mo</button>
+        <button class = "element technetium transition-metals radioactive" id = "" onclick="show_modal()">Tc</button>
+        <button class = "element ruthenium transition-metals" id = "" onclick="show_modal()">Ru</button>
+        <button class = "element rhodium transition-metals" id = "" onclick="show_modal()">Rh</button>
+        <button class = "element palladium transition-metals" id = "" onclick="show_modal()">Pd</button>
+        <button class = "element silver transition-metals" id = "" onclick="show_modal()">Ag</button>
+        <button class = "element cadmium transition-metals" id = "" onclick="show_modal()">Cd</button>
+        <button class = "element indium metaux_pauvres metals" id = "" onclick="show_modal()">In</button>
+        <button class = "element tin metaux_pauvres metals" id = "" onclick="show_modal()">Sn</button>
+        <button class = "element antimony metalloid" id = "" onclick="show_modal()">Sb</button>
+        <button class = "element tellurium metalloid" id = "" onclick="show_modal()">Te</button>
+        <button class = "element iodine halogens non-metals" id = "" onclick="show_modal()">I</button>
+        <button class = "element xenon non-metals noble gas" id = "" onclick="show_modal()">Xe</button>
 
-        <button class = "element caesium alkali_metals" onclick="show_modal()">Cs</button>
-        <button class = "element barium alkaline_earth_metals" onclick="show_modal()">Ba</button>
+        <button class = "element caesium alkali_metals" id = "" onclick="show_modal()">Cs</button>
+        <button class = "element barium alkaline_earth_metals" id = "" onclick="show_modal()">Ba</button>
         <button class = "filler_btn-3 void_btn"></button>
-        <button class = "element hafnium transition-metals" onclick="show_modal()">Hf</button>
-        <button class = "element tantalum transition-metals" onclick="show_modal()">Ta</button>
-        <button class = "element tungsten wolfram transition-metals" onclick="show_modal()">W</button>
-        <button class = "element rhenium transition-metals" onclick="show_modal()">Re</button>
-        <button class = "element osmium transition-metals" onclick="show_modal()">Os</button>
-        <button class = "element iridium transition-metals" onclick="show_modal()">Ir</button>
-        <button class = "element platinum transition-metals" onclick="show_modal()">Pt</button>
-        <button class = "element gold transition-metals" onclick="show_modal()">Au</button>
-        <button class = "element mercury liquid transition-metals" onclick="show_modal()">Hg</button>
-        <button class = "element thallium metaux_pauvres metals" onclick="show_modal()">Ti</button>
-        <button class = "element lead metaux_pauvres metals" onclick="show_modal()">Pb</button>
-        <button class = "element bismuth metaux_pauvres metals" onclick="show_modal()">Bi</button>
-        <button class = "element polonium metaux_pauvres metals radioactive" onclick="show_modal()">Po</button>
-        <button class = "element astatine halogens metalloid radioactive" onclick="show_modal()">At</button>
-        <button class = "element radon non-metals noble gas radioactive" onclick="show_modal()">Rn</button>
+        <button class = "element hafnium transition-metals" id = "" onclick="show_modal()">Hf</button>
+        <button class = "element tantalum transition-metals" id = "" onclick="show_modal()">Ta</button>
+        <button class = "element tungsten wolfram transition-metals" id = "" onclick="show_modal()">W</button>
+        <button class = "element rhenium transition-metals" id = "" onclick="show_modal()">Re</button>
+        <button class = "element osmium transition-metals" id = "" onclick="show_modal()">Os</button>
+        <button class = "element iridium transition-metals" id = "" onclick="show_modal()">Ir</button>
+        <button class = "element platinum transition-metals" id = "" onclick="show_modal()">Pt</button>
+        <button class = "element gold transition-metals" id = "" onclick="show_modal()">Au</button>
+        <button class = "element mercury liquid transition-metals" id = "" onclick="show_modal()">Hg</button>
+        <button class = "element thallium metaux_pauvres metals" id = "" onclick="show_modal()">Ti</button>
+        <button class = "element lead metaux_pauvres metals" id = "" onclick="show_modal()">Pb</button>
+        <button class = "element bismuth metaux_pauvres metals" id = "" onclick="show_modal()">Bi</button>
+        <button class = "element polonium metaux_pauvres metals radioactive" id = "" onclick="show_modal()">Po</button>
+        <button class = "element astatine halogens metalloid radioactive" id = "" onclick="show_modal()">At</button>
+        <button class = "element radon non-metals noble gas radioactive" id = "" onclick="show_modal()">Rn</button>
 
-        <button class = "element francium alkali_metals radioactive" onclick="show_modal()">Fr</button>
-        <button class = "element radium alkaline_earth_metals radioactive" onclick="show_modal()">Ra</button>
-        <button class = "element rutherfordium radioactive transition-metals" onclick=
+        <button class = "element francium alkali_metals radioactive" id = "" onclick="show_modal()">Fr</button>
+        <button class = "element radium alkaline_earth_metals radioactive" id = "" onclick="show_modal()">Ra</button>
+        <button class = "element rutherfordium radioactive transition-metals" id = "rutherfordium" onclick=
             "show_modal('Rutherfordium', 104, '(226)', 2100, 5500, '1964 in the Soviet Union. Confirmed 1969, USA.', 
                 'named after Sir Ernest Rutherford', 'no data', 'block', 
                 'No element on the periodic table is named after an Australian.')">Rf</button>
-        <button class = "element dubnium radioactive transition-metals" onclick="show_modal()">Db</button>
-        <button class = "element seaborgium radioactive transition-metals" onclick="show_modal()">Sg</button>
-        <button class = "element bohrium radioactive transition-metals" onclick="show_modal()">Bh</button>
-        <button class = "element hassium radioactive transition-metals" onclick="show_modal()">Hs</button>
-        <button class = "element meitnerium radioactive transition-metals" onclick="show_modal()">Mt</button>
-        <button class = "element darmstadtium radioactive transition-metals" onclick="show_modal()">Ds</button>
-        <button class = "element roentgenium radioactive transition-metals" onclick="show_modal()">Rg</button>
-        <button class = "element copernicium radioactive transition-metals" onclick="show_modal()">Cn</button>
-        <button class = "element nihonium unknown radioactive" onclick="show_modal()">Nh</button>
-        <button class = "element flevorium unknown radioactive" onclick="show_modal()">Fl</button>
-        <button class = "element moscovium unknown radioactive " onclick="show_modal()">Mc</button>
-        <button class = "element livermorium unknown radioactive " onclick="show_modal()">Lv</button>
-        <button class = "element tennessine unknown radioactive " onclick="show_modal()">Ts</button>
-        <button class = "element oganesson unknown radioactive" onclick="show_modal()">Og</button>
+        <button class = "element dubnium radioactive transition-metals" id = "" onclick="show_modal()">Db</button>
+        <button class = "element seaborgium radioactive transition-metals" id = "" onclick="show_modal()">Sg</button>
+        <button class = "element bohrium radioactive transition-metals" id = "" onclick="show_modal()">Bh</button>
+        <button class = "element hassium radioactive transition-metals" id = "" onclick="show_modal()">Hs</button>
+        <button class = "element meitnerium radioactive transition-metals" id = "" onclick="show_modal()">Mt</button>
+        <button class = "element darmstadtium radioactive transition-metals" id = "" onclick="show_modal()">Ds</button>
+        <button class = "element roentgenium radioactive transition-metals" id = "" onclick="show_modal()">Rg</button>
+        <button class = "element copernicium radioactive transition-metals" id = "" onclick="show_modal()">Cn</button>
+        <button class = "element nihonium unknown radioactive" id = "" onclick="show_modal()">Nh</button>
+        <button class = "element flevorium unknown radioactive" id = "" onclick="show_modal()">Fl</button>
+        <button class = "element moscovium unknown radioactive " id = "" onclick="show_modal()">Mc</button>
+        <button class = "element livermorium unknown radioactive " id = "" onclick="show_modal()">Lv</button>
+        <button class = "element tennessine unknown radioactive " id = "" onclick="show_modal()">Ts</button>
+        <button class = "element oganesson unknown radioactive" id = "" onclick="show_modal()">Og</button>
 
         <button class = "lower void_btn"></button>
 
         <button class = "filler_btn-4 void_btn"></button>
         
-        <button class = "element lanthanum lanthanoid lanthanide metals" onclick="show_modal()">La</button>
-        <button class = "element cerium lanthanoid lanthanide metals" onclick="show_modal()">Ce</button>
-        <button class = "element praseodymium lanthanoid lanthanide metals" onclick="show_modal()">Pr</button>
-        <button class = "element neodymium lanthanoid lanthanide metals" onclick="show_modal()">Nd</button>
-        <button class = "element promethium radioactive lanthanoid lanthanide metals" onclick="show_modal()">Pm</button>
-        <button class = "element samarium lanthanoid lanthanide metals" onclick="show_modal()">Sm</button>
-        <button class = "element europium lanthanoid lanthanide metals" onclick="show_modal()">Eu</button>
-        <button class = "element gadolinium lanthanoid lanthanide metals" onclick="show_modal()">Gd</button>
-        <button class = "element terbium lanthanoid lanthanide metals" onclick="show_modal()">Tb</button>
-        <button class = "element dysprosium lanthanoid lanthanide metals" onclick="show_modal()">Dy</button>
-        <button class = "element holmium lanthanoid lanthanide metals" onclick="show_modal()">Ho</button>
-        <button class = "element erbium lanthanoid lanthanide metals" onclick="show_modal()">Er</button>
-        <button class = "element thulium lanthanoid lanthanide metals" onclick="show_modal()">Tm</button>
-        <button class = "element ytterbium lanthanoid lanthanide metals" onclick="show_modal()">Yb</button>
-        <button class = "element lutetium lanthanoid lanthanide metals" onclick="show_modal()">Lu</button>
+        <button class = "element lanthanum lanthanoid lanthanide metals" id = "" onclick="show_modal()">La</button>
+        <button class = "element cerium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Ce</button>
+        <button class = "element praseodymium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Pr</button>
+        <button class = "element neodymium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Nd</button>
+        <button class = "element promethium radioactive lanthanoid lanthanide metals" id = "" onclick="show_modal()">Pm</button>
+        <button class = "element samarium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Sm</button>
+        <button class = "element europium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Eu</button>
+        <button class = "element gadolinium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Gd</button>
+        <button class = "element terbium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Tb</button>
+        <button class = "element dysprosium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Dy</button>
+        <button class = "element holmium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Ho</button>
+        <button class = "element erbium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Er</button>
+        <button class = "element thulium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Tm</button>
+        <button class = "element ytterbium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Yb</button>
+        <button class = "element lutetium lanthanoid lanthanide metals" id = "" onclick="show_modal()">Lu</button>
         <button class = "void_btn"></button>
     
-        <button class = "element actinium radioactive actinoid actinide metals" onclick="show_modal()">Ac</button>
-        <button class = "element thorium radioactive actinoid actinide metals" onclick="show_modal()">Th</button>
-        <button class = "element protactinium radioactive actinoid actinide metals" onclick="show_modal()">Pa</button>
-        <button class = "element uranium radioactive actinoid actinide metals" onclick="show_modal()">U</button>
-        <button class = "element neptunium radioactive actinoid actinide metals" onclick="show_modal()">Np</button>
-        <button class = "element plutonium radioactive actinoid actinide metals" onclick="show_modal()">Pu</button>
-        <button class = "element americium radioactive actinoid actinide metals" onclick="show_modal()">Am</button>
-        <button class = "element curium radioactive actinoid actinide metals" onclick="show_modal()">Cm</button>
-        <button class = "element berkelium radioactive actinoid actinide metals" onclick="show_modal()">Bk</button>
-        <button class = "element californium radioactive actinoid actinide metals" onclick="show_modal()">Cf</button>
-        <button class = "element einsteinium radioactive actinoid actinide metals" onclick="show_modal()">Es</button>
-        <button class = "element fermium radioactive actinoid actinide metals" onclick="show_modal()">Fm</button>
-        <button class = "element medelevium radioactive actinoid actinide metals" onclick="show_modal()">Md</button>
-        <button class = "element nobelium radioactive actinoid actinide metals" onclick="show_modal()">No</button>
-        <button class = "element lawrencium radioactive actinoid actinide metals" onclick="show_modal()">Lr</button>
+        <button class = "element actinium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Ac</button>
+        <button class = "element thorium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Th</button>
+        <button class = "element protactinium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Pa</button>
+        <button class = "element uranium radioactive actinoid actinide metals" id = "" onclick="show_modal()">U</button>
+        <button class = "element neptunium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Np</button>
+        <button class = "element plutonium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Pu</button>
+        <button class = "element americium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Am</button>
+        <button class = "element curium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Cm</button>
+        <button class = "element berkelium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Bk</button>
+        <button class = "element californium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Cf</button>
+        <button class = "element einsteinium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Es</button>
+        <button class = "element fermium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Fm</button>
+        <button class = "element medelevium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Md</button>
+        <button class = "element nobelium radioactive actinoid actinide metals" id = "" onclick="show_modal()">No</button>
+        <button class = "element lawrencium radioactive actinoid actinide metals" id = "" onclick="show_modal()">Lr</button>
     </div>
 
     <div id = "element_pop-up" style = "display: none;"></div> 
