@@ -20,6 +20,15 @@ function search_function() {
             }
         }
     
+    } else if (query == "MET" || query == "META" || query == "METAL" || query == "METALS") {
+        const metals = document.getElementsByClassName("metals");
+        
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.opacity = "25%";
+        }
+        for (var j = 0; j < metals.length; j++) {
+            metals[j].style.opacity = "100%";
+        }
     } else {
         for (var i = 0; i < elements.length; i++) {
 
@@ -78,6 +87,9 @@ function show_modal(elmt_nm = 'Element', atmc_num = 'X', atmc_mss = 'Y', MP = 0,
         text_colour = "white";
     } else if (group == "actinoid") {
         fill_colour = "#000099";
+        text_colour = "white";
+    } else if ( group == "unknown") {
+        fill_colour = "rgb(73, 73, 73)";
         text_colour = "white";
     } else {
         fill_colour = "#fbff00";
