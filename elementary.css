@@ -109,13 +109,15 @@ h3 {
     border: none;
     border-radius: 10px;
     font-size: 25px;
-    transition-duration: 0.25s;
+    transition-duration: 0.2s;
 }
 
 .element:hover {
     background-color: white;
-    color: #fbff00;
-    border-radius: 0px;
+    color: rgb(92, 59, 10);
+    transform: translate(-4px, -4px);
+    width: 58px;
+    height: 58px;
 }
 
 .liquid {
@@ -126,34 +128,34 @@ h3 {
     background-color: red;
     color: white;
 }
-.alkali_metals:hover { color: red; }
+.alkali_metals:hover { color: rgb(201, 0, 0); }
 
 .alkaline_earth_metals {
     background-color: rgb(168, 56, 11);
     color: white;
 }
-.alkaline_earth_metals:hover { color: rgb(255, 94, 0); }
+.alkaline_earth_metals:hover { color: rgb(110, 37, 9); }
 
 .metaux_pauvres {
     background-color: rgb(0, 207, 0);
 }
-.metaux_pauvres:hover { color: #80FF00; }
+.metaux_pauvres:hover { color: rgb(0, 133, 0); }
 
 .metalloid {
     background-color: rgb(0, 179, 95);
 }
-.metalloid:hover { color: rgb(255, 187, 0); }
+.metalloid:hover { color: rgb(0, 121, 64); }
 
 .non-metals {
     background-color: #9966ff;
 }
-.non-metals:hover { color: #9966ff; }
+.non-metals:hover { color: #5e4099; }
 
 .noble {
     background-color: rgb(171, 0, 187);
     color: white;    
 }
-.noble:hover { color: rgb(199, 0, 156); }
+.noble:hover { color: rgb(126, 0, 98); }
 
 .lanthanoid {
     background-color: #5900b3;
@@ -171,7 +173,7 @@ h3 {
     background-color: rgb(68, 68, 68);
     color: white;
 }
-.unknown:hover { color: rgb(194, 194, 194); }
+.unknown:hover { color: rgb(34, 34, 34); }
 
 .modal_content {
     margin:auto;
@@ -287,6 +289,7 @@ h3 {
 #search_type_grid > button:hover {
     color: black;
     background-color: white;
+    cursor: pointer;
 }
 
 #search_type_grid > button:active {

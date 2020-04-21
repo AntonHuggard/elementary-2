@@ -1,13 +1,17 @@
 function search_function() {
 
+    // getting the user search query
     const query = document.getElementById("element_io").value.toUpperCase();
 
+    // this gets called at the end of this function, it's to see whether parts of class 
+    // names match the user input.
     function check_query(q) {
         return q.includes(query);
     }
     
     var elements = document.getElementsByClassName("element");
-    
+
+    // searching by chemical symbol
     if (query.length < 3) {
         for (var i = 0; i < elements.length; i++) {
 
@@ -19,7 +23,7 @@ function search_function() {
                 elements[i].style.opacity = "100%";
             }
         }
-    
+    // making sure the user is after metals and **not** metalloids or nonmetals
     } else if (query == "MET" || query == "META" || query == "METAL" || query == "METALS") {
         const metals = document.getElementsByClassName("metals");
         
@@ -29,9 +33,11 @@ function search_function() {
         for (var j = 0; j < metals.length; j++) {
             metals[j].style.opacity = "100%";
         }
+    // if it's not by symbol & it's not a metal, then it's free to search everything else
     } else {
         for (var i = 0; i < elements.length; i++) {
 
+            // hide everything and only display elements that match the query
             elements[i].style.opacity = "25%";
 
             const attributes = elements[i].className.toUpperCase().split(" ");
@@ -44,7 +50,7 @@ function search_function() {
     }
 }
 
-
+// when the user clicks on an element tile, this function creates the pop-up window
 function show_modal(elmt_nm = 'Element', atmc_num = 'X', atmc_mss = 'Y', MP = 0, BP = 0, 
                 discvry = 'UNKNOWN', etym = 'from the Latin Elementum', EN = 'no data', display_radioactive = 'none',
                 details = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac libero ut enim accumsan maximus id ut nisl. Etiam placerat magna ac ante varius pretium. Cras in metus nec risus pharetra semper.'
@@ -61,10 +67,8 @@ function show_modal(elmt_nm = 'Element', atmc_num = 'X', atmc_mss = 'Y', MP = 0,
         const classes = document.getElementById(element_name_lower).className.toUpperCase().split(" ");
         group = classes[2].toLowerCase();
     }
-
-    
-    
-    // style stored outside html doesn't seem to be accessible
+   
+    // style stored outside html doesn't seem to be accessible ... hard-coded element colours. Not ideal.
     var fill_colour;
     var text_colour = "black";
     if (group == "alkali_metals") {
@@ -95,6 +99,8 @@ function show_modal(elmt_nm = 'Element', atmc_num = 'X', atmc_mss = 'Y', MP = 0,
         fill_colour = "#fbff00";
     }
 
+    // the svg to draw the full element tile with name, symbol, number & mass is stored as a string
+    // this appears in the modal pop-up
     const svg_code = `
     <svg class = "item3" width="100%" height="300">
         <style>
@@ -113,7 +119,10 @@ function show_modal(elmt_nm = 'Element', atmc_num = 'X', atmc_mss = 'Y', MP = 0,
         <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="chemical_symbol">${elmt_code}</text>
         <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" class="number">${atmc_mss}</text>
     </svg>`;
-    
+
+    // html for the modal pop-up stored as a string
+    // below the radioactive grid-position, there's an unoccupied spot
+    // this was intended to be for state at standard conditions
     const modal_code = 
     `<div class = "modal_content">
         <div class = "grid-container">
@@ -138,7 +147,15 @@ function show_modal(elmt_nm = 'Element', atmc_num = 'X', atmc_mss = 'Y', MP = 0,
 
 }
 
-var toggle_all = false;
+
+// this is to select the search-type -- dictated by the buttons below the search bar
+// default behaviour for user entering a number ((should)) be to display atomic number
+// however, if they want to search by boiling point, they should be able to type "above 56c" and see the 
+// result for discovery the user should be able to type in 1885 and see neodymium 
+// BUT ... for default search, there is no element 1885, so it shouldn't return anything
+// unclear to users at the moment exactly how they can search
+
+// declaring global variables for the search-option function
 var selected;
 var prev_selected = "nothing lol";
 
@@ -149,47 +166,57 @@ function display_toggle(btn) {
     switch (btn) {
         case "EN_btn":
             selected = "EN";
+            document.getElementById("element_io").placeholder = "(above/below) value, highest, lowest...";
             break;
         case "MP_btn":
             selected = "MP";
+            document.getElementById("element_io").placeholder = "(above/below) temp...";
             break;
         case "BP_btn":
             selected = "BP";
+            document.getElementById("element_io").placeholder = "(above/below) temp...";
             break;
         case "DS_btn":
             selected = "DS";
+            document.getElementById("element_io").placeholder = "(before/after) year...";
             break;
     }
-    // alert(selected);
-    document.getElementById("EN_btn").style.backgroundColor = "transparent";
-    document.getElementById("EN_btn").style.color = "white";
-    document.getElementById("MP_btn").style.backgroundColor = "transparent";
-    document.getElementById("MP_btn").style.color = "white";
-    document.getElementById("BP_btn").style.backgroundColor = "transparent";
-    document.getElementById("BP_btn").style.color = "white";
-    document.getElementById("DS_btn").style.backgroundColor = "transparent";
-    document.getElementById("DS_btn").style.color = "white";
 
-    document.getElementById(btn).style.backgroundColor = "white";
-    document.getElementById(btn).style.color = "black";
+    // perviously, I made clicking on a button change its style, however this overwrites the css
+    // hover style which is no good. I have favoured hover over clicking at the moment
+    // still trying to find a solution to this ...
 
+
+    // document.getElementById("EN_btn").style.backgroundColor = "transparent";
+    // document.getElementById("EN_btn").style.color = "white";
+    // document.getElementById("MP_btn").style.backgroundColor = "transparent";
+    // document.getElementById("MP_btn").style.color = "white";
+    // document.getElementById("BP_btn").style.backgroundColor = "transparent";
+    // document.getElementById("BP_btn").style.color = "white";
+    // document.getElementById("DS_btn").style.backgroundColor = "transparent";
+    // document.getElementById("DS_btn").style.color = "white";
+
+    // document.getElementById(btn).style.backgroundColor = "white";
+    // document.getElementById(btn).style.color = "black";
+
+    var elements = document.getElementsByClassName("element");
+
+    // if the user clicks on an already selected button, it goes back to default search & restores opacity
     if (prev_selected == selected) {
-        document.getElementById(btn).style.backgroundColor = "transparent";
-        document.getElementById(btn).style.color = "white";
+        // document.getElementById(btn).style.backgroundColor = "transparent";
+        // document.getElementById(btn).style.color = "white";
         prev_selected = "nothing lol";
+        document.getElementById("element_io").placeholder = "Search elements...";
+        
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.opacity = "100%";
+        }
+    // if the user
     } else {
         prev_selected = selected;
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].style.opacity = "15%";
+        }
     }
     
-}
-
-function search_type(elmt_id) {    
-    toggle_all = !(toggle_all);
-    display_toggle(elmt_id);
-    var elements = document.getElementsByClassName("element");
-    for (var i = 0; i < elements.length; i++) {
-        if (toggle_all) elements[i].style.opacity = "15%";
-        else elements[i].style.opacity = "100%";
-    }
-
 }
