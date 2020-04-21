@@ -137,3 +137,59 @@ function show_modal(elmt_nm = 'Element', atmc_num = 'X', atmc_mss = 'Y', MP = 0,
     document.getElementById('element_pop-up').style.display = "block" ;
 
 }
+
+var toggle_all = false;
+var selected;
+var prev_selected = "nothing lol";
+
+function display_toggle(btn) {
+    if (prev_selected != "nothing lol") {
+        prev_selected = selected;
+    }
+    switch (btn) {
+        case "EN_btn":
+            selected = "EN";
+            break;
+        case "MP_btn":
+            selected = "MP";
+            break;
+        case "BP_btn":
+            selected = "BP";
+            break;
+        case "DS_btn":
+            selected = "DS";
+            break;
+    }
+    // alert(selected);
+    document.getElementById("EN_btn").style.backgroundColor = "transparent";
+    document.getElementById("EN_btn").style.color = "white";
+    document.getElementById("MP_btn").style.backgroundColor = "transparent";
+    document.getElementById("MP_btn").style.color = "white";
+    document.getElementById("BP_btn").style.backgroundColor = "transparent";
+    document.getElementById("BP_btn").style.color = "white";
+    document.getElementById("DS_btn").style.backgroundColor = "transparent";
+    document.getElementById("DS_btn").style.color = "white";
+
+    document.getElementById(btn).style.backgroundColor = "white";
+    document.getElementById(btn).style.color = "black";
+
+    if (prev_selected == selected) {
+        document.getElementById(btn).style.backgroundColor = "transparent";
+        document.getElementById(btn).style.color = "white";
+        prev_selected = "nothing lol";
+    } else {
+        prev_selected = selected;
+    }
+    
+}
+
+function search_type(elmt_id) {    
+    toggle_all = !(toggle_all);
+    display_toggle(elmt_id);
+    var elements = document.getElementsByClassName("element");
+    for (var i = 0; i < elements.length; i++) {
+        if (toggle_all) elements[i].style.opacity = "15%";
+        else elements[i].style.opacity = "100%";
+    }
+
+}

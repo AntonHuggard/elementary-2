@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>Elementary </title>
+    <link rel="icon" href="rf.png" />
     <link rel="stylesheet" href="elementary.css" />
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
     <script src = "elementary.js"></script>    
@@ -27,11 +28,17 @@
         <input type = "text" id = "element_io" onkeyup="search_function()" placeholder="Search elements... " style = "float: left;">
         <img src="mgnf_glss_gry.png" />
     </div>    
+    <div id = "search_type_grid" class = "centre" style = "border: none">
+        <button id = "EN_btn" onclick = "search_type('EN_btn')">electronegativity</button>
+        <button id = "BP_btn" onclick = "search_type('BP_btn')">boiling point</button>
+        <button id = "MP_btn" onclick = "search_type('MP_btn')">melting point</button>
+        <button id = "DS_btn" onclick = "search_type('DS_btn')">discovery</button>
+    </div>
 
     </div>
     
     <div class = "periodic_table centre" style = "width: 1000px; height: 525; padding-top: 15px;">
-        <button class = "element hydrogen alkali_metals s-block non-metals " id = "hydrogen" onclick = 
+        <button class = "element hydrogen alkali_metals s-block non-metals gas " id = "hydrogen" onclick = 
             "show_modal('Hydrogen', 1, 1.008, -259.16, -252.879, 
                         '1766 by Henry Cavendish', 'from greek, <em>water-former</em>', '2.20', 'none', 
                         'One reliable proton with a trusty electron. She ain\'t much but she gets the job done.')">H</button>

@@ -261,4 +261,40 @@ h3 {
 }
 #hydrogen:hover { 
     background-color: white;
-    color: red; }
+    color: red; 
+}
+
+#search_type_grid {
+    width: 60%;
+    max-width: 700px;
+    display: grid;    
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-gap: 5px;
+    border-bottom: 20px;
+}
+#search_type_grid > button {
+    color: white;
+    font-family: 'Sen', sans-serif;
+    text-align: center; 
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
+#search_type_grid > button:hover {
+    color: black;
+    background-color: white;
+}
+
+#search_type_grid > button:active {
+    transform: translateY(2px);
+}
+
+@media only screen and (max-width: 940px) {
+    #search_type_grid {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
