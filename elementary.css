@@ -104,7 +104,8 @@ h3 {
     width: 50px;
     height: 50px;
     outline: none;
-    background-color: #fbff00;
+    background-color: rgb(182, 115, 15);
+    color: white;
     border: none;
     border-radius: 10px;
     font-size: 25px;
@@ -128,25 +129,25 @@ h3 {
 .alkali_metals:hover { color: red; }
 
 .alkaline_earth_metals {
-    background-color: #9966ff;
+    background-color: rgb(168, 56, 11);
     color: white;
 }
-.alkaline_earth_metals:hover { color: #9966ff; }
+.alkaline_earth_metals:hover { color: rgb(255, 94, 0); }
 
 .metaux_pauvres {
-    background-color: #80FF00;
+    background-color: rgb(0, 207, 0);
 }
 .metaux_pauvres:hover { color: #80FF00; }
 
 .metalloid {
-    background-color: rgb(255, 187, 0);
+    background-color: rgb(0, 179, 95);
 }
 .metalloid:hover { color: rgb(255, 187, 0); }
 
 .non-metals {
-    background-color: cyan;
+    background-color: #9966ff;
 }
-.non-metals:hover { color: cyan; }
+.non-metals:hover { color: #9966ff; }
 
 .noble {
     background-color: rgb(171, 0, 187);
@@ -167,7 +168,7 @@ h3 {
 .actinoid:hover { color: #000099; }
 
 .unknown {
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(68, 68, 68);
     color: white;
 }
 .unknown:hover { color: rgb(194, 194, 194); }
