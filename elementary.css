@@ -1,4 +1,11 @@
+body {
+    margin: 0px;
+    background-color: rgb(63, 163, 245);
+}
+
 h1 {
+    margin:0;
+    padding:0;
     font-family: 'Sen', sans-serif;
     text-align: center; 
     color: white; 
@@ -20,26 +27,30 @@ h3 {
     color: white; 
     font-size: 30px;
     font-weight: normal;
+    margin-top:0;
 }
 
 .centre {
     margin: auto;
     border: 3px solid white;
     border-radius: 30px;
-    padding: 10px;
+    padding: 25px 0px;
     transition: width 1s;
 }
 
-
-.element_search_container {
-    width: 60%;
+#element_search_container {
+    width: 90%;
     max-width: 700px;
     display: grid;
     grid-template-columns: auto 55px;
     grid-template-rows: 50px;    
+    padding-bottom: 0px;
 }
 
-.element_search_container > input[type=text] {
+#element_search_container > input[type=text] {
+    min-width: 150px;
+    max-width: 645px;
+    height: 50px;
     grid-column: 1;
     border: none;
     border-radius: 25px 0px 0px 25px;
@@ -48,10 +59,10 @@ h3 {
     font-size: 20px;
 }
 
-.element_search_container > img {
+#element_search_container > img {
     grid-column: 2;
     height: 40px;
-    background-color: white; /* rgb(233, 219, 219);*/
+    background-color: white;
     padding-top: 5px;
     padding-bottom: 5px;;
     padding-left: 5px;
@@ -59,133 +70,136 @@ h3 {
     border-radius: 0px 25px 25px 0px;
 }
 
+#search_type_accordian {
+    width: 90%;
+    max-width: 700px;
+    padding: 10px 0px;
+}
+.accordion {
+    display: none;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-family: 'Sen', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 25px;
+    padding: 10px;
+}
+#acc_dt {
+    display: block;
+}
+.active {
+    border-radius: 25px 25px 0px 0px;
+    background-color: white;
+    color: black;
+} 
 
-.periodic_table {
-    display: grid;
-    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 25px 50px 50px;
-    grid-gap: 5px;
-    justify-content: center;
+.accordion:hover {
+    background-color: white;
+    color: black;
 }
 
-.filler_btn-1 {
-    grid-row: 1;
-    grid-column: 2 / span 16;
+.panel {
+    background-color: transparent;
+    font-family: 'Sen', sans-serif;
+    font-size: 20px;
+    display: none;
+    overflow: hidden;
+    border: 3px solid white;
+    border-top: none;
+    border-radius: 0px 0px 25px 25px;
+}
+.panel > div {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.panel > div:hover  {
+    background-color: white;
+    color: black;
+}
+#search_type_grid {
+    display: none;
 }
 
-.filler_btn-2 {
-    grid-row: 2 / span 2;
-    grid-column: 3 / span 10;
+.slider_div {
+    display: none;
+    max-width: 700px;
+    width: 90%;
+    margin: auto;
 }
-
-.filler_btn-3 {
-    grid-row: 6 / span 2;
-    grid-column: 3;
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    border-radius: 15px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.466);
 }
-
-.filler_btn-4 {
-    grid-row: 9 / span 2;
-    grid-column: 1 / span 2;
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 40px; /* Set a specific slider handle width */
+    height: 40px; /* Slider handle height */
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
 }
-
-.lower {
-    grid-column: 1 / span 18;
-}
-
-.grid_container > button {
-    padding: 0px 2px 0px 0px;
-}
-
-.void_btn {
-    opacity: 0%;
+.slider::-moz-range-thumb {
+    width: 40px; /* Set a specific slider handle width */
+    height: 40px; /* Slider handle height */
+    border: none;
+    background: white;
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%;
+  }
+.slider_div > p {
+    background-color: transparent;
+    font-family: 'Sen', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 5px 0px;
 }
 
 .element {
-    width: 50px;
-    height: 50px;
-    outline: none;
-    background-color: rgb(182, 115, 15);
-    color: white;
     border: none;
-    border-radius: 10px;
-    font-size: 25px;
-    transition-duration: 0.2s;
-}
-
-.element:hover {
-    background-color: white;
-    color: rgb(92, 59, 10);
-    transform: translate(-4px, -4px);
-    width: 58px;
-    height: 58px;
-}
-
-.liquid {
-    border: 3px solid white;
-}
-
-.alkali_metals {
-    background-color: red;
+    border-radius: 5px;
+    padding: 10px 0px;
     color: white;
 }
-.alkali_metals:hover { color: rgb(201, 0, 0); }
 
-.alkaline_earth_metals {
-    background-color: rgb(168, 56, 11);
-    color: white;
+#periodic_table {
+    width: 98%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 2px;
+    margin-bottom: 50px;
 }
-.alkaline_earth_metals:hover { color: rgb(110, 37, 9); }
-
-.metaux_pauvres {
-    background-color: rgb(0, 207, 0);
+#periodic_table > button {
+    display: none;
+    background-color: blue;
 }
-.metaux_pauvres:hover { color: rgb(0, 133, 0); }
-
-.metalloid {
-    background-color: rgb(0, 179, 95);
+#periodic_table > .first {
+    display: block; 
 }
-.metalloid:hover { color: rgb(0, 121, 64); }
-
-.non-metals {
-    background-color: #9966ff;
+#periodic_table > #filler_btn-1 {
+    display: block;
+    grid-row: 1;
+    grid-column: 2 / span 6;
+    opacity: 0;
 }
-.non-metals:hover { color: #5e4099; }
-
-.noble {
-    background-color: rgb(171, 0, 187);
-    color: white;    
-}
-.noble:hover { color: rgb(126, 0, 98); }
-
-.lanthanoid {
-    background-color: #5900b3;
-    color: white;
-}
-.lanthanoid:hover { color: #5900b3; }
-
-.actinoid {
-    background-color: #000099;
-    color: white;
-}
-.actinoid:hover { color: #000099; }
-
-.unknown {
-    background-color: rgb(68, 68, 68);
-    color: white;
-}
-.unknown:hover { color: rgb(34, 34, 34); }
-
-.modal_content {
-    margin:auto;
-    position:relative;
-    padding:10px;
-    outline:0;
-    width: 719px;
-    border-radius: 15px;
-    background-color:rgb(22, 54, 114);
-    color: white;
-    border:4px solid white;
-    font-family: 'Rubik', sans-serif;
+#periodic_table > #hydrogen {
+    grid-row: 1;
+    grid-column: 1;
 }
 
 #element_pop-up {
@@ -199,106 +213,313 @@ h3 {
     background-color:rgba(0,0,0,0.2);
     
 }
-
-
-.grid-container {
-    display: inline-grid;
-    width: 705px;
-    height: 375px;
-    grid-template-columns: 30% 52% 11%;
-    /* grid-template-columns lets you say how wide 
-        & the number of columns. If you want two columns,
-        then enter two values. If you want them to be a
-        specific width, enter the number of pixels.
-        */
-    grid-template-rows: 12% 17% 30% 32%;
-    grid-gap: 3%;
-    padding: 10px;
-}
-
-.item1 {
-    grid-column: 1 / span 2;
-    font-size: 40px;
+.modal_content {
+    width: 100%;
+    margin: auto;
+    border-radius: 30px;
+    background-color: white;
     font-family: 'Sen', sans-serif;
-    color: white;
+    color: rgb(63, 163, 245);
+}
+.grid-container {
+    display: grid;
+    width: 96%;
+    padding: 2%;
+    grid-template-columns: 1fr 50px;
+    grid-gap: 5px;
+}
+.item1 {
+    grid-column: 1;
+    font-size: 40px;
     padding-left: 30px;
 }
 .item2 {
-    grid-column: 3;
-    color: white;
+    grid-column: 2;
     background-color: transparent;
-    border: none;
     font-size: 27px;
-    border-radius: 20px;
-    outline: none;
-    float: right;
+    width: 50px;
+    color: white;
+    border:3px solid rgb(41, 142, 224);
+    background-color: rgb(63, 163, 245);
+    border-radius: 50%;
 }
-.item2:hover {
-    background-color: rgb(233, 0, 0);
-}
-
 .item3 {
-    grid-row: 2 / span 3;
-    width: 100%;
+    display: none;
 }
 .item4 {
-    grid-row: 2 / span 2;
+    font-size: 20px;
+    grid-column: 1 / span 2;
+    text-align: center;
 }
 .item5 {
-    grid-row: 2;
-    width: 80px;
-    border-radius: 50px;
+    display: none;
 }
 .item6 {
-    grid-row: 3;
-    grid-column: 3;
-    opacity: 0;
+    display: none;
 }
 .item7 {
-    grid-column: 2 / span 2;
-}
-
-#hydrogen {
-    background-color: red;
-    color: white;
-}
-#hydrogen:hover { 
-    background-color: white;
-    color: red; 
-}
-
-#search_type_grid {
-    width: 60%;
-    max-width: 700px;
-    display: grid;    
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-gap: 5px;
-    border-bottom: 20px;
-}
-#search_type_grid > button {
-    color: white;
-    font-family: 'Sen', sans-serif;
-    text-align: center; 
-    background-color: transparent;
+    grid-column: 1 / span 2;
     padding: 10px;
-    outline: none;
-    border: 3px solid white;
-    border-radius: 30px;
 }
 
-#search_type_grid > button:hover {
-    color: black;
-    background-color: white;
-    cursor: pointer;
-}
 
-#search_type_grid > button:active {
-    transform: translateY(2px);
-}
-
-@media only screen and (max-width: 940px) {
-    #search_type_grid {
+@media only screen and (min-width: 330px) {
+    #periodic_table {
+        width: 98%;
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: repeat(9, 1fr);
+        grid-gap: 4px;
+    }
+    #periodic_table > button {
+        display: none;
+        background-color: red;
+    }
+    .centre {
+        padding: 30px 0px;
+    }
+    .element {
+        padding: 10px 0px;
+    }
+    
+    #periodic_table > .first {
+        display: block;
+    }
+    #periodic_table > #filler_btn-1 {
+        display: block;
+        grid-row: 1;
+        grid-column: 2 / span 7;
+        opacity: 0;
+    }
+    #periodic_table > #filler_btn-2 {
+        display: block;
+        grid-row: 2 / span 2;
+        grid-column: 3;
+        opacity: 0;
+    }
+    #periodic_table > #filler_btn-3 {
+        display: block;
+        grid-column: 3 / span 7;
+        grid-row: 6 / span 2;
+        opacity: 0;
+    }
+    #periodic_table > #filler_btn-4 {
+        display: block;
+        grid-column: 1 / span 2;
+        grid-row: 7;
+        height: 15px;
+        opacity: 0;
+    }
+    #periodic_table > .second {
+        display: block;
+    }
+    #periodic_table > .transition_metal {
+        display: block;
+    
+    }
+}
+
+@media only screen and (min-width: 460px) {
+    .centre {
+        padding: 30px 15px;
+    }
+    .element {
+        padding: 12px 0px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    body {
+        margin: 0px;
+        background-image: radial-gradient(#66c2ff, #4585fc);
+    }
+
+    .centre {
+        padding: 30px 0px;
+    }
+    .element {
+        font-size: 16px;
+        padding: 10px 0px;
+    }
+
+    #periodic_table {
+        width: 98%;
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
+        grid-gap: 2px;
+    }
+    #periodic_table > button {
+        display: block;
+        background-color: green;
+    }
+    #periodic_table > #filler_btn-1 {
+        grid-row: 1;
+        grid-column: 2 /span 16;
+    }
+    #periodic_table > #filler_btn-2 {
+        grid-row: 2 / span 2;
+        grid-column: 3 / span 10;
+    }
+    #periodic_table > #filler_btn-3 {
+        grid-row: 6 / span 2;
+        grid-column: 3;
+    }
+    #periodic_table > #filler_btn-4 {
+        grid-row: 8;
+        grid-column: 1 / span 18;
+    }
+    #periodic_table > .filler_btn-5 {
+        grid-row: 9 / span 2;
+        grid-column: 1 / span 3;
+        opacity: 0;
+    }
+}
+@media only screen and (min-width: 740px) {
+    .modal_content {
+        width: 720px;
+        border-radius: 30px;
+        background-color:rgb(22, 54, 114);
+        color: white;
+        border:4px solid white;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .grid-container {
+        display: grid;
+        width: 710px;
+        grid-template-columns: 250px 1fr 100px;
+        grid-gap: 5px;
+        margin: 5px;
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+
+    .item1 {
+        grid-column: 1 / span 2;
+        font-size: 40px;
+        font-family: 'Sen', sans-serif;
+        color: white;
+        padding-left: 50px;
+    }
+    .item2 {
+        grid-column: 3;
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-size: 27px;
+        border-radius: 20px;
+        outline: none;
+        margin-left: 10%;
+        width: 80%;
+    }
+    .item2:hover {
+        background-color: rgb(233, 0, 0);
+    }
+    
+    .item3 {
+        display: block;
+        grid-row: 2 / span 2;
+        padding-left: 20px;
+        width: 230px;
+    }
+    .item4 {
+        grid-column: 2;
+        grid-row: 2;
+        text-align: left;
+        font-size: 17px;
+        padding-left: 10px;
+    }
+    .item5 {
+        display: block;
+        grid-column: 3;
+        grid-row: 2;
+        width: 80px;
+        border-radius: 50px;
+        margin-left: 10px;
+    }
+    .item6 {
+        grid-row: 3;
+        grid-column: 3;
+        opacity: 0;
+    }
+    .item7 {
+        grid-column: 2 / span 2;
+    }
+}
+@media only screen and (min-width: 800px) {
+    #periodic_table {
+        grid-gap: 3px;
+    }
+    .element {
+        font-size: 18px;
+    }
+
+    #search_type_accordian {
+        display: none;
+    }
+
+    #search_type_grid {
+        width: 90%;
+        max-width: 700px;
+        display: grid;    
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        margin-bottom: 0px;
+    }
+    #search_type_grid > button {
+        color: white;
+        font-family: 'Sen', sans-serif;
+        font-size: 17px;
+        text-align: center; 
+        background-color: transparent;
+        padding: 10px;
+        outline: none;
+        border: 3px solid white;
+        border-radius: 30px;
+    }
+    
+    #search_type_grid > button:hover {
+        color: black;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+    #search_type_grid > button:active {
+        transform: translateY(2px);
+    }
+
+    #search_type_grid > .selected {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    #periodic_table {
+        grid-gap: 4px;
+    }
+    .centre {
+        padding: 20px 7px;
+    }
+    .element {
+        padding: 10px 0px;
+        border-radius: 7px;
+        font-size: 20px;
+        
+    }
+}
+
+@media only screen and (min-width: 1035px) {
+    .centre {
+        padding: 20px;
+    }
+    .element {
+        border-radius: 10px;
+        font-size: 25px;
+    }
+    #periodic_table {
+        max-width: 970px;
+        grid-gap: 5px;
     }
 }
