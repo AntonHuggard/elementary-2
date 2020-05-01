@@ -20,6 +20,49 @@ function search() {
                 html_elements[i].style.opacity = "100%";
             }
         }
+    } else if (query == "GAS") {
+        elements.forEach(element => {
+            if (element.state_at_standard_conditions == 'gas') {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query == "LIQUID") {
+        elements.forEach(element => {
+            if (element.state_at_standard_conditions == 'liquid') {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query == "SOLID") {
+        elements.forEach(element => {
+            if (element.state_at_standard_conditions == 'solid') {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query == "METAL") {
+        elements.forEach(element => {
+            if (element.metalness == 'metal') {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query == "METALLOID") {
+        elements.forEach(element => {
+            if (element.metalness == 'metalloid') {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query == "NONMETAL") {
+        elements.forEach(element => {
+            if (element.metalness == 'metal') {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else {
+        elements.forEach(element => {
+            const this_guys_name = element.name.toUpperCase();
+            if (this_guys_name.includes(query)) {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
     }
     
 }
