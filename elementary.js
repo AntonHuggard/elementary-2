@@ -20,7 +20,6 @@ function search() {
                 html_elements[i].style.opacity = "100%";
             }
         }
-        
     }
     
 }
@@ -242,6 +241,12 @@ function show_modal(obj) {
         <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" class="number">${atmc_mss}</text>
     </svg>`;
 
+    var radioact_visibility = "none";
+
+    if (radioactivity) {
+        radioact_visibility = "block";
+    }
+
     // html for the modal pop-up
     const modal_code = 
     `<div class = "modal_content">
@@ -255,7 +260,7 @@ function show_modal(obj) {
                 Boiling Point: <strong>${bp}</strong> <sup>o</sup>C <br> Electronegativity: <strong>${elc_ngty}</strong> <br>
                 Discovered: ${discvry} <br> Etymology: ${etym} <br> <br>
             </div>
-            <img class = "item5" src ="radioactv.png" style = "display:${radioactivity}">
+            <img class = "item5" src ="radioactv.png" style = "display:${radioact_visibility}">
             <button class = "item6">6</button>
             <div class = "item7">
                 ${descr}
