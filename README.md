@@ -10,5 +10,10 @@ The Searchable Periodic Table.
 Find elements by by name, chemical symbol or property.
 
 
+Credits:
 
 
+Wikipedia: Source of all knowledge
+
+
+Consultant: Ben (github.com/mirlington)
