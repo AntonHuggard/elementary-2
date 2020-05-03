@@ -313,8 +313,26 @@ h3 {
     }
     #periodic_table > .transition_metal {
         display: block;
-    
     }
+    #titanium   { grid-row: 8; grid-column: 1; }
+    #vanadium   { grid-row: 8; grid-column: 2; }
+    #chromium   { grid-row: 8; grid-column: 3; }
+    #manganese  { grid-row: 8; grid-column: 4; }
+    #iron       { grid-row: 8; grid-column: 5; }
+    #cobalt     { grid-row: 8; grid-column: 6; }
+    #nickel     { grid-row: 8; grid-column: 7; }
+    #copper     { grid-row: 8; grid-column: 8; }
+    #zinc       { grid-row: 8; grid-column: 9; }
+
+    #zirconium  { grid-row: 9; grid-column: 1; }
+    #niobium    { grid-row: 9; grid-column: 2; }
+    #molybdenum { grid-row: 9; grid-column: 3; }
+    #technetium { grid-row: 9; grid-column: 4; }
+    #ruthenium  { grid-row: 9; grid-column: 5; }
+    #rhodium    { grid-row: 9; grid-column: 6; }
+    #palladium  { grid-row: 9; grid-column: 7; }
+    #silver     { grid-row: 9; grid-column: 8; }
+    #cadmium    { grid-row: 9; grid-column: 9; }
 }
 
 @media only screen and (min-width: 460px) {
@@ -373,6 +391,25 @@ h3 {
         grid-column: 1 / span 3;
         opacity: 0;
     }
+    #titanium   { grid-row: 4; grid-column: 4; }
+    #vanadium   { grid-row: 4; grid-column: 5; }
+    #chromium   { grid-row: 4; grid-column: 6; }
+    #manganese  { grid-row: 4; grid-column: 7; }
+    #iron       { grid-row: 4; grid-column: 8; }
+    #cobalt     { grid-row: 4; grid-column: 9; }
+    #nickel     { grid-row: 4; grid-column: 10; }
+    #copper     { grid-row: 4; grid-column: 11; }
+    #zinc       { grid-row: 4; grid-column: 12; }
+
+    #zirconium  { grid-row: 5; grid-column: 4; }
+    #niobium    { grid-row: 5; grid-column: 5; }
+    #molybdenum { grid-row: 5; grid-column: 6; }
+    #technetium { grid-row: 5; grid-column: 7; }
+    #ruthenium  { grid-row: 5; grid-column: 8; }
+    #rhodium    { grid-row: 5; grid-column: 9; }
+    #palladium  { grid-row: 5; grid-column: 10; }
+    #silver     { grid-row: 5; grid-column: 11; }
+    #cadmium    { grid-row: 5; grid-column: 12; }
 }
 @media only screen and (min-width: 740px) {
     .modal_content {
