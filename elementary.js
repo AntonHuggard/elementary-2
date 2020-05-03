@@ -301,6 +301,7 @@ function show_modal(obj) {
                 Atomic Number: <strong>${atmc_num}</strong> <br> Relative Atomic Mass: <strong>${atmc_mss}</strong> <br> 
                 Melting Point: <strong>${mp}</strong> <sup>o</sup>C <br>
                 Boiling Point: <strong>${bp}</strong> <sup>o</sup>C <br> Electronegativity: <strong>${elc_ngty}</strong> <br>
+                <div class="mobile_radioactive_indictaion">Radioactive: ${radioactivity}</div>
                 Discovered: ${discvry} <br> Etymology: ${etym} <br> <br>
             </div>
             <img class = "item5" src ="radioactv.png" style = "display:${radioact_visibility}">

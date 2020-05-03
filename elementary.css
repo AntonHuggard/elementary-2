@@ -262,7 +262,6 @@ h3 {
     padding: 10px;
 }
 
-
 @media only screen and (min-width: 330px) {
     #periodic_table {
         width: 98%;
@@ -398,7 +397,7 @@ h3 {
     .item1 {
         grid-column: 1 / span 2;
         font-size: 40px;
-        font-family: 'Sen', sans-serif;
+        /* font-family: 'Sen', sans-serif; */
         color: white;
         padding-left: 50px;
     }
@@ -445,6 +444,9 @@ h3 {
     }
     .item7 {
         grid-column: 2 / span 2;
+    }
+    .mobile_radioactive_indictaion {
+        display: none;
     }
 }
 @media only screen and (min-width: 800px) {
