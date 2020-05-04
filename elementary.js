@@ -1,3 +1,38 @@
+const alkali_metals_colour = "rgb(223, 0, 0)";
+const alkaline_earth_metals_clour = "rgb(168, 56, 11)";
+const metaux_pauvres_colour = "rgb(0, 207, 0)";
+const metalloid_colour = "rgb(0, 179, 95)";
+const nonmetal_colour = "#9966ff";
+const lanthanoid_colour = "#5900b3";
+const actinoid_colour = "#000099";
+const noble_gas_colour = "rgb(171, 0, 187)";
+const unknown_colour = "rgb(68, 68, 68)";
+
+
+
+// function colour_stuff() {
+//     elements.forEach(element => {
+//         switch (element.ohana) {
+//             case "alkali_metals":
+//                  document.getElementById(element.name).style.backgroundColor = alkali_metals_colour;
+//                 break;
+//             case 'alkaline_earth_metals':
+//                 document.getElementById(element.name).style.backgroundColor = alkaline_earth_metals_clour;
+//                 break;
+//             case 'metaux_pauvres':
+//                 document.getElementById(element.name).style.backgroundColor = metaux_pauvres_colour;
+//                 break;
+//             case "noble_gas":
+//                 document.getElementById(element.name).style.backgroundColor = noble_gas_colour;
+//                 break;
+//             default:
+//                 document.getElementById(element.name).style.backgroundColor = "green";
+
+//         }
+//     });
+// }
+
+
 function search() {
     const query = document.getElementById("element_io").value.toUpperCase();
     var html_elements = document.getElementsByClassName("element");
@@ -109,13 +144,49 @@ function set_search(n, mobile_view) {
                 document.getElementById("acc_MP").classList.toggle("active");
                 break;
             case 3:
-                document.getElementById("acc_dt").classList.toggle("active");
+                document.getElementById("acc_BP").classList.toggle("active");
                 break;
             case 4:
                 document.getElementById("acc_ds").classList.toggle("active");
                 break;
         }
-    }       
+    } else {
+        document.getElementById("EN_btn").style.backgroundColor = "transparent";
+        document.getElementById("EN_btn").style.color = "white";
+        document.getElementById("MP_btn").style.backgroundColor = "transparent";
+        document.getElementById("MP_btn").style.color = "white";
+        document.getElementById("BP_btn").style.backgroundColor = "transparent";
+        document.getElementById("BP_btn").style.color = "white";
+        document.getElementById("DS_btn").style.backgroundColor = "transparent";
+        document.getElementById("DS_btn").style.color = "white";
+        switch(n) {
+            case 1:
+                if (search_type != 1) {
+                    document.getElementById("EN_btn").style.backgroundColor = "white";
+                    document.getElementById("EN_btn").style.color = "black";
+                }
+                break;
+            case 2:
+                if (search_type != 2) {
+                    document.getElementById("MP_btn").style.backgroundColor = "white";
+                    document.getElementById("MP_btn").style.color = "black";
+                }
+                break;
+            case 3:
+                if (search_type != 3) {
+                    document.getElementById("BP_btn").style.backgroundColor = "white";
+                    document.getElementById("BP_btn").style.color = "black";
+                }
+                break;
+            case 4:
+                if (search_type != 4) {
+                    document.getElementById("DS_btn").style.backgroundColor = "white";
+                    document.getElementById("DS_btn").style.color = "black";
+                }
+                break;
+        }
+        
+    }      
     
     switch (n) {
         case 0:
@@ -175,11 +246,6 @@ function set_search(n, mobile_view) {
                 search_type = 0;
             }
             break;
-        default:
-            alert('not looking so hot there, bucko');
-            search_type = 0;
-            document.getElementById("acc_dt").style.display = "block";
-            document.getElementById("acc_dt").classList.toggle("active");
     }
 }    
 
@@ -194,37 +260,37 @@ en_slider.oninput = function() {
         if (element.electronegativity <= true_value) {
             document.getElementById(element.name).style.opacity = "100%";
         } else {
-            document.getElementById(element.name).style.opacity = "50%";
+            document.getElementById(element.name).style.opacity = "25%";
         }
     });
 }
 
 var mp_slider = document.getElementById("MP_slider");
 var mp_output = document.getElementById("MP_display");
-mp_output.innerHTML = mp_slider.value  + " C";
+mp_output.innerHTML = mp_slider.value  + " &#176;C";
 
 mp_slider.oninput = function() {
-    mp_output.innerHTML = this.value + " C";
+    mp_output.innerHTML = this.value + " &#176;C";
     elements.forEach(element => {
         if (element.melting_point <= this.value) {
             document.getElementById(element.name).style.opacity = "100%";
         } else {
-            document.getElementById(element.name).style.opacity = "50%";
+            document.getElementById(element.name).style.opacity = "25%";
         }
     });
 }
 
 var bp_slider = document.getElementById("BP_slider");
 var bp_output = document.getElementById("BP_display");
-bp_output.innerHTML = bp_slider.value + " C";
+bp_output.innerHTML = bp_slider.value + " &#176;C";
 
 bp_slider.oninput = function() {
-    bp_output.innerHTML = this.value  + " C";
+    bp_output.innerHTML = this.value  + " &#176;C";
     elements.forEach(element => {
         if (element.boiling_point <= this.value) {
             document.getElementById(element.name).style.opacity = "100%";
         } else {
-            document.getElementById(element.name).style.opacity = "50%";
+            document.getElementById(element.name).style.opacity = "25%";
         }
     });
 }
@@ -239,7 +305,7 @@ ds_slider.oninput = function() {
         if (element.discovery_date <= this.value) {
             document.getElementById(element.name).style.opacity = "100%";
         } else {
-            document.getElementById(element.name).style.opacity = "50%";
+            document.getElementById(element.name).style.opacity = "25%";
         }
     });
 }
@@ -253,7 +319,7 @@ function show_modal(obj) {
             elmnt_nm = element.name;
             atmc_mss = element.atomic_mass;
             atmc_num = element.atomic_number;
-            mp = element.boiling_point;
+            mp = element.melting_point;
             bp = element.boiling_point;
             elc_ngty = element.electronegativity;
             radioactivity = element.radioactive;
@@ -285,9 +351,18 @@ function show_modal(obj) {
     </svg>`;
 
     var radioact_visibility = "none";
-
     if (radioactivity) {
         radioact_visibility = "block";
+    }
+    if (mp == 9999) {
+        mp = "<em>je ne sais pas</em>"
+    } else {
+        mp = mp + " &#176;C";
+    }
+    if (bp == 9999) {
+        bp = "<em>je ne sais pas</em>"
+    } else {
+        bp = bp + " &#176;C";
     }
 
     // html for the modal pop-up
@@ -298,14 +373,13 @@ function show_modal(obj) {
             <button class = "item2" onclick = \"document.getElementById('element_pop-up').style.display='none'\">&times</button>
             ${svg_code}
             <div class = "item4">
-                Atomic Number: <strong>${atmc_num}</strong> <br> Relative Atomic Mass: <strong>${atmc_mss}</strong> <br> 
-                Melting Point: <strong>${mp}</strong> <sup>o</sup>C <br>
-                Boiling Point: <strong>${bp}</strong> <sup>o</sup>C <br> Electronegativity: <strong>${elc_ngty}</strong> <br>
+                Atomic Number: ${atmc_num} <br> Relative Atomic Mass: ${atmc_mss} <br> 
+                Melting Point: ${mp} <br>
+                Boiling Point: ${bp} <br> Electronegativity: ${elc_ngty} <br>
                 <div class="mobile_radioactive_indictaion">Radioactive: ${radioactivity}</div>
                 Discovered: ${discvry} <br> Etymology: ${etym} <br> <br>
             </div>
             <img class = "item5" src ="radioactv.png" style = "display:${radioact_visibility}">
-            <button class = "item6">6</button>
             <div class = "item7">
                 ${descr}
             </div>
