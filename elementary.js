@@ -1,36 +1,13 @@
 const alkali_metals_colour = "rgb(223, 0, 0)";
-const alkaline_earth_metals_clour = "rgb(168, 56, 11)";
-const metaux_pauvres_colour = "rgb(0, 207, 0)";
-const metalloid_colour = "rgb(0, 179, 95)";
-const nonmetal_colour = "#9966ff";
+const alkaline_earth_metals_clour = "rgb(219, 66, 6)";
+const metaux_pauvres_colour = "rgb(5, 148, 5)";
+const metalloid_colour = "rgb(0, 179, 90)";
+const nonmetal_colour = "#7c4cdb";
 const lanthanoid_colour = "#5900b3";
 const actinoid_colour = "#000099";
-const noble_gas_colour = "rgb(171, 0, 187)";
-const unknown_colour = "rgb(68, 68, 68)";
-
-
-
-// function colour_stuff() {
-//     elements.forEach(element => {
-//         switch (element.ohana) {
-//             case "alkali_metals":
-//                  document.getElementById(element.name).style.backgroundColor = alkali_metals_colour;
-//                 break;
-//             case 'alkaline_earth_metals':
-//                 document.getElementById(element.name).style.backgroundColor = alkaline_earth_metals_clour;
-//                 break;
-//             case 'metaux_pauvres':
-//                 document.getElementById(element.name).style.backgroundColor = metaux_pauvres_colour;
-//                 break;
-//             case "noble_gas":
-//                 document.getElementById(element.name).style.backgroundColor = noble_gas_colour;
-//                 break;
-//             default:
-//                 document.getElementById(element.name).style.backgroundColor = "green";
-
-//         }
-//     });
-// }
+const noble_gas_colour = "rgb(99, 0, 124)";
+const unknown_colour = "rgb(34, 34, 34)";
+const transition_metal_colour = "rgb(143, 132, 37)";
 
 
 function search() {
@@ -312,7 +289,7 @@ ds_slider.oninput = function() {
 
 function show_modal(obj) {
     // getting information about the element to populate the modal
-    var elmnt_nm, atmc_mss, atmc_num, mp, bp, elc_ngty, radioactivity, discvry, etym, descr;
+    var elmnt_nm, atmc_mss, atmc_num, mp, bp, elc_ngty, radioactivity, discvry, etym, descr, ohana;
     const elmt_code = obj.innerText;
     elements.forEach(element => {
         if (element.symbol == elmt_code) {
@@ -326,10 +303,45 @@ function show_modal(obj) {
             discvry = element.discovery_details;
             etym = element.etymology;
             descr = element.description;
+            // getting the class of the element so that the svg matches the html button
+            const some_code = document.getElementById(element.name).classList;
+            ohana = some_code.item(some_code.length-1);
         }
     });
-    const fill_colour = "red";
+    var fill_colour = "red";
     const text_colour = "white";
+    switch (ohana) {
+        case 'alkali_metals':
+            fill_colour = alkali_metals_colour;
+            break;
+        case 'noble':
+            fill_colour = noble_gas_colour;
+            break;
+        case 'alkaline_earth_metals':
+            fill_colour = alkaline_earth_metals_clour;
+            break;
+        case 'metalloid':
+            fill_colour = metalloid_colour;
+            break;
+        case 'non-metals':
+            fill_colour = nonmetal_colour;
+            break;
+        case 'metaux_pauvres':
+            fill_colour = metaux_pauvres_colour;
+            break;
+        case 'lanthanoid':
+            fill_colour = lanthanoid_colour;
+            break;
+        case 'actinoid':
+            fill_colour = actinoid_colour;
+            break;
+        case 'unknown':
+            fill_colour = unknown_colour;
+            break;
+        default:
+            fill_colour = transition_metal_colour;
+    }
+    
     // drawing the svg to appear in the modal
     const svg_code = `
     <svg class = "item3" width="100%" height="300">

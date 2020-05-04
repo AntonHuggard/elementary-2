@@ -1,7 +1,6 @@
 const hydrogen = {
     symbol: "H",
     name: "hydrogen",
-    ohana: 'alkali_metals',
     atomic_number: 1,
     atomic_mass: 1.008,
     state_at_standard_conditions:'gas',
@@ -20,7 +19,6 @@ const hydrogen = {
 const helium = {
     symbol: "He",
     name: "helium",
-    ohana: 'noble_gas',
     atomic_number: 2,
     atomic_mass: 4.002,
     state_at_standard_conditions:'gas',
@@ -39,7 +37,6 @@ const helium = {
 const lithium = {
     symbol: "Li",
     name: "lithium",
-    ohana: 'alkali_metals',
     atomic_number: 3,
     atomic_mass: 6.938,
     state_at_standard_conditions:'solid',
@@ -58,7 +55,6 @@ const lithium = {
 const beryllium = {
     symbol: "Be",
     name: "beryllium",
-    ohana: 'alkaline_earth_metals',
     atomic_number: 4,
     atomic_mass: 9.012,
     state_at_standard_conditions:'solid',
@@ -77,7 +73,6 @@ const beryllium = {
 const boron = {
     symbol: "B",
     name: "boron",
-    ohana: 'metaux_pauvres',
     atomic_number: 5,
     atomic_mass: 10.806,
     state_at_standard_conditions:'solid',
@@ -96,7 +91,6 @@ const boron = {
 const carbon = {
     symbol: "C",
     name: "carbon",
-    ohana: 'nonmetal',
     atomic_number: 6,
     atomic_mass: 12.0096,
     state_at_standard_conditions:'solid',
@@ -115,7 +109,6 @@ const carbon = {
 const nitrogen = {
     symbol: "N",
     name:"nitrogen",
-    ohana: 'none :(',
     atomic_number: 7,
     atomic_mass: 14.006,
     state_at_standard_conditions:'gas',
@@ -134,7 +127,6 @@ const nitrogen = {
 const oxygen = {
     symbol: "O",
     name:"oxygen",
-    ohana: 'none :(',
     atomic_number: 8,
     atomic_mass: 15.999,
     state_at_standard_conditions:'gas',
@@ -153,7 +145,6 @@ const oxygen = {
 const fluorine = {
     symbol: 'F',
     name:"fluorine",
-    ohana: 'none :(',
     atomic_number: 9,
     atomic_mass: 18.998,
     state_at_standard_conditions:'gas',
@@ -172,7 +163,6 @@ const fluorine = {
 const neon = {
     symbol: 'Ne',
     name:"neon",
-    ohana: 'none :(',
     atomic_number: 10,
     atomic_mass: 20.1797,
     state_at_standard_conditions:'gas',
@@ -191,7 +181,6 @@ const neon = {
 const sodium = {
     symbol: 'Na',
     name:"sodium",
-    ohana: 'none :(',
     atomic_number: 11,
     atomic_mass: 22.989,
     state_at_standard_conditions:'solid',
@@ -210,7 +199,6 @@ const sodium = {
 const magnesium = {
     symbol: 'Mg',
     name:"magnesium",
-    ohana: 'none :(',
     atomic_number: 12,
     atomic_mass: 24.304,
     state_at_standard_conditions:'solid',
@@ -229,7 +217,6 @@ const magnesium = {
 const aluminium = {
     symbol: 'Al',
     name:"aluminium",
-    ohana: 'none :(',
     atomic_number: 13,
     atomic_mass: 26.981,
     state_at_standard_conditions:'solid',
@@ -248,7 +235,6 @@ const aluminium = {
 const silicon = {
     symbol: 'Si',
     name:"silicon",
-    ohana: 'none :(',
     atomic_number: 14,
     atomic_mass: 28.084,
     state_at_standard_conditions:'solid',
@@ -267,7 +253,6 @@ const silicon = {
 const phosphorus = {
     symbol: 'P',
     name:"phosphorus",
-    ohana: 'none :(',
     atomic_number: 15,
     atomic_mass: 30.973,
     state_at_standard_conditions:'solid',
@@ -286,7 +271,6 @@ const phosphorus = {
 const sulphur = {
     symbol: 'S',
     name:"sulphur",
-    ohana: 'none :(',
     atomic_number: 16,
     atomic_mass: 32.059,
     state_at_standard_conditions:'solid',
@@ -305,7 +289,6 @@ const sulphur = {
 const chlorine = {
     symbol: 'Cl',
     name:"chlorine",
-    ohana: 'none :(',
     atomic_number: 17,
     atomic_mass: 35.446,
     state_at_standard_conditions:'gas',
@@ -324,7 +307,6 @@ const chlorine = {
 const argon = {
     symbol: 'Ar',
     name:"argon",
-    ohana: 'none :(',
     atomic_number: 18,
     atomic_mass: 39.792,
     state_at_standard_conditions:'gas',
@@ -344,7 +326,6 @@ const argon = {
 const potassium = {
     symbol: 'K',
     name:"potassium",
-    ohana: 'none :(',
     atomic_number: 19,
     atomic_mass: 39.0983,
     state_at_standard_conditions:'solid',
@@ -363,7 +344,6 @@ const potassium = {
 const calcium = {
     symbol: 'Ca',
     name:"calcium",
-    ohana: 'none :(',
     atomic_number: 20,
     atomic_mass: 40.078,
     state_at_standard_conditions:'solid',
@@ -382,7 +362,6 @@ const calcium = {
 const scandium = {
     symbol: 'Sc',
     name:"scandium",
-    ohana: 'none :(',
     atomic_number: 21,
     atomic_mass: 44.955,
     state_at_standard_conditions:'solid',
@@ -401,7 +380,6 @@ const scandium = {
 const titanium = {
     symbol: 'Ti',
     name:"titanium",
-    ohana: 'none :(',
     atomic_number: 22,
     atomic_mass: 47.867,
     state_at_standard_conditions:'solid',
@@ -420,7 +398,6 @@ const titanium = {
 const vanadium = {
     symbol: 'V',
     name:"vanadium",
-    ohana: 'none :(',
     atomic_number: 23,
     atomic_mass: 50.9415,
     state_at_standard_conditions:'solid',
@@ -439,7 +416,6 @@ const vanadium = {
 const chromium = {
     symbol: 'Cr',
     name:"chromium",
-    ohana: 'none :(',
     atomic_number: 24,
     atomic_mass: 51.9961,
     state_at_standard_conditions:'solid',
@@ -458,7 +434,6 @@ const chromium = {
 const manganese = {
     symbol: 'Mn',
     name:"manganese",
-    ohana: 'none :(',
     atomic_number: 25,
     atomic_mass: 54.938,
     state_at_standard_conditions:'solid',
@@ -477,7 +452,6 @@ const manganese = {
 const iron = {
     symbol: 'Fe',
     name:"iron",
-    ohana: 'none :(',
     atomic_number: 26,
     atomic_mass: 55.845,
     state_at_standard_conditions:'solid',
@@ -496,7 +470,6 @@ const iron = {
 const cobalt = {
     symbol: 'Co',
     name:"cobalt",
-    ohana: 'none :(',
     atomic_number: 27,
     atomic_mass: 58.933,
     state_at_standard_conditions:'solid',
@@ -515,7 +488,6 @@ const cobalt = {
 const nickel = {
     symbol: 'Ni',
     name:"nickel",
-    ohana: 'none :(',
     atomic_number: 28,
     atomic_mass: 58.6934,
     state_at_standard_conditions:'solid',
@@ -534,7 +506,6 @@ const nickel = {
 const copper = {
     symbol: 'Cu',
     name:"copper",
-    ohana: 'none :(',
     atomic_number: 29,
     atomic_mass: 63.546,
     state_at_standard_conditions:'solid',
@@ -553,7 +524,6 @@ const copper = {
 const zinc = {
     symbol: 'Zn',
     name:"zinc",
-    ohana: 'none :(',
     atomic_number: 30,
     atomic_mass: 65.38,
     state_at_standard_conditions:'solid',
@@ -572,7 +542,6 @@ const zinc = {
 const gallium = {
     symbol: 'Ga',
     name:"gallium",
-    ohana: 'none :(',
     atomic_number: 31,
     atomic_mass: 69.723,
     state_at_standard_conditions:'solid',
@@ -591,7 +560,6 @@ const gallium = {
 const germanium = {
     symbol: 'Ge',
     name:"germanium",
-    ohana: 'none :(',
     atomic_number: 32,
     atomic_mass: 72.630,
     state_at_standard_conditions:'solid',
@@ -610,7 +578,6 @@ const germanium = {
 const arsenic = {
     symbol: 'As',
     name:"arsenic",
-    ohana: 'none :(',
     atomic_number: 33,
     atomic_mass: 74.921,
     state_at_standard_conditions:'solid',
@@ -629,7 +596,6 @@ const arsenic = {
 const selenium = {
     symbol: 'Se',
     name:"selenium",
-    ohana: 'none :(',
     atomic_number: 34,
     atomic_mass: 78.971,
     state_at_standard_conditions:'solid',
@@ -648,7 +614,6 @@ const selenium = {
 const bromine = {
     symbol: 'Br',
     name:"bromine",
-    ohana: 'none :(',
     atomic_number: 35,
     atomic_mass: 79.904,
     state_at_standard_conditions:'liquid',
@@ -667,7 +632,6 @@ const bromine = {
 const krypton = {
     symbol: 'Kr',
     name:"krypton", 
-    ohana: 'none :(',
     atomic_number: 36,
     atomic_mass: 83.798,
     state_at_standard_conditions:'gas',
@@ -686,7 +650,6 @@ const krypton = {
 const rubidium = {
     symbol: 'Rb',
     name:"rubidium",
-    ohana: 'none :(',
     atomic_number: 37,
     atomic_mass: 85.4678,
     state_at_standard_conditions:'solid',
@@ -705,7 +668,6 @@ const rubidium = {
 const strontium = {
     symbol: 'Sr',
     name:"strontium",
-    ohana: 'none :(',
     atomic_number: 38,
     atomic_mass: 87.62,
     state_at_standard_conditions:'solid',
@@ -724,7 +686,6 @@ const strontium = {
 const yttrium = {
     symbol: 'Y',
     name:"yttrium",
-    ohana: 'none :(',
     atomic_number: 39,
     atomic_mass: 88.905,
     state_at_standard_conditions:'solid',
@@ -743,7 +704,6 @@ const yttrium = {
 const zirconium = {
     symbol: 'Zr',
     name:"zirconium",
-    ohana: 'none :(',
     atomic_number: 40,
     atomic_mass: 91.224,
     state_at_standard_conditions:'solid',
@@ -762,7 +722,6 @@ const zirconium = {
 const niobium = {
     symbol: 'Nb',
     name:"niobium",
-    ohana: 'none :(',
     atomic_number: 41,
     atomic_mass: 92.90637,
     state_at_standard_conditions:'solid',
@@ -781,7 +740,6 @@ const niobium = {
 const molybdenum = {
     symbol: 'Mo',
     name:"molybdenum",
-    ohana: 'none :(',
     atomic_number: 42,
     atomic_mass: 95.95,
     state_at_standard_conditions:'solid',
@@ -800,7 +758,6 @@ const molybdenum = {
 const technetium = {
     symbol: 'Tc',
     name:"technetium",
-    ohana: 'none :(',
     atomic_number: 43,
     atomic_mass: '[97]',
     state_at_standard_conditions:'solid',
@@ -819,7 +776,6 @@ const technetium = {
 const ruthenium = {
     symbol: 'Ru',
     name:"ruthenium",
-    ohana: 'none :(',
     atomic_number: 44, 
     atomic_mass: 101.07,
     state_at_standard_conditions:'solid',
@@ -838,7 +794,6 @@ const ruthenium = {
 const rhodium = {
     symbol: 'Rh',
     name:"rhodium",
-    ohana: 'none :(',
     atomic_number: 45,
     atomic_mass: 102.90549,
     state_at_standard_conditions:'solid',
@@ -857,7 +812,6 @@ const rhodium = {
 const palladium = {
     symbol: 'Pd',
     name:"palladium",
-    ohana: 'none :(',
     atomic_number: 46,
     atomic_mass: 106.42,
     state_at_standard_conditions:'solid',
@@ -876,7 +830,6 @@ const palladium = {
 const silver = {
     symbol: 'Ag',
     name:"silver",
-    ohana: 'none :(',
     atomic_number: 47,
     atomic_mass: 107.8682,
     state_at_standard_conditions:'solid',
@@ -895,7 +848,6 @@ const silver = {
 const cadmium = {
     symbol: 'Cd',
     name:"cadmium",
-    ohana: 'none :(',
     atomic_number: 48,
     atomic_mass: 112.414,
     state_at_standard_conditions:'solid',
@@ -914,7 +866,6 @@ const cadmium = {
 const indium = {
     symbol: 'In',
     name:"indium",
-    ohana: 'none :(',
     atomic_number: 49,
     atomic_mass: 114.818,
     state_at_standard_conditions:'solid',
@@ -933,7 +884,6 @@ const indium = {
 const tin = {
     symbol: 'Sn',
     name:"tin",
-    ohana: 'none :(',
     atomic_number: 50,
     atomic_mass: 118.710,
     state_at_standard_conditions:'solid',
@@ -952,7 +902,6 @@ const tin = {
 const antimony = {
     symbol: 'Sb',
     name:"antimony",
-    ohana: 'none :(',
     atomic_number: 51,
     atomic_mass: 121.760,
     state_at_standard_conditions:'solid',
@@ -971,7 +920,6 @@ const antimony = {
 const tellurium = {
     symbol: 'Te',
     name:"tellurium", 
-    ohana: 'none :(',
     atomic_number: 52,
     atomic_mass: 127.60,
     state_at_standard_conditions:'solid',
@@ -990,7 +938,6 @@ const tellurium = {
 const iodine = {
     symbol: 'I',
     name:"iodine",
-    ohana: 'none :(',
     atomic_number: 53,
     atomic_mass: 126.904,
     state_at_standard_conditions:'solid',
@@ -1009,7 +956,6 @@ const iodine = {
 const xenon = {
     symbol: 'Xe',
     name:"xenon",
-    ohana: 'none :(',
     atomic_number: 54,
     atomic_mass: 131.293,
     state_at_standard_conditions:'gas',
@@ -1028,7 +974,6 @@ const xenon = {
 const caesium = {
     symbol:"Cs",
     name:"caesium",
-    ohana: 'none :(',
     atomic_number: 55,
     atomic_mass: 132.905,
     state_at_standard_conditions:'solid',
@@ -1047,7 +992,6 @@ const caesium = {
 const barium = {
     symbol: 'Ba',
     name:"barium",
-    ohana: 'none :(',
     atomic_number: 56,
     atomic_mass: 137.327,
     state_at_standard_conditions:'solid',
@@ -1066,7 +1010,6 @@ const barium = {
 const lanthanum = {
     symbol: 'La',
     name:"lanthanum",
-    ohana: 'none :(',
     atomic_number: 57,
     atomic_mass: 138.905,
     state_at_standard_conditions:'solid',
@@ -1086,7 +1029,6 @@ const lanthanum = {
 const cerium = {
     symbol: 'Ce',
     name:"cerium",
-    ohana: 'none :(',
     atomic_number: 58,  
     atomic_mass: 140.116,
     state_at_standard_conditions:'solid',
@@ -1105,7 +1047,6 @@ const cerium = {
 const praseodymium = {
     symbol: 'Pr',
     name:"praseodymium",
-    ohana: 'none :(',
     atomic_number: 59,
     atomic_mass: 140.907,
     state_at_standard_conditions:'solid',
@@ -1124,7 +1065,6 @@ const praseodymium = {
 const neodymium = {
     symbol: 'Nd',
     name:"neodymium",
-    ohana: 'none :(',
     atomic_number: 60,
     atomic_mass: 144.242,
     state_at_standard_conditions:'solid',
@@ -1143,7 +1083,6 @@ const neodymium = {
 const promethium = {
     symbol: 'Pm',
     name:"promethium",
-    ohana: 'none :(',
     atomic_number: 61,
     atomic_mass: '[145]',
     state_at_standard_conditions:'solid',
@@ -1163,7 +1102,6 @@ const promethium = {
 const samarium = {
     symbol: 'Sm',
     name:"samarium",
-    ohana: 'none :(',
     atomic_number: 62, 
     atomic_mass: 150.36,
     state_at_standard_conditions:'solid',
@@ -1182,7 +1120,6 @@ const samarium = {
 const europium = {
     symbol: 'Eu',
     name:"europium",
-    ohana: 'none :(',
     atomic_number: 63,
     atomic_mass: 151.964,
     state_at_standard_conditions:'solid',
@@ -1201,7 +1138,6 @@ const europium = {
 const gadolinium = {
     symbol: 'Gd',
     name:"gadolinium",
-    ohana: 'none :(',
     atomic_number: 64,
     atomic_mass: 157.25,
     state_at_standard_conditions:'solid',
@@ -1220,7 +1156,6 @@ const gadolinium = {
 const terbium = {
     symbol: 'Tb',
     name:"terbium",
-    ohana: 'none :(',
     atomic_number: 65, 
     atomic_mass: 158.925,
     state_at_standard_conditions:'solid',
@@ -1240,7 +1175,6 @@ const terbium = {
 const dysprosium = {
     symbol: 'Dy',
     name:"dysprosium",
-    ohana: 'none :(',
     atomic_number: 66, 
     atomic_mass: 162.500,
     state_at_standard_conditions:'solid',
@@ -1259,7 +1193,6 @@ const dysprosium = {
 const holmium = {
     symbol: 'Ho',
     name:"holmium",
-    ohana: 'none :(',
     atomic_number: 67,
     atomic_mass: 164.930,
     state_at_standard_conditions:'solid',
@@ -1278,7 +1211,6 @@ const holmium = {
 const erbium = {
     symbol: 'Er',
     name:"erbium",
-    ohana: 'none :(',
     atomic_number: 68,
     atomic_mass: 167.259,
     state_at_standard_conditions:'solid',
@@ -1297,7 +1229,6 @@ const erbium = {
 const thulium = {
     symbol: 'Tm',
     name:"thulium",
-    ohana: 'none :(',
     atomic_number: 69,
     atomic_mass: 168.934,
     state_at_standard_conditions:'solid',
@@ -1316,7 +1247,6 @@ const thulium = {
 const ytterbium = {
     symbol: 'Yb',
     name:"ytterbium",
-    ohana: 'none :(',
     atomic_number: 70,
     atomic_mass: 173.045,
     state_at_standard_conditions:'solid',
@@ -1335,7 +1265,6 @@ const ytterbium = {
 const lutetium = {
     symbol: 'Lu',
     name:"lutetium",
-    ohana: 'none :(',
     atomic_number: 71,
     atomic_mass: 174.966,
     state_at_standard_conditions:'solid',
@@ -1354,7 +1283,6 @@ const lutetium = {
 const hafnium = {
     symbol: 'Hf',
     name:"hafnium",
-    ohana: 'none :(',
     atomic_number: 72,
     atomic_mass: 178.486,
     state_at_standard_conditions:'solid',
@@ -1373,7 +1301,6 @@ const hafnium = {
 const tantalum = {
     symbol: 'Ta',
     name:"tantalum",
-    ohana: 'none :(',
     atomic_number: 73,
     atomic_mass: 180.947,
     state_at_standard_conditions:'solid',
@@ -1392,7 +1319,6 @@ const tantalum = {
 const tungsten = {
     symbol: 'W',
     name:"tungsten",
-    ohana: 'none :(',
     atomic_number: 74,
     atomic_mass: 183.84,
     state_at_standard_conditions:'solid',
@@ -1411,7 +1337,6 @@ const tungsten = {
 const rhenium = {
     symbol: 'Re',
     name:"rhenium",
-    ohana: 'none :(',
     atomic_number: 75,
     atomic_mass: 186.207,
     state_at_standard_conditions:'solid',
@@ -1430,7 +1355,6 @@ const rhenium = {
 const osmium = {
     symbol: 'Os',
     name:"osmium",
-    ohana: 'none :(',
     atomic_number: 76,
     atomic_mass: 190.23,
     state_at_standard_conditions:'solid',
@@ -1449,7 +1373,6 @@ const osmium = {
 const iridium = {
     symbol: 'Ir',
     name:"iridium",
-    ohana: 'none :(',
     atomic_number: 77,
     atomic_mass: 192.217,
     state_at_standard_conditions:'solid',
@@ -1468,7 +1391,6 @@ const iridium = {
 const platinum = {
     symbol: 'Pt',
     name:"platinum",
-    ohana: 'none :(',
     atomic_number: 78, 
     atomic_mass: 195.084,
     state_at_standard_conditions:'solid',
@@ -1487,7 +1409,6 @@ const platinum = {
 const gold = {
     symbol: 'Au',
     name:"gold",
-    ohana: 'none :(',
     atomic_number: 79,
     atomic_mass: 196.966,
     state_at_standard_conditions:'solid',
@@ -1506,7 +1427,6 @@ const gold = {
 const mercury = {
     symbol: 'Hg',
     name:"mercury",
-    ohana: 'none :(',
     atomic_number: 80,
     atomic_mass: 200.592,
     state_at_standard_conditions:'liquid',
@@ -1525,7 +1445,6 @@ const mercury = {
 const thallium = {
     symbol: 'Tl',
     name:"thallium", 
-    ohana: 'none :(',
     atomic_number: 81,  
     atomic_mass: 204.382,
     state_at_standard_conditions:'solid',
@@ -1544,7 +1463,6 @@ const thallium = {
 const lead = {
     symbol: 'Pb',
     name:"lead",
-    ohana: 'none :(',
     atomic_number: 82,
     atomic_mass: 207.2,
     state_at_standard_conditions:'solid',
@@ -1563,7 +1481,6 @@ const lead = {
 const bismuth = {
     symbol: 'Bi',
     name:"bismuth",
-    ohana: 'none :(',
     atomic_number: 83,
     atomic_mass: 208.980,
     state_at_standard_conditions:'solid',
@@ -1582,7 +1499,6 @@ const bismuth = {
 const polonium = {
     symbol: 'Po',
     name:"polonium",
-    ohana: 'none :(',
     atomic_number: 84,
     atomic_mass: '[209]',
     state_at_standard_conditions:'solid',
@@ -1601,7 +1517,6 @@ const polonium = {
 const astatine = {
     symbol:'At',    
     name:'astatine', 
-    ohana: 'none :(',
     atomic_number:85, 
     atomic_mass:'[210]',
     state_at_standard_conditions:'solid',
@@ -1620,7 +1535,6 @@ const astatine = {
 const radon = {
     symbol:'Rn',    
     name:'radon', 
-    ohana: 'none :(',
     atomic_number:86, 
     atomic_mass:'[222]',
     state_at_standard_conditions:'gas',
@@ -1639,7 +1553,6 @@ const radon = {
 const francium = {
     symbol:'Fr',    
     name:'francium', 
-    ohana: 'none :(',
     atomic_number:87, 
     atomic_mass:'[223]',
     state_at_standard_conditions:'solid',
@@ -1658,7 +1571,6 @@ const francium = {
 const radium = {
     symbol:'Ra',    
     name:'radium', 
-    ohana: 'none :(',
     atomic_number:88, 
     atomic_mass:'[226]',
     state_at_standard_conditions:'solid',
@@ -1677,7 +1589,6 @@ const radium = {
 const actinium = {
     symbol: 'Ac',
     name:"actinium",
-    ohana: 'none :(',
     atomic_number: 89,
     atomic_mass: '[227]',
     state_at_standard_conditions:'solid',
@@ -1696,7 +1607,6 @@ const actinium = {
 const thorium = {
     symbol: 'Th',
     name:"thorium",
-    ohana: 'none :(',
     atomic_number: 90, 
     atomic_mass: 232.0377,
     state_at_standard_conditions:'solid',
@@ -1715,7 +1625,6 @@ const thorium = {
 const protactinium = {
     symbol: 'Pa',
     name:"protactinium",
-    ohana: 'none :(',
     atomic_number: 91,
     atomic_mass: 231.035,
     state_at_standard_conditions:'solid',
@@ -1734,7 +1643,6 @@ const protactinium = {
 const uranium = {
     symbol: 'U',
     name:"uranium",
-    ohana: 'none :(',
     atomic_number: 92, 
     atomic_mass: 238.028,
     state_at_standard_conditions:'solid',
@@ -1753,7 +1661,6 @@ const uranium = {
 const neptunium = {
     symbol: 'Np',
     name:"neptunium",
-    ohana: 'none :(',
     atomic_number: 93,
     atomic_mass: '[237]',
     state_at_standard_conditions:'solid',
@@ -1772,7 +1679,6 @@ const neptunium = {
 const plutonium = {
     symbol: 'Pu',
     name:"plutonium",
-    ohana: 'none :(',
     atomic_number: 94, 
     atomic_mass: '[244]',
     state_at_standard_conditions:'solid',
@@ -1791,7 +1697,6 @@ const plutonium = {
 const americium = {
     symbol: 'Am',
     name:"americium",
-    ohana: 'none :(',
     atomic_number: 95, 
     atomic_mass: '[243]',
     state_at_standard_conditions:'solid',
@@ -1810,7 +1715,6 @@ const americium = {
 const curium = {
     symbol: 'Cm',
     name:"curium",
-    ohana: 'none :(',
     atomic_number: 96, 
     atomic_mass: '[247]',
     state_at_standard_conditions:'solid',
@@ -1829,7 +1733,6 @@ const curium = {
 const berkelium = {
     symbol: 'Bk',
     name:"berkelium",
-    ohana: 'none :(',
     atomic_number: 97,
     atomic_mass: '[247]',
     state_at_standard_conditions:'solid',
@@ -1848,7 +1751,6 @@ const berkelium = {
 const californium = {
     symbol: 'Cf',
     name:"californium",
-    ohana: 'none :(',
     atomic_number: 98, 
     atomic_mass: '[251]',
     state_at_standard_conditions:'solid',
@@ -1867,7 +1769,6 @@ const californium = {
 const einsteinium = {
     symbol: 'Es',
     name:"einsteinium",
-    ohana: 'none :(',
     atomic_number: 99, 
     atomic_mass: '[252]',
     state_at_standard_conditions:'solid',
@@ -1886,7 +1787,6 @@ const einsteinium = {
 const fermium = {
     symbol: 'Fm',
     name:"fermium",
-    ohana: 'none :(',
     atomic_number: 100, 
     atomic_mass: '[257]',
     state_at_standard_conditions:'solid',
@@ -1905,7 +1805,6 @@ const fermium = {
 const mendelevium = {
     symbol: 'Md',
     name:"mendelevium",
-    ohana: 'none :(',
     atomic_number: 101, 
     atomic_mass: '[258]',
     state_at_standard_conditions:'solid',
@@ -1924,7 +1823,6 @@ const mendelevium = {
 const nobelium = {
     symbol:'No',
     name:'nobelium',
-    ohana: 'none :(',
     atomic_number:102,
     atomic_mass:'[259]',
     state_at_standard_conditions:'solid',
@@ -1943,7 +1841,6 @@ const nobelium = {
 const lawrencium = {
     symbol:'Lr',
     name:'lawrencium', 
-    ohana: 'none :(',
     atomic_number:103, 
     atomic_mass:'[259]', 
     state_at_standard_conditions:'solid',
@@ -1961,7 +1858,6 @@ const lawrencium = {
 const rutherfordium = {
     symbol:'Rf',    
     name:'rutherfordium', 
-    ohana: 'none :(',
     atomic_number:104, 
     atomic_mass:'[226]',
     state_at_standard_conditions:'solid',
@@ -1980,7 +1876,6 @@ const rutherfordium = {
 const dubnium = {
     symbol:'Db',    
     name:'dubnium', 
-    ohana: 'none :(',
     atomic_number:105, 
     electronegativity:'yes',
     radioactive:true,
@@ -1999,7 +1894,6 @@ const dubnium = {
 const seaborgium = {
     symbol:'Sg',    
     name:'seaborgium', 
-    ohana: 'none :(',
     atomic_number:106, 
     electronegativity:'yes',
     radioactive:true,
@@ -2018,7 +1912,6 @@ const seaborgium = {
 const bohrium = {
     symbol:'Bh',    
     name:'bohrium', 
-    ohana: 'none :(',
     atomic_number:107, 
     electronegativity:'yes',
     radioactive:true,
@@ -2037,7 +1930,6 @@ const bohrium = {
 const hassium = {
     symbol:'Hs',    
     name:'hassium', 
-    ohana: 'none :(',
     atomic_number:108, 
     electronegativity:'yes',
     radioactive:true,
@@ -2056,7 +1948,6 @@ const hassium = {
 const meitnerium = {
     symbol:'Mt',    
     name:'meitnerium', 
-    ohana: 'none :(',
     atomic_number:109, 
     electronegativity:'yes',
     radioactive:true,
@@ -2075,7 +1966,6 @@ const meitnerium = {
 const darmstadtium = {
     symbol:'Ds',    
     name:'darmstadtium', 
-    ohana: 'none :(',
     atomic_number:110, 
     electronegativity:'yes',
     radioactive:true,
@@ -2094,7 +1984,6 @@ const darmstadtium = {
 const roentgenium = {
     symbol:'Rg',    
     name:'roentgenium', 
-    ohana: 'none :(',
     atomic_number:111, 
     electronegativity:'yes',
     radioactive:true,
@@ -2113,7 +2002,6 @@ const roentgenium = {
 const copernicium = {
     symbol:'Cn',
     name:'copernicium', 
-    ohana: 'none :(',
     electronegativity:'yes',
     radioactive:true,
     atomic_number:112, 
@@ -2132,7 +2020,6 @@ const copernicium = {
 const nihonium = {
     symbol:'Nh',
     name:'nihonium', 
-    ohana: 'none :(',
     electronegativity:'yes',
     radioactive:true,
     atomic_number:113, 
@@ -2151,7 +2038,6 @@ const nihonium = {
 const flevorium = {
     symbol:'Fl',    
     name:'flevorium', 
-    ohana: 'none :(',
     atomic_number:114, 
     electronegativity:'yes',
     radioactive:true,
@@ -2170,7 +2056,6 @@ const flevorium = {
 const moscovium = {
     symbol:'Mc',    
     name:'moscovium', 
-    ohana: 'none :(',
     atomic_number:115, 
     electronegativity:'yes',
     radioactive:true,
@@ -2189,7 +2074,6 @@ const moscovium = {
 const livermorium = {
     symbol:'Lv',    
     name:'livermorium', 
-    ohana: 'none :(',
     atomic_number:116, 
     electronegativity:'yes',
     radioactive:true,
@@ -2208,7 +2092,6 @@ const livermorium = {
 const tennessine = {
     symbol:'Ts',    
     name:'tennessine', 
-    ohana: 'none :(',
     atomic_number:117, 
     electronegativity:'yes',
     radioactive:true,
@@ -2227,7 +2110,6 @@ const tennessine = {
 const oganesson = {
     symbol:'Og',    
     name:'oganesson', 
-    ohana: 'none :(',
     atomic_number:118, 
     electronegativity:'yes',
     radioactive:true,
