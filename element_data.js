@@ -265,7 +265,7 @@ const phosphorus = {
     discovery_date: 1669,
     discovery_details: '1669 by German Alchemist Hennig Brand. Properly discovered by Antoine Lavoisier in 1777',
     etymology: 'from the Ancient Greek name for Venus, translates as <em>light-bearer</em>',
-    description: 'This is the funniest discovery of an element. Phosphorus was discovered when Brand was following a recipe using water, alum, salteptre, and urine to turn metals into silver. He captured the fumes of boiling urine. These turned into a glowing green liquid (phosphorus), hence the name light-bearer.'
+    description: 'Phosphorus was discovered when a German Alchemist tried making silver by boiling urine. He noticed that the fumes turned into a glowing green liquid (phosphorus). Hence the name light-bearer.'
 };
 
 const sulphur = {
@@ -301,7 +301,7 @@ const chlorine = {
     discovery_date: 1774,
     discovery_details: '1774 by Carl Wilhelm Scheele (Sweden/Germany)',
     etymology: 'from Ancient Greek <em>Khloros</em> (pale-green)',
-    description: 'yes'
+    description: 'Pale yellow-green gas. It is an extremely reactive element and a strong oxidising agent: among the elements, it has the highest electron affinity and the third-highest electronegativity on the Pauling scale, behind only oxygen and fluorine.'
 };
                 
 const argon = {
@@ -319,7 +319,7 @@ const argon = {
     discovery_date: 1894,
     discovery_details: '1894 by Lord Rayleigh and William Ramsay',
     etymology: 'Derived from the Greek word for lazy',
-    description: 'yes'
+    description: 'colorless gas exhibiting a lilac/violet glow when placed in an electric field. It\'s the most abundant noble gas in Earth\'s crust'
 };
                 
 
@@ -337,8 +337,8 @@ const potassium = {
     radioactive: false,
     discovery_date: 1807,
     discovery_details: '1807 by Humphry Davy',
-    etymology: 'from <em>Potash</em>. Historically potassium-containing salts were produced by boiling ash. K is from Kali, from Alkali',
-    description: 'yes'
+    etymology: 'from <em>Pot-ash</em>. Historically potassium-containing salts were produced by boiling ash. K is from Kali, from Alkali',
+    description: 'Potassium is a silvery-white metal that is soft enough to be cut with a knife with little force. It reacts vigorously with water'
 };
                 
 const calcium = {
@@ -356,7 +356,7 @@ const calcium = {
     discovery_date: 1808,
     discovery_details: '1808 by Humphry Davy',
     etymology:'from Latin <em>calx</em>, meaning lime',
-    description: 'yes'
+    description: 'dull gray, silver; with a pale yellow tint. Some calcium compounds have been known about since antiquity. It\'s the most abundant metal'
 };
                
 const scandium = {
@@ -374,7 +374,7 @@ const scandium = {
     discovery_date: 1879,
     discovery_details: '1879 by Lars Fredrik Nilson',
     etymology: 'after Scandinavia',
-    description: 'yes'
+    description: 'Silvery-white metallic d-block element. It was discovered in 1879 by spectral analysis of the minerals euxenite and gadolinite from Scandinavia.'
 };
                
 const titanium = {
@@ -389,10 +389,10 @@ const titanium = {
     boiling_point: 3287, 
     electronegativity: 1.54,
     radioactive: false,
-    discovery_date: 1825,
-    discovery_details: '1825 by Jöns Jakob Berzelius',
+    discovery_date: 1791,
+    discovery_details: '1791 by William Gregor',
     etymology: 'after the mythological Greek Titans',
-    description: 'yes'
+    description: 'It is a lustrous transition metal with a silver color, low density, and high strength. Titanium is resistant to corrosion in sea water, aqua regia, and chlorine.'
 };
                
 const vanadium = {
@@ -407,10 +407,10 @@ const vanadium = {
     boiling_point: 3407, 
     electronegativity: 1.63,
     radioactive: false,
-    discovery_date: 1830,
-    discovery_details: '1830 by Nils Gabriel Sefström',
+    discovery_date: 1801,
+    discovery_details: '1801 by Andrés Manuel del Río. Isolated in 1830 by Nils Gabriel Sefström',
     etymology: 'after the Norse goddess of beauty & fertility, Vanadís (Freyja)',
-    description: 'yes'
+    description: 'Silvery-grey, malleable transition metal.'
 };
                
 const chromium = {
@@ -425,10 +425,10 @@ const chromium = {
     boiling_point: 2671, 
     electronegativity: 1.66,
     radioactive: false,
-    discovery_date: 1797,
-    discovery_details: '1797 by Louis Nicolas Vauquelin',
+    discovery_date: 1794,
+    discovery_details: 'Discovered 1794, isolated in 1797 by Louis Nicolas Vauquelin',
     etymology: 'from Greek <em>chroma</em>, meaning <em>colour</em>',
-    description: 'yes'
+    description: 'It is the first element in group 6. It is a steely-grey, lustrous, hard and brittle transition metal. Chromium is the main additive in stainless steel, to which it adds anti-corrosive properties.'
 };
                
 const manganese = {
@@ -446,7 +446,7 @@ const manganese = {
     discovery_date: 1774,
     discovery_details: '1774 by Johann Gottlieb Gahn', 
     etymology: 'after Magnesia in Greece (same as Magnesium)',
-    description: 'yes'
+    description: 'Silvery metallic. '
 };
                
 const iron = {
@@ -464,7 +464,7 @@ const iron = {
     discovery_date: 0,
     discovery_details: 'Unknown. Before 5000 BC',
     etymology: 'from proto-Germanic <em>isarnon</em>. Its chemical symbol comes from its Latin name <em>ferrum</em>',
-    description: 'yes'
+    description: 'Lustrous metallic with a grayish tinge. By mass, it\'s the most common element on Earth. It forms in much of Earth\'s outer and inner core. It is the fourth most common element in the Earth\'s crust. Iron is one of four elements (the others are nickel, cobalt, and gadolinium) that are ferromagnetic (permanent magnets) at room temperature.'
 };
 
 const cobalt = {
@@ -482,7 +482,7 @@ const cobalt = {
     discovery_date: 1735,
     discovery_details: '1735 by Georg Brandt',
     etymology: 'from Kobald, a sprite from Germainc mythology',
-    description: 'yes'
+    description: 'Hard lustrous bluish gray metal. Cobalt-based blue pigments (cobalt blue) have been used since ancient times for jewelry and paints, and to impart a distinctive blue tint to glass, but the color was later thought to be due to the known metal bismuth. Cobalt is one of four elements (the others are iron, nickel, and gadolinium) that are ferromagnetic (permanent magnets) at room temperature.'
 };
                
 const nickel = {
@@ -500,7 +500,7 @@ const nickel = {
     discovery_date: 1751,
     discovery_details: '1751 by Axel Fredrik Cronstedt',
     etymology: 'from the sprite of Germanic mythology',
-    description: 'yes'
+    description: 'Metallic, and silver with a gold tinge. It\'s been used as an alloy since 3500 BC. Nickel is one of four elements (the others are iron, cobalt, and gadolinium) that are ferromagnetic (permanent magnets) at room temperature.'
 };
                
 const copper = {
@@ -518,7 +518,7 @@ const copper = {
     discovery_date: 0,
     discovery_details: 'before 9000 BC in the Middle East',
     etymology: 'after Cyprus, a significant mining location to Ancient Rome',
-    description: 'yes'
+    description: 'Red-orange metallic luster. It is a soft, malleable, and ductile metal with very high thermal and electrical conductivity'
 };
                 
 const zinc = {
@@ -536,7 +536,7 @@ const zinc = {
     discovery_date: 0,
     discovery_details: 'India before 1000 BC. Properly in 1746 by Andreas Sigismund Marggraf', 
     etymology: 'after <em>Zinke</em>, German for prong. Probably.',
-    description: 'yes'
+    description: 'Silver-gray. Zinc is a slightly brittle metal at room temperature and has a blue-silvery appearance when oxidation is removed.'
 };
                 
 const gallium = {
@@ -554,7 +554,7 @@ const gallium = {
     discovery_date: 1875,
     discovery_details: '1875 by Lecoq de Boisbaudran (France)',
     etymology: 'after <em>Gallia</em>, the Roman province <em>Gaul</em>. Roughly the area of modern France',
-    description: 'yes'
+    description: 'Silvery blue. Elemental gallium is a soft, silvery blue metal at standard temperature and pressure; however in its liquid state it becomes silvery white.'
 };
                 
 const germanium = {
@@ -572,7 +572,7 @@ const germanium = {
     discovery_date: 1886,
     discovery_details: '1886 by Clemens Winkler (Germany)', 
     etymology: 'after Germany',
-    description: 'yes'
+    description: 'Grayish-white, hard-brittle, grayish-white metalloid in the carbon group, chemically similar to its group neighbours silicon and tin. Pure germanium is a semiconductor with an appearance similar to elemental silicon.'
 };
                 
 const arsenic = {
@@ -590,7 +590,7 @@ const arsenic = {
     discovery_date: 815,
     discovery_details: 'before 815 AD by Arabic Alchemists', 
     etymology: 'from the Greek word for <em>stink</em>',
-    description: 'yes'
+    description: 'Arsenic is a metalloid. It has various allotropes, but only the gray form, which has a metallic appearance, is important to industry. Yellow and black allotropes also available.'
 };
                
 const selenium = {
@@ -608,7 +608,7 @@ const selenium = {
     discovery_date: 1817,
     discovery_details: '1817 by Jöns Jakob Berzelius & Johann Gottlieb Gahn',
     etymology: 'after Selene, the Greek moon goddess',
-    description: 'yes'
+    description: 'It is a nonmetal (more rarely considered a metalloid). The chief commercial uses for selenium today are glassmaking and pigments. Selenium is a semiconductor and is used in photocells.'
 };
                
 const bromine = {
@@ -624,9 +624,9 @@ const bromine = {
     electronegativity: 2.96,
     radioactive: false,
     discovery_date: 1825,
-    discovery_details: '1825 by Antoine Jérôme Balard & Carl Jacob Löwig',
+    discovery_details: '1825 by Antoine Jérôme Balard (France) & Carl Jacob Löwig (Germany)',
     etymology: 'from the Greek word for <em>stench</em>',
-    description: 'yes'
+    description: 'Reddish-brown liquid at room temperature that evaporates readily to form a similarly coloured gas. Elemental bromine is very reactive and thus does not occur free in nature. '
 };
 
 const krypton = {
@@ -644,7 +644,7 @@ const krypton = {
     discovery_date: 1898,
     discovery_details: '1898 by William Ramsay & Morris Travers', 
     etymology: 'from Ancient Greek <em>Kryptos</em>, meaning <em>the hidden one</em>', 
-    description: 'yes'
+    description: 'colorless gas, exhibiting a whitish glow in an electric field. It is a colorless, odorless, tasteless noble gas that occurs in trace amounts in the atmosphere and is often used with other rare gases in fluorescent lamps.'
 };
 
 const rubidium = {
@@ -1150,7 +1150,7 @@ const gadolinium = {
     discovery_date: 1880,
     discovery_details: '1880 by Jean Charles Galissard de Marignac. Isolated 1886 by Lecoq de Boisbaudran',
     etymology:'after Gadolinite (ultimately derived from Swedish/Finnish chemist Johan Gadolin)',
-    description: 'yes'
+    description: 'Gadolinium is one of four elements (the others are iron, cobalt, and nickel) that are ferromagnetic (permanent magnets) at room temperature.'
 };
                 
 const terbium = {
