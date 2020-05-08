@@ -1,17 +1,14 @@
 # https://antonhuggard.github.io/elementary/
 
-###Elementary
+### Elementary
 
 
 The Searchable Periodic Table.
 
-<br>
-
 Find elements by by name, chemical symbol or property.
 
-<br>
 
-##Credits:
+## Credits:
 
 
 Wikipedia: Source of all knowledge
