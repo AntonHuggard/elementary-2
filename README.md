@@ -15,4 +15,4 @@
 Wikipedia: Source of all knowledge
 
 
-Consultant: Ben (github.com/mirlington)
+Consultant: [This guy](github.com/mirlington)
