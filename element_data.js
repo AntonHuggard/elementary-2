@@ -662,7 +662,7 @@ const rubidium = {
     discovery_date: 1861,
     discovery_details: '1861 by Robert Bunsen and Gustav Kirchhoff. Isolated by George de Hevesy', 
     etymology: 'from the Latin <em>rubidus</em>, meaning <em>deep red</em>',
-    description: 'yes'
+    description: 'Rubidium is a very soft, silvery-white metal in the alkali metal group. Rubidium cannot be stored under atmospheric oxygen, as a highly exothermic reaction will ensue, sometimes even resulting in the metal catching fire.'
 };
                 
 const strontium = {
@@ -677,10 +677,10 @@ const strontium = {
     boiling_point:1377 , 
     electronegativity: 0.95,
     radioactive: false,
-    discovery_date: 1808,
-    discovery_details: '1808 by Humphry Davy', 
+    discovery_date: 1787,
+    discovery_details: '1787 by William Cruickshank', 
     etymology:'after stronantine, which gets its name from the Scottish village of Strontian',
-    description: 'yes'
+    description: ' An alkaline earth metal, strontium is a soft silver-white yellowish metallic element that is highly chemically reactive. The natural strontium is stable, although Sr-90 is radioactive and is one of the most dangerous components of nuclear fallout'
 };
                
 const yttrium = {
@@ -695,10 +695,10 @@ const yttrium = {
     boiling_point: 2930, 
     electronegativity: 1.22,
     radioactive: false,
-    discovery_date: 1843,
-    discovery_details: '1843 by Heinrich Rose', 
+    discovery_date: 1794,
+    discovery_details: '1794 Johan Gadolin', 
     etymology: 'named after the Swedish village of Ytterby',
-    description: 'yes'
+    description: 'It is a silvery-metallic transition metal chemically similar to the lanthanides. The most important use of yttrium is in LEDs'
 };
                
 const zirconium = {
@@ -713,10 +713,10 @@ const zirconium = {
     boiling_point: 4377, 
     electronegativity: 1.33,
     radioactive: false,
-    discovery_date: 1824,
-    discovery_details: '1824 by Jöns Jakob Berzelius', 
+    discovery_date: 1789,
+    discovery_details: '1789 Martin Heinrich Klaproth (Germany)', 
     etymology: 'from Arabic <em>Zargon</em>, meaning <em>gold-coloured</em>',
-    description: 'yes'
+    description: 'Sorry to disappoint you, but there\'s nothing interesting about zirconium. It\'s just a grey-white, strong transition metal.'
 };
                
 const niobium = {
@@ -731,10 +731,10 @@ const niobium = {
     boiling_point: 4744, 
     electronegativity: 1.60,
     radioactive: false,
-    discovery_date: 1864,
-    discovery_details: '1864 by Christian Wilhelm Blomstrand', 
+    discovery_date: 1801,
+    discovery_details: '1801 by Charles Hatchett', 
     etymology: 'after <em>Niobe</em> in Greek mythology',
-    description: 'yes'
+    description: 'Niobium is a light grey, crystalline, and ductile transition metal. Niobium is used in various superconducting materials. These superconducting alloys, also containing titanium and tin, are widely used in the superconducting magnets of MRI scanners.'
 };
                 
 const molybdenum = {
@@ -749,10 +749,10 @@ const molybdenum = {
     boiling_point: 4639,
     electronegativity: 2.16,
     radioactive: false,
-    discovery_date: 1781,
-    discovery_details: '1781 by Peter Jacob Hjelm', 
+    discovery_date: 1778,
+    discovery_details: '1778 by Carl Wilhelm Scheele (Germany/Sweden)', 
     etymology: 'from the Neo-Latin equivalent of Ancient Greek <em>molybdos</em>, meaning lead',
-    description: 'yes'
+    description: 'The free element, a silvery metal with a gray cast, has the sixth-highest melting point of any element. Because of this, it is used in steel.'
 };
                 
 const technetium = {
@@ -770,7 +770,7 @@ const technetium = {
     discovery_date: 1937,
     discovery_details: '1937 by Emilio Segrè and Carlo Perrier', 
     etymology: 'from Greek, meaning <em>synthetic</em> with the -ium suffix',
-    description: 'Half-life of 6 days'
+    description: 'It is the lightest element whose isotopes are all radioactive. It has a Half-life of 6 days. <br> From the 1860s to 1871, early versions of the periodic table left a gap between elements 42 and 44. Its existence was predicted in 1871 and there were several false alarms of scientists claiming they\'d discovered it.'
 };
                 
 const ruthenium = {
@@ -786,9 +786,9 @@ const ruthenium = {
     electronegativity: 2.20,
     radioactive: false,
     discovery_date: 1844,
-    discovery_details: '1844 by Karl Ernst Claus', 
+    discovery_details: '1844 by Karl Ernst Claus (Russia)', 
     etymology: 'after <em>Ruthenia</em>, the Latin name for the region controlled by the Kievan Rus',
-    description: 'yes'
+    description: 'It is a rare transition metal belonging to the platinum group of the periodic table. Like the other metals of the platinum group, ruthenium is inert to most other chemicals.'
 };
                 
 const rhodium = {
@@ -806,7 +806,7 @@ const rhodium = {
     discovery_date: 1804,
     discovery_details: '1804 by William Hyde Wollaston', 
     etymology: 'after the rose-colour of a compound it forms with Chlorine',
-    description: 'yes'
+    description: 'It is a rare, silvery-white, hard, corrosion-resistant, and chemically inert transition metal. It is a noble metal and a member of the platinum group.'
 };
                 
 const palladium = {
@@ -824,7 +824,7 @@ const palladium = {
     discovery_date: 1802,
     discovery_details: '1802 by William Hyde Wollaston', 
     etymology: 'after asteroid Pallas, which was named after Pallas Athena',
-    description: 'yes'
+    description: 'It is a rare and lustrous silvery-white metal. The numerous applications and limited supply sources result in considerable investment interest.'
 };
                 
 const silver = {
@@ -842,7 +842,7 @@ const silver = {
     discovery_date: 0,
     discovery_details: 'before 5000 BC', 
     etymology: 'ultimately from proto-Germanic <em>silubra</em>. Its symbol comes from its name, <em>argentum</em>',
-    description: 'yes'
+    description: 'A soft, white, lustrous transition metal, it exhibits the highest electrical conductivity, thermal conductivity, and reflectivity of any metal. As one of the seven metals of antiquity, silver has had an enduring role in most human cultures.'
 };
                 
 const cadmium = {
@@ -860,7 +860,7 @@ const cadmium = {
     discovery_date: 1817,
     discovery_details: '1817 by Karl Samuel Leberecht Hermann and Friedrich Stromeyer', 
     etymology: 'after Cadmus of Greek mythology',
-    description: 'yes'
+    description: 'This soft, silvery-white metal is chemically similar to the two other stable metals in group 12, zinc and mercury. Like zinc, it demonstrates oxidation state +2 in most of its compounds, and like mercury, it has a lower melting point than the transition metals in groups 3 through 11.yes'
 };
                 
 const indium = {
@@ -875,10 +875,10 @@ const indium = {
     boiling_point: 2072 , 
     electronegativity: 1.78,
     radioactive: false,
-    discovery_date: 1864,
-    discovery_details: '1864 by Hieronymous Theodor Richter', 
+    discovery_date: 1863,
+    discovery_details: '1863 by Ferdinand Reich and Hieronymous Theodor Richter', 
     etymology: 'after the inidgo blue of its visible spectrum (ultimately derived from <em>India</em>)',
-    description: 'yes'
+    description: 'Indium is the softest metal that is not an alkali metal. It is a silvery-white metal that resembles tin in appearance. It is a post-transition metal'
 };
                 
 const tin = {
@@ -896,7 +896,7 @@ const tin = {
     discovery_date: 0,
     discovery_details: 'circa 3500 BC', 
     etymology: 'from proto-Germanic <em>tin-om</em>. Its symbol is derived from its Latin name <em>stannum</em>',
-    description: 'yes'
+    description: ' Tin is a silvery metal that characteristically has a faint yellow hue. Tin, like indium, is soft enough to be cut without much force. The first tin alloy used on a large scale was bronze, made of ​1/8 tin and ​7/8 copper, from as early as 3000 BC. After 600 BC, pure metallic tin was produced.'
 };
                 
 const antimony = {
@@ -929,10 +929,10 @@ const tellurium = {
     boiling_point: 988,  
     electronegativity: 2.1,
     radioactive: false,
-    discovery_date: 1798,
-    discovery_details: '1798 by Martin Heinrich Klaproth (Germany)', 
+    discovery_date: 1782,
+    discovery_details: '1782 by Franz-Joseph Müller von Reichenstein (Austria)', 
     etymology: 'after the Roman Earth deity <em>Tellus</em>',
-    description: 'yes'
+    description: 'It is a brittle, mildly toxic, rare, silver-white metalloid. Tellurium is chemically related to selenium and sulfur, all three of which are chalcogens. It is occasionally found in native form as elemental crystals.'
 };
                 
 const iodine = {
@@ -948,9 +948,9 @@ const iodine = {
     electronegativity: 2.66,
     radioactive: false,
     discovery_date: 1811,
-    discovery_details: '1811 by Bernard Courtois', 
+    discovery_details: '1811 by Bernard Courtois (France)', 
     etymology: 'from Greek, translated as <em>violet-coloured</em>',
-    description: 'yes'
+    description: 'The heaviest of the stable halogens, it exists as a lustrous, purple-black non-metallic solid at standard conditions that melts to form a deep violet liquid at 114 degrees Celsius, and boils to a violet gas at 184 degrees Celsius.'
 };
                 
 const xenon = {
@@ -968,7 +968,7 @@ const xenon = {
     discovery_date: 1898,
     discovery_details: '1898 by William Ramsay and Morris Travers',  
     etymology: 'from the Greek <em>xenos</em>, meaning <em>foreigner</em>',
-    description: 'yes'
+    description: 'It is a colorless, dense, odorless noble gas found in Earth\'s atmosphere in trace amounts. Although generally unreactive, xenon can undergo a few chemical reactions such as the formation of xenon hexafluoroplatinate, the first noble gas compound to be synthesized.'
 };
 
 const caesium = {
