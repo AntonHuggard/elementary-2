@@ -176,6 +176,7 @@ h3 {
     padding: 10px 0px;
     color: white;
     outline: none;
+    cursor: pointer;
 }
 
 #periodic_table {

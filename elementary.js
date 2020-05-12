@@ -64,7 +64,7 @@ function search() {
         });
     } else if (query == "NONMETAL") {
         elements.forEach(element => {
-            if (element.metalness == 'metal') {
+            if (element.metalness == 'nonmetal') {
                 document.getElementById(element.name).style.opacity = "100%";
             }
         });
@@ -97,6 +97,9 @@ function show_accordian() {
 var search_type = 0;
 
 function set_search(n, mobile_view) {
+
+    // from here ...
+
     document.getElementById("acc_dt").style.display = "none";
     document.getElementById("acc_EN").style.display = "none";
     document.getElementById("acc_MP").style.display = "none";
@@ -164,11 +167,15 @@ function set_search(n, mobile_view) {
         }
         
     }      
+
+    // ... to here, it's all just visual indicators of the selectors at the top
+    // the following code has all the functionality ...
     
     switch (n) {
         case 0:
             document.getElementById("acc_dt").style.display = "block";                
             document.getElementById("element_search_container").style.display = "grid";
+            reset_opacity();
             search_type = 0;
             break;
         case 1:
@@ -176,11 +183,13 @@ function set_search(n, mobile_view) {
                 document.getElementById("acc_EN").style.display = "block";
                 document.getElementById("electronegativity_div").style.display = "block";
                 document.getElementById("element_search_container").style.display = "none";
+                en_slider_function();
                 search_type = 1;
             } else {
                 document.getElementById("acc_dt").style.display = "block";
                 document.getElementById("acc_dt").classList.toggle("active");
                 document.getElementById("element_search_container").style.display = "grid";
+                reset_opacity();
                 search_type = 0;
             }
             break;
@@ -190,9 +199,11 @@ function set_search(n, mobile_view) {
                 document.getElementById("acc_MP").style.display = "block";
                 document.getElementById("melting_pt_div").style.display = "block";
                 document.getElementById("element_search_container").style.display = "none";
+                mp_slider_function();
             } else {
                 document.getElementById("acc_dt").style.display = "block";
                 document.getElementById("element_search_container").style.display = "grid";
+                reset_opacity();
                 search_type = 0;
             }
             break;
@@ -203,10 +214,12 @@ function set_search(n, mobile_view) {
                 document.getElementById("acc_BP").classList.toggle("active");
                 document.getElementById("boiling_pt_div").style.display = "block";
                 document.getElementById("element_search_container").style.display = "none";
+                bp_slider_function();
             } else {
                 document.getElementById("acc_dt").style.display = "block";
                 document.getElementById("acc_dt").classList.toggle("active");
                 document.getElementById("element_search_container").style.display = "grid";
+                reset_opacity();
                 search_type = 0;
             }
             break;
@@ -216,28 +229,51 @@ function set_search(n, mobile_view) {
                 document.getElementById("acc_ds").style.display = "block";
                 document.getElementById("discovery_div").style.display = "block";
                 document.getElementById("element_search_container").style.display = "none";
+                ds_slider_function();
             } else {
                 document.getElementById("acc_dt").style.display = "block";
                 document.getElementById("acc_dt").classList.toggle("active");
                 document.getElementById("element_search_container").style.display = "grid";
+                reset_opacity();
                 search_type = 0;
             }
             break;
     }
 }    
 
+function reset_opacity() {
+    elements.forEach(element => {
+        document.getElementById(element.name).style.opacity = "100%";
+    });
+}
+
+
 var en_slider = document.getElementById("EN_slider");
 var en_output = document.getElementById("EN_display");
 en_output.innerHTML = en_slider.value;
 
-en_slider.oninput = function() {
-    const true_value = this.value / 100;
-    en_output.innerHTML = (true_value);
+function en_slider_function() {
+    const true_value = document.getElementById("EN_slider").value / 100;
+    en_output.innerHTML = true_value;
     elements.forEach(element => {
-        if (element.electronegativity <= true_value) {
+        const O1 = element.electronegativity - 1;
+        const O2 = element.electronegativity + 1;
+        const M1 = element.electronegativity - 0.5;
+        const M2 = element.electronegativity + 0.5;
+        const I1 = element.electronegativity - 0.25;
+        const I2 = element.electronegativity + 0.25;
+
+        if ((I1 < true_value) && (true_value < I2)) {
             document.getElementById(element.name).style.opacity = "100%";
-        } else {
-            document.getElementById(element.name).style.opacity = "25%";
+        }
+        else if ((M1 < true_value) && (true_value < M2)) {
+            document.getElementById(element.name).style.opacity = "60%";
+        } 
+        else if ((O1 < true_value) && (true_value < O2)) {
+            document.getElementById(element.name).style.opacity = "40%";
+        }
+        else {
+            document.getElementById(element.name).style.opacity = "20%";
         }
     });
 }
@@ -246,13 +282,28 @@ var mp_slider = document.getElementById("MP_slider");
 var mp_output = document.getElementById("MP_display");
 mp_output.innerHTML = mp_slider.value  + " &#176;C";
 
-mp_slider.oninput = function() {
-    mp_output.innerHTML = this.value + " &#176;C";
+function mp_slider_function() {
+    const mp_input = document.getElementById("MP_slider").value;
+    mp_output.innerHTML = mp_input + " &#176;C";
     elements.forEach(element => {
-        if (element.melting_point <= this.value) {
+        const O1 = element.melting_point - 1000;
+        const O2 = element.melting_point + 1000;
+        const M1 = element.melting_point - 500;
+        const M2 = element.melting_point + 500;
+        const I1 = element.melting_point - 100;
+        const I2 = element.melting_point + 100;
+
+        if ((I1 < mp_input) && (mp_input < I2)) {
             document.getElementById(element.name).style.opacity = "100%";
-        } else {
-            document.getElementById(element.name).style.opacity = "25%";
+        }
+        else if ((M1 < mp_input) && (mp_input < M2)) {
+            document.getElementById(element.name).style.opacity = "60%";
+        } 
+        else if ((O1 < mp_input) && (mp_input < O2)) {
+            document.getElementById(element.name).style.opacity = "40%";
+        }
+        else {
+            document.getElementById(element.name).style.opacity = "20%";
         }
     });
 }
@@ -261,13 +312,28 @@ var bp_slider = document.getElementById("BP_slider");
 var bp_output = document.getElementById("BP_display");
 bp_output.innerHTML = bp_slider.value + " &#176;C";
 
-bp_slider.oninput = function() {
-    bp_output.innerHTML = this.value  + " &#176;C";
+function bp_slider_function() {
+    const bp_input = document.getElementById("BP_slider").value;
+    bp_output.innerHTML = bp_input  + " &#176;C";
     elements.forEach(element => {
-        if (element.boiling_point <= this.value) {
+        const O1 = element.boiling_point - 1000;
+        const O2 = element.boiling_point + 1000;
+        const M1 = element.boiling_point - 500;
+        const M2 = element.boiling_point + 500;
+        const I1 = element.boiling_point - 100;
+        const I2 = element.boiling_point + 100;
+
+        if ((I1 < bp_input) && (bp_input < I2)) {
             document.getElementById(element.name).style.opacity = "100%";
-        } else {
-            document.getElementById(element.name).style.opacity = "25%";
+        }
+        else if ((M1 < bp_input) && (bp_input < M2)) {
+            document.getElementById(element.name).style.opacity = "60%";
+        } 
+        else if ((O1 < bp_input) && (bp_input < O2)) {
+            document.getElementById(element.name).style.opacity = "40%";
+        }
+        else {
+            document.getElementById(element.name).style.opacity = "20%";
         }
     });
 }
@@ -276,10 +342,11 @@ var ds_slider = document.getElementById("discovery_timeline");
 var date_output = document.getElementById("date_display");
 date_output.innerHTML = ds_slider.value;
 
-ds_slider.oninput = function() {
-    date_output.innerHTML = this.value;
+function ds_slider_function() {
+    const ds_input = document.getElementById("discovery_timeline").value;
+    date_output.innerHTML = ds_input;
     elements.forEach(element => {
-        if (element.discovery_date <= this.value) {
+        if (element.discovery_date <= ds_input) {
             document.getElementById(element.name).style.opacity = "100%";
         } else {
             document.getElementById(element.name).style.opacity = "25%";
@@ -401,3 +468,21 @@ function show_modal(obj) {
     document.getElementById('element_pop-up').innerHTML = modal_code ;
     document.getElementById('element_pop-up').style.display = "block" ;
 }
+
+
+// close the element modal when the esc key is pressed
+document.addEventListener('keydown', (event) => {
+    switch (event.keyCode) {
+        case 27:
+            document.getElementById('element_pop-up').style.display='none'
+            break;
+    }
+});
+
+// jQuery doesn't work and I have no idea why. The goal was to make clicking outside of the modal close it
+
+// $(document).ready(function(){
+//     $(".modal_content").mouseleave(function(){
+//       alert('tst');
+//     });
+// });

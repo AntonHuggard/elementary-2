@@ -6,6 +6,7 @@
     <link rel="icon" href="rf.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="elementary.css" />
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
 
 </head>
@@ -20,22 +21,22 @@
     </div>    
 
     <div id = "electronegativity_div" class="slider_div">
-        <input type="range" min="0" max="400" value="0" class="slider" id="EN_slider">
+        <input type="range" min="0" max="400" value="0" class="slider" id="EN_slider" oninput="en_slider_function()">
         <p id = "EN_display"></p>
     </div>
 
     <div id = "melting_pt_div" class="slider_div">
-        <input type="range" min="0" max="3800" value="0" class="slider" id="MP_slider">
+        <input type="range" min="0" max="3800" value="0" class="slider" id="MP_slider" oninput="mp_slider_function()">
         <p id = "MP_display"></p>
     </div>
 
     <div id = "boiling_pt_div" class="slider_div">
-        <input type="range" min="-300" max="6600" value="4" class="slider" id="BP_slider">
+        <input type="range" min="-300" max="6600" value="-300" class="slider" id="BP_slider" oninput="bp_slider_function()">
         <p id = "BP_display"></p>
     </div>
 
     <div id = "discovery_div" class="slider_div">
-        <input type="range" min="800" max="2020" value="1800" class="slider" id="discovery_timeline">
+        <input type="range" min="800" max="2020" value="1800" class="slider" id="discovery_timeline" oninput="ds_slider_function()">
         <p id = "date_display"></p>
     </div>
 
