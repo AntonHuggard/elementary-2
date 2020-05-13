@@ -860,7 +860,7 @@ const cadmium = {
     discovery_date: 1817,
     discovery_details: '1817 by Karl Samuel Leberecht Hermann and Friedrich Stromeyer', 
     etymology: 'after Cadmus of Greek mythology',
-    description: 'This soft, silvery-white metal is chemically similar to the two other stable metals in group 12, zinc and mercury. Like zinc, it demonstrates oxidation state +2 in most of its compounds, and like mercury, it has a lower melting point than the transition metals in groups 3 through 11.yes'
+    description: 'This soft, silvery-white metal is chemically similar to the two other stable metals in group 12, zinc and mercury. Like zinc, it demonstrates oxidation state +2 in most of its compounds, and like mercury, it has a lower melting point than the transition metals in groups 3 through 11.'
 };
                 
 const indium = {
@@ -983,10 +983,10 @@ const caesium = {
     boiling_point: 671, 
     electronegativity: 0.79,
     radioactive: false,
-    discovery_date: 1882,
-    discovery_details: '1882 by Carl Setterberg', 
+    discovery_date: 1860,
+    discovery_details: '1860 by Robert Bunsen and Gustav Kirchhoff. Isolated in 1882 by Carl Setterberg', 
     etymology:'from Latin <em>Caesius</em> (bluish-grey), after its spectral colours.',
-    description: 'yes'
+    description: 'Americans like to spell it <em>Cesium</em>. It is a soft, silvery-golden alkali metal with a melting point of 28.5 °C (83.3 °F), which makes it one of only five elemental metals that are liquid at or near room temperature. It is the least electronegative element, with a value of 0.79 on the Pauling scale.'
 };
                 
 const barium = {
@@ -1001,10 +1001,10 @@ const barium = {
     boiling_point: 1845, 
     electronegativity: 0.89,
     radioactive: false,
-    discovery_date: 1808,
-    discovery_details: '1808 by Humphry Davy', 
+    discovery_date: 1772,
+    discovery_details: '1772 by Carl Wilhelm Scheele. 1808 by Humphry Davy', 
     etymology: 'from the Alchemical <em>baryta</em> which is derived from Greek <em>Barys</em>, meaning heavy',
-    description: 'yes'
+    description: 'Barium is a soft, silvery alkaline earth metal. Because of its high chemical reactivity, barium is never found in nature as a free element. Barium has few industrial applications. Historically, it was used as a getter for vacuum tubes and in oxide form as the emissive coating on indirectly heated cathodes.'
 };
 
 const lanthanum = {
@@ -1022,7 +1022,7 @@ const lanthanum = {
     discovery_date: 1838,
     discovery_details: '1838 by Carl Gustaf Mosander',
     etymology:'from the Ancient Greek <em>lanthanein</em>, meaning <em>to lie hidden</em>', 
-    description: 'yes'
+    description: 'It is a soft, ductile, silvery-white metal that tarnishes slowly when exposed to air and is soft enough to be cut with a knife. The usual oxidation state is +3. Lanthanum compounds are used in catalysts, glass and lighting.'
 };
                 
             
@@ -1041,7 +1041,7 @@ const cerium = {
     discovery_date: 1803,
     discovery_details: '1803 by M.H. Klaproth, J.J. Berzelius, Wilhelm Hisinger. Isolated 1838 by C.G. Mosander',
     etymology:'after Ceres, the Roman god of agriculture',
-    description: 'yes'
+    description: 'Cerium is a soft, ductile and silvery-white metal that tarnishes when exposed to air, and it is soft enough to be cut with a knife. It is pretty toxic to humans, so um... Try not to eat any. It\'s the 26th-most abundant element.'
 };
                
 const praseodymium = {
@@ -1059,7 +1059,7 @@ const praseodymium = {
     discovery_date: 1885,
     discovery_details: '1885 by Carl Auer von Welsbach (Austria)',
     etymology:'from Greek, meaning <em>green twin</em>',
-    description: 'yes'
+    description: ' Praseodymium is a soft, silvery, malleable and ductile metal, valued for its magnetic, electrical, chemical, and optical properties. Like most rare-earth elements, praseodymium most readily forms the +3 oxidation state, which is the only stable state in aqueous solution.'
 };
                
 const neodymium = {
@@ -1077,7 +1077,7 @@ const neodymium = {
     discovery_date: 1885,
     discovery_details: '1885 by Carl Auer von Welsbach (Austria)',
     etymology:'from Greek, meaning <em>new twin</em>',
-    description: 'yes'
+    description: 'It is a hard, slightly malleable silvery metal that quickly tarnishes in air and moisture. When oxidized, neodymium reacts quickly to produce pink, purple/blue and yellow compounds in the +2, +3 and +4 oxidation states. Neodymium is as a component in the alloys used to make high-strength neodymium magnets—powerful permanent magnets.'
 };
                 
 const promethium = {
