@@ -1095,10 +1095,9 @@ const promethium = {
     discovery_date: 1942,
     discovery_details: '1942 by Chien Shiung Wu, E. Segrè, H. Bethe. Isolated 1945 by C.D. Coryell, J.A. Marinsky, L.E. Glendenin',
     etymology:'after <em>Promethius</em> of Greek mythology',
-    description: 'yes'
+    description: 'All of its isotopes are radioactive; it is extremely rare, with only about 500–600 grams naturally occurring in Earth\'s crust at any given time. Promethium is one of only two radioactive elements that are followed in the periodic table by elements with stable forms, the other being technetium.'
 };
                 
-             
 const samarium = {
     symbol: 'Sm',
     name:"samarium",
@@ -1114,7 +1113,7 @@ const samarium = {
     discovery_date: 1879,
     discovery_details: '1879 by Lecoq de Boisbaudran',
     etymology:'after samarskite (ultimately from Russian mining engineer Vassili Samarsky-Bykhovets)',
-    description: 'yes'
+    description: 'It is a moderately hard silvery metal that slowly oxidizes in air. Being a typical member of the lanthanide series, samarium usually assumes the oxidation state +3. Its major commercial application is in samarium–cobalt magnets, which have permanent magnetization'
 };
                 
 const europium = {
@@ -1132,7 +1131,7 @@ const europium = {
     discovery_date: 1896,
     discovery_details: '1896 by Eugène-Anatole Demarçay. Isolated 1901 (by him)',
     etymology:'after Europe. Obviously.',
-    description: 'yes'
+    description: 'Europium is a ductile metal with a hardness similar to that of lead. Europium is also the softest lanthanide, as it can be dented with a fingernail and easily cut with a knife. It is the most reactive rare-earth element.'
 };
                
 const gadolinium = {
@@ -1150,7 +1149,7 @@ const gadolinium = {
     discovery_date: 1880,
     discovery_details: '1880 by Jean Charles Galissard de Marignac. Isolated 1886 by Lecoq de Boisbaudran',
     etymology:'after Gadolinite (ultimately derived from Swedish/Finnish chemist Johan Gadolin)',
-    description: 'Gadolinium is one of four elements (the others are iron, cobalt, and nickel) that are ferromagnetic (permanent magnets) at room temperature.'
+    description: 'Gadolinium is a silvery-white metal when oxidation is removed. It is only slightly malleable and is a ductile rare-earth element. Gadolinium possesses unusual metallurgical properties, to the extent that as little as 1% of gadolinium can significantly improve the workability and resistance to oxidation at high temperatures of iron, chromium, and related metals. It is one of four elements (the others are iron, cobalt, and nickel) that are ferromagnetic (permanent magnets) at room temperature.'
 };
                 
 const terbium = {
@@ -1168,7 +1167,7 @@ const terbium = {
     discovery_date: 1843,
     discovery_details: '1843 Carl Gustaf Mosander',
     etymology:'after Ytterby, Sweden',
-    description: 'yes'
+    description: 'It is a silvery-white, rare earth metal that is malleable, ductile, and soft enough to be cut with a knife. Terbium oxide is in fluorescent lamps and television and monitor cathode ray tubes (CRTs).'
 };
                 
              
@@ -1187,7 +1186,7 @@ const dysprosium = {
     discovery_date: 1886,
     discovery_details: '1886 Lecoq de Boisbaudran',
     etymology:'from Greek <em>dysprositos</em>, meaning <em>hard to obtain</em>',
-    description: 'yes'
+    description: 'It is a rare-earth element with a metallic silver luster. Dysprosium is never found in nature as a free element. Naturally occurring dysprosium is composed of seven isotopes, the most abundant of which is <sup>164</sup>Dy.'
 };
                 
 const holmium = {
@@ -1205,7 +1204,7 @@ const holmium = {
     discovery_date: 1878,
     discovery_details: '1878 by Jacques-Louis Soret and Marc Delafontaine',
     etymology:'after the Latin name for Stockholm, Sweden',
-    description: 'yes'
+    description: 'Elemental holmium is a relatively soft and malleable silvery-white metal. It is too reactive to be found uncombined in nature, but when isolated, is relatively stable in dry air at room temperature. It has the highest magnetic permeability of any element.'
 };
                 
 const erbium = {
