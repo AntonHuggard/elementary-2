@@ -896,7 +896,7 @@ const tin = {
     discovery_date: 0,
     discovery_details: 'circa 3500 BC', 
     etymology: 'from proto-Germanic <em>tin-om</em>. Its symbol is derived from its Latin name <em>stannum</em>',
-    description: ' Tin is a silvery metal that characteristically has a faint yellow hue. Tin, like indium, is soft enough to be cut without much force. The first tin alloy used on a large scale was bronze, made of ​1/8 tin and ​7/8 copper, from as early as 3000 BC. After 600 BC, pure metallic tin was produced.'
+    description: 'Tin is a silvery metal that characteristically has a faint yellow hue. Tin, like indium, is soft enough to be cut without much force. The first tin alloy used on a large scale was bronze, made of ​1/8 tin and ​7/8 copper, from as early as 3000 BC. After 600 BC, pure metallic tin was produced.'
 };
                 
 const antimony = {
@@ -1222,7 +1222,7 @@ const erbium = {
     discovery_date: 1843,
     discovery_details: '1843 Carl Gustaf Mosander',
     etymology:'after Ytterby, Sweden',
-    description: 'yes'
+    description: 'A silvery-white solid metal when artificially isolated, natural erbium is always found in chemical combination with other elements. Erbium\'s principal uses involve its pink-colored Er3+ ions, which have optical fluorescent properties particularly useful in certain laser applications.'
 };
                 
 const thulium = {
@@ -1240,7 +1240,7 @@ const thulium = {
     discovery_date: 1879,
     discovery_details: '1879 by Per Teodor Cleve (Sweden)',
     etymology:'after Thule (mythical Scandinavian region)',
-    description: 'yes'
+    description: 'Thulium is the second-least abundant of the lanthanides, after radioactively unstable promethium which is only found in trace quantities on Earth. It is an easily workable metal with a bright silvery-gray luster. It is fairly soft and slowly tarnishes in air.'
 };
                 
 const ytterbium = {
@@ -1258,7 +1258,7 @@ const ytterbium = {
     discovery_date: 1878,
     discovery_details: '1878 by Jean Charles Galissard de Marignac. Isolated 1906 by Carl Auer von Welsbach',
     etymology:'after Ytterby, Sweden',
-    description: 'yes'
+    description: 'Once extracted and prepared, ytterbium is somewhat hazardous as an eye and skin irritant. The metal is a fire and explosion hazard. Sounds like a lot of fun.'
 };
                 
 const lutetium = {
@@ -1276,7 +1276,7 @@ const lutetium = {
     discovery_date: 1906,
     discovery_details: '1906 by Carl Auer von Welsbach and Georges Urbain. Isolated by Welsbach, 1906',
     etymology:'after the Latin name for Paris (Lutetia)',
-    description: 'yes'
+    description: 'It is a silvery white metal, which resists corrosion in dry air, but not in moist air. Other than that, there doesn\'t really seem anything special about it...'
 };        
 
 const hafnium = {
@@ -1294,7 +1294,7 @@ const hafnium = {
     discovery_date: 1922,
     discovery_details: '1922 by Dirk Coster and George de Hevesy', 
     etymology:'from the Latin name for Copenhagen, <em> Hafnia</em>',
-    description: 'yes'
+    description: ' A lustrous, silvery gray, tetravalent transition metal, hafnium chemically resembles zirconium and is found in many zirconium minerals. Its existence was predicted by Dmitri Mendeleev in 1869. Hafnium is used in filaments and electrodes.'
 };
                 
 const tantalum = {
@@ -1309,10 +1309,10 @@ const tantalum = {
     boiling_point: 5458,
     electronegativity: 1.5,
     radioactive: false,
-    discovery_date: 1844,
-    discovery_details: '1844 by Heinrich Rose', 
+    discovery_date: 1802,
+    discovery_details: '1802 by Anders Gustaf Ekeberg. Recognised as a distinct element in 1844 by Heinrich Rose', 
     etymology: 'after Tantalus, from Greek mythology',
-    description: 'yes'
+    description: 'It used to be called <em>tantalium</em>. Tantalum is a rare, hard, blue-gray, lustrous transition metal that is highly corrosion-resistant. It is part of the refractory metals group, which are widely used as minor components in alloys.'
 };
                 
 const tungsten = {
@@ -1327,10 +1327,10 @@ const tungsten = {
     boiling_point: 5930, 
     electronegativity: 2.36,
     radioactive: false,
-    discovery_date: 1783,
-    discovery_details: '1783 by Juan José Elhuyar and Fausto Elhuyar',
+    discovery_date: 1781,
+    discovery_details: '1781 by Juan José Elhuyar and Fausto Elhuyar. It was first isolated two years later',
     etymology: 'from Swedish, meaning <em>heavy stone</em>. In most European languages, the element is called <em>wolfram</em> whence its symbol is derived',
-    description: 'yes'
+    description: 'Tungsten is a rare metal found naturally on Earth almost exclusively combined with other elements in chemical compounds rather than alone. It has the highest melting and boiling points of all discovered elements. Its alloys have many applications, including incandescent light bulb filaments and X-ray tubes'
 };
 
 const rhenium = {
@@ -1345,10 +1345,10 @@ const rhenium = {
     boiling_point: 5630,
     electronegativity:1.9,
     radioactive: false,
-    discovery_date: 1919,
-    discovery_details: '1919 by Masataka Ogawa (Japan)', 
+    discovery_date: 1908,
+    discovery_details: '1908 by Masataka Ogawa (Japan)', 
     etymology:'named after the Rhine (river)',
-    description: 'yes'
+    description: 'It is a silvery-gray, heavy, third-row transition metal in group 7 of the periodic table. Discovered in 1908, rhenium was the second-last stable element to be discovered (the last being hafnium).'
 };
                 
 const osmium = {
@@ -1366,7 +1366,7 @@ const osmium = {
     discovery_date: 1803,
     discovery_details: '1803 by Smithson Tennant (England)', 
     etymology:'from Greek <em>osme</em> (a smell)',
-    description: 'yes'
+    description: 'It is a hard, brittle, bluish-white transition metal in the platinum group that is found as a trace element in alloys, mostly in platinum ores. The element\'s abundance in the Earth\'s crust is among the rarest.'
 };
                 
 const iridium = {
@@ -1384,7 +1384,7 @@ const iridium = {
     discovery_date: 1803,
     discovery_details: '1803 by Smithson Tennant', 
     etymology: 'after the Greek goddess Iris (rainbow personification) because of its colourful salts', 
-    description: 'yes'
+    description: ' A very hard, brittle, silvery-white transition metal of the platinum group, iridium is considered to be the second-densest metal (after osmium). Iridium is found in meteorites in much higher abundance than in the Earth\'s crust.'
 };
                 
 const platinum = {
@@ -1402,7 +1402,7 @@ const platinum = {
     discovery_date: 1735,
     discovery_details: '1735 by Antonio de Ulloa (Spain)', 
     etymology: 'from Spanish <em>platino</em> (<em>little silver</em>)',
-    description: 'yes'
+    description: 'Platinum is a member of the platinum group of elements and group 10 of the periodic table of elements. It has six naturally occurring isotopes. It is one of the rarer elements in Earth\'s crust. It\'s one of the least radioactive metals.'
 };
                 
 const gold = {
@@ -1420,7 +1420,7 @@ const gold = {
     discovery_date: 0,
     discovery_details: 'before 6000 BC, Middle East', 
     etymology:'from proto-Germanic <em>gultha</em>. Its symbol is from its Latin <em>aurum</em>',
-    description: 'yes'
+    description: 'In a pure form, it is a bright, slightly reddish yellow, dense, soft, malleable, and ductile metal. It\'s resistant to most acids. Gold\'s high malleability, ductility, resistance to corrosion and most other chemical reactions, and conductivity of electricity have led to its continued use in corrosion resistant electrical connectors in all types of computerized devices. Humans have known about and played with it for thousands of years.'
 };
                 
 const mercury = {
@@ -1438,7 +1438,7 @@ const mercury = {
     discovery_date:0,
     discovery_details:'Unknown. Before 1500 BC, Ancient Egypt',
     etymology:'after the Roman god. Formerly called hydrargyrum (Greek, meaning <em>water-silver</em>), hence its symbol',
-    description: 'yes'
+    description: 'It is commonly known as quicksilver and was formerly named hydrargyrum. mercury is the only metallic element that\'s liquid at standard conditions (the only other element that is liquid under these conditions is bromine). When humans are exposed to it for too long, they get mercury poisoning.'
 };
              
 const thallium = {
