@@ -7,10 +7,16 @@ const lanthanoid_colour = "#5900b3";
 const actinoid_colour = "#000099";
 const noble_gas_colour = "rgb(99, 0, 124)";
 const unknown_colour = "rgb(34, 34, 34)";
-const transition_metal_colour = "rgb(143, 132, 37)";
+const transition_metal_colour = "rgb(21, 49, 85)";
+
+// display-type, from bottom buttons
+var prv_display = 'all';
+var new_display;
 
 
 function search() {
+    prv_display = 'all'; // when the user has selected a display type and then makes a search, 
+    new_display = 'all'; // these two lines clear the display-type memory, making it usable afterwards.
     const query = document.getElementById("element_io").value.toUpperCase();
     var html_elements = document.getElementsByClassName("element");
 
@@ -479,10 +485,74 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-// jQuery doesn't work and I have no idea why. The goal was to make clicking outside of the modal close it
-
-// $(document).ready(function(){
-//     $(".modal_content").mouseleave(function(){
-//       alert('tst');
-//     });
-// });
+// display type based on buttons at the bottom
+function display_type(new_display) {
+    if (new_display == prv_display) {
+        prv_display = 'all';
+        reset_opacity();
+    } else {
+        prv_display = new_display;
+        elements.forEach(element => {
+            document.getElementById(element.name).style.opacity = '25%';
+        });
+        switch (new_display) {
+            case 's_blk':
+                elements.forEach(element => {
+                    if (element.block == 's') {
+                        document.getElementById(element.name).style.opacity = '100%';
+                    }
+                });
+                break;
+            case 'p_blk':
+                elements.forEach(element => {
+                    if (element.block == 'p') {
+                        document.getElementById(element.name).style.opacity = '100%';
+                    }
+                });
+                break;
+            case 'd_blk':
+                elements.forEach(element => {
+                    if (element.block == 'd') {
+                        document.getElementById(element.name).style.opacity = '100%';
+                    }
+                });
+                break;
+            case 'f_blk':
+                elements.forEach(element => {
+                    if (element.block == 'f') {
+                        document.getElementById(element.name).style.opacity = '100%';
+                    }
+                });
+                break;
+            case 'ractv':
+                elements.forEach(element => {
+                    if (element.radioactive) {
+                        document.getElementById(element.name).style.opacity = '100%';
+                    }
+                });
+                break;
+            case 'solid':
+                elements.forEach(element => {
+                    if (element.state_at_standard_conditions == 'solid') {
+                        document.getElementById(element.name).style.opacity = '100%';
+                    }
+                });
+                break;
+            case 'liqud':
+                elements.forEach(element => {
+                    if (element.state_at_standard_conditions == 'liquid') {
+                        document.getElementById(element.name).style.opacity = '100%';
+                    }
+                });
+                break;
+            case 'gasus':
+                elements.forEach(element => {
+                    if (element.state_at_standard_conditions == 'gas') {
+                        document.getElementById(element.name).style.opacity = '100%';
+                    }
+                });
+                break;
+              
+        }
+    }
+}

@@ -261,11 +261,28 @@ h3 {
     padding: 10px;
 }
 
+
+#properties_menu {margin-bottom: 30px;}
+#properties_menu > button {
+    color: white;
+    font-family: 'Sen', sans-serif;
+    font-size: 17px;
+    text-align: center; 
+    background-color: transparent;
+    padding: 10px;
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+    outline: none;
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
 #periodic_table > .element {
-    background-color: rgb(143, 132, 37);
+    background-color: rgb(21, 49, 85);
 }
 #periodic_table > .element:hover {
-    color: rgb(80, 74, 20);
+    color: rgb(21, 49, 85);
     background-color: white;
 }
 #periodic_table > .alkali_metals { background-color: rgb(223, 0, 0); }
@@ -284,7 +301,7 @@ h3 {
 #periodic_table > .lanthanoid:hover { color: #5900b3; }
 #periodic_table > .actinoid { background-color: #000099; }
 #periodic_table > .actinoid:hover { color: #000099; }
-#periodic_table > .unknown { background-color: rgb(95, 95, 95); }
+#periodic_table > .unknown { background-color: rgb(34, 34, 34); }
 #periodic_table > .unknown:hover { color: rgb(34, 34, 34); }
 
 @media only screen and (min-width: 330px) {
@@ -524,7 +541,7 @@ h3 {
         display: none;
     }
 
-    #search_type_grid {
+    #search_type_grid, #properties_menu {
         width: 90%;
         max-width: 700px;
         display: grid;    
@@ -532,7 +549,8 @@ h3 {
         grid-gap: 5px;
         margin-bottom: 0px;
     }
-    #search_type_grid > button {
+    #properties_menu {margin-bottom: 50px;}
+    #search_type_grid > button, #properties_menu > button {
         color: white;
         font-family: 'Sen', sans-serif;
         font-size: 17px;
@@ -543,8 +561,10 @@ h3 {
         border: 3px solid white;
         border-radius: 30px;
     }
+
+    #properties_menu > button {width: 90%;}
     
-    #search_type_grid > button:hover {
+    #search_type_grid > button:hover, #properties_menu > button:hover {
         color: black;
         background-color: white;
         cursor: pointer;
