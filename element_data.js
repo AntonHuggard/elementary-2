@@ -1453,10 +1453,10 @@ const thallium = {
     boiling_point: 1473, 
     electronegativity:1.62,
     radioactive: false,
-    discovery_date: 1862,
-    discovery_details: '1862 by Claude-Auguste Lamy',
+    discovery_date: 1861,
+    discovery_details: '1861 by William Crookes (Britain), it was isolated the following year.',
     etymology:'from Greek <em>thallos</em> (green shoot or twig)',
-    description: 'yes'
+    description: 'It is a gray post-transition metal that is not found free in nature. When isolated, thallium resembles tin, but discolors when exposed to air.'
 };
                 
 const lead = {
@@ -1474,7 +1474,7 @@ const lead = {
     discovery_date: 0,
     discovery_details: '7000 BC, Middle East',
     etymology:'No one knows. It\'s been called the same thing for centuries. Symbol derived from latin <em>plumbum</em>',
-    description: 'yes'
+    description: 'It is a heavy metal that is denser than most common materials. Lead is soft and malleable. Lead has the highest atomic number of any stable element and three of its isotopes are endpoints of major nuclear decay chains of heavier elements.'
 };
                 
 const bismuth = {
@@ -1492,7 +1492,7 @@ const bismuth = {
     discovery_date: 1000,
     discovery_details: 'before 1000 AD by Arabic Alchemists',
     etymology:'Unknown. Probably from Arabic <em>bi ismid</em>, which means <em>having the properties of antimony</em>',
-    description: 'yes'
+    description: 'It is a pentavalent post-transition metal and one of the pnictogens with chemical properties resembling its lighter homologs arsenic and antimony. In 2003 it was discovered to be extremely weakly radioactive'
 };
                 
 const polonium = {
@@ -1510,7 +1510,7 @@ const polonium = {
     discovery_date: 1898,
     discovery_details: '1898 by Pierre & Marie Curie. Isolated 1902 by Willy Marckwald',
     etymology:'from <em>Polonia</em>, the Latin name for Poland',
-    description: 'yes'
+    description: 'A rare and highly radioactive metal with no stable isotopes, polonium is chemically similar to selenium and tellurium. Due to its intense radioactivity, which results in the radiolysis of chemical bonds and radioactive self-heating, its chemistry has mostly been investigated on the trace scale only.'
 };
                 
 const astatine = {
@@ -1528,7 +1528,7 @@ const astatine = {
     discovery_date: 1940,
     discovery_details: '1940 by Dale R. Corson, Kenneth Ross MacKenzie, Emilio Segrè',
     etymology:'from Greek <em>astatos</em> (unstable)', 
-    description:'yes'    
+    description:'It is the rarest naturally occurring element in the Earth\'s crust, occurring only as the decay product of various heavier elements. The bulk properties of astatine are not known with any certainty. Scientists mostly just make guesses about it based on periodic trends.'    
 };
     
 const radon = {
@@ -1544,9 +1544,9 @@ const radon = {
     electronegativity:2.2, 
     radioactive:true,
     discovery_date:1899,
-    discovery_details:'1899 by E. Rutherford and R.B. Owens. Isolated 1910 by W. Ramsay & R. Whytlaw-Gray ',
+    discovery_details:'1899 by E. Rutherford (New Zealand) and R.B. Owens (USA). Isolated 1910 by W. Ramsay & R. Whytlaw-Gray ',
     etymology:'Initially it was called <em>radium emanation</em>. In 1918 it was one of several shortened proposed names', 
-    description:'yes'    
+    description:'It is a radioactive, colorless, odorless, tasteless noble gas. Studies have shown that breathing radon is linked to lung cancer. Who knew! \"Radon gas is considered a health hazard\" -- thanks, Wikipedia. '    
 };    
 
 const francium = {
