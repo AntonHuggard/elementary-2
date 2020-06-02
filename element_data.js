@@ -1564,7 +1564,7 @@ const francium = {
     discovery_date:1939,
     discovery_details:'1939 by Marguerite Perey',
     etymology:'after France', 
-    description:'yes'    
+    description:'Fracium is extremely radioactive; its most stable isotope, francium-223 has a half-life of only 22 minutes. It is the second-most electropositive element, behind only caesium, and is the second rarest naturally occurring element.'    
 };
     
 const radium = {
@@ -1582,7 +1582,7 @@ const radium = {
     discovery_date:1898,
     discovery_details:'1898 by Pierre & Marie Curie. Isolated by Marie, 1910',
     etymology:'from Latin <em>radius</em>, meaning ray -- because Redium\'s emissions', 
-    description:'yes'
+    description:'Pure radium is silvery-white, but it readily reacts with nitrogen (rather than oxygen) on exposure to air, forming a black surface layer of radium nitride. Its most stable isotope has a half-life of 1600 years.'
 };
 
 const actinium = {
@@ -1600,7 +1600,7 @@ const actinium = {
     discovery_date:1902,
     discovery_details:'1902 by Friedrich Oskar Giesel',
     etymology:'from Greek, meaning <em>ray-beam</em>',
-    description: 'yes'
+    description: 'A soft, silvery-white radioactive metal, actinium reacts rapidly with oxygen and moisture in air forming a white coating of actinium oxide that prevents further oxidation. Because the physical and chemical properties of actinium and lanthanum are so similar, it\'s hard to separate actinium from ore. Also, because it\'s rare and expensive, it has no important industrial use.'
 };
                 
 const thorium = {
@@ -1618,7 +1618,7 @@ const thorium = {
     discovery_date: 1829,
     discovery_details: '1829 by Jöns Jakob Berzelius',
     etymology:'after Thor, the Norse god of thunder',
-    description: 'yes'
+    description: 'Thorium is silvery and tarnishes black when it is exposed to air, forming thorium dioxide; it is moderately hard, malleable, and has a high melting point. All of its known isotopes are unstable -- but the most stable one has a half-life of 14.05 billion years.'
 };
                 
 const protactinium = {
@@ -1636,7 +1636,7 @@ const protactinium = {
     discovery_date: 1913,
     discovery_details: '1913 by Kasimir Fajans and Oswald Helmuth Göhring',
     etymology:'a contraction of <em>proto-actinium</em>',
-    description: 'yes'
+    description: 'Protactinium is a dense, silvery-gray actinide metal that reacts readily with oxygen, water vapor and inorganic acids. Because it\'s rare, radioactive and highly toxic, no one really uses it except for weird science stuff.'
 };
                
 const uranium = {
