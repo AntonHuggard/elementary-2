@@ -1654,7 +1654,7 @@ const uranium = {
     discovery_date: 1789,
     discovery_details: '1789 by Martin Heinrich Klaproth. Isolated 1841 by Eugène-Melchior Péligot',
     etymology:'after Uranus (the planet). Ultimately derived from the Greek god of the sky',
-    description: 'yes'
+    description: 'Uranium is weakly radioactive because all isotopes of uranium are unstable; the half-lives of its naturally occurring isotopes range between 159,200 years and 4.5 billion years. Uranium has the highest atomic weight of the primordially occurring elements. Its density is about 70% higher than that of lead, and slightly lower than that of gold or tungsten.'
 };
                 
 const neptunium = {
@@ -1672,7 +1672,7 @@ const neptunium = {
     discovery_date: 1940,
     discovery_details: '1940 by Edwin McMillan and Philip H. Abelson',
     etymology:'after Neptune (the planet). Ultimately derived from the Greek god of the sea',
-    description: 'yes'
+    description: 'Neptunium is the first transuranic element (which are elements with atomic numbers greater than 92). Neptunium metal is silvery and tarnishes when exposed to air. The element occurs in three allotropic forms and it normally exhibits five oxidation states. It is radioactive, poisonous, pyrophoric.'
 };
                 
 const plutonium = {
