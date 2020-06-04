@@ -1690,7 +1690,7 @@ const plutonium = {
     discovery_date: 1940,
     discovery_details: '1940–1 by Glenn T. Seaborg, Arthur Wahl, Joseph W. Kennedy, Edwin McMillan',
     etymology:'after Pluto (the planet). Ultimately derived from the Greek god of the underworld',
-    description: 'yes'
+    description: 'Plutonium is silvery-gray and tarnishes when exposed to air. It\'s radioactive and can accumulate in your bones, so you probably should play with it for too long. Of the naturally occurring elements, Plutonium has the highest atomic number. The bomb dropped on Nagasaki in 1945 had a Plutonium core.'
 };
                 
 const americium = {
@@ -1708,7 +1708,7 @@ const americium = {
     discovery_date: 1944,
     discovery_details: '1944 by Glenn T. Seaborg, Ralph A. James, Leon O. Morgan, Albert Ghiorso',
     etymology:'after the Americas (Northern & Southern continents)',
-    description: 'yes'
+    description: 'Americium is a synthetic element and is the third transuranic element (which are elements with atomic numbers greater than 92). It is widely used in commercial ionization chamber smoke detectors, as well as in neutron sources and industrial gauges.'
 };
                
 const curium = {
@@ -1726,7 +1726,7 @@ const curium = {
     discovery_date: 1944,
     discovery_details: '1944 by Glenn T. Seaborg, Ralph A. James, Albert Ghiorso',
     etymology:'after Marie Curie',
-    description: 'yes'
+    description: 'Curium is a hard, dense, silvery metal with relatively high melting and boiling points. It was first produced on purpose in July 1944 but kept secret to the public until November 1947.'
 };
                
 const berkelium = {
@@ -1744,7 +1744,7 @@ const berkelium = {
     discovery_date: 1949,
     discovery_details: '1949 by Lawrence Berkeley National Laboratory',
     etymology:'after Berkeley, California, USA', 
-    description: 'yes'
+    description: 'Just over one gram of berkelium has been produced in the United States since 1967. It has no practical application but scientists sometimes use it when they\'re mucking around trying to synthesise heavier elements.'
 };
                
 const californium = {
@@ -1762,7 +1762,7 @@ const californium = {
     discovery_date: 1950,
     discovery_details: '1950 by Lawrence Berkeley National Laboratory',
     etymology:'after California, USA',
-    description: 'yes'
+    description: 'Californium-252 has a half-life of about 2.645 years. It\'s one of the only <em>weird radioactive bois</em> with practical applications; it can be used to start nuclear reactors and make other elements. Oganesson was made from Califorium.'
 };
                
 const einsteinium = {
@@ -1780,7 +1780,7 @@ const einsteinium = {
     discovery_date: 1952,
     discovery_details: '1952 by Lawrence Berkeley National Laboratory',
     etymology:'after Albert Einstein',
-    description: 'yes'
+    description: 'Einsteinium is a soft, silvery, paramagnetic metal. The high radioactivity of einsteinium-253 gives it a healthy blue glow. Like all synthetic transuranic elements, isotopes of einsteinium are very radioactive and are considered by experts to be highly dangerous to eat.'
 };
                 
 const fermium = {
