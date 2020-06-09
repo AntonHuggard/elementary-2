@@ -1798,7 +1798,7 @@ const fermium = {
     discovery_date: 1952,
     discovery_details:'1952 by Lawrence Berkeley National Laboratory',
     etymology:'after Enrico Fermi',
-    description: 'yes'
+    description: 'Fermium is an actinide and the heaviest element that can be formed by neutron bombardment of lighter elements, and hence the last element that can be prepared in macroscopic quantities, but scientists haven\'t been bothered making pure fermium metal yet. Typical eh.'
 };
 
 const mendelevium = {
@@ -1816,7 +1816,7 @@ const mendelevium = {
     discovery_date: 1955, 
     discovery_details:'1955 by Lawrence Berkeley National Laboratory',
     etymology:'after Dmitri Mendeleev, father of the Periodic Table',
-    description: 'yes'
+    description: 'Mendelevium can only be produced in particle accelerators from lighter elements and charged particles. Sixteen isotopes are known, the most stable being <sup>258</sup>Md, which has a half-life of 51 days. Mendeleev <em>discovered</em> the periodic table but it took 101 elements before one was named after him.'
 };                
              
 const nobelium = {
@@ -1834,7 +1834,7 @@ const nobelium = {
     discovery_date:1966,
     discovery_details:'1966 by the Joint Institute for Nuclear Research',
     etymology:'after Alfred Nobel',
-    description:'Alfred Nobel was the inventor of dynamite. A total of twelve nobelium isotopes are known to exist; the most stable is <sup>259<sup>No with a half-life of 58 minutes'
+    description:'Alfred Nobel was the inventor of dynamite. A total of twelve nobelium isotopes are known to exist; the most stable is <sup>259</sup>No with a half-life of 58 minutes.'
 };
 
 const lawrencium = {
@@ -1851,7 +1851,8 @@ const lawrencium = {
     radioactive:true,
     discovery_date:1971,
     discovery_details:'1961–1971 by JINR (USSR) & LBNL (USA)',
-    etymology:'after Ernest Lawrence'
+    etymology:'after Ernest Lawrence',
+    description: 'The last actinide and eleventh transuranic element. It\'s basically just one of your classic weird radioactive bois. Its most stable isotope has a half-life of 11 hours.'
 };
     
 const rutherfordium = {
@@ -1869,7 +1870,7 @@ const rutherfordium = {
     discovery_date:1964,
     discovery_details:'1964 in the Soviet Union. Confirmed 1969, USA.', 
     etymology:'after Sir Ernest Rutherford (New Zealand)',  
-    description:'yes'
+    description:'No elements on the periodic table are named after an Australian. Anyway, chemistry experiments have confirmed that rutherfordium acts as the heavier homologue to hafnium in group 4. Other chemical properties are only partially determined.'
 };   
     
 const dubnium = {
@@ -1887,7 +1888,7 @@ const dubnium = {
     discovery_date:1970,
     discovery_details:'1970, LBNL (USA) & JINR (Russian) (independently)',
     etymology:'after Dubna, Russia',  
-    description:'yes'
+    description:'Dubnium is a synthetic element, meaning it doesn\'t need to exist, but we made it anyway. It\'s in group 5 so has the expected +5 oxidation state. Strangely, it seems to be more similar to Niobium than to Tantalum.'
 };    
     
 const seaborgium = {
@@ -1905,7 +1906,7 @@ const seaborgium = {
     discovery_date:1974,
     discovery_details:'1974 by Lawrence Berkeley National Laboratory',
     etymology:'after the American nuclear chemist Glenn T. Seaborg',  
-    description:'yes'
+    description:'Seaborgium is one of only two elements to have been named after a living person (the other being Oganesson). It\'s a synthetic element and its chemical properties are, as far as we know, expected of a group-6 element.'
 };
 
 const bohrium = {
@@ -1923,7 +1924,7 @@ const bohrium = {
     discovery_date:1981,
     discovery_details:'1981 by Gesellschaft für Schwerionenforschung',
     etymology:'after Danish physicist Niels Bohr',  
-    description:'yes'
+    description:'Another synthetic element. Its most stable isotope has a half-life of 61 seconds. Basically, it doesn\'t need to exist and it tries its hardest not to. Its chemical properties seem to be typical of a group-7 element.'
 };  
     
 const hassium = {
