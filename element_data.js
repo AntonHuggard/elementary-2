@@ -734,7 +734,7 @@ const niobium = {
     discovery_date: 1801,
     discovery_details: '1801 by Charles Hatchett', 
     etymology: 'after <em>Niobe</em> in Greek mythology',
-    description: 'Niobium is a light grey, crystalline, and ductile transition metal. Niobium is used in various superconducting materials. These superconducting alloys, also containing titanium and tin, are widely used in the superconducting magnets of MRI scanners.'
+    description: 'Niobium is a light grey, crystalline, and ductile transition metal. Niobium is used in various superconducting materials. These superconducting alloys, also containing titanium and tin, are widely used in the superconducting magnets of MRI scanners. Niobium is the only element named after a female diety.'
 };
                 
 const molybdenum = {
@@ -1726,7 +1726,7 @@ const curium = {
     discovery_date: 1944,
     discovery_details: '1944 by Glenn T. Seaborg, Ralph A. James, Albert Ghiorso',
     etymology:'after Marie Curie',
-    description: 'Curium is a hard, dense, silvery metal with relatively high melting and boiling points. It was first produced on purpose in July 1944 but kept secret to the public until November 1947.'
+    description: 'Curium is a hard, dense, silvery metal with relatively high melting and boiling points. It was first produced on purpose in July 1944 but kept secret to the public until November 1947. Meitnerium is the only other element named after a woman.'
 };
                
 const berkelium = {
@@ -1942,7 +1942,7 @@ const hassium = {
     discovery_date:1984,
     discovery_details:'1984 by Gesellschaft für Schwerionenforschung',
     etymology:'after the German state of Hesse',  
-    description:'yes'
+    description:'Hassium is a synthetic element and is pretty radioactive -- its most stable isotope has a half-life of about 16 seconds. Because of this, it\'s pretty hard to study, but it seems like a normal group-8 element.'
 };    
     
 const meitnerium = {
@@ -1960,7 +1960,7 @@ const meitnerium = {
     discovery_date:1982,
     discovery_details:'1982 by Gesellschaft für Schwerionenforschung',
     etymology:'after Lise Meitner (Austria/Sweden)',  
-    description:'yes'
+    description:'Meitnerium is a synthetic element. Its most stable isotope has a half-life of 4.5 seconds. No experiments have been done to verify predicted chemical properties. Curium is the only other element to be named after a woman.'
 };  
     
 const darmstadtium = {
@@ -1978,7 +1978,7 @@ const darmstadtium = {
     discovery_date:1994,
     discovery_details:'1994 by Gesellschaft für Schwerionenforschung',
     etymology:'after Darmstadt, Germany (location of its discovery)',  
-    description:'yes'
+    description:'Darmstadtium is an extremely radioactive synthetic element. Its most stable isotope has a half-life of 12.7 seconds. No experiments have been to determine its chemical properties. Pretty boring, really.'
 };   
     
 const roentgenium = {
@@ -1996,7 +1996,7 @@ const roentgenium = {
     discovery_date:1994, 
     discovery_details:'1994 by Gesellschaft für Schwerionenforschung',
     etymology:'after Wilhelm Röntgen (Germany)',  
-    description:'yes'
+    description:'Roentgenium is a pretty radioactive syntheic element. Its most stable isotope has a half-life of 100 seconds. Nothing is known about its chemical properites. Waste of time, really.'
 };    
     
 const copernicium = {
@@ -2014,7 +2014,7 @@ const copernicium = {
     discovery_date:1996,
     discovery_details:'1996 by Gesellschaft für Schwerionenforschung',
     etymology:'after Nicolaus Copernicus (of helicentric model fame)',  
-    description:'yes'    
+    description:'Copernicium is a syntheic element and is a bit radioactive. It might have an oxidation state of +4. Scientists think it may be the noblest metal of them all. I don\'t know what that means though.' 
 };
     
 const nihonium = {
@@ -2032,7 +2032,7 @@ const nihonium = {
     discovery_date:2004,
     discovery_details:'2004 by Riken (Japan)',
     etymology:'from the Japanese name for Japan, <em>Nihon</em>',
-    description:'yes'    
+    description:'Nihonium is a synthetic, radioactive element. Its most stable (known) isotope has a half-life of 10 seconds. No one really knows anything about it. It\'s probably a post-transition metal and it doesn\'t seem very reactive.'    
 };
     
 const flevorium = {
