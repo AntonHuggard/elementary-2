@@ -2050,7 +2050,7 @@ const flevorium = {
     discovery_date:1999,
     discovery_details:'1999 by JINR & LLNL', 
     etymology:'after the Flerov Laboratory of Nuclear Reactions (ultimately after Georgy Flyorov)',  
-    description:'yes'
+    description:'Flevorium is the heaviest (big-boned) element to have its chemistry studied. Initial experiments suggested it behaved similarly to the nobel gases. More recent experiments, however, have shown it to be pretty metalic. It might even be a gas at standard conditions. We still don\'t really know which experiments to believe.'
 };    
     
 const moscovium = {
@@ -2068,7 +2068,7 @@ const moscovium = {
     discovery_date:2003,
     discovery_details:'2003 by JINR and LLNL',
     etymology:'after Moscow, Russia',  
-    description:'yes'
+    description:'Moscovium is an extremely radioactive synthetic element. Its most stable known isotope has a half-life of 0.65 seconds. So far, scientists have only seen 100 moscovium atoms.'
 };    
     
 const livermorium = {
@@ -2083,10 +2083,10 @@ const livermorium = {
     metalness:'metal',
     melting_point: 507, 
     boiling_point: 862, 
-    discovery_date:2000,  // changes at 3, 10, 21, 100, 200 and 1000. No idea what's causing this....
+    discovery_date:2000,
     discovery_datails:'2000 by JINR & LLNL',
     etymology:'after Lawrence Livermore National Laboratory (ultimately after Livermore, California)',  
-    description:'yes'
+    description:'Livermorium is a synthetic radioactive element. We don\'t really know anything about it. We\'re still waiting for scientists to pull their finger out and get to work on this one.'
 };    
     
 const tennessine = {
@@ -2104,7 +2104,7 @@ const tennessine = {
     discovery_date:2009,
     discovery_details:'2009 by JINR, LLNL, Vanderbilt University & Oak Ridge National Laboratory',
     etymology:'after Tennessee, USA',  
-    description:'yes'
+    description:'It is a synthetic radioactive element. Tennessine atoms have managed to survive for literally <em>hundreds</em> of milliseconds. Scientists still haven\'t been bothered to check what its chemical properties are like.'
 };    
     
 const oganesson = {
@@ -2122,7 +2122,7 @@ const oganesson = {
     discovery_date:2002,
     discovery_details:'2002 by JINR & LLNL',
     etymology:'after Yuri Oganessian',  
-    description:'yes'
+    description:'It has the highest atomic number and atomic mass. Only 5 (maybe 6?) atoms of Oganesson have been synthesised, so there hasn\'t really been a chance to study its chemistry yet. There are only two elements to have been named after a living person -- oganesson and seaborgium. Also, Yuri Oganesson is still alive. What a guy.'
 };
         
     
