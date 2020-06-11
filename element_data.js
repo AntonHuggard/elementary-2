@@ -1148,8 +1148,8 @@ const gadolinium = {
     radioactive: false,
     discovery_date: 1880,
     discovery_details: '1880 by Jean Charles Galissard de Marignac. Isolated 1886 by Lecoq de Boisbaudran',
-    etymology:'after Gadolinite (ultimately derived from Swedish/Finnish chemist Johan Gadolin)',
-    description: 'Gadolinium is a silvery-white metal when oxidation is removed. It is only slightly malleable and is a ductile rare-earth element. Gadolinium possesses unusual metallurgical properties, to the extent that as little as 1% of gadolinium can significantly improve the workability and resistance to oxidation at high temperatures of iron, chromium, and related metals. It is one of four elements (the others are iron, cobalt, and nickel) that are ferromagnetic (permanent magnets) at room temperature.'
+    etymology:'after Gadolinite (from Swedish/Finnish chemist Johan Gadolin)',
+    description: 'Gadolinium is a silvery-white metal. It\'s only slightly malleable and is pretty ductile (for a rare-earth element). It is one of four elements (the others are iron, cobalt, and nickel) that are ferromagnetic (permanent magnets) at room temperature.'
 };
                 
 const terbium = {
