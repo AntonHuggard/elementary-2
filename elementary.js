@@ -13,8 +13,12 @@ const transition_metal_colour = "rgb(21, 49, 85)";
 var prv_display = 'all';
 var new_display;
 
+function getWidth() {
+    return Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+}
 
 function search() {
+    document.getElementById('periodic_table').style.display='grid';
     prv_display = 'all'; // when the user has selected a display type and then makes a search, 
     new_display = 'all'; // these two lines clear the display-type memory, making it usable afterwards.
     const query = document.getElementById("element_io").value.toUpperCase();
@@ -24,21 +28,39 @@ function search() {
         html_elements[i].style.opacity = "25%";
     }
 
-    if (Number.isInteger(parseInt(query))) { // if user enters a number, search through elements to find one with matching atomic number
+    if (Number.isInteger(parseInt(query))) { // if a user enters a number, search through elements to find one with matching atomic number
         const user_number = parseInt(query);
         elements.forEach(element => {
             if (user_number == element.atomic_number) {
                 document.getElementById(element.name).style.opacity = "100%";
             }
         });
-    } else if (query.length < 3) { // searching by chemical symbol
+    } else if (query.length < 3 && query != '') { // searching by chemical symbol
+        found_none = true;
+        var results = [];
         for (var i = 0; i < html_elements.length; i++) {
             chemical_symbol = html_elements[i].innerText.toUpperCase().toString();
             if (chemical_symbol.includes(query)) {
                 html_elements[i].style.opacity = "100%";
+                results.push(html_elements[i]);
+                found_none = false;
             }
         }
-    } else if (query == "GAS") {
+        // alert(results);
+        if (found_none) {
+            alert('no elements have that chemical symbol');
+        }
+        if (!found_none && (getWidth() < 650)) {
+            document.getElementById('periodic_table').style.display='none';
+            document.getElementById('small_screen_search_results').style.display='grid';
+            results.forEach(result => {
+                document.getElementById('small_screen_search_results').innerHTML = result;
+                // displays text saying html element but doesnt actually display the code :/ 
+            });
+            
+            alert('we found one, but your screen is too small to show him');
+        }
+        } else if (query == "GAS") {
         elements.forEach(element => {
             if (element.state_at_standard_conditions == 'gas') {
                 document.getElementById(element.name).style.opacity = "100%";
@@ -68,9 +90,39 @@ function search() {
                 document.getElementById(element.name).style.opacity = "100%";
             }
         });
-    } else if (query == "NONMETAL") {
+    } else if (query.match(/NON[\s-]*METAL/i)) {
         elements.forEach(element => {
             if (element.metalness == 'nonmetal') {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query.match(/row[\s-]*\d/i) || query.match(/period[\s-]*\d/i)) {
+        let query_number = parseInt(query.charAt(query.length-1));
+        elements.forEach(element => {
+            if (element.period == query_number) {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query.match(/group[\s-]*\d/i) || query.match(/grp[\s-]*\d/i)) {
+        if (query[query.length -2].match(/\d/)) { // detects a 2-digit number
+            query_number = parseInt(query.slice(-2));
+        } else {
+            query_number = parseInt(query.slice(-1));
+        }
+        elements.forEach(element => {
+            if (element.group == query_number) {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });    
+    } else if (query == "GROUP 15" || query == "PNICTOGEN" || query == "PNICTOGENS") {
+        elements.forEach(element => {
+            if (element.group == 15) {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query == "WEIRD RADIOACTIVE BOIS") {
+        elements.forEach(element => {
+            if (element.block == 'f') {
                 document.getElementById(element.name).style.opacity = "100%";
             }
         });
@@ -82,7 +134,6 @@ function search() {
             }
         });
     }
-    
 }
 
 function show_accordian() {
