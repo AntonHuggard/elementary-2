@@ -213,8 +213,12 @@ h3 {
     width:100%; height:100%; /* mute entire screen */
     overflow:auto; 
     background-color:rgba(0,0,0,0.2);
-    
 }
+#no_results {
+    background-color: white;
+    grid-column: 1 / -1;
+}
+#no_results > h2 {color: black;}
 .modal_content {
     width: 100%;
     border-radius: 30px;

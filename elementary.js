@@ -19,12 +19,14 @@ function getWidth() {
 
 function search() {
     document.getElementById('periodic_table').style.display='grid';
+    document.getElementById('no_results').style.display = "none" ;
     prv_display = 'all'; // when the user has selected a display type and then makes a search, 
     new_display = 'all'; // these two lines clear the display-type memory, making it usable afterwards.
     const query = document.getElementById("element_io").value.toUpperCase();
     var html_elements = document.getElementsByClassName("element");
 
     for (var i = 0; i < html_elements.length; i++) {
+        html_elements[i].style.display = "grid";
         html_elements[i].style.opacity = "25%";
     }
 
@@ -48,7 +50,11 @@ function search() {
         }
         // alert(results);
         if (found_none) {
-            alert('no elements have that chemical symbol');
+            var element_buttons = document.getElementsByClassName("element");
+            for (var i = 0; i < html_elements.length; i++) {
+                html_elements[i].style.display = "none";
+            }
+            document.getElementById('no_results').style.display = "block" ;
         }
         if (!found_none && (getWidth() < 650)) {
             document.getElementById('periodic_table').style.display='none';
@@ -114,9 +120,27 @@ function search() {
                 document.getElementById(element.name).style.opacity = "100%";
             }
         });    
-    } else if (query == "GROUP 15" || query == "PNICTOGEN" || query == "PNICTOGENS") {
+    } else if (query == "PNICTOGENS" || query == "NITROGEN GROUP") {
         elements.forEach(element => {
             if (element.group == 15) {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query == "CHALCOGENS" || query == "OXYGEN GROUP") {
+        elements.forEach(element => {
+            if (element.group == 16) {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query == "HALOGENS" || query == "FLUORINE GROUP") {
+        elements.forEach(element => {
+            if (element.group == 17) {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query == "NOBLE GASES" || query == "HELIUM GROUP" || query == "NEON GROUP") {
+        elements.forEach(element => {
+            if (element.group == 18) {
                 document.getElementById(element.name).style.opacity = "100%";
             }
         });
@@ -536,7 +560,7 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-// display type based on buttons at the bottom
+// this whole function is for display type (based on buttons at the bottom)
 function display_type(new_display) {
     if (new_display == prv_display) {
         prv_display = 'all';
