@@ -15,7 +15,7 @@ const hydrogen = {
     discovery_date: 1766,
     discovery_details: '1766 by Henry Cavendish',
     etymology: 'from greek, <em>water-former</em>',
-    description: 'One reliable proton with a trusty electron. She ain\'t much but she gets the job done.'
+    description: 'She\'s the first element and the one with the smallest atomic mass. Hydrogen is also the most abundant element in the universe. At standard conditions, it\'s a pretty boring colourless and odourless gas. Word to the wise; don\'t fill up your blimp with hydrogen.'
 };
         
 const helium = {
@@ -35,7 +35,7 @@ const helium = {
     discovery_date: 1868,
     discovery_details: '1868 by Pierre Janssen & Norman Lockyer',
     etymology: 'from the Greek word for the sun, <em>Helios</em>',
-    description: 'colourless gas. Glows reddish-orange in an electric field'
+    description: 'Helium is a colourless and odourless gas that glows reddish-orange in an electric field. It has <em>the lowest</em> boiling point, and is the <em>second</em> most abundant element (The universe is 24% helium). '
 };
                 
 const lithium = {
@@ -93,7 +93,7 @@ const boron = {
     electronegativity: 2.04,
     radioactive: false,
     discovery_date: 1808,
-    discovery_details: '30th of June, 1808 by Joseph Louis Gay-Lussac and Louis Jacques Thénard',
+    discovery_details: '30th of June, 1808 by Joseph Louis Gay-Lussac and Louis Jacques Th&eacute;nard',
     etymology: 'from Borax',
     description: 'black-brown metalloid'
 };
@@ -134,7 +134,7 @@ const nitrogen = {
     radioactive: false,
     discovery_date: 1772,
     discovery_details: '1772 by Scottish physician Daniel Rutherford',
-    etymology: 'from the French <em>nitrogène</em>, which means <em>Potassium nitrate-producing</em>',
+    etymology: 'from the French <em>nitrog&egrave;ne</em>, which means <em>Potassium nitrate-producing</em>',
     description: 'at standard conditions, forms N<sub>2</sub> (which is ~78% of Earth\'s atmosphere)'
 };
                
@@ -173,7 +173,7 @@ const fluorine = {
     electronegativity: 3.98,
     radioactive: false,
     discovery_date: 1810,
-    discovery_details: '1810 by André-Marie Ampère',
+    discovery_details: '1810 by Andr&eacute-Marie Amp&egrave;re',
     etymology: 'from the Latin <em>fluo</em>, <em>to flow</em>',
     description: 'pale yellow gas. The most Electronegative element'
 };             
@@ -273,7 +273,7 @@ const silicon = {
     electronegativity: 1.90,
     radioactive: false,
     discovery_date: 1823,
-    discovery_details: '1823 by Jöns Jacob Berzelius',
+    discovery_details: '1823 by J&ouml;ns Jacob Berzelius',
     etymology: 'from flint in Latin; <em>silex</em> or <em>silicis</em>',
     description: 'crystalline. Used in computers'
 };
@@ -1016,7 +1016,7 @@ const antimony = {
     discovery_date: 0,
     discovery_details: 'before 815 AD by Jabir ibn Hayyan', 
     etymology: 'from its Byzantine Greek name; <em>antimonium</em>. The origin of this is unknown.',
-    description: 'Antimony sulfide (Sb<sub>2</sub>S<sub>3</sub>) is what Ancient Eyptians used as eye liner (<em>Kohl</em>). It has been used since at least 3100 BC. The element was described by Roman naturalist Pliny the Elder, however, it was not isolated until the Gold Age of Islam.'
+    description: 'Antimony sulfide (Sb<sub>2</sub>S<sub>3</sub>) is what Ancient Eyptians used as eye liner (<em>Kohl</em>). It has been used since at least 3100 BC. The element was described by Roman naturalist Pliny the Elder, however, it was not isolated until the Golden Age of Islam.'
 };
                 
 const tellurium = {
@@ -1476,8 +1476,8 @@ const tungsten = {
     electronegativity: 2.36,
     radioactive: false,
     discovery_date: 1781,
-    discovery_details: '1781 by Juan José Elhuyar and Fausto Elhuyar. It was first isolated two years later',
-    etymology: 'from Swedish, meaning <em>heavy stone</em>. In most European languages, the element is called <em>wolfram</em> whence its symbol is derived',
+    discovery_details: '1781 by Juan Jos&eacute; Elhuyar and Fausto Elhuyar. Isolated two years later',
+    etymology: 'from Swedish, meaning <em>heavy stone</em>. In German, it\'s called <em>wolfram</em> (Hence, <em>W</em>)',
     description: 'Tungsten is a rare metal found naturally on Earth almost exclusively combined with other elements in chemical compounds rather than alone. It has the highest melting and boiling points of all discovered elements. Its alloys have many applications, including incandescent light bulb filaments and X-ray tubes'
 };
 
@@ -1757,7 +1757,7 @@ const radium = {
     radioactive:true,
     discovery_date:1898,
     discovery_details:'1898 by Pierre & Marie Curie. Isolated by Marie, 1910',
-    etymology:'from Latin <em>radius</em>, meaning ray -- because Redium\'s emissions', 
+    etymology:'from Latin <em>radius</em>. Meaning ray. Because of it\'s emissions.', 
     description:'Pure radium is silvery-white, but it readily reacts with nitrogen (rather than oxygen) on exposure to air, forming a black surface layer of radium nitride. Its most stable isotope has a half-life of 1600 years.'
 };
 
@@ -2216,8 +2216,8 @@ const roentgenium = {
     melting_point: 9999, 
     boiling_point: 9999,
     discovery_date:1994, 
-    discovery_details:'1994 by Gesellschaft für Schwerionenforschung',
-    etymology:'after Wilhelm Röntgen (Germany)',  
+    discovery_details:'1994 by Gesellschaft f&uuml;r Schwerionenforschung',
+    etymology:'after Wilhelm R&ouml;ntgen (Germany)',  
     description:'Roentgenium is a pretty radioactive syntheic element. Its most stable isotope has a half-life of 100 seconds. Nothing is known about its chemical properites. Waste of time, really.'
 };    
     
