@@ -26,12 +26,12 @@
     </div>
 
     <div id = "melting_pt_div" class="slider_div">
-        <input type="range" min="0" max="3800" value="0" class="slider" id="MP_slider" oninput="mp_slider_function()">
+        <input type="range" min="-267" max="3800" value="0" class="slider" id="MP_slider" oninput="mp_slider_function()">
         <p id = "MP_display"></p>
     </div>
 
     <div id = "boiling_pt_div" class="slider_div">
-        <input type="range" min="-300" max="6600" value="-300" class="slider" id="BP_slider" oninput="bp_slider_function()">
+        <input type="range" min="-276" max="6600" value="100" class="slider" id="BP_slider" oninput="bp_slider_function()">
         <p id = "BP_display"></p>
     </div>
 
@@ -211,9 +211,17 @@
         <button onclick='display_type("solid")'>solid</button>    
         <button onclick='display_type("liqud")'>liquid</button>
         <button onclick='display_type("gasus")'>gas</button>
+        <button onclick='display_type("metal")'>metal</button>
+        <button onclick='display_type("mtlld")'>metalloid</button>
+        <button onclick='display_type("nnmtl")'>non-metal</button>
+        <button onclick='display_type("synth")'>synthetic</button>
     </div>
     <div id = "element_pop-up" style = "display: none;"></div> 
 </body>
-<script src = "elementary.js"></script>    
-<script src = "element_data.js"></script>    
+<script src = "js/elementary.js"></script>
+<script src = "js/search.js"></script>
+<script src = "js/sliders.js"></script>    
+<script src = "js/element_data.js"></script>  
+<script src = "js/display_toggle.js"></script>  
+<script src = "js/modal.js"></script>    
 </html>
