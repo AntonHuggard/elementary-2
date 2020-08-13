@@ -454,8 +454,8 @@ const vanadium = {
     electronegativity: 1.63,
     radioactive: false,
     discovery_date: 1801,
-    discovery_details: '1801 by Andrés Manuel del Río. Isolated in 1830 by Nils Gabriel Sefström',
-    etymology: 'after the Norse goddess of beauty & fertility, Vanadís (Freyja)',
+    discovery_details: '1801 by Andr&eacute;s Manuel del R&iacute;o. Isolated in 1830 by Nils Gabriel Sefstr&ouml;m',
+    etymology: 'after the Norse goddess of beauty & fertility, Vanad&iacute;s (Freyja)',
     description: 'Silvery-grey, malleable transition metal.'
 };
                
@@ -674,7 +674,7 @@ const selenium = {
     electronegativity: 2.55,
     radioactive: false,
     discovery_date: 1817,
-    discovery_details: '1817 by Jöns Jakob Berzelius & Johann Gottlieb Gahn',
+    discovery_details: '1817 by J&ouml;ns Jakob Berzelius & Johann Gottlieb Gahn',
     etymology: 'after Selene, the Greek moon goddess',
     description: 'It is a nonmetal (more rarely considered a metalloid). The chief commercial uses for selenium today are glassmaking and pigments. Selenium is a semiconductor and is used in photocells.'
 };
@@ -694,7 +694,7 @@ const bromine = {
     electronegativity: 2.96,
     radioactive: false,
     discovery_date: 1825,
-    discovery_details: '1825 by Antoine Jérôme Balard (France) & Carl Jacob Löwig (Germany)',
+    discovery_details: '1825 by Antoine J&eacute;r&ocirc;me Balard (France) & Carl Jacob L&ouml;wig (Germany)',
     etymology: 'from the Greek word for <em>stench</em>',
     description: 'Reddish-brown liquid at room temperature that evaporates readily to form a similarly coloured gas. Elemental bromine is very reactive and thus does not occur free in nature. '
 };
@@ -1034,7 +1034,7 @@ const tellurium = {
     electronegativity: 2.1,
     radioactive: false,
     discovery_date: 1782,
-    discovery_details: '1782 by Franz-Joseph Müller von Reichenstein (Austria)', 
+    discovery_details: '1782 by Franz-Joseph M&uuml;ller von Reichenstein (Austria)', 
     etymology: 'after the Roman Earth deity <em>Tellus</em>',
     description: 'It is a brittle, mildly toxic, rare, silver-white metalloid. Tellurium is chemically related to selenium and sulfur, all three of which are chalcogens. It is occasionally found in native form as elemental crystals.'
 };
@@ -1796,7 +1796,7 @@ const thorium = {
     electronegativity:1.3,
     radioactive: true,
     discovery_date: 1829,
-    discovery_details: '1829 by Jöns Jakob Berzelius',
+    discovery_details: '1829 by J&ouml;ns Jakob Berzelius',
     etymology:'after Thor, the Norse god of thunder',
     description: 'Thorium is silvery and tarnishes black when it is exposed to air, forming thorium dioxide; it is moderately hard, malleable, and has a high melting point. All of its known isotopes are unstable -- but the most stable one has a half-life of 14.05 billion years.'
 };
@@ -1816,7 +1816,7 @@ const protactinium = {
     electronegativity:1.5,
     radioactive: true,
     discovery_date: 1913,
-    discovery_details: '1913 by Kasimir Fajans and Oswald Helmuth Göhring',
+    discovery_details: '1913 by Kasimir Fajans and Oswald Helmuth G&ouml;hring',
     etymology:'a contraction of <em>proto-actinium</em>',
     description: 'Protactinium is a dense, silvery-gray actinide metal that reacts readily with oxygen, water vapor and inorganic acids. Because it\'s rare, radioactive and highly toxic, no one really uses it except for weird science stuff.'
 };
@@ -1836,7 +1836,7 @@ const uranium = {
     electronegativity:1.38,
     radioactive: true,
     discovery_date: 1789,
-    discovery_details: '1789 by Martin Heinrich Klaproth. Isolated 1841 by Eugène-Melchior Péligot',
+    discovery_details: '1789 by Martin Heinrich Klaproth. Isolated 1841 by Eug&egrave;ne-Melchior P&eacute;ligot',
     etymology:'after Uranus (the planet). Ultimately derived from the Greek god of the sky',
     description: 'Uranium is weakly radioactive because all isotopes of uranium are unstable; the half-lives of its naturally occurring isotopes range between 159,200 years and 4.5 billion years. Uranium has the highest atomic weight of the primordially occurring elements. Its density is about 70% higher than that of lead, and slightly lower than that of gold or tungsten.'
 };
@@ -2136,7 +2136,7 @@ const bohrium = {
     melting_point: 9999, 
     boiling_point: 9999, 
     discovery_date:1981,
-    discovery_details:'1981 by Gesellschaft für Schwerionenforschung',
+    discovery_details:'1981 by Gesellschaft f&uuml;r Schwerionenforschung',
     etymology:'after Danish physicist Niels Bohr',  
     description:'Another synthetic element. Its most stable isotope has a half-life of 61 seconds. Basically, it doesn\'t need to exist and it tries its hardest not to. Its chemical properties seem to be typical of a group-7 element.'
 };  
@@ -2156,7 +2156,7 @@ const hassium = {
     melting_point: 9999, 
     boiling_point: 9999, 
     discovery_date:1984,
-    discovery_details:'1984 by Gesellschaft für Schwerionenforschung',
+    discovery_details:'1984 by Gesellschaft f&uuml;r Schwerionenforschung',
     etymology:'after the German state of Hesse',  
     description:'Hassium is a synthetic element and is pretty radioactive -- its most stable isotope has a half-life of about 16 seconds. Because of this, it\'s pretty hard to study, but it seems like a normal group-8 element.'
 };    
@@ -2176,7 +2176,7 @@ const meitnerium = {
     melting_point: 9999, 
     boiling_point: 9999, 
     discovery_date:1982,
-    discovery_details:'1982 by Gesellschaft für Schwerionenforschung',
+    discovery_details:'1982 by Gesellschaft f&uuml;r Schwerionenforschung',
     etymology:'after Lise Meitner (Austria/Sweden)',  
     description:'Meitnerium is a synthetic element. Its most stable isotope has a half-life of 4.5 seconds. No experiments have been done to verify predicted chemical properties. Curium is the only other element to be named after a woman.'
 };  
@@ -2196,7 +2196,7 @@ const darmstadtium = {
     melting_point: 9999, 
     boiling_point:9999, 
     discovery_date:1994,
-    discovery_details:'1994 by Gesellschaft für Schwerionenforschung',
+    discovery_details:'1994 by Gesellschaft f&uuml;r Schwerionenforschung',
     etymology:'after Darmstadt, Germany (location of its discovery)',  
     description:'Darmstadtium is an extremely radioactive synthetic element. Its most stable isotope has a half-life of 12.7 seconds. No experiments have been to determine its chemical properties. Pretty boring, really.'
 };   
@@ -2236,7 +2236,7 @@ const copernicium = {
     melting_point: 9999, 
     boiling_point:9999, 
     discovery_date:1996,
-    discovery_details:'1996 by Gesellschaft für Schwerionenforschung',
+    discovery_details:'1996 by Gesellschaft f&uuml;r Schwerionenforschung',
     etymology:'after Nicolaus Copernicus (of helicentric model fame)',  
     description:'Copernicium is a syntheic element and is a bit radioactive. It might have an oxidation state of +4. Scientists think it may be the noblest metal of them all. I don\'t know what that means though.' 
 };
