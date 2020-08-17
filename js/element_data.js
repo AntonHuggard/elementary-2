@@ -2261,9 +2261,9 @@ const nihonium = {
     description:'Nihonium is a synthetic, radioactive element. Its most stable (known) isotope has a half-life of 10 seconds. No one really knows anything about it. It\'s probably a post-transition metal and it doesn\'t seem very reactive.'    
 };
     
-const flevorium = {
+const flerovium = {
     symbol:'Fl',    
-    name:'flevorium', 
+    name:'flerovium', 
     atomic_number:114, 
     electronegativity:'yes',
     radioactive:true,
@@ -2278,7 +2278,7 @@ const flevorium = {
     discovery_date:1999,
     discovery_details:'1999 by JINR & LLNL', 
     etymology:'after the Flerov Laboratory of Nuclear Reactions (ultimately after Georgy Flyorov)',  
-    description:'Flevorium is the heaviest (big-boned) element to have its chemistry studied. Initial experiments suggested it behaved similarly to the nobel gases. More recent experiments, however, have shown it to be pretty metalic. It might even be a gas at standard conditions. We still don\'t really know which experiments to believe.'
+    description:'Flerovium is the heaviest (big-boned) element to have its chemistry studied. Initial experiments suggested it behaved similarly to the nobel gases. More recent experiments, however, have shown it to be pretty metalic. It might even be a gas at standard conditions. We still don\'t really know which experiments to believe.'
 };    
     
 const moscovium = {
@@ -2476,7 +2476,7 @@ const elements = [
     roentgenium,
     copernicium,
     nihonium,
-    flevorium,
+    flerovium,
     moscovium,
     livermorium,
     tennessine,
