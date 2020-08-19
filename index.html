@@ -11,9 +11,14 @@
 
 </head>
 <body>
+
+    <!-- This is just the boring title stuff -->
+
     <h1 class = "centre" style = "border: none; padding: 20px 0px 40px 0px;">&#9883;</h1>
     <h2 class = "centre" style = "border: none; padding: 5px 0px 10px 0px;">elementary</h2>
     <h3>the searchable periodic table</h3>
+
+    <!-- The below divs hold the different sliders and search bar  -->
 
     <div id = "element_search_container" class = "centre" style = "border: none;">
         <input type = "text" id = "element_io" onkeyup="search()" placeholder="Search elements... " style = "float: left;">
@@ -40,6 +45,8 @@
         <p id = "date_display"></p>
     </div>
 
+    <!-- The following displays the search types for mobile users  -->
+
     <div id = "search_type_accordian" class = "centre" style = "border: none">
         <button class="accordion" onclick="show_accordian()" id="acc_dt">default</button>
         <button class="accordion" onclick="show_accordian()" id="acc_EN">electronegativity</button>
@@ -55,12 +62,16 @@
         </div>
     </div>
 
+    <!-- While *this* displays the search types for desktop users  -->
+
     <div id = "search_type_grid" class = "centre" style = "border: none">
-        <button id = "EN_btn" onclick = "set_search(1, false)">electronegativity</button>
-        <button id = "MP_btn" onclick = "set_search(2, false)">melting point</button>
-        <button id = "BP_btn" onclick = "set_search(3, false)">boiling point</button>
-        <button id = "DS_btn" onclick = "set_search(4, false)">discovery</button>
+        <button id = "EN_btn" onclick = "set_search(1, false); change_btn(this, 'search_type_grid');">electronegativity</button>
+        <button id = "MP_btn" onclick = "set_search(2, false); change_btn(this, 'search_type_grid');">melting point</button>
+        <button id = "BP_btn" onclick = "set_search(3, false); change_btn(this, 'search_type_grid');">boiling point</button>
+        <button id = "DS_btn" onclick = "set_search(4, false); change_btn(this, 'search_type_grid');">discovery</button>
     </div>
+
+    <!-- Ladies and gentlemen, our next guest is the one & only Periodic Table of Elements! -->
 
     <div id = "periodic_table" class = "centre">
         <button onclick = "show_modal(this)" id = "hydrogen" class="element first alkali_metals">H</button>
@@ -203,18 +214,18 @@
     <div id='small_screen_search_results' class='centre' style='display: none; margin-bottom: 20px;'></div>
 
     <div id='properties_menu' class='centre'>
-        <button onclick='display_type("s_blk")'>s-block</button>
-        <button onclick='display_type("p_blk")'>p-block</button>
-        <button onclick='display_type("d_blk")'>d-block</button>
-        <button onclick='display_type("f_blk")'>f-block</button>
-        <button onclick='display_type("ractv")'>radioactive</button>
-        <button onclick='display_type("solid")'>solid</button>    
-        <button onclick='display_type("liqud")'>liquid</button>
-        <button onclick='display_type("gasus")'>gas</button>
-        <button onclick='display_type("metal")'>metal</button>
-        <button onclick='display_type("mtlld")'>metalloid</button>
-        <button onclick='display_type("nnmtl")'>non-metal</button>
-        <button onclick='display_type("synth")'>synthetic</button>
+        <button onclick='display_type("s_blk"); change_btn(this, "properties_menu");'>s-block</button>
+        <button onclick='display_type("p_blk"); change_btn(this, "properties_menu");'>p-block</button>
+        <button onclick='display_type("d_blk"); change_btn(this, "properties_menu");'>d-block</button>
+        <button onclick='display_type("f_blk"); change_btn(this, "properties_menu");'>f-block</button>
+        <button onclick='display_type("ractv"); change_btn(this, "properties_menu");'>radioactive</button>
+        <button onclick='display_type("solid"); change_btn(this, "properties_menu");'>solid</button>
+        <button onclick='display_type("liqud"); change_btn(this, "properties_menu");'>liquid</button>
+        <button onclick='display_type("gasus"); change_btn(this, "properties_menu");'>gas</button>
+        <button onclick='display_type("metal"); change_btn(this, "properties_menu");'>metal</button>
+        <button onclick='display_type("mtlld"); change_btn(this, "properties_menu");'>metalloid</button>
+        <button onclick='display_type("nnmtl"); change_btn(this, "properties_menu");'>non-metal</button>
+        <button onclick='display_type("synth"); change_btn(this, "properties_menu");'>synthetic</button>
     </div>
 
     <div id = "element_pop-up" style = "display: none;"></div> 

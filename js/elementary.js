@@ -57,43 +57,7 @@ function set_search(n, mobile_view) {
                 document.getElementById("acc_ds").classList.toggle("active");
                 break;
         }
-    } else {
-        document.getElementById("EN_btn").style.backgroundColor = "transparent";
-        document.getElementById("EN_btn").style.color = "white";
-        document.getElementById("MP_btn").style.backgroundColor = "transparent";
-        document.getElementById("MP_btn").style.color = "white";
-        document.getElementById("BP_btn").style.backgroundColor = "transparent";
-        document.getElementById("BP_btn").style.color = "white";
-        document.getElementById("DS_btn").style.backgroundColor = "transparent";
-        document.getElementById("DS_btn").style.color = "white";
-        switch(n) {
-            case 1:
-                if (search_type != 1) {
-                    document.getElementById("EN_btn").style.backgroundColor = "white";
-                    document.getElementById("EN_btn").style.color = "black";
-                }
-                break;
-            case 2:
-                if (search_type != 2) {
-                    document.getElementById("MP_btn").style.backgroundColor = "white";
-                    document.getElementById("MP_btn").style.color = "black";
-                }
-                break;
-            case 3:
-                if (search_type != 3) {
-                    document.getElementById("BP_btn").style.backgroundColor = "white";
-                    document.getElementById("BP_btn").style.color = "black";
-                }
-                break;
-            case 4:
-                if (search_type != 4) {
-                    document.getElementById("DS_btn").style.backgroundColor = "white";
-                    document.getElementById("DS_btn").style.color = "black";
-                }
-                break;
-        }
-        
-    }      
+    } 
 
     // ... to here, it's all just visual indicators of the selectors at the top
     // the following code has all the functionality ...
@@ -166,7 +130,22 @@ function set_search(n, mobile_view) {
             }
             break;
     }
-}    
+}
+
+function change_btn(btn, locn) {
+
+    const srch_typs = document.getElementById(locn).getElementsByTagName('button');
+
+    for (i = 0; i < srch_typs.length; i++) {
+        if (!(srch_typs[i].classList.contains('selected')) && (srch_typs[i] === btn)) {
+            btn.classList.add('selected');
+        } else {
+            srch_typs[i].classList.remove('selected');
+        }
+        
+    }        
+
+}
 
 function reset_opacity() {
     elements.forEach(element => {

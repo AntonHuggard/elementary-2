@@ -578,7 +578,7 @@ h3 {
         transform: translateY(2px);
     }
 
-    #search_type_grid > .selected {
+    #search_type_grid > .selected, #properties_menu > .selected {
         background-color: white;
         color: black;
     }
