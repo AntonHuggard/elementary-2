@@ -33,23 +33,23 @@ function confirm() {
     switch(curr_response) {
         case 1:
             if (r1 == 2) {
-                alert('you got it');                
+                alert('correct');                
             } else {
-                alert('you moron');
+                alert('incorrect answer');
             }
             break;
         case 2:
             if (r2 == 1) {
-                alert('you got it');                
+                alert('correct');                
             } else {
-                alert('you moron');
+                alert('incorrect answer');
             }
             break;
         case 3:
             if (r3 == 3) {
-                alert('you got it');                
+                alert('correct');                
             } else {
-                alert('you moron');
+                alert('incorrect answer');
             }
             break;
     }
