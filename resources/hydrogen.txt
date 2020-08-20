@@ -1,8 +1,0 @@
-Hydrogen
-1
-1.008
--259.16
--252.879
-2.20
-1766 by Henry Cavendish
-hydrogen means <em>water-former</em> in Greek
