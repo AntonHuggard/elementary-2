@@ -308,6 +308,24 @@ h3 {
 #periodic_table > .unknown { background-color: rgb(34, 34, 34); }
 #periodic_table > .unknown:hover { color: rgb(34, 34, 34); }
 
+#quiz_btn {
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 30px;
+    font-family: 'Sen', sans-serif;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+    padding: 5px 50px;
+}
+#quiz_btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
 @media only screen and (min-width: 330px) {
     #periodic_table {
         width: 98%;

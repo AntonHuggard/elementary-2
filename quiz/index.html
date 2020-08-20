@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src = "script.js"></script>
+    <title>Elementary | Non-metals</title>
+</head>
+<body onload='set_curr_qn(1)'>
+
+    <div class='band nonmetals' id='head'>
+        <div id='head_contents'>
+            <h1>Non-metals</h1>
+            <button>&times</button>
+        </div>
+    </div>
+
+    <div id='q1' class='quiz_body'>
+        <h2 class='question'>On the 6th of May, 1937 the Hindenberg airship exploded when one of its
+            lifting cells filled with this nonmetal caught fire and exploded
+        </h2>
+        <img class='question_img' src='hindenberg-2.jpg'>
+        <div id='q1_optns' class='options'>
+            <button onclick='select(1, 1, this, "q1_optns")'>helium</button>
+            <button onclick='select(1, 2, this, "q1_optns")'>hydrogen</button>
+            <button onclick='select(1, 3, this, "q1_optns")'>nitrogen</button>
+            <button onclick='select(1, 4, this, "q1_optns")'>chlorine</button>
+        </div>
+    </div>
+
+    <div id='q2' class='quiz_body' style='display: none;'>
+        <h2 class='question'>"Will you marry me?" <br>
+            These words are usually associated with this non-metal which is found in diamonds.
+        </h2>
+        <img class='question_img' src='ring.png'>
+        <div id='q2_optns' class='options'>
+            <button onclick='select(2, 1, this, "q2_optns")'>carbon</button>
+            <button onclick='select(2, 2, this, "q2_optns")'>potassium</button>
+            <button onclick='select(2, 3, this, "q2_optns")'>oxygen</button>
+            <button onclick='select(2, 4, this, "q2_optns")'>selenium</button>
+        </div>
+    </div>
+
+    <div id='q3' class='quiz_body' style='display: none;'>
+        <h2 class='question'>In liquid form, this nonmetal can freeze just about anything. <br>
+            This property was illustrated in the popular movie "Terminator 2"
+        </h2>
+        <img class='question_img' src='evidence_of_bigfoot.png'>
+        <div id='q3_optns' class='options'>
+            <button onclick='select(3, 1, this, "q3_optns")'>iodine</button>
+            <button onclick='select(3, 2, this, "q3_optns")'>sulphur</button>
+            <button onclick='select(3, 3, this, "q3_optns")'>nitrogen</button>
+            <button onclick='select(3, 4, this, "q3_optns")'>carbon</button>
+        </div>
+    </div>
+
+    <div id='q4' class='quiz_body' style='display: none;'>
+        <h2 class='question'>On the 29th of May 1953, Edmund Hillary and Tenzing Norgay were the first
+            to reach the summit of Mt Everest. This element helped them breathe.
+        </h2>
+        <img class='question_img' src='hillary.jpg'>
+        <div id='q3_optns' class='options'>
+            <button onclick='select(4, 1, this, "q3_optns")'>nitrogen</button>
+            <button onclick='select(4, 2, this, "q3_optns")'>sulphur</button>
+            <button onclick='select(4, 3, this, "q3_optns")'>ozone</button>
+            <button onclick='select(4, 4, this, "q3_optns")'>oxgygen</button>
+        </div>
+    </div>
+
+    <div id='q5' class='quiz_body' style='display: none;'>
+        <h2 class='question'>Matches are tipped with this non-metal.<br>
+            Which is it?
+        </h2>
+        <img class='question_img' src='match.jpg'>
+        <div id='q3_optns' class='options'>
+            <button onclick='select(5, 1, this, "q3_optns")'>bromine</button>
+            <button onclick='select(5, 2, this, "q3_optns")'>carbon</button>
+            <button onclick='select(5, 3, this, "q3_optns")'>selenium</button>
+            <button onclick='select(5, 4, this, "q3_optns")'>phosphorus</button>
+        </div>
+    </div>
+
+    <div class='band nonmetals' id='bottom'>
+        <button id='pass' onclick='pass();'>pass</button>
+        <button id='confirm' onclick='confirm();'>confirm</button>
+    </div>
+    
+</body>
+</html>
