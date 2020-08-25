@@ -1,15 +1,22 @@
-let r1, r2, r3, r4, r5, r6, r7, curr_question, curr_response, score = 0;
-const total_number_of_questions = 7;
+let r1, r2, r3, r4, r5, r6, r7, curr_question, curr_response, total_number_of_questions, series, score = 0;
 
-function set_curr_qn(q) {
-    curr_question = q;
-    document.getElementById('bottom_text').innerHTML = 'question ' + q;
+function exit() {
+    window.location = 'index.html'
+}
+
+function page_setup(n, s) {
+    series = s;
+    curr_question = 1;
+    document.getElementById('bottom_text').innerHTML = 'question ' + 1;
+    total_number_of_questions = n;
 }
 
 function select(question_number, response, btn, locn) {
-    curr_response = question_number;
-    const responses = document.getElementById(locn).getElementsByTagName('button');
+    curr_response = response;
+    curr_question = question_number;
 
+    // this shows which option the user has selected by changing the background colour
+    const responses = document.getElementById(locn).getElementsByTagName('button');
     for (i = 0; i < responses.length; i++) {
         if (!(responses[i].classList.contains('selected')) && (responses[i] === btn)) {
             btn.classList.add('selected');
@@ -18,90 +25,10 @@ function select(question_number, response, btn, locn) {
         }        
     }   
     
-    switch(question_number) {
-        case 1:
-            r1 = response;
-            break;
-        case 2:
-            r2 = response;
-            break;
-        case 3:
-            r3 = response;
-            break;
-        case 4:
-            r4 = response;
-            break;
-        case 5:
-            r5 = response;
-            break;
-        case 6:
-            r6 = response;
-            break;
-        case 7:
-            r7 = response;
-            break;
-    }
 }
 
 function confirm() {
-    switch(curr_response) {
-        case 1:
-            if (r1 == 2) {
-                score++;
-                alert('correct');                
-            } else {
-                alert('incorrect answer');
-            }
-            break;
-        case 2:
-            if (r2 == 1) {
-                score++;
-                alert('correct');                
-            } else {
-                alert('incorrect answer');
-            }
-            break;
-        case 3:
-            if (r3 == 3) {
-                score++;
-                alert('correct');                
-            } else {
-                alert('incorrect answer');
-            }
-            break;
-        case 4:
-            if (r4 == 4) { 
-                score++;
-                alert('correct');                
-            } else {
-                alert('incorrect answer');
-            }
-            break;
-        case 5:
-            if (r5 == 4) { 
-                score++;
-                alert('correct');                
-            } else {
-                alert('incorrect answer');
-            }
-            break;
-        case 6:
-            if (r6 == 3) { 
-                score++;
-                alert('correct');                
-            } else {
-                alert('incorrect answer');
-            }
-            break;
-        case 7:
-            if (r7 == 1) { 
-                score++;
-                alert('correct, your score is ' + score);                
-            } else {
-                alert('incorrect answer');
-            }
-            break;
-    }
+    check_ans(series, curr_question, curr_response);
     next();
 }
 
@@ -110,14 +37,10 @@ function pass() { next(); }
 function next() {
     curr_question = curr_question + 1;
     document.getElementById('bottom_text').innerHTML = 'question ' + curr_question;
-    
-    document.getElementById('q1').style.display='none';
-    document.getElementById('q2').style.display='none';
-    document.getElementById('q3').style.display='none';
-    document.getElementById('q4').style.display='none';
-    document.getElementById('q5').style.display='none';
-    document.getElementById('q6').style.display='none';
-    document.getElementById('q7').style.display='none';
+
+    for (i = 1; i <= total_number_of_questions; i++) { // hide all the questions
+        document.getElementById('q'+i).style.display = 'none';
+    }
 
     if (curr_question <= total_number_of_questions) {
         document.getElementById('q'+curr_question).style.display='block';
@@ -138,4 +61,8 @@ function next() {
         document.getElementById('score').innerHTML = 'You got '+score+' out of '+total_number_of_questions;
     }
     
+}
+
+function go_away() {
+    window.location ="index.html";
 }

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src = "assets/js/script.js"></script>
+    <script src = "assets/js/marker.js"></script>
+    <title>Elementary | Actinides</title>
+    <link rel="icon" href="../assets/img/rf.png" />
+</head>
+<body onload='page_setup(15, "actn")'>
+
+    <div class='band actinides' id='head'>
+        <div id='head_contents'>
+            <h1>Actinides</h1>
+            <button onclick='exit()'>&times</button>
+        </div>
+    </div>
+
+    <div id='q1' class='quiz_body'>
+        <h2 class='question'>This radioactive element is sometimes used in radiation therapy for
+            cancer patients
+        </h2>
+        <img class='question_img' src='assets/img/act-cancer-machine.jpg'>
+        <div id='q1_optns' class='options actn'>
+            <button onclick='select(1, 1, this, "q1_optns")'>plutonium</button>
+            <button onclick='select(1, 2, this, "q1_optns")'>uranium</button>
+            <button onclick='select(1, 3, this, "q1_optns")'>protactinium</button>
+            <button onclick='select(1, 4, this, "q1_optns")'>actinium</button>
+        </div>
+    </div>
+
+    <div id='q2' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This radioactive actinide is named after the Norse god of thunder
+        </h2>
+        <img class='question_img' src='assets/img/act-viking-god.jpg'>
+        <div id='q2_optns' class='options actn'>
+            <button onclick='select(2, 1, this, "q2_optns")'>plutonium</button>
+            <button onclick='select(2, 2, this, "q2_optns")'>odinium</button>
+            <button onclick='select(2, 3, this, "q2_optns")'>thorium</button>
+            <button onclick='select(2, 4, this, "q2_optns")'>vanadium</button>
+        </div>
+    </div>
+
+    <div id='q3' class='quiz_body' style='display: none;'>
+        <h2 class='question'>Actinium is the product of radioactive decay of this radioactive
+            actinide, and its name reflects this fact.
+        </h2>
+        <img class='question_img' src='assets/img/act-planets-aligned.jpg'>
+        <div id='q3_optns' class='options actn'>
+            <button onclick='select(3, 1, this, "q3_optns")'>tin</button>
+            <button onclick='select(3, 2, this, "q3_optns")'>actinium</button>
+            <button onclick='select(3, 3, this, "q3_optns")'>protactinium</button>
+            <button onclick='select(3, 4, this, "q3_optns")'>thorium</button>
+        </div>
+    </div>
+
+    <div id='q4' class='quiz_body' style='display: none;'>
+        <h2 class='question'>The first nuclear bomb used in World War II was made
+            from this radioactive actinide
+        </h2>
+        <img class='question_img' src='assets/img/act-kaboom.jpg'>
+        <div id='q4_optns' class='options actn'>
+            <button onclick='select(4, 1, this, "q4_optns")'>uranium</button>
+            <button onclick='select(4, 2, this, "q4_optns")'>plutonium</button>
+            <button onclick='select(4, 3, this, "q4_optns")'>actinium</button>
+            <button onclick='select(4, 4, this, "q4_optns")'>curium</button>
+        </div>
+    </div>
+
+    <div id='q5' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This radioactive actinide is named after the eighth
+            planet in our solar system.<br> Which is it?
+        </h2>
+        <img class='question_img' src='assets/img/act-planet.jpg'>
+        <div id='q5_optns' class='options actn'>
+            <button onclick='select(5, 1, this, "q5_optns")'>neptunium</button>
+            <button onclick='select(5, 2, this, "q5_optns")'>uranium</button>
+            <button onclick='select(5, 3, this, "q5_optns")'>plutonium</button>
+            <button onclick='select(5, 4, this, "q5_optns")'>mercury</button>
+        </div>
+    </div>
+
+    <div id='q6' class='quiz_body' style='display: none;'>
+        <h2 class='question'>The <em>second</em> nuclear bomb used in World War II was made from This
+            radioactive actinide.
+        </h2>
+        <img class='question_img' src='assets/img/act-bomb.jpg'>
+        <div id='q6_optns' class='options actn'>
+            <button onclick='select(6, 1, this, "q6_optns")'>uranium</button>
+            <button onclick='select(6, 2, this, "q6_optns")'>plutonium</button>
+            <button onclick='select(6, 3, this, "q6_optns")'>actinium</button>
+            <button onclick='select(6, 4, this, "q6_optns")'>thorium</button>
+        </div>
+    </div>
+
+    <div id='q7' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This synthetic actinide was first produced in the United States
+            which is often mistaken for the continent after which it was named.
+        </h2>
+        <img class='question_img' src='assets/img/act-MURICA.jpg'>
+        <div id='q7_optns' class='options actn'>
+            <button onclick='select(7, 1, this, "q7_optns")'>californium</button>
+            <button onclick='select(7, 2, this, "q7_optns")'>berkelium</button>
+            <button onclick='select(7, 3, this, "q7_optns")'>tennessine</button>
+            <button onclick='select(7, 4, this, "q7_optns")'>americium</button>
+        </div>
+    </div>
+
+    <div id='q8' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This synthetic actinide is named after the famous scientist
+            and two time Nobel Prize winner who discovered Polonium and Radium.
+        </h2>
+        <img class='question_img' src='assets/img/act-science-lady.jpg'>
+        <div id='q8_optns' class='options actn'>
+            <button onclick='select(8, 1, this, "q8_optns")'>curium</button>
+            <button onclick='select(8, 2, this, "q8_optns")'>rutherfordium</button>
+            <button onclick='select(8, 3, this, "q8_optns")'>fermium</button>
+            <button onclick='select(8, 4, this, "q8_optns")'>mendelevium</button>
+        </div>
+    </div>
+
+    <div id='q9' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This synthetic actinide is named after this famous
+            university where many other elements have been discovered.
+        </h2>
+        <img class='question_img' src='assets/img/act-spiritual-home-numberphile.jpg'>
+        <div id='q9_optns' class='options actn'>
+            <button onclick='select(9, 1, this, "q9_optns")'>stanfordium</button>
+            <button onclick='select(9, 2, this, "q9_optns")'>californium</button>
+            <button onclick='select(9, 3, this, "q9_optns")'>berkelium</button>
+            <button onclick='select(9, 4, this, "q9_optns")'>tennessine</button>
+        </div>
+    </div>
+
+    <div id='q10' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This synthetic element is named after the state in the USA
+            and the famous university where many other elements have been discovered.
+        </h2>
+        <img class='question_img' src='assets/img/act-bear-flag.jpg'>
+        <div id='q10_optns' class='options actn'>
+            <button onclick='select(10, 1, this, "q10_optns")'>tennessine</button>
+            <button onclick='select(10, 2, this, "q10_optns")'>californium</button>
+            <button onclick='select(10, 3, this, "q10_optns")'>berkelium</button>
+            <button onclick='select(10, 4, this, "q10_optns")'>lawrencium</button>
+        </div>
+    </div>
+
+    <div id='q11' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This synthetic actinide is named after the famous scientist
+            who discovered that energy equals mass times the speed of light squared.
+        </h2>
+        <img class='question_img' src='assets/img/act-get-a-haircut.jpg'>
+        <div id='q11_optns' class='options actn'>
+            <button onclick='select(11, 1, this, "q11_optns")'>einsteinium</button>
+            <button onclick='select(11, 2, this, "q11_optns")'>rutherfordium</button>
+            <button onclick='select(11, 3, this, "q11_optns")'>fermium</button>
+            <button onclick='select(11, 4, this, "q11_optns")'>curium</button>
+        </div>
+    </div>
+
+    <div id='q12' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This synthetic actinide is named after the famous scientist
+            who initiated the world's first nuclear chain reaction underneath the bleachers of
+            Stagg Field (pictured below) at the University of Chicago
+        </h2>
+        <img class='question_img' src='assets/img/act-run-forrest.jpg'>
+        <div id='q12_optns' class='options actn'>
+            <button onclick='select(12, 1, this, "q12_optns")'>mendelevium</button>
+            <button onclick='select(12, 2, this, "q12_optns")'>rutherfordium</button>
+            <button onclick='select(12, 3, this, "q12_optns")'>fermium</button>
+            <button onclick='select(12, 4, this, "q12_optns")'>einsteinium</button>
+        </div>
+    </div>
+
+    <div id='q13' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This synthetic actinide is named after the famous scientist
+            who invented the periodic table of elements.
+        </h2>
+        <img class='question_img' src='assets/img/act-father-christmas.jpg'>
+        <div id='q13_optns' class='options actn'>
+            <button onclick='select(13, 1, this, "q13_optns")'>lawrencium</button>
+            <button onclick='select(13, 2, this, "q13_optns")'>rutherfordium</button>
+            <button onclick='select(13, 3, this, "q13_optns")'>fermium</button>
+            <button onclick='select(13, 4, this, "q13_optns")'>mendelevium</button>
+        </div>
+    </div>
+
+    <div id='q14' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This synthetic actinide is named after the famous scientist
+            who invented dynamite.
+        </h2>
+        <img class='question_img' src='assets/img/act-dynamite.jpg'>
+        <div id='q14_optns' class='options actn'>
+            <button onclick='select(14, 1, this, "q14_optns")'>curium</button>
+            <button onclick='select(14, 2, this, "q14_optns")'>nobelium</button>
+            <button onclick='select(14, 3, this, "q14_optns")'>fermium</button>
+            <button onclick='select(14, 4, this, "q14_optns")'>lawrencium</button>
+        </div>
+    </div>
+
+    <div id='q15' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This synthetic actinide is named after the famous scientist
+            who invented the cyclotron particle accelerator (pictured below).
+        </h2>
+        <img class='question_img' src='assets/img/act-cyclotron.jpg'>
+        <div id='q15_optns' class='options actn'>
+            <button onclick='select(15, 1, this, "q15_optns")'>lawrencium</button>
+            <button onclick='select(15, 2, this, "q15_optns")'>nobelium</button>
+            <button onclick='select(15, 3, this, "q15_optns")'>mendelevium</button>
+            <button onclick='select(15, 4, this, "q15_optns")'>fermium</button>
+        </div>
+    </div>
+
+    <div id='results_page' style='display: none' class='actn'>
+        <h1 id='score'></h1>
+        <h2 id='result'></h2>
+        <button id='return' onclick='go_away()'>back to quizzes</button>
+        <img src='assets/img/pipers-logo.png'>
+    </div>
+
+    <div class='band actinides' id='bottom'>
+        <button id='pass' onclick='pass();'>pass</button>
+        <button id='confirm' onclick='confirm();'>confirm</button>
+        <p id='bottom_text'></p>
+    </div>
+    
+</body>
+</html>

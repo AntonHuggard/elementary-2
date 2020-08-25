@@ -2056,7 +2056,7 @@ const lawrencium = {
     electronegativity:1.3,
     radioactive:true,
     discovery_date:1971,
-    discovery_details:'1961–1971 by JINR (USSR) & LBNL (USA)',
+    discovery_details:'1961-1971 by JINR (USSR) & LBNL (USA)',
     etymology:'after Ernest Lawrence',
     description: 'The last actinide and eleventh transuranic element. It\'s basically just one of your classic weird radioactive bois. Its most stable isotope has a half-life of 11 hours.'
 };
