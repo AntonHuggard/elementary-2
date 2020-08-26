@@ -18,10 +18,10 @@ function select(question_number, response, btn, locn) {
     // this shows which option the user has selected by changing the background colour
     const responses = document.getElementById(locn).getElementsByTagName('button');
     for (i = 0; i < responses.length; i++) {
-        if (!(responses[i].classList.contains('selected')) && (responses[i] === btn)) {
-            btn.classList.add('selected');
+        if (!(responses[i].classList.contains('selected-'+series)) && (responses[i] === btn)) {
+            btn.classList.add('selected-'+series);
         } else {
-            responses[i].classList.remove('selected');
+            responses[i].classList.remove('selected-'+series);
         }        
     }   
     
@@ -47,6 +47,8 @@ function next() {
     } else {
         document.getElementById('results_page').style.display='block';
         document.getElementById('bottom_text').innerHTML = 'results';
+        document.getElementById('pass').style.display = 'none';
+        document.getElementById('confirm').style.display = 'none';
         if ((score/total_number_of_questions) == 1) {
             document.getElementById('result').innerHTML = '<span style="font-size: 100px">&#127942;</span><br>Congratulations! You got every question right!';
         } else if ((score/total_number_of_questions) >= 0.75) {

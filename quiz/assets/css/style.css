@@ -25,14 +25,9 @@ button:active {transform: translateY(2px);}
 .correct {background-color: rgb(60, 255, 0);}
 .incorrect {background-color: rgb(223, 0, 0);}
 
-.nonmetals { background-color: rgb(154, 153, 35); }
-.actinides {background-color: rgb(164, 189, 110);}
-
-/* this is still nonmetals colour ... js prolly needs to be fiddled with */
-.selected { 
-    background-color: rgb(180, 179, 96);
-    color: white; 
-}
+.nonmetals    { background-color: rgb(154, 153, 35);  }
+.actinides    { background-color: rgb(164, 189, 110); }
+.alkalimetals { background-color: rgb(237, 156, 49);  }
 
 #top { top: 0px; }
 #head_contents {
@@ -71,6 +66,7 @@ button:active {transform: translateY(2px);}
     display: inline;
     font-size: 30px;
     margin-top: 15px;
+    margin-bottom: 15px;
     margin-right: 20px;
     float: right;
 }
@@ -89,10 +85,11 @@ button:active {transform: translateY(2px);}
 }
 .nmtl > button, .nmtl > #return { border: 3px solid rgb(154, 153, 35); }
 .actn > button, .actn > #return { border: 3px solid rgb(164, 189, 110);}
+.amtl > button, .amtl > #return { border: 3px solid rgb(241, 148, 33);}
 
-.options > button:hover, #return:hover {color: white; }
-.nmtl > button:hover, .nmtl > #return:hover {background-color: rgb(180, 179, 96);}
-.actn > button:hover, .actn > #return:hover {background-color: rgb(185, 209, 133);}
+.selected-nmtl, .nmtl > button:hover, .nmtl > #return:hover { background-color: rgb(180, 179, 96);  color: white; }
+.selected-actn, .actn > button:hover, .actn > #return:hover { background-color: rgb(185, 209, 133); color: white; }
+.selected-amtl, .amtl > button:hover, .amtl > #return:hover { background-color: rgb(236, 168, 85);  color: white; }
 
 #return {
     display: block;
@@ -132,7 +129,7 @@ button:active {transform: translateY(2px);}
         grid-row: 1;
         grid-column: 2;
         text-align: center;
-        margin-bottom: 0px;
+        margin-bottom: 15px;
     }
 }
 
