@@ -1,7 +1,5 @@
 * { font-family: 'Sen', sans-serif; }
-body { 
-    margin: 0;
-}
+body { margin: 0; }
 
 button { 
     background-color: transparent;
@@ -28,6 +26,7 @@ button:active {transform: translateY(2px);}
 .nonmetals    { background-color: rgb(154, 153, 35);  }
 .actinides    { background-color: rgb(164, 189, 110); }
 .alkalimetals { background-color: rgb(237, 156, 49);  }
+.al-earth-mtls{ background-color: rgb(138, 100, 53);  }
 
 #top { top: 0px; }
 #head_contents {
@@ -86,10 +85,12 @@ button:active {transform: translateY(2px);}
 .nmtl > button, .nmtl > #return { border: 3px solid rgb(154, 153, 35); }
 .actn > button, .actn > #return { border: 3px solid rgb(164, 189, 110);}
 .amtl > button, .amtl > #return { border: 3px solid rgb(241, 148, 33);}
+.aemt > button, .aemt > #return { border: 3px solid rgb(138, 100, 53);}
 
 .selected-nmtl, .nmtl > button:hover, .nmtl > #return:hover { background-color: rgb(180, 179, 96);  color: white; }
 .selected-actn, .actn > button:hover, .actn > #return:hover { background-color: rgb(185, 209, 133); color: white; }
-.selected-amtl, .amtl > button:hover, .amtl > #return:hover { background-color: rgb(236, 168, 85);  color: white; }
+.selected-amtl, .amtl > button:hover, .amtl > #return:hover { background-color: rgb(248, 161, 54);  color: white; }
+.selected-aemt, .aemt > button:hover, .aemt > #return:hover { background-color: rgba(138, 100, 53, 0.856);  color: white; }
 
 #return {
     display: block;
