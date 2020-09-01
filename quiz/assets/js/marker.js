@@ -43,6 +43,14 @@ function check_ans(series, question_number, response) {
                 alert(response + ' is incorrect');
             }
             break;
+        case 'hlgn':
+            if (response == hlgn_ans[question_number - 1]) {
+                score++;
+                alert('correct - your current score is ' + score);
+            } else {
+                alert(response + ' is incorrect');
+            }
+            break;
     }
 }
 
@@ -50,3 +58,4 @@ const nmtl_ans = [2, 1, 3, 4, 4, 3, 1];
 const actn_ans = [4, 3, 3, 1, 1, 2, 4, 1, 3, 2, 1, 3, 4, 2, 1];
 const amtl_ans = [1, 4, 2, 4, 3, 'duh'];
 const aemt_ans = [4, 3, 1, 2, 4, 3];
+const hlgn_ans = [1, 2, 3, 4, 4];
