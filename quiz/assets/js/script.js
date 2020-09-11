@@ -27,9 +27,34 @@ function select(question_number, response, btn, locn) {
     
 }
 
+
+
+answered = false;
+is_correct = null;
+
 function confirm() {
-    check_ans(series, curr_question, curr_response);
-    next();
+    if (!answered) {
+        is_correct = check_ans(series, curr_question, curr_response);
+        response = document.getElementsByClassName('selected-'+series);
+        if (is_correct) {
+            response[0].classList.add("correct");
+            response[0].innerHTML = "correct";
+        } else {
+            response[0].classList.add("incorrect");
+            response[0].innerHTML = "incorrect";
+        }
+        answered = true;
+        the_button = document.getElementById('confirm');
+        the_button.innerHTML = "next";
+    } else {
+        the_button = document.getElementById('confirm');
+        the_button.innerHTML = "confirm";
+        response[0].classList.remove('selected-'+series);
+        if (is_correct) document.getElementsByClassName('correct')[0].classList.remove('correct');
+        if (!is_correct) document.getElementsByClassName('incorrect')[0].classList.remove('incorrect');
+        answered = false;
+        next();
+    }
 }
 
 function pass() { next(); }

@@ -20,14 +20,14 @@ button:active {transform: translateY(2px);}
     width: 100%;
 }
 
-.correct {background-color: rgb(60, 255, 0);}
-.incorrect {background-color: rgb(223, 0, 0);}
+
 
 .nonmetals    { background-color: rgb(154, 153, 35);  }
 .actinides    { background-color: rgb(164, 189, 110); }
 .alkalimetals { background-color: rgb(237, 156, 49);  }
 .al-earth-mtls{ background-color: rgb(138, 100, 53);  }
 .halogens     { background-color: rgb(133, 108, 165);  }
+.lanthanides     { background-color: rgb(203, 117, 162);  }
 
 #top { top: 0px; }
 #head_contents {
@@ -88,12 +88,25 @@ button:active {transform: translateY(2px);}
 .amtl > button, .amtl > #return { border: 3px solid rgb(241, 148, 33);}
 .aemt > button, .aemt > #return { border: 3px solid rgb(138, 100, 53);}
 .hlgn > button, .hlgn > #return { border: 3px solid rgb(133, 108, 165);}
+.lnth > button, .lnth > #return { border: 3px solid rgb(203, 117, 162);}
 
 .selected-nmtl, .nmtl > button:hover, .nmtl > #return:hover { background-color: rgb(180, 179, 96);  color: white; }
 .selected-actn, .actn > button:hover, .actn > #return:hover { background-color: rgb(185, 209, 133); color: white; }
 .selected-amtl, .amtl > button:hover, .amtl > #return:hover { background-color: rgb(248, 161, 54);  color: white; }
 .selected-aemt, .aemt > button:hover, .aemt > #return:hover { background-color: rgba(138, 100, 53, 0.856);  color: white; }
 .selected-hlgn, .hlgn > button:hover, .hlgn > #return:hover { background-color: rgba(133, 108, 165, 0.856);  color: white; }
+.selected-lnth, .lnth > button:hover, .lnth > #return:hover { background-color: rgba(203, 117, 162, 0.856);  color: white; }
+
+.correct {
+    background-color: rgb(139, 219, 9);
+    border: 3px solid rgb(118, 187, 8) !important;
+    /* box-shadow: 0 0 8px 0 rgba(128, 202, 8, 0.8); */
+}
+.incorrect {
+    border: 3px solid rgb(182, 0, 0) !important;
+    background-color: rgb(223, 0, 0);
+    /* box-shadow: 0 0 10px 0 rgba(182, 0, 0, 0.8); */
+}
 
 #return {
     display: block;
