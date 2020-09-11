@@ -27,8 +27,11 @@ function check_ans(series, question_number, response) {
         case 'lnth':
             index = 4;
             break;
-        case 'nmtl':
+        case 'mtld':
             index = 5;
+            break;
+        case 'nmtl':
+            index = 6;
             break;
     }
     if (index != null) {
@@ -47,12 +50,12 @@ const amtl_ans = [1, 4, 2, 4, 3, 'duh'];
 const aemt_ans = [4, 3, 1, 2, 4, 3];
 const lnth_ans = [3, 3, 4, 1, 2, 1, 1, 2, 4, 2, 3, 2, 1, 4, 1, 3, 1, 4, 1, 2];
 const hlgn_ans = [1, 2, 3, 4, 4];
+const mtld_ans = [1, 1, 3, 2, 2, 1, 1, 1, 4, 3, 4, 4, 1, 1, 2, 1, 2, 4, 3, 4]
 
-// [1, 1, 3, 2, 2, 1, 1, 1, 4, 3, 4, 4, 1, 1, 2, 1, 2, 4, 3, 4]
 // [2, 2, 4, 3, 1, 4, 3, 1, 4, 1, 2, 1, 1, 3, 2, 1, 4, 3, 1, 2]
 // [2, 2, 4, 4, 1, 4, 1, 4, 4, 2, 1, 3, 4, 1, 4, 3, 4, 2, 3, 2]
 // [2, 4, 1, 2, 1, 2, 3, 2, 1, 1, 1, 4, 1, 4, 3, 2, 1, 1, 3, 4]
 // [2, 2, 2, 1, 1, 1, 2, 4, 3, 3, 4, 1, 2, 3, 3, 2, 3, 4, 3, 3]
 
 
-all_ans = [actn_ans, amtl_ans, aemt_ans, hlgn_ans, lnth_ans, nmtl_ans];
+all_ans = [actn_ans, amtl_ans, aemt_ans, hlgn_ans, lnth_ans, mtld_ans, nmtl_ans];
