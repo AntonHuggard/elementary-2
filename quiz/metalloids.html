@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src = "assets/js/script.js"></script>
+    <script src = "assets/js/marker.js"></script>
+    <title>Elementary | Actinides</title>
+    <link rel="icon" href="../assets/img/rf.png" />
+</head>
+<body onload='page_setup(7, "mtld")'>
+
+    <div class='band metalloids' id='head'>
+        <div id='head_contents'>
+            <h1>Metalloids</h1>
+            <button onclick='exit()'>&times</button>
+        </div>
+    </div>
+
+    <div id='q1' class='quiz_body'>
+        <h2 class='question'>Due to its resistance to thermal shock, this metalloid is used in the manufacture of laboratory 
+            equipment which needs to withstand extreme temperatures
+        </h2>
+        <img class='question_img' src='assets/img/metalloids/mtld-lemonade.png'>
+        <div id='q1_optns' class='options mtld'>
+            <button onclick='select(1, 1, this, "q1_optns")'>boron</button>
+            <button onclick='select(1, 2, this, "q1_optns")'>germanium</button>
+            <button onclick='select(1, 3, this, "q1_optns")'>tellurium</button>
+            <button onclick='select(1, 4, this, "q1_optns")'>mercury</button>
+        </div>
+    </div>
+
+    <div id='q2' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This metalloid has had a significant effect on the modern world and is a critical component in 
+            computer chip manufacturing
+        </h2>
+        <img class='question_img' src='assets/img/metalloids/mtld-computer-machine.png'>
+        <div id='q2_optns' class='options mtld'>
+            <button onclick='select(2, 1, this, "q2_optns")'>silicon</button>
+            <button onclick='select(2, 2, this, "q2_optns")'>boron</button>
+            <button onclick='select(2, 3, this, "q2_optns")'>iron</button>
+            <button onclick='select(2, 4, this, "q2_optns")'>selenium</button>
+        </div>
+    </div>
+
+    <div id='q3' class='quiz_body' style='display: none;'>
+        <h2 class='question'>Because of its optical qualities, this metalloid is used in the lenses of infrared night vision goggles
+        </h2>
+        <img class='question_img' src='assets/img/metalloids/mtld-budget-vader.png'>
+        <div id='q3_optns' class='options mtld'>
+            <button onclick='select(3, 1, this, "q3_optns")'>silicon</button>
+            <button onclick='select(3, 2, this, "q3_optns")'>arsenic</button>
+            <button onclick='select(3, 3, this, "q3_optns")'>germanium</button>
+            <button onclick='select(3, 4, this, "q3_optns")'>tellurium</button>
+        </div>
+    </div>
+
+    <div id='q4' class='quiz_body' style='display: none;'>
+        <h2 class='question'>Because of its toxicity to insects and bacteria, this metalloid has been used by the construction 
+            industry for treating timber
+        </h2>
+        <img class='question_img' src='assets/img/metalloids/mtld-building.png'>
+        <div id='q4_optns' class='options mtld'>
+            <button onclick='select(4, 1, this, "q4_optns")'>lead</button>
+            <button onclick='select(4, 2, this, "q4_optns")'>arsenic</button>
+            <button onclick='select(4, 3, this, "q4_optns")'>polonium</button>
+            <button onclick='select(4, 4, this, "q4_optns")'>antimony</button>
+        </div>
+    </div>
+
+    <div id='q5' class='quiz_body' style='display: none;'>
+        <h2 class='question'>This metalloid is commonly alloyed with lead to make fishing tackle - mainly for weighted lures and
+            sinkers
+        </h2>
+        <img class='question_img' src='assets/img/metalloids/mtld-fishing-things.png'>
+        <div id='q5_optns' class='options mtld'>
+            <button onclick='select(5, 1, this, "q5_optns")'>tellurium</button>
+            <button onclick='select(5, 2, this, "q5_optns")'>antimony</button>
+            <button onclick='select(5, 3, this, "q5_optns")'>germanium</button>
+            <button onclick='select(5, 4, this, "q5_optns")'>arsenic</button>
+        </div>
+    </div>
+
+    <div id='q6' class='quiz_body' style='display: none;'>
+        <h2 class='question'>When alloyed with Cadmium, this metalloid plays an important role in how solar panels convert the
+            sun's energy into useful power.
+        </h2>
+        <img class='question_img' src='assets/img/metalloids/mtld-solar-panel.png'>
+        <div id='q6_optns' class='options mtld'>
+            <button onclick='select(6, 1, this, "q6_optns")'>tellurium</button>
+            <button onclick='select(6, 2, this, "q6_optns")'>polonium</button>
+            <button onclick='select(6, 3, this, "q6_optns")'>germanium</button>
+            <button onclick='select(6, 4, this, "q6_optns")'>boron</button>
+        </div>
+    </div>
+
+    <div id='q7' class='quiz_body' style='display: none;'>
+        <h2 class='question'>Pope John Paul II comes from the country for which this radioactive metalloid is named.
+        </h2>
+        <img class='question_img' src='assets/img/metalloids/mtld-pope-with-small-hat.png'>
+        <div id='q7_optns' class='options mtld'>
+            <button onclick='select(7, 1, this, "q7_optns")'>polonium</button>
+            <button onclick='select(7, 2, this, "q7_optns")'>francium</button>
+            <button onclick='select(7, 3, this, "q7_optns")'>germanium</button>
+            <button onclick='select(7, 4, this, "q7_optns")'>americium</button>
+        </div>
+    </div>
+
+    <div id='results_page' style='display: none' class='mtld'>
+        <h1 id='score'></h1>
+        <h2 id='result'></h2>
+        <button id='return' onclick='go_away()'>back to quizzes</button>
+        <img src='assets/img/pipers-logo.png'>
+    </div>
+
+    <div class='band metalloids' id='bottom'>
+        <button id='pass' onclick='pass();'>pass</button>
+        <button id='confirm' onclick='confirm();'>confirm</button>
+        <p id='bottom_text'></p>
+    </div>
+    
+</body>
+</html>
