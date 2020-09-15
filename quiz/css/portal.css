@@ -1,0 +1,50 @@
+* { 
+    font-family: 'Sen', sans-serif; 
+}
+body { 
+    margin: 0;
+    background-color: rgb(63, 163, 245);
+    display: block;
+    margin: auto;
+}
+h1, h2, h3 {
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+h1 {font-size: 100px; margin: 20px 0px 0px 0px;}
+h2 {font-size: 40px; margin: 0px;}
+h3 {font-size: 30px; margin-top: 10px; margin-bottom: 40px;}
+button {
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    margin-top: 20px;
+    font-size: 25px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 30px;
+    outline: none;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+button:active {transform: translateY(2px);}
+#pipers {
+    background-color: white;
+    display: block;
+    margin: 30px auto;
+    padding: 10px 30px;
+}
+
+@media only screen and (min-width: 650px) {
+    body {
+        margin: 0px;
+        background-image: radial-gradient(#66c2ff, #4585fc);
+    }
+    button{width: 400px;}
+}
