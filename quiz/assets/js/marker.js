@@ -1,5 +1,5 @@
 // Written by Anton Huggard
-// Last edited 11th Sept, 2020 -- improved feedback; added lanthanides
+// Last edited 16th Sept, 2020 -- added more transition metals
 
 // there's probably a less stupid way of doing this, but I don't have time right now.
 function check_ans(series, question_number, response) {
@@ -33,6 +33,15 @@ function check_ans(series, question_number, response) {
         case 'nmtl':
             index = 6;
             break;
+        case 'omtl':
+            index = 7;
+            break;
+        case 'tmtl':
+            index = 8;
+            break;
+        case 'tmt2':
+            index = 9;
+            break;
     }
     if (index != null) {
         if (response == all_ans[index][question_number - 1]) {
@@ -50,12 +59,12 @@ const amtl_ans = [1, 4, 2, 4, 3, 'duh'];
 const aemt_ans = [4, 3, 1, 2, 4, 3];
 const lnth_ans = [3, 3, 4, 1, 2, 1, 1, 2, 4, 2, 3, 2, 1, 4, 1, 3, 1, 4, 1, 2];
 const hlgn_ans = [1, 2, 3, 4, 4];
-const mtld_ans = [1, 1, 3, 2, 2, 1, 1, 1, 4, 3, 4, 4, 1, 1, 2, 1, 2, 4, 3, 4]
+const mtld_ans = [1, 1, 3, 2, 2, 1, 1, 1, 4, 3, 4, 4, 1, 1, 2, 1, 2, 4, 3, 4];
+const omtl_ans = [2, 2, 4, 3, 1, 4, 3, 1, 4, 1, 2, 1, 1, 3, 2, 1, 4, 3, 1, 2];
+const tmt1_ans = [2, 2, 4, 4, 1, 4, 1, 4, 4, 2, 1, 3, 4, 1, 4, 3, 4, 2, 3, 2];
+const tmt2_ans = [2, 4, 1, 2, 1, 2, 3, 2, 1, 1, 1, 4, 1, 4, 3, 2, 1, 1, 3, 4];
 
-// [2, 2, 4, 3, 1, 4, 3, 1, 4, 1, 2, 1, 1, 3, 2, 1, 4, 3, 1, 2]
-// [2, 2, 4, 4, 1, 4, 1, 4, 4, 2, 1, 3, 4, 1, 4, 3, 4, 2, 3, 2]
-// [2, 4, 1, 2, 1, 2, 3, 2, 1, 1, 1, 4, 1, 4, 3, 2, 1, 1, 3, 4]
-// [2, 2, 2, 1, 1, 1, 2, 4, 3, 3, 4, 1, 2, 3, 3, 2, 3, 4, 3, 3]
+ // [2, 2, 2, 1, 1, 1, 2, 4, 3, 3, 4, 1, 2, 3, 3, 2, 3, 4, 3, 3]
 
 
-all_ans = [actn_ans, amtl_ans, aemt_ans, hlgn_ans, lnth_ans, mtld_ans, nmtl_ans];
+all_ans = [actn_ans, amtl_ans, aemt_ans, hlgn_ans, lnth_ans, mtld_ans, nmtl_ans, omtl_ans, tmt1_ans, tmt2_ans];

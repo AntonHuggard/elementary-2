@@ -20,8 +20,6 @@ button:active {transform: translateY(2px);}
     width: 100%;
 }
 
-
-
 .nonmetals    { background-color: rgb(154, 153, 35);  }
 .actinides    { background-color: rgb(164, 189, 110); }
 .alkalimetals { background-color: rgb(237, 156, 49);  }
@@ -29,6 +27,8 @@ button:active {transform: translateY(2px);}
 .halogens     { background-color: rgb(133, 108, 165); }
 .lanthanides  { background-color: rgb(203, 117, 162); }
 .metalloids   { background-color: rgb(94, 145, 200);  }
+.other-metals { background-color: rgb(154, 145, 140); }
+.transtn-mtls { background-color: rgb(188, 53, 13);   }
 
 #top { top: 0px; }
 #head_contents {
@@ -84,13 +84,15 @@ button:active {transform: translateY(2px);}
     grid-gap: 10px;
     margin-bottom: 120px;
 }
-.nmtl > button, .nmtl > #return { border: 3px solid rgb(154, 153, 35); }
+.nmtl > button, .nmtl > #return { border: 3px solid rgb(154, 153, 35 ); }
 .actn > button, .actn > #return { border: 3px solid rgb(164, 189, 110);}
-.amtl > button, .amtl > #return { border: 3px solid rgb(241, 148, 33); }
-.aemt > button, .aemt > #return { border: 3px solid rgb(138, 100, 53); }
+.amtl > button, .amtl > #return { border: 3px solid rgb(241, 148, 33 ); }
+.aemt > button, .aemt > #return { border: 3px solid rgb(138, 100, 53 ); }
 .hlgn > button, .hlgn > #return { border: 3px solid rgb(133, 108, 165);}
 .lnth > button, .lnth > #return { border: 3px solid rgb(203, 117, 162);}
-.mtld > button, .mtld > #return { border: 3px solid rgb(94, 145, 200); }
+.mtld > button, .mtld > #return { border: 3px solid rgb(94,  145, 200); }
+.omtl > button, .omtl > #return { border: 3px solid rgb(154, 145, 140);}
+.tmtl > button, .tmtl > #return, .tmt2 > button, .tmt2 > #return { border: 3px solid rgb(188, 53,  13 );  }
 
 .selected-nmtl, .nmtl > button:hover, .nmtl > #return:hover { background-color: rgb(180, 179, 96);  color: white; }
 .selected-actn, .actn > button:hover, .actn > #return:hover { background-color: rgb(185, 209, 133); color: white; }
@@ -99,6 +101,8 @@ button:active {transform: translateY(2px);}
 .selected-hlgn, .hlgn > button:hover, .hlgn > #return:hover { background-color: rgba(133, 108, 165, 0.856);  color: white; }
 .selected-lnth, .lnth > button:hover, .lnth > #return:hover { background-color: rgba(203, 117, 162, 0.856);  color: white; }
 .selected-mtld, .mtld > button:hover, .mtld > #return:hover { background-color: rgba(94, 145, 200, 0.856);  color: white; }
+.selected-omtl, .omtl > button:hover, .omtl > #return:hover { background-color: rgba(154, 145, 140, 0.856);  color: white; }
+.selected-tmtl, .tmtl > button:hover, .tmtl > #return:hover, .selected-tmt2, .tmt2 > button:hover, .tmt2 > #return:hover { background-color: rgba(188, 53, 13, 0.856);  color: white; }
 
 .correct {
     background-color: rgb(139, 219, 9);
