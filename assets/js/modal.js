@@ -1,6 +1,7 @@
 // Written by Anton Huggard
 // Last edited 20th Aug, 2020 -- changed path to radioactive img for modal
-// This file has all code related to the modals that appear when an element is clicked on
+// This file has all the code related to the modals that pop-up when an element is clicked on
+// it's got html and some svg. This is probably pretty bad practice, but I'm too fast & loose. 
 
 const alkali_metals_colour = "rgb(223, 0, 0)";
 const alkaline_earth_metals_clour = "rgb(219, 66, 6)";

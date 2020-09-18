@@ -14,33 +14,35 @@
 
     <!-- This is just the boring title stuff -->
 
-    <h1 class = "centre" style = "border: none; padding: 20px 0px 40px 0px;">&#9883;</h1>
-    <h2 class = "centre" style = "border: none; padding: 5px 0px 10px 0px;">elementary</h2>
-    <h3>the searchable periodic table</h3>
+    <div id='header' class='desktop-left-col'>
+        <h1 class = "centre" style = "border: none; ">&#9883;</h1>
+        <h2 class = "centre" style = "border: none; padding: 5px 0px 10px 0px;">elementary</h2>
+        <h3>the searchable periodic table</h3>
+    </div>
 
     <!-- The below divs hold the different sliders and search bar  -->
 
-    <div id = "element_search_container" class = "centre" style = "border: none;">
+    <div id = "element_search_container" class = "centre desktop-right-col" style = "border: none;">
         <input type = "text" id = "element_io" onkeyup="search()" placeholder="Search elements... " style = "float: left;">
         <img src="assets/img/mgnf_glss_gry.png" />
     </div>    
 
-    <div id = "electronegativity_div" class="slider_div">
+    <div id = "electronegativity_div" class="slider_div desktop-right-col">
         <input type="range" min="0" max="400" value="0" class="slider" id="EN_slider" oninput="en_slider_function()">
         <p id = "EN_display"></p>
     </div>
 
-    <div id = "melting_pt_div" class="slider_div">
-        <input type="range" min="-267" max="3800" value="0" class="slider" id="MP_slider" oninput="mp_slider_function()">
+    <div id = "melting_pt_div" class="slider_div desktop-right-col">
+        <input type="range" min="-276" max="3800" value="0" class="slider" id="MP_slider" oninput="mp_slider_function()">
         <p id = "MP_display"></p>
     </div>
 
-    <div id = "boiling_pt_div" class="slider_div">
+    <div id = "boiling_pt_div" class="slider_div desktop-right-col">
         <input type="range" min="-276" max="6600" value="100" class="slider" id="BP_slider" oninput="bp_slider_function()">
         <p id = "BP_display"></p>
     </div>
 
-    <div id = "discovery_div" class="slider_div">
+    <div id = "discovery_div" class="slider_div desktop-right-col">
         <input type="range" min="800" max="2020" value="1800" class="slider" id="discovery_timeline" oninput="ds_slider_function()">
         <p id = "date_display"></p>
     </div>
@@ -64,7 +66,7 @@
 
     <!-- While *this* displays the search types for desktop users  -->
 
-    <div id = "search_type_grid" class = "centre" style = "border: none">
+    <div id = "search_type_grid" class = "centre desktop-right-col" style = "border: none">
         <button id = "EN_btn" onclick = "set_search(1, false); change_btn(this, 'search_type_grid');">electronegativity</button>
         <button id = "MP_btn" onclick = "set_search(2, false); change_btn(this, 'search_type_grid');">melting point</button>
         <button id = "BP_btn" onclick = "set_search(3, false); change_btn(this, 'search_type_grid');">boiling point</button>
@@ -73,7 +75,7 @@
 
     <!-- Ladies and gentlemen, our next guest is the one & only Periodic Table of Elements! -->
 
-    <div id = "periodic_table" class = "centre">
+    <div id = "periodic_table" class = "centre desktop-right-col">
         <button onclick = "show_modal(this)" id = "hydrogen" class="element first alkali_metals">H</button>
         <button id = "filler_btn-1" class = "void_btn"></button>
         <button onclick = "show_modal(this)" id = "helium" class="element first noble">He</button>
@@ -213,7 +215,7 @@
     
     <div id='small_screen_search_results' class='centre' style='display: none; margin-bottom: 20px;'></div>
 
-    <div id='properties_menu' class='centre'>
+    <div id='properties_menu' class='centre desktop-right-col'>
         <button onclick='display_type("s_blk"); change_btn(this, "properties_menu");'>s-block</button>
         <button onclick='display_type("p_blk"); change_btn(this, "properties_menu");'>p-block</button>
         <button onclick='display_type("d_blk"); change_btn(this, "properties_menu");'>d-block</button>
@@ -228,7 +230,13 @@
         <button onclick='display_type("synth"); change_btn(this, "properties_menu");'>synthetic</button>
     </div>
 
-    <button id='quiz_btn' onclick="window.location ='quiz/index.html'">Quiz</button>
+    <button class='desktop-left-col nav-btn' id='quiz_btn' onclick="window.location ='quiz/index.html'">quiz</button>
+    <button class='desktop-left-col nav-btn' id='myst_btn'>units</button>
+    <button class='desktop-left-col nav-btn' id='abou_btn'>about</button>
+    <button class='desktop-left-col nav-btn' id='help_btn'>help</button>
+    
+    <img class='desktop-left-col' id='pipers' src='quiz/assets/img/pipers-logo.png' />
+    
 
     <div id = "element_pop-up" style = "display: none;"></div> 
 </body>

@@ -5,7 +5,7 @@ body {
 
 h1 {
     margin:0;
-    padding:0;
+    padding: 20px 0px 40px 0px;
     font-family: 'Sen', sans-serif;
     text-align: center; 
     color: white; 
@@ -248,6 +248,9 @@ h3 {
     background-color: rgb(63, 163, 245);
     border-radius: 50%;
 }
+.item2:hover {
+    cursor: pointer;
+}
 .item3 {
     display: none;
 }
@@ -308,7 +311,7 @@ h3 {
 #periodic_table > .unknown { background-color: rgb(34, 34, 34); }
 #periodic_table > .unknown:hover { color: rgb(34, 34, 34); }
 
-#quiz_btn {
+.nav-btn {
     display: block;
     margin: auto;
     background-color: transparent;
@@ -319,11 +322,19 @@ h3 {
     font-size: 30px;
     margin-bottom: 50px;
     padding: 5px 50px;
+    outline: none;
 }
-#quiz_btn:hover{
+.nav-btn:hover{
     background-color: white;
     color: black;
     cursor: pointer;
+}
+
+#pipers {
+    background-color: white;
+    display: block;
+    margin: 30px auto;
+    padding: 10px 30px;
 }
 
 @media only screen and (min-width: 330px) {
@@ -592,7 +603,7 @@ h3 {
         cursor: pointer;
     }
     
-    #search_type_grid > button:active {
+    #search_type_grid > button:active, .nav-btn:active {
         transform: translateY(2px);
     }
 
@@ -635,4 +646,66 @@ h3 {
         max-width: 970px;
         grid-gap: 5px;
     }
+    .nav-btn { width: 300px; }
+}
+
+@media only screen and (min-width: 1350px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 70px 86px repeat(8, 70px);
+    }
+
+    #periodic_table {
+        padding: 20px 5px;
+    }
+
+    .desktop-left-col {
+        grid-column: 1;
+    }
+    .desktop-right-col {
+        grid-column: 2;
+    }
+    #header {
+        grid-row: 1 / 4;
+    }
+    #header > h1 {
+        padding-bottom: 0px;
+    }
+    #element_search_container {grid-row: 1;}
+    .nav-btn {
+        width: 90%;
+    }
+    #quiz_btn {grid-row: 5;}
+    #myst_btn {grid-row: 6;}
+    #abou_btn {grid-row: 7;}
+    #help_btn {grid-row: 8;}
+    
+    #properties_menu {
+        grid-row: 11;
+        max-width: 990px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 5px;
+        margin: auto;
+        border: none;
+    }
+    #pipers {
+        grid-row: 9;
+    }
+}
+@media only screen and (min-width: 1395px) and (min-height: 825px) {
+    body {
+        /* grid-template-columns: 30% 70%; */
+        margin-top: 1% ;
+    }
+    .nav-btn {max-width: 400px;}
+    
+}
+@media only screen and (min-width: 1470px)  {
+    
+    #periodic_table {
+        padding: 20px;
+    }
+    /* #periodic_table {margin-left: 1%;} */
 }

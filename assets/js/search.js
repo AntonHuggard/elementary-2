@@ -1,6 +1,5 @@
 // Written by Anton Huggard
-// Last edited 11th Aug, 2020 -- changed the low opacity to a const in elementary.js
-// this is to make it more dynamic
+// Last edited 25th Aug, 2020 -- fixed bug where searching "non-metal" displayed metals
 
 // display-type, from bottom buttons
 var prv_display = 'all';
@@ -73,12 +72,6 @@ function search() {
                 document.getElementById(element.name).style.opacity = "100%";
             }
         });
-    } else if (query.match(/METAL[s]?$/i)) {
-        elements.forEach(element => {
-            if (element.metalness == 'metal') {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
     } else if (query.match(/METALLOID[s]?$/i)) {
         elements.forEach(element => {
             if (element.metalness == 'metalloid') {
@@ -88,6 +81,12 @@ function search() {
     } else if (query.match(/NON[\s-]*METAL[s]?$/i)) {
         elements.forEach(element => {
             if (element.metalness == 'nonmetal') {
+                document.getElementById(element.name).style.opacity = "100%";
+            }
+        });
+    } else if (query.match(/METAL[s]?$/i)) {
+        elements.forEach(element => {
+            if (element.metalness == 'metal') {
                 document.getElementById(element.name).style.opacity = "100%";
             }
         });
