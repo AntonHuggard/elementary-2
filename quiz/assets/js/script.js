@@ -7,7 +7,8 @@ function exit() {
 function page_setup(n, s) {
     series = s;
     curr_question = 1;
-    document.getElementById('bottom_text').innerHTML = 'question ' + 1;
+    if (window.screen.availWidth > 400) document.getElementById('bottom_text').innerHTML = 'question ' + 1;
+    else document.getElementById('bottom_text').innerHTML = 'Q ' + 1 +'/'+n;
     total_number_of_questions = n;
 }
 
@@ -61,7 +62,8 @@ function pass() { next(); }
 
 function next() {
     curr_question = curr_question + 1;
-    document.getElementById('bottom_text').innerHTML = 'question ' + curr_question;
+    if (window.screen.availWidth > 400) document.getElementById('bottom_text').innerHTML = 'question ' + curr_question;
+    else document.getElementById('bottom_text').innerHTML = 'Q ' + curr_question +'/'+total_number_of_questions;
 
     for (i = 1; i <= total_number_of_questions; i++) { // hide all the questions
         document.getElementById('q'+i).style.display = 'none';
