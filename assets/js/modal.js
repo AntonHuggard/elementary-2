@@ -1,7 +1,7 @@
 // Written by Anton Huggard
 // Last edited 2nd Oct, 2020 -- added arrow key navigation for modals
-// This file has all the code related to the modals that pop-up when an element is clicked on
-// it's got html and some svg. This is probably pretty bad practice, but I'm a fast & loose
+// This file has all the code related to the modals that pop-up when an element is clicked on.
+// It's got html and some svg. This is probably pretty bad practice, but I'm a fast & loose
 // kinda guy. 
 
 const alkali_metals_colour = "rgb(223, 0, 0)";
@@ -100,12 +100,16 @@ function show_modal(obj) {
     if (mp == 9999) {
         mp = "<em>je ne sais pas</em>"
     } else {
-        mp = mp + " &#176;C";
+        if (units == 1) mp = convert_temp(mp) + " &#176;F";
+        else if (units == 2) mp = convert_temp(mp) + " K";
+        else mp = mp + " &#176;C";
     }
     if (bp == 9999) {
         bp = "<em>je ne sais pas</em>"
     } else {
-        bp = bp + " &#176;C";
+        if (units == 1) bp = convert_temp(bp) + " &#176;F";
+        else if (units == 2) bp = convert_temp(bp) + " K";
+        else bp = bp + " &#176;C";
     }
 
     // html for the modal pop-up

@@ -399,6 +399,7 @@ h3 {
         border:5px solid white;
         font-family: 'Sen', sans-serif;
         margin: auto;
+        box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.507);
     }
 
     .grid-container {

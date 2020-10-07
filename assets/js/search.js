@@ -1,6 +1,5 @@
 // Written by Anton Huggard
-// Last edited 7th Oct, 2020 -- re-write of entire file
-// mobile users can now search entire table
+// Last edited 7th Oct, 2020 -- fixed bug for symbol searching
 
 // display-type, from bottom buttons
 let prv_display = 'all';
@@ -97,7 +96,7 @@ function search() {
     // searching by chemical symbol
     if ( (query.length < 3) && (query.match(/[a-zA-Z]{1,2}$/i)) ) {
         elements.forEach(element => {
-            if (element.symbol.includes(query)) results.push(element);
+            if (element.symbol.includes(query) || query == element.symbol.toUpperCase()) results.push(element);
         });
     }
     
