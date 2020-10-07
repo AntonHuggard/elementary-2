@@ -519,7 +519,7 @@ h3 {
         color: black;
     }
 
-    #periodic_table > button:hover {
+    .element:hover {
         transition-duration: 0.3s;
         transform: translate(0px, -2px);
         box-shadow: 3px 7px 5px rgba(32, 32, 32, 0.466);

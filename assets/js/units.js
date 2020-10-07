@@ -19,13 +19,13 @@ function toggle_units() {
     }
 }
 
-function convert_temp(value) {
+function convert_temp(value, r) {
     switch (units) {
         case 1:
-            return ((5/9)*(value - 32)).toFixed(2);
+            return ((5/9)*(value - 32)).toFixed(r);
             break;
         case 2:
-            return (value + 273.15).toFixed(2);
+            return (value + 273.15).toFixed(0);
             break;
     }
 }

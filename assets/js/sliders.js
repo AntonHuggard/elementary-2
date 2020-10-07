@@ -34,7 +34,11 @@ mp_output.innerHTML = mp_slider.value  + " &#176;C";
 
 function mp_slider_function() {
     const mp_input = document.getElementById("MP_slider").value;
-    mp_output.innerHTML = mp_input + " &#176;C";
+    let display = '';
+    if (units == 1) display = convert_temp(mp_input, 0) + " &#176;F";
+    else if (units == 2) display = convert_temp(Number(mp_input), 0) + " K";
+    else display = mp_input + " &#176;C";
+    mp_output.innerHTML = display;
     elements.forEach(element => {
         const O1 = element.melting_point - 1000;
         const O2 = element.melting_point + 1000;
@@ -64,7 +68,11 @@ bp_output.innerHTML = bp_slider.value + " &#176;C";
 
 function bp_slider_function() {
     const bp_input = document.getElementById("BP_slider").value;
-    bp_output.innerHTML = bp_input  + " &#176;C";
+    let display = '';
+    if (units == 1) display = convert_temp(bp_input, 0) + " &#176;F";
+    else if (units == 2) display = convert_temp(Number(bp_input), 0) + " K";
+    else display = bp_input + " &#176;C";
+    bp_output.innerHTML = display;
     elements.forEach(element => {
         const O1 = element.boiling_point - 1000;
         const O2 = element.boiling_point + 1000;

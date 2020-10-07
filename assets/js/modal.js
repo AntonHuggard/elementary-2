@@ -107,8 +107,8 @@ function show_modal(obj) {
     if (bp == 9999) {
         bp = "<em>je ne sais pas</em>"
     } else {
-        if (units == 1) bp = convert_temp(bp) + " &#176;F";
-        else if (units == 2) bp = convert_temp(bp) + " K";
+        if (units == 1) bp = convert_temp(bp, 2) + " &#176;F";
+        else if (units == 2) bp = convert_temp(bp, 2) + " K";
         else bp = bp + " &#176;C";
     }
 
