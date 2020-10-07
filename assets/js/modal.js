@@ -1,7 +1,8 @@
 // Written by Anton Huggard
-// Last edited 20th Aug, 2020 -- changed path to radioactive img for modal
+// Last edited 2nd Oct, 2020 -- added arrow key navigation for modals
 // This file has all the code related to the modals that pop-up when an element is clicked on
-// it's got html and some svg. This is probably pretty bad practice, but I'm too fast & loose. 
+// it's got html and some svg. This is probably pretty bad practice, but I'm a fast & loose
+// kinda guy. 
 
 const alkali_metals_colour = "rgb(223, 0, 0)";
 const alkaline_earth_metals_clour = "rgb(219, 66, 6)";
@@ -13,10 +14,13 @@ const actinoid_colour = "#000099";
 const noble_gas_colour = "rgb(99, 0, 124)";
 const unknown_colour = "rgb(34, 34, 34)";
 const transition_metal_colour = "rgb(21, 49, 85)";
+let atmc_num;
+let modal_open = false;
 
 function show_modal(obj) {
     // getting information about the element to populate the modal
-    var elmnt_nm, atmc_mss, atmc_num, mp, bp, elc_ngty, radioactivity, discvry, etym, descr, ohana;
+    var elmnt_nm, atmc_mss, mp, bp, elc_ngty, radioactivity, discvry, etym, descr, ohana;
+    modal_open = true;
     const elmt_code = obj.innerText;
     elements.forEach(element => {
         if (element.symbol == elmt_code) {
@@ -109,7 +113,7 @@ function show_modal(obj) {
     `<div class = "modal_content">
         <div class = "grid-container">
                 <div class = "item1">${elmnt_nm}</div>
-            <button class = "item2" onclick = \"document.getElementById('element_pop-up').style.display='none'\">&times</button>
+            <button class = "item2" onclick = \"document.getElementById('element_pop-up').style.display='none';modal_open = false;\">&times</button>
             ${svg_code}
             <div class = "item4">
                 Atomic Number: ${atmc_num} <br> Relative Atomic Mass: ${atmc_mss} <br> 
@@ -133,8 +137,37 @@ function show_modal(obj) {
 // close the element modal when the esc key is pressed
 document.addEventListener('keydown', (event) => {
     switch (event.keyCode) {
+        // close the modal
         case 27:
             document.getElementById('element_pop-up').style.display='none'
+            modal_open = false;
+            break;
+
+        // nav to prev element
+        case 37:
+            if (modal_open) {
+                if (atmc_num > 1) {
+                    document.getElementById('element_pop-up').style.display='none'
+                    nxt_el_nm = elements[atmc_num - 2]; 
+                    document.getElementById(nxt_el_nm.name).click();
+                }
+            } 
+            // I've taken this out because there is legit reason to use these arrow keys; editing your search query.
+            // It's not as fun without them, so I'll leave this here as a monument to the glory days.
+            // else {
+            //     alert('you\'re not looking at any elements, you knob');
+            // }
+            break;
+
+        // nav to next element
+        case 39:
+            if (modal_open) {
+                if (atmc_num < 118) {
+                    document.getElementById('element_pop-up').style.display='none'
+                    nxt_el_nm = elements[atmc_num]; // this exploits array numbering. Curr atmc no. = index of next element
+                    document.getElementById(nxt_el_nm.name).click();
+                }
+            } 
             break;
     }
 });

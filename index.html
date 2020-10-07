@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/elementary.css" />
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/draw_periodic_table.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body onload="draw_periodic_table()">
 
     <!-- This is just the boring title stuff -->
 
@@ -73,143 +74,16 @@
         <button id = "DS_btn" onclick = "set_search(4, false); change_btn(this, 'search_type_grid');">discovery</button>
     </div>
 
-    <!-- Ladies and gentlemen, our next guest is the one & only Periodic Table of Elements! -->
+    <!-- The periodic table is populated by JS using draw_periodic_table() -->
 
     <div id = "periodic_table" class = "centre desktop-right-col">
-        <button onclick = "show_modal(this)" id = "hydrogen" class="element first alkali_metals">H</button>
-        <button id = "filler_btn-1" class = "void_btn"></button>
-        <button onclick = "show_modal(this)" id = "helium" class="element first noble">He</button>
+
+        <div id='desktop-grid'></div>
+        <div id='mobile-grid'></div>
         
-        <button onclick = "show_modal(this)" id = "lithium" class="element first alkali_metals">Li</button>
-        <button onclick = "show_modal(this)" id = "beryllium" class="element first alkaline_earth_metals">Be</button>
-        <button id = "filler_btn-2" class = "void_btn"></button>
-        <button onclick = "show_modal(this)" id = "boron" class="element first metalloid">B</button>
-        <button onclick = "show_modal(this)" id = "carbon" class="element first non-metals">C</button>
-        <button onclick = "show_modal(this)" id = "nitrogen" class="element first non-metals">N</button>
-        <button onclick = "show_modal(this)" id = "oxygen" class="element first non-metals">O</button>
-        <button onclick = "show_modal(this)" id = "fluorine" class="element first non-metals">F</button>
-        <button onclick = "show_modal(this)" id = "neon" class="element first noble">Ne</button>
-
-        <button onclick = "show_modal(this)" id = "sodium" class="element first alkali_metals">Na</button>
-        <button onclick = "show_modal(this)" id = "magnesium" class="element first alkaline_earth_metals">Mg</button>
-        <button onclick = "show_modal(this)" id = "aluminium" class="element first metaux_pauvres">Al</button>
-        <button onclick = "show_modal(this)" id = "silicon" class="element first metalloid">Si</button>
-        <button onclick = "show_modal(this)" id = "phosphorus" class="element first non-metals">P</button>
-        <button onclick = "show_modal(this)" id = "sulphur" class="element first non-metals">S</button>
-        <button onclick = "show_modal(this)" id = "chlorine" class="element first non-metals">Cl</button>
-        <button onclick = "show_modal(this)" id = "argon" class="element first noble">Ar</button>
-
-        <button onclick = "show_modal(this)" id = "potassium" class="element first alkali_metals">K</button>
-        <button onclick = "show_modal(this)" id = "calcium" class="element first alkaline_earth_metals">Ca</button>
-        <button onclick = "show_modal(this)" id = "scandium" class="element second">Sc</button>
-        <button onclick = "show_modal(this)" id = "titanium" class="element second">Ti</button>
-        <button onclick = "show_modal(this)" id = "vanadium" class="element second">V</button>
-        <button onclick = "show_modal(this)" id = "chromium" class="element second">Cr</button>
-        <button onclick = "show_modal(this)" id = "manganese" class="element second">Mn</button>
-        <button onclick = "show_modal(this)" id = "iron" class="element second">Fe</button>
-        <button onclick = "show_modal(this)" id = "cobalt" class="element second">Co</button>
-        <button onclick = "show_modal(this)" id = "nickel" class="element second">Ni</button>
-        <button onclick = "show_modal(this)" id = "copper" class="element second">Cu</button>
-        <button onclick = "show_modal(this)" id = "zinc" class="element second">Zn</button>
-        <button onclick = "show_modal(this)" id = "gallium" class="element second metaux_pauvres">Ga</button>
-        <button onclick = "show_modal(this)" id = "germanium" class="element second metalloid">Ge</button>
-        <button onclick = "show_modal(this)" id = "arsenic" class="element second metalloid">As</button>
-        <button onclick = "show_modal(this)" id = "selenium" class="element second non-metals">Se</button>
-        <button onclick = "show_modal(this)" id = "bromine" class="element second non-metals">Br</button>
-        <button onclick = "show_modal(this)" id = "krypton" class="element second noble">Kr</button>
-
-        <button onclick = "show_modal(this)" id = "rubidium" class="element second alkali_metals">Rb</button>
-        <button onclick = "show_modal(this)" id = "strontium" class="element second alkaline_earth_metals">Sr</button>
-        <button onclick = "show_modal(this)" id = "yttrium" class="element second">Y</button>
-        <button onclick = "show_modal(this)" id = "zirconium" class="element second">Zr</button>
-        <button onclick = "show_modal(this)" id = "niobium" class="element second">Nb</button>
-        <button onclick = "show_modal(this)" id = "molybdenum" class="element second">Mo</button>
-        <button onclick = "show_modal(this)" id = "technetium" class="element second">Tc</button>
-        <button onclick = "show_modal(this)" id = "ruthenium" class="element second">Ru</button>
-        <button onclick = "show_modal(this)" id = "rhodium" class="element second">Rh</button>
-        <button onclick = "show_modal(this)" id = "palladium" class="element second">Pd</button>
-        <button onclick = "show_modal(this)" id = "silver" class="element second">Ag</button>
-        <button onclick = "show_modal(this)" id = "cadmium" class="element second">Cd</button>
-        <button onclick = "show_modal(this)" id = "indium" class="element second metaux_pauvres">In</button>
-        <button onclick = "show_modal(this)" id = "tin" class="element second metaux_pauvres">Sn</button>
-        <button onclick = "show_modal(this)" id = "antimony" class="element second metalloid">Sb</button>
-        <button onclick = "show_modal(this)" id = "tellurium" class="element second metalloid">Te</button>
-        <button onclick = "show_modal(this)" id = "iodine" class="element second non-metals">I</button>
-        <button onclick = "show_modal(this)" id = "xenon" class="element second noble">Xe</button>
-
-        <button onclick = "show_modal(this)" id = "caesium" class="element second alkali_metals">Cs</button>
-        <button onclick = "show_modal(this)" id = "barium" class="element second alkaline_earth_metals">Ba</button>
-        <button id = "filler_btn-3" class = "void_btn"></button>
-        <button onclick = "show_modal(this)" id = "hafnium" class="element">Hf</button>
-        <button onclick = "show_modal(this)" id = "tantalum" class="element">Ta</button>
-        <button onclick = "show_modal(this)" id = "tungsten" class="element">W</button>
-        <button onclick = "show_modal(this)" id = "rhenium" class="element">Re</button>
-        <button onclick = "show_modal(this)" id = "osmium" class="element">Os</button>
-        <button onclick = "show_modal(this)" id = "iridium" class="element">Ir</button>
-        <button onclick = "show_modal(this)" id = "platinum" class="element">Pt</button>
-        <button onclick = "show_modal(this)" id = "gold" class="element">Au</button>
-        <button onclick = "show_modal(this)" id = "mercury" class="element">Hg</button>
-        <button onclick = "show_modal(this)" id = "thallium" class="element metaux_pauvres">Tl</button>
-        <button onclick = "show_modal(this)" id = "lead" class="element metaux_pauvres">Pb</button>
-        <button onclick = "show_modal(this)" id = "bismuth" class="element metaux_pauvres">Bi</button>
-        <button onclick = "show_modal(this)" id = "polonium" class="element metaux_pauvres">Po</button>
-        <button onclick = "show_modal(this)" id = "astatine" class="element metalloid">At</button>
-        <button onclick = "show_modal(this)" id = "radon" class="element noble">Rn</button>
-
-        <button onclick = "show_modal(this)" id = "francium" class="element alkali_metals">Fr</button>
-        <button onclick = "show_modal(this)" id = "radium" class="element alkaline_earth_metals">Ra</button>
-        <button onclick = "show_modal(this)" id = "rutherfordium" class="element">Rf</button>
-        <button onclick = "show_modal(this)" id = "dubnium" class="element">Db</button>
-        <button onclick = "show_modal(this)" id = "seaborgium" class="element">Sg</button>
-        <button onclick = "show_modal(this)" id = "bohrium" class="element">Bh</button>
-        <button onclick = "show_modal(this)" id = "hassium" class="element">Hs</button>
-        <button onclick = "show_modal(this)" id = "meitnerium" class="element">Mt</button>
-        <button onclick = "show_modal(this)" id = "darmstadtium" class="element">Ds</button>
-        <button onclick = "show_modal(this)" id = "roentgenium" class="element">Rg</button>
-        <button onclick = "show_modal(this)" id = "copernicium" class="element">Cn</button>
-        <button onclick = "show_modal(this)" id = "nihonium" class="element unknown">Nh</button>
-        <button onclick = "show_modal(this)" id = "flerovium" class="element unknown">Fl</button>
-        <button onclick = "show_modal(this)" id = "moscovium" class="element unknown">Mc</button>
-        <button onclick = "show_modal(this)" id = "livermorium" class="element unknown">Lv</button>
-        <button onclick = "show_modal(this)" id = "tennessine" class="element unknown">Ts</button>
-        <button onclick = "show_modal(this)" id = "oganesson" class="element unknown">Og</button>
-
-        <button id = "filler_btn-4" class = "void_btn"></button>
-        
-        <button onclick = "show_modal(this)" id = "lanthanum" class="element lanthanoid">La</button>
-        <button onclick = "show_modal(this)" id = "cerium" class="element lanthanoid">Ce</button>
-        <button onclick = "show_modal(this)" id = "praseodymium" class="element lanthanoid">Pr</button>
-        <button onclick = "show_modal(this)" id = "neodymium" class="element lanthanoid">Nd</button>
-        <button onclick = "show_modal(this)" id = "promethium" class="element lanthanoid">Pm</button>
-        <button onclick = "show_modal(this)" id = "samarium" class="element lanthanoid">Sm</button>
-        <button onclick = "show_modal(this)" id = "europium" class="element lanthanoid">Eu</button>
-        <button onclick = "show_modal(this)" id = "gadolinium" class="element lanthanoid">Gd</button>
-        <button onclick = "show_modal(this)" id = "terbium" class="element lanthanoid">Tb</button>
-        <button onclick = "show_modal(this)" id = "dysprosium" class="element lanthanoid">Dy</button>
-        <button onclick = "show_modal(this)" id = "holmium" class="element lanthanoid">Ho</button>
-        <button onclick = "show_modal(this)" id = "erbium" class="element lanthanoid">Er</button>
-        <button onclick = "show_modal(this)" id = "thulium" class="element lanthanoid">Tm</button>
-        <button onclick = "show_modal(this)" id = "ytterbium" class="element lanthanoid">Yb</button>
-        <button onclick = "show_modal(this)" id = "lutetium" class="element lanthanoid">Lu</button>
-        <button class = "void_btn filler_btn-5"></button>
-    
-        <button onclick = "show_modal(this)" id = "actinium" class="element actinoid">Ac</button>
-        <button onclick = "show_modal(this)" id = "thorium" class="element actinoid">Th</button>
-        <button onclick = "show_modal(this)" id = "protactinium" class="element actinoid">Pa</button>
-        <button onclick = "show_modal(this)" id = "uranium" class="element actinoid">U</button>
-        <button onclick = "show_modal(this)" id = "neptunium" class="element actinoid">Np</button>
-        <button onclick = "show_modal(this)" id = "plutonium" class="element actinoid">Pu</button>
-        <button onclick = "show_modal(this)" id = "americium" class="element actinoid">Am</button>
-        <button onclick = "show_modal(this)" id = "curium" class="element actinoid">Cm</button>
-        <button onclick = "show_modal(this)" id = "berkelium" class="element actinoid">Bk</button>
-        <button onclick = "show_modal(this)" id = "californium" class="element actinoid">Cf</button>
-        <button onclick = "show_modal(this)" id = "einsteinium" class="element actinoid">Es</button>
-        <button onclick = "show_modal(this)" id = "fermium" class="element actinoid">Fm</button>
-        <button onclick = "show_modal(this)" id = "mendelevium" class="element actinoid">Md</button>
-        <button onclick = "show_modal(this)" id = "nobelium" class="element actinoid">No</button>
-        <button onclick = "show_modal(this)" id = "lawrencium" class="element actinoid">Lr</button>
         <div id='no_results' class='centre' style='display: none;'>
-            <h2>no elements match that chemical symbol</h2>
+            <!-- the span below is legacy, but might be useful in the future -->
+            <h2>nothing matches that <span id='search_type_res'>search query</span></h2>
         </div>
     </div>
     
@@ -230,6 +104,7 @@
         <button onclick='display_type("synth"); change_btn(this, "properties_menu");'>synthetic</button>
     </div>
 
+    <button class='desktop-left-col nav-btn' id='fltr_btn'>filter</button>
     <button class='desktop-left-col nav-btn' id='quiz_btn' onclick="window.location ='quiz/index.html'">quiz</button>
     <button class='desktop-left-col nav-btn' id='myst_btn'>units</button>
     <button class='desktop-left-col nav-btn' id='abou_btn'>about</button>

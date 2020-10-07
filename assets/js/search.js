@@ -1,168 +1,164 @@
 // Written by Anton Huggard
-// Last edited 25th Aug, 2020 -- fixed bug where searching "non-metal" displayed metals
+// Last edited 7th Oct, 2020 -- re-write of entire file
+// mobile users can now search entire table
 
 // display-type, from bottom buttons
-var prv_display = 'all';
-var new_display;
+let prv_display = 'all';
+let new_display = '';
+let results = [];
+
+function display_search_results(res) {
+    // un-dim elements on desktop that match
+    res.forEach(element => {
+        document.getElementById(element.name).style.opacity = '100%';
+    });
+    // re-populate periodic_table with results
+    let mob_elements = document.getElementsByClassName('mob-elmt');
+    for (let i = mob_elements.length -1; i >= 0; i--) {
+        mob_elements[i].remove();
+    }
+    res.forEach(element => {
+        const element_button = create_button(element, 'mob-elmt');
+        document.getElementById('mobile-grid').appendChild(element_button);
+    });
+
+    if (res.length == 0) {
+        document.getElementById('no_results').style.display = "block" ;
+    }
+}
+
+// helper function for search(), dims elements on desktop, deletes them on mobile
+function show_none() {
+    let dsk_elements = document.getElementsByClassName('dsktp-elmt');
+    for (var i = dsk_elements.length -1; i >= 0; i--) {     
+        dsk_elements[i].style.opacity = low_opacity_value;        
+    }
+    const mob_elements = document.getElementsByClassName('mob-elmt');
+    for (let i = mob_elements.length -1; i >= 0; i--) {
+        mob_elements[i].remove();
+    }
+}
+
+
+function check(term, property) {
+    // there's probably a less stupid way of doing this...
+    switch (property) {
+        case 'state':
+            elements.forEach(element => {
+                if (element.state_at_standard_conditions == term) results.push(element);
+            });
+            break;
+        case 'metal':
+            elements.forEach(element => {
+                if (element.metalness == term) results.push(element);
+            });
+            break;
+        case 'rdactv':
+            elements.forEach(element => {
+                if (element.radioactive) results.push(element);
+            });
+            break;
+        case 'row':
+            elements.forEach(element => {
+                if (element.period == term) results.push(element);
+            });
+            break;
+        case 'col':
+            elements.forEach(element => {
+                if (element.group == term) results.push(element);
+            });
+            break;
+        case 'category':
+            elements.forEach(element => {
+                if (element.category == term) results.push(element);
+            });
+            break;
+        case 'block':
+            elements.forEach(element => {
+                if (element.block == term) results.push(element);
+            });
+            break;
+    }    
+}
 
 function search() {
-    document.getElementById('periodic_table').style.display='grid';
     document.getElementById('no_results').style.display = "none" ;
-    prv_display = 'all'; // when the user has selected a display type and then makes a search, 
-    new_display = 'all'; // these two lines clear the display-type memory, making it usable afterwards.
+    show_none();
+
+    // when the user has selected a display type and then makes a search, this clears display-type memory
+    prv_display = 'all'; 
+    new_display = 'all';  
+
+    results = [];
+
     const query = document.getElementById("element_io").value.toUpperCase();
-    var html_elements = document.getElementsByClassName("element");
+    const lc_qry = query.toLowerCase();
 
-    for (var i = 0; i < html_elements.length; i++) {
-        html_elements[i].style.display = "grid";
-        html_elements[i].style.opacity = low_opacity_value;
+    // searching by chemical symbol
+    if ( (query.length < 3) && (query.match(/[a-zA-Z]{1,2}$/i)) ) {
+        elements.forEach(element => {
+            if (element.symbol.includes(query)) results.push(element);
+        });
     }
-
-    if (Number.isInteger(parseInt(query))) { // if a user enters a number, search through elements to find one with matching atomic number
+    
+    // search by atomic number
+    else if (Number.isInteger(parseInt(query))) {
         const user_number = parseInt(query);
         elements.forEach(element => {
-            if (user_number == element.atomic_number) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
+            if (user_number == element.atomic_number) results.push(element);
         });
-    } else if (query.length < 3 && query != '') { // searching by chemical symbol
-        found_none = true;
-        var results = [];
-        for (var i = 0; i < html_elements.length; i++) {
-            chemical_symbol = html_elements[i].innerText.toUpperCase().toString();
-            if (chemical_symbol.includes(query)) {
-                html_elements[i].style.opacity = "100%";
-                results.push(html_elements[i]);
-                found_none = false;
-            }
-        }
-        
-        if (found_none) {
-            var element_buttons = document.getElementsByClassName("element");
-            for (var i = 0; i < html_elements.length; i++) {
-                html_elements[i].style.display = "none";
-            }
-            document.getElementById('no_results').style.display = "block" ;
-        }
-        if (!found_none && (getWidth() < 650)) {
-            document.getElementById('periodic_table').style.display='none';
-            document.getElementById('small_screen_search_results').style.display='grid';
-            results.forEach(result => {
-                document.getElementById('small_screen_search_results').innerHTML = result;
-                // displays text saying html element but doesnt actually display the code :/ 
-            });
-            
-            alert('we found one, but your screen is too small to show him');
-        }
-        } else if (query == "GAS") {
-        elements.forEach(element => {
-            if (element.state_at_standard_conditions == 'gas') {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query == "LIQUID") {
-        elements.forEach(element => {
-            if (element.state_at_standard_conditions == 'liquid') {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query == "SOLID") {
-        elements.forEach(element => {
-            if (element.state_at_standard_conditions == 'solid') {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/METALLOID[s]?$/i)) {
-        elements.forEach(element => {
-            if (element.metalness == 'metalloid') {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/NON[\s-]*METAL[s]?$/i)) {
-        elements.forEach(element => {
-            if (element.metalness == 'nonmetal') {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/METAL[s]?$/i)) {
-        elements.forEach(element => {
-            if (element.metalness == 'metal') {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/row[\s-]*\d/i) || query.match(/period[\s-]*\d/i)) {
-        let query_number = parseInt(query.charAt(query.length-1));
-        elements.forEach(element => {
-            if (element.period == query_number) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/group[\s-]*\d/i) || query.match(/grp[\s-]*\d/i)) {
-        if (query[query.length -2].match(/\d/)) { // detects a 2-digit number
-            query_number = parseInt(query.slice(-2));
-        } else {
-            query_number = parseInt(query.slice(-1));
-        }
-        elements.forEach(element => {
-            if (element.group == query_number) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });    
-    } else if (query == "PNICTOGENS" || query.match(/NITROGEN[\s-]*GROUP$/i)) {
-        elements.forEach(element => {
-            if (element.group == 15) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query == "CHALCOGENS" || query.match(/OXYGEN[\s-]*GROUP$/)) {
-        elements.forEach(element => {
-            if (element.group == 16) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query == "HALOGENS" || query.match(/FLUORINE[\s-]*GROUP$/)) {
-        elements.forEach(element => {
-            if (element.group == 17) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/NOBLE GAS(ES)?$/i) || query == "HELIUM GROUP" || query == "NEON GROUP") { 
-        elements.forEach(element => {
-            if (element.group == 18) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/ALKALI METAL[S]?$/) || query == "LITHIUM GROUP") {
-        elements.forEach(element => {
-            if (element.group == 1) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/ALKALINE[\s-]EARTH[\s-]METAL[S]?$/i) || query.match(/BERYLLIUM[\s-]GROUP$/i)) {
-        elements.forEach(element => {
-            if (element.group == 2) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/transition[\s-]metal[s]?$/i)) {
-        elements.forEach(element => {
-            if (element.block == 'd') {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/lanthanide[s]?$/i) || query.match(/lanthanoid[s]?$/i)) {
-        elements.forEach(element => {
-            if (element.atomic_number >= 57 && element.atomic_number < 72) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/actinide[s]?$/i) || query.match(/actinoid[s]?$/i)) {
-        elements.forEach(element => {
-            if (element.atomic_number >= 89 && element.atomic_number < 104) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query.match(/discovered/i) || query.match(/found/i)) {
+    }
+
+    // search by state
+    else if ((query == "GAS") || (query == "LIQUID") || (query == "SOLID")) check(lc_qry, 'state');
+
+    // search by category
+    else if (query.match(/ALKALI METAL[S]?$/) || query == "LITHIUM GROUP") check(1, 'col');
+    else if (query.match(/ALKALINE[\s-]EARTH[\s-]METAL[S]?$/i) || query.match(/BERYLLIUM[\s-]GROUP$/i)) check(2, 'col');
+    else if (query.match(/post[\s-]transition[\s-]metal[s]?$/i) || (query.match(/post[\s-]transition?$/i))) check('metaux_pauvres', 'category');
+    else if (query.match(/transition[\s-]metal[s]?$/i)) check('transition-metal', 'category');
+    else if (query.match(/BORON[\s-]?GROUP$/)) check(13, 'col');
+    else if (query.match(/CARBON[\s-]?GROUP$/)) check(14, 'col');
+    else if (query.match(/NITROGEN[\s-]*GROUP$/i) || query == "PNICTOGENS") check(15, 'col');
+    else if (query.match(/OXYGEN[\s-]*GROUP$/) || query == "CHALCOGENS") check(16, 'col');
+    else if (query.match(/FLUORINE[\s-]*GROUP$/) || query == "HALOGENS") check(17, 'col');
+    else if (query.match(/NOBLE GAS(ES)?$/i) || query == "HELIUM GROUP" || query == "NEON GROUP") check(18, 'col');
+    else if (query.match(/lanthanide[s]?$/i) || query.match(/lanthanoid[s]?$/i)) check('lanthanoid', 'category');
+    else if (query.match(/actinide[s]?$/i) || query.match(/actinoid[s]?$/i)) check('actinoid', 'category');
+    else if (lc_qry == 'unknown') check(lc_qry, 'category');
+    else if (query == 'WEIRD RADIOACTIVE BOIS') check('f', 'block');
+    
+    // search by metalness
+    else if (query.match(/METALLOID[s]?$/i)) check('metalloid', 'metal');
+    else if (query.match(/NON[\s-]*METAL[s]?$/i)) check('nonmetal', 'metal');
+    else if (query.match(/METAL[s]?$/i)) check('metal', 'metal');
+
+    // search by radioactivity
+    else if (query == "RADIOACTIVE") check(lc_qry, 'rdactv');
+
+    // search by row
+    else if (query.match(/row[\s-]*\d/i) || query.match(/period[\s-]*\d/i)) {
+        let row_num = parseInt(query.charAt(query.length-1));
+        check(row_num, 'row');
+    }
+
+    // search by column/group number
+    else if (query.match(/group[\s-]*\d/i) || query.match(/grp[\s-]*\d/i)) {
+        // handling for 1 or 2 digit group numbers
+        if (query[query.length -2].match(/\d/)) col_num = parseInt(query.slice(-2));
+        else col_num = parseInt(query.slice(-1));
+        check(col_num, 'col');
+    }    
+
+    // search by block
+    else if (lc_qry.match(/[spdf][\s-]?block$/i)) {
+        let chars = lc_qry.split('');
+        // const char = chars[0];
+        // alert(char);
+        check(chars[0], 'block');
+    }
+
+    else if (query.match(/discovered/i) || query.match(/found/i)) {
         let words = query.split(' ');
         if (words.length == 3) {
 
@@ -172,7 +168,7 @@ function search() {
                 if (words[1].match(/before$/i) || words[1].match(/by$/i)) {
                     elements.forEach(element => {
                         if (element.discovery_date < query_date) {
-                            document.getElementById(element.name).style.opacity = "100%";
+                            results.push(element);
                         }
                     });
                 }
@@ -180,7 +176,7 @@ function search() {
                 else if (words[1].match(/in$/i) || words[1].match(/during$/i)) {
                     elements.forEach(element => {
                         if (element.discovery_date == query_date) {
-                            document.getElementById(element.name).style.opacity = "100%";
+                            results.push(element);
                         }
                     });
                 }
@@ -188,68 +184,27 @@ function search() {
                 else if (words[1].match(/after$/i)) {
                     elements.forEach(element => {
                         if (element.discovery_date > query_date) {
-                            document.getElementById(element.name).style.opacity = "100%";
+                            results.push(element);
                         }
                     });
                 }
             
             }
         }
-    } else if (query.match(/[a-zA-Z][\s-]?block$/i)) {
-        let chars = query.split('');
-        // alert(chars);
-        if (chars[0] == 'S') {
-            elements.forEach(element => {
-                if (element.block == 's') {
-                    document.getElementById(element.name).style.opacity = "100%";
-                }
-            });
-        } else if (chars[0] == 'P') {
-            elements.forEach(element => {
-                if (element.block == 'p') {
-                    document.getElementById(element.name).style.opacity = "100%";
-                }
-            });
-        } else if (chars[0] == 'D') {
-            elements.forEach(element => {
-                if (element.block == 'd') {
-                    document.getElementById(element.name).style.opacity = "100%";
-                }
-            });
-        } else if (chars[0] == 'F') {
-            elements.forEach(element => {
-                if (element.block == 'f') {
-                    document.getElementById(element.name).style.opacity = "100%";
-                }
-            });
-        } else {
-            alert('that electron shell doesn\'t exist');
-            elements.forEach(element => {
-                if (element.block == 'p') {
-                    document.getElementById(element.name).style.opacity = "100%";
-                }
-            });
-        }
-        
-        
-    } else if (query == "WEIRD RADIOACTIVE BOIS") {
-        elements.forEach(element => {
-            if (element.block == 'f') {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else if (query == "RADIOACTIVE") {
-        elements.forEach(element => {
-            if (element.radioactive) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
-        });
-    } else {
+    }
+
+    // search by name -- this is being executed for some reason??
+    else {
         elements.forEach(element => {
             const this_guys_name = element.name.toUpperCase();
-            if (this_guys_name.includes(query)) {
-                document.getElementById(element.name).style.opacity = "100%";
-            }
+            if (this_guys_name.includes(query)) results.push(element);
         });
+    }
+
+    display_search_results(results); 
+    
+    // put everything back to normal when the query is deleted
+    if (query == '') {
+        draw_periodic_table();
     }
 }
