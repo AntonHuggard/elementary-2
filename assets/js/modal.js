@@ -144,6 +144,7 @@ document.addEventListener('keydown', (event) => {
         // close the modal
         case 27:
             document.getElementById('element_pop-up').style.display='none'
+            document.getElementById('help').style.display='none'
             modal_open = false;
             break;
 

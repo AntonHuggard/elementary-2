@@ -1,4 +1,7 @@
-
+// Written by Anton Huggard
+// Last edited 10th Oct, 2020 
+// - modified reset_opacity() for new JSON design, fixed mobile mug
+// - added function for showing the help modal.
 
 function getWidth() {
     return Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
@@ -150,6 +153,10 @@ function change_btn(btn, locn) {
 function reset_opacity() {
     elements.forEach(element => {
         document.getElementById(element.name).style.opacity = "100%";
+        if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = '100%';
     });
 }
 
+function show_help () {
+    document.getElementById('help').style.display = 'block';
+}

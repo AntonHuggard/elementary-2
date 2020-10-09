@@ -107,13 +107,33 @@
     <button class='desktop-left-col nav-btn' id='fltr_btn'>filter</button>
     <button class='desktop-left-col nav-btn' id='quiz_btn' onclick="window.location ='quiz/index.html'">quiz</button>
     <button class='desktop-left-col nav-btn' id='myst_btn' onclick='toggle_units()' >celsius</button>
-    <button class='desktop-left-col nav-btn' id='abou_btn'>about</button>
-    <button class='desktop-left-col nav-btn' id='help_btn'>help</button>
+    <button class='desktop-left-col nav-btn' id='abou_btn' onclick="window.location ='about.html'">about</button>
+    <button class='desktop-left-col nav-btn' id='help_btn' onclick="show_help()">help</button>
     
     <img class='desktop-left-col' id='pipers' src='quiz/assets/img/pipers-logo.png' />
     
 
     <div id = "element_pop-up" style = "display: none;"></div> 
+
+    <div id='help'>
+        <div class='help-top'>
+            <h3>help</h3>
+            <button class = "close_btn" onclick = "document.getElementById('help').style.display='none';">&times</button>
+        </div>
+        <p>
+            Using the search bar at the top of the page, you can type your query.
+            You can search by the element's name, chemical symbol, atomic number, and various characteristics.
+            For the full list of what you can search by (and how), see the <a href='about.html'>about page</a>.<br><br>
+            If you click on one of the electronegativity, melting/boiling point, or discovery buttons,
+            a slider appears that lets you see which elements match that value (or are close to that value).
+            If you're on your phone, the sliders only show the first 56 elements.<br><br>
+            Similarly, you can filter elements based on the which electron shell block they blong to,
+            their state at standard conditions, their metalness, or whether they're synthetic.<br><br>
+            If you need help with the quiz, you can always just Google the questions.
+        </p>
+    </div>
+
+
 </body>
 <script src = "assets/js/elementary.js"></script>
 <script src = "assets/js/search.js"></script>

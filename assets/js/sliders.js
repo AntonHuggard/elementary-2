@@ -2,6 +2,12 @@ var en_slider = document.getElementById("EN_slider");
 var en_output = document.getElementById("EN_display");
 en_output.innerHTML = en_slider.value;
 
+const first_opacity = '100%';
+const second_opacity = '60%';
+const third_opacity = '40%';
+const fourth_opacity = '25%';
+const fifth_opacity = '20%';
+
 function en_slider_function() {
     const true_value = document.getElementById("EN_slider").value / 100;
     en_output.innerHTML = true_value;
@@ -14,16 +20,24 @@ function en_slider_function() {
         const I2 = element.electronegativity + 0.25;
 
         if ((I1 < true_value) && (true_value < I2)) {
-            document.getElementById(element.name).style.opacity = "100%";
+            let change_opacity = first_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         }
         else if ((M1 < true_value) && (true_value < M2)) {
-            document.getElementById(element.name).style.opacity = "60%";
+            let change_opacity = second_opacity;
+            document.getElementById(element.name).style.opacity = second_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         } 
         else if ((O1 < true_value) && (true_value < O2)) {
-            document.getElementById(element.name).style.opacity = "40%";
+            let change_opacity = third_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         }
         else {
-            document.getElementById(element.name).style.opacity = "20%";
+            let change_opacity = fifth_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         }
     });
 }
@@ -48,16 +62,24 @@ function mp_slider_function() {
         const I2 = element.melting_point + 100;
 
         if ((I1 < mp_input) && (mp_input < I2)) {
-            document.getElementById(element.name).style.opacity = "100%";
+            let change_opacity = first_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         }
         else if ((M1 < mp_input) && (mp_input < M2)) {
-            document.getElementById(element.name).style.opacity = "60%";
+            let change_opacity = second_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         } 
         else if ((O1 < mp_input) && (mp_input < O2)) {
-            document.getElementById(element.name).style.opacity = "40%";
+            let change_opacity = third_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         }
         else {
-            document.getElementById(element.name).style.opacity = "20%";
+            let change_opacity = fifth_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         }
     });
 }
@@ -82,16 +104,24 @@ function bp_slider_function() {
         const I2 = element.boiling_point + 100;
 
         if ((I1 < bp_input) && (bp_input < I2)) {
-            document.getElementById(element.name).style.opacity = "100%";
+            let change_opacity = first_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         }
         else if ((M1 < bp_input) && (bp_input < M2)) {
-            document.getElementById(element.name).style.opacity = "60%";
+            let change_opacity = second_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         } 
         else if ((O1 < bp_input) && (bp_input < O2)) {
-            document.getElementById(element.name).style.opacity = "40%";
+            let change_opacity = third_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         }
         else {
-            document.getElementById(element.name).style.opacity = "20%";
+            let change_opacity = fifth_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         }
     });
 }
@@ -105,9 +135,13 @@ function ds_slider_function() {
     date_output.innerHTML = ds_input;
     elements.forEach(element => {
         if (element.discovery_date <= ds_input) {
-            document.getElementById(element.name).style.opacity = "100%";
+            let change_opacity = first_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         } else {
-            document.getElementById(element.name).style.opacity = "25%";
+            let change_opacity = fourth_opacity;
+            document.getElementById(element.name).style.opacity = change_opacity;
+            if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = change_opacity;
         }
     });
 }

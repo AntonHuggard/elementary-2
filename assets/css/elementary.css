@@ -272,6 +272,20 @@ h3 {
     border: 3px solid white;
     border-radius: 30px;
 }
+#search_type_grid > button:hover, #properties_menu > button:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+#search_type_grid > button:active, .nav-btn:active {
+    transform: translateY(2px);
+}
+
+#search_type_grid > .selected, #properties_menu > .selected {
+    background-color: white;
+    color: black;
+}
 
 .element {
     background-color: rgb(21, 49, 85);
@@ -322,8 +336,50 @@ h3 {
     background-color: white;
     display: block;
     margin: 10px auto;
-    padding: 20px 70px;
-    border-radius: 60px;
+    padding: 5%;
+    width: 90%;
+    max-width: 225px;
+}
+.close_btn {
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    height: 40px;
+    padding: 0px;
+    border: none;
+    border-radius: 50%;
+}
+.close_btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.377);
+}
+#help {
+    z-index:3;
+    display:none;
+    position:fixed;
+    left:-5px; top:0; 
+    width: 100%;
+    overflow:auto; 
+    box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.507);
+    background-color: white;
+    border: 5px solid rgb(0, 110, 201);
+    border-radius: 30px;
+    font-family: 'Sen', sans-serif;
+}
+.help-top {
+    display: grid;
+    grid-template-columns: 1fr 42px;
+    background-color: rgb(0, 110, 201);
+    padding: 5px;
+}
+.help-top h3 {
+    line-height: 40px;
+    height: 40px;
+    margin-bottom: 0;
+}
+
+#help p {
+    padding: 20px;
 }
 
 @media only screen and (min-width: 330px) {
@@ -342,7 +398,15 @@ h3 {
         padding: 10px 0px;
         font-size: 17px;
     }
+    .nav-btn { width: 300px; }
     
+}
+
+@media only screen and (min-width: 380px) {
+    #pipers {
+        padding: 20px 70px;
+        border-radius: 60px;
+    }
 }
 
 @media only screen and (min-width: 460px) {
@@ -352,6 +416,10 @@ h3 {
     .element {
         padding: 12px 0px;
         font-size: 18px;
+    }
+    #help {
+        left: 4%;
+        width: 90%;
     }
 }
 
@@ -468,6 +536,11 @@ h3 {
     .mobile_radioactive_indictaion {
         display: none;
     }
+    #help {
+        left:20%; 
+        top:10%; 
+        width: 60%;
+    }
 }
 @media only screen and (min-width: 800px) {
     #desktop-grid {
@@ -503,27 +576,14 @@ h3 {
     }
 
     #properties_menu > button {width: 90%;}
-    
-    #search_type_grid > button:hover, #properties_menu > button:hover {
-        color: black;
-        background-color: white;
-        cursor: pointer;
-    }
-    
-    #search_type_grid > button:active, .nav-btn:active {
-        transform: translateY(2px);
-    }
-
-    #search_type_grid > .selected, #properties_menu > .selected {
-        background-color: white;
-        color: black;
-    }
 
     .element:hover {
         transition-duration: 0.3s;
         transform: translate(0px, -2px);
         box-shadow: 3px 7px 5px rgba(32, 32, 32, 0.466);
     }
+
+    #fltr_btn { display: none;}
 }
 
 @media only screen and (min-width: 950px) {
@@ -553,7 +613,6 @@ h3 {
         max-width: 970px;
         grid-gap: 5px;
     }
-    .nav-btn { width: 300px; }
 }
 
 /* and (min-height: 815px) */
@@ -655,7 +714,7 @@ h3 {
         margin-bottom: none;
         border-bottom: none;
         padding-bottom: none;
-    }
+    }#fltr_btn { display: block;}
 }
 @media only screen and (min-width: 1350px) and (min-height: 892px) {
 

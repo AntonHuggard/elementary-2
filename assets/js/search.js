@@ -1,5 +1,6 @@
 // Written by Anton Huggard
-// Last edited 7th Oct, 2020 -- fixed bug for symbol searching
+// Last edited 9th Oct, 2020 -- when searching by symbol, second-letters now count 
+// ('e' returns Fe, before it only returned elements starting with the symbol)
 
 // display-type, from bottom buttons
 let prv_display = 'all';
@@ -97,6 +98,7 @@ function search() {
     if ( (query.length < 3) && (query.match(/[a-zA-Z]{1,2}$/i)) ) {
         elements.forEach(element => {
             if (element.symbol.includes(query) || query == element.symbol.toUpperCase()) results.push(element);
+            else if (element.symbol[1] == lc_qry) results.push(element);
         });
     }
     
