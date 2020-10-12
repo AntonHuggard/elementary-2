@@ -120,9 +120,12 @@ function show_modal(obj) {
             <button class = "item2" onclick = \"document.getElementById('element_pop-up').style.display='none';modal_open = false;\">&times</button>
             ${svg_code}
             <div class = "item4">
-                Atomic Number: ${atmc_num} <br> Relative Atomic Mass: ${atmc_mss} <br> 
+                Atomic Number: ${atmc_num} <br> 
+                Relative Atomic Mass: ${atmc_mss} <br> 
                 Melting Point: ${mp} <br>
-                Boiling Point: ${bp} <br> Electronegativity: ${elc_ngty} <br>
+                Boiling Point: ${bp} <br> 
+                Electronegativity: ${elc_ngty} <br>
+                Electron configuration: ${do_config(atmc_num)} <br>
                 <div class="mobile_radioactive_indictaion">Radioactive: ${radioactivity}</div>
                 Discovered: ${discvry} <br> Etymology: ${etym} <br> <br>
             </div>

@@ -562,7 +562,7 @@ const cobalt = {
     radioactive: false,
     discovery_date: 1735,
     discovery_details: '1735 by Georg Brandt',
-    etymology: 'from Kobald, a sprite from Germainc mythology',
+    etymology: 'from Kobald, a sprite in Germainc mythology',
     description: 'Hard lustrous bluish gray metal. Cobalt-based blue pigments (cobalt blue) have been used since ancient times for jewelry and paints, and to impart a distinctive blue tint to glass, but the color was later thought to be due to the known metal bismuth. Cobalt is one of four elements (the others are iron, nickel, and gadolinium) that are ferromagnetic (permanent magnets) at room temperature.'
 };
                
