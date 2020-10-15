@@ -1,146 +1,34 @@
-<!doctype html5>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Elementary </title>
-    <link rel="icon" href="assets/img/rf.png" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/elementary.css" />
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/draw_periodic_table.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="assets/css/portal.css" />
+    <title>Elementary | Quiz</title>
+    <link rel="icon" href="../assets/img/rf.png" />
 </head>
-<body onload="draw_periodic_table();">
+<body>
 
-    <!-- This is just the boring title stuff -->
+    <h1>&#9883;</h1>
+    <h2>elementary</h2>
+    <h3>periodic table quiz</h3>
 
-    <div id='header' class='desktop-left-col'>
-        <h1 class = "centre" style = "border: none; ">&#9883;</h1>
-        <h2 class = "centre" style = "border: none; padding: 5px 0px 10px 0px;">elementary</h2>
-        <h3>the searchable periodic table</h3>
-    </div>
+    <button onclick="window.location = 'actinides.html'">actinides</button>
+    <button onclick="window.location = 'alkali-metals.html'">alkali metals</button>
+    <button onclick="window.location = 'alkaline-earth-metals.html'">alkaline earth metals</button>
+    <button onclick="window.location = 'halogens.html'">halogens</button>
+    <button onclick="window.location = 'lanthanides.html'">lanthanides</button>
+    <button onclick="window.location = 'metalloids.html'">metalloids</button>
+    <button onclick="window.location = 'non-metals.html'">non-metals</button>
+    <button onclick="window.location = 'other-metals.html'">other metals</button>
+    <button onclick="window.location = 'transition-metals-1.html'">transition metals</button>
+    <button onclick="window.location = 'transition-metals-2.html'">more transition metals</button>
+    <button onclick="window.location = 'noble-gases.html'">noble gases</button>
 
-    <!-- The below divs hold the different sliders and search bar  -->
+    <button style = 'margin-top: 70px' onclick="window.location = '../index.html'">go back</button>
 
-    <div id = "element_search_container" class = "centre desktop-right-col" style = "border: none;">
-        <input type = "text" id = "element_io" onkeyup="search()" placeholder="Search elements... " style = "float: left;">
-        <img src="assets/img/mgnf_glss_gry.png" />
-    </div>    
-
-    <div id = "electronegativity_div" class="slider_div desktop-right-col">
-        <input type="range" min="0" max="400" value="0" class="slider" id="EN_slider" oninput="en_slider_function()">
-        <p id = "EN_display"></p>
-    </div>
-
-    <div id = "melting_pt_div" class="slider_div desktop-right-col">
-        <input type="range" min="-273" max="3800" value="0" class="slider" id="MP_slider" oninput="mp_slider_function()">
-        <p id = "MP_display"></p>
-    </div>
-
-    <div id = "boiling_pt_div" class="slider_div desktop-right-col">
-        <input type="range" min="-273" max="6600" value="100" class="slider" id="BP_slider" oninput="bp_slider_function()">
-        <p id = "BP_display"></p>
-    </div>
-
-    <div id = "discovery_div" class="slider_div desktop-right-col">
-        <input type="range" min="1600" max="2020" value="1800" class="slider" id="discovery_timeline" oninput="ds_slider_function()">
-        <p id = "date_display"></p>
-    </div>
-
-    <!-- The following displays the search types for mobile users  -->
-
-    <div id = "search_type_accordian" class = "centre" style = "border: none">
-        <button class="accordion" onclick="show_accordian()" id="acc_dt">default</button>
-        <button class="accordion" onclick="show_accordian()" id="acc_EN">electronegativity</button>
-        <button class="accordion" onclick="show_accordian()" id="acc_MP">melting point</button>
-        <button class="accordion" onclick="show_accordian()" id="acc_BP">boiling point</button>
-        <button class="accordion" onclick="show_accordian()" id="acc_ds">discovery</button>
-        <div class="panel">
-            <div onclick="set_search(0, true)">default</div>
-            <div onclick="set_search(1, true)">electronegativity</div>
-            <div onclick="set_search(2, true)">melting point</div>
-            <div onclick="set_search(3, true)">boiling point</div>
-            <div onclick="set_search(4, true)">discovery</div>
-        </div>
-    </div>
-
-    <!-- While *this* displays the search types for desktop users  -->
-
-    <div id = "search_type_grid" class = "centre desktop-right-col" style = "border: none">
-        <button id = "EN_btn" onclick = "set_search(1, false); change_btn(this, 'search_type_grid');">electronegativity</button>
-        <button id = "MP_btn" onclick = "set_search(2, false); change_btn(this, 'search_type_grid');">melting point</button>
-        <button id = "BP_btn" onclick = "set_search(3, false); change_btn(this, 'search_type_grid');">boiling point</button>
-        <button id = "DS_btn" onclick = "set_search(4, false); change_btn(this, 'search_type_grid');">discovery</button>
-    </div>
-
-    <!-- The periodic table is populated by JS using draw_periodic_table() -->
-
-    <div id = "periodic_table" class = "centre desktop-right-col">
-
-        <div id='desktop-grid'></div>
-        <div id='mobile-grid'></div>
-        
-        <div id='no_results' class='centre' style='display: none;'>
-            <!-- the span below is legacy, but might be useful in the future -->
-            <h2>nothing matches that <span id='search_type_res'>search query</span></h2>
-        </div>
-    </div>
+    <img id='pipers' src='assets/img/pipers-logo.png' />
     
-    <div id='small_screen_search_results' class='centre' style='display: none; margin-bottom: 20px;'></div>
-
-    <div id='properties_menu' class='centre desktop-right-col'>
-        <button onclick='display_type("s_blk"); change_btn(this, "properties_menu");'>s-block</button>
-        <button onclick='display_type("p_blk"); change_btn(this, "properties_menu");'>p-block</button>
-        <button onclick='display_type("d_blk"); change_btn(this, "properties_menu");'>d-block</button>
-        <button onclick='display_type("f_blk"); change_btn(this, "properties_menu");'>f-block</button>
-        <button onclick='display_type("ractv"); change_btn(this, "properties_menu");'>radioactive</button>
-        <button onclick='display_type("solid"); change_btn(this, "properties_menu");'>solid</button>
-        <button onclick='display_type("liqud"); change_btn(this, "properties_menu");'>liquid</button>
-        <button onclick='display_type("gasus"); change_btn(this, "properties_menu");'>gas</button>
-        <button onclick='display_type("metal"); change_btn(this, "properties_menu");'>metal</button>
-        <button onclick='display_type("mtlld"); change_btn(this, "properties_menu");'>metalloid</button>
-        <button onclick='display_type("nnmtl"); change_btn(this, "properties_menu");'>non-metal</button>
-        <button onclick='display_type("synth"); change_btn(this, "properties_menu");'>synthetic</button>
-    </div>
-
-    <button class='desktop-left-col nav-btn' id='fltr_btn'>filter</button>
-    <button class='desktop-left-col nav-btn' id='quiz_btn' onclick="window.location ='quiz/index.html'">quiz</button>
-    <button class='desktop-left-col nav-btn' id='myst_btn' onclick='toggle_units()' >celsius</button>
-    <button class='desktop-left-col nav-btn' id='abou_btn' onclick="window.location ='about.html'">about</button>
-    <button class='desktop-left-col nav-btn' id='help_btn' onclick="show_help()">help</button>
-    
-    <img class='desktop-left-col' id='pipers' src='quiz/assets/img/pipers-logo.png' />
-    
-
-    <div id = "element_pop-up" style = "display: none;"></div> 
-
-    <div id='help'>
-        <div class='help-top'>
-            <h3>help</h3>
-            <button class = "close_btn" onclick = "document.getElementById('help').style.display='none';">&times</button>
-        </div>
-        <p>
-            Using the search bar at the top of the page, you can type your query.
-            You can search by the element's name, chemical symbol, atomic number, and various characteristics.
-            For the full list of what you can search by (and how), see the <a href='about.html'>about page</a>.<br><br>
-            If you click on one of the electronegativity, melting/boiling point, or discovery buttons,
-            a slider appears that lets you see which elements match that value (or are close to that value).
-            If you're on your phone, the sliders only show the first 56 elements.<br><br>
-            Similarly, you can filter elements based on the which electron shell block they blong to,
-            their state at standard conditions, their metalness, or whether they're synthetic.<br><br>
-            If you need help with the quiz, you can always just Google the questions.
-        </p>
-    </div>
-
-
 </body>
-<script src = "assets/js/elementary.js"></script>
-<script src = "assets/js/search.js"></script>
-<script src = "assets/js/sliders.js"></script>    
-<script src = "assets/js/element_data.js"></script>  
-<script src = "assets/js/display_toggle.js"></script>  
-<script src = "assets/js/modal.js"></script>
-<script src = "assets/js/units.js"></script>
-<script src = "assets/js/electron_config.js"></script>
 </html>
