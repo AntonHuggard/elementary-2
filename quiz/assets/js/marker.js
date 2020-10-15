@@ -42,6 +42,9 @@ function check_ans(series, question_number, response) {
         case 'tmt2':
             index = 9;
             break;
+        case 'nbgs':
+            index = 10;
+            break;
     }
     if (index != null) {
         if (response == all_ans[index][question_number - 1]) {
@@ -63,8 +66,7 @@ const mtld_ans = [1, 1, 3, 2, 2, 1, 1, 1, 4, 3, 4, 4, 1, 1, 2, 1, 2, 4, 3, 4];
 const omtl_ans = [2, 2, 4, 3, 1, 4, 3, 1, 4, 1, 2, 1, 1, 3, 2, 1, 4, 3, 1, 2];
 const tmt1_ans = [2, 2, 4, 4, 1, 4, 1, 4, 4, 2, 1, 3, 4, 1, 4, 3, 4, 2, 3, 2];
 const tmt2_ans = [2, 4, 1, 2, 1, 2, 3, 2, 1, 1, 1, 4, 1, 4, 3, 2, 1, 1, 3, 4];
+const nbgs_ans = [3, 3, 2, 3, 4, 3, 3, 2, 2, 2, 1, 1, 1, 2, 4, 3, 3, 4, 1, 2];
 
- // [2, 2, 2, 1, 1, 1, 2, 4, 3, 3, 4, 1, 2, 3, 3, 2, 3, 4, 3, 3]
 
-
-all_ans = [actn_ans, amtl_ans, aemt_ans, hlgn_ans, lnth_ans, mtld_ans, nmtl_ans, omtl_ans, tmt1_ans, tmt2_ans];
+all_ans = [actn_ans, amtl_ans, aemt_ans, hlgn_ans, lnth_ans, mtld_ans, nmtl_ans, omtl_ans, tmt1_ans, tmt2_ans, nbgs_ans];

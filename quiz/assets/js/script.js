@@ -25,7 +25,6 @@ function select(question_number, response, btn, locn) {
             responses[i].classList.remove('selected-'+series);
         }        
     }   
-    
 }
 
 
@@ -89,7 +88,6 @@ function next() {
         }
         document.getElementById('score').innerHTML = 'You got '+score+' out of '+total_number_of_questions;
     }
-    
 }
 
 function go_away() {
