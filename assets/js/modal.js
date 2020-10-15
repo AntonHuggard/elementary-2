@@ -1,5 +1,5 @@
 // Written by Anton Huggard
-// Last edited 2nd Oct, 2020 -- added arrow key navigation for modals
+// Last edited 15th Oct, 2020 -- added electron configuration
 // This file has all the code related to the modals that pop-up when an element is clicked on.
 // It's got html and some svg. This is probably pretty bad practice, but I'm a fast & loose
 // kinda guy. 
@@ -45,7 +45,7 @@ function show_modal(obj) {
         case 'alkali_metals':
             fill_colour = alkali_metals_colour;
             break;
-        case 'noble':
+        case 'noble_gas':
             fill_colour = noble_gas_colour;
             break;
         case 'alkaline_earth_metals':
@@ -125,7 +125,7 @@ function show_modal(obj) {
                 Melting Point: ${mp} <br>
                 Boiling Point: ${bp} <br> 
                 Electronegativity: ${elc_ngty} <br>
-                Electron configuration: ${do_config(atmc_num)} <br>
+                E<sup>-</sup> configuration: ${config_master(atmc_num)} <br>
                 <div class="mobile_radioactive_indictaion">Radioactive: ${radioactivity}</div>
                 Discovered: ${discvry} <br> Etymology: ${etym} <br> <br>
             </div>
