@@ -1,13 +1,24 @@
 // Written by Anton Huggard
-// Last edited 10th Oct, 2020 
+// Last edited 16th Oct, 2020 
 // - modified reset_opacity() for new JSON design, fixed mobile mug
 // - added function for showing the help modal.
+// - added filter ...thing
+
+
+// this is the master JavaScript file for the periodic table, important functions and global variables
+// are declared here. Also some other stuff that's still here for historic reasons.
+
+const filter_button = document.getElementById('fltr_btn');
+const low_opacity_value = "25%";
+
 
 function getWidth() {
     return Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 }
+function getHeight() {
+    return Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+}
 
-const low_opacity_value = "25%";
 
 function show_accordian() {
     var acc = document.getElementsByClassName("accordion");
@@ -151,6 +162,7 @@ function change_btn(btn, locn) {
 }
 
 function reset_opacity() {
+    filter_button.innerHTML = 'filter';
     elements.forEach(element => {
         document.getElementById(element.name).style.opacity = "100%";
         if (element.atomic_number < 57) document.getElementById(element.symbol).style.opacity = '100%';
@@ -159,4 +171,27 @@ function reset_opacity() {
 
 function show_help () {
     document.getElementById('help').style.display = 'block';
+}
+
+function filter_options(go_away) {
+    if (go_away) {
+        filter_button.classList.remove('selected-fltr-btn');
+        document.getElementById('properties_menu').style.display='none';
+    }
+}
+
+function filter_options() {
+    const filter_options = document.getElementById('properties_menu');
+    const filter_button = document.getElementById('fltr_btn');
+    if (!(filter_options.style.display=='block')) {
+        filter_button.classList.add('selected-fltr-btn');
+        filter_options.classList.remove('desktop-right-col');
+        filter_options.classList.add('desktop-left-col');
+        filter_options.classList.add('fltr-opns-drp-dwn');
+        filter_options.style.display='block';
+    } 
+    else {
+        filter_button.classList.remove('selected-fltr-btn');
+        filter_options.style.display='none';
+    }
 }

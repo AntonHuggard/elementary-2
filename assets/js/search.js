@@ -29,6 +29,7 @@ function display_search_results(res) {
 
 // helper function for search(), dims elements on desktop, deletes them on mobile
 function show_none() {
+    filter_button.innerHTML = 'filter';
     let dsk_elements = document.getElementsByClassName('dsktp-elmt');
     for (var i = dsk_elements.length -1; i >= 0; i--) {     
         dsk_elements[i].style.opacity = low_opacity_value;        

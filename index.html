@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
 
 </head>
-<body onload="draw_periodic_table();">
+<body onload="draw_periodic_table()">
 
     <!-- This is just the boring title stuff -->
 
@@ -103,14 +103,15 @@
         <button onclick='display_type("nnmtl"); change_btn(this, "properties_menu");'>non-metal</button>
         <button onclick='display_type("synth"); change_btn(this, "properties_menu");'>synthetic</button>
     </div>
+    
 
-    <button class='desktop-left-col nav-btn' id='fltr_btn'>filter</button>
+    <button class='desktop-left-col nav-btn' id='fltr_btn' onclick='filter_options()'>filter</button> 
     <button class='desktop-left-col nav-btn' id='quiz_btn' onclick="window.location ='quiz/index.html'">quiz</button>
     <button class='desktop-left-col nav-btn' id='myst_btn' onclick='toggle_units()' >celsius</button>
     <button class='desktop-left-col nav-btn' id='abou_btn' onclick="window.location ='about.html'">about</button>
     <button class='desktop-left-col nav-btn' id='help_btn' onclick="show_help()">help</button>
     
-    <img class='desktop-left-col' id='pipers' src='quiz/assets/img/pipers-logo.png' />
+    <img class='desktop-left-col' id='pipers' src='quiz/assets/img/pipers-logo.png' onclick="window.location ='http\:\/\/piperpat.com/'"/>
     
 
     <div id = "element_pop-up" style = "display: none;"></div> 

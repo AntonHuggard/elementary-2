@@ -1,5 +1,6 @@
 // Written by Anton Huggard
-// Last edited 10th Oct, 2020 -- adapted to JSON design to fix mobile mug
+// Last edited 16th Oct, 2020 -- adapted to JSON design to fix mobile mug
+// - added text modifiers to the filter button (clicking s-block makes it say 's-block')
 
 // This function toggles element opacity based on the user-selected property
 // The user controls this using the buttons at the bottom of the webpage
@@ -17,6 +18,7 @@ function display_type(new_display) {
         });
         switch (new_display) {
             case 's_blk':
+                filter_button.innerHTML = 's-block';
                 elements.forEach(element => {
                     if (element.block == 's') {
                         document.getElementById(element.name).style.opacity = '100%';
@@ -25,6 +27,7 @@ function display_type(new_display) {
                 });
                 break;
             case 'p_blk':
+                filter_button.innerHTML = 'p-block';
                 elements.forEach(element => {
                     if (element.block == 'p') {
                         document.getElementById(element.name).style.opacity = '100%';
@@ -33,6 +36,7 @@ function display_type(new_display) {
                 });
                 break;
             case 'd_blk':
+                filter_button.innerHTML = 'd-block';
                 elements.forEach(element => {
                     if (element.block == 'd') {
                         document.getElementById(element.name).style.opacity = '100%';
@@ -41,6 +45,7 @@ function display_type(new_display) {
                 });
                 break;
             case 'f_blk':
+                filter_button.innerHTML = 'f-block';
                 elements.forEach(element => {
                     if (element.block == 'f') {
                         document.getElementById(element.name).style.opacity = '100%';
@@ -49,6 +54,7 @@ function display_type(new_display) {
                 });
                 break;
             case 'ractv':
+                filter_button.innerHTML = 'radioactive';
                 elements.forEach(element => {
                     if (element.radioactive) {
                         document.getElementById(element.name).style.opacity = '100%';
@@ -57,6 +63,7 @@ function display_type(new_display) {
                 });
                 break;
             case 'solid':
+                filter_button.innerHTML = 'solid';
                 elements.forEach(element => {
                     if (element.state_at_standard_conditions == 'solid') {
                         document.getElementById(element.name).style.opacity = '100%';
@@ -65,6 +72,7 @@ function display_type(new_display) {
                 });
                 break;
             case 'liqud':
+                filter_button.innerHTML = 'liquid';
                 elements.forEach(element => {
                     if (element.state_at_standard_conditions == 'liquid') {
                         document.getElementById(element.name).style.opacity = '100%';
@@ -73,6 +81,7 @@ function display_type(new_display) {
                 });
                 break;
             case 'gasus':
+                filter_button.innerHTML = 'gases';
                 elements.forEach(element => {
                     if (element.state_at_standard_conditions == 'gas') {
                         document.getElementById(element.name).style.opacity = '100%';
@@ -82,6 +91,7 @@ function display_type(new_display) {
                 break;
             
             case 'metal':
+                filter_button.innerHTML = 'metals';
                 elements.forEach(element => {
                     if (element.metalness == 'metal') {
                         document.getElementById(element.name).style.opacity = '100%';
@@ -90,6 +100,7 @@ function display_type(new_display) {
                 });
                 break;
             case 'mtlld':
+                filter_button.innerHTML = 'metalloids';
                 elements.forEach(element => {
                     if (element.metalness == 'metalloid') {
                         document.getElementById(element.name).style.opacity = '100%';
@@ -98,6 +109,7 @@ function display_type(new_display) {
                 });
                 break;
             case 'nnmtl':
+                filter_button.innerHTML = 'non-metals';
                 elements.forEach(element => {
                     if (element.metalness == 'nonmetal') {
                         document.getElementById(element.name).style.opacity = '100%';
@@ -106,6 +118,7 @@ function display_type(new_display) {
                 });
                 break;
             case 'synth':
+                filter_button.innerHTML = 'synthetic';
                 elements.forEach(element => {
                     if (element.atomic_number > 94) {
                         document.getElementById(element.name).style.opacity = '100%';
