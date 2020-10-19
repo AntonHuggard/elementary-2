@@ -700,6 +700,7 @@ h3 {
 
     .fltr-opns-drp-dwn {
         z-index:3;
+        width: 95%;
         grid-row: 4/12;
         padding-bottom: 0;
         margin-bottom: 0;
@@ -746,7 +747,7 @@ h3 {
         margin-top: 0px;
         height: 60px;
     }
-    #header h3 {font-size: 25px;}
+    #header h3 {font-size: 25px; display: none;}
     /* #fltr_btn { display: none;} */
 
     /* #properties_menu {display: block;}
@@ -797,6 +798,7 @@ h3 {
     #header h3 {
         font-size: 30px;
         padding: 0px 10px;
+        display: block;
     }
 
     #search_type_grid {
@@ -844,6 +846,7 @@ h3 {
         margin-top: 1% ;
     }
     .nav-btn {max-width: 400px;}
+    #properties_menu button, #properties_menu {max-width: 394px;}
     
 }
 @media only screen and (min-width: 1470px)  {
