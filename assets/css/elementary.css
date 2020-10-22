@@ -344,15 +344,17 @@ h3 {
 .close_btn {
     background-color: transparent;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     height: 40px;
     padding: 0px;
     border: none;
     border-radius: 50%;
+    top:-5;
+    outline: none;
 }
 .close_btn:hover {
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.377);
+    background-color: rgba(0, 0, 0, 0.116);
 }
 #help {
     z-index:3;
