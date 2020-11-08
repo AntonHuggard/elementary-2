@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src = "assets/js/script.js"></script>
-    <script src = "assets/js/marker.js"></script>
+    <script src = "assets/js/cards_transition_metals_2.js"></script>
+    <script src = "assets/js/main.js"></script>
     <title>Elementary | Transition metals</title>
     <link rel="icon" href="../assets/img/rf.png" />
 </head>
-<body onload='page_setup(15, "tmt2")'>
+<body onload='draw_card()'>
 
     <div class='band transtn-mtls' id='head'>
         <div id='head_contents'>
@@ -20,206 +20,20 @@
     </div>
 
     <div id='q1' class='quiz_body'>
-        <h2 class='question'>Due to its hardness, fountain pen nibs are sometimes made from alloys which contain this transition metal. <br>
-            Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-ink-pen.png'>
-        <div id='q1_optns' class='options tmtl'>
-            <button onclick='select(1, 1, this, "q1_optns")'>aluminium</button>
-            <button onclick='select(1, 2, this, "q1_optns")'>ruthenium</button>
-            <button onclick='select(1, 3, this, "q1_optns")'>niobium</button>
-            <button onclick='select(1, 4, this, "q1_optns")'>zirconium</button>
+        <h2 class='question'></h2>
+        <img class='question_img'>
+        <div id='qn_optns' class='options tmtl'>
+            <button class='option' onclick='select(this)'></button>
+            <button class='option' onclick='select(this)'></button>
+            <button class='option' onclick='select(this)'></button>
+            <button class='option' onclick='select(this)'></button>
         </div>
     </div>
 
-    <div id='q2' class='quiz_body' style='display: none;'>
-        <h2 class='question'>Paul McCartney was presented with a disc plated with this transition metal for being the best selling
-            song writer in history. <br> Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-hippy.png'>
-        <div id='q2_optns' class='options tmtl'>
-            <button onclick='select(2, 1, this, "q2_optns")'>silver</button>
-            <button onclick='select(2, 2, this, "q2_optns")'>platinum</button>
-            <button onclick='select(2, 3, this, "q2_optns")'>gold</button>
-            <button onclick='select(2, 4, this, "q2_optns")'>rhodium</button>
-        </div>
-    </div>
-
-    <div id='q3' class='quiz_body' style='display: none;'>
-        <h2 class='question'>Flutes and other musical instruments are sometimes made using this transition metal.<br>
-            Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-saxophone.png'>
-        <div id='q3_optns' class='options tmtl'>
-            <button onclick='select(3, 1, this, "q3_optns")'>palladium</button>
-            <button onclick='select(3, 2, this, "q3_optns")'>brass</button>
-            <button onclick='select(3, 3, this, "q3_optns")'>cadmium</button>
-            <button onclick='select(3, 4, this, "q3_optns")'>copper</button>
-        </div>
-    </div>
-
-    <div id='q4' class='quiz_body' style='display: none;'>
-        <h2 class='question'>This transition metal has a wide variety of uses, including its traditional use in the making
-            of fine cutlery which was typically passed down through generations of families.
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-must-be-nice-to-have-silverware.png'>
-        <div id='q4_optns' class='options tmtl'>
-            <button onclick='select(4, 1, this, "q4_optns")'>aluminium</button>
-            <button onclick='select(4, 2, this, "q4_optns")'>silver</button>
-            <button onclick='select(4, 3, this, "q4_optns")'>gold</button>
-            <button onclick='select(4, 4, this, "q4_optns")'>platnum</button>
-        </div>
-    </div>
-
-    <div id='q5' class='quiz_body' style='display: none;'>
-        <h2 class='question'>This transition metal is often used in paint pigments and produces brilliant reds and yellows.<br>
-            Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-painting.png'>
-        <div id='q5_optns' class='options tmtl'>
-            <button onclick='select(5, 1, this, "q5_optns")'>cadmium</button>
-            <button onclick='select(5, 2, this, "q5_optns")'>bobrossium</button>
-            <button onclick='select(5, 3, this, "q5_optns")'>titanium</button>
-            <button onclick='select(5, 4, this, "q5_optns")'>indium</button>
-        </div>
-    </div>
-
-    <div id='q6' class='quiz_body' style='display: none;'>
-        <h2 class='question'>This transition metal is often used as an electrode in plasma cutting tools.<br>
-            Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-geez-calm-down.png'>
-        <div id='q6_optns' class='options tmtl'>
-            <button onclick='select(6, 1, this, "q6_optns")'>rhenium</button>
-            <button onclick='select(6, 2, this, "q6_optns")'>hafnium</button>
-            <button onclick='select(6, 3, this, "q6_optns")'>palladium</button>
-            <button onclick='select(6, 4, this, "q6_optns")'>rhodium</button>
-        </div>
-    </div>
-
-    <div id='q7' class='quiz_body' style='display: none;'>
-        <h2 class='question'>This transition metal is widely used in the electronics industry for the manufacture of capacitors
-            and resistors<br> Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-transistor.png'>
-        <div id='q7_optns' class='options tmtl'>
-            <button onclick='select(7, 1, this, "q7_optns")'>tungsten</button>
-            <button onclick='select(7, 2, this, "q7_optns")'>hafnium</button>
-            <button onclick='select(7, 3, this, "q7_optns")'>tantalum</button>
-            <button onclick='select(7, 4, this, "q7_optns")'>copper</button>
-        </div>
-    </div>
-
-    
-    <div id='q8' class='quiz_body' style='display: none;'>
-        <h2 class='question'>Razor blades are sometimes coated with this transition metal in order to maintain a sharp edge.<br>
-            Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-brought-to-you-by-harrys.png'>
-        <div id='q8_optns' class='options tmtl'>
-            <button onclick='select(8, 1, this, "q8_optns")'>cadmium</button>
-            <button onclick='select(8, 2, this, "q8_optns")'>tungsten</button>
-            <button onclick='select(8, 3, this, "q8_optns")'>rhenium</button>
-            <button onclick='select(8, 4, this, "q8_optns")'>osmium</button>
-        </div>
-    </div>
-
-    <div id='q9' class='quiz_body' style='display: none;'>
-        <h2 class='question'>Some parts of jet engines are made from this transition metal.<br>
-            Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-turbo-booster-wing.png'>
-        <div id='q9_optns' class='options tmtl'>
-            <button onclick='select(9, 1, this, "q9_optns")'>rhenium</button>
-            <button onclick='select(9, 2, this, "q9_optns")'>iron</button>
-            <button onclick='select(9, 3, this, "q9_optns")'>tungsten</button>
-            <button onclick='select(9, 4, this, "q9_optns")'>osmium</button>
-        </div>
-    </div>
-
-    <div id='q10' class='quiz_body' style='display: none;'>
-        <h2 class='question'>Needles in old record players were sometimes made from this transition metal.<br>
-            Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-phonograph.png'>
-        <div id='q10_optns' class='options tmtl'>
-            <button onclick='select(10, 1, this, "q10_optns")'>osmium</button>
-            <button onclick='select(10, 2, this, "q10_optns")'>zinc</button>
-            <button onclick='select(10, 3, this, "q10_optns")'>iridium</button>
-            <button onclick='select(10, 4, this, "q10_optns")'>mercury</button>
-        </div>
-    </div>
-
-    <div id='q11' class='quiz_body' style='display: none;'>
-        <h2 class='question'>The international prototype metre is made from an alloy of this transition metal.<br>
-            Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-alloy.png'>
-        <div id='q11_optns' class='options tmtl'>
-            <button onclick='select(11, 1, this, "q11_optns")'>iridium</button>
-            <button onclick='select(11, 2, this, "q11_optns")'>rutherfordium</button>
-            <button onclick='select(11, 3, this, "q11_optns")'>zirconium</button>
-            <button onclick='select(11, 4, this, "q11_optns")'>niobium</button>
-        </div>
-    </div>
-
-    <div id='q12' class='quiz_body' style='display: none;'>
-        <h2 class='question'>This transition metal is used in catalytic converters which minimise the pollution given off by 
-            a car's exhaust<br>
-            Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-dohicky.png'>
-        <div id='q12_optns' class='options tmtl'>
-            <button onclick='select(12, 1, this, "q12_optns")'>tantalum</button>
-            <button onclick='select(12, 2, this, "q12_optns")'>ruthenium</button>
-            <button onclick='select(12, 3, this, "q12_optns")'>mercury</button>
-            <button onclick='select(12, 4, this, "q12_optns")'>hafnium</button>
-        </div>
-    </div>
-
-    <div id='q13' class='quiz_body' style='display: none;'>
-        <h2 class='question'>The United States Bullion Depository contains over 4,000 tons of this valuable transition metal.<br>
-            which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-shawshank-prison.png'>
-        <div id='q13_optns' class='options tmtl'>
-            <button onclick='select(13, 1, this, "q13_optns")'>gold</button>
-            <button onclick='select(13, 2, this, "q13_optns")'>silver</button>
-            <button onclick='select(13, 3, this, "q13_optns")'>platinum</button>
-            <button onclick='select(13, 4, this, "q13_optns")'>rutherfordium</button>
-        </div>
-    </div>
-
-    <div id='q14' class='quiz_body' style='display: none;'>
-        <h2 class='question'>Thermometers sometimes contain this transition metal...<br>
-            Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-thermometer.png'>
-        <div id='q14_optns' class='options tmtl'>
-            <button onclick='select(14, 1, this, "q14_optns")'>iridium</button>
-            <button onclick='select(14, 2, this, "q14_optns")'>bromine</button>
-            <button onclick='select(14, 3, this, "q14_optns")'>alcohol</button>
-            <button onclick='select(14, 4, this, "q14_optns")'>mercury</button>
-        </div>
-    </div>
-
-    <div id='q15' class='quiz_body' style='display: none;'>
-        <h2 class='question'>This transition metal is named after the Nobel Prize winning scientist who was the first to split
-            the atom.<br> Which is it?
-        </h2>
-        <img class='question_img' src='assets/img/transition-metals/tmtls-100-dollar-man.png'>
-        <div id='q15_optns' class='options tmtl'>
-            <button onclick='select(15, 1, this, "q15_optns")'>oppenheimium</button>
-            <button onclick='select(15, 2, this, "q15_optns")'>curium</button>
-            <button onclick='select(15, 3, this, "q15_optns")'>rutherfordium</button>
-            <button onclick='select(15, 4, this, "q15_optns")'>einsteinium</button>
-        </div>
-    </div>
-
-    <div id='results_page' style='display: none' class='tmtl'>
+    <div id='results_page' class='tmtl banished'>
         <h1 id='score'></h1>
         <h2 id='result'></h2>
-        <button id='return' onclick='go_away()'>back to quizzes</button>
+        <button id='return' onclick='exit()'>back to quizzes</button>
         <img src='assets/img/pipers-logo.png'>
     </div>
 

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src = "assets/js/script.js"></script>
-    <script src = "assets/js/marker.js"></script>
+    <script src = "assets/js/cards_alkaline_earth_metals.js"></script>
+    <script src = "assets/js/main.js"></script>
     <title>Elementary | Alkaline earth metals</title>
     <link rel="icon" href="../assets/img/rf.png" />
 </head>
-<body onload='page_setup(6, "aemt")'>
+<body onload='draw_card()'>
 
     <div class='band al-earth-mtls' id='head'>
         <div id='head_contents'>
@@ -19,90 +19,21 @@
         </div>
     </div>
 
-    <div id='q1' class='quiz_body'>
-        <h2 class='question'>Because of its superior conductivity, this alkaline earth metal is used in the
-            manufacturing of electronic cables and connectors.
-        </h2>
-        <img class='question_img' src='assets/img/alkali-earth-metals/aem-lighter.png'>
-        <div id='q1_optns' class='options aemt'>
-            <button onclick='select(1, 1, this, "q1_optns")'>magnesium</button>
-            <button onclick='select(1, 2, this, "q1_optns")'>strontium</button>
-            <button onclick='select(1, 3, this, "q1_optns")'>titanium</button>
-            <button onclick='select(1, 4, this, "q1_optns")'>beryllium</button>
+    <div class='quiz_body'>
+        <h2 class='question'></h2>
+        <img class='question_img'>
+        <div id='qn_optns' class='options aemt'>
+            <button class='option' onclick='select(this)'></button>
+            <button class='option' onclick='select(this)'></button>
+            <button class='option' onclick='select(this)'></button>
+            <button class='option' onclick='select(this)'></button>
         </div>
     </div>
 
-    <div id='q2' class='quiz_body' style='display: none;'>
-        <h2 class='question'>Sparklers contain this alkaline earth metal which produces a white flame
-            and sparks when ignited
-        </h2>
-        <img class='question_img' src='assets/img/alkali-earth-metals/aem-sparkler.png'>
-        <div id='q2_optns' class='options aemt'>
-            <button onclick='select(2, 1, this, "q2_optns")'>strontium</button>
-            <button onclick='select(2, 2, this, "q2_optns")'>beryllium</button>
-            <button onclick='select(2, 3, this, "q2_optns")'>magnesium</button>
-            <button onclick='select(2, 4, this, "q2_optns")'>Radium</button>
-        </div>
-    </div>
-
-    <div id='q3' class='quiz_body' style='display: none;'>
-        <h2 class='question'>Milk and other dairy products are rich in this alkaline earth metal
-            which is essential for building strong bones and teeth
-        </h2>
-        <img class='question_img' src='assets/img/alkali-earth-metals/aem-breakfast.png'>
-        <div id='q3_optns' class='options aemt'>
-            <button onclick='select(3, 1, this, "q3_optns")'>calcium</button>
-            <button onclick='select(3, 2, this, "q3_optns")'>magnesium</button>
-            <button onclick='select(3, 3, this, "q3_optns")'>sodium</button>
-            <button onclick='select(3, 4, this, "q3_optns")'>i-calcium</button>
-        </div>
-    </div>
-
-    <div id='q4' class='quiz_body' style='display: none;'>
-        <h2 class='question'>This alkaline earth metal is used in making cathode ray tubes (CRTs), the 
-            primary component of TVs and computer monitors. Although liquid crystal displays (LCDs) and
-            light emitting diodes (LEDs) are quickly replacing CRTs
-        </h2>
-        <img class='question_img' src='assets/img/alkali-earth-metals/aem-radio.png'>
-        <div id='q4_optns' class='options aemt'>
-            <button onclick='select(4, 1, this, "q4_optns")'>magnesium</button>
-            <button onclick='select(4, 2, this, "q4_optns")'>strontium</button>
-            <button onclick='select(4, 3, this, "q4_optns")'>radium</button>
-            <button onclick='select(4, 4, this, "q4_optns")'>barium</button>
-        </div>
-    </div>
-
-    <div id='q5' class='quiz_body' style='display: none;'>
-        <h2 class='question'>Ingesting a compound consisting of this alkaline earth metal provides a contrast 
-            in x-ray images which can help doctors diagnose problems with a patient's digestive system.
-        </h2>
-        <img class='question_img' src='assets/img/alkali-earth-metals/aem-gross.png'>
-        <div id='q5_optns' class='options aemt'>
-            <button onclick='select(5, 1, this, "q5_optns")'>calcium</button>
-            <button onclick='select(5, 2, this, "q5_optns")'>strontium</button>
-            <button onclick='select(5, 3, this, "q5_optns")'>radium</button>
-            <button onclick='select(5, 4, this, "q5_optns")'>barium</button>
-        </div>
-    </div>
-
-    <div id='q6' class='quiz_body' style='display: none;'>
-        <h2 class='question'>This alkaline earth metal has been used in luminous paints to
-            illuminate clock faces. This resulted in a famous lawsuit in the 1920s by five
-            dying "dial patients" against the company who exposed them to dangerous paint.
-        </h2>
-        <img class='question_img' src='assets/img/alkali-earth-metals/aem-clock-painters.png'>
-        <div id='q6_optns' class='options aemt'>
-            <button onclick='select(6, 1, this, "q6_optns")'>strontium</button>
-            <button onclick='select(6, 2, this, "q6_optns")'>uranium</button>
-            <button onclick='select(6, 3, this, "q6_optns")'>radium</button>
-            <button onclick='select(6, 4, this, "q6_optns")'>barium</button>
-        </div>
-    </div>
-
-    <div id='results_page' style='display: none' class='aemt'>
+    <div id='results_page' class='aemt banished'>
         <h1 id='score'></h1>
         <h2 id='result'></h2>
-        <button id='return' onclick='go_away()'>back to quizzes</button>
+        <button id='return' onclick='exit()'>back to quizzes</button>
         <img src='assets/img/pipers-logo.png'>
     </div>
 
