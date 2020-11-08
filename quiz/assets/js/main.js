@@ -6,7 +6,7 @@ let can_continue = false;
 let score = 0;
 
 
-function exit() { window.location ='index.html'; }
+function exit() { window.location ='../'; }
 
 // Returns an array of length quantity where random numbers are constrained by range & a forbidden #.
 function roll_dice(range, quantity, forbidden) {
@@ -29,7 +29,7 @@ function draw_card() {
     deck_index = deck.indexOf(card);
 
     document.getElementsByClassName('question')[0].innerHTML = card.question;
-    document.getElementsByClassName('question_img')[0].src = 'assets/img/' + card.image;
+    document.getElementsByClassName('question_img')[0].src = '/quiz/assets/img/' + card.image;
     
     const selector = document.getElementById('qn_optns');
     let indices = roll_dice(deck.length, 3, deck_index); 
