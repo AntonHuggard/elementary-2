@@ -60,6 +60,8 @@ function select(button) {
     selected_option = button;
 }
 
+function pass() { next(); }
+
 function next() {
     discarded.push(card);
     unused_cards.splice(index, 1);
