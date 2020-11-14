@@ -1,5 +1,5 @@
 // Written by Anton Huggard
-// Last edited 15th Nov, 2020 -- Added search by atomic mass (excluding radioactive elements)
+// Last edited 15th Nov, 2020 -- Added search by atomic mass
 
 // display-type, from bottom buttons
 let prv_display = 'all';
@@ -103,11 +103,13 @@ function search() {
     }
 
     // search by atomic MASS
-    // excludes the radioactive masses [123]...
-    else if (query.match(/\d+.\d+$/)) {
+    else if (query.match(/\d+.\d+$/) || query.match(/\[\d+\]$/)) {
         let value = parseFloat(query);
         elements.forEach(element => {
             if ((element.atomic_mass - 1 <= value) && (value <= element.atomic_mass + 1)) results.push(element);
+            else if (element.atomic_mass == query) {
+                results.push(element);
+            }
         });
     }
     
