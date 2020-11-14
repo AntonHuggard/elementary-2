@@ -1,6 +1,5 @@
 // Written by Anton Huggard
-// Last edited 9th Oct, 2020 -- when searching by symbol, second-letters now count 
-// ('e' returns Fe, before it only returned elements starting with the symbol)
+// Last edited 15th Nov, 2020 -- Added search by atomic mass (excluding radioactive elements)
 
 // display-type, from bottom buttons
 let prv_display = 'all';
@@ -102,8 +101,17 @@ function search() {
             else if (element.symbol[1] == lc_qry) results.push(element);
         });
     }
+
+    // search by atomic MASS
+    // excludes the radioactive masses [123]...
+    else if (query.match(/\d+.\d+$/)) {
+        let value = parseFloat(query);
+        elements.forEach(element => {
+            if ((element.atomic_mass - 1 <= value) && (value <= element.atomic_mass + 1)) results.push(element);
+        });
+    }
     
-    // search by atomic number
+    // search by atomic NUMBER
     else if (Number.isInteger(parseInt(query))) {
         const user_number = parseInt(query);
         elements.forEach(element => {
