@@ -78,6 +78,8 @@ button:active {transform: translateY(2px);}
 .question, #score, #result {margin: 0px 20px; text-align: center;}
 .question_img { width: 100%; max-width: 312px; display: block; margin: auto; margin-top: 10px; margin-bottom: 10px;}
 
+.test_body { padding-top: 55px; padding-left: 10px; padding-right: 10px; text-align: center; font-size: 1.25em;}
+
 .options {
     margin: 0px 20px;
     display: grid;
