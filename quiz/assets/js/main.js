@@ -1,12 +1,16 @@
+// Written by Anton Huggard for PIPERS (November 2020)
+// This is file that controls the periodic table quiz cards mechanics.
+// Each set of questions uses this file along with its file containing the set of cards, which
+// is why there's references to variables not declare here (each set has its own 'deck').
+
+// declaring global variables -- discarded/unused are card piles, there's the index of the card
+// in the deck, the card itself, etc. All pretty self explanatory...
+
+
 let discarded = [];
 let unused_cards = deck.slice();
 let selected_option, index, deck_index, card;
-let responded = false;
-let can_continue = false;
-let score = 0;
 
-
-function exit() { window.location ='../'; }
 
 // Returns an array of length quantity where random numbers are constrained by range & a forbidden #.
 function roll_dice(range, quantity, forbidden) {
@@ -38,30 +42,6 @@ function draw_card() {
 }
 
 
-function clear_selected() {
-    const options = document.getElementsByClassName('option');
-    for (let i = 0; i < options.length; i++) {
-        if (options[i].classList.contains('selected-'+series)) options[i].classList.remove('selected-'+series);
-        if (options[i].classList.contains('correct')) options[i].classList.remove('correct');
-        if (options[i].classList.contains('incorrect')) options[i].classList.remove('incorrect');
-    }
-}
-
-function select(button) {
-    if (button.classList.contains('selected-'+series)) {
-        responded = false;
-        clear_selected();
-    }
-    else {
-        responded = true;
-        clear_selected();
-        button.classList.add('selected-'+series);
-    }
-    selected_option = button;
-}
-
-function pass() { next(); }
-
 function next() {
     discarded.push(card);
     unused_cards.splice(index, 1);
@@ -85,6 +65,7 @@ function confirm() {
         can_continue = true;
     } 
 }
+
 
 function display_results() {
     document.getElementById('bottom_text').innerHTML = 'results';

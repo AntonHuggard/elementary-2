@@ -1,0 +1,54 @@
+---
+permalink: /conc/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Sen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/quiz/assets/css/style.css" />
+    <script src='/quiz/assets/js/quiz_master.js'></script>
+    <script src='/quiz/assets/js/concentration.js'></script>
+    <title>Elementary | Concentration</title>
+    <link rel="icon" href="/assets/img/rf.png" />
+</head>
+<body onload='start_test()'>
+
+    <div class='band transtn-mtls' id='head'>
+        <div id='head_contents'>
+            <h1>Concentration</h1>
+            <button onclick='exit()'>&times</button>
+        </div>
+    </div>
+
+    <div class='test_body'>
+        <h3 id='problem'>
+            It takes 30mL of 0.25 molL<sup>-1</sup> KOH to reach the equivalence point of a 20mL solution of H<sub>2</sub>SO<sub>4</sub>
+        </h3>
+        <h3 id='question'></h3>
+        <div class='options tmtl'>
+            <button class='option' onclick='select(this)'></button>
+            <button class='option' onclick='select(this)'></button>
+            <button class='option' onclick='select(this)'></button>
+            <button class='option' onclick='select(this)'></button>
+        </div>
+    </div>
+
+    
+
+    <div id='results_page' class='tmtl banished'>
+        <h1 id='score'></h1>
+        <h2 id='result'></h2>
+        <button id='return' onclick='exit()'>back to quizzes</button>
+        <img src='/quiz/assets/img/pipers-logo.png'>
+    </div>
+
+    <div class='band transtn-mtls' id='bottom'>
+        <button id='pass' onclick='pass();'>pass</button>
+        <button id='confirm' onclick='confirm();'>confirm</button>
+        <p id='bottom_text'></p>
+    </div>
+    
+</body>
+</html>
