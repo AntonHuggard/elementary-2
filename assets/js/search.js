@@ -1,5 +1,6 @@
 // Written by Anton Huggard
-// Last edited 15th Nov, 2020 -- Added search by atomic mass
+// Last edited 15th Feb, 2021 -- Added search by alloy
+
 
 // display-type, from bottom buttons
 let prv_display = 'all';
@@ -207,10 +208,23 @@ function search() {
 
     // search by name -- this is being executed for some reason??
     else {
+        let found_name = false;
         elements.forEach(element => {
             const this_guys_name = element.name.toUpperCase();
-            if (this_guys_name.includes(query)) results.push(element);
+            if (this_guys_name.includes(query)) {
+                results.push(element);
+                found_name = true;
+            }
         });
+        if (! found_name) {
+            alloys.forEach(alloy => {
+                const alloy_name = alloy.name.toUpperCase();
+                if (alloy_name.includes(query))  {
+                    results = alloy.elements;
+                    // console.log(results);
+                }
+            });
+        }
     }
 
     display_search_results(results); 
