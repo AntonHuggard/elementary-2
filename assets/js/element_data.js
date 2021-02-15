@@ -2600,3 +2600,18 @@ const elements = [
     tennessine,
     oganesson
 ];
+
+const bronze = {
+    name: 'bronze',
+    elements: [copper, tin]
+};
+const brass = {
+    name: 'brass',
+    elements: [copper, zinc]
+}
+const steel = {
+    name: 'steel',
+    elements: [carbon, iron]
+}
+
+const alloys = [bronze, brass, steel];

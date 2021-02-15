@@ -1,4 +1,4 @@
-// Written by Anton Huggard for PIPERS (November 2020)
+// Written by Anton Huggard (November 2020)
 // This is file that controls the periodic table quiz cards mechanics.
 // Each set of questions uses this file along with its file containing the set of cards, which
 // is why there's references to variables not declare here (each set has its own 'deck').
