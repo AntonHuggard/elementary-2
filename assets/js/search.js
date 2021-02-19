@@ -217,7 +217,8 @@ function search() {
             }
         });
         if (! found_name) {
-            alloys.forEach(alloy => {
+            // need to re-name at some point lol not alloys any more :p
+            compounds.forEach(alloy => {
                 const alloy_name = alloy.name.toUpperCase();
                 if (alloy_name.includes(query))  {
                     results = alloy.elements;
