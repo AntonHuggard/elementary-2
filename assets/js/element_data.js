@@ -2601,6 +2601,7 @@ const elements = [
     oganesson
 ];
 
+// alloys
 const bronze = {
     name: 'bronze',
     elements: [copper, tin]
@@ -2613,5 +2614,17 @@ const steel = {
     name: 'steel',
     elements: [carbon, iron]
 }
+// explosives
+const tnt = {
+    name: 'tnt',
+    elements: [nitrogen, carbon, oxygen, hydrogen]
+}
+// narcotics
+const morphine = {
+    name: 'morphine',
+    elements: [carbon, oxygen, nitrogen, hydrogen]
+}
+// a lot of compounds have the same basic atoms - they should be classed together
+// eg. hydrocarbons
 
-const alloys = [bronze, brass, steel];
+const compounds = [bronze, brass, steel, tnt];
