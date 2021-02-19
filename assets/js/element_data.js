@@ -2627,4 +2627,4 @@ const morphine = {
 // a lot of compounds have the same basic atoms - they should be classed together
 // eg. hydrocarbons
 
-const compounds = [bronze, brass, steel, tnt];
+const compounds = [bronze, brass, steel, tnt, morphine];
