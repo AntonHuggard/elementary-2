@@ -1,0 +1,20 @@
+user can search by
+
+!chemical symbol
+!element name
+!group
+!row/period
+!atomic number
+mass number
+!discovery date
+electronegativity
+MP
+BP
+!state at standard conditions
+!block
+electron configuration
+
+!The user should be told when their search doesn't match the
+default name/symbol/atomic number, but does match something else.
+
+#If they type 'rutherford', it should show them Rf, but also any elements he helped discover.
