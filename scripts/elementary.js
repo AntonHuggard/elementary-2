@@ -15,6 +15,7 @@ const low_opacity_value = "25%";
 function getWidth() {
     return Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 }
+
 function getHeight() {
     return Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 }
@@ -31,7 +32,7 @@ function show_accordian() {
         } else {
             panel[0].style.display = "block";
         }
-        
+
     }
 }
 
@@ -54,7 +55,7 @@ function set_search(n, mobile_view) {
     if (mobile_view) {
         var acc = document.getElementsByClassName("accordion");
         acc[search_type].classList.toggle("active");
-        switch(n) {
+        switch (n) {
             case 0:
                 document.getElementById("acc_dt").classList.toggle("active");
                 break;
@@ -71,14 +72,14 @@ function set_search(n, mobile_view) {
                 document.getElementById("acc_ds").classList.toggle("active");
                 break;
         }
-    } 
+    }
 
     // ... to here, it's all just visual indicators of the selectors at the top
     // the following code has all the functionality ...
-    
+
     switch (n) {
         case 0:
-            document.getElementById("acc_dt").style.display = "block";                
+            document.getElementById("acc_dt").style.display = "block";
             document.getElementById("element_search_container").style.display = "grid";
             reset_opacity();
             search_type = 0;
@@ -156,8 +157,8 @@ function change_btn(btn, locn) {
         } else {
             srch_typs[i].classList.remove('selected');
         }
-        
-    }        
+
+    }
 
 }
 
@@ -169,29 +170,28 @@ function reset_opacity() {
     });
 }
 
-function show_help () {
+function show_help() {
     document.getElementById('help').style.display = 'block';
 }
 
 function filter_options(go_away) {
     if (go_away) {
         filter_button.classList.remove('selected-fltr-btn');
-        document.getElementById('properties_menu').style.display='none';
+        document.getElementById('properties_menu').style.display = 'none';
     }
 }
 
 function filter_options() {
     const filter_options = document.getElementById('properties_menu');
     const filter_button = document.getElementById('fltr_btn');
-    if (!(filter_options.style.display=='block')) {
+    if (!(filter_options.style.display == 'block')) {
         filter_button.classList.add('selected-fltr-btn');
         filter_options.classList.remove('desktop-right-col');
         filter_options.classList.add('desktop-left-col');
         filter_options.classList.add('fltr-opns-drp-dwn');
-        filter_options.style.display='block';
-    } 
-    else {
+        filter_options.style.display = 'block';
+    } else {
         filter_button.classList.remove('selected-fltr-btn');
-        filter_options.style.display='none';
+        filter_options.style.display = 'none';
     }
 }
