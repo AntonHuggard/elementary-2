@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(71, 181, 255);
+        }
+        #accordian_btn {
+            width: 100%;
+            font-family: 'Sen', sans-serif;
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+            outline: none;
+            border: 3px solid white;
+            border-radius: 25px;
+            padding: 10px;
+        }
+        .trnsprnt {
+            background-color: transparent;
+            color: white;
+        }
+        .white-btn {
+            background-color: white;
+            color: black;
+        }
+        .panel {
+            background-color: transparent;
+            font-family: 'Sen', sans-serif;
+            font-size: 20px;
+            display: none;
+            overflow: hidden;
+            border: 3px solid white;
+            border-top: none;
+            border-radius: 0px 0px 25px 25px;
+        }
+
+        .panel>div {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .panel>div:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+    <script>
+        function show_accordian(object) {
+            object.innerText = 'howdy';
+        }
+    </script>
+</head>
+<body>
+    <div id = "search_type_accordian" class = "centre" style = "border: none">
+        <button onclick="show_accordian(this)" id="accordian_btn" class="trnsprnt">default</button>
+        <div class="panel">
+            <div onclick="set_search(0, true)">default</div>
+            <div onclick="set_search(1, true)">electronegativity</div>
+            <div onclick="set_search(2, true)">melting point</div>
+            <div onclick="set_search(3, true)">boiling point</div>
+            <div onclick="set_search(4, true)">discovery</div>
+        </div>
+    </div>
+</body>
+</html>
