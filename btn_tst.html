@@ -9,7 +9,7 @@
         body {
             background-color: rgb(71, 181, 255);
         }
-        #accordian_btn {
+        #accordion_btn {
             width: 100%;
             font-family: 'Sen', sans-serif;
             font-size: 20px;
@@ -24,7 +24,13 @@
             background-color: transparent;
             color: white;
         }
-        .white-btn {
+        .active {
+            border-radius: 25px 25px 0px 0px !important;
+            background-color: white;
+            color: black;
+        }
+
+        .accordion:hover {
             background-color: white;
             color: black;
         }
@@ -32,7 +38,6 @@
             background-color: transparent;
             font-family: 'Sen', sans-serif;
             font-size: 20px;
-            display: none;
             overflow: hidden;
             border: 3px solid white;
             border-top: none;
@@ -51,17 +56,47 @@
             background-color: white;
             color: black;
         }
+        .begone {
+            display: none;
+        }
     </style>
     <script>
         function show_accordian(object) {
-            object.innerText = 'howdy';
+            object.classList.toggle("active");
+            document.getElementById("drpdwn-menu").classList.toggle("begone");
+        }
+        function set_search(n, mobile_view) {
+            // document.getElementById("electronegativity_div").style.display = "none";
+            // document.getElementById("melting_pt_div").style.display = "none";
+            // document.getElementById("boiling_pt_div").style.display = "none";
+            // document.getElementById("discovery_div").style.display = "none";
+            if (mobile_view) {
+                const acc = document.getElementById("accordion_btn");
+                switch (n) {
+                    case 0:
+                        acc.innerText = "default";
+                        break;
+                    case 1:
+                        acc.innerText = "electronegativity";
+                        break;
+                    case 2:
+                        acc.innerText = "melting point";
+                        break;
+                    case 3:
+                        acc.innerText = "boiling point";
+                        break;
+                    case 4:
+                        acc.innerText = "discovery";
+                        break;
+                }
+            }
         }
     </script>
 </head>
 <body>
     <div id = "search_type_accordian" class = "centre" style = "border: none">
-        <button onclick="show_accordian(this)" id="accordian_btn" class="trnsprnt">default</button>
-        <div class="panel">
+        <button onclick="show_accordian(this)" id="accordion_btn" class="trnsprnt">default</button>
+        <div class="panel begone" id="drpdwn-menu">
             <div onclick="set_search(0, true)">default</div>
             <div onclick="set_search(1, true)">electronegativity</div>
             <div onclick="set_search(2, true)">melting point</div>
