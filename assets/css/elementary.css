@@ -77,11 +77,8 @@ h3 {
     padding: 10px 0px;
 }
 
-.accordion {
-    display: none;
+#accordion_btn {
     width: 100%;
-    background-color: transparent;
-    color: white;
     font-family: 'Sen', sans-serif;
     font-size: 20px;
     cursor: pointer;
@@ -90,6 +87,8 @@ h3 {
     border: 3px solid white;
     border-radius: 25px;
     padding: 10px;
+    background-color: transparent;
+    color: white;
 }
 
 #acc_dt {
@@ -97,9 +96,9 @@ h3 {
 }
 
 .active {
-    border-radius: 25px 25px 0px 0px;
-    background-color: white;
-    color: black;
+    border-radius: 25px 25px 0px 0px !important;
+    background-color: white !important;
+    color: black !important;
 }
 
 .accordion:hover {
@@ -111,7 +110,6 @@ h3 {
     background-color: transparent;
     font-family: 'Sen', sans-serif;
     font-size: 20px;
-    display: none;
     overflow: hidden;
     border: 3px solid white;
     border-top: none;
@@ -129,6 +127,10 @@ h3 {
 .panel>div:hover {
     background-color: white;
     color: black;
+}
+
+.begone {
+    display: none;
 }
 
 #search_type_grid {
