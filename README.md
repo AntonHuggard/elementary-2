@@ -14,5 +14,3 @@
 
 Wikipedia: Source of all knowledge
 
-
-Consultant: [This guy](https://github.com/mirlington)

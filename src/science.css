@@ -1,0 +1,147 @@
+body {
+    background-image: url(tactile_noise_dark.png);
+    background-image: url(./components/imgs/background-darker.jpg);
+    background-position: center;
+    font-family: 'Sen', sans-serif;
+}
+
+h1, h3 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+header { 
+    background-color: rgba(0, 0, 0, 0.438); 
+    backdrop-filter: blur(20px);
+    margin-bottom: 20px;
+}
+
+h3 { margin-top: 5px; }
+
+#element_search_container {
+    width: 90%;
+    max-width: 500px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto 55px;
+    grid-template-rows: 40px;
+}
+
+#element_search_container>input[type=text] {
+    min-width: 150px;
+    max-width: 645px;
+    height: 38px;
+    grid-column: 1;
+    border: none;
+    border-radius: 25px 0px 0px 25px;
+    padding-left: 30px;
+    outline: none;
+    font-size: 18px;
+}
+
+#element_search_container>img {
+    grid-column: 2;
+    height: 30px;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 10px;
+    border-radius: 0px 25px 25px 0px;
+}
+
+
+.periodic-table-wrapper {
+    display: block;
+    margin: auto;
+}
+
+.periodic-table {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(18, 50px);
+    width: max-content;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.element-tile {
+    background-color: rgb(189, 189, 189);
+    color: white;
+    border: 2px solid white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    display: grid;
+    border-radius: 10px;
+}
+
+.element-tile p {
+    font-size: 1.25em;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.element-tile label {
+    width: 100%;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.noble-gas                  { background-color: #5900b3; }
+.noble-gas:hover            { color: #5900b3; }
+.transition-metal           { background-color: rgb(47, 136, 109); }
+.transition-metal:hover     { color: rgb(10, 48, 32); }
+.alkali-metal               { background-color: rgb(219, 102, 6); }
+.alkali-metal:hover         { color: rgb(201, 0, 0); }
+.alkaline-earth-metal       { background-color: rgb(223, 182, 0); }
+.alkaline-earth-metal:hover { color: rgb(110, 37, 9); }
+.metaux_pauvres             { background-color: rgb(5, 148, 5); }
+.metaux_pauvres:hover       { color: rgb(0, 133, 0); }
+.metalloid                  { background-color: rgb(0, 179, 90); }
+.metalloid:hover            { color: rgb(0, 121, 64); }
+.non-metal                  { background-color: #d60707; }
+.non-metal:hover            { color: #ad0000; }
+.noble_gas                  { background-color: rgb(99, 0, 124); }
+.noble_gas:hover            { color: rgb(126, 0, 98); }
+.lanthanoid                 { background-color: rgb(66, 154, 255); margin-top: 15px; }
+.lanthanoid:hover           { color: rgb(25, 117, 129); }
+.actinoid                   { background-color: #1a0077; }
+.actinoid:hover             { color: #000099; }
+.unknown                    { background-color: rgb(65, 65, 65); }
+.unknown:hover              { color: rgb(34, 34, 34); }
+
+.element-tile:hover { 
+    background-color: white; 
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+        /* background-size: 100vh; */
+    }    
+    .periodic-table {
+        column-gap: 3px;
+        row-gap: 3px;
+        grid-template-columns: repeat(18, 40px);
+    }
+    .element-tile p {
+        font-size: 1em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .element-tile label {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .periodic-table {
+        grid-template-columns: repeat(8, 50px);
+    }
+}
