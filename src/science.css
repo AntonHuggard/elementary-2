@@ -115,16 +115,13 @@ h3 { margin-top: 5px; }
 .unknown                    { background-color: rgb(65, 65, 65); }
 .unknown:hover              { color: rgb(34, 34, 34); }
 
-.element-tile:hover { 
+.element-tile:hover, .element-tile label:hover  { 
     background-color: white; 
     cursor: pointer;
 }
 
 
-@media only screen and (max-width: 1000px) {
-    body {
-        /* background-size: 100vh; */
-    }    
+@media only screen and (max-width: 1000px) {  
     .periodic-table {
         column-gap: 3px;
         row-gap: 3px;
