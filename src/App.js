@@ -2529,7 +2529,7 @@ class App extends Component {
       } else if (query.match(/non[-\s]?metals?\s?$/i)) {
         results = this.getMatchingElements("non-metal", true, "primary_class");
       } else if (query.match(/noble[-\s]?gas(es)?\s?$/i)) {
-        results = this.getMatchingElements("noble-gas", true, "primary_class");
+        results = this.getMatchingElements("noble_gas", true, "primary_class");
       } else if (query.match(/alkali[-\s]?metals?\s?$/i)) {
         results = this.getMatchingElements("alkali-metal", true, "primary_class");
       } else if (query.match(/alkaline[-\s]?earth[-\s]?metals?\s?$/i)) {
@@ -2540,14 +2540,26 @@ class App extends Component {
         results = this.getMatchingElements("metalloid", true, "primary_class");
       } else if (query.match(/transition[-\s]?metals?\s?$/i)) {
         results = this.getMatchingElements("transition-metal", true, "primary_class");
-      } else if (query.match(/lanthanoids?\s?$/i) || query.match(/lanthanides?\s?$/i)) {
+      } else if (query.match(/^lanthanoids?\s?$/i) || query.match(/^lanthanides?\s?$/i)) {
         results = this.getMatchingElements("lanthanoid", true, "primary_class");
-      } else if (query.match(/actinoids?\s?$/i) || query.match(/actinides?\s?$/i)) {
+      } else if (query.match(/^actinoids?\s?$/i) || query.match(/^actinides?\s?$/i)) {
         results = this.getMatchingElements("actinoid", true, "primary_class");
       } else if (query.match(/unknowns?\s?$/i)) {
         results = this.getMatchingElements("unknown", true, "primary_class");
-      } else if (query==="radioactive") {
+      } else if (query.match(/radio\s?active$/i)) {
         results = this.getMatchingElements(true, false, "radioactive");
+      } else if (query.match(/^halogens?$/i)) {
+        results = this.getMatchingElements(17, false, "group");
+      } else if (query.match(/^transactinides?$/i)) {
+        // there's no property that groups these guys together -- have to get them by atomic #
+        results = this.getMatchingElements(104, false, "atomic_number");
+        results.push(this.getMatchingElements(105, false, "atomic_number"));
+        results.push(this.getMatchingElements(106, false, "atomic_number"));
+        results.push(this.getMatchingElements(107, false, "atomic_number"));
+        results.push(this.getMatchingElements(108, false, "atomic_number"));
+        results.push(this.getMatchingElements(109, false, "atomic_number"));
+        results.push(this.getMatchingElements(110, false, "atomic_number"));
+        results.push(this.getMatchingElements(111, false, "atomic_number"));
       } else if (query.match(/^row[-\s]?[1-7]$/i) || query.match(/^period[-\s]?[1-7]$/i)) {
         query = query.replace('row', '' );
         query = query.replace('period', '' );
@@ -2561,7 +2573,7 @@ class App extends Component {
         results = this.getMatchingElements(query, false, "group");
       } else {
         console.log("Searching by name");
-        // results = this.getMatchingElements(query, false, "name");
+        results = this.getMatchingElements(query, false, "name");
       }
 
       results.forEach(symbol => {
@@ -2575,8 +2587,8 @@ class App extends Component {
     return (
       <React.Fragment>
         <header>
-          <h1>Chem.JS</h1>
-          <h3>the searchable periodic table</h3>
+          <h1>Web Periodic Table</h1>
+          <h3>Searchable elements</h3>
         </header>
         <SearchBar
           onHandleQuery={this.handleQuery}
