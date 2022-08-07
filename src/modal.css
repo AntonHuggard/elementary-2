@@ -1,0 +1,11 @@
+.hide-me {
+    display: none;
+}
+
+#element-modal {
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}

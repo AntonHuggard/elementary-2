@@ -2517,7 +2517,10 @@ class App extends Component {
   }
 
   handleElementClick = (atom) => {
-    console.log(atom.name);
+    const modal = document.getElementById("element-modal");
+    modal.classList.remove("hide-me");
+    modal.innerHTML = `<h1>${atom.name}</h1>`;
+
   }
 
   handleQuery = (query) => {
@@ -2601,7 +2604,7 @@ class App extends Component {
           atoms={this.state.atoms}
           onHandleElementClick={this.handleElementClick}
         />
-        <div id="element-modal"></div>
+        <div id="element-modal" className="hide-me"></div>
       </React.Fragment>
     );
   }
