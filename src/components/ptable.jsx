@@ -11,6 +11,7 @@ class PeriodicTable extends Component {
                         <Element 
                             key={atom.id} 
                             atom={atom}
+                            onHandleClick={this.props.onHandleElementClick}
                         />
                     ))}
                 </div>

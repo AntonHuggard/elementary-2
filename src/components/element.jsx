@@ -10,7 +10,10 @@ class Element extends React.Component {
     render() {
 
         return (
-            <div className={this.getClasses(this.props.atom)} id={this.props.atom.symbol} >
+            <div 
+            className={this.getClasses(this.props.atom)} 
+            id={this.props.atom.symbol}
+            onClick={ () => this.props.onHandleClick(this.props.atom) } >
                 <label>{this.props.atom.atomic_number}</label>
                 <p>{this.props.atom.symbol}</p>
             </div>

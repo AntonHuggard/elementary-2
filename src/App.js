@@ -2516,6 +2516,10 @@ class App extends Component {
     return results;
   }
 
+  handleElementClick = (atom) => {
+    console.log(atom.name);
+  }
+
   handleQuery = (query) => {
       query === "" ? this.showElements(true): this.showElements(false);
       let results = [];
@@ -2595,7 +2599,9 @@ class App extends Component {
         />
         <PeriodicTable 
           atoms={this.state.atoms}
+          onHandleElementClick={this.handleElementClick}
         />
+        <div id="element-modal"></div>
       </React.Fragment>
     );
   }
