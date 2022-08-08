@@ -2519,7 +2519,60 @@ class App extends Component {
   handleElementClick = (atom) => {
     const modal = document.getElementById("element-modal");
     modal.classList.remove("hide-me");
-    modal.innerHTML = `<h1>${atom.name}</h1>`;
+    
+    const elmnt_nm = atom.name;
+    const elmt_code = atom.symbol;
+    const atmc_mss = atom.atomic_mass;
+    const atmc_num = atom.atomic_number;
+    const mp = atom.melting_point;
+    const bp = atom.boiling_point;
+    const elc_ngty = atom.electronegativity;
+    const radioactivity = atom.radioactive;
+    const discvry = atom.discovery_details;
+    const etym = atom.etymology;
+    const descr = atom.description;
+    const fill_colour = "rgb(223, 0, 0)";
+    const text_colour = "white";
+    const svg_code = `
+    <svg class = "item3" width="100%" height="300">
+        <style>
+            .chemical_symbol { 
+                font: bold 90px sans-serif;
+                fill: ${text_colour};
+            }
+            .number {
+                font: bold 40px sans-serif;
+                fill: ${text_colour};
+            }
+        </style>
+        <rect width = "100%" height = "100%" style = "fill: white" />
+        <rect x = "5%" y = "3%" width = "90%" height = "94%" style = "fill: ${fill_colour}" />
+        <text x="75%" y="15%" dominant-baseline="middle" text-anchor="middle" class="number">${atmc_num}</text>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="chemical_symbol">${elmt_code}</text>
+        <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" class="number">${atmc_mss}</text>
+    </svg>`;
+    const modal_code = 
+    `<div class = "modal_content">
+        <div class = "grid-container">
+                <div class = "item1">${elmnt_nm}</div>
+            <button class = "item2" onclick = "document.getElementById('element-modal').classList.toggle('hide-me')">&times</button>
+            ${svg_code}
+            <div class = "item4">
+                Atomic Number: ${atmc_num} <br> 
+                Relative Atomic Mass: ${atmc_mss} <br> 
+                Melting Point: ${mp} <br>
+                Boiling Point: ${bp} <br> 
+                Electronegativity: ${elc_ngty} <br>
+                E<sup>-</sup> configuration: x <br>
+                <div class="mobile_radioactive_indictaion">Radioactive: ${radioactivity}</div>
+                Discovered: ${discvry} <br> Etymology: ${etym} <br> <br>
+            </div>
+            <div class = "item7">
+                ${descr}
+            </div>
+        </div>
+    </div>`;
+    modal.innerHTML = modal_code;
 
   }
 

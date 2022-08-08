@@ -4,8 +4,52 @@
 
 #element-modal {
     position: absolute;
-    top: 150px;
+    top: 10%;
+    align-self: center;
+    left: calc(50vw - 400px);
     z-index: 1;
-    width: 100%;
+    width: 800px;
+    border-radius: 30px;
+    background-color: white;
+    font-family: 'Sen', sans-serif;
+    color: rgb(63, 163, 245);
+}
+
+.grid-container {
+    display: grid;
+    width: 96%;
+    padding: 2%;
+    grid-template-columns: 1fr 50px;
+    grid-gap: 5px;
+}
+
+.item1 {
+    grid-column: 1;
+    font-size: 40px;
+    padding-left: 30px;
+}
+
+.item2 {
+    grid-column: 2;
+    background-color: transparent;
+    font-size: 27px;
+    width: 50px;
+    color: white;
+    border: 3px solid rgb(41, 142, 224);
+    background-color: rgb(63, 163, 245);
+    border-radius: 50%;
+}
+
+.item2:hover {
+    cursor: pointer;
+}
+
+.item3 {
+    display: none;
+}
+
+.item4 {
+    font-size: 20px;
+    grid-column: 1 / span 2;
     text-align: center;
 }
