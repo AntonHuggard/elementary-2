@@ -16,7 +16,7 @@ h1, h3 {
 header { 
     background-color: rgba(0, 0, 0, 0.438); 
     backdrop-filter: blur(20px);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 h3 { margin-top: 5px; }
@@ -30,7 +30,7 @@ h3 { margin-top: 5px; }
     grid-template-rows: 40px;
 }
 
-#element_search_container>input[type=text] {
+#element_search_container  input {
     min-width: 150px;
     max-width: 645px;
     height: 38px;

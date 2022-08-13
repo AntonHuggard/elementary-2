@@ -13,7 +13,7 @@ class SearchBar extends Component {
                     id = "element_io"
                     onKeyUp={e => {
                         this.props.onHandleQuery(e.target.value);
-                      }}
+                    }}
                     />
                 <img src={magnifyingGlass} alt="elementary, Watson" />
             </div>

@@ -1,6 +1,7 @@
 import './App.css';
 import PeriodicTable from './components/ptable';
 import SearchBar from './components/search';
+import SliderMenu from './components/sliders'
 import React, { Component } from 'react';
 
 class App extends Component {
@@ -2643,15 +2644,33 @@ class App extends Component {
 
   }
 
+  handleElectronegativity = () => {
+    console.log('success! EN');
+  }
+  handleMeltingPoint = () => {
+    console.log('success! MP');
+  }
+  handleBoilingPoint = () => {
+    console.log('success! BP');
+  }
+  handleDiscovery = () => {
+    console.log('success! DS');
+  }
+
   render() {
     return (
       <React.Fragment>
         <header>
           <h1>Web Periodic Table</h1>
-          <h3>Searchable elements</h3>
         </header>
         <SearchBar
           onHandleQuery={this.handleQuery}
+        />
+        <SliderMenu 
+          onElectrong={this.handleElectronegativity}
+          onMeltingPt={this.handleMeltingPoint}
+          onBoilingPt={this.handleBoilingPoint}
+          onDiscovery={this.handleDiscovery}
         />
         <PeriodicTable 
           atoms={this.state.atoms}
