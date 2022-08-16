@@ -2490,6 +2490,7 @@ class App extends Component {
   }
   ],
     lowOpacity: "25%",
+    inputOption: "text",
   };
 
   showElements = (show) => {
@@ -2645,16 +2646,32 @@ class App extends Component {
   }
 
   handleElectronegativity = () => {
-    console.log('success! EN');
+    const activate_slider = this.state.inputOption === "en-slider" ? false : true;
+    console.log(activate_slider)
+    const setInput = activate_slider ? "en-slider" : "text";
+    this.setState({ inputOption : setInput });
+    const search_bar = document.getElementById("element_search_container");
+    activate_slider ? search_bar.style.display = 'none' : search_bar.style.display = 'grid';
+    const en_slider = document.getElementById("electronegativity_div");
+    activate_slider ? en_slider.style.display = 'block' : en_slider.style.display = 'none';    
   }
   handleMeltingPoint = () => {
-    console.log('success! MP');
+    console.log(this.state.inputOption)
+    const setInput = this.state.inputOption === "mp-slider" ? "text" : "mp-slider";
+    this.setState({ inputOption : setInput })
+    console.log(this.state.inputOption);
   }
   handleBoilingPoint = () => {
-    console.log('success! BP');
+    console.log(this.state.inputOption)
+    const setInput = this.state.inputOption === "bp-slider" ? "text" : "bp-slider";
+    this.setState({ inputOption : setInput })
+    console.log(this.state.inputOption);
   }
   handleDiscovery = () => {
-    console.log('success! DS');
+    console.log(this.state.inputOption)
+    const setInput = this.state.inputOption === "disc-slider" ? "text" : "disc-slider";
+    this.setState({ inputOption : setInput })
+    console.log(this.state.inputOption);
   }
 
   render() {
@@ -2666,6 +2683,10 @@ class App extends Component {
         <SearchBar
           onHandleQuery={this.handleQuery}
         />
+        <div id = "electronegativity_div" className="slider_div desktop-right-col">
+            <input type="range" min="0" max="400" className="slider" id="EN_slider" />
+            <p id = "EN_display">42</p>
+        </div>
         <SliderMenu 
           onElectrong={this.handleElectronegativity}
           onMeltingPt={this.handleMeltingPoint}

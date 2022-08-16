@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import './science.css';
+import './main.css';
 import './periodic-table.css';
 import './modal.css';
+import './slider.css';
 import './sliderMenu.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
