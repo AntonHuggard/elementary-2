@@ -2646,8 +2646,13 @@ class App extends Component {
   }
 
   handleElectronegativity = () => {
+    const slider = document.getElementById('EN_slider');
+    const slider_display = document.getElementById('EN_display');
+    slider_display.innerText = slider.value;
+  }
+
+  selectElectronegativity = () => {
     const activate_slider = this.state.inputOption === "en-slider" ? false : true;
-    console.log(activate_slider)
     const setInput = activate_slider ? "en-slider" : "text";
     this.setState({ inputOption : setInput });
     const search_bar = document.getElementById("element_search_container");
@@ -2684,11 +2689,18 @@ class App extends Component {
           onHandleQuery={this.handleQuery}
         />
         <div id = "electronegativity_div" className="slider_div desktop-right-col">
-            <input type="range" min="0" max="400" className="slider" id="EN_slider" />
+            <input 
+              type="range" 
+              min="0" 
+              max="400" 
+              className="slider" 
+              id="EN_slider" 
+              onChange={this.handleElectronegativity} 
+              />
             <p id = "EN_display">42</p>
         </div>
         <SliderMenu 
-          onElectrong={this.handleElectronegativity}
+          onElectrong={this.selectElectronegativity}
           onMeltingPt={this.handleMeltingPoint}
           onBoilingPt={this.handleBoilingPoint}
           onDiscovery={this.handleDiscovery}
