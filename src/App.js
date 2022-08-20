@@ -2490,6 +2490,8 @@ class App extends Component {
   }
   ],
     lowOpacity: "25%",
+    dimOpacity: "40%",
+    medOpacity: "75%",
     inputOption: "text",
   };
 
@@ -2647,19 +2649,45 @@ class App extends Component {
 
   handleElectronegativity = () => {
     const slider = document.getElementById('EN_slider');
-    const slider_display = document.getElementById('EN_display');
-    slider_display.innerText = slider.value;
+    const slider_value = slider.value / 100;
+    
+    document.getElementById('EN_display').innerText = slider_value;
+    let htmlAtoms = document.getElementsByClassName('element-tile');
+    
+    for (var i = htmlAtoms.length -1; i >= 0; i--) {
+      let en_value =  parseFloat(htmlAtoms[i].getAttribute('data-electroneg'));
+
+      const inner_upper = en_value + 0.25;
+      const inner_lower = en_value - 0.25;
+      const mediu_upper = en_value + 0.5;
+      const mediu_lower = en_value - 0.5;
+      const outer_upper = en_value + 1;
+      const outer_lower = en_value - 1;
+
+      if ((slider_value > inner_lower) && (slider_value < inner_upper)) {
+        htmlAtoms[i].style.opacity = "100%"; 
+      } else if ((slider_value > mediu_lower) && (slider_value < mediu_upper)) { 
+        htmlAtoms[i].style.opacity = this.state.medOpacity; 
+      } else if ((slider_value > outer_lower) && (slider_value < outer_upper)) { 
+        htmlAtoms[i].style.opacity = this.state.dimOpacity; 
+      } else { 
+        htmlAtoms[i].style.opacity = this.state.lowOpacity 
+      } 
+    }
   }
 
   selectElectronegativity = () => {
     const activate_slider = this.state.inputOption === "en-slider" ? false : true;
     const setInput = activate_slider ? "en-slider" : "text";
+    activate_slider ? this.showElements(false) : this.showElements(true);
     this.setState({ inputOption : setInput });
+
     const search_bar = document.getElementById("element_search_container");
     activate_slider ? search_bar.style.display = 'none' : search_bar.style.display = 'grid';
     const en_slider = document.getElementById("electronegativity_div");
     activate_slider ? en_slider.style.display = 'block' : en_slider.style.display = 'none';    
   }
+
   handleMeltingPoint = () => {
     console.log(this.state.inputOption)
     const setInput = this.state.inputOption === "mp-slider" ? "text" : "mp-slider";
@@ -2697,7 +2725,7 @@ class App extends Component {
               id="EN_slider" 
               onChange={this.handleElectronegativity} 
               />
-            <p id = "EN_display">42</p>
+            <p id = "EN_display">0.42</p>
         </div>
         <SliderMenu 
           onElectrong={this.selectElectronegativity}
