@@ -2504,14 +2504,22 @@ class App extends Component {
 
   getMatchingElements (term, str, attr) {
     let results = [];
-    if (attr === "name") {
-      term = term.replace(/\s/g, "");
-      this.state.atoms.forEach(elmt => { if(elmt[attr].includes(term)) results.push(elmt.symbol) });
-    } else {
-      this.state.atoms.forEach(element => {
-        const data = str? element[attr].toLowerCase() : element[attr]
-        if(data === term) results.push(element.symbol);
-      });
+    switch (attr) {
+      case "name":
+        term = term.replace(/\s/g, "");
+        this.state.atoms.forEach(elmt => { if(elmt[attr].includes(term)) results.push(elmt.symbol) });
+        break;
+      case "symbol":
+        this.state.atoms.forEach(elmt => { 
+          term = term.toUpperCase();
+          if((elmt[attr].toUpperCase().includes(term)) || (elmt[attr] === term)) results.push(elmt.symbol) 
+        });
+        break;
+      default:
+        this.state.atoms.forEach(element => {
+          const data = str? element[attr].toLowerCase() : element[attr]
+          if(data === term) results.push(element.symbol);
+        });
     }
     return results;
   }
@@ -2770,7 +2778,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <header>
-          <h1>Web Periodic Table</h1>
+          <h1>Web periodic table</h1>
         </header>
         <SearchBar
           onHandleQuery={this.handleQuery}
