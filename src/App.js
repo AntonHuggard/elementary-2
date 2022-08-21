@@ -2647,12 +2647,16 @@ class App extends Component {
     document.getElementById("element_search_container").style.display = "none";
     document.getElementById("electronegativity_div").style.display = "none";
     document.getElementById("melting_pt_div").style.display = "none";
+    document.getElementById("boiling_pt_div").style.display = "none";
     switch (exception) {
       case "en-slider":
         document.getElementById("electronegativity_div").style.display = "block";
         break;
       case "mp-slider":
         document.getElementById("melting_pt_div").style.display = "block";
+        break;
+      case "bp-slider":
+        document.getElementById("boiling_pt_div").style.display = "block";
         break;
       default:
         document.getElementById("element_search_container").style.display = "grid";
@@ -2716,6 +2720,34 @@ class App extends Component {
     }
   }
 
+  handleBoilingPoint = () => {
+    const slider = document.getElementById('BP_slider');
+    document.getElementById("BP_display").innerHTML = slider.value + " &#176;C";
+
+    let htmlAtoms = document.getElementsByClassName('element-tile');
+    
+    for (var i = htmlAtoms.length -1; i >= 0; i--) {
+      let melting_pt =  parseFloat(htmlAtoms[i].getAttribute('data-boilingpt'));
+
+      const inner_upper = melting_pt + 100;
+      const inner_lower = melting_pt - 100;
+      const mediu_upper = melting_pt + 500;
+      const mediu_lower = melting_pt - 500;
+      const outer_upper = melting_pt + 1000;
+      const outer_lower = melting_pt - 1000;
+
+      if ((slider.value > inner_lower) && (slider.value < inner_upper)) {
+        htmlAtoms[i].style.opacity = "100%"; 
+      } else if ((slider.value > mediu_lower) && (slider.value < mediu_upper)) { 
+        htmlAtoms[i].style.opacity = this.state.medOpacity; 
+      } else if ((slider.value > outer_lower) && (slider.value < outer_upper)) { 
+        htmlAtoms[i].style.opacity = this.state.dimOpacity; 
+      } else { 
+        htmlAtoms[i].style.opacity = this.state.lowOpacity 
+      } 
+    }
+  }
+
   selectQueryType = (option) => {
     console.log(option);
     const activate_slider = this.state.inputOption === option ? false : true;
@@ -2726,12 +2758,7 @@ class App extends Component {
     else this.hideInputsExcept("search");
   }
 
-  handleBoilingPoint = () => {
-    console.log(this.state.inputOption)
-    const setInput = this.state.inputOption === "bp-slider" ? "text" : "bp-slider";
-    this.setState({ inputOption : setInput })
-    console.log(this.state.inputOption);
-  }
+
   handleDiscovery = () => {
     console.log(this.state.inputOption)
     const setInput = this.state.inputOption === "disc-slider" ? "text" : "disc-slider";
@@ -2748,7 +2775,7 @@ class App extends Component {
         <SearchBar
           onHandleQuery={this.handleQuery}
         />
-        <div id = "electronegativity_div" className="slider_div">
+        <div id="electronegativity_div" className="slider_div">
             <input 
               type="range" 
               min="0" 
@@ -2759,7 +2786,7 @@ class App extends Component {
               />
             <p id = "EN_display">0.42</p>
         </div>
-        <div id = "melting_pt_div" className="slider_div">
+        <div id="melting_pt_div" className="slider_div">
             <input 
               type="range" 
               min="-273" 
@@ -2769,9 +2796,18 @@ class App extends Component {
               onChange={this.handleMeltingPoint} />
             <p id = "MP_display">0 &#176;C</p>
         </div>
+        <div id="boiling_pt_div" className="slider_div">
+            <input 
+              type="range" 
+              min="-273" 
+              max="6600" 
+              className="slider" 
+              id="BP_slider" 
+              onChange={this.handleBoilingPoint} />
+            <p id = "BP_display">0 &#176;C</p>
+        </div>
         <SliderMenu 
           onSelectQuery={this.selectQueryType}
-          onBoilingPt={this.handleBoilingPoint}
           onDiscovery={this.handleDiscovery}
         />
         <PeriodicTable 
