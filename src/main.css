@@ -76,6 +76,7 @@ h3 { margin-top: 5px; }
     padding-bottom: 5px;
     display: grid;
     border-radius: 10px;
+    transition: 0.25s;
 }
 
 .element-tile p {

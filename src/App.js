@@ -2647,6 +2647,22 @@ class App extends Component {
 
   }
 
+  hideInputsExcept(exception) {
+    document.getElementById("element_search_container").style.display = "none";
+    document.getElementById("electronegativity_div").style.display = "none";
+    document.getElementById("melting_pt_div").style.display = "none";
+    switch (exception) {
+      case "en-slider":
+        document.getElementById("electronegativity_div").style.display = "block";
+        break;
+      case "mp-slider":
+        document.getElementById("melting_pt_div").style.display = "block";
+        break;
+      default:
+        document.getElementById("element_search_container").style.display = "grid";
+    }
+  }
+
   handleElectronegativity = () => {
     const slider = document.getElementById('EN_slider');
     const slider_value = slider.value / 100;
@@ -2676,24 +2692,22 @@ class App extends Component {
     }
   }
 
-  selectElectronegativity = () => {
-    const activate_slider = this.state.inputOption === "en-slider" ? false : true;
-    const setInput = activate_slider ? "en-slider" : "text";
+  handleMeltingPoint = () => {
+    const slider = document.getElementById('MP_slider');
+    console.log(slider.value);
+  }
+
+  selectQueryType = (option) => {
+    console.log(option);
+    const activate_slider = this.state.inputOption === option ? false : true;
+    const setInput = activate_slider ? option : "text";
     activate_slider ? this.showElements(false) : this.showElements(true);
     this.setState({ inputOption : setInput });
-
-    const search_bar = document.getElementById("element_search_container");
-    activate_slider ? search_bar.style.display = 'none' : search_bar.style.display = 'grid';
-    const en_slider = document.getElementById("electronegativity_div");
-    activate_slider ? en_slider.style.display = 'block' : en_slider.style.display = 'none';    
+    
+    if (activate_slider) this.hideInputsExcept(option); 
+    else this.hideInputsExcept("search");
   }
 
-  handleMeltingPoint = () => {
-    console.log(this.state.inputOption)
-    const setInput = this.state.inputOption === "mp-slider" ? "text" : "mp-slider";
-    this.setState({ inputOption : setInput })
-    console.log(this.state.inputOption);
-  }
   handleBoilingPoint = () => {
     console.log(this.state.inputOption)
     const setInput = this.state.inputOption === "bp-slider" ? "text" : "bp-slider";
@@ -2716,7 +2730,7 @@ class App extends Component {
         <SearchBar
           onHandleQuery={this.handleQuery}
         />
-        <div id = "electronegativity_div" className="slider_div desktop-right-col">
+        <div id = "electronegativity_div" className="slider_div">
             <input 
               type="range" 
               min="0" 
@@ -2727,9 +2741,19 @@ class App extends Component {
               />
             <p id = "EN_display">0.42</p>
         </div>
+        <div id = "melting_pt_div" className="slider_div">
+            <input 
+              type="range" 
+              min="-273" 
+              max="3800" 
+              className="slider" 
+              id="MP_slider" 
+              onChange={this.handleMeltingPoint} />
+            <p id = "MP_display"></p>
+        </div>
         <SliderMenu 
-          onElectrong={this.selectElectronegativity}
-          onMeltingPt={this.handleMeltingPoint}
+          onElectrong={this.selectQueryType}
+          onMeltingPt={this.selectQueryType}
           onBoilingPt={this.handleBoilingPoint}
           onDiscovery={this.handleDiscovery}
         />
