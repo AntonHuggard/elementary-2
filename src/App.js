@@ -2505,17 +2505,13 @@ class App extends Component {
   getMatchingElements (term, str, attr) {
     let results = [];
     if (attr === "name") {
-      
       term = term.replace(/\s/g, "");
       this.state.atoms.forEach(elmt => { if(elmt[attr].includes(term)) results.push(elmt.symbol) });
-    
     } else {
-
       this.state.atoms.forEach(element => {
         const data = str? element[attr].toLowerCase() : element[attr]
         if(data === term) results.push(element.symbol);
       });
-
     }
     return results;
   }
@@ -2694,7 +2690,30 @@ class App extends Component {
 
   handleMeltingPoint = () => {
     const slider = document.getElementById('MP_slider');
-    console.log(slider.value);
+    document.getElementById("MP_display").innerHTML = slider.value + " &#176;C";
+
+    let htmlAtoms = document.getElementsByClassName('element-tile');
+    
+    for (var i = htmlAtoms.length -1; i >= 0; i--) {
+      let melting_pt =  parseFloat(htmlAtoms[i].getAttribute('data-meltingpt'));
+
+      const inner_upper = melting_pt + 100;
+      const inner_lower = melting_pt - 100;
+      const mediu_upper = melting_pt + 500;
+      const mediu_lower = melting_pt - 500;
+      const outer_upper = melting_pt + 1000;
+      const outer_lower = melting_pt - 1000;
+
+      if ((slider.value > inner_lower) && (slider.value < inner_upper)) {
+        htmlAtoms[i].style.opacity = "100%"; 
+      } else if ((slider.value > mediu_lower) && (slider.value < mediu_upper)) { 
+        htmlAtoms[i].style.opacity = this.state.medOpacity; 
+      } else if ((slider.value > outer_lower) && (slider.value < outer_upper)) { 
+        htmlAtoms[i].style.opacity = this.state.dimOpacity; 
+      } else { 
+        htmlAtoms[i].style.opacity = this.state.lowOpacity 
+      } 
+    }
   }
 
   selectQueryType = (option) => {
@@ -2703,7 +2722,6 @@ class App extends Component {
     const setInput = activate_slider ? option : "text";
     activate_slider ? this.showElements(false) : this.showElements(true);
     this.setState({ inputOption : setInput });
-    
     if (activate_slider) this.hideInputsExcept(option); 
     else this.hideInputsExcept("search");
   }
@@ -2749,11 +2767,10 @@ class App extends Component {
               className="slider" 
               id="MP_slider" 
               onChange={this.handleMeltingPoint} />
-            <p id = "MP_display"></p>
+            <p id = "MP_display">0 &#176;C</p>
         </div>
         <SliderMenu 
-          onElectrong={this.selectQueryType}
-          onMeltingPt={this.selectQueryType}
+          onSelectQuery={this.selectQueryType}
           onBoilingPt={this.handleBoilingPoint}
           onDiscovery={this.handleDiscovery}
         />
