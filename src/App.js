@@ -696,7 +696,7 @@ class App extends Component {
       boiling_point: 615, // sublimation
       electronegativity: 2.18,
       radioactive: false,
-      discovery_date: 815,
+      discovery_date: 0,
       discovery_details: 'before 815 AD by Arabic Alchemists', 
       etymology: 'from the Greek word for <em>stink</em>',
       description: 'Arsenic is a metalloid. It has various allotropes, but only the gray form, which has a metallic appearance, is important to industry. Yellow and black allotropes also available.'
@@ -2656,6 +2656,7 @@ class App extends Component {
     document.getElementById("electronegativity_div").style.display = "none";
     document.getElementById("melting_pt_div").style.display = "none";
     document.getElementById("boiling_pt_div").style.display = "none";
+    document.getElementById("discovery_div").style.display = "none";
     switch (exception) {
       case "en-slider":
         document.getElementById("electronegativity_div").style.display = "block";
@@ -2665,6 +2666,10 @@ class App extends Component {
         break;
       case "bp-slider":
         document.getElementById("boiling_pt_div").style.display = "block";
+        break;
+      case "discovery":
+        document.getElementById("discovery_div").style.display = "block";
+        this.handleDiscovery()
         break;
       default:
         document.getElementById("element_search_container").style.display = "grid";
@@ -2756,6 +2761,19 @@ class App extends Component {
     }
   }
 
+  handleDiscovery = () => {
+    const slider = document.getElementById('discovery_timeline');
+    document.getElementById("date_display").innerHTML = slider.value;
+
+    let htmlAtoms = document.getElementsByClassName('element-tile');
+
+    for (var i = htmlAtoms.length -1; i >= 0; i--) {
+      let discovery_date =  htmlAtoms[i].getAttribute('data-discovery');
+      if (slider.value >= discovery_date) htmlAtoms[i].style.opacity = "100%"; 
+      else htmlAtoms[i].style.opacity = this.state.lowOpacity;
+    }
+  }
+
   selectQueryType = (option) => {
     console.log(option);
     const activate_slider = this.state.inputOption === option ? false : true;
@@ -2764,14 +2782,6 @@ class App extends Component {
     this.setState({ inputOption : setInput });
     if (activate_slider) this.hideInputsExcept(option); 
     else this.hideInputsExcept("search");
-  }
-
-
-  handleDiscovery = () => {
-    console.log(this.state.inputOption)
-    const setInput = this.state.inputOption === "disc-slider" ? "text" : "disc-slider";
-    this.setState({ inputOption : setInput })
-    console.log(this.state.inputOption);
   }
 
   render() {
@@ -2814,9 +2824,18 @@ class App extends Component {
               onChange={this.handleBoilingPoint} />
             <p id = "BP_display">0 &#176;C</p>
         </div>
+        <div id="discovery_div" className="slider_div">
+            <input 
+              type="range" 
+              min="1600" 
+              max="2020" 
+              class="slider" 
+              id="discovery_timeline" 
+              onChange={this.handleDiscovery} />
+            <p id = "date_display">1600</p>
+        </div>
         <SliderMenu 
           onSelectQuery={this.selectQueryType}
-          onDiscovery={this.handleDiscovery}
         />
         <PeriodicTable 
           atoms={this.state.atoms}

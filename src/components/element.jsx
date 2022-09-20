@@ -16,6 +16,7 @@ class Element extends React.Component {
             data-electroneg={this.props.atom.electronegativity}
             data-meltingpt={this.props.atom.melting_point}
             data-boilingpt={this.props.atom.boiling_point}
+            data-discovery={this.props.atom.discovery_date}
             onClick={ () => this.props.onHandleClick(this.props.atom) } >
                 <label>{this.props.atom.atomic_number}</label>
                 <p>{this.props.atom.symbol}</p>
