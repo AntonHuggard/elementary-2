@@ -1,9 +1,16 @@
-body {
-    background-image: url(tactile_noise_dark.png);
+
+html {
+    /* background-image: url(tactile_noise_dark.png); */
     background-image: url(./components/imgs/background-2.jpg);
-    background-position: center;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
     font-family: 'Sen', sans-serif;
 }
+
 
 h1, h3 {
     margin-top: 0;
@@ -14,12 +21,20 @@ h1, h3 {
 }
 
 header { 
-    background-color: rgba(0, 0, 0, 0.438); 
+    background-color: rgba(114, 114, 114, 0.438); 
     backdrop-filter: blur(20px);
     margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
 }
 
-h3 { margin-top: 5px; }
+h3, header span { margin-top: 5px; }
+
+header span {
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 0.025em;
+}
 
 #element_search_container {
     width: 90%;
@@ -120,6 +135,9 @@ h3 { margin-top: 5px; }
     cursor: pointer;
 }
 
+@media only screen and (min-width: 1000px) {
+    #element_search_container {}
+}
 
 @media only screen and (max-width: 1000px) {  
     .periodic-table {

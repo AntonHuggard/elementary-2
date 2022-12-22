@@ -2542,7 +2542,7 @@ class App extends Component {
     const fill_colour = "rgb(223, 0, 0)";
     const text_colour = "white";
     const svg_code = `
-    <svg class = "item3" width="100%" height="300">
+    <svg className= "item3" width="100%" height="300">
         <style>
             .chemical_symbol { 
                 font: bold 90px sans-serif;
@@ -2555,27 +2555,27 @@ class App extends Component {
         </style>
         <rect width = "100%" height = "100%" style = "fill: white" />
         <rect x = "5%" y = "3%" width = "90%" height = "94%" style = "fill: ${fill_colour}" />
-        <text x="75%" y="15%" dominant-baseline="middle" text-anchor="middle" class="number">${atmc_num}</text>
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="chemical_symbol">${elmt_code}</text>
-        <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" class="number">${atmc_mss}</text>
+        <text x="75%" y="15%" dominant-baseline="middle" text-anchor="middle" className="number">${atmc_num}</text>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" className="chemical_symbol">${elmt_code}</text>
+        <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" className="number">${atmc_mss}</text>
     </svg>`;
     const modal_code = 
-    `<div class = "modal_content">
-        <div class = "grid-container">
-                <div class = "item1">${elmnt_nm}</div>
-            <button class = "item2" onclick = "document.getElementById('element-modal').classList.toggle('hide-me')">&times</button>
+    `<div className= "modal_content">
+        <div className= "grid-container">
+                <div className= "item1">${elmnt_nm}</div>
+            <button className= "item2" onclick = "document.getElementById('element-modal').classList.toggle('hide-me')">&times</button>
             ${svg_code}
-            <div class = "item4">
+            <div className= "item4">
                 Atomic Number: ${atmc_num} <br> 
                 Relative Atomic Mass: ${atmc_mss} <br> 
                 Melting Point: ${mp} <br>
                 Boiling Point: ${bp} <br> 
                 Electronegativity: ${elc_ngty} <br>
                 E<sup>-</sup> configuration: x <br>
-                <div class="mobile_radioactive_indictaion">Radioactive: ${radioactivity}</div>
+                <div className="mobile_radioactive_indictaion">Radioactive: ${radioactivity}</div>
                 Discovered: ${discvry} <br> Etymology: ${etym} <br> <br>
             </div>
-            <div class = "item7">
+            <div className= "item7">
                 ${descr}
             </div>
         </div>
@@ -2639,10 +2639,7 @@ class App extends Component {
         query = query.replace('-', '' );
         query = parseInt(query, 10);
         results = this.getMatchingElements(query, false, "group");
-      } else {
-        console.log("Searching by name");
-        results = this.getMatchingElements(query, false, "name");
-      }
+      } else results = this.getMatchingElements(query, false, "name");
 
       results.forEach(symbol => {
         let htmlAtom = document.getElementById(symbol);
@@ -2660,16 +2657,19 @@ class App extends Component {
     switch (exception) {
       case "en-slider":
         document.getElementById("electronegativity_div").style.display = "block";
+        this.handleElectronegativity();
         break;
       case "mp-slider":
         document.getElementById("melting_pt_div").style.display = "block";
+        this.handleMeltingPoint();
         break;
       case "bp-slider":
         document.getElementById("boiling_pt_div").style.display = "block";
+        this.handleBoilingPoint();
         break;
       case "discovery":
         document.getElementById("discovery_div").style.display = "block";
-        this.handleDiscovery()
+        this.handleDiscovery();
         break;
       default:
         document.getElementById("element_search_container").style.display = "grid";
@@ -2789,6 +2789,7 @@ class App extends Component {
       <React.Fragment>
         <header>
           <h1>Web periodic table</h1>
+          <span>settings</span>
         </header>
         <SearchBar
           onHandleQuery={this.handleQuery}
@@ -2829,7 +2830,7 @@ class App extends Component {
               type="range" 
               min="1600" 
               max="2020" 
-              class="slider" 
+              className="slider" 
               id="discovery_timeline" 
               onChange={this.handleDiscovery} />
             <p id = "date_display">1600</p>
