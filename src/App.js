@@ -1,6 +1,10 @@
 import './App.css';
 import PeriodicTable from './components/ptable';
 import SearchBar from './components/search';
+import ElectronegSlider from './components/electroneg-slider'
+import MeltingPtSlider from './components/melting-pt-slider'
+import BoilingPtSlider from './components/boiling-pt-slider'
+import DiscoverySlider from './components/discovery-slider'
 import SliderMenu from './components/sliders'
 import React, { Component } from 'react';
 
@@ -2804,52 +2808,16 @@ class App extends Component {
         <div id="side-menu" className='hide-menu'>
           <button onClick={this.handleCloseMenu}>close</button>
           <button>celsius</button>
-          <button>filter</button>
+          <button>quiz</button>
+          <button>help</button>
         </div>
         <SearchBar
           onHandleQuery={this.handleQuery}
         />
-        <div id="electronegativity_div" className="slider_div">
-            <input 
-              type="range" 
-              min="0" 
-              max="400" 
-              className="slider" 
-              id="EN_slider" 
-              onChange={this.handleElectronegativity} 
-              />
-            <p id = "EN_display">0.42</p>
-        </div>
-        <div id="melting_pt_div" className="slider_div">
-            <input 
-              type="range" 
-              min="-273" 
-              max="3800" 
-              className="slider" 
-              id="MP_slider" 
-              onChange={this.handleMeltingPoint} />
-            <p id = "MP_display">0 &#176;C</p>
-        </div>
-        <div id="boiling_pt_div" className="slider_div">
-            <input 
-              type="range" 
-              min="-273" 
-              max="6600" 
-              className="slider" 
-              id="BP_slider" 
-              onChange={this.handleBoilingPoint} />
-            <p id = "BP_display">0 &#176;C</p>
-        </div>
-        <div id="discovery_div" className="slider_div">
-            <input 
-              type="range" 
-              min="1600" 
-              max="2020" 
-              className="slider" 
-              id="discovery_timeline" 
-              onChange={this.handleDiscovery} />
-            <p id = "date_display">1600</p>
-        </div>
+        <ElectronegSlider onHandleElectronegativity={this.handleElectronegativity} />
+        <MeltingPtSlider onHandleMeltingPoint={this.handleMeltingPoint} />        
+        <BoilingPtSlider onHandleBoilingPoint={this.handleBoilingPoint} />
+        <DiscoverySlider onHandleDiscovery={this.handleDiscovery} />
         <SliderMenu 
           onSelectQuery={this.selectQueryType}
         />
