@@ -2784,13 +2784,28 @@ class App extends Component {
     else this.hideInputsExcept("search");
   }
 
+  handleCloseMenu = () => {
+    const side_menu = document.getElementById('side-menu');
+    side_menu.classList.add('hide-menu');
+  }
+
+  handleShowMenu = () => {
+    const side_menu = document.getElementById('side-menu');
+    side_menu.classList.remove('hide-menu');
+  }
+
   render() {
     return (
       <React.Fragment>
         <header>
           <h1>Web periodic table</h1>
-          <span>settings</span>
+          <span id='settings-btn' onClick={this.handleShowMenu}>settings</span>
         </header>
+        <div id="side-menu" className='hide-menu'>
+          <button onClick={this.handleCloseMenu}>close</button>
+          <button>celsius</button>
+          <button>filter</button>
+        </div>
         <SearchBar
           onHandleQuery={this.handleQuery}
         />

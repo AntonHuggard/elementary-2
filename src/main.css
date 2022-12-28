@@ -9,6 +9,7 @@ html {
 }
 body {
     font-family: 'Sen', sans-serif;
+    overflow-x: hidden !important;
 }
 
 
@@ -130,9 +131,31 @@ header span {
 .unknown                    { background-color: rgb(65, 65, 65); }
 .unknown:hover              { color: rgb(34, 34, 34); }
 
-.element-tile:hover, .element-tile label:hover  { 
+.element-tile:hover  { 
     background-color: white; 
     cursor: pointer;
+}
+
+.element-tile label:hover, #settings-btn:hover { cursor: pointer; }
+
+#side-menu {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    margin-left: calc(100vw - 500px);
+    width: 500px;
+    background-color: #d60707;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    overflow: hidden !important;
+    transition: 0.3s;
+}
+
+.hide-menu {
+    height: 100%;
+    margin-left: 100vw !important;
+    overflow: hidden;
 }
 
 @media only screen and (min-width: 1000px) {
