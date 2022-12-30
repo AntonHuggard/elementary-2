@@ -1,0 +1,31 @@
+#slider-menu {
+    width: 90%;
+    max-width: 700px;
+    display: grid;
+    margin: auto;
+    margin-top: 70px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+}
+
+#slider-menu button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 1.1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 500;
+}
+
+#slider-menu button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#slider-menu button:active {
+    transform: translateY(2px);
+}

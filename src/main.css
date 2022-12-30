@@ -1,0 +1,250 @@
+
+html {
+    /* background-image: url(tactile_noise_dark.png); */
+    background-image: url(./components/imgs/background-2.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    font-family: 'Sen', sans-serif;
+    overflow-x: hidden !important;
+}
+
+
+h1, h3 {
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+header { 
+    background-color: rgba(46, 46, 46, 0.438); 
+    backdrop-filter: blur(20px);
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 100px;
+}
+
+h3, header span { margin-top: 5px; }
+
+header span {
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 0.025em;
+}
+
+.hide-me {
+    display: none !important;
+}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+ }
+
+#element_search_wrapper {
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    display: block;
+    margin: auto;
+}
+
+#element_search_container {
+    width: 90%;
+    max-width: 500px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 55px auto 100px;
+    grid-template-rows: 40px;
+}
+
+#element_search_container img {
+    grid-column: 1;
+    height: 30px;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 10px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#element_search_container img.expanded {
+    border-radius: 20px 0px 0px 0px;
+}
+
+#element_search_container input {
+    min-width: 150px;
+    max-width: 645px;
+    height: 38px;
+    grid-column: 2;
+    border: none;
+    padding-left: 5px;
+    outline: none;
+    font-size: 18px;
+}
+
+#element_search_container span {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 7px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+#element_search_container span:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+#element_search_container span.expanded {
+    border-radius: 0px 20px 0px 0px;
+}
+
+#filter-accordian {
+    grid-column: 1 / span 3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    padding-bottom: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+#filter-accordian button {
+    font-family: 'Sen', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    background-color: white;
+    border: 3px solid white;
+}
+
+#filter-accordian button:hover {
+    background-color: #45aafc;
+}
+
+.periodic-table-wrapper {
+    display: block;
+    margin: auto;
+}
+
+.periodic-table {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(18, 50px);
+    width: max-content;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.element-tile {
+    background-color: rgb(189, 189, 189);
+    color: white;
+    border: 2px solid white;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    display: grid;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.element-tile p {
+    font-size: 1.35em;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.element-tile label {
+    width: 100%;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.noble-gas                  { background-color: #5900b3; }
+.noble-gas:hover            { color: #5900b3; }
+.transition-metal           { background-color: rgb(47, 136, 109); }
+.transition-metal:hover     { color: rgb(10, 48, 32); }
+.alkali-metal               { background-color: rgb(219, 102, 6); }
+.alkali-metal:hover         { color: rgb(201, 0, 0); }
+.alkaline-earth-metal       { background-color: rgb(223, 182, 0); }
+.alkaline-earth-metal:hover { color: rgb(110, 37, 9); }
+.metaux_pauvres             { background-color: rgb(5, 148, 5); }
+.metaux_pauvres:hover       { color: rgb(0, 133, 0); }
+.metalloid                  { background-color: rgb(0, 179, 90); }
+.metalloid:hover            { color: rgb(0, 121, 64); }
+.non-metal                  { background-color: #d60707; }
+.non-metal:hover            { color: #ad0000; }
+.noble_gas                  { background-color: rgb(99, 0, 124); }
+.noble_gas:hover            { color: rgb(126, 0, 98); }
+.lanthanoid                 { background-color: rgb(66, 154, 255); margin-top: 15px; }
+.lanthanoid:hover           { color: rgb(25, 117, 129); }
+.actinoid                   { background-color: #1a0077; }
+.actinoid:hover             { color: #000099; }
+.unknown                    { background-color: rgb(65, 65, 65); }
+.unknown:hover              { color: rgb(34, 34, 34); }
+
+.element-tile:hover  { 
+    background-color: white; 
+    cursor: pointer;
+}
+
+.element-tile label:hover, #settings-btn:hover { cursor: pointer; }
+
+#side-menu {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    margin-left: calc(100vw - 500px);
+    width: 500px;
+    background-color: #d60707;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    overflow: hidden !important;
+    transition: 0.3s;
+}
+
+.hide-menu {
+    height: 100%;
+    margin-left: 100vw !important;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+    #element_search_container {}
+}
+
+@media only screen and (max-width: 1000px) {  
+    .periodic-table {
+        column-gap: 3px;
+        row-gap: 3px;
+        grid-template-columns: repeat(18, 40px);
+    }
+    .element-tile p {
+        font-size: 1em;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .element-tile label {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .periodic-table {
+        grid-template-columns: repeat(8, 50px);
+    }
+}
