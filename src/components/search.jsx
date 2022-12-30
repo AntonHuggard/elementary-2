@@ -29,17 +29,17 @@ class SearchBar extends Component {
                         >filter &#8595;</span>
                     <div id='filter-accordian' className='hide-me'>
                         <button onClick={e => {this.props.onSelectFilter('s-block')}}>s-block</button>
-                        <button >p-block</button>
-                        <button >d-block</button>
-                        <button >f-block</button>
-                        <button >radioactive</button>
-                        <button >solid</button>
-                        <button >liquid</button>
-                        <button >gas</button>
-                        <button >metal</button>
-                        <button >metalloid</button>
-                        <button >non-metal</button>
-                        <button >synthetic</button>
+                        <button onClick={e => {this.props.onSelectFilter('p-block')}}>p-block</button>
+                        <button onClick={e => {this.props.onSelectFilter('d-block')}}>d-block</button>
+                        <button onClick={e => {this.props.onSelectFilter('f-block')}}>f-block</button>
+                        <button onClick={e => {this.props.onSelectFilter('radioactive')}}>radioactive</button>
+                        <button onClick={e => {this.props.onSelectFilter('solid')}}>solid</button>
+                        <button onClick={e => {this.props.onSelectFilter('liquid')}}>liquid</button>
+                        <button onClick={e => {this.props.onSelectFilter('gas')}}>gas</button>
+                        <button onClick={e => {this.props.onSelectFilter('metal')}}>metal</button>
+                        <button onClick={e => {this.props.onSelectFilter('metalloid')}}>metalloid</button>
+                        <button onClick={e => {this.props.onSelectFilter('nonmetal')}}>non-metal</button>
+                        <button onClick={e => {this.props.onSelectFilter('synthetic')}}>synthetic</button>
                     </div>
                 </div>
         );

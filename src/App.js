@@ -2596,11 +2596,26 @@ class App extends Component {
 
       if (filter.match(/[spdf]-block\s?$/i)) { 
         const block = filter[0];
-        console.log(block);
         results = this.getMatchingElements(block, true, "block");
-      } //else if(query.match(/^\d{1,3}\s?$/i)) {
-      //   results = this.getMatchingElements(parseInt(query, 10), false, "atomic_number");
-      // }
+      } else if(filter==='radioactive') {
+        results = this.getMatchingElements(true, false, "radioactive");
+      } else if(filter==='gas') {
+        results = this.getMatchingElements("gas", true, "state_at_standard_conditions");
+      } else if(filter==='liquid') {
+        results = this.getMatchingElements("liquid", true, "state_at_standard_conditions");
+      } else if(filter==='solid') {
+        results = this.getMatchingElements("solid", true, "state_at_standard_conditions");
+      } else if(filter==='nonmetal') {
+        results = this.getMatchingElements("nonmetal", true, "metalness");
+      } else if(filter==='metal') {
+        results = this.getMatchingElements("metal", true, "metalness");
+      } else if(filter==='metalloid') {
+        results = this.getMatchingElements("metalloid", true, "metalness");
+      } else if(filter==='synthetic') {
+        this.state.atoms.forEach(elmt => { 
+          if(elmt.atomic_number >= 95) results.push(elmt.symbol) 
+        });
+      }
 
       results.forEach(symbol => {
         let htmlAtom = document.getElementById(symbol);
