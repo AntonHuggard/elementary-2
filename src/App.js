@@ -2638,8 +2638,6 @@ class App extends Component {
       this.showElements(false);
       let results = [];
 
-      console.log(filter);
-
       if (filter.match(/[spdf]-block\s?$/i)) { 
         const block = filter[0];
         results = this.getMatchingElements(block, true, "block");
@@ -2661,6 +2659,8 @@ class App extends Component {
         this.state.atoms.forEach(elmt => { 
           if(elmt.atomic_number >= 95) results.push(elmt.symbol) 
         });
+      } else {
+        this.state.atoms.forEach(elmt => { results.push(elmt.symbol) });
       }
 
       results.forEach(symbol => {
@@ -2893,7 +2893,7 @@ class App extends Component {
       <React.Fragment>
         
         <header>
-          <h1>Web periodic table</h1>
+          <h1>Searchable periodic table</h1>
           <span 
             id='settings-btn' 
             onClick={this.handleShowMenu} 

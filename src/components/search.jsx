@@ -28,6 +28,7 @@ class SearchBar extends Component {
                         onClick={this.props.onHandleFilter}
                         >filter &#8595;</span>
                     <div id='filter-accordian' className='hide-me'>
+                        <button onClick={e => {this.props.onSelectFilter('clear')}}>no filter</button>
                         <button onClick={e => {this.props.onSelectFilter('s-block')}}>s-block</button>
                         <button onClick={e => {this.props.onSelectFilter('p-block')}}>p-block</button>
                         <button onClick={e => {this.props.onSelectFilter('d-block')}}>d-block</button>
