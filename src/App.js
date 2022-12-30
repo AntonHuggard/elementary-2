@@ -2588,6 +2588,27 @@ class App extends Component {
 
   }
 
+  handleFilter = (filter) => {
+      this.showElements(false);
+      let results = [];
+
+      console.log(filter);
+
+      if (filter.match(/[spdf]-block\s?$/i)) { 
+        const block = filter[0];
+        console.log(block);
+        results = this.getMatchingElements(block, true, "block");
+      } //else if(query.match(/^\d{1,3}\s?$/i)) {
+      //   results = this.getMatchingElements(parseInt(query, 10), false, "atomic_number");
+      // }
+
+      results.forEach(symbol => {
+        let htmlAtom = document.getElementById(symbol);
+        htmlAtom.style.opacity = "100%";
+      });
+
+  }
+
   handleQuery = (query) => {
       query === "" ? this.showElements(true): this.showElements(false);
       let results = [];
@@ -2644,7 +2665,6 @@ class App extends Component {
         query = parseInt(query, 10);
         results = this.getMatchingElements(query, false, "group");
       } else results = this.getMatchingElements(query, false, "name");
-
       results.forEach(symbol => {
         let htmlAtom = document.getElementById(symbol);
         htmlAtom.style.opacity = "100%";
@@ -2788,6 +2808,15 @@ class App extends Component {
     else this.hideInputsExcept("search");
   }
 
+  handleFilterToggle = () => {
+    const filter_btn = document.getElementById('filter-menu');
+    const magnifying_glass = document.getElementById('query-img');
+    const filter_menu = document.getElementById('filter-accordian');
+    filter_btn.classList.toggle('expanded');
+    magnifying_glass.classList.toggle('expanded');
+    filter_menu.classList.toggle('hide-me');
+  }
+
   handleCloseMenu = () => {
     const side_menu = document.getElementById('side-menu');
     side_menu.classList.add('hide-menu');
@@ -2801,31 +2830,45 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
+        
         <header>
           <h1>Web periodic table</h1>
-          <span id='settings-btn' onClick={this.handleShowMenu}>settings</span>
+          <span 
+            id='settings-btn' 
+            onClick={this.handleShowMenu} 
+            className='unselectable'
+            >settings</span>
         </header>
+        
         <div id="side-menu" className='hide-menu'>
           <button onClick={this.handleCloseMenu}>close</button>
           <button>celsius</button>
           <button>quiz</button>
           <button>help</button>
         </div>
-        <SearchBar
-          onHandleQuery={this.handleQuery}
-        />
-        <ElectronegSlider onHandleElectronegativity={this.handleElectronegativity} />
-        <MeltingPtSlider onHandleMeltingPoint={this.handleMeltingPoint} />        
-        <BoilingPtSlider onHandleBoilingPoint={this.handleBoilingPoint} />
-        <DiscoverySlider onHandleDiscovery={this.handleDiscovery} />
+        
+        <div id='element_search_wrapper'>
+          <SearchBar
+            onHandleQuery={this.handleQuery}
+            onHandleFilter={this.handleFilterToggle}
+            onSelectFilter={this.handleFilter}
+          />
+          <ElectronegSlider onHandleElectronegativity={this.handleElectronegativity} />
+          <MeltingPtSlider onHandleMeltingPoint={this.handleMeltingPoint} />        
+          <BoilingPtSlider onHandleBoilingPoint={this.handleBoilingPoint} />
+          <DiscoverySlider onHandleDiscovery={this.handleDiscovery} />
+        </div>
         <SliderMenu 
           onSelectQuery={this.selectQueryType}
         />
+
         <PeriodicTable 
           atoms={this.state.atoms}
           onHandleElementClick={this.handleElementClick}
         />
+        
         <div id="element-modal" className="hide-me"></div>
+
       </React.Fragment>
     );
   }

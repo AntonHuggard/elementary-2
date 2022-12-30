@@ -3,7 +3,7 @@
     max-width: 700px;
     display: grid;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 70px;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 5px;
 }
