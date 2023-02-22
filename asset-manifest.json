@@ -1,23 +1,16 @@
 {
-  "files": {
-    "main.css": "/elementary/static/css/main.4faa0021.chunk.css",
-    "main.js": "/elementary/static/js/main.056d014e.chunk.js",
-    "main.js.map": "/elementary/static/js/main.056d014e.chunk.js.map",
-    "runtime-main.js": "/elementary/static/js/runtime-main.b9bdc8e9.js",
-    "runtime-main.js.map": "/elementary/static/js/runtime-main.b9bdc8e9.js.map",
-    "static/js/2.8b3ca286.chunk.js": "/elementary/static/js/2.8b3ca286.chunk.js",
-    "static/js/2.8b3ca286.chunk.js.map": "/elementary/static/js/2.8b3ca286.chunk.js.map",
-    "static/js/3.411982c3.chunk.js": "/elementary/static/js/3.411982c3.chunk.js",
-    "static/js/3.411982c3.chunk.js.map": "/elementary/static/js/3.411982c3.chunk.js.map",
-    "index.html": "/elementary/index.html",
-    "static/css/main.4faa0021.chunk.css.map": "/elementary/static/css/main.4faa0021.chunk.css.map",
-    "static/js/2.8b3ca286.chunk.js.LICENSE.txt": "/elementary/static/js/2.8b3ca286.chunk.js.LICENSE.txt",
-    "static/media/main.css": "/elementary/static/media/background-2.9b955609.jpg"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.b9bdc8e9.js",
-    "static/js/2.8b3ca286.chunk.js",
-    "static/css/main.4faa0021.chunk.css",
-    "static/js/main.056d014e.chunk.js"
-  ]
+  "main.css": "/static/css/main.8e91d95d.chunk.css",
+  "main.js": "/static/js/main.ff5db373.chunk.js",
+  "main.js.map": "/static/js/main.ff5db373.chunk.js.map",
+  "static/js/1.f09d6da4.chunk.js": "/static/js/1.f09d6da4.chunk.js",
+  "static/js/1.f09d6da4.chunk.js.map": "/static/js/1.f09d6da4.chunk.js.map",
+  "static/js/2.1b8b8b4b.chunk.js": "/static/js/2.1b8b8b4b.chunk.js",
+  "static/js/2.1b8b8b4b.chunk.js.map": "/static/js/2.1b8b8b4b.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.0e85d9ea.js",
+  "runtime~main.js.map": "/static/js/runtime~main.0e85d9ea.js.map",
+  "static/media/main.css": "/static/media/background-2.99d64bef.jpg",
+  "static/css/main.8e91d95d.chunk.css.map": "/static/css/main.8e91d95d.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.a4d343def77e23c5c91446509bc78ea2.js": "/precache-manifest.a4d343def77e23c5c91446509bc78ea2.js",
+  "service-worker.js": "/service-worker.js"
 }
