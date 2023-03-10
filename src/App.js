@@ -2497,6 +2497,7 @@ class App extends Component {
     dimOpacity: "40%",
     medOpacity: "75%",
     inputOption: "text",
+    units: "celsius",
   };
 
   showElements = (show) => {
@@ -2888,6 +2889,21 @@ class App extends Component {
     side_menu.classList.remove('hide-menu');
   }
 
+  handleToggleUnits = () => {
+    console.log(this.state.units);
+    switch(this.state.units) {
+      case "celsius": 
+        this.setState({ units : "fahrenheit" });
+        break;
+      case "fahrenheit": 
+        this.setState({ units : "kelvin" });
+        break;
+      default:
+        this.setState({ units : "celsius" });
+    }
+    
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -2902,8 +2918,8 @@ class App extends Component {
         </header>
         
         <div id="side-menu" className='hide-menu'>
-          <button onClick={this.handleCloseMenu}>close</button>
-          <button>celsius</button>
+          <button onClick={this.handleCloseMenu} id='close-side-menu'>close settings</button>
+          <button onClick={this.handleToggleUnits}>{this.state.units}</button>
           <button>quiz</button>
           <button>help</button>
         </div>

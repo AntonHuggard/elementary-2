@@ -209,12 +209,29 @@ header span {
     top: 0;
     margin-left: calc(100vw - 500px);
     width: 500px;
-    background-color: #d60707;
+    background-color: rgba(46, 46, 46, 0.534);
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 38px 1fr 1fr 1fr;
+    row-gap: 10px;
     height: 100%;
     overflow: hidden !important;
     transition: 0.3s;
+}
+
+#side-menu button {
+    font-family: 'Sen', sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 0.025em;
+    color: white;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: none;
+}
+
+#side-menu button:hover {
+    background-color: rgba(46, 46, 46, 0.699); 
+    cursor: pointer;
 }
 
 .hide-menu {
