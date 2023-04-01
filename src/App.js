@@ -2549,8 +2549,8 @@ class App extends Component {
     const elmt_code = atom.symbol;
     const atmc_mss = atom.atomic_mass;
     const atmc_num = atom.atomic_number;
-    const mp = atom.melting_point;
-    const bp = atom.boiling_point;
+    let mp = atom.melting_point;
+    let bp = atom.boiling_point;
     const elc_ngty = atom.electronegativity;
     const radioactivity = atom.radioactive;
     const discvry = atom.discovery_details;
@@ -2591,6 +2591,20 @@ class App extends Component {
           break;
       default:
           fill_colour = transition_metal_colour;
+    }
+    if (mp === 9999) {
+        mp = "<em>je ne sais pas</em>"
+      } else {
+          if (this.state.units === "fahrenheit") mp = this.convertTemp(mp) + " &#176;F";
+          else if (this.state.units === "kelvin") mp = this.convertTemp(mp) + " K";
+          else mp = mp + " &#176;C";
+      }
+      if (bp === 9999) {
+          bp = "<em>je ne sais pas</em>"
+      } else {
+          if (this.state.units === "fahrenheit") bp = this.convertTemp(bp, 2) + " &#176;F";
+          else if (this.state.units === "kelvin") bp = this.convertTemp(bp, 2) + " K";
+          else bp = bp + " &#176;C";
     }
     const svg_code = `
     <svg class= "item3" width="100%" height="300">
@@ -2793,7 +2807,15 @@ class App extends Component {
 
   handleMeltingPoint = () => {
     const slider = document.getElementById('MP_slider');
-    document.getElementById("MP_display").innerHTML = slider.value + " &#176;C";
+
+    let mp_input = slider.value;
+    let display = '';
+
+    if (this.state.units === "fahrenheit") display = this.convertTemp(mp_input, 0) + " &#176;F";
+    else if (this.state.units === "kelvin") display = this.convertTemp(Number(mp_input), 0) + " K";
+    else display = mp_input + " &#176;C";
+    
+    document.getElementById("MP_display").innerHTML = display;
 
     let htmlAtoms = document.getElementsByClassName('element-tile');
     
@@ -2821,7 +2843,15 @@ class App extends Component {
 
   handleBoilingPoint = () => {
     const slider = document.getElementById('BP_slider');
-    document.getElementById("BP_display").innerHTML = slider.value + " &#176;C";
+
+    let bp_input = slider.value;
+    let display = '';
+
+    if (this.state.units === "fahrenheit") display = this.convertTemp(bp_input, 0) + " &#176;F";
+    else if (this.state.units === "kelvin") display = this.convertTemp(Number(bp_input), 0) + " K";
+    else display = bp_input + " &#176;C";
+    
+    document.getElementById("BP_display").innerHTML = display;
 
     let htmlAtoms = document.getElementsByClassName('element-tile');
     
@@ -2903,6 +2933,17 @@ class App extends Component {
     }
     
   }
+
+  convertTemp(value, r) {
+    switch (this.state.units) {
+        case "fahrenheit":
+            return ((5/9)*(value - 32)).toFixed(r);
+        case "kelvin":
+            return (value + 273.15).toFixed(0);
+        default:
+          return value;
+    }
+}
 
   render() {
     return (
