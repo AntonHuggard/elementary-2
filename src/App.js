@@ -6,6 +6,7 @@ import MeltingPtSlider from './components/melting-pt-slider'
 import BoilingPtSlider from './components/boiling-pt-slider'
 import DiscoverySlider from './components/discovery-slider'
 import SliderMenu from './components/sliders'
+import atoms from './atoms.json'
 import React, { Component } from 'react';
 
 class App extends Component {
