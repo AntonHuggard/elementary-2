@@ -7,7 +7,7 @@ class PeriodicTable extends Component {
         return ( 
             <div className="periodic-table-wrapper">
                 <div className="periodic-table">
-                    {this.props.atoms.map(atom => (
+                    {this.props.atoms.atoms.map(atom => (
                         <Element 
                             key={atom.id} 
                             atom={atom}
