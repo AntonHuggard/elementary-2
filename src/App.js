@@ -207,6 +207,14 @@ class App extends Component {
 
   handleQuery = (query) => {
       query === "" ? this.showElements(true): this.showElements(false);
+
+      if (query === "") {
+        console.log("show default mobile view");
+      } else {
+        console.log("show special view");
+      }
+
+
       let results = [];
       query = query.toLowerCase();
 

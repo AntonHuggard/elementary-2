@@ -260,8 +260,14 @@ header span {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 780px) {
     .periodic-table {
-        grid-template-columns: repeat(8, 50px);
+        margin-top: 20px;
+        grid-template-columns: repeat(9, 50px);
+    }
+    .element-tile p {
+        font-size: 1.5em;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }

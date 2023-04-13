@@ -6,7 +6,7 @@ class PeriodicTable extends Component {
     render() {
         return ( 
             <div className="periodic-table-wrapper">
-                <div className="periodic-table">
+                <div className="periodic-table default-view">
                     {this.props.atoms.atoms.map(atom => (
                         <Element 
                             key={atom.id} 

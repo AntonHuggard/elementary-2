@@ -116,3 +116,349 @@
 #Lv     { grid-column: 16;    grid-row: 7; }
 #Ts     { grid-column: 17;    grid-row: 7; }
 #Og     { grid-column: 18;    grid-row: 7; }
+
+
+@media only screen and (max-width: 780px) {
+    #H      { display: none !important; }
+    #He     { display: none !important; }
+    #Li     { display: none !important; }
+    #Be     { display: none !important; }
+    #B      { display: none !important; }
+    #C      { display: none !important; }
+    #N      { display: none !important; }
+    #O      { display: none !important; }
+    #F      { display: none !important; }
+    #Ne     { display: none !important; }
+    #Na     { display: none !important; } 
+    #Mg     { display: none !important; } 
+    #Al     { display: none !important; }
+    #Si     { display: none !important; }
+    #P      { display: none !important; }
+    #S      { display: none !important; }
+    #Cl     { display: none !important; }
+    #Ar     { display: none !important; }
+    #K      { display: none !important; } 
+    #Ca     { display: none !important; } 
+    #Sc     { display: none !important; } 
+    #Ti     { display: none !important; } 
+    #V      { display: none !important; } 
+    #Cr     { display: none !important; } 
+    #Mn     { display: none !important; } 
+    #Fe     { display: none !important; }
+    #Co     { display: none !important; }
+    #Ni     { display: none !important; }
+    #Cu     { display: none !important; }
+    #Zn     { display: none !important; }
+    #Ga     { display: none !important; }
+    #Ge     { display: none !important; }
+    #As     { display: none !important; }
+    #Se     { display: none !important; }
+    #Br     { display: none !important; }
+    #Kr     { display: none !important; }
+    #Rb     { display: none !important; }
+    #Sr     { display: none !important; }
+    #Y      { display: none !important; }
+    #Zr     { display: none !important; }
+    #Nb     { display: none !important; }
+    #Mo     { display: none !important; }
+    #Tc     { display: none !important; }
+    #Ru     { display: none !important; }
+    #Rh     { display: none !important; }
+    #Pd     { display: none !important; }
+    #Ag     { display: none !important; }
+    #Cd     { display: none !important; }
+    #In     { display: none !important; }
+    #Sn     { display: none !important; }
+    #Sb     { display: none !important; }
+    #Te     { display: none !important; }
+    #I      { display: none !important; }
+    #Xe     { display: none !important; }
+    #Cs     { display: none !important; }
+    #Ba     { display: none !important; }
+    #La     { display: none !important; }
+    #Ce     { display: none !important; }
+    #Pr     { display: none !important; }
+    #Nd     { display: none !important; }
+    #Pm     { display: none !important; }
+    #Sm     { display: none !important; }
+    #Eu     { display: none !important; }
+    #Gd     { display: none !important; }
+    #Tb     { display: none !important; }
+    #Dy     { display: none !important; }
+    #Ho     { display: none !important; }
+    #Er     { display: none !important; }
+    #Tm     { display: none !important; }
+    #Yb     { display: none !important; }
+    #Lu     { display: none !important; }
+    #Hf     { display: none !important; }
+    #Ta     { display: none !important; }
+    #W      { display: none !important; }
+    #Re     { display: none !important; }
+    #Os     { display: none !important; }
+    #Ir     { display: none !important; }
+    #Pt     { display: none !important; }
+    #Au     { display: none !important; }
+    #Hg     { display: none !important; }
+    #Tl     { display: none !important; }
+    #Pb     { display: none !important; }
+    #Bi     { display: none !important; }
+    #Po     { display: none !important; }
+    #At     { display: none !important; }
+    #Rn     { display: none !important; }
+    #Fr     { display: none !important; }
+    #Ra     { display: none !important; }
+    #Ac     { display: none !important; }
+    #Th     { display: none !important; }
+    #Pa     { display: none !important; }
+    #U      { display: none !important; }
+    #Np     { display: none !important; }
+    #Pu     { display: none !important; }
+    #Am     { display: none !important; }
+    #Cm     { display: none !important; }
+    #Bk     { display: none !important; }
+    #Cf     { display: none !important; }
+    #Es     { display: none !important; }
+    #Fm     { display: none !important; }
+    #Md     { display: none !important; }
+    #No     { display: none !important; }
+    #Lr     { display: none !important; }
+    #Rf     { display: none !important; }
+    #Db     { display: none !important; }
+    #Sg     { display: none !important; }
+    #Bh     { display: none !important; }
+    #Hs     { display: none !important; }
+    #Mt     { display: none !important; }
+    #Ds     { display: none !important; }
+    #Rg     { display: none !important; }
+    #Cn     { display: none !important; }
+    #Nh     { display: none !important; }
+    #Fl     { display: none !important; }
+    #Mc     { display: none !important; }
+    #Lv     { display: none !important; }
+    #Ts     { display: none !important; }
+    #Og     { display: none !important; }
+    .default-view #H { 
+        display: grid !important; 
+        grid-column:  1;    grid-row: 1;
+    }
+    .default-view #He { 
+        display: grid !important; 
+        grid-column:  9;    grid-row: 1;
+    }
+    .default-view #Li { 
+        display: grid !important; 
+        grid-column:  1;    grid-row: 2;
+    }
+    .default-view #Be { 
+        display: grid !important; 
+        grid-column:  2;    grid-row: 2;
+    }
+    .default-view #B { 
+        display: grid !important; 
+        grid-column:  4;    grid-row: 2;
+    }
+    .default-view #C { 
+        display: grid !important; 
+        grid-column:  5;    grid-row: 2;
+    }
+    .default-view #N { 
+        display: grid !important; 
+        grid-column:  6;    grid-row: 2;
+    }
+    .default-view #O { 
+        display: grid !important; 
+        grid-column:  7;    grid-row: 2;
+    }
+    .default-view #F { 
+        display: grid !important; 
+        grid-column:  8;    grid-row: 2;
+    }
+    .default-view #Ne { 
+        display: grid !important; 
+        grid-column:  9;    grid-row: 2;
+    }
+    .default-view #Na { 
+        display: grid !important; 
+        grid-column:  1;    grid-row: 3;
+    }
+    .default-view #Mg { 
+        display: grid !important; 
+        grid-column:  2;    grid-row: 3;
+    }
+    .default-view #Al { 
+        display: grid !important; 
+        grid-column:  4;    grid-row: 3;
+    }
+    .default-view #Si { 
+        display: grid !important; 
+        grid-column:  5;    grid-row: 3;
+    }
+    .default-view #P { 
+        display: grid !important; 
+        grid-column:  6;    grid-row: 3;
+    }
+    .default-view #S { 
+        display: grid !important; 
+        grid-column:  7;    grid-row: 3;
+    }
+    .default-view #Cl { 
+        display: grid !important; 
+        grid-column:  8;    grid-row: 3;
+    }
+    .default-view #Ar { 
+        display: grid !important; 
+        grid-column:  9;    grid-row: 3;
+    }
+    .default-view #K { 
+        display: grid !important; 
+        grid-column:  1;    grid-row: 4;
+    }
+    .default-view #Ca { 
+        display: grid !important; 
+        grid-column:  2;    grid-row: 4;
+    }
+    .default-view #Sc { 
+        display: grid !important; 
+        grid-column:  3;    grid-row: 4;
+    }
+    .default-view #Ga { 
+        display: grid !important; 
+        grid-column:  4;    grid-row: 4;
+    }
+    .default-view #Ge { 
+        display: grid !important; 
+        grid-column:  5;    grid-row: 4;
+    }
+    .default-view #As { 
+        display: grid !important; 
+        grid-column:  6;    grid-row: 4;
+    }
+    .default-view #Se { 
+        display: grid !important; 
+        grid-column:  7;    grid-row: 4;
+    }
+    .default-view #Br { 
+        display: grid !important; 
+        grid-column:  8;    grid-row: 4;
+    }
+    .default-view #Kr { 
+        display: grid !important; 
+        grid-column:  9;    grid-row: 4;
+    }
+    .default-view #Rb { 
+        display: grid !important; 
+        grid-column:  1;    grid-row: 5;
+    }
+    .default-view #Sr { 
+        display: grid !important; 
+        grid-column:  2;    grid-row: 5;
+    }
+    .default-view #Y { 
+        display: grid !important; 
+        grid-column:  3;    grid-row: 5;
+    }
+    .default-view #In { 
+        display: grid !important; 
+        grid-column:  4;    grid-row: 5;
+    }
+    .default-view #Sn { 
+        display: grid !important; 
+        grid-column:  5;    grid-row: 5;
+    }
+    .default-view #Sb { 
+        display: grid !important; 
+        grid-column:  6;    grid-row: 5;
+    }
+    .default-view #Te { 
+        display: grid !important; 
+        grid-column:  7;    grid-row: 5;
+    }
+    .default-view #I { 
+        display: grid !important; 
+        grid-column:  8;    grid-row: 5;
+    }
+    .default-view #Xe { 
+        display: grid !important; 
+        grid-column:  9;    grid-row: 5;
+    }
+    .default-view #Cs { 
+        display: grid !important; 
+        grid-column:  1;    grid-row: 6;
+    }
+    .default-view #Ba { 
+        display: grid !important; 
+        grid-column:  2;    grid-row: 6;
+    }
+    .default-view #Ti { 
+        display: grid !important; 
+        grid-column:  1;    grid-row: 7;
+    }
+    .default-view #V { 
+        display: grid !important; 
+        grid-column:  2;    grid-row: 7;
+    }
+    .default-view #Cr { 
+        display: grid !important; 
+        grid-column:  3;    grid-row: 7;
+    }
+    .default-view #Mn { 
+        display: grid !important; 
+        grid-column:  4;    grid-row: 7;
+    }
+    .default-view #Fe { 
+        display: grid !important; 
+        grid-column:  5;    grid-row: 7;
+    }
+    .default-view #Co { 
+        display: grid !important; 
+        grid-column:  6;    grid-row: 7;
+    }
+    .default-view #Ni { 
+        display: grid !important; 
+        grid-column:  7;    grid-row: 7;
+    }
+    .default-view #Cu { 
+        display: grid !important; 
+        grid-column:  8;    grid-row: 7;
+    }
+    .default-view #Zn { 
+        display: grid !important; 
+        grid-column:  9;    grid-row: 7;
+    }
+    .default-view #Zr { 
+        display: grid !important; 
+        grid-column:  1;    grid-row: 8;
+    }
+    .default-view #Nb { 
+        display: grid !important; 
+        grid-column:  2;    grid-row: 8;
+    }
+    .default-view #Mo { 
+        display: grid !important; 
+        grid-column:  3;    grid-row: 8;
+    }
+    .default-view #Tc { 
+        display: grid !important; 
+        grid-column:  4;    grid-row: 8;
+    }
+    .default-view #Ru { 
+        display: grid !important; 
+        grid-column:  5;    grid-row: 8;
+    }
+    .default-view #Rh { 
+        display: grid !important; 
+        grid-column:  6;    grid-row: 8;
+    }
+    .default-view #Pd { 
+        display: grid !important; 
+        grid-column:  7;    grid-row: 8;
+    }
+    .default-view #Ag { 
+        display: grid !important; 
+        grid-column:  8;    grid-row: 8;
+    }
+    .default-view #Cd { 
+        display: grid !important; 
+        grid-column:  9;    grid-row: 8;
+    }
+}
