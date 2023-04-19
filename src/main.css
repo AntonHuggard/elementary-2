@@ -134,6 +134,8 @@ header span {
     background-color: #45aafc;
 }
 
+.slider-menu-icon { display: none; }
+
 .periodic-table-wrapper {
     display: block;
     margin: auto;
@@ -274,6 +276,12 @@ header span {
 
 @media only screen and (max-width: 485px) {
     .opt-title { display: none; }
+    .slider-menu-icon { 
+        display: block; 
+        margin: auto;
+        width: 40px;
+    }
+    .slider-menu-txt {display: none;}
     .periodic-table {
         margin-top: 20px;
         width: calc(100vw - 5px);
