@@ -478,7 +478,7 @@ class App extends Component {
       <React.Fragment>
         
         <header>
-          <h1>Searchable periodic table</h1>
+          <h1><div className='opt-title'>Searchable</div> periodic table</h1>
           <span 
             id='settings-btn' 
             onClick={this.handleShowMenu} 
