@@ -209,8 +209,9 @@ header span {
     z-index: 3;
     position: absolute;
     top: 0;
-    margin-left: calc(100vw - 500px);
-    width: 500px;
+    margin-left: calc(100vw - width);
+    width: 100vw;
+    max-width: 500px;
     background-color: rgba(46, 46, 46, 0.534);
     display: grid;
     grid-template-columns: 1fr;
