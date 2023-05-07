@@ -93,7 +93,7 @@ header span {
 }
 
 #element_search_container span {
-    background-color: transparent;
+    background-color: rgba(46, 46, 46, 0.205); 
     color: white;
     border: 2px solid white;
     font-size: 18px;
@@ -274,6 +274,13 @@ header span {
     }
 }
 
+#slider-menu button {
+    background-color: rgba(46, 46, 46, 0.205) !important; 
+}
+#slider-menu button:hover {
+    background-color: white !important; 
+}
+
 @media only screen and (max-width: 485px) {
     .opt-title { display: none; }
     .slider-menu-icon { 
@@ -282,6 +289,9 @@ header span {
         width: 40px;
     }
     .slider-menu-txt {display: none;}
+    #slider-menu button:hover .slider-menu-icon {
+        filter: invert(100);
+    }
     .periodic-table {
         margin-top: 20px;
         width: calc(100vw - 5px);

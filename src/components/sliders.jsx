@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import electron from './imgs/btn-icon-electron.png';
 import cloud from './imgs/btn-icon-cloud.png';
 import drop from './imgs/btn-icon-drop.png';
+import binoculars from './imgs/btn-icon-binoculars.png';
 
 class SliderMenu extends Component {
 
@@ -20,7 +21,10 @@ class SliderMenu extends Component {
                     <img src={cloud} alt="bp symbol" className='slider-menu-icon'/>
                     <span className='slider-menu-txt'>boiling point</span>
                     </button>
-                <button onClick={ () => {this.props.onSelectQuery("discovery")} }>discovery</button>
+                <button onClick={ () => {this.props.onSelectQuery("discovery")} }>
+                    <img src={binoculars} alt="discovery symbol" className='slider-menu-icon'/>
+                    <span className='slider-menu-txt'>disovery</span>
+                    </button>
             </div>
         );
     }
