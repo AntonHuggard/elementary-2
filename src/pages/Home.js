@@ -6,6 +6,7 @@ import BoilingPtSlider from '../components/boiling-pt-slider';
 import DiscoverySlider from '../components/discovery-slider';
 import SliderMenu from '../components/sliders';
 import Header from '../components/Header';
+import SideMenu from '../components/SideMenu';
 import atoms from '../components/atoms.json';
 import React, { Component } from 'react';
 
@@ -438,16 +439,6 @@ class Home extends Component {
         filter_menu.classList.toggle('hide-me');
       }
     
-      handleCloseMenu = () => {
-        const side_menu = document.getElementById('side-menu');
-        side_menu.classList.add('hide-menu');
-      }
-    
-      handleShowMenu = () => {
-        const side_menu = document.getElementById('side-menu');
-        side_menu.classList.remove('hide-menu');
-      }
-    
       handleToggleUnits = () => {
         console.log(this.state.units);
         switch(this.state.units) {
@@ -460,7 +451,6 @@ class Home extends Component {
           default:
             this.setState({ units : "celsius" });
         }
-        
       }
     
       convertTemp(value, r) {
@@ -479,13 +469,9 @@ class Home extends Component {
         return (
             <>
                 <Header />
-                    
-                <div id="side-menu" className='hide-menu'>
-                    <button onClick={this.handleCloseMenu} id='close-side-menu'>close settings</button>
-                    <button onClick={this.handleToggleUnits}>{this.state.units}</button>
-                    <button>quiz</button>
-                    <button>help</button>
-                </div>
+                <SideMenu 
+                    onHandleToggleUnits={this.handleToggleUnits} 
+                    units={this.state.units} />
                     
                 <div id='element_search_wrapper'>
                     <SearchBar

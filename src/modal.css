@@ -28,12 +28,11 @@
 
 .item2 {
     grid-column: 2;
-    background-color: transparent;
+    background-color: rgba(10, 90, 194, 0.151);
     font-size: 27px;
     width: 50px;
     color: white;
     border: 3px solid rgb(41, 142, 224);
-    background-color: rgb(63, 163, 245);
     border-radius: 50%;
 }
 
@@ -85,7 +84,6 @@
     .item2 {
         grid-column: 3;
         color: white;
-        background-color: transparent;
         border: none;
         font-size: 27px;
         border-radius: 25px;
