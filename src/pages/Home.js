@@ -1,11 +1,12 @@
 import PeriodicTable from '../components/ptable';
 import SearchBar from '../components/search';
-import ElectronegSlider from '../components/electroneg-slider'
-import MeltingPtSlider from '../components/melting-pt-slider'
-import BoilingPtSlider from '../components/boiling-pt-slider'
-import DiscoverySlider from '../components/discovery-slider'
-import SliderMenu from '../components/sliders'
-import atoms from '../components/atoms.json'
+import ElectronegSlider from '../components/electroneg-slider';
+import MeltingPtSlider from '../components/melting-pt-slider';
+import BoilingPtSlider from '../components/boiling-pt-slider';
+import DiscoverySlider from '../components/discovery-slider';
+import SliderMenu from '../components/sliders';
+import Header from '../components/Header';
+import atoms from '../components/atoms.json';
 import React, { Component } from 'react';
 
 
@@ -477,14 +478,7 @@ class Home extends Component {
     render() {
         return (
             <>
-                <header>
-                    <h1><div className='opt-title'>Searchable</div> periodic table</h1>
-                    <span 
-                        id='settings-btn' 
-                        onClick={this.handleShowMenu} 
-                        className='unselectable'
-                        >settings</span>
-                </header>
+                <Header />
                     
                 <div id="side-menu" className='hide-menu'>
                     <button onClick={this.handleCloseMenu} id='close-side-menu'>close settings</button>
@@ -513,7 +507,7 @@ class Home extends Component {
                     />
                     
                 <div id="element-modal" className="hide-me"></div>
-                
+
             </>
         )
     }
