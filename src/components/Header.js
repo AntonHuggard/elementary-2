@@ -15,7 +15,7 @@ export default function Header() {
                 id='settings-btn' 
                 onClick={handleShowMenu} 
                 className='unselectable'
-                >settings</span>
+                >menu</span>
         </header>
     )
 }

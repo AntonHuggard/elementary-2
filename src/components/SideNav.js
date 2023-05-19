@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class SideMenu extends Component {
+class Sidenav extends Component {
 
     handleCloseMenu = () => {
         const side_menu = document.getElementById('side-menu');
@@ -12,14 +12,15 @@ class SideMenu extends Component {
         return (
             <div id="side-menu" className='hide-menu'>
                 <button onClick={this.handleCloseMenu} id='close-side-menu'>close menu</button>
+                <a href="/home">periodic table</a>
                 <a href="/about">about</a>
                 <a href="/help">help</a>
                 <button>quiz</button>
-                <button onClick={this.props.onHandleToggleUnits}>{this.props.units}</button>
                 <button>secret button</button>
                 <button>super secret button</button>
+                
             </div>
         );
     }
 }
-export default SideMenu;
+export default Sidenav;

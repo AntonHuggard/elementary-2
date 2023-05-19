@@ -25,7 +25,7 @@ header {
     backdrop-filter: blur(20px);
     margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 1fr 100px;
+    grid-template-columns: 1fr 80px;
 }
 
 h3, header span { margin-top: 5px; }
@@ -216,14 +216,21 @@ header span {
     background-color: rgba(46, 46, 46, 0.534);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 38px 1fr 1fr 1fr;
+    grid-template-rows: 38px 1fr 1fr 1fr 1fr 1fr 1fr;
     row-gap: 10px;
     
     overflow-x: hidden !important;
     transition: 0.4s;
 }
 
-#side-menu button {
+#side-menu a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#side-menu button, #side-menu a {
     font-family: 'Sen', sans-serif;
     font-size: 1.25em;
     letter-spacing: 0.025em;
@@ -233,7 +240,7 @@ header span {
     border: none;
 }
 
-#side-menu button:hover {
+#side-menu button:hover, #side-menu a:hover {
     background-color: rgba(46, 46, 46, 0.699); 
     cursor: pointer;
 }
