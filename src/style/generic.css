@@ -1,0 +1,11 @@
+#content {
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+
+#content h1 {
+    color: black;
+}

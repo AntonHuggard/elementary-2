@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import electron from './imgs/btn-icon-electron.png';
-import cloud from './imgs/btn-icon-cloud.png';
-import drop from './imgs/btn-icon-drop.png';
-import binoculars from './imgs/btn-icon-binoculars.png';
+import electron from '../imgs/btn-icon-electron.png';
+import cloud from '../imgs/btn-icon-cloud.png';
+import drop from '../imgs/btn-icon-drop.png';
+import binoculars from '../imgs/btn-icon-binoculars.png';
 
 class SliderMenu extends Component {
 

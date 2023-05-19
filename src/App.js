@@ -1,4 +1,4 @@
-import './App.css';
+import './style/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Hydrogen from './pages/Hydrogen';
 import Home from './pages/Home';

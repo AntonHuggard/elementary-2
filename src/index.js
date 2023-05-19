@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import './main.css';
-import './periodic-table.css';
-import './modal.css';
-import './slider.css';
-import './sliderMenu.css';
+import './style/index.css';
+import './style/main.css';
+import './style/periodic-table.css';
+import './style/modal.css';
+import './style/slider.css';
+import './style/sliderMenu.css';
+import './style/generic.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
