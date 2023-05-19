@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Hydrogen from './pages/Hydrogen';
 import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 import React, { Component } from 'react';
 
 class App extends Component {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route index element={<Home />} />
             <Route index path="/home" element={<Home />} />
             <Route index path="/atom/hydrogen" element={<Hydrogen />} />
+            <Route index path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>  
 
