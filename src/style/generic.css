@@ -4,8 +4,22 @@
     background-color: white;
     display: block;
     margin: auto;
+    padding: 10px;
+    margin-bottom: 50px;
 }
 
 #content h1, #content h3 {
     color: black;
+}
+
+figure .illustration {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+#content figure figcaption {
+    text-align: center;
+    font-style: italic;
 }
