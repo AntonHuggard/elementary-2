@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import magnifyingGlass from './imgs/mgnf_glss_gry.png';
+import magnifyingGlass from '../imgs/mgnf_glss_gry.png';
 
 class SearchBar extends Component {
 

@@ -6,6 +6,6 @@
     margin: auto;
 }
 
-#content h1 {
+#content h1, #content h3 {
     color: black;
 }
