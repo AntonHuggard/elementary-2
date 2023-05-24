@@ -1,5 +1,5 @@
 import './style/App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Hydrogen from './pages/Hydrogen';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -15,16 +15,16 @@ class App extends Component {
     return (
       <React.Fragment>
 
-        <BrowserRouter>
-          <Routes>
-            <Route index element={<Home />} />
-            <Route index path="/home" element={<Home />} />
-            <Route index path="/about" element={<About />} />
-            <Route index path="/help" element={<Help />} />
-            <Route index path="/atom/hydrogen" element={<Hydrogen />} />
-            <Route index path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>  
+        <HashRouter>
+              <Routes>
+                <Route index path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/help" element={<Help />} />
+                <Route path="/atom/hydrogen" element={<Hydrogen />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+          </HashRouter>
 
       </React.Fragment>
     );
