@@ -21,7 +21,7 @@ class App extends Component {
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/help" element={<Help />} />
-                <Route path="/atom/hydrogen" element={<Hydrogen />} />
+                <Route path="/hydrogen" element={<Hydrogen />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
           </HashRouter>

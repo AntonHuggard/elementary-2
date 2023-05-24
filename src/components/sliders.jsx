@@ -11,7 +11,7 @@ class SliderMenu extends Component {
             <div id='slider-menu'>
                 <button onClick={ () => {this.props.onSelectQuery("en-slider")} }>
                     <img src={electron} alt="electronegativity symbol" className='slider-menu-icon'/>
-                    <span className='slider-menu-txt'>electroegativity</span>
+                    <span className='slider-menu-txt'>electronegativity</span>
                     </button>
                 <button onClick={ () => {this.props.onSelectQuery("mp-slider")} }>
                     <img src={drop} alt="mp symbol" className='slider-menu-icon'/>
