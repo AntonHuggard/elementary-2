@@ -19,7 +19,7 @@ class Home extends Component {
         dimOpacity: "40%",
         medOpacity: "75%",
         inputOption: "text",
-        units: "celsius",
+        units: "fahrenheit"
       };
     
       showElements = (show) => {
@@ -291,11 +291,11 @@ class Home extends Component {
             break;
           case "mp-slider":
             document.getElementById("melting_pt_div").style.display = "block";
-            this.handleMeltingPoint();
+            // this.handleMeltingPoint();
             break;
           case "bp-slider":
             document.getElementById("boiling_pt_div").style.display = "block";
-            this.handleBoilingPoint();
+            // this.handleBoilingPoint();
             break;
           case "discovery":
             document.getElementById("discovery_div").style.display = "block";
@@ -335,77 +335,7 @@ class Home extends Component {
         }
       }
     
-      handleMeltingPoint = () => {
-        const slider = document.getElementById('MP_slider');
-    
-        let mp_input = slider.value;
-        let display = '';
-    
-        if (this.state.units === "fahrenheit") display = this.convertTemp(mp_input, 0) + " &#176;F";
-        else if (this.state.units === "kelvin") display = this.convertTemp(Number(mp_input), 0) + " K";
-        else display = mp_input + " &#176;C";
-        
-        document.getElementById("MP_display").innerHTML = display;
-    
-        let htmlAtoms = document.getElementsByClassName('element-tile');
-        
-        for (var i = htmlAtoms.length -1; i >= 0; i--) {
-          let melting_pt =  parseFloat(htmlAtoms[i].getAttribute('data-meltingpt'));
-    
-          const inner_upper = melting_pt + 100;
-          const inner_lower = melting_pt - 100;
-          const mediu_upper = melting_pt + 500;
-          const mediu_lower = melting_pt - 500;
-          const outer_upper = melting_pt + 1000;
-          const outer_lower = melting_pt - 1000;
-    
-          if ((slider.value > inner_lower) && (slider.value < inner_upper)) {
-            htmlAtoms[i].style.opacity = "100%"; 
-          } else if ((slider.value > mediu_lower) && (slider.value < mediu_upper)) { 
-            htmlAtoms[i].style.opacity = this.state.medOpacity; 
-          } else if ((slider.value > outer_lower) && (slider.value < outer_upper)) { 
-            htmlAtoms[i].style.opacity = this.state.dimOpacity; 
-          } else { 
-            htmlAtoms[i].style.opacity = this.state.lowOpacity 
-          } 
-        }
-      }
-    
-      handleBoilingPoint = () => {
-        const slider = document.getElementById('BP_slider');
-    
-        let bp_input = slider.value;
-        let display = '';
-    
-        if (this.state.units === "fahrenheit") display = this.convertTemp(bp_input, 0) + " &#176;F";
-        else if (this.state.units === "kelvin") display = this.convertTemp(Number(bp_input), 0) + " K";
-        else display = bp_input + " &#176;C";
-        
-        document.getElementById("BP_display").innerHTML = display;
-    
-        let htmlAtoms = document.getElementsByClassName('element-tile');
-        
-        for (var i = htmlAtoms.length -1; i >= 0; i--) {
-          let melting_pt =  parseFloat(htmlAtoms[i].getAttribute('data-boilingpt'));
-    
-          const inner_upper = melting_pt + 100;
-          const inner_lower = melting_pt - 100;
-          const mediu_upper = melting_pt + 500;
-          const mediu_lower = melting_pt - 500;
-          const outer_upper = melting_pt + 1000;
-          const outer_lower = melting_pt - 1000;
-    
-          if ((slider.value > inner_lower) && (slider.value < inner_upper)) {
-            htmlAtoms[i].style.opacity = "100%"; 
-          } else if ((slider.value > mediu_lower) && (slider.value < mediu_upper)) { 
-            htmlAtoms[i].style.opacity = this.state.medOpacity; 
-          } else if ((slider.value > outer_lower) && (slider.value < outer_upper)) { 
-            htmlAtoms[i].style.opacity = this.state.dimOpacity; 
-          } else { 
-            htmlAtoms[i].style.opacity = this.state.lowOpacity 
-          } 
-        }
-      }
+      
     
       handleDiscovery = () => {
         const slider = document.getElementById('discovery_timeline');
@@ -439,39 +369,35 @@ class Home extends Component {
         filter_menu.classList.toggle('hide-me');
       }
     
-      handleToggleUnits = () => {
-        console.log(this.state.units);
-        switch(this.state.units) {
-          case "celsius": 
-            this.setState({ units : "fahrenheit" });
-            break;
-          case "fahrenheit": 
-            this.setState({ units : "kelvin" });
-            break;
-          default:
-            this.setState({ units : "celsius" });
-        }
+      convertTemp(value, r, outputUnits="celsius") { 
+        // value is in deg C, r is number of dp to round to, outputUnits is convert to
+
+        if (outputUnits === "fahrenheit") return ((5/9)*(value - 32)).toFixed(r);
+        else if (outputUnits === "kelvin") return (value + 273.15).toFixed(0);
+        return value;
+
       }
-    
-      convertTemp(value, r) {
-        switch (this.state.units) {
-            case "fahrenheit":
-                return ((5/9)*(value - 32)).toFixed(r);
-            case "kelvin":
-                return (value + 273.15).toFixed(0);
-            default:
-              return value;
-        }
+
+      getUnitSymbol(units) {
+        if (units === "fahrenheit") return " &#176;F";
+        else if (units === "kelvin") return " K";
+        return " &#176;C";
       }
 
 
     render() {
-        return (
+
+      const units = this.state.units;
+      const lowOpacity = this.state.lowOpacity;
+      const dimOpacity = this.state.dimOpacity;
+      const medOpacity = this.state.medOpacity;
+
+      return (
             <>
                 <Header />
                 <SideMenu 
                     onHandleToggleUnits={this.handleToggleUnits} 
-                    units={this.state.units} />
+                    units={units} />
                     
                 <div id='element_search_wrapper'>
                     <SearchBar
@@ -480,8 +406,19 @@ class Home extends Component {
                         onSelectFilter={this.handleFilter}
                     />
                     <ElectronegSlider onHandleElectronegativity={this.handleElectronegativity} />
-                    <MeltingPtSlider onHandleMeltingPoint={this.handleMeltingPoint} />        
-                    <BoilingPtSlider onHandleBoilingPoint={this.handleBoilingPoint} />
+
+                    <MeltingPtSlider 
+                      units={units}
+                      lowOpacity={lowOpacity} dimOpacity={dimOpacity} medOpacity={medOpacity}
+                      onGetUnitSymbol={this.getUnitSymbol}
+                      onConvertTemp={this.convertTemp} />        
+                    
+                    <BoilingPtSlider 
+                      units={units}
+                      lowOpacity={lowOpacity} dimOpacity={dimOpacity} medOpacity={medOpacity}
+                      onGetUnitSymbol={this.getUnitSymbol}
+                      onConvertTemp={this.convertTemp} />
+
                     <DiscoverySlider onHandleDiscovery={this.handleDiscovery} />
                 </div>
 

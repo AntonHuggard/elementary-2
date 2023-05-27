@@ -1,21 +1,39 @@
 import React, { Component } from 'react'
 
 class SideMenu extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {units: 'celsius'};
+    }
 
-    handleCloseMenu = () => {
+    closeMenu = () => {
         const side_menu = document.getElementById('side-menu');
         side_menu.classList.add('hide-menu');
     }
+
+    toggleUnits = () => {
+        console.log(this.state.units);
+        switch(this.state.units) {
+          case "celsius": 
+            this.setState({ units : "fahrenheit" });
+            break;
+          case "fahrenheit": 
+            this.setState({ units : "kelvin" });
+            break;
+          default:
+            this.setState({ units : "celsius" });
+        }
+      }
 
 
     render() {
         return (
             <div id="side-menu" className='hide-menu'>
-                <button onClick={this.handleCloseMenu} id='close-side-menu'>close menu</button>
+                <button onClick={this.closeMenu} id='close-side-menu'>close menu</button>
                 <a href="/#/help">instructions/help</a>
                 <a href="/#/about">about</a>
                 <button>quiz</button>
-                <button onClick={this.props.onHandleToggleUnits}>{this.props.units}</button>
+                <button onClick={this.toggleUnits}>{this.props.units}</button>
                 <button>secret button</button>
                 <button>super secret button</button>
             </div>
