@@ -3,9 +3,9 @@
     position: absolute;
     top: 10%;
     align-self: center;
-    left: calc(50vw - 400px);
     z-index: 2;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     border-radius: 30px;
     background-color: white;
     font-family: 'Sen', sans-serif;
