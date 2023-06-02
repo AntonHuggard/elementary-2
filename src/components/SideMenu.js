@@ -11,21 +11,6 @@ class SideMenu extends Component {
         side_menu.classList.add('hide-menu');
     }
 
-    toggleUnits = () => {
-        console.log(this.state.units);
-        switch(this.state.units) {
-          case "celsius": 
-            this.setState({ units : "fahrenheit" });
-            break;
-          case "fahrenheit": 
-            this.setState({ units : "kelvin" });
-            break;
-          default:
-            this.setState({ units : "celsius" });
-        }
-      }
-
-
     render() {
         return (
             <div id="side-menu" className='hide-menu'>
@@ -33,7 +18,7 @@ class SideMenu extends Component {
                 <a href="/#/help">instructions/help</a>
                 <a href="/#/about">about</a>
                 <button>quiz</button>
-                <button onClick={this.toggleUnits}>{this.props.units}</button>
+                <button onClick={this.props.onToggleUnits}>{this.props.units}</button>
                 <button>secret button</button>
                 <button>super secret button</button>
             </div>

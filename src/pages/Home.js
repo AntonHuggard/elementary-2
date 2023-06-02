@@ -19,7 +19,7 @@ class Home extends Component {
         dimOpacity: "40%",
         medOpacity: "75%",
         inputOption: "text",
-        units: "fahrenheit"
+        units: "celsius"
       };
     
       showElements = (show) => {
@@ -368,14 +368,27 @@ class Home extends Component {
         magnifying_glass.classList.toggle('expanded');
         filter_menu.classList.toggle('hide-me');
       }
+
+
+      toggleUnits = () => {
+        switch(this.state.units) {
+          case "celsius": 
+            this.setState({ units : "fahrenheit" });
+            break;
+          case "fahrenheit": 
+            this.setState({ units : "kelvin" });
+            break;
+          default:
+            this.setState({ units : "celsius" });
+        }
+      }
     
       convertTemp(value, r, outputUnits="celsius") { 
         // value is in deg C, r is number of dp to round to, outputUnits is convert to
 
         if (outputUnits === "fahrenheit") return ((5/9)*(value - 32)).toFixed(r);
-        else if (outputUnits === "kelvin") return (value + 273.15).toFixed(0);
+        else if (outputUnits === "kelvin") return (Number(value) + 273.15).toFixed(r);
         return value;
-
       }
 
       getUnitSymbol(units) {
@@ -396,7 +409,7 @@ class Home extends Component {
             <>
                 <Header />
                 <SideMenu 
-                    onHandleToggleUnits={this.handleToggleUnits} 
+                    onToggleUnits={this.toggleUnits} 
                     units={units} />
                     
                 <div id='element_search_wrapper'>
