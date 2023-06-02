@@ -64,8 +64,6 @@ class Home extends Component {
 
         this.setState({ selectedElement : atom });
 
-        console.log(atom);
-
         const modal = document.getElementById("element-modal");
         modal.classList.remove("hide-me");
     
@@ -456,7 +454,11 @@ class Home extends Component {
                     onHandleElementClick={this.handleElementClick}
                     />
                     
-                <Modal element={selectedElement} />
+                <Modal 
+                    element={selectedElement} 
+                    units={units}
+                    onConvertTemp={this.convertTemp}
+                    onGetUnitSymbol={this.getUnitSymbol} />
 
             </>
         )
