@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 
 class SideMenu extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {units: 'celsius'};
-    }
 
     closeMenu = () => {
         const side_menu = document.getElementById('side-menu');

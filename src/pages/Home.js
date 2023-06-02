@@ -11,6 +11,13 @@ import atoms from '../components/atoms.json';
 import React, { Component } from 'react';
 
 
+const scaleNames = {
+  'c': 'celsius',
+  'f': 'fahrenheit',
+  'k': 'kelvin'
+};
+
+
 class Home extends Component {
 
     state = {
@@ -19,7 +26,7 @@ class Home extends Component {
         dimOpacity: "40%",
         medOpacity: "75%",
         inputOption: "text",
-        units: "celsius"
+        units: scaleNames['c']
       };
     
       showElements = (show) => {
@@ -351,7 +358,6 @@ class Home extends Component {
       }
     
       selectQueryType = (option) => {
-        console.log(option);
         const activate_slider = this.state.inputOption === option ? false : true;
         const setInput = activate_slider ? option : "text";
         activate_slider ? this.showElements(false) : this.showElements(true);
@@ -373,13 +379,13 @@ class Home extends Component {
       toggleUnits = () => {
         switch(this.state.units) {
           case "celsius": 
-            this.setState({ units : "fahrenheit" });
+            this.setState({ units : scaleNames['f'] });
             break;
           case "fahrenheit": 
-            this.setState({ units : "kelvin" });
+            this.setState({ units : scaleNames['k'] });
             break;
           default:
-            this.setState({ units : "celsius" });
+            this.setState({ units : scaleNames['c'] });
         }
       }
     
