@@ -7,6 +7,88 @@ class Modal extends Component {
         modal.classList.toggle('hide-me');
     }
 
+    getElectronConfig = (atomicNumber) => {
+        let electronConfig = [];
+        let remainingElectrons = atomicNumber;
+
+        
+        const s = 2;
+        const p = 6;
+        const d = 10;
+        const f = 14;
+        const g = 99;
+        const i = 99;
+        const h = 99;
+
+        const subshells = [
+            {subshell: "1s", type: s, },
+            {subshell: "2s", type: s, },
+            {subshell: "2p", type: p, },
+            {subshell: "3s", type: s, },
+            {subshell: "3p", type: p, },
+            {subshell: "4s", type: s, },
+            {subshell: "3d", type: d, },
+            {subshell: "4p", type: p, },
+            {subshell: "5s", type: s, },
+            {subshell: "4d", type: d, },
+            {subshell: "5p", type: p, },
+            {subshell: "6s", type: s, },
+            {subshell: "4f", type: f, },
+            {subshell: "5d", type: d, },
+            {subshell: "6p", type: p, },
+            {subshell: "7s", type: s, },
+            {subshell: "5f", type: f, },
+            {subshell: "6d", type: d, },
+            {subshell: "7p", type: p, },
+            {subshell: "5g", type: g, },
+            {subshell: "6f", type: f, },
+            {subshell: "7d", type: d, },
+            {subshell: "6g", type: g, },
+            {subshell: "7f", type: f, },
+            {subshell: "6h", type: h, },
+            {subshell: "7g", type: g, },
+            {subshell: "7h", type: h, },
+            {subshell: "7i", type: i, },
+        ];
+
+        let index = 0;
+
+        // if (remainingElectrons > 86) { 
+        //     console.log("[Rn]"); 
+        //     remainingElectrons = remainingElectrons - 86;
+        //     index = 86; }
+        // else if (remainingElectrons > 54) { 
+        //     console.log("[Xe]"); 
+        //     remainingElectrons = remainingElectrons - 54;
+        //     index = 54; }
+        // else if (remainingElectrons > 36) { 
+        //     console.log("[Kr]"); 
+        //     remainingElectrons = remainingElectrons - 36;
+        //     index = 36; }
+        // else if (remainingElectrons > 18) { 
+        //     console.log("[Ar]"); 
+        //     remainingElectrons = remainingElectrons - 18;
+        //     index = 18; }
+        // else if (remainingElectrons > 10) { 
+        //     console.log("[Ne]"); 
+        //     remainingElectrons = remainingElectrons - 10;
+        //     index = 10; }
+        // else if (remainingElectrons > 2 ) { 
+        //     console.log("[He]"); 
+        //     remainingElectrons = remainingElectrons - 2;
+        //     index = 2 ; }
+
+        for (index; index < subshells.length && remainingElectrons > 0; index++) {
+            const subshell = subshells[index];
+            let result = subshell.subshell;
+            if (remainingElectrons > subshell.type) { result = result + `<sup>${subshell.type}</sup>` }
+            else { result = result + `<sup>${remainingElectrons}</sup>` }
+            electronConfig.push(result);
+            remainingElectrons = remainingElectrons - subshell.type;
+        }
+        return `${electronConfig.join(" ")}`;
+      }      
+
     render() {
         if (this.props.element) {
             
@@ -14,6 +96,10 @@ class Modal extends Component {
             const melting_pt = this.props.onConvertTemp(this.props.element.melting_point, 0, units);
             const boiling_pt = this.props.onConvertTemp(this.props.element.boiling_point, 0, units);
             const real_units = this.props.onGetUnitSymbol(units);
+            // const electron_config = config_master(this.props.element.atomic_number);
+
+            const electronConfiguration = this.getElectronConfig(this.props.element.atomic_number);
+            const electron_config = electronConfiguration;
 
             const nonmetals_colour = "rgb(223, 0, 0)";
             const alkali_metals_colour = "rgb(219, 102, 6)";
@@ -29,6 +115,7 @@ class Modal extends Component {
         
             let fill_colour = "rgb(223, 0, 0)";
             const text_colour = "white";
+
             switch (this.props.element.primary_class) {
                 case 'non-metal':
                     fill_colour = nonmetals_colour;
@@ -95,7 +182,7 @@ class Modal extends Component {
                                 Melting Point: {melting_pt} <span dangerouslySetInnerHTML={{ __html: real_units }} /> <br/>
                                 Boiling Point: {boiling_pt} <span dangerouslySetInnerHTML={{ __html: real_units }} /> <br/> 
                                 Electronegativity: {this.props.element.electronegativity} <br/>
-                                E<sup>-</sup> configuration: x <br/>
+                                E<sup>-</sup> configuration: <span dangerouslySetInnerHTML={{ __html: electron_config }} /> <br/>
                                 <div className="mobile_radioactive_indictaion">Radioactive: {this.props.element.radioactive}</div>
                                 Discovered: {this.props.element.discovery_date} <br/> 
                                 Etymology: {this.props.element.etymology} <br/> <br/>
