@@ -72,22 +72,33 @@ class Modal extends Component {
         let electronConfig = this.getRawElectronConfig(atomicNumber);
         console.log(electronConfig);
 
-        if (atomicNumber > 86) { 
-            console.log("[Rn]"); 
-            const radonConfig = this.getRawElectronConfig(86);
-            const abbrevConfig = this.removeCommonElements(electronConfig, radonConfig);
-            abbrevConfig.splice(0, 0, "[Rn]");
+        if (atomicNumber > 2 ) { 
+            let nobleGasSymbol = "[He]";
+            let abbrevConfig = [];
+            let nobleGasConfig = [];
+            
+            if (atomicNumber > 86) { 
+                nobleGasConfig = this.getRawElectronConfig(86);
+                nobleGasSymbol = "[Rn]";
+            } else if (atomicNumber > 54) { 
+                nobleGasConfig = this.getRawElectronConfig(54);
+                nobleGasSymbol = "[Rn]";
+            } else if (atomicNumber > 36) { 
+                nobleGasConfig = this.getRawElectronConfig(36);
+                nobleGasSymbol = "[Kr]";
+            } else if (atomicNumber > 18) { 
+                nobleGasConfig = this.getRawElectronConfig(18);
+                nobleGasSymbol = "[Ar]";
+            } else if (atomicNumber > 10) { 
+                nobleGasConfig = this.getRawElectronConfig(10);
+                nobleGasSymbol = "[Ne]";
+            } else { 
+                nobleGasConfig = this.getRawElectronConfig(2);
+                nobleGasSymbol = "[He]";
+            }
+            abbrevConfig = this.removeCommonElements(electronConfig, nobleGasConfig);
+            abbrevConfig.splice(0, 0, nobleGasSymbol);
             electronConfig = abbrevConfig;
-        } else if (atomicNumber > 54) { 
-            console.log("[Xe]"); 
-        } else if (atomicNumber > 36) { 
-            console.log("[Kr]"); 
-        } else if (atomicNumber > 18) { 
-            console.log("[Ar]"); 
-        } else if (atomicNumber > 10) { 
-            console.log("[Ne]"); 
-        } else if (atomicNumber > 2 ) { 
-            console.log("[He]"); 
         }
 
         return `${electronConfig.join(" ")}`;
