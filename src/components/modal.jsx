@@ -7,11 +7,10 @@ class Modal extends Component {
         modal.classList.toggle('hide-me');
     }
 
-    getElectronConfig = (atomicNumber) => {
+    getRawElectronConfig = (atomicNumber) => {
         let electronConfig = [];
         let remainingElectrons = atomicNumber;
 
-        
         const s = 2;
         const p = 6;
         const d = 10;
@@ -52,32 +51,6 @@ class Modal extends Component {
         ];
 
         let index = 0;
-
-        // if (remainingElectrons > 86) { 
-        //     console.log("[Rn]"); 
-        //     remainingElectrons = remainingElectrons - 86;
-        //     index = 86; }
-        // else if (remainingElectrons > 54) { 
-        //     console.log("[Xe]"); 
-        //     remainingElectrons = remainingElectrons - 54;
-        //     index = 54; }
-        // else if (remainingElectrons > 36) { 
-        //     console.log("[Kr]"); 
-        //     remainingElectrons = remainingElectrons - 36;
-        //     index = 36; }
-        // else if (remainingElectrons > 18) { 
-        //     console.log("[Ar]"); 
-        //     remainingElectrons = remainingElectrons - 18;
-        //     index = 18; }
-        // else if (remainingElectrons > 10) { 
-        //     console.log("[Ne]"); 
-        //     remainingElectrons = remainingElectrons - 10;
-        //     index = 10; }
-        // else if (remainingElectrons > 2 ) { 
-        //     console.log("[He]"); 
-        //     remainingElectrons = remainingElectrons - 2;
-        //     index = 2 ; }
-
         for (index; index < subshells.length && remainingElectrons > 0; index++) {
             const subshell = subshells[index];
             let result = subshell.subshell;
@@ -86,6 +59,37 @@ class Modal extends Component {
             electronConfig.push(result);
             remainingElectrons = remainingElectrons - subshell.type;
         }
+        return electronConfig;
+      }
+      
+    removeCommonElements = (firstArray, secondArray) => {
+        // remove elements from the 1st array that appear in the 2nd array
+        return firstArray.filter(subshell => !secondArray.includes(subshell));
+    }
+
+
+    getElectronConfig = (atomicNumber) => {
+        let electronConfig = this.getRawElectronConfig(atomicNumber);
+        console.log(electronConfig);
+
+        if (atomicNumber > 86) { 
+            console.log("[Rn]"); 
+            const radonConfig = this.getRawElectronConfig(86);
+            const abbrevConfig = this.removeCommonElements(electronConfig, radonConfig);
+            abbrevConfig.splice(0, 0, "[Rn]");
+            electronConfig = abbrevConfig;
+        } else if (atomicNumber > 54) { 
+            console.log("[Xe]"); 
+        } else if (atomicNumber > 36) { 
+            console.log("[Kr]"); 
+        } else if (atomicNumber > 18) { 
+            console.log("[Ar]"); 
+        } else if (atomicNumber > 10) { 
+            console.log("[Ne]"); 
+        } else if (atomicNumber > 2 ) { 
+            console.log("[He]"); 
+        }
+
         return `${electronConfig.join(" ")}`;
       }      
 
@@ -96,10 +100,7 @@ class Modal extends Component {
             const melting_pt = this.props.onConvertTemp(this.props.element.melting_point, 0, units);
             const boiling_pt = this.props.onConvertTemp(this.props.element.boiling_point, 0, units);
             const real_units = this.props.onGetUnitSymbol(units);
-            // const electron_config = config_master(this.props.element.atomic_number);
-
-            const electronConfiguration = this.getElectronConfig(this.props.element.atomic_number);
-            const electron_config = electronConfiguration;
+            const electron_config = this.getElectronConfig(this.props.element.atomic_number);
 
             const nonmetals_colour = "rgb(223, 0, 0)";
             const alkali_metals_colour = "rgb(219, 102, 6)";
