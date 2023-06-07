@@ -26,6 +26,16 @@ function getMatchingElements (term, str, attr) {
                 if (elmt[attr] === term) r.push(elmt.symbol) 
             });
             break;
+        case "disc_before":
+            atoms.forEach(elmt => { 
+                if (elmt["discovery_date"] <= term) r.push(elmt.symbol) 
+            });
+            break;
+        case "disc_after":
+            atoms.forEach(elmt => { 
+                if (elmt["discovery_date"] >= term) r.push(elmt.symbol) 
+            });
+            break;
         default:
         atoms.forEach(element => {
           const data = str? element[attr].toLowerCase() : element[attr]
@@ -51,6 +61,18 @@ function runQuery(input) {
         (q.match(/^\d{4}$/)) ) {
         const year = q.replace(/\D/g,'');
         r = getMatchingElements(parseInt(year), true, "discovery_date");
+    }
+    else if (
+        (q.match(/^discover(y|ed)? (before|pre) \d{3,4}?\s?$/i)) || 
+        (q.match(/^found (before|pre) \d{3,4}?\s?$/i)) ) {
+        const year = q.replace(/\D/g,'');
+        r = getMatchingElements(parseInt(year), true, "disc_before");
+    }
+    else if (
+        (q.match(/^discover(y|ed)? (after|since|post) \d{3,4}?\s?$/i)) || 
+        (q.match(/^found (after|since|post) \d{3,4}?\s?$/i)) ) {
+        const year = q.replace(/\D/g,'');
+        r = getMatchingElements(parseInt(year), true, "disc_after");
     }
     // search by atomic number
     else if(q.match(/^\d{1,3}\s?$/i)) {
