@@ -118,7 +118,6 @@ class Modal extends Component {
 
     getElectronConfig = (atomicNumber) => {
         let electronConfig = this.getRawElectronConfig(atomicNumber);
-        console.log(electronConfig);
 
         if (atomicNumber > 2 ) { 
             let nobleGasSymbol = "[He]";

@@ -21,6 +21,11 @@ function getMatchingElements (term, str, attr) {
                 if((elmt[attr] <= (term+0.5) ) && (elmt[attr] >= (term-0.5) )) r.push(elmt.symbol) 
             });
             break;
+        case "discovery_date":
+            atoms.forEach(elmt => { 
+                if (elmt[attr] === term) r.push(elmt.symbol) 
+            });
+            break;
         default:
         atoms.forEach(element => {
           const data = str? element[attr].toLowerCase() : element[attr]
@@ -39,6 +44,14 @@ function runQuery(input) {
     if ((q.length<3) && (q.match(/[a-z]{1,2}\s?$/i))) { 
         r = getMatchingElements(q, true, "symbol");
     } 
+    // search by discovery date
+    else if (
+        (q.match(/^discover(y|ed)?\s\d{3,4}?\s?$/i)) || 
+        (q.match(/^found\s\d{3,4}?\s?$/i)) ||
+        (q.match(/^\d{4}$/)) ) {
+        const year = q.replace(/\D/g,'');
+        r = getMatchingElements(parseInt(year), true, "discovery_date");
+    }
     // search by atomic number
     else if(q.match(/^\d{1,3}\s?$/i)) {
         r = getMatchingElements(parseInt(q, 10), false, "atomic_number");
@@ -63,7 +76,7 @@ function runQuery(input) {
         r = getMatchingElements(block, true, "block");
     }
 
-    
+        
     else if (q.match(/noble[-\s]?gas(es)?\s?$/i)) {
         r = getMatchingElements("noble_gas", true, "primary_class");
     } 
