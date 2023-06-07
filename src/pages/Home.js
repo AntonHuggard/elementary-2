@@ -39,6 +39,28 @@ class Home extends Component {
         }
     }
     
+    getMatchingElements (term, str, attr) {
+        let results = [];
+        switch (attr) {
+          case "name":
+            term = term.replace(/\s/g, "");
+            this.state.atoms.forEach(elmt => { if(elmt[attr].includes(term)) results.push(elmt.symbol) });
+            break;
+          case "symbol":
+            this.state.atoms.forEach(elmt => { 
+              term = term.toUpperCase();
+              if((elmt[attr].toUpperCase().includes(term)) || (elmt[attr] === term)) results.push(elmt.symbol) 
+            });
+            break;
+          default:
+            this.state.atoms.forEach(element => {
+              const data = str? element[attr].toLowerCase() : element[attr]
+              if(data === term) results.push(element.symbol);
+            });
+        }
+        return results;
+    }
+    
     handleElementClick = (atom) => {
         this.setState({ selectedElement : atom });
 
@@ -94,11 +116,11 @@ class Home extends Component {
 
           // TODO: for mobile, return all elements that match the query
           // as it currently exists, users can only search the first 20 or so on mobile
-          if (query === "") {
-            console.log("show default mobile view");
-          } else {
-            console.log("show special view");
-          }
+          // if (query === "") {
+          //   console.log("show default mobile view");
+          // } else {
+          //   console.log("show special view");
+          // }
     }
     
     hideInputsExcept(exception) {
