@@ -13,65 +13,46 @@ class Modal extends Component {
             case 24:
                 return ["[Ar]", "3d<sup>5</sup>", "4s<sup>1</sup>"];
             case 29:
-                
-                break;
+                return ["[Ar]", "3d<sup>10</sup>", "4s<sup>1</sup>"];
             case 41:
-                
-                break;
+                return ["[Kr]", "4d<sup>4</sup>", "5s<sup>1</sup>"];
             case 42:
-                
-                break;
+                return ["[Kr]", "4d<sup>5</sup>", "5s<sup>1</sup>"];
             case 44:
-                
-                break;
+                return ["[Kr]", "4d<sup>7</sup>", "5s<sup>1</sup>"];
             case 45:
-                
-                break;
+                return ["[Kr]", "4d<sup>8</sup>", "5s<sup>1</sup>"];
             case 46:
-                
-                break;
+                return ["[Kr]", "4d<sup>10</sup>"];
             case 47:
-                
-                break;
+                return ["[Kr]", "4d<sup>10</sup>", "5s<sup>1</sup>"];
             case 57:
-                
-                break;
+                return ["[Xe]", "5d<sup>1</sup>", "6s<sup>2</sup>"];
             case 58:
-                
-                break;
+                return ["[Xe]", "4f<sup>1</sup>", "5d<sup>1</sup>", "6s<sup>2</sup>"];
             case 64:
-                
-                break;
+                return ["[Xe]", "4f<sup>7</sup>", "5d<sup>1</sup>", "6s<sup>2</sup>"];
             case 78:
-                
-                break;
+                return ["[Xe]", "4f<sup>14</sup>", "5d<sup>9</sup>", "6s<sup>1</sup>"];
             case 79:
-                
-                break;
+                return ["[Xe]", "4f<sup>14</sup>", "5d<sup>10</sup>", "6s<sup>1</sup>"];
             case 89:
-                
-                break;
+                return ["[Xe]", "4f<sup>14</sup>", "5d<sup>10</sup>", "6s<sup>2</sup>"];
             case 90:
-                
-                break;
+                return ["[Rn]", "6d<sup>2</sup>", "7s<sup>2</sup>"];
             case 91:
-                
-                break;
+                return ["[Rn]", "5f<sup>2</sup>", "6d<sup>1</sup>", "7s<sup>2</sup>"];
             case 92:
-                
-                break;
+                return ["[Rn]", "5f<sup>3</sup>", "6d<sup>1</sup>", "7s<sup>2</sup>"];
             case 93:
-                
-                break;
+                return ["[Rn]", "5f<sup>4</sup>", "6d<sup>1</sup>", "7s<sup>2</sup>"];
             case 96:
-                
-                break;
+                return ["[Rn]", "5f<sup>7</sup>", "6d<sup>1</sup>", "7s<sup>2</sup>"];
             case 103:
-                
-                break;
-        
+                return ["[Rn]", "5f<sup>14</sup>", "7s<sup>2</sup>", "7p<sup>1</sup>"];
+            default:
+                return []
         }
-        return [];
     }
 
     getRawElectronConfig = (atomicNumber) => {
@@ -168,11 +149,11 @@ class Modal extends Component {
             electronConfig = abbrevConfig;
         }
 
-        const weirdConfigs = [
+        const weirdElectronConfigurations = [
             24, 29, 41, 42, 44, 45, 46, 47, 57, 58, 64, 78, 79, 89, 90, 91, 92, 93, 96, 103
         ];
 
-        if (weirdConfigs.includes(atomicNumber)) {
+        if (weirdElectronConfigurations.includes(atomicNumber)) {
             electronConfig = this.handleWeirdConfigurations(atomicNumber);
         }
 
