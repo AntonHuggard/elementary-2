@@ -7,6 +7,73 @@ class Modal extends Component {
         modal.classList.toggle('hide-me');
     }
 
+    handleWeirdConfigurations = (atomicNumber) => {
+
+        switch(atomicNumber) {
+            case 24:
+                return ["[Ar]", "3d<sup>5</sup>", "4s<sup>1</sup>"];
+            case 29:
+                
+                break;
+            case 41:
+                
+                break;
+            case 42:
+                
+                break;
+            case 44:
+                
+                break;
+            case 45:
+                
+                break;
+            case 46:
+                
+                break;
+            case 47:
+                
+                break;
+            case 57:
+                
+                break;
+            case 58:
+                
+                break;
+            case 64:
+                
+                break;
+            case 78:
+                
+                break;
+            case 79:
+                
+                break;
+            case 89:
+                
+                break;
+            case 90:
+                
+                break;
+            case 91:
+                
+                break;
+            case 92:
+                
+                break;
+            case 93:
+                
+                break;
+            case 96:
+                
+                break;
+            case 103:
+                
+                break;
+        
+        }
+        return [];
+    }
+
     getRawElectronConfig = (atomicNumber) => {
         let electronConfig = [];
         let remainingElectrons = atomicNumber;
@@ -99,6 +166,14 @@ class Modal extends Component {
             abbrevConfig = this.removeCommonElements(electronConfig, nobleGasConfig);
             abbrevConfig.splice(0, 0, nobleGasSymbol);
             electronConfig = abbrevConfig;
+        }
+
+        const weirdConfigs = [
+            24, 29, 41, 42, 44, 45, 46, 47, 57, 58, 64, 78, 79, 89, 90, 91, 92, 93, 96, 103
+        ];
+
+        if (weirdConfigs.includes(atomicNumber)) {
+            electronConfig = this.handleWeirdConfigurations(atomicNumber);
         }
 
         return `${electronConfig.join(" ")}`;
