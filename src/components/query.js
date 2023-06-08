@@ -2,11 +2,11 @@ import atomsJSON from './atoms.json';
 import compoundsJSON from './compounds.json'
 
 
-function getMatchingElements (term, str, attr, precision=null, tolerance=0) {
+function getMatchingElements (term, attr, precision=null, tolerance=0) {
     // returns array of chemical symbols for all elements that match the query (on given attribute)
     // term = search query 
-    // str = (boolean) is the query a string? (used in default case below) 
     // attr = element attribute i.e. name, symbol, atomic_mass, atomic_number
+    // str = (boolean) is the query a string? (used in default case below) 
     // precision = eq (equal to), lt (less than), gt (greater than), ce (close enough, uses tolerance)
     // tolerance = for numeric terms (eg. instead of needing exact values, allow say +/- 0.05)
 
@@ -63,7 +63,8 @@ function getMatchingElements (term, str, attr, precision=null, tolerance=0) {
 
         default:
             atoms.forEach(element => {
-                const data = str? element[attr].toLowerCase() : element[attr]
+                const dataType = typeof element[attr]
+                const data = (dataType === "string")? element[attr].toLowerCase() : element[attr];
                 if(data === term) r.push(element.symbol);
             });
     }
@@ -77,7 +78,7 @@ function runQuery(input) {
 
     // search by symbol
     if ((q.length<3) && (q.match(/[a-z]{1,2}\s?$/i))) { 
-        r = getMatchingElements(q, true, "symbol");
+        r = getMatchingElements(q, "symbol");
     } 
     // search by discovery date
     else if (
@@ -85,42 +86,42 @@ function runQuery(input) {
         (q.match(/^found\s\d{3,4}?\s?$/i)) ||
         (q.match(/^\d{4}$/)) ) {
         const year = q.replace(/\D/g,'');
-        r = getMatchingElements(parseInt(year), false, "discovery_date");
+        r = getMatchingElements(parseInt(year), "discovery_date");
     }
     else if (
         (q.match(/^discover(y|ed)? (before|pre) \d{3,4}?\s?$/i)) || 
         (q.match(/^found (before|pre) \d{3,4}?\s?$/i)) ) {
         const year = q.replace(/\D/g,'');
-        r = getMatchingElements(parseInt(year), true, "discovery_date", "lt");
+        r = getMatchingElements(parseInt(year), "discovery_date", "lt");
     }
     else if (
         (q.match(/^discover(y|ed)? (after|since|post) \d{3,4}?\s?$/i)) || 
         (q.match(/^found (after|since|post) \d{3,4}?\s?$/i)) ) {
         const year = q.replace(/\D/g,'');
-        r = getMatchingElements(parseInt(year), true, "discovery_date", "gt");
+        r = getMatchingElements(parseInt(year), "discovery_date", "gt");
     }
     // search by atomic number
     else if(q.match(/^\d{1,3}\s?$/i)) {
-        r = getMatchingElements(parseInt(q, 10), false, "atomic_number");
+        r = getMatchingElements(parseInt(q, 10), "atomic_number");
     } 
     // search by atomic mass
     else if(q.match(/^\d{1,3}.?(\d{1,4})?\s?$/i)) {
-        r = getMatchingElements(Number(q), false, "atomic_mass", "ce", 0.5); // tolerance of 0.5 
+        r = getMatchingElements(Number(q), "atomic_mass", "ce", 0.5); // tolerance of 0.5 
     } 
     
     // search by metalness
-    else if (q.match(/non[-\s]?metals?\s?$/i)) r = getMatchingElements("non-metal", true, "primary_class");
+    else if (q.match(/non[-\s]?metals?\s?$/i)) r = getMatchingElements("non-metal", "primary_class");
     else if (q.match(/metalloids?\s?$/i)) {
-        r = getMatchingElements("metalloid", true, "primary_class");
+        r = getMatchingElements("metalloid", "primary_class");
     }
     else if (q.match(/^metals?\s?$/i)) {
-        r = getMatchingElements("metal", true, "metalness");
+        r = getMatchingElements("metal", "metalness");
     }
 
     // search by block
     else if (q.match(/^[spdf][-\s]block?\s?$/i)) {
         const block = q[0];
-        r = getMatchingElements(block, true, "block");
+        r = getMatchingElements(block, "block");
     }
 
     // search by melting point
@@ -141,7 +142,7 @@ function runQuery(input) {
         const equalsIndex = queryArray.indexOf("=");
         let en = queryArray.slice(equalsIndex+1);
         en = en.join("");
-        r = getMatchingElements(Number(en), true, "electronegativity", "ce", 0.05); // tolerance of 0.05 
+        r = getMatchingElements(Number(en), "electronegativity", "ce", 0.05); // tolerance of 0.05 
     }
     else if (
         (q.match(/^en\s?(<|lt)\s?\d+(.\d+)?\s?$/i)) || 
@@ -153,7 +154,7 @@ function runQuery(input) {
                 const operatorIndex = queryArray.indexOf("<");
                 en = queryArray.slice(operatorIndex+1).join("");
             }
-        r = getMatchingElements(Number(en), true, "electronegativity", "lt", 0.05);
+        r = getMatchingElements(Number(en), "electronegativity", "lt", 0.05);
     }
     else if (
         (q.match(/^en\s?(>|gt)\s?\d+(.\d+)?\s?$/i)) || 
@@ -165,51 +166,51 @@ function runQuery(input) {
                 const operatorIndex = queryArray.indexOf(">");
                 en = queryArray.slice(operatorIndex+1).join("");
             }
-        r = getMatchingElements(Number(en), true, "electronegativity", "gt", 0.05);
+        r = getMatchingElements(Number(en), "electronegativity", "gt", 0.05);
     }
 
         
     else if (q.match(/noble[-\s]?gas(es)?\s?$/i)) {
-        r = getMatchingElements("noble_gas", true, "primary_class");
+        r = getMatchingElements("noble_gas", "primary_class");
     } 
     else if (q.match(/alkali[-\s]?metals?\s?$/i)) {
-        r = getMatchingElements("alkali-metal", true, "primary_class");
+        r = getMatchingElements("alkali-metal", "primary_class");
     } 
     else if (q.match(/alkaline[-\s]?earth[-\s]?metals?\s?$/i)) {
-        r = getMatchingElements("alkaline-earth-metal", true, "primary_class");
+        r = getMatchingElements("alkaline-earth-metal", "primary_class");
     } 
     else if (q.match(/metaux[-\s]?pauvres?\s?$/i)) {
-        r = getMatchingElements("metaux_pauvres", true, "primary_class");
+        r = getMatchingElements("metaux_pauvres", "primary_class");
     } 
      
     else if (q.match(/transition[-\s]?metals?\s?$/i)) {
-        r = getMatchingElements("transition-metal", true, "primary_class");
+        r = getMatchingElements("transition-metal", "primary_class");
     } 
     else if (q.match(/^lanthanoids?\s?$/i) || q.match(/^lanthanides?\s?$/i)) {
-        r = getMatchingElements("lanthanoid", true, "primary_class");
+        r = getMatchingElements("lanthanoid", "primary_class");
     } 
     else if (q.match(/^actinoids?\s?$/i) || q.match(/^actinides?\s?$/i)) {
-        r = getMatchingElements("actinoid", true, "primary_class");
+        r = getMatchingElements("actinoid", "primary_class");
     } 
     else if (q.match(/unknowns?\s?$/i)) {
-        r = getMatchingElements("unknown", true, "primary_class");
+        r = getMatchingElements("unknown", "primary_class");
     } 
     else if (q.match(/radio\s?active$/i)) {
-        r = getMatchingElements(true, false, "radioactive");
+        r = getMatchingElements(true, "radioactive");
     } 
     else if (q.match(/^halogens?$/i)) {
-        r = getMatchingElements(17, false, "group");
+        r = getMatchingElements(17, "group");
     } 
     else if (q.match(/^transactinides?$/i)) {
         // there's no property that groups these guys together -- have to get them by atomic #
-        r = getMatchingElements(104, false, "atomic_number");
-        r.push(getMatchingElements(105, false, "atomic_number"));
-        r.push(getMatchingElements(106, false, "atomic_number"));
-        r.push(getMatchingElements(107, false, "atomic_number"));
-        r.push(getMatchingElements(108, false, "atomic_number"));
-        r.push(getMatchingElements(109, false, "atomic_number"));
-        r.push(getMatchingElements(110, false, "atomic_number"));
-        r.push(getMatchingElements(111, false, "atomic_number"));
+        r = getMatchingElements(104, "atomic_number");
+        r.push(getMatchingElements(105, "atomic_number"));
+        r.push(getMatchingElements(106, "atomic_number"));
+        r.push(getMatchingElements(107, "atomic_number"));
+        r.push(getMatchingElements(108, "atomic_number"));
+        r.push(getMatchingElements(109, "atomic_number"));
+        r.push(getMatchingElements(110, "atomic_number"));
+        r.push(getMatchingElements(111, "atomic_number"));
     } 
       
     // search by row/period
@@ -218,7 +219,7 @@ function runQuery(input) {
         q = q.replace('period', '' );
         q = q.replace('-', '' );
         q = parseInt(q, 10);
-        r = getMatchingElements(q, false, "period");
+        r = getMatchingElements(q, "period");
     } 
       
     // search by group
@@ -226,11 +227,11 @@ function runQuery(input) {
         q = q.replace('group', '' );
         q = q.replace('-', '' );
         q = parseInt(q, 10);
-        r = getMatchingElements(q, false, "group");
+        r = getMatchingElements(q, "group");
     } 
       
     //   lastly, search by name
-    else r = getMatchingElements(q, false, "name");
+    else r = getMatchingElements(q, "name");
 
     return r;
 }
