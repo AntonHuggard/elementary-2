@@ -47,6 +47,11 @@ function getMatchingElements (term, str, attr) {
                 if (elmt["electronegativity"] < (term+0.05) ) r.push(elmt.symbol) 
             });
             break;
+        case "en_gt":
+            atoms.forEach(elmt => { 
+                if (elmt["electronegativity"] > (term+0.05) ) r.push(elmt.symbol) 
+            });
+            break;
         default:
             atoms.forEach(element => {
             const data = str? element[attr].toLowerCase() : element[attr]
@@ -133,16 +138,25 @@ function runQuery(input) {
         (q.match(/^en\s?(<|lt)\s?\d+(.\d+)?\s?$/i)) || 
         (q.match(/^electro\s?negativity\s?(<|lt)\s?\d+(.\d+)?\s?$/i)) ) {
             let en = ""
-            if (q.includes("lt")) {
-                const queryArray = q.split("lt");
-                en = queryArray[1];
-            } else {
+            if (q.includes("lt")) en = q.split("lt")[1];
+            else {
                 const queryArray = q.split("");
                 const operatorIndex = queryArray.indexOf("<");
-                en = queryArray.slice(operatorIndex+1);
-                en = en.join("");
+                en = queryArray.slice(operatorIndex+1).join("");
             }
         r = getMatchingElements(Number(en), true, "en_lt");
+    }
+    else if (
+        (q.match(/^en\s?(>|gt)\s?\d+(.\d+)?\s?$/i)) || 
+        (q.match(/^electro\s?negativity\s?(>|gt)\s?\d+(.\d+)?\s?$/i)) ) {
+            let en = ""
+            if (q.includes("gt")) en = q.split("gt")[1];
+            else {
+                const queryArray = q.split("");
+                const operatorIndex = queryArray.indexOf(">");
+                en = queryArray.slice(operatorIndex+1).join("");
+            }
+        r = getMatchingElements(Number(en), true, "en_gt");
     }
 
         
