@@ -11,7 +11,7 @@ function getMatchingElements (term, str, attr) {
     let r = [];
     switch (attr) {
       case "name":
-        term = term.replace(/\s/g, "");
+        term = term.trim();
         atoms.forEach(elmt => { if(elmt[attr].includes(term)) r.push(elmt.symbol) });
         compounds.forEach(compound => {
             const name = compound["name"].toLowerCase()
