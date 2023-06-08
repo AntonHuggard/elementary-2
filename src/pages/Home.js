@@ -9,6 +9,7 @@ import Header from '../components/Header';
 import SideMenu from '../components/SideMenu';
 import atoms from '../components/atoms.json';
 import Modal from '../components/modal';
+import runQuery from '../components/query';
 import React, { Component } from 'react';
 
 
@@ -38,7 +39,7 @@ class Home extends Component {
         }
     }
     
-    getMatchingElements (term, str, attr) {
+    filterElements (term, attr) {
         let results = [];
         switch (attr) {
           case "name":
@@ -53,8 +54,9 @@ class Home extends Component {
             break;
           default:
             this.state.atoms.forEach(element => {
-              const data = str? element[attr].toLowerCase() : element[attr]
-              if(data === term) results.push(element.symbol);
+              const dataType = typeof element[attr]
+              const data = (dataType === "string")? element[attr].toLowerCase() : element[attr];
+              if (data === term) results.push(element.symbol);
             });
         }
         return results;
@@ -73,21 +75,21 @@ class Home extends Component {
     
           if (filter.match(/[spdf]-block\s?$/i)) { 
             const block = filter[0];
-            results = this.getMatchingElements(block, true, "block");
+            results = this.filterElements(block, "block");
           } else if(filter==='radioactive') {
-            results = this.getMatchingElements(true, false, "radioactive");
+            results = this.filterElements(true, "radioactive");
           } else if(filter==='gas') {
-            results = this.getMatchingElements("gas", true, "state_at_standard_conditions");
+            results = this.filterElements("gas", "state_at_standard_conditions");
           } else if(filter==='liquid') {
-            results = this.getMatchingElements("liquid", true, "state_at_standard_conditions");
+            results = this.filterElements("liquid", "state_at_standard_conditions");
           } else if(filter==='solid') {
-            results = this.getMatchingElements("solid", true, "state_at_standard_conditions");
+            results = this.filterElements("solid", "state_at_standard_conditions");
           } else if(filter==='nonmetal') {
-            results = this.getMatchingElements("nonmetal", true, "metalness");
+            results = this.filterElements("nonmetal", "metalness");
           } else if(filter==='metal') {
-            results = this.getMatchingElements("metal", true, "metalness");
+            results = this.filterElements("metal", "metalness");
           } else if(filter==='metalloid') {
-            results = this.getMatchingElements("metalloid", true, "metalness");
+            results = this.filterElements("metalloid", "metalness");
           } else if(filter==='synthetic') {
             this.state.atoms.forEach(elmt => { 
               if(elmt.atomic_number >= 95) results.push(elmt.symbol) 
@@ -105,73 +107,21 @@ class Home extends Component {
     
     handleQuery = (query) => {
           query === "" ? this.showElements(true): this.showElements(false);
-    
-          if (query === "") {
-            console.log("show default mobile view");
-          } else {
-            console.log("show special view");
-          }
-    
-    
-          let results = [];
-          query = query.toLowerCase();
-    
-          // search by...
-          if ((query.length<3) && (query.match(/[a-z]{1,2}\s?$/i))) { 
-            results = this.getMatchingElements(query, true, "symbol");
-          } else if(query.match(/^\d{1,3}\s?$/i)) {
-            results = this.getMatchingElements(parseInt(query, 10), false, "atomic_number");
-          } else if (query.match(/non[-\s]?metals?\s?$/i)) {
-            results = this.getMatchingElements("non-metal", true, "primary_class");
-          } else if (query.match(/noble[-\s]?gas(es)?\s?$/i)) {
-            results = this.getMatchingElements("noble_gas", true, "primary_class");
-          } else if (query.match(/alkali[-\s]?metals?\s?$/i)) {
-            results = this.getMatchingElements("alkali-metal", true, "primary_class");
-          } else if (query.match(/alkaline[-\s]?earth[-\s]?metals?\s?$/i)) {
-            results = this.getMatchingElements("alkaline-earth-metal", true, "primary_class");
-          } else if (query.match(/metaux[-\s]?pauvres?\s?$/i)) {
-            results = this.getMatchingElements("metaux_pauvres", true, "primary_class");
-          } else if (query.match(/metalloids?\s?$/i)) {
-            results = this.getMatchingElements("metalloid", true, "primary_class");
-          } else if (query.match(/transition[-\s]?metals?\s?$/i)) {
-            results = this.getMatchingElements("transition-metal", true, "primary_class");
-          } else if (query.match(/^lanthanoids?\s?$/i) || query.match(/^lanthanides?\s?$/i)) {
-            results = this.getMatchingElements("lanthanoid", true, "primary_class");
-          } else if (query.match(/^actinoids?\s?$/i) || query.match(/^actinides?\s?$/i)) {
-            results = this.getMatchingElements("actinoid", true, "primary_class");
-          } else if (query.match(/unknowns?\s?$/i)) {
-            results = this.getMatchingElements("unknown", true, "primary_class");
-          } else if (query.match(/radio\s?active$/i)) {
-            results = this.getMatchingElements(true, false, "radioactive");
-          } else if (query.match(/^halogens?$/i)) {
-            results = this.getMatchingElements(17, false, "group");
-          } else if (query.match(/^transactinides?$/i)) {
-            // there's no property that groups these guys together -- have to get them by atomic #
-            results = this.getMatchingElements(104, false, "atomic_number");
-            results.push(this.getMatchingElements(105, false, "atomic_number"));
-            results.push(this.getMatchingElements(106, false, "atomic_number"));
-            results.push(this.getMatchingElements(107, false, "atomic_number"));
-            results.push(this.getMatchingElements(108, false, "atomic_number"));
-            results.push(this.getMatchingElements(109, false, "atomic_number"));
-            results.push(this.getMatchingElements(110, false, "atomic_number"));
-            results.push(this.getMatchingElements(111, false, "atomic_number"));
-          } else if (query.match(/^row[-\s]?[1-7]$/i) || query.match(/^period[-\s]?[1-7]$/i)) {
-            query = query.replace('row', '' );
-            query = query.replace('period', '' );
-            query = query.replace('-', '' );
-            query = parseInt(query, 10);
-            results = this.getMatchingElements(query, false, "period");
-          } else if (query.match(/^group[-\s]?\d+$/i)) {
-            query = query.replace('group', '' );
-            query = query.replace('-', '' );
-            query = parseInt(query, 10);
-            results = this.getMatchingElements(query, false, "group");
-          } else results = this.getMatchingElements(query, false, "name");
+
+          let results = runQuery(query);
+          
           results.forEach(symbol => {
             let htmlAtom = document.getElementById(symbol);
             htmlAtom.style.opacity = "100%";
           });
-    
+
+          // TODO: for mobile, return all elements that match the query
+          // as it currently exists, users can only search the first 20 or so on mobile
+          // if (query === "") {
+          //   console.log("show default mobile view");
+          // } else {
+          //   console.log("show special view");
+          // }
     }
     
     hideInputsExcept(exception) {

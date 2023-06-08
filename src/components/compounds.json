@@ -1,0 +1,134 @@
+{
+    "compounds": [
+        {
+            "name": "Bronze",
+            "iupac-name": "",
+            "elements": ["Cu", "Sn"]
+        },
+        {
+            "name": "Brass",
+            "iupac-name": "",
+            "elements": ["Cu", "Zn"]
+        },
+        {
+            "name": "Steel",
+            "iupac-name": "",
+            "elements": ["Fe", "C"]
+        },
+        {
+            "name": "Stainless steel",
+            "iupac-name": "",
+            "elements": ["Fe", "C", "Cr", "Mo"]
+        },
+        {
+            "name": "Magnalium",
+            "iupac-name": "",
+            "elements": ["Mg", "Al"]
+        },
+        {
+            "name": "Solder",
+            "iupac-name": "",
+            "elements": ["Pb", "Sn"]
+        },
+        {
+            "name": "Rose gold",
+            "iupac-name": "",
+            "elements": ["Au", "Cu"]
+        },
+        {
+            "name": "Sterling silver",
+            "iupac-name": "",
+            "elements": ["Ag", "Cu"]
+        },
+        {
+            "name": "White gold",
+            "iupac-name": "",
+            "elements": ["Au", "Pd", "Ni", "Zn"]
+        },
+        {
+            "name": "Pewter",
+            "iupac-name": "",
+            "elements": ["Sn", "Cu", "Pb", "Sb"]
+        },
+        {
+            "name": "Magnox",
+            "iupac-name": "",
+            "elements": ["Mg", "Al"]
+        },
+        {
+            "name": "Gunmetal",
+            "iupac-name": "",
+            "elements": ["Cu", "Sn", "Zn"]
+        },
+        {
+            "name": "Amalgam",
+            "iupac-name": "",
+            "elements": ["Hg", "Ag", "Sn", "Cu"]
+        },
+        {
+            "name": "Babbit",
+            "iupac-name": "",
+            "elements": ["Cu", "Sb", "Pb"]
+        },
+        {
+            "name": "Nichrome",
+            "iupac-name": "",
+            "elements": ["Ni", "Cr"]
+        },
+        {
+            "name": "Billon",
+            "iupac-name": "",
+            "elements": ["Cu", "Ag"]
+        },
+        {
+            "name": "Nordic gold",
+            "iupac-name": "",
+            "elements": ["Cu", "Al", "Zn", "Sn"]
+        },
+        {
+            "name": "Crown gold",
+            "iupac-name": "",
+            "elements": ["Au", "Ag"]
+        },
+        {
+            "name": "Invar",
+            "iupac-name": "",
+            "elements": ["Fe", "Ni"]
+        },
+        {
+            "name": "",
+            "iupac-name": "",
+            "elements": []
+        },
+        {
+            "name": "tnt",
+            "iupac-name": "trinitrotoluene",
+            "elements": ["N", "C", "O", "H"]
+        },
+        {
+            "name": "",
+            "iupac-name": "",
+            "elements": []
+        },
+        {
+            "name": "",
+            "iupac-name": "",
+            "elements": []
+        },
+        {
+            "name": "",
+            "iupac-name": "",
+            "elements": []
+        },
+        {
+            "name": "",
+            "iupac-name": "",
+            "elements": []
+        },
+        {
+            "name": "",
+            "iupac-name": "",
+            "elements": []
+        }
+    ]
+}
