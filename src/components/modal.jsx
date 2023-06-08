@@ -251,8 +251,8 @@ class Modal extends Component {
                                 Electronegativity: {this.props.element.electronegativity} <br/>
                                 E<sup>-</sup> configuration: <span dangerouslySetInnerHTML={{ __html: electron_config }} /> <br/>
                                 <div className="mobile_radioactive_indictaion">Radioactive: {this.props.element.radioactive}</div>
-                                Discovered: {this.props.element.discovery_date} <br/> 
-                                Etymology: {this.props.element.etymology} <br/> <br/>
+                                Discovery details: <span dangerouslySetInnerHTML={{ __html: this.props.element.discovery_details }} /> <br/>
+                                Etymology: <span dangerouslySetInnerHTML={{ __html: this.props.element.etymology }} /> <br/>
                             </div>
                         </div>
                         {/* <div className= "item7">{this.props.element.name}</div> */}
