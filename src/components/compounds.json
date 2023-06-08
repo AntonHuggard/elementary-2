@@ -1,9 +1,9 @@
 {
     "compounds": [
         {
-            "name": "",
+            "name": "bronze",
             "iupac-name": "",
-            "elements": []
+            "elements": ["Cu", "Sn"]
         },
         {
             "name": "",

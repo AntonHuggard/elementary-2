@@ -13,6 +13,14 @@ function getMatchingElements (term, str, attr) {
       case "name":
         term = term.replace(/\s/g, "");
         atoms.forEach(elmt => { if(elmt[attr].includes(term)) r.push(elmt.symbol) });
+        compounds.forEach(compound => {
+            const name = compound["name"].toLowerCase()
+            const fancyName = compound["iupac-name"].toLowerCase()
+            if((term === name)|(term === fancyName)) {
+                const compoundElements = compound.elements;
+                compoundElements.forEach(elementSymbol => { r.push(elementSymbol) });
+            }
+        });
         break;
       case "symbol":
         atoms.forEach(elmt => { 
@@ -58,13 +66,6 @@ function getMatchingElements (term, str, attr) {
             });
             break;
         default:
-            compounds.forEach(compound => {
-                const name = compound["name"].toLowerCase()
-                const fancyName = compound["iupac-name"].toLowerCase()
-                if((term === name)|(term === fancyName)) {
-                    console.log(compound.elements);
-                }
-            });
             atoms.forEach(element => {
                 const data = str? element[attr].toLowerCase() : element[attr]
                 if(data === term) r.push(element.symbol);
