@@ -2,69 +2,65 @@ import atomsJSON from './atoms.json';
 import compoundsJSON from './compounds.json'
 
 
-function getMatchingElements (term, str, attr) {
-    // term = search query, 
-    // str = is the query a string(?) (this seems redundant), 
-    // attr = attribute i.e. name, symbol, mass, atomic number
+function getMatchingElements (term, str, attr, precision=null, tolerance=0) {
+    // returns array of chemical symbols for all elements that match the query (on given attribute)
+    // term = search query 
+    // str = (boolean) is the query a string? (used in default case below) 
+    // attr = element attribute i.e. name, symbol, atomic_mass, atomic_number
+    // precision = eq (equal to), lt (less than), gt (greater than), ce (close enough, uses tolerance)
+    // tolerance = for numeric terms (eg. instead of needing exact values, allow say +/- 0.05)
+
     let atoms = atomsJSON.atoms;
     let compounds = compoundsJSON.compounds;
     let r = [];
+
+    switch (precision) {
+        case "ce":
+            atoms.forEach(elmt => { 
+                if((elmt[attr] <= (term+tolerance) ) && (elmt[attr] >= (term-tolerance) )) 
+                    r.push(elmt.symbol);
+            });
+            return r;
+        case "lt":
+            atoms.forEach(elmt => { 
+                if (elmt[attr] < (term+tolerance) ) r.push(elmt.symbol) 
+            });
+            return r;
+        case "gt":
+            atoms.forEach(elmt => { 
+                if (elmt[attr] > (term+tolerance) ) r.push(elmt.symbol) 
+            });
+            return r;
+        default:
+            break;
+    }
+
     switch (attr) {
-      case "name":
-        term = term.trim();
-        atoms.forEach(elmt => { if(elmt[attr].includes(term)) r.push(elmt.symbol) });
-        compounds.forEach(compound => {
-            const name = compound["name"].toLowerCase()
-            const fancyName = compound["iupac-name"].toLowerCase()
-            if((term === name)|(term === fancyName)) {
-                const compoundElements = compound.elements;
-                compoundElements.forEach(elementSymbol => { r.push(elementSymbol) });
-            }
-        });
-        break;
-      case "symbol":
-        atoms.forEach(elmt => { 
-          term = term.toUpperCase();
-          if((elmt[attr].toUpperCase().includes(term)) || (elmt[attr] === term)) r.push(elmt.symbol) 
-        });
-        break;
-        case "atomic_mass":
-            atoms.forEach(elmt => { 
-                // add a 0.5 tolerance on atomic mass
-                if((elmt[attr] <= (term+0.5) ) && (elmt[attr] >= (term-0.5) )) r.push(elmt.symbol) 
+        case "name":
+            // search by atom name -- or by compound name (eg includes alloys)
+            term = term.trim();
+            atoms.forEach(elmt => { if(elmt[attr].includes(term)) r.push(elmt.symbol) });
+            
+            compounds.forEach(compound => {
+                const name = compound["name"].toLowerCase()
+                const fancyName = compound["iupac-name"].toLowerCase()
+
+                if((term === name)|(term === fancyName)) {
+                    const compoundElements = compound.elements;
+                    compoundElements.forEach(elementSymbol => { r.push(elementSymbol) });
+                }
             });
             break;
-        case "discovery_date":
+
+        case "symbol":
+            // search by chemical symbol -- 2 letters
             atoms.forEach(elmt => { 
-                if (elmt[attr] === term) r.push(elmt.symbol) 
-            });
+                term = term.toUpperCase();
+                if ((elmt[attr].toUpperCase().includes(term)) || (elmt[attr] === term)) 
+                    r.push(elmt.symbol) 
+                });
             break;
-        case "disc_before":
-            atoms.forEach(elmt => { 
-                if (elmt["discovery_date"] <= term) r.push(elmt.symbol) 
-            });
-            break;
-        case "disc_after":
-            atoms.forEach(elmt => { 
-                if (elmt["discovery_date"] >= term) r.push(elmt.symbol) 
-            });
-            break;
-        case "electronegativity":
-            atoms.forEach(elmt => { 
-                // add a 0.05 tolerance on en
-                if((elmt[attr] <= (term+0.05) ) && (elmt[attr] >= (term-0.05) )) r.push(elmt.symbol) 
-            });
-            break;
-        case "en_lt":
-            atoms.forEach(elmt => { 
-                if (elmt["electronegativity"] < (term+0.05) ) r.push(elmt.symbol) 
-            });
-            break;
-        case "en_gt":
-            atoms.forEach(elmt => { 
-                if (elmt["electronegativity"] > (term+0.05) ) r.push(elmt.symbol) 
-            });
-            break;
+
         default:
             atoms.forEach(element => {
                 const data = str? element[attr].toLowerCase() : element[attr]
@@ -89,19 +85,19 @@ function runQuery(input) {
         (q.match(/^found\s\d{3,4}?\s?$/i)) ||
         (q.match(/^\d{4}$/)) ) {
         const year = q.replace(/\D/g,'');
-        r = getMatchingElements(parseInt(year), true, "discovery_date");
+        r = getMatchingElements(parseInt(year), false, "discovery_date");
     }
     else if (
         (q.match(/^discover(y|ed)? (before|pre) \d{3,4}?\s?$/i)) || 
         (q.match(/^found (before|pre) \d{3,4}?\s?$/i)) ) {
         const year = q.replace(/\D/g,'');
-        r = getMatchingElements(parseInt(year), true, "disc_before");
+        r = getMatchingElements(parseInt(year), true, "discovery_date", "lt");
     }
     else if (
         (q.match(/^discover(y|ed)? (after|since|post) \d{3,4}?\s?$/i)) || 
         (q.match(/^found (after|since|post) \d{3,4}?\s?$/i)) ) {
         const year = q.replace(/\D/g,'');
-        r = getMatchingElements(parseInt(year), true, "disc_after");
+        r = getMatchingElements(parseInt(year), true, "discovery_date", "gt");
     }
     // search by atomic number
     else if(q.match(/^\d{1,3}\s?$/i)) {
@@ -109,7 +105,7 @@ function runQuery(input) {
     } 
     // search by atomic mass
     else if(q.match(/^\d{1,3}.?(\d{1,4})?\s?$/i)) {
-        r = getMatchingElements(Number(q), false, "atomic_mass");
+        r = getMatchingElements(Number(q), false, "atomic_mass", "ce", 0.5); // tolerance of 0.5 
     } 
     
     // search by metalness
@@ -145,7 +141,7 @@ function runQuery(input) {
         const equalsIndex = queryArray.indexOf("=");
         let en = queryArray.slice(equalsIndex+1);
         en = en.join("");
-        r = getMatchingElements(Number(en), true, "electronegativity");
+        r = getMatchingElements(Number(en), true, "electronegativity", "ce", 0.05); // tolerance of 0.05 
     }
     else if (
         (q.match(/^en\s?(<|lt)\s?\d+(.\d+)?\s?$/i)) || 
@@ -157,7 +153,7 @@ function runQuery(input) {
                 const operatorIndex = queryArray.indexOf("<");
                 en = queryArray.slice(operatorIndex+1).join("");
             }
-        r = getMatchingElements(Number(en), true, "en_lt");
+        r = getMatchingElements(Number(en), true, "electronegativity", "lt", 0.05);
     }
     else if (
         (q.match(/^en\s?(>|gt)\s?\d+(.\d+)?\s?$/i)) || 
@@ -169,7 +165,7 @@ function runQuery(input) {
                 const operatorIndex = queryArray.indexOf(">");
                 en = queryArray.slice(operatorIndex+1).join("");
             }
-        r = getMatchingElements(Number(en), true, "en_gt");
+        r = getMatchingElements(Number(en), true, "electronegativity", "gt", 0.05);
     }
 
         
@@ -216,6 +212,7 @@ function runQuery(input) {
         r.push(getMatchingElements(111, false, "atomic_number"));
     } 
       
+    // search by row/period
     else if (q.match(/^row[-\s]?[1-7]$/i) || q.match(/^period[-\s]?[1-7]$/i)) {
         q = q.replace('row', '' );
         q = q.replace('period', '' );
@@ -224,6 +221,7 @@ function runQuery(input) {
         r = getMatchingElements(q, false, "period");
     } 
       
+    // search by group
     else if (q.match(/^group[-\s]?\d+$/i)) {
         q = q.replace('group', '' );
         q = q.replace('-', '' );
