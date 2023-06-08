@@ -1,8 +1,13 @@
 import atomsJSON from './atoms.json';
+import compoundsJSON from './compounds.json'
 
 
 function getMatchingElements (term, str, attr) {
+    // term = search query, 
+    // str = is the query a string(?) (this seems redundant), 
+    // attr = attribute i.e. name, symbol, mass, atomic number
     let atoms = atomsJSON.atoms;
+    let compounds = compoundsJSON.compounds;
     let r = [];
     switch (attr) {
       case "name":
@@ -53,9 +58,16 @@ function getMatchingElements (term, str, attr) {
             });
             break;
         default:
+            compounds.forEach(compound => {
+                const name = compound["name"].toLowerCase()
+                const fancyName = compound["iupac-name"].toLowerCase()
+                if((term === name)|(term === fancyName)) {
+                    console.log(compound.elements);
+                }
+            });
             atoms.forEach(element => {
-            const data = str? element[attr].toLowerCase() : element[attr]
-            if(data === term) r.push(element.symbol);
+                const data = str? element[attr].toLowerCase() : element[attr]
+                if(data === term) r.push(element.symbol);
             });
     }
     return r;
@@ -218,7 +230,7 @@ function runQuery(input) {
         r = getMatchingElements(q, false, "group");
     } 
       
-        //   lastly, search by name
+    //   lastly, search by name
     else r = getMatchingElements(q, false, "name");
 
     return r;
