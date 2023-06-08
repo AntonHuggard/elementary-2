@@ -36,11 +36,17 @@ function getMatchingElements (term, str, attr) {
                 if (elmt["discovery_date"] >= term) r.push(elmt.symbol) 
             });
             break;
+        case "electronegativity":
+            atoms.forEach(elmt => { 
+                // add a 0.05 tolerance on en
+                if((elmt[attr] <= (term+0.05) ) && (elmt[attr] >= (term-0.05) )) r.push(elmt.symbol) 
+            });
+            break;
         default:
-        atoms.forEach(element => {
-          const data = str? element[attr].toLowerCase() : element[attr]
-          if(data === term) r.push(element.symbol);
-        });
+            atoms.forEach(element => {
+            const data = str? element[attr].toLowerCase() : element[attr]
+            if(data === term) r.push(element.symbol);
+            });
     }
     return r;
 }
@@ -96,6 +102,27 @@ function runQuery(input) {
     else if (q.match(/^[spdf][-\s]block?\s?$/i)) {
         const block = q[0];
         r = getMatchingElements(block, true, "block");
+    }
+
+    // search by melting point
+    // else if (
+    //     (q.match(/^melting (point|pt) (equal(\sto)?|=) -?\d{1,4}\s?$/i)) || 
+    //     (q.match(/^mp\s?=\s?-?\d{1,4}\s?$/i)) ) {
+    //         console.log("melting point search")
+    //     // const year = q.replace(/\D/g,'');
+    //     // r = getMatchingElements(parseInt(year), true, "disc_before");
+    // }
+
+
+    // search by electronegativity
+    else if (
+        (q.match(/^en\s?(=|equals?)\s?\d(.\d+)?\s?$/i)) || 
+        (q.match(/^electro\s?negativity\s?=\s?\d(.\d+)?\s?$/i)) ) {
+        const queryArray = q.split("");
+        const equalsIndex = queryArray.indexOf("=");
+        let en = queryArray.slice(equalsIndex+1);
+        en = en.join("");
+        r = getMatchingElements(Number(en), true, "electronegativity");
     }
 
         
