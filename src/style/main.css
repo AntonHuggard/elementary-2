@@ -206,7 +206,7 @@ header span {
 
 #side-menu {
     z-index: 3;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     height: 100vh;
