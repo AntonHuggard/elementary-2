@@ -57,6 +57,10 @@
 @media only screen and (min-width: 740px) {
     #element-modal {
         background-color: transparent;
+        top: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.459);
+        border-radius: 0;
     }
     .modal_content {
         width: 720px;
@@ -68,6 +72,7 @@
         font-family: 'Sen', sans-serif;
         margin: auto;
         box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.507);
+        margin-top: 10%;
     }
     .grid-container {
         display: grid;

@@ -2,11 +2,22 @@ import React, { Component } from 'react'
 import radioactiveImg from '../imgs/radioactive.png';
 
 class Modal extends Component {
+    
+    state = {
+        mouseOver: false,
+    }
 
     closeModal = () => {
         const modal = document.getElementById('element-modal');
         modal.classList.toggle('hide-me');
     }
+
+    handler = () => {
+        if (! this.state.mouseOver) this.closeModal();
+    }
+
+    mouseEnter = () => {this.setState({ mouseOver : true });}
+    mouseExit = () => {this.setState({ mouseOver : false });}
 
     handleWeirdConfigurations = (atomicNumber) => {
 
@@ -241,8 +252,12 @@ class Modal extends Component {
             const radioactiveClasses = isRadioactive? "radioactive-symbol": "radioactive-symbol hide-me";
 
             return ( 
-                <div id="element-modal" className="hide-me">
-                    <div className= "modal_content">
+                <div 
+                    id="element-modal" className="hide-me" 
+                    onClick={this.handler} >
+                    <div className= "modal_content"
+                        onMouseEnter={this.mouseEnter}
+                        onMouseLeave={this.mouseExit}>
                         <div className= "grid-container">
                             <div className= "modal-header">{this.props.element.name}</div>
                             <button className= "modal-exit-btn" onClick={this.closeModal}>&times;</button>
