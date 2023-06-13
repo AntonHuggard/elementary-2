@@ -288,6 +288,8 @@ header span {
     background-color: white !important; 
 }
 
+#slider-title { display: none; }
+
 @media only screen and (max-width: 485px) {
     .opt-title { display: none; }
     .slider-menu-icon { 
@@ -296,6 +298,12 @@ header span {
         width: 40px;
     }
     .slider-menu-txt {display: none;}
+    #slider-title { 
+        display: block; 
+        color: white;
+        text-align: center;
+        font-weight: normal;
+    }
     #slider-menu button:hover .slider-menu-icon {
         filter: invert(100);
     }

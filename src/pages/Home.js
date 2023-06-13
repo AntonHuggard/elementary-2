@@ -281,7 +281,7 @@ class Home extends Component {
                     <DiscoverySlider onHandleDiscovery={this.handleDiscovery} />
                 </div>
 
-                <SliderMenu onSelectQuery={this.selectQueryType} />
+                <SliderMenu onSelectQuery={this.selectQueryType} inputOption={this.state.inputOption} />
 
                 <PeriodicTable 
                     atoms={atoms}
