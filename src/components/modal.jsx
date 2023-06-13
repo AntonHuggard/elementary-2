@@ -1,11 +1,23 @@
 import React, { Component } from 'react'
+import radioactiveImg from '../imgs/radioactive.png';
 
 class Modal extends Component {
+    
+    state = {
+        mouseOver: false,
+    }
 
     closeModal = () => {
         const modal = document.getElementById('element-modal');
         modal.classList.toggle('hide-me');
     }
+
+    handler = () => {
+        if (! this.state.mouseOver) this.closeModal();
+    }
+
+    mouseEnter = () => {this.setState({ mouseOver : true });}
+    mouseExit = () => {this.setState({ mouseOver : false });}
 
     handleWeirdConfigurations = (atomicNumber) => {
 
@@ -163,10 +175,15 @@ class Modal extends Component {
         if (this.props.element) {
             
             const units = this.props.units;
-            const melting_pt = this.props.onConvertTemp(this.props.element.melting_point, 0, units);
-            const boiling_pt = this.props.onConvertTemp(this.props.element.boiling_point, 0, units);
+            const known_mp = this.props.element.melting_point === 9999 ? false : true;
+            const known_bp = this.props.element.boiling_point === 9999 ? false : true;
+            const mp = this.props.onConvertTemp(this.props.element.melting_point, 0, units);
+            const bp = this.props.onConvertTemp(this.props.element.boiling_point, 0, units);
             const real_units = this.props.onGetUnitSymbol(units);
+            const melting_pt = known_mp? mp + real_units : "<em>unknown</em>";
+            const boiling_pt = known_bp? bp + real_units : "<em>unknown</em>";
             const electron_config = this.getElectronConfig(this.props.element.atomic_number);
+            const isRadioactive = this.props.element.radioactive;
 
             const nonmetals_colour = "rgb(223, 0, 0)";
             const alkali_metals_colour = "rgb(219, 102, 6)";
@@ -236,24 +253,31 @@ class Modal extends Component {
                     <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" class="number">${this.props.element.atomic_mass}</text>
                 `;
 
+            const radioactiveClasses = isRadioactive? "radioactive-symbol": "radioactive-symbol hide-me";
+
             return ( 
-                <div id="element-modal" className="hide-me">
-                    <div className= "modal_content">
+                <div 
+                    id="element-modal" className="hide-me" 
+                    onClick={this.handler} >
+                    <div className= "modal_content"
+                        onMouseEnter={this.mouseEnter}
+                        onMouseLeave={this.mouseExit}>
                         <div className= "grid-container">
-                            <div className= "item1">{this.props.element.name}</div>
-                            <button className= "item2" onClick={this.closeModal}>&times;</button>
-                            <svg className="item3" width="100%" height="300" dangerouslySetInnerHTML={{ __html: svg }} />
-                            <div className= "item4">
+                            <div className= "modal-header">{this.props.element.name}</div>
+                            <button className= "modal-exit-btn" onClick={this.closeModal}>&times;</button>
+                            <svg className="modal-svg" width="100%" height="300" dangerouslySetInnerHTML={{ __html: svg }} />
+                            <div className= "modal-text-data">
                                 Atomic Number: {this.props.element.atomic_number} <br/> 
                                 Relative Atomic Mass: {this.props.element.atomic_mass} <br/> 
-                                Melting Point: {melting_pt} <span dangerouslySetInnerHTML={{ __html: real_units }} /> <br/>
-                                Boiling Point: {boiling_pt} <span dangerouslySetInnerHTML={{ __html: real_units }} /> <br/> 
+                                Melting Point: <span dangerouslySetInnerHTML={{ __html: melting_pt }} /> <br/>
+                                Boiling Point: <span dangerouslySetInnerHTML={{ __html: boiling_pt }} /> <br/> 
                                 Electronegativity: {this.props.element.electronegativity} <br/>
                                 E<sup>-</sup> configuration: <span dangerouslySetInnerHTML={{ __html: electron_config }} /> <br/>
                                 <div className="mobile_radioactive_indictaion">Radioactive: {this.props.element.radioactive}</div>
-                                Discovered: {this.props.element.discovery_date} <br/> 
-                                Etymology: {this.props.element.etymology} <br/> <br/>
+                                Discovery details: <span dangerouslySetInnerHTML={{ __html: this.props.element.discovery_details }} /> <br/>
+                                Etymology: <span dangerouslySetInnerHTML={{ __html: this.props.element.etymology }} /> <br/>
                             </div>
+                            <img className={radioactiveClasses} src={radioactiveImg} alt='radioactive symbol' />
                         </div>
                         {/* <div className= "item7">{this.props.element.name}</div> */}
                     </div>

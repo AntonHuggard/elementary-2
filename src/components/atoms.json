@@ -59,7 +59,7 @@
     "radioactive": false,
     "discovery_date":1817,
     "discovery_details":"1817 by Johan August Arfwedson",
-    "etymology": "",
+    "etymology": "from the Greek <em>lithos</em>, meaning stone",
     "description": ""
 },
  {
@@ -80,7 +80,7 @@
     "radioactive": false,
     "discovery_date": 1798,
     "discovery_details":"1798 by Louis Nicolas Vauquelin",
-    "etymology": "",
+    "etymology": "from the mineral beryl",
     "description": ""
 },
          {
@@ -100,7 +100,7 @@
     "electronegativity": 2.04,
     "radioactive": false,
     "discovery_date": 1808,
-    "discovery_details":"30th of June, 1808 by Joseph Louis Gay-Lussac and Louis Jacques Th&eacute,nard",
+    "discovery_details":"30<sup>th</sup> of June, 1808 by Joseph Louis Gay-Lussac and Louis Jacques Th&eacute;nard",
     "etymology": "from Borax",
     "description": ""
 },
@@ -143,7 +143,7 @@
     "radioactive": false,
     "discovery_date": 1772,
     "discovery_details":"1772 by Scottish physician Daniel Rutherford",
-    "etymology": "from the French <em>nitrog&egrave,ne</em>, which means <em>Potassium nitrate-producing</em>",
+    "etymology": "from the French <em>nitrog&egrave;ne</em>, which means <em>Potassium nitrate-producing</em>",
     "description": ""
 },
                 {
@@ -184,7 +184,7 @@
     "electronegativity": 3.98,
     "radioactive": false,
     "discovery_date": 1810,
-    "discovery_details":"1810 by Andr&eacute-Marie Amp&egrave,re",
+    "discovery_details":"1810 by Andr&eacute;-Marie Amp&egrave;re",
     "etymology": "from the Latin <em>fluo</em>, <em>to flow</em>",
     "description": ""
 },             
@@ -268,7 +268,7 @@
     "electronegativity": 1.61,
     "radioactive": false,
     "discovery_date": 1824,
-    "discovery_details":"1824  by Hans Christian &#216,rsted (Denmark)",
+    "discovery_details":"1824  by Hans Christian &#216;rsted (Denmark)",
     "etymology": "Named after Aluminia (which is named after Alum)",
     "description": ""
 },
@@ -289,7 +289,7 @@
     "electronegativity": 1.90,
     "radioactive": false,
     "discovery_date": 1823,
-    "discovery_details":"1823 by J&ouml,ns Jacob Berzelius",
+    "discovery_details":"1823 by J&ouml;ns Jacob Berzelius",
     "etymology": "from flint in Latin, <em>silex</em> or <em>silicis</em>",
     "description": ""
 },
@@ -417,7 +417,7 @@
     "radioactive": false,
     "discovery_date": 1808,
     "discovery_details":"1808 by Humphry Davy",
-    "etymology": "",
+    "etymology": "from Latin <em>calx</em>, meaning lime",
     "description": ""
 },
                 {
@@ -479,8 +479,8 @@
     "electronegativity": 1.63,
     "radioactive": false,
     "discovery_date": 1801,
-    "discovery_details":"1801 by Andr&eacute,s Manuel del R&iacute,o. Isolated in 1830 by Nils Gabriel Sefstr&ouml,m",
-    "etymology": "after the Norse goddess of beauty & fertility, Vanad&iacute,s (Freyja)",
+    "discovery_details":"1801 by Andr&eacute;s Manuel del R&iacute;o. Isolated in 1830 by Nils Gabriel Sefstr&ouml;m",
+    "etymology": "after the Norse goddess of beauty & fertility, Vanad&iacute;s (Freyja)",
     "description": ""
 },
                 {
@@ -710,7 +710,7 @@
     "electronegativity": 2.55,
     "radioactive": false,
     "discovery_date": 1817,
-    "discovery_details":"1817 by J&ouml,ns Jakob Berzelius & Johann Gottlieb Gahn",
+    "discovery_details":"1817 by J&ouml;ns Jakob Berzelius & Johann Gottlieb Gahn",
     "etymology": "after Selene, the Greek moon goddess",
     "description": ""
 },
@@ -731,7 +731,7 @@
     "electronegativity": 2.96,
     "radioactive": false,
     "discovery_date": 1825,
-    "discovery_details":"1825 by Antoine J&eacute,r&ocirc,me Balard (France) & Carl Jacob L&ouml,wig (Germany)",
+    "discovery_details":"1825 by Antoine J&eacute;r&ocirc;me Balard (France) & Carl Jacob L&ouml;wig (Germany)",
     "etymology": "from the Greek word for <em>stench</em>",
     "description": ""
 },
@@ -795,7 +795,7 @@
     "radioactive": false,
     "discovery_date": 1787,
     "discovery_details":"1787 by William Cruickshank",
-    "etymology": "",
+    "etymology": "after stronantine, which gets its name from the Scottish village of Strontian",
     "description": ""
 },
                 {
@@ -887,7 +887,7 @@
     "name":"technetium",
     "atomic_number": 43,
     "id": 43,
-    "atomic_mass": "'[97]",
+    "atomic_mass": "[97]",
     "state_at_standard_conditions": "solid",
     "period":5,
     "group":7,
@@ -899,7 +899,7 @@
     "electronegativity": 1.90,
     "radioactive": true,
     "discovery_date": 1937,
-    "discovery_details":"1937 by Emilio Segr&egrave, and Carlo Perrier",
+    "discovery_details":"1937 by Emilio Segr&egrave; and Carlo Perrier",
     "etymology": "from Greek, meaning <em>synthetic</em> with the -ium suffix",
     "description": ""
 },
@@ -1088,7 +1088,7 @@
     "electronegativity": 2.1,
     "radioactive": false,
     "discovery_date": 1782,
-    "discovery_details":"1782 by Franz-Joseph M&uuml,ller von Reichenstein (Austria)",
+    "discovery_details":"1782 by Franz-Joseph M&uuml;ller von Reichenstein (Austria)",
     "etymology": "after the Roman Earth deity <em>Tellus</em>",
     "description": ""
 },
@@ -1152,7 +1152,7 @@
     "radioactive": false,
     "discovery_date": 1860,
     "discovery_details":"1860 by Robert Bunsen and Gustav Kirchhoff. Isolated in 1882 by Carl Setterberg",
-    "etymology": "",
+    "etymology": "from Latin <em>Caesius</em> (bluish-grey), after its spectral colours.",
     "description": ""
 },
                  {
@@ -1194,7 +1194,7 @@
     "radioactive": false,
     "discovery_date": 1838,
     "discovery_details":"1838 by Carl Gustaf Mosander",
-    "etymology": "",
+    "etymology": "from the Ancient Greek <em>lanthanein</em>, meaning <em>to lie hidden</em>",
     "description": ""
 },
                 
@@ -1216,7 +1216,7 @@
     "radioactive": false,
     "discovery_date": 1803,
     "discovery_details":"1803 by M.H. Klaproth, J.J. Berzelius, Wilhelm Hisinger. Isolated 1838 by C.G. Mosander",
-    "etymology": "",
+    "etymology": "after Ceres, the Roman god of agriculture",
     "description": ""
 },
                 {
@@ -1237,7 +1237,7 @@
     "radioactive": false,
     "discovery_date": 1885,
     "discovery_details":"1885 by Carl Auer von Welsbach (Austria)",
-    "etymology": "",
+    "etymology": "from Greek, meaning <em>green twin</em>",
     "description": ""
 },
                 {
@@ -1258,7 +1258,7 @@
     "radioactive": false,
     "discovery_date": 1885,
     "discovery_details":"1885 by Carl Auer von Welsbach (Austria)",
-    "etymology": "",
+    "etymology": "from Greek, meaning <em>new twin</em>",
     "description": ""
 },
                  {
@@ -1266,7 +1266,7 @@
     "name":"promethium",
     "atomic_number": 61,
     "id": 61,
-    "atomic_mass": "'[145]",
+    "atomic_mass": "[145]",
     "state_at_standard_conditions": "solid",
     "period":6,
     "group": "yes",
@@ -1278,8 +1278,8 @@
     "electronegativity":1.13,
     "radioactive": true,
     "discovery_date": 1942,
-    "discovery_details":"1942 by Chien Shiung Wu, E. Segr&egrave,, H. Bethe. Isolated 1945 by C.D. Coryell, J.A. Marinsky, L.E. Glendenin",
-    "etymology": "",
+    "discovery_details":"1942 by Chien Shiung Wu, E. Segr&egrave;, H. Bethe. Isolated 1945 by C.D. Coryell, J.A. Marinsky, L.E. Glendenin",
+    "etymology": "after <em>Promethius</em> of Greek mythology",
     "description": ""
 },
                  {
@@ -1300,7 +1300,7 @@
     "radioactive": false,
     "discovery_date": 1879,
     "discovery_details":"1879 by Lecoq de Boisbaudran",
-    "etymology": "",
+    "etymology": "after samarskite (ultimately from Russian mining engineer Vassili Samarsky-Bykhovets)",
     "description": ""
 },
                  {
@@ -1320,8 +1320,8 @@
     "electronegativity":1.2,
     "radioactive": false,
     "discovery_date": 1896,
-    "discovery_details":"1896 by Eug&egrave,ne-Anatole Demarçay. Isolated 1901 (by him)",
-    "etymology": "",
+    "discovery_details":"1896 by Eug&egrave;ne-Anatole Demarçay, isolated 1901.",
+    "etymology": "after Europe. Obviously.",
     "description": ""
 },
                 {
@@ -1342,7 +1342,7 @@
     "radioactive": false,
     "discovery_date": 1880,
     "discovery_details":"1880 by Jean Charles Galissard de Marignac. Isolated 1886 by Lecoq de Boisbaudran",
-    "etymology": "",
+    "etymology": "after Gadolinite (from Swedish/Finnish chemist Johan Gadolin)",
     "description": ""
 },
                  {
@@ -1363,7 +1363,7 @@
     "radioactive": false,
     "discovery_date": 1843,
     "discovery_details":"1843 Carl Gustaf Mosander",
-    "etymology": "",
+    "etymology": "after Ytterby, Sweden",
     "description": ""
 },
                 
@@ -1385,7 +1385,7 @@
     "radioactive": false,
     "discovery_date": 1886,
     "discovery_details":"1886 Lecoq de Boisbaudran",
-    "etymology": "",
+    "etymology": "from Greek <em>dysprositos</em>, meaning <em>hard to obtain</em>",
     "description": ""
 },
                  {
@@ -1406,7 +1406,7 @@
     "radioactive": false,
     "discovery_date": 1878,
     "discovery_details":"1878 by Jacques-Louis Soret and Marc Delafontaine",
-    "etymology": "",
+    "etymology": "after the Latin name for Stockholm, Sweden",
     "description": ""
 },
                  {
@@ -1427,7 +1427,7 @@
     "radioactive": false,
     "discovery_date": 1843,
     "discovery_details":"1843 Carl Gustaf Mosander",
-    "etymology": "",
+    "etymology": "after Ytterby, Sweden",
     "description": ""
 },
                  {
@@ -1448,7 +1448,7 @@
     "radioactive": false,
     "discovery_date": 1879,
     "discovery_details":"1879 by Per Teodor Cleve (Sweden)",
-    "etymology": "",
+    "etymology": "after Thule (mythical Scandinavian region)",
     "description": ""
 },
                  {
@@ -1469,7 +1469,7 @@
     "radioactive": false,
     "discovery_date": 1878,
     "discovery_details":"1878 by Jean Charles Galissard de Marignac. Isolated 1906 by Carl Auer von Welsbach",
-    "etymology": "",
+    "etymology": "after Ytterby, Sweden",
     "description": ""
 },
                  {
@@ -1490,7 +1490,7 @@
     "radioactive": false,
     "discovery_date": 1906,
     "discovery_details":"1906 by Carl Auer von Welsbach and Georges Urbain. Isolated by Welsbach, 1906",
-    "etymology": "",
+    "etymology": "after the Latin name for Paris (Lutetia)",
     "description": ""
 },        
  {
@@ -1511,7 +1511,7 @@
     "radioactive": false,
     "discovery_date": 1922,
     "discovery_details":"1922 by Dirk Coster and George de Hevesy",
-    "etymology": "",
+    "etymology": "from the Latin name for Copenhagen, <em> Hafnia</em>",
     "description": ""
 },
                  {
@@ -1552,7 +1552,7 @@
     "electronegativity": 2.36,
     "radioactive": false,
     "discovery_date": 1781,
-    "discovery_details":"1781 by Juan Jos&eacute, Elhuyar and Fausto Elhuyar. Isolated two years later",
+    "discovery_details":"1781 by Juan Jos&eacute; Elhuyar and Fausto Elhuyar. Isolated two years later",
     "etymology": "from Swedish, meaning <em>heavy stone</em>. In German, it is called <em>wolfram</em> (Hence, <em>W</em>)",
     "description": ""
 },
@@ -1574,7 +1574,7 @@
     "radioactive": false,
     "discovery_date": 1908,
     "discovery_details":"1908 by Masataka Ogawa (Japan)",
-    "etymology": "",
+    "etymology": "named after the Rhine (river)",
     "description": ""
 },
                  {
@@ -1595,7 +1595,7 @@
     "radioactive": false,
     "discovery_date": 1803,
     "discovery_details":"1803 by Smithson Tennant (England)",
-    "etymology": "",
+    "etymology": "from Greek <em>osme</em> (a smell)",
     "description": ""
 },
                  {
@@ -1658,7 +1658,7 @@
     "radioactive": false,
     "discovery_date": 0,
     "discovery_details":"before 6000 BC, Middle East",
-    "etymology": "",
+    "etymology": "from proto-Germanic <em>gultha</em>. Its symbol is from its Latin <em>aurum</em>",
     "description": ""
 },
                  {
@@ -1679,7 +1679,7 @@
     "radioactive": false,
     "discovery_date":0,
     "discovery_details":"Unknown. Before 1500 BC, Ancient Egypt",
-    "etymology": "",
+    "etymology": "after the Roman god. Formerly called hydrargyrum (Greek, meaning <em>water-silver</em>), hence its symbol",
     "description": ""
 },
               {
@@ -1700,7 +1700,7 @@
     "radioactive": false,
     "discovery_date": 1861,
     "discovery_details":"1861 by William Crookes (Britain), it was isolated the following year.",
-    "etymology": "",
+    "etymology": "from Greek <em>thallos</em> (green shoot or twig)",
     "description": ""
 },
                  {
@@ -1721,7 +1721,7 @@
     "radioactive": false,
     "discovery_date": 0,
     "discovery_details":"7000 BC, Middle East",
-    "etymology": "",
+    "etymology": "No one knows. It has been called the same thing for centuries. Symbol derived from latin <em>plumbum</em>",
     "description": ""
 },
                  {
@@ -1742,7 +1742,7 @@
     "radioactive": false,
     "discovery_date": 1000,
     "discovery_details":"before 1000 AD by Arabic Alchemists",
-    "etymology": "",
+    "etymology": "Unknown. Probably from Arabic <em>bi ismid</em>, which means <em>having the properties of antimony</em>",
     "description": ""
 },
                  {
@@ -1750,7 +1750,7 @@
     "name":"polonium",
     "atomic_number": 84,
     "id": 84,
-    "atomic_mass": "'[209]",
+    "atomic_mass": "[209]",
     "state_at_standard_conditions": "solid",
     "period":6,
     "group":16,
@@ -1763,7 +1763,7 @@
     "radioactive": true,
     "discovery_date": 1898,
     "discovery_details":"1898 by Pierre & Marie Curie. Isolated 1902 by Willy Marckwald",
-    "etymology": "",
+    "etymology": "from <em>Polonia</em>, the Latin name for Poland",
     "description": ""
 },
                  {
@@ -1771,7 +1771,7 @@
     "name": "astatine", 
     "atomic_number":85, 
     "id":85, 
-    "atomic_mass":"'[210]",
+    "atomic_mass":"[210]",
     "state_at_standard_conditions": "solid",
     "period":6,
     "group":17,
@@ -1783,8 +1783,8 @@
     "electronegativity":2.2,
     "radioactive":true,
     "discovery_date": 1940,
-    "discovery_details":"1940 by Dale R. Corson, Kenneth Ross MacKenzie, Emilio Segr&egrave",
-    "etymology": "",
+    "discovery_details":"1940 by Dale R. Corson, Kenneth Ross MacKenzie, Emilio Segr&egrave;",
+    "etymology": "from Greek <em>astatos</em> (unstable)",
     "description": ""
 },
      {
@@ -1792,7 +1792,7 @@
     "name": "radon", 
     "atomic_number": 86, 
     "id":86, 
-    "atomic_mass":"'[222]",
+    "atomic_mass":"[222]",
     "state_at_standard_conditions":"gas",
     "period":6,
     "group":18,
@@ -1805,7 +1805,7 @@
     "radioactive":true,
     "discovery_date":1899,
     "discovery_details":"1899 by E. Rutherford (New Zealand) and R.B. Owens (USA). Isolated 1910 by W. Ramsay & R. Whytlaw-Gray ",
-    "etymology": "",
+    "etymology": "Initially it was called <em>radium emanation</em>. In 1918 it was one of several shortened proposed names",
     "description": ""
 },    
  {
@@ -1813,7 +1813,7 @@
     "name": "francium", 
     "atomic_number":87, 
     "id":87, 
-    "atomic_mass":"'[223]",
+    "atomic_mass":"[223]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":1,
@@ -1826,7 +1826,7 @@
     "radioactive":true,
     "discovery_date":1939,
     "discovery_details":"1939 by Marguerite Perey",
-    "etymology": "",
+    "etymology": "after France",
     "description": ""
 },
      {
@@ -1834,7 +1834,7 @@
     "name": "radium", 
     "atomic_number":88, 
     "id":88, 
-    "atomic_mass":"'[226]",
+    "atomic_mass":"[226]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":2,
@@ -1847,7 +1847,7 @@
     "radioactive":true,
     "discovery_date":1898,
     "discovery_details":"1898 by Pierre & Marie Curie. Isolated by Marie, 1910",
-    "etymology": "",
+    "etymology": "from Latin <em>radius</em>. Meaning ray. Because of its emissions.",
     "description": ""
 },
  {
@@ -1855,7 +1855,7 @@
     "name":"actinium",
     "atomic_number": 89,
     "id": 89,
-    "atomic_mass": "'[227]",
+    "atomic_mass": "[227]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":3,
@@ -1868,7 +1868,7 @@
     "radioactive": true,
     "discovery_date":1902,
     "discovery_details":"1902 by Friedrich Oskar Giesel",
-    "etymology": "",
+    "etymology": "from Greek, meaning <em>ray-beam</em>",
     "description": ""
 },
                  {
@@ -1888,8 +1888,8 @@
     "electronegativity":1.3,
     "radioactive": true,
     "discovery_date": 1829,
-    "discovery_details":"1829 by J&ouml,ns Jakob Berzelius",
-    "etymology": "",
+    "discovery_details":"1829 by J&ouml;ns Jakob Berzelius",
+    "etymology": "after Thor, the Norse god of thunder",
     "description": ""
 },
                  {
@@ -1909,8 +1909,8 @@
     "electronegativity":1.5,
     "radioactive": true,
     "discovery_date": 1913,
-    "discovery_details":"1913 by Kasimir Fajans and Oswald Helmuth G&ouml,hring",
-    "etymology": "",
+    "discovery_details":"1913 by Kasimir Fajans and Oswald Helmuth G&ouml;hring",
+    "etymology": "a contraction of <em>proto-actinium</em>",
     "description": ""
 },
                 {
@@ -1930,8 +1930,8 @@
     "electronegativity":1.38,
     "radioactive": true,
     "discovery_date": 1789,
-    "discovery_details":"1789 by Martin Heinrich Klaproth. Isolated 1841 by Eug&egrave,ne-Melchior P&eacute,ligot",
-    "etymology": "",
+    "discovery_details":"1789 by Martin Heinrich Klaproth. Isolated 1841 by Eug&egrave;ne-Melchior P&eacute;ligot",
+    "etymology": "after Uranus (the planet). Ultimately derived from the Greek god of the sky",
     "description": ""
 },
                  {
@@ -1939,7 +1939,7 @@
     "name":"neptunium",
     "atomic_number": 93,
     "id": 93,
-    "atomic_mass": "'[237]",
+    "atomic_mass": "[237]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group": "yes",
@@ -1952,7 +1952,7 @@
     "radioactive": true,
     "discovery_date": 1940,
     "discovery_details":"1940 by Edwin McMillan and Philip H. Abelson",
-    "etymology": "",
+    "etymology": "after Neptune (the planet). Ultimately derived from the Greek god of the sea",
     "description": ""
 },
                  {
@@ -1960,7 +1960,7 @@
     "name":"plutonium",
     "atomic_number": 94, 
     "id": 94, 
-    "atomic_mass": "'[244]",
+    "atomic_mass": "[244]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group": "yes",
@@ -1973,7 +1973,7 @@
     "radioactive": true,
     "discovery_date": 1940,
     "discovery_details":"1940–1 by Glenn T. Seaborg, Arthur Wahl, Joseph W. Kennedy, Edwin McMillan",
-    "etymology": "",
+    "etymology": "after Pluto (the planet). Ultimately derived from the Greek god of the underworld",
     "description": ""
 },
                  {
@@ -1981,7 +1981,7 @@
     "name":"americium",
     "atomic_number": 95, 
     "id": 95, 
-    "atomic_mass": "'[243]",
+    "atomic_mass": "[243]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group": "yes",
@@ -1994,7 +1994,7 @@
     "radioactive": true,
     "discovery_date": 1944,
     "discovery_details":"1944 by Glenn T. Seaborg, Ralph A. James, Leon O. Morgan, Albert Ghiorso",
-    "etymology": "",
+    "etymology": "after the Americas (Northern & Southern continents)",
     "description": ""
 },
                 {
@@ -2002,7 +2002,7 @@
     "name":"curium",
     "atomic_number": 96, 
     "id": 96, 
-    "atomic_mass": "'[247]",
+    "atomic_mass": "[247]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group": "yes",
@@ -2015,7 +2015,7 @@
     "radioactive": true,
     "discovery_date": 1944,
     "discovery_details":"1944 by Glenn T. Seaborg, Ralph A. James, Albert Ghiorso",
-    "etymology": "",
+    "etymology": "after Marie Curie",
     "description": ""
 },
                 {
@@ -2023,7 +2023,7 @@
     "name":"berkelium",
     "atomic_number": 97,
     "id": 97,
-    "atomic_mass": "'[247]",
+    "atomic_mass": "[247]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group": "yes",
@@ -2036,7 +2036,7 @@
     "radioactive": true,
     "discovery_date": 1949,
     "discovery_details":"1949 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after Berkeley, California, USA",
     "description": ""
 },
                 {
@@ -2044,7 +2044,7 @@
     "name":"californium",
     "atomic_number": 98, 
     "id": 98, 
-    "atomic_mass": "'[251]",
+    "atomic_mass": "[251]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group": "yes",
@@ -2057,7 +2057,7 @@
     "radioactive": true,
     "discovery_date": 1950,
     "discovery_details":"1950 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after California, USA",
     "description": ""
 },
                 {
@@ -2065,7 +2065,7 @@
     "name":"einsteinium",
     "atomic_number": 99, 
     "id": 99, 
-    "atomic_mass": "'[252]",
+    "atomic_mass": "[252]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group": "yes",
@@ -2078,7 +2078,7 @@
     "radioactive": true,
     "discovery_date": 1952,
     "discovery_details":"1952 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after Albert Einstein",
     "description": ""
 },
                  {
@@ -2086,7 +2086,7 @@
     "name":"fermium",
     "atomic_number": 100, 
     "id": 100, 
-    "atomic_mass": "'[257]",
+    "atomic_mass": "[257]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group": "yes",
@@ -2099,7 +2099,7 @@
     "radioactive": true,
     "discovery_date": 1952,
     "discovery_details":"1952 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after Enrico Fermi",
     "description": ""
 },
  {
@@ -2107,7 +2107,7 @@
     "name":"mendelevium",
     "atomic_number": 101, 
     "id": 101, 
-    "atomic_mass": "'[258]",
+    "atomic_mass": "[258]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group": "yes",
@@ -2120,7 +2120,7 @@
     "radioactive": true,
     "discovery_date": 1955, 
     "discovery_details":"1955 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after Dmitri Mendeleev, father of the Periodic Table",
     "description": ""
 },                
               {
@@ -2128,7 +2128,7 @@
     "name": "nobelium",
     "atomic_number":102,
     "id":102,
-    "atomic_mass":"'[259]",
+    "atomic_mass":"[259]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group": "yes",
@@ -2141,7 +2141,7 @@
     "radioactive":true,
     "discovery_date":1966,
     "discovery_details":"1966 by the Joint Institute for Nuclear Research",
-    "etymology": "",
+    "etymology": "after Alfred Nobel",
     "description": ""
 },
  {
@@ -2149,7 +2149,7 @@
     "name": "lawrencium", 
     "atomic_number":103, 
     "id":103, 
-    "atomic_mass":"'[259]", 
+    "atomic_mass":"[259]", 
     "state_at_standard_conditions": "solid",
     "period":7,
     "group": "yes",
@@ -2162,7 +2162,7 @@
     "radioactive":true,
     "discovery_date":1971,
     "discovery_details":"1961-1971 by JINR (USSR) & LBNL (USA)",
-    "etymology": "",
+    "etymology": "after Ernest Lawrence",
     "description": ""
 },
      {
@@ -2170,7 +2170,7 @@
     "name": "rutherfordium", 
     "atomic_number":104, 
     "id":104, 
-    "atomic_mass":"'[226]",
+    "atomic_mass":"[226]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":4,
@@ -2183,7 +2183,7 @@
     "radioactive":true,
     "discovery_date":1964,
     "discovery_details":"1964 in the Soviet Union. Confirmed 1969, USA.",
-    "etymology": "",
+    "etymology": "after Sir Ernest Rutherford (New Zealand)",
     "description": ""
 },   
      {
@@ -2193,7 +2193,7 @@
     "id":105, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[268]",
+    "atomic_mass":"[268]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":5,
@@ -2204,7 +2204,7 @@
     "boiling_point":9999, 
     "discovery_date":1970,
     "discovery_details":"1970, LBNL (USA) & JINR (Russian) (independently)",
-    "etymology": "",
+    "etymology": "after Dubna, Russia",
     "description": ""
 },    
      {
@@ -2214,7 +2214,7 @@
     "id":106, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[269]",
+    "atomic_mass":"[269]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":6,
@@ -2225,7 +2225,7 @@
     "boiling_point":9999, 
     "discovery_date":1974,
     "discovery_details":"1974 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after the American nuclear chemist Glenn T. Seaborg",
     "description": ""
 },
  {
@@ -2235,7 +2235,7 @@
     "id":107, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[270]",
+    "atomic_mass":"[270]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":7,
@@ -2245,8 +2245,8 @@
     "melting_point": 9999, 
     "boiling_point": 9999, 
     "discovery_date":1981,
-    "discovery_details":"1981 by Gesellschaft f&uuml,r Schwerionenforschung",
-    "etymology": "",
+    "discovery_details":"1981 by Gesellschaft f&uuml;r Schwerionenforschung",
+    "etymology": "after Danish physicist Niels Bohr",
     "description": ""
 },  
      {
@@ -2256,7 +2256,7 @@
     "id":108, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[269]",
+    "atomic_mass":"[269]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":8,
@@ -2266,8 +2266,8 @@
     "melting_point": 9999, 
     "boiling_point": 9999, 
     "discovery_date":1984,
-    "discovery_details":"1984 by Gesellschaft f&uuml,r Schwerionenforschung",
-    "etymology": "",
+    "discovery_details":"1984 by Gesellschaft f&uuml;r Schwerionenforschung",
+    "etymology": "after the German state of Hesse",
     "description": ""
 },    
      {
@@ -2277,7 +2277,7 @@
     "id":109, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[278]",
+    "atomic_mass":"[278]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":9,
@@ -2287,8 +2287,8 @@
     "melting_point": 9999, 
     "boiling_point": 9999, 
     "discovery_date":1982,
-    "discovery_details":"1982 by Gesellschaft f&uuml,r Schwerionenforschung",
-    "etymology": "",
+    "discovery_details":"1982 by Gesellschaft f&uuml;r Schwerionenforschung",
+    "etymology": "after Lise Meitner (Austria/Sweden)",
     "description": ""
 },  
      {
@@ -2298,7 +2298,7 @@
     "id":110, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[281]",
+    "atomic_mass":"[281]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":10,
@@ -2308,8 +2308,8 @@
     "melting_point": 9999, 
     "boiling_point":9999, 
     "discovery_date":1994,
-    "discovery_details":"1994 by Gesellschaft f&uuml,r Schwerionenforschung",
-    "etymology": "",
+    "discovery_details":"1994 by Gesellschaft f&uuml;r Schwerionenforschung",
+    "etymology": "after Darmstadt, Germany (location of its discovery)",
     "description": ""
 },   
      {
@@ -2319,7 +2319,7 @@
     "id":111, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[282]",
+    "atomic_mass":"[282]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":11,
@@ -2329,8 +2329,8 @@
     "melting_point": 9999, 
     "boiling_point": 9999,
     "discovery_date":1994, 
-    "discovery_details":"1994 by Gesellschaft f&uuml,r Schwerionenforschung",
-    "etymology": "",
+    "discovery_details":"1994 by Gesellschaft f&uuml;r Schwerionenforschung",
+    "etymology": "after Wilhelm R&ouml;ntgen (Germany)",
     "description": ""
 },    
      {
@@ -2340,7 +2340,7 @@
     "radioactive":true,
     "atomic_number":112, 
     "id":112, 
-    "atomic_mass":"'[285]",
+    "atomic_mass":"[285]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":12,
@@ -2350,8 +2350,8 @@
     "melting_point": 9999, 
     "boiling_point":9999, 
     "discovery_date":1996,
-    "discovery_details":"1996 by Gesellschaft f&uuml,r Schwerionenforschung",
-    "etymology": "",
+    "discovery_details":"1996 by Gesellschaft f&uuml;r Schwerionenforschung",
+    "etymology": "after Nicolaus Copernicus (of helicentric model fame)",
     "description": ""
 },
      {
@@ -2361,7 +2361,7 @@
     "radioactive":true,
     "atomic_number":113, 
     "id":113, 
-    "atomic_mass":"'[286]",
+    "atomic_mass":"[286]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":13,
@@ -2372,7 +2372,7 @@
     "boiling_point":9999, 
     "discovery_date":2004,
     "discovery_details":"2004 by Riken (Japan)",
-    "etymology": "",
+    "etymology": "from the Japanese name for Japan, <em>Nihon</em>",
     "description": ""
 },
      {
@@ -2382,7 +2382,7 @@
     "id":114, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[289]",
+    "atomic_mass":"[289]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":14,
@@ -2393,7 +2393,7 @@
     "boiling_point": -60, 
     "discovery_date":1999,
     "discovery_details":"1999 by JINR & LLNL",
-    "etymology": "",
+    "etymology": "after the Flerov Laboratory of Nuclear Reactions (ultimately after Georgy Flyorov)",
     "description": ""
 },    
      {
@@ -2403,7 +2403,7 @@
     "id":115, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[290]",
+    "atomic_mass":"[290]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":15,
@@ -2414,7 +2414,7 @@
     "boiling_point": 1100,
     "discovery_date":2003,
     "discovery_details":"2003 by JINR and LLNL",
-    "etymology": "",
+    "etymology": "after Moscow, Russia",
     "description": ""
 },    
      {
@@ -2424,7 +2424,7 @@
     "id":116, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[293]",
+    "atomic_mass":"[293]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":16,
@@ -2435,7 +2435,7 @@
     "boiling_point": 862, 
     "discovery_date":2000,
     "discovery_datails":"2000 by JINR & LLNL",
-    "etymology": "",
+    "etymology": "after Lawrence Livermore National Laboratory (ultimately after Livermore, California)",
     "description": ""
 },    
      {
@@ -2445,7 +2445,7 @@
     "id":117, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[294]",
+    "atomic_mass":"[294]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":17,
@@ -2456,7 +2456,7 @@
     "boiling_point": 610, 
     "discovery_date":2009,
     "discovery_details":"2009 by JINR, LLNL, Vanderbilt University & Oak Ridge National Laboratory",
-    "etymology": "",
+    "etymology": "after Tennessee, USA",
     "description": ""
 },    
      {
@@ -2466,7 +2466,7 @@
     "id":118, 
     "electronegativity": "yes",
     "radioactive":true,
-    "atomic_mass":"'[294]",
+    "atomic_mass":"[294]",
     "state_at_standard_conditions": "solid",
     "period":7,
     "group":18,
@@ -2477,7 +2477,7 @@
     "boiling_point":80, 
     "discovery_date":2002,
     "discovery_details":"2002 by JINR & LLNL",
-    "etymology": "",
+    "etymology": "after Yuri Oganessian",
     "description": ""
 }
 ]

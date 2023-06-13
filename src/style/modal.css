@@ -5,7 +5,6 @@
     align-self: center;
     z-index: 2;
     width: 100%;
-    max-width: 800px;
     border-radius: 30px;
     background-color: white;
     font-family: 'Sen', sans-serif;
@@ -20,13 +19,13 @@
     grid-gap: 5px;
 }
 
-.item1 {
+.modal-header {
     grid-column: 1;
     font-size: 40px;
     padding-left: 30px;
 }
 
-.item2 {
+.modal-exit-btn {
     grid-column: 2;
     background-color: rgba(10, 90, 194, 0.151);
     font-size: 27px;
@@ -36,15 +35,20 @@
     border-radius: 50%;
 }
 
-.item2:hover {
+.modal-exit-btn:hover {
     cursor: pointer;
 }
 
-.item3 {
+.radioactive-symbol {
+    display: none;
+    height: 0px;
+}
+
+.modal-svg {
     display: none;
 }
 
-.item4 {
+.modal-text-data {
     font-size: 20px;
     grid-column: 1 / span 2;
     text-align: center;
@@ -53,6 +57,10 @@
 @media only screen and (min-width: 740px) {
     #element-modal {
         background-color: transparent;
+        top: 0;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.459);
+        border-radius: 0;
     }
     .modal_content {
         width: 720px;
@@ -64,6 +72,7 @@
         font-family: 'Sen', sans-serif;
         margin: auto;
         box-shadow: 5px 10px 10px 0px rgba(0, 0, 0, 0.507);
+        margin-top: 10%;
     }
     .grid-container {
         display: grid;
@@ -74,14 +83,14 @@
         margin-bottom: 20px;
         padding: 0px;
     }
-    .item1 {
+    .modal-header {
         grid-column: 1 / span 2;
         font-size: 40px;
         /* font-family: 'Sen', sans-serif; */
         color: black;
         padding-left: 50px;
     }
-    .item2 {
+    .modal-exit-btn {
         grid-column: 3;
         color: white;
         border: none;
@@ -91,24 +100,24 @@
         margin-left: 40%;
         width: 50%;
     }
-    .item2:hover {
+    .modal-exit-btn:hover {
         transition-duration: 0.3s;
         background-color: rgb(10, 89, 194);
     }
-    .item3 {
+    .modal-svg {
         display: block;
         grid-row: 2 / span 2;
         padding-left: 20px;
         width: 230px;
     }
-    .item4 {
+    .modal-text-data {
         grid-column: 2;
         grid-row: 2;
         text-align: left;
         font-size: 17px;
         padding-left: 10px;
     }
-    .item5 {
+    .radioactive-symbol {
         display: block;
         grid-column: 3;
         grid-row: 2;
