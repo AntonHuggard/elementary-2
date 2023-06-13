@@ -59,7 +59,7 @@
     "radioactive": false,
     "discovery_date":1817,
     "discovery_details":"1817 by Johan August Arfwedson",
-    "etymology": "",
+    "etymology": "from the Greek <em>lithos</em>, meaning stone",
     "description": ""
 },
  {
@@ -80,7 +80,7 @@
     "radioactive": false,
     "discovery_date": 1798,
     "discovery_details":"1798 by Louis Nicolas Vauquelin",
-    "etymology": "",
+    "etymology": "from the mineral beryl",
     "description": ""
 },
          {
@@ -417,7 +417,7 @@
     "radioactive": false,
     "discovery_date": 1808,
     "discovery_details":"1808 by Humphry Davy",
-    "etymology": "",
+    "etymology": "from Latin <em>calx</em>, meaning lime",
     "description": ""
 },
                 {
@@ -795,7 +795,7 @@
     "radioactive": false,
     "discovery_date": 1787,
     "discovery_details":"1787 by William Cruickshank",
-    "etymology": "",
+    "etymology": "after stronantine, which gets its name from the Scottish village of Strontian",
     "description": ""
 },
                 {
@@ -1152,7 +1152,7 @@
     "radioactive": false,
     "discovery_date": 1860,
     "discovery_details":"1860 by Robert Bunsen and Gustav Kirchhoff. Isolated in 1882 by Carl Setterberg",
-    "etymology": "",
+    "etymology": "from Latin <em>Caesius</em> (bluish-grey), after its spectral colours.",
     "description": ""
 },
                  {
@@ -1194,7 +1194,7 @@
     "radioactive": false,
     "discovery_date": 1838,
     "discovery_details":"1838 by Carl Gustaf Mosander",
-    "etymology": "",
+    "etymology": "from the Ancient Greek <em>lanthanein</em>, meaning <em>to lie hidden</em>",
     "description": ""
 },
                 
@@ -1216,7 +1216,7 @@
     "radioactive": false,
     "discovery_date": 1803,
     "discovery_details":"1803 by M.H. Klaproth, J.J. Berzelius, Wilhelm Hisinger. Isolated 1838 by C.G. Mosander",
-    "etymology": "",
+    "etymology": "after Ceres, the Roman god of agriculture",
     "description": ""
 },
                 {
@@ -1237,7 +1237,7 @@
     "radioactive": false,
     "discovery_date": 1885,
     "discovery_details":"1885 by Carl Auer von Welsbach (Austria)",
-    "etymology": "",
+    "etymology": "from Greek, meaning <em>green twin</em>",
     "description": ""
 },
                 {
@@ -1258,7 +1258,7 @@
     "radioactive": false,
     "discovery_date": 1885,
     "discovery_details":"1885 by Carl Auer von Welsbach (Austria)",
-    "etymology": "",
+    "etymology": "from Greek, meaning <em>new twin</em>",
     "description": ""
 },
                  {
@@ -1279,7 +1279,7 @@
     "radioactive": true,
     "discovery_date": 1942,
     "discovery_details":"1942 by Chien Shiung Wu, E. Segr&egrave;, H. Bethe. Isolated 1945 by C.D. Coryell, J.A. Marinsky, L.E. Glendenin",
-    "etymology": "",
+    "etymology": "after <em>Promethius</em> of Greek mythology",
     "description": ""
 },
                  {
@@ -1300,7 +1300,7 @@
     "radioactive": false,
     "discovery_date": 1879,
     "discovery_details":"1879 by Lecoq de Boisbaudran",
-    "etymology": "",
+    "etymology": "after samarskite (ultimately from Russian mining engineer Vassili Samarsky-Bykhovets)",
     "description": ""
 },
                  {
@@ -1321,7 +1321,7 @@
     "radioactive": false,
     "discovery_date": 1896,
     "discovery_details":"1896 by Eug&egrave;ne-Anatole Demarçay, isolated 1901.",
-    "etymology": "",
+    "etymology": "after Europe. Obviously.",
     "description": ""
 },
                 {
@@ -1342,7 +1342,7 @@
     "radioactive": false,
     "discovery_date": 1880,
     "discovery_details":"1880 by Jean Charles Galissard de Marignac. Isolated 1886 by Lecoq de Boisbaudran",
-    "etymology": "",
+    "etymology": "after Gadolinite (from Swedish/Finnish chemist Johan Gadolin)",
     "description": ""
 },
                  {
@@ -1363,7 +1363,7 @@
     "radioactive": false,
     "discovery_date": 1843,
     "discovery_details":"1843 Carl Gustaf Mosander",
-    "etymology": "",
+    "etymology": "after Ytterby, Sweden",
     "description": ""
 },
                 
@@ -1385,7 +1385,7 @@
     "radioactive": false,
     "discovery_date": 1886,
     "discovery_details":"1886 Lecoq de Boisbaudran",
-    "etymology": "",
+    "etymology": "from Greek <em>dysprositos</em>, meaning <em>hard to obtain</em>",
     "description": ""
 },
                  {
@@ -1406,7 +1406,7 @@
     "radioactive": false,
     "discovery_date": 1878,
     "discovery_details":"1878 by Jacques-Louis Soret and Marc Delafontaine",
-    "etymology": "",
+    "etymology": "after the Latin name for Stockholm, Sweden",
     "description": ""
 },
                  {
@@ -1427,7 +1427,7 @@
     "radioactive": false,
     "discovery_date": 1843,
     "discovery_details":"1843 Carl Gustaf Mosander",
-    "etymology": "",
+    "etymology": "after Ytterby, Sweden",
     "description": ""
 },
                  {
@@ -1448,7 +1448,7 @@
     "radioactive": false,
     "discovery_date": 1879,
     "discovery_details":"1879 by Per Teodor Cleve (Sweden)",
-    "etymology": "",
+    "etymology": "after Thule (mythical Scandinavian region)",
     "description": ""
 },
                  {
@@ -1469,7 +1469,7 @@
     "radioactive": false,
     "discovery_date": 1878,
     "discovery_details":"1878 by Jean Charles Galissard de Marignac. Isolated 1906 by Carl Auer von Welsbach",
-    "etymology": "",
+    "etymology": "after Ytterby, Sweden",
     "description": ""
 },
                  {
@@ -1490,7 +1490,7 @@
     "radioactive": false,
     "discovery_date": 1906,
     "discovery_details":"1906 by Carl Auer von Welsbach and Georges Urbain. Isolated by Welsbach, 1906",
-    "etymology": "",
+    "etymology": "after the Latin name for Paris (Lutetia)",
     "description": ""
 },        
  {
@@ -1511,7 +1511,7 @@
     "radioactive": false,
     "discovery_date": 1922,
     "discovery_details":"1922 by Dirk Coster and George de Hevesy",
-    "etymology": "",
+    "etymology": "from the Latin name for Copenhagen, <em> Hafnia</em>",
     "description": ""
 },
                  {
@@ -1574,7 +1574,7 @@
     "radioactive": false,
     "discovery_date": 1908,
     "discovery_details":"1908 by Masataka Ogawa (Japan)",
-    "etymology": "",
+    "etymology": "named after the Rhine (river)",
     "description": ""
 },
                  {
@@ -1595,7 +1595,7 @@
     "radioactive": false,
     "discovery_date": 1803,
     "discovery_details":"1803 by Smithson Tennant (England)",
-    "etymology": "",
+    "etymology": "from Greek <em>osme</em> (a smell)",
     "description": ""
 },
                  {
@@ -1658,7 +1658,7 @@
     "radioactive": false,
     "discovery_date": 0,
     "discovery_details":"before 6000 BC, Middle East",
-    "etymology": "",
+    "etymology": "from proto-Germanic <em>gultha</em>. Its symbol is from its Latin <em>aurum</em>",
     "description": ""
 },
                  {
@@ -1679,7 +1679,7 @@
     "radioactive": false,
     "discovery_date":0,
     "discovery_details":"Unknown. Before 1500 BC, Ancient Egypt",
-    "etymology": "",
+    "etymology": "after the Roman god. Formerly called hydrargyrum (Greek, meaning <em>water-silver</em>), hence its symbol",
     "description": ""
 },
               {
@@ -1700,7 +1700,7 @@
     "radioactive": false,
     "discovery_date": 1861,
     "discovery_details":"1861 by William Crookes (Britain), it was isolated the following year.",
-    "etymology": "",
+    "etymology": "from Greek <em>thallos</em> (green shoot or twig)",
     "description": ""
 },
                  {
@@ -1721,7 +1721,7 @@
     "radioactive": false,
     "discovery_date": 0,
     "discovery_details":"7000 BC, Middle East",
-    "etymology": "",
+    "etymology": "No one knows. It has been called the same thing for centuries. Symbol derived from latin <em>plumbum</em>",
     "description": ""
 },
                  {
@@ -1742,7 +1742,7 @@
     "radioactive": false,
     "discovery_date": 1000,
     "discovery_details":"before 1000 AD by Arabic Alchemists",
-    "etymology": "",
+    "etymology": "Unknown. Probably from Arabic <em>bi ismid</em>, which means <em>having the properties of antimony</em>",
     "description": ""
 },
                  {
@@ -1763,7 +1763,7 @@
     "radioactive": true,
     "discovery_date": 1898,
     "discovery_details":"1898 by Pierre & Marie Curie. Isolated 1902 by Willy Marckwald",
-    "etymology": "",
+    "etymology": "from <em>Polonia</em>, the Latin name for Poland",
     "description": ""
 },
                  {
@@ -1784,7 +1784,7 @@
     "radioactive":true,
     "discovery_date": 1940,
     "discovery_details":"1940 by Dale R. Corson, Kenneth Ross MacKenzie, Emilio Segr&egrave;",
-    "etymology": "",
+    "etymology": "from Greek <em>astatos</em> (unstable)",
     "description": ""
 },
      {
@@ -1805,7 +1805,7 @@
     "radioactive":true,
     "discovery_date":1899,
     "discovery_details":"1899 by E. Rutherford (New Zealand) and R.B. Owens (USA). Isolated 1910 by W. Ramsay & R. Whytlaw-Gray ",
-    "etymology": "",
+    "etymology": "Initially it was called <em>radium emanation</em>. In 1918 it was one of several shortened proposed names",
     "description": ""
 },    
  {
@@ -1826,7 +1826,7 @@
     "radioactive":true,
     "discovery_date":1939,
     "discovery_details":"1939 by Marguerite Perey",
-    "etymology": "",
+    "etymology": "after France",
     "description": ""
 },
      {
@@ -1847,7 +1847,7 @@
     "radioactive":true,
     "discovery_date":1898,
     "discovery_details":"1898 by Pierre & Marie Curie. Isolated by Marie, 1910",
-    "etymology": "",
+    "etymology": "from Latin <em>radius</em>. Meaning ray. Because of its emissions.",
     "description": ""
 },
  {
@@ -1868,7 +1868,7 @@
     "radioactive": true,
     "discovery_date":1902,
     "discovery_details":"1902 by Friedrich Oskar Giesel",
-    "etymology": "",
+    "etymology": "from Greek, meaning <em>ray-beam</em>",
     "description": ""
 },
                  {
@@ -1889,7 +1889,7 @@
     "radioactive": true,
     "discovery_date": 1829,
     "discovery_details":"1829 by J&ouml;ns Jakob Berzelius",
-    "etymology": "",
+    "etymology": "after Thor, the Norse god of thunder",
     "description": ""
 },
                  {
@@ -1910,7 +1910,7 @@
     "radioactive": true,
     "discovery_date": 1913,
     "discovery_details":"1913 by Kasimir Fajans and Oswald Helmuth G&ouml;hring",
-    "etymology": "",
+    "etymology": "a contraction of <em>proto-actinium</em>",
     "description": ""
 },
                 {
@@ -1931,7 +1931,7 @@
     "radioactive": true,
     "discovery_date": 1789,
     "discovery_details":"1789 by Martin Heinrich Klaproth. Isolated 1841 by Eug&egrave;ne-Melchior P&eacute;ligot",
-    "etymology": "",
+    "etymology": "after Uranus (the planet). Ultimately derived from the Greek god of the sky",
     "description": ""
 },
                  {
@@ -1952,7 +1952,7 @@
     "radioactive": true,
     "discovery_date": 1940,
     "discovery_details":"1940 by Edwin McMillan and Philip H. Abelson",
-    "etymology": "",
+    "etymology": "after Neptune (the planet). Ultimately derived from the Greek god of the sea",
     "description": ""
 },
                  {
@@ -1973,7 +1973,7 @@
     "radioactive": true,
     "discovery_date": 1940,
     "discovery_details":"1940–1 by Glenn T. Seaborg, Arthur Wahl, Joseph W. Kennedy, Edwin McMillan",
-    "etymology": "",
+    "etymology": "after Pluto (the planet). Ultimately derived from the Greek god of the underworld",
     "description": ""
 },
                  {
@@ -1994,7 +1994,7 @@
     "radioactive": true,
     "discovery_date": 1944,
     "discovery_details":"1944 by Glenn T. Seaborg, Ralph A. James, Leon O. Morgan, Albert Ghiorso",
-    "etymology": "",
+    "etymology": "after the Americas (Northern & Southern continents)",
     "description": ""
 },
                 {
@@ -2015,7 +2015,7 @@
     "radioactive": true,
     "discovery_date": 1944,
     "discovery_details":"1944 by Glenn T. Seaborg, Ralph A. James, Albert Ghiorso",
-    "etymology": "",
+    "etymology": "after Marie Curie",
     "description": ""
 },
                 {
@@ -2036,7 +2036,7 @@
     "radioactive": true,
     "discovery_date": 1949,
     "discovery_details":"1949 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after Berkeley, California, USA",
     "description": ""
 },
                 {
@@ -2057,7 +2057,7 @@
     "radioactive": true,
     "discovery_date": 1950,
     "discovery_details":"1950 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after California, USA",
     "description": ""
 },
                 {
@@ -2078,7 +2078,7 @@
     "radioactive": true,
     "discovery_date": 1952,
     "discovery_details":"1952 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after Albert Einstein",
     "description": ""
 },
                  {
@@ -2099,7 +2099,7 @@
     "radioactive": true,
     "discovery_date": 1952,
     "discovery_details":"1952 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after Enrico Fermi",
     "description": ""
 },
  {
@@ -2120,7 +2120,7 @@
     "radioactive": true,
     "discovery_date": 1955, 
     "discovery_details":"1955 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after Dmitri Mendeleev, father of the Periodic Table",
     "description": ""
 },                
               {
@@ -2141,7 +2141,7 @@
     "radioactive":true,
     "discovery_date":1966,
     "discovery_details":"1966 by the Joint Institute for Nuclear Research",
-    "etymology": "",
+    "etymology": "after Alfred Nobel",
     "description": ""
 },
  {
@@ -2162,7 +2162,7 @@
     "radioactive":true,
     "discovery_date":1971,
     "discovery_details":"1961-1971 by JINR (USSR) & LBNL (USA)",
-    "etymology": "",
+    "etymology": "after Ernest Lawrence",
     "description": ""
 },
      {
@@ -2183,7 +2183,7 @@
     "radioactive":true,
     "discovery_date":1964,
     "discovery_details":"1964 in the Soviet Union. Confirmed 1969, USA.",
-    "etymology": "",
+    "etymology": "after Sir Ernest Rutherford (New Zealand)",
     "description": ""
 },   
      {
@@ -2204,7 +2204,7 @@
     "boiling_point":9999, 
     "discovery_date":1970,
     "discovery_details":"1970, LBNL (USA) & JINR (Russian) (independently)",
-    "etymology": "",
+    "etymology": "after Dubna, Russia",
     "description": ""
 },    
      {
@@ -2225,7 +2225,7 @@
     "boiling_point":9999, 
     "discovery_date":1974,
     "discovery_details":"1974 by Lawrence Berkeley National Laboratory",
-    "etymology": "",
+    "etymology": "after the American nuclear chemist Glenn T. Seaborg",
     "description": ""
 },
  {
@@ -2246,7 +2246,7 @@
     "boiling_point": 9999, 
     "discovery_date":1981,
     "discovery_details":"1981 by Gesellschaft f&uuml;r Schwerionenforschung",
-    "etymology": "",
+    "etymology": "after Danish physicist Niels Bohr",
     "description": ""
 },  
      {
@@ -2267,7 +2267,7 @@
     "boiling_point": 9999, 
     "discovery_date":1984,
     "discovery_details":"1984 by Gesellschaft f&uuml;r Schwerionenforschung",
-    "etymology": "",
+    "etymology": "after the German state of Hesse",
     "description": ""
 },    
      {
@@ -2288,7 +2288,7 @@
     "boiling_point": 9999, 
     "discovery_date":1982,
     "discovery_details":"1982 by Gesellschaft f&uuml;r Schwerionenforschung",
-    "etymology": "",
+    "etymology": "after Lise Meitner (Austria/Sweden)",
     "description": ""
 },  
      {
@@ -2309,7 +2309,7 @@
     "boiling_point":9999, 
     "discovery_date":1994,
     "discovery_details":"1994 by Gesellschaft f&uuml;r Schwerionenforschung",
-    "etymology": "",
+    "etymology": "after Darmstadt, Germany (location of its discovery)",
     "description": ""
 },   
      {
@@ -2330,7 +2330,7 @@
     "boiling_point": 9999,
     "discovery_date":1994, 
     "discovery_details":"1994 by Gesellschaft f&uuml;r Schwerionenforschung",
-    "etymology": "",
+    "etymology": "after Wilhelm R&ouml;ntgen (Germany)",
     "description": ""
 },    
      {
@@ -2351,7 +2351,7 @@
     "boiling_point":9999, 
     "discovery_date":1996,
     "discovery_details":"1996 by Gesellschaft f&uuml;r Schwerionenforschung",
-    "etymology": "",
+    "etymology": "after Nicolaus Copernicus (of helicentric model fame)",
     "description": ""
 },
      {
@@ -2372,7 +2372,7 @@
     "boiling_point":9999, 
     "discovery_date":2004,
     "discovery_details":"2004 by Riken (Japan)",
-    "etymology": "",
+    "etymology": "from the Japanese name for Japan, <em>Nihon</em>",
     "description": ""
 },
      {
@@ -2393,7 +2393,7 @@
     "boiling_point": -60, 
     "discovery_date":1999,
     "discovery_details":"1999 by JINR & LLNL",
-    "etymology": "",
+    "etymology": "after the Flerov Laboratory of Nuclear Reactions (ultimately after Georgy Flyorov)",
     "description": ""
 },    
      {
@@ -2414,7 +2414,7 @@
     "boiling_point": 1100,
     "discovery_date":2003,
     "discovery_details":"2003 by JINR and LLNL",
-    "etymology": "",
+    "etymology": "after Moscow, Russia",
     "description": ""
 },    
      {
@@ -2435,7 +2435,7 @@
     "boiling_point": 862, 
     "discovery_date":2000,
     "discovery_datails":"2000 by JINR & LLNL",
-    "etymology": "",
+    "etymology": "after Lawrence Livermore National Laboratory (ultimately after Livermore, California)",
     "description": ""
 },    
      {
@@ -2456,7 +2456,7 @@
     "boiling_point": 610, 
     "discovery_date":2009,
     "discovery_details":"2009 by JINR, LLNL, Vanderbilt University & Oak Ridge National Laboratory",
-    "etymology": "",
+    "etymology": "after Tennessee, USA",
     "description": ""
 },    
      {
@@ -2477,7 +2477,7 @@
     "boiling_point":80, 
     "discovery_date":2002,
     "discovery_details":"2002 by JINR & LLNL",
-    "etymology": "",
+    "etymology": "after Yuri Oganessian",
     "description": ""
 }
 ]
