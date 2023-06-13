@@ -175,9 +175,13 @@ class Modal extends Component {
         if (this.props.element) {
             
             const units = this.props.units;
-            const melting_pt = this.props.onConvertTemp(this.props.element.melting_point, 0, units);
-            const boiling_pt = this.props.onConvertTemp(this.props.element.boiling_point, 0, units);
+            const known_mp = this.props.element.melting_point === 9999 ? false : true;
+            const known_bp = this.props.element.boiling_point === 9999 ? false : true;
+            const mp = this.props.onConvertTemp(this.props.element.melting_point, 0, units);
+            const bp = this.props.onConvertTemp(this.props.element.boiling_point, 0, units);
             const real_units = this.props.onGetUnitSymbol(units);
+            const melting_pt = known_mp? mp + real_units : "<em>unknown</em>";
+            const boiling_pt = known_bp? bp + real_units : "<em>unknown</em>";
             const electron_config = this.getElectronConfig(this.props.element.atomic_number);
             const isRadioactive = this.props.element.radioactive;
 
@@ -265,8 +269,8 @@ class Modal extends Component {
                             <div className= "modal-text-data">
                                 Atomic Number: {this.props.element.atomic_number} <br/> 
                                 Relative Atomic Mass: {this.props.element.atomic_mass} <br/> 
-                                Melting Point: {melting_pt} <span dangerouslySetInnerHTML={{ __html: real_units }} /> <br/>
-                                Boiling Point: {boiling_pt} <span dangerouslySetInnerHTML={{ __html: real_units }} /> <br/> 
+                                Melting Point: <span dangerouslySetInnerHTML={{ __html: melting_pt }} /> <br/>
+                                Boiling Point: <span dangerouslySetInnerHTML={{ __html: boiling_pt }} /> <br/> 
                                 Electronegativity: {this.props.element.electronegativity} <br/>
                                 E<sup>-</sup> configuration: <span dangerouslySetInnerHTML={{ __html: electron_config }} /> <br/>
                                 <div className="mobile_radioactive_indictaion">Radioactive: {this.props.element.radioactive}</div>
