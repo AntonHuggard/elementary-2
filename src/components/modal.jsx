@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import radioactiveImg from '../imgs/radioactive.png';
+import maoriData from '../components/atoms-maori.json';
 
 class Modal extends Component {
     
@@ -255,6 +256,10 @@ class Modal extends Component {
 
             const radioactiveClasses = isRadioactive? "radioactive-symbol": "radioactive-symbol hide-me";
 
+            const atomIndex = this.props.element.atomic_number - 1;
+            const maoriAtom = maoriData.atoms[atomIndex];
+            const elementName = this.props.language === "English"? this.props.element.name : maoriAtom.name;
+
             return ( 
                 <div 
                     id="element-modal" className="hide-me" 
@@ -263,7 +268,7 @@ class Modal extends Component {
                         onMouseEnter={this.mouseEnter}
                         onMouseLeave={this.mouseExit}>
                         <div className= "grid-container">
-                            <div className= "modal-header">{this.props.element.name}</div>
+                            <div className= "modal-header">{elementName}</div>
                             <button className= "modal-exit-btn" onClick={this.closeModal}>&times;</button>
                             <svg className="modal-svg" width="100%" height="300" dangerouslySetInnerHTML={{ __html: svg }} />
                             <div className= "modal-text-data">

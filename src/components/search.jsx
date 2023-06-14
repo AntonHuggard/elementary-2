@@ -4,6 +4,13 @@ import magnifyingGlass from '../imgs/mgnf_glss_gry.png';
 class SearchBar extends Component {
 
     render() {
+        
+        let placeholderText = "Search elements... ";
+        if (this.props.language !== "English") placeholderText = `Ngā huānga rapu`;
+
+        let dropdownText = "filter";
+        if (this.props.language !== "English") dropdownText = `tātari`;
+
         return ( 
             
                 <div id="element_search_container" >
@@ -16,7 +23,7 @@ class SearchBar extends Component {
                     <input 
                         value={this.props.value} 
                         type="text" 
-                        placeholder="Search elements... "
+                        placeholder={placeholderText}
                         id = "element_io"
                         onKeyUp={e => {
                             this.props.onHandleQuery(e.target.value);
@@ -26,7 +33,7 @@ class SearchBar extends Component {
                         className='unselectable'
                         id='filter-menu' 
                         onClick={this.props.onHandleFilter}
-                        >filter &#8595;</span>
+                        >{dropdownText} &#8595;</span>
                     <div id='filter-accordian' className='hide-me'>
                         <button onClick={e => {this.props.onSelectFilter('clear')}}>no filter</button>
                         <button onClick={e => {this.props.onSelectFilter('s-block')}}>s-block</button>

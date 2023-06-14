@@ -275,7 +275,7 @@ class Home extends Component {
 
       return (
             <>
-                <Header />
+                <Header language={this.state.language} />
                 <SideMenu 
                     onToggleUnits={this.toggleUnits} 
                     units={units}
@@ -287,7 +287,8 @@ class Home extends Component {
                         onHandleQuery={this.handleQuery}
                         onHandleFilter={this.handleFilterToggle}
                         onSelectFilter={this.handleFilter}
-                    />
+                        language={this.state.language} />
+                        
                     <ElectronegSlider onHandleElectronegativity={this.handleElectronegativity} />
 
                     <MeltingPtSlider 
@@ -317,7 +318,8 @@ class Home extends Component {
                     element={selectedElement} 
                     units={units}
                     onConvertTemp={this.convertTemp}
-                    onGetUnitSymbol={this.getUnitSymbol} />
+                    onGetUnitSymbol={this.getUnitSymbol}
+                    language={this.state.language} />
 
             </>
         )
