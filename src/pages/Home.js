@@ -29,7 +29,8 @@ class Home extends Component {
         medOpacity: "75%",
         inputOption: "text",
         units: scaleNames['c'],
-        selectedElement: null
+        selectedElement: null,
+        periodicTableClass: "periodic-table default-view"
     };
     
     showElements = (show) => {
@@ -108,20 +109,27 @@ class Home extends Component {
     handleQuery = (query) => {
           query === "" ? this.showElements(true): this.showElements(false);
 
-          let results = runQuery(query);
-          
-          results.forEach(symbol => {
-            let htmlAtom = document.getElementById(symbol);
-            htmlAtom.style.opacity = "100%";
-          });
+          let all_atoms = [];
+          this.state.atoms.forEach(atom => { all_atoms.push(atom.symbol); });
 
-          // TODO: for mobile, return all elements that match the query
-          // as it currently exists, users can only search the first 20 or so on mobile
-          // if (query === "") {
-          //   console.log("show default mobile view");
-          // } else {
-          //   console.log("show special view");
-          // }
+          let results = runQuery(query);
+
+          const not_results = all_atoms.filter(atom => !results.includes(atom));
+
+          if (query !== "") {
+            results.forEach(symbol => {
+              let htmlAtom = document.getElementById(symbol);
+              htmlAtom.style.opacity = "100%";
+              htmlAtom.style.display = "grid";
+              this.setState({ periodicTableClass : "periodic-table search-view" });
+            });
+            not_results.forEach(symbol => {
+              let htmlAtom = document.getElementById(symbol);
+              htmlAtom.style.display = "";
+            })
+          } else {
+            this.setState({ periodicTableClass : "periodic-table default-view" });
+          }
     }
     
     hideInputsExcept(exception) {
@@ -281,11 +289,12 @@ class Home extends Component {
                     <DiscoverySlider onHandleDiscovery={this.handleDiscovery} />
                 </div>
 
-                <SliderMenu onSelectQuery={this.selectQueryType} />
+                <SliderMenu onSelectQuery={this.selectQueryType} inputOption={this.state.inputOption} />
 
                 <PeriodicTable 
                     atoms={atoms}
                     onHandleElementClick={this.handleElementClick}
+                    tableClasses={this.state.periodicTableClass}
                     />
                     
                 <Modal 
