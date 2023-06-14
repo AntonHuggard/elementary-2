@@ -24,24 +24,29 @@ class SliderMenu extends Component {
     render() {
         let sliderTitle = this.getSliderTitle(this.props.inputOption);
 
+        const labelMP = (this.props.language !== "English") ? `pae rewa` : `melting Point`;
+        const labelBP = (this.props.language !== "English") ? `hūnga` : `boiling Point`;
+        const labelDiscovery = (this.props.language !== "English") ? `kitea` : `discovery details`;
+        const labelEN = (this.props.language !== "English") ? `irahikotōraro` : `electronegativity`;
+
         return ( 
             <>
             <div id='slider-menu'>
                 <button onClick={ () => {this.props.onSelectQuery("en-slider")} }>
                     <img src={electron} alt="electronegativity symbol" className='slider-menu-icon'/>
-                    <span className='slider-menu-txt'>electronegativity</span>
+                    <span className='slider-menu-txt'>{labelEN}</span>
                     </button>
                 <button onClick={ () => {this.props.onSelectQuery("mp-slider")} }>
                     <img src={drop} alt="mp symbol" className='slider-menu-icon'/>
-                    <span className='slider-menu-txt'>melting point</span>
+                    <span className='slider-menu-txt'>{labelMP}</span>
                     </button>
                 <button onClick={ () => {this.props.onSelectQuery("bp-slider")} }>
                     <img src={cloud} alt="bp symbol" className='slider-menu-icon'/>
-                    <span className='slider-menu-txt'>boiling point</span>
+                    <span className='slider-menu-txt'>{labelBP}</span>
                     </button>
                 <button onClick={ () => {this.props.onSelectQuery("discovery")} }>
                     <img src={binoculars} alt="discovery symbol" className='slider-menu-icon'/>
-                    <span className='slider-menu-txt'>disovery</span>
+                    <span className='slider-menu-txt'>{labelDiscovery}</span>
                     </button>
             </div>
             <h2 id="slider-title" dangerouslySetInnerHTML={{ __html: sliderTitle }}></h2>

@@ -36,7 +36,7 @@ class Home extends Component {
         units: scaleNames['c'],
         selectedElement: null,
         periodicTableClass: "periodic-table default-view",
-        language: languages['en'],
+        language: languages['mi'],
     };
     
     showElements = (show) => {
@@ -288,7 +288,7 @@ class Home extends Component {
                         onHandleFilter={this.handleFilterToggle}
                         onSelectFilter={this.handleFilter}
                         language={this.state.language} />
-                        
+
                     <ElectronegSlider onHandleElectronegativity={this.handleElectronegativity} />
 
                     <MeltingPtSlider 
@@ -306,7 +306,10 @@ class Home extends Component {
                     <DiscoverySlider onHandleDiscovery={this.handleDiscovery} />
                 </div>
 
-                <SliderMenu onSelectQuery={this.selectQueryType} inputOption={this.state.inputOption} />
+                <SliderMenu 
+                  onSelectQuery={this.selectQueryType} 
+                  inputOption={this.state.inputOption}
+                  language={this.state.language} />
 
                 <PeriodicTable 
                     atoms={atoms}

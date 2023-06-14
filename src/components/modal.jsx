@@ -262,10 +262,11 @@ class Modal extends Component {
 
             const labelAtomicNo = (this.props.language !== "English") ? `Tau iraoho` : `Atomic Number`;
             const labelAtomicMass = (this.props.language !== "English") ? `Tau karihi (o te ngota)` : `Relative Atomic Mass`;
-            const labelMP = (this.props.language !== "English") ? `pae rewa` : `Melting Point`;
-            const labelBP = (this.props.language !== "English") ? `hūnga` : `Boiling Point`;
+            const labelMP = (this.props.language !== "English") ? `Pae rewa` : `Melting Point`;
+            const labelBP = (this.props.language !== "English") ? `Hūnga` : `Boiling Point`;
             const labelElectronConfig = (this.props.language !== "English") ? `Irahiko whakatakoto` : `E<sup>-</sup> configuration`;
             const labelDiscovery = (this.props.language !== "English") ? `Kitea` : `Discovery details`;
+            const labelEN = (this.props.language !== "English") ? `Irahikotōraro` : `Electronegativity`;
 
             return ( 
                 <div 
@@ -283,7 +284,7 @@ class Modal extends Component {
                                 {labelAtomicMass}: {this.props.element.atomic_mass} <br/> 
                                 {labelMP}: <span dangerouslySetInnerHTML={{ __html: melting_pt }} /> <br/>
                                 {labelBP}: <span dangerouslySetInnerHTML={{ __html: boiling_pt }} /> <br/> 
-                                Electronegativity: {this.props.element.electronegativity} <br/>
+                                {labelEN}: {this.props.element.electronegativity} <br/>
                                 <span dangerouslySetInnerHTML={{ __html: labelElectronConfig }}></span>: <span dangerouslySetInnerHTML={{ __html: electron_config }} /> <br/>
                                 <div className="mobile_radioactive_indictaion">Radioactive: {this.props.element.radioactive}</div>
                                 {labelDiscovery}: <span dangerouslySetInnerHTML={{ __html: this.props.element.discovery_details }} /> <br/>

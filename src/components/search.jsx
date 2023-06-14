@@ -22,6 +22,7 @@ class SearchBar extends Component {
 
         let optionGas = "gas";
         if (this.props.language !== "English") optionGas = `hau`;
+        const optionSynthetic = (this.props.language !== "English") ? `horihori` : `synthetic`;
 
         return ( 
             
@@ -59,7 +60,7 @@ class SearchBar extends Component {
                         <button onClick={e => {this.props.onSelectFilter('metal')}}>metal</button>
                         <button onClick={e => {this.props.onSelectFilter('metalloid')}}>metalloid</button>
                         <button onClick={e => {this.props.onSelectFilter('nonmetal')}}>non-metal</button>
-                        <button onClick={e => {this.props.onSelectFilter('synthetic')}}>synthetic</button>
+                        <button onClick={e => {this.props.onSelectFilter('synthetic')}}>{optionSynthetic}</button>
                     </div>
                 </div>
         );
