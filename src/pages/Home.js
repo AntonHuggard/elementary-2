@@ -19,6 +19,11 @@ const scaleNames = {
   'k': 'kelvin'
 };
 
+const languages = {
+  'en': 'English',
+  'mi': 'M&amacr;ori'
+}
+
 
 class Home extends Component {
 
@@ -30,7 +35,8 @@ class Home extends Component {
         inputOption: "text",
         units: scaleNames['c'],
         selectedElement: null,
-        periodicTableClass: "periodic-table default-view"
+        periodicTableClass: "periodic-table default-view",
+        language: languages['en'],
     };
     
     showElements = (show) => {
@@ -250,6 +256,14 @@ class Home extends Component {
         return " &#176;C";
     }
 
+    toggleLanguage = () => {
+      if (this.state.language === "English") {
+        this.setState({language: languages['mi']})
+      } else {
+        this.setState({language: languages['en']})
+      }
+    }
+
 
     render() {
 
@@ -264,7 +278,9 @@ class Home extends Component {
                 <Header />
                 <SideMenu 
                     onToggleUnits={this.toggleUnits} 
-                    units={units} />
+                    units={units}
+                    onToggleLanguage={this.toggleLanguage} 
+                    language={this.state.language} />
                     
                 <div id='element_search_wrapper'>
                     <SearchBar

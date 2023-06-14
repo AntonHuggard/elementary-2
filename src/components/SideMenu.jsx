@@ -16,7 +16,7 @@ class SideMenu extends Component {
                 <a href="/#/about">about</a>
                 {/* <button>quiz</button> */}
                 <button>secret button</button>
-                <button>super secret button</button>
+                <button onClick={this.props.onToggleLanguage} dangerouslySetInnerHTML={{ __html: this.props.language }}></button>
             </div>
         );
     }
