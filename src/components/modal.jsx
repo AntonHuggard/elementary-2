@@ -260,6 +260,13 @@ class Modal extends Component {
             const maoriAtom = maoriData.atoms[atomIndex];
             const elementName = this.props.language === "English"? this.props.element.name : maoriAtom.name;
 
+            const labelAtomicNo = (this.props.language !== "English") ? `Tau iraoho` : `Atomic Number`;
+            const labelAtomicMass = (this.props.language !== "English") ? `Tau karihi (o te ngota)` : `Relative Atomic Mass`;
+            const labelMP = (this.props.language !== "English") ? `pae rewa` : `Melting Point`;
+            const labelBP = (this.props.language !== "English") ? `hūnga` : `Boiling Point`;
+            const labelElectronConfig = (this.props.language !== "English") ? `Irahiko whakatakoto` : `E<sup>-</sup> configuration`;
+            const labelDiscovery = (this.props.language !== "English") ? `Kitea` : `Discovery details`;
+
             return ( 
                 <div 
                     id="element-modal" className="hide-me" 
@@ -272,14 +279,14 @@ class Modal extends Component {
                             <button className= "modal-exit-btn" onClick={this.closeModal}>&times;</button>
                             <svg className="modal-svg" width="100%" height="300" dangerouslySetInnerHTML={{ __html: svg }} />
                             <div className= "modal-text-data">
-                                Atomic Number: {this.props.element.atomic_number} <br/> 
-                                Relative Atomic Mass: {this.props.element.atomic_mass} <br/> 
-                                Melting Point: <span dangerouslySetInnerHTML={{ __html: melting_pt }} /> <br/>
-                                Boiling Point: <span dangerouslySetInnerHTML={{ __html: boiling_pt }} /> <br/> 
+                                {labelAtomicNo}: {this.props.element.atomic_number} <br/> 
+                                {labelAtomicMass}: {this.props.element.atomic_mass} <br/> 
+                                {labelMP}: <span dangerouslySetInnerHTML={{ __html: melting_pt }} /> <br/>
+                                {labelBP}: <span dangerouslySetInnerHTML={{ __html: boiling_pt }} /> <br/> 
                                 Electronegativity: {this.props.element.electronegativity} <br/>
-                                E<sup>-</sup> configuration: <span dangerouslySetInnerHTML={{ __html: electron_config }} /> <br/>
+                                <span dangerouslySetInnerHTML={{ __html: labelElectronConfig }}></span>: <span dangerouslySetInnerHTML={{ __html: electron_config }} /> <br/>
                                 <div className="mobile_radioactive_indictaion">Radioactive: {this.props.element.radioactive}</div>
-                                Discovery details: <span dangerouslySetInnerHTML={{ __html: this.props.element.discovery_details }} /> <br/>
+                                {labelDiscovery}: <span dangerouslySetInnerHTML={{ __html: this.props.element.discovery_details }} /> <br/>
                                 Etymology: <span dangerouslySetInnerHTML={{ __html: this.props.element.etymology }} /> <br/>
                             </div>
                             <img className={radioactiveClasses} src={radioactiveImg} alt='radioactive symbol' />
