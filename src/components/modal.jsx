@@ -259,7 +259,8 @@ class Modal extends Component {
             const atomIndex = this.props.element.atomic_number - 1;
             const maoriAtom = maoriData.atoms[atomIndex];
             const elementName = this.props.language === "English"? this.props.element.name : maoriAtom.name;
-            const discDetails = this.props.language === "English"? this.props.element.discovery_details : this.props.element.discovery_date;
+            let discDetails = this.props.language === "English"? this.props.element.discovery_details : this.props.element.discovery_date;
+            if (discDetails === 0) discDetails = "he wa roa i mua";
             const etymology = this.props.language === "English"? this.props.element.etymology : maoriAtom.etymology;
 
             const labelAtomicNo = (this.props.language !== "English") ? `Tau iraoho` : `Atomic Number`;
