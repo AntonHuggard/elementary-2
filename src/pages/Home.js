@@ -36,7 +36,7 @@ class Home extends Component {
         units: scaleNames['c'],
         selectedElement: null,
         periodicTableClass: "periodic-table default-view",
-        language: languages['mi'],
+        language: languages['en'],
     };
     
     showElements = (show) => {

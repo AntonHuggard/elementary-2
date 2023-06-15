@@ -4,7 +4,7 @@
         "name": "haitorana",
         "atomic_number": 1,
         "discovery_details":"1766 by Henry Cavendish",
-        "etymology": "from greek, <em>water-former</em>",
+        "etymology": "Nā te Reekie, kaiwhakawhiti wai",
         "description": ""
     }, 
     {
@@ -12,7 +12,7 @@
     "name": "haumāmā",
     "atomic_number": 2,
     "discovery_details":"1868 by Pierre Janssen & Norman Lockyer",
-    "etymology": "from the Greek word for the sun, <em>Helios</em>",
+    "etymology": "Nā te Reekie kupu mō te rā, Helios",
     "description": ""
 },
                  {
@@ -20,7 +20,7 @@
     "name": "konukōhatu",
     "atomic_number": 3,
     "discovery_details":"1817 by Johan August Arfwedson",
-    "etymology": "from the Greek <em>lithos</em>, meaning stone",
+    "etymology": "Nā te Reekie, te kupu 'lithos' e whakahua ana i te kōhatu",
     "description": ""
 },
  {
@@ -28,7 +28,7 @@
     "name": "konuuku",
     "atomic_number": 4,
     "discovery_details":"1798 by Louis Nicolas Vauquelin",
-    "etymology": "from the mineral beryl",
+    "etymology": "Nā te pounamu Beryl",
     "description": ""
 },
          {
@@ -36,7 +36,7 @@
     "name": "pūtiwha",
     "atomic_number": 5,
     "discovery_details":"30<sup>th</sup> of June, 1808 by Joseph Louis Gay-Lussac and Louis Jacques Th&eacute;nard",
-    "etymology": "from Borax",
+    "etymology": "Nā te Borax",
     "description": ""
 },
                  {
@@ -44,7 +44,7 @@
     "name": "waro",
     "atomic_number": 6,
     "discovery_details":"The Egyptians and Sumerians had diamonds before 3000 BC" ,
-    "etymology": "from the Latin <em>carbo</em>, referring to coal & charcoal",
+    "etymology": "Nā te Latin carbo, e whakarārangi ana ki te kōria me te hūmara",
     "description": ""
 },
                 {
@@ -52,7 +52,7 @@
     "name":"hauota",
     "atomic_number": 7,
     "discovery_details":"1772 by Scottish physician Daniel Rutherford",
-    "etymology": "from the French <em>nitrog&egrave;ne</em>, which means <em>Potassium nitrate-producing</em>",
+    "etymology": "Nā te Paranihi nitrogène, he whakahua i te whakaputa Potassium nitrate",
     "description": ""
 },
                 {
@@ -60,7 +60,7 @@
     "name":"hāora",
     "atomic_number": 8,
     "discovery_details":"Unknown. Either a Polish alchemist in 1604 or in 1771 by Swedish pharmacist Carl Wilhelm Scheele",
-    "etymology": "Coined by Antoine Lavoisier, 1777",
+    "etymology": "Whakatāwhia e Antoine Lavoisier, i te tau 1777",
     "description": ""
 },
                  {
@@ -68,7 +68,7 @@
     "name":"haukōwhai",
     "atomic_number": 9,
     "discovery_details":"1810 by Andr&eacute;-Marie Amp&egrave;re",
-    "etymology": "from the Latin <em>fluo</em>, <em>to flow</em>",
+    "etymology": "Nā te Latin fluo, hei pouritanga",
     "description": ""
 },             
              {
@@ -76,7 +76,7 @@
     "name":"haukura",
     "atomic_number": 10,
     "discovery_details":"1898 by British chemists Sir William Ramsay & Morris W. Travers",
-    "etymology": "Greek equivalent of <em>Novum</em> (Latin for <em>new</em>)",
+    "etymology": "Te whakakōrero Reekie mō te Novum (te Reo Latin mō te hōu)",
     "description": ""
 },
  {
@@ -84,7 +84,7 @@
     "name":"konutai",
     "atomic_number": 11,
     "discovery_details":"1807 by Humphry Davy",
-    "etymology": "Unknown. Its symbol is derived from Natronium/Natrium",
+    "etymology": "Kore mōhio. Whakaritea ana te tohu i te Natronium/Natrium",
     "description": ""
 },
  {
@@ -92,7 +92,7 @@
     "name":"konupora",
     "atomic_number": 12,
     "discovery_details":"1755 by Joseph Black",
-    "etymology": "after Magnesia, Greece",
+    "etymology": "ko a Magnesia, nā Kariki te ingoa",
     "description": ""
 },
                 {
@@ -100,7 +100,7 @@
     "name":"konumohe",
     "atomic_number": 13,
     "discovery_details":"1824  by Hans Christian &#216;rsted (Denmark)",
-    "etymology": "Named after Aluminia (which is named after Alum)",
+    "etymology": "I whakatakotoria ko a Aluminia (e whakatakotoria ana ko te Alum) te ingoa",
     "description": ""
 },
  {
@@ -108,7 +108,7 @@
     "name":"takawai",
     "atomic_number": 14,
     "discovery_details":"1823 by J&ouml;ns Jacob Berzelius",
-    "etymology": "from flint in Latin, <em>silex</em> or <em>silicis</em>",
+    "etymology": "Nā te Latin silex, he tuawhenua tānga-tau",
     "description": ""
 },
                 {
@@ -116,7 +116,7 @@
     "name":"Parārenga",
     "atomic_number": 15,
     "discovery_details":"1669 by German Alchemist Hennig Brand. Properly discovered by Antoine Lavoisier in 1777",
-    "etymology": "from the Ancient Greek name for Venus, translates as <em>light-bearer</em>",
+    "etymology": "Nā te ingoa Reekie tawhito mō Venus, e whakapā atu ana ki te kaiwhakamaumaharatanga",
     "description": ""
 },
  {
@@ -124,7 +124,7 @@
     "name":"whānāriki",
     "atomic_number": 16,
     "discovery_details":"Before 2000 BC, China. Recognised as an element by Antoine Lavoisier in 1777",
-    "etymology": "derived from Latin <em>sulpur</em>",
+    "etymology": "I whakaritea mai i te Latin sulphur",
     "description": ""
 },
  {
@@ -132,7 +132,7 @@
     "name":"haumāota",
     "atomic_number": 17,
     "discovery_details":"1774 by Carl Wilhelm Scheele (Sweden/Germany)",
-    "etymology": "from Ancient Greek <em>Khloros</em> (pale-green)",
+    "etymology": "Nā te Reekie tawhito Khloros (mā whero-whero)",
     "description": ""
 },
                  {
@@ -140,7 +140,7 @@
     "name":"hauhauhā",
     "atomic_number": 18,
     "discovery_details":"1894 by Lord Rayleigh and William Ramsay",
-    "etymology": "Derived from the Greek word for lazy",
+    "etymology": "I whakaritea mai i te kupu Reekie mō te whakawhetai",
     "description": ""
 },
                 
@@ -149,7 +149,7 @@
     "name":"konurehu",
     "atomic_number": 19,
     "discovery_details":"1807 by Humphry Davy",
-    "etymology": "from <em>Pot-ash</em>. Historically potassium-containing salts were produced by boiling ash. K is from Kali, from Alkali",
+    "etymology": "Nā te Pot-ash. I ngā wā tawhito, i whakapau Potassium-containing salts mā te pōiringa i te pari. Ko K mai i a Kali, mai i Alkali",
     "description": ""
 },
                  {
@@ -157,7 +157,7 @@
     "name":"konupūmā",
     "atomic_number": 20,
     "discovery_details":"1808 by Humphry Davy",
-    "etymology": "from Latin <em>calx</em>, meaning lime",
+    "etymology": "Nā te Latin calx, he whakahua i te kōwhaiwhai",
     "description": ""
 },
                 {
@@ -165,7 +165,7 @@
     "name":"konutaketake",
     "atomic_number": 21,
     "discovery_details":"1879 by Lars Fredrik Nilson",
-    "etymology": "after Scandinavia",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -173,7 +173,7 @@
     "name":"tini",
     "atomic_number": 22,
     "discovery_details":"1791 by William Gregor",
-    "etymology": "after the mythological Greek Titans",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -181,7 +181,7 @@
     "name":"whānatiau*",
     "atomic_number": 23,
     "discovery_details":"1801 by Andr&eacute;s Manuel del R&iacute;o. Isolated in 1830 by Nils Gabriel Sefstr&ouml;m",
-    "etymology": "after the Norse goddess of beauty & fertility, Vanad&iacute;s (Freyja)",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -189,7 +189,7 @@
     "name":"konukita",
     "atomic_number": 24,
     "discovery_details":"Discovered 1794, isolated in 1797 by Louis Nicolas Vauquelin",
-    "etymology": "from Greek <em>chroma</em>, meaning <em>colour</em>",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -197,7 +197,7 @@
     "name":"konupango",
     "atomic_number": 25,
     "discovery_details":"1774 by Johann Gottlieb Gahn",
-    "etymology": "after Magnesia in Greece (same as Magnesium)",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -205,7 +205,7 @@
     "name":"pāraharaha",
     "atomic_number": 26,
     "discovery_details":"Unknown. Before 5000 BC",
-    "etymology": "from proto-Germanic <em>isarnon</em>. Its chemical symbol comes from its Latin name <em>ferrum</em>",
+    "etymology": "",
     "description": ""
 },
  {
@@ -213,7 +213,7 @@
     "name":"konukurahina",
     "atomic_number": 27,
     "discovery_details":"1735 by Georg Brandt",
-    "etymology": "from Kobald, a sprite in Germainc mythology",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -221,7 +221,7 @@
     "name":"konukōreko",
     "atomic_number": 28,
     "discovery_details":"1751 by Axel Fredrik Cronstedt",
-    "etymology": "from the sprite of Germanic mythology",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -229,7 +229,7 @@
     "name":"kapa",
     "atomic_number": 29,
     "discovery_details":"before 9000 BC in the Middle East",
-    "etymology": "after Cyprus, a significant mining location to Ancient Rome",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -237,7 +237,7 @@
     "name":"konutea",
     "atomic_number": 30,
     "discovery_details":"India before 1000 BC. Properly in 1746 by Andreas Sigismund Marggraf",
-    "etymology": "after <em>Zinke</em>, German for prong. Probably.",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -245,7 +245,7 @@
     "name":"talahau*",
     "atomic_number": 31,
     "discovery_details":"1875 by Lecoq de Boisbaudran (France)",
-    "etymology": "after <em>Gallia</em>, the Roman province <em>Gaul</em>. Roughly the area of modern France",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -253,7 +253,7 @@
     "name":"tamenau*",
     "atomic_number": 32,
     "discovery_details":"1886 by Clemens Winkler (Germany)",
-    "etymology": "after Germany",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -261,7 +261,7 @@
     "name":"konutāroki",
     "atomic_number": 33,
     "discovery_details":"before 815 AD by Arabic Alchemists",
-    "etymology": "from the Greek word for <em>stink</em>",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -269,7 +269,7 @@
     "name":"henenau*",
     "atomic_number": 34,
     "discovery_details":"1817 by J&ouml;ns Jakob Berzelius & Johann Gottlieb Gahn",
-    "etymology": "after Selene, the Greek moon goddess",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -277,7 +277,7 @@
     "name":"pomini*",
     "atomic_number": 35,
     "discovery_details":"1825 by Antoine J&eacute;r&ocirc;me Balard (France) & Carl Jacob L&ouml;wig (Germany)",
-    "etymology": "from the Greek word for <em>stench</em>",
+    "etymology": "",
     "description": ""
 },
  {
@@ -285,7 +285,7 @@
     "name":"kupiti*", 
     "atomic_number": 36,
     "discovery_details":"1898 by William Ramsay & Morris Travers",
-    "etymology": "from Ancient Greek <em>Kryptos</em>, meaning <em>the hidden one</em>",
+    "etymology": "",
     "description": ""
 },
  {
@@ -293,7 +293,7 @@
     "name":"pākurakura*",
     "atomic_number": 37,
     "discovery_details":"1861 by Robert Bunsen and Gustav Kirchhoff. Isolated by George de Hevesy",
-    "etymology": "from the Latin <em>rubidus</em>, meaning <em>deep red</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -301,7 +301,7 @@
     "name":"haumini*",
     "atomic_number": 38,
     "discovery_details":"1787 by William Cruickshank",
-    "etymology": "after stronantine, which gets its name from the Scottish village of Strontian",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -309,7 +309,7 @@
     "name":"itiri*",
     "atomic_number": 39,
     "discovery_details":"1794 Johan Gadolin",
-    "etymology": "named after the Swedish village of Ytterby",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -317,7 +317,7 @@
     "name":"haukonau*",
     "atomic_number": 40,
     "discovery_details":"1789 Martin Heinrich Klaproth (Germany)",
-    "etymology": "from Arabic <em>Zargon</em>, meaning <em>gold-coloured</em>",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -325,7 +325,7 @@
     "name":"ngapitiau",
     "atomic_number": 41,
     "discovery_details":"1801 by Charles Hatchett",
-    "etymology": "after <em>Niobe</em> in Greek mythology",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -333,7 +333,7 @@
     "name":"mohatini*",
     "atomic_number": 42,
     "discovery_details":"1778 by Carl Wilhelm Scheele (Germany/Sweden)",
-    "etymology": "from the Neo-Latin equivalent of Ancient Greek <em>molybdos</em>, meaning lead",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -341,7 +341,7 @@
     "name":"tekahiko*",
     "atomic_number": 43,
     "discovery_details":"1937 by Emilio Segr&egrave; and Carlo Perrier",
-    "etymology": "from Greek, meaning <em>synthetic</em> with the -ium suffix",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -349,7 +349,7 @@
     "name":"rūtene",
     "atomic_number": 44, 
     "discovery_details":"1844 by Karl Ernst Claus (Russia)",
-    "etymology": "after <em>Ruthenia</em>, the Latin name for the region controlled by the Kievan Rus",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -357,7 +357,7 @@
     "name":"rihōdiama",
     "atomic_number": 45,
     "discovery_details":"1804 by William Hyde Wollaston",
-    "etymology": "after the rose-colour of a compound it forms with Chlorine",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -365,7 +365,7 @@
     "name":"palatinau",
     "atomic_number": 46,
     "discovery_details":"1802 by William Hyde Wollaston",
-    "etymology": "after asteroid Pallas, which was named after Pallas Athena",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -373,7 +373,7 @@
     "name":"hiriwa",
     "atomic_number": 47,
     "discovery_details":"before 5000 BC",
-    "etymology": "ultimately from proto-Germanic <em>silubra</em>. Its symbol comes from its name, <em>argentum</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -381,7 +381,7 @@
     "name":"konuhirimā",
     "atomic_number": 48,
     "discovery_details":"1817 by Karl Samuel Leberecht Hermann and Friedrich Stromeyer",
-    "etymology": "after Cadmus of Greek mythology",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -389,7 +389,7 @@
     "name":"Iniamu",
     "atomic_number": 49,
     "discovery_details":"1863 by Ferdinand Reich and Hieronymous Theodor Richter",
-    "etymology": "after the inidgo blue of its visible spectrum (ultimately derived from <em>India</em>)",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -397,7 +397,7 @@
     "name":"tini",
     "atomic_number": 50,
     "discovery_details":"circa 3500 BC",
-    "etymology": "from proto-Germanic <em>tin-om</em>. Its symbol is derived from its Latin name <em>stannum</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -405,7 +405,7 @@
     "name":"kakano",
     "atomic_number": 51,
     "discovery_details":"before 815 AD by Jabir ibn Hayyan",
-    "etymology": "from its Byzantine Greek name, <em>antimonium</em>. The origin of this is unknown.",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -413,7 +413,7 @@
     "name":"tirinau*", 
     "atomic_number": 52,
     "discovery_details":"1782 by Franz-Joseph M&uuml;ller von Reichenstein (Austria)",
-    "etymology": "after the Roman Earth deity <em>Tellus</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -421,7 +421,7 @@
     "name":"konutawa",
     "atomic_number": 53,
     "discovery_details":"1811 by Bernard Courtois (France)",
-    "etymology": "from Greek, translated as <em>violet-coloured</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -429,7 +429,7 @@
     "name":"hautūāpōkere",
     "atomic_number": 54,
     "discovery_details": "1898 by William Ramsay and Morris Travers", 
-    "etymology": "from the Greek <em>xenos</em>, meaning <em>foreigner</em>",
+    "etymology": "",
     "description": ""
 },
  {
@@ -437,7 +437,7 @@
     "name":"hehenau*",
     "atomic_number": 55,
     "discovery_details":"1860 by Robert Bunsen and Gustav Kirchhoff. Isolated in 1882 by Carl Setterberg",
-    "etymology": "from Latin <em>Caesius</em> (bluish-grey), after its spectral colours.",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -445,7 +445,7 @@
     "name":"konuokehu",
     "atomic_number": 56,
     "discovery_details":"1772 by Carl Wilhelm Scheele. 1808 by Humphry Davy",
-    "etymology": "from the Alchemical <em>baryta</em> which is derived from Greek <em>Barys</em>, meaning heavy",
+    "etymology": "",
     "description": ""
 },
  {
@@ -453,7 +453,7 @@
     "name":"whantana*",
     "atomic_number": 57,
     "discovery_details":"1838 by Carl Gustaf Mosander",
-    "etymology": "from the Ancient Greek <em>lanthanein</em>, meaning <em>to lie hidden</em>",
+    "etymology": "",
     "description": ""
 },
                 
@@ -462,7 +462,7 @@
     "name":"harinau*",
     "atomic_number": 58,  
     "discovery_details":"1803 by M.H. Klaproth, J.J. Berzelius, Wilhelm Hisinger. Isolated 1838 by C.G. Mosander",
-    "etymology": "after Ceres, the Roman god of agriculture",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -470,7 +470,7 @@
     "name":"ritetenau*",
     "atomic_number": 59,
     "discovery_details":"1885 by Carl Auer von Welsbach (Austria)",
-    "etymology": "from Greek, meaning <em>green twin</em>",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -478,7 +478,7 @@
     "name":"nioteau*",
     "atomic_number": 60,
     "discovery_details":"1885 by Carl Auer von Welsbach (Austria)",
-    "etymology": "from Greek, meaning <em>new twin</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -486,7 +486,7 @@
     "name":"pīmiteo*",
     "atomic_number": 61,
     "discovery_details":"1942 by Chien Shiung Wu, E. Segr&egrave;, H. Bethe. Isolated 1945 by C.D. Coryell, J.A. Marinsky, L.E. Glendenin",
-    "etymology": "after <em>Promethius</em> of Greek mythology",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -494,7 +494,7 @@
     "name":"hemerīnau*",
     "atomic_number": 62, 
     "discovery_details":"1879 by Lecoq de Boisbaudran",
-    "etymology": "after samarskite (ultimately from Russian mining engineer Vassili Samarsky-Bykhovets)",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -502,7 +502,7 @@
     "name":"ūropinau*",
     "atomic_number": 63,
     "discovery_details":"1896 by Eug&egrave;ne-Anatole Demarçay, isolated 1901.",
-    "etymology": "after Europe. Obviously.",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -510,7 +510,7 @@
     "name":"tātāliniau*",
     "atomic_number": 64,
     "discovery_details":"1880 by Jean Charles Galissard de Marignac. Isolated 1886 by Lecoq de Boisbaudran",
-    "etymology": "after Gadolinite (from Swedish/Finnish chemist Johan Gadolin)",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -518,7 +518,7 @@
     "name":"tupimi*",
     "atomic_number": 65, 
     "discovery_details":"1843 Carl Gustaf Mosander",
-    "etymology": "after Ytterby, Sweden",
+    "etymology": "",
     "description": ""
 },
                 
@@ -527,7 +527,7 @@
     "name":"tipihenau*",
     "atomic_number": 66, 
     "discovery_details":"1886 Lecoq de Boisbaudran",
-    "etymology": "from Greek <em>dysprositos</em>, meaning <em>hard to obtain</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -535,7 +535,7 @@
     "name":"hōmini*",
     "atomic_number": 67,
     "discovery_details":"1878 by Jacques-Louis Soret and Marc Delafontaine",
-    "etymology": "after the Latin name for Stockholm, Sweden",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -543,7 +543,7 @@
     "name":"urupiti*",
     "atomic_number": 68,
     "discovery_details":"1843 Carl Gustaf Mosander",
-    "etymology": "after Ytterby, Sweden",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -551,7 +551,7 @@
     "name":"whūrūnau*",
     "atomic_number": 69,
     "discovery_details":"1879 by Per Teodor Cleve (Sweden)",
-    "etymology": "after Thule (mythical Scandinavian region)",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -559,7 +559,7 @@
     "name":"itipeo**",
     "atomic_number": 70,
     "discovery_details":"1878 by Jean Charles Galissard de Marignac. Isolated 1906 by Carl Auer von Welsbach",
-    "etymology": "after Ytterby, Sweden",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -567,7 +567,7 @@
     "name":"urutihēu*",
     "atomic_number": 71,
     "discovery_details":"1906 by Carl Auer von Welsbach and Georges Urbain. Isolated by Welsbach, 1906",
-    "etymology": "after the Latin name for Paris (Lutetia)",
+    "etymology": "",
     "description": ""
 },        
  {
@@ -575,7 +575,7 @@
     "name":"awhenau*",
     "atomic_number": 72,
     "discovery_details":"1922 by Dirk Coster and George de Hevesy",
-    "etymology": "from the Latin name for Copenhagen, <em> Hafnia</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -583,7 +583,7 @@
     "name":"taianio*",
     "atomic_number": 73,
     "discovery_details":"1802 by Anders Gustaf Ekeberg. Recognised as a distinct element in 1844 by Heinrich Rose",
-    "etymology": "after Tantalus, from Greek mythology",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -591,7 +591,7 @@
     "name":"tangitene",
     "atomic_number": 74,
     "discovery_details":"1781 by Juan Jos&eacute; Elhuyar and Fausto Elhuyar. Isolated two years later",
-    "etymology": "from Swedish, meaning <em>heavy stone</em>. In German, it is called <em>wolfram</em> (Hence, <em>W</em>)",
+    "etymology": "",
     "description": ""
 },
  {
@@ -599,7 +599,7 @@
     "name":"renīau*",
     "atomic_number": 75,
     "discovery_details":"1908 by Masataka Ogawa (Japan)",
-    "etymology": "named after the Rhine (river)",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -607,7 +607,7 @@
     "name":"auhenīau*",
     "atomic_number": 76,
     "discovery_details":"1803 by Smithson Tennant (England)",
-    "etymology": "from Greek <em>osme</em> (a smell)",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -615,7 +615,7 @@
     "name":"iriri*",
     "atomic_number": 77,
     "discovery_details":"1803 by Smithson Tennant",
-    "etymology": "after the Greek goddess Iris (rainbow personification) because of its colourful salts",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -623,7 +623,7 @@
     "name":"konukawata",
     "atomic_number": 78, 
     "discovery_details":"1735 by Antonio de Ulloa (Spain)",
-    "etymology": "from Spanish <em>platino</em> (<em>little silver</em>)",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -631,7 +631,7 @@
     "name":"Kōura",
     "atomic_number": 79,
     "discovery_details":"before 6000 BC, Middle East",
-    "etymology": "from proto-Germanic <em>gultha</em>. Its symbol is from its Latin <em>aurum</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -639,7 +639,7 @@
     "name":"Konuoi",
     "atomic_number": 80,
     "discovery_details":"Unknown. Before 1500 BC, Ancient Egypt",
-    "etymology": "after the Roman god. Formerly called hydrargyrum (Greek, meaning <em>water-silver</em>), hence its symbol",
+    "etymology": "",
     "description": ""
 },
               {
@@ -647,7 +647,7 @@
     "name":"whārimi*", 
     "atomic_number": 81,  
     "discovery_details":"1861 by William Crookes (Britain), it was isolated the following year.",
-    "etymology": "from Greek <em>thallos</em> (green shoot or twig)",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -655,7 +655,7 @@
     "name":"Konumatā",
     "atomic_number": 82,
     "discovery_details":"7000 BC, Middle East",
-    "etymology": "No one knows. It has been called the same thing for centuries. Symbol derived from latin <em>plumbum</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -663,7 +663,7 @@
     "name":"pimini*",
     "atomic_number": 83,
     "discovery_details":"before 1000 AD by Arabic Alchemists",
-    "etymology": "Unknown. Probably from Arabic <em>bi ismid</em>, which means <em>having the properties of antimony</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -671,7 +671,7 @@
     "name":"pōramini*",
     "atomic_number": 84,
     "discovery_details":"1898 by Pierre & Marie Curie. Isolated 1902 by Willy Marckwald",
-    "etymology": "from <em>Polonia</em>, the Latin name for Poland",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -679,7 +679,7 @@
     "name": "ahatini*", 
     "atomic_number":85, 
     "discovery_details":"1940 by Dale R. Corson, Kenneth Ross MacKenzie, Emilio Segr&egrave;",
-    "etymology": "from Greek <em>astatos</em> (unstable)",
+    "etymology": "",
     "description": ""
 },
      {
@@ -687,7 +687,7 @@
     "name": "rātono*", 
     "atomic_number": 86, 
     "discovery_details":"1899 by E. Rutherford (New Zealand) and R.B. Owens (USA). Isolated 1910 by W. Ramsay & R. Whytlaw-Gray ",
-    "etymology": "Initially it was called <em>radium emanation</em>. In 1918 it was one of several shortened proposed names",
+    "etymology": "",
     "description": ""
 },    
  {
@@ -695,7 +695,7 @@
     "name": "wīwīau*", 
     "atomic_number":87, 
     "discovery_details":"1939 by Marguerite Perey",
-    "etymology": "after France",
+    "etymology": "",
     "description": ""
 },
      {
@@ -703,7 +703,7 @@
     "name": "konuruke", 
     "atomic_number":88, 
     "discovery_details":"1898 by Pierre & Marie Curie. Isolated by Marie, 1910",
-    "etymology": "from Latin <em>radius</em>. Meaning ray. Because of its emissions.",
+    "etymology": "",
     "description": ""
 },
  {
@@ -711,7 +711,7 @@
     "name":"akotini*",
     "atomic_number": 89,
     "discovery_details":"1902 by Friedrich Oskar Giesel",
-    "etymology": "from Greek, meaning <em>ray-beam</em>",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -719,7 +719,7 @@
     "name":"whaitirau*",
     "atomic_number": 90, 
     "discovery_details":"1829 by J&ouml;ns Jakob Berzelius",
-    "etymology": "after Thor, the Norse god of thunder",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -727,7 +727,7 @@
     "name":"palatini*",
     "atomic_number": 91,
     "discovery_details":"1913 by Kasimir Fajans and Oswald Helmuth G&ouml;hring",
-    "etymology": "a contraction of <em>proto-actinium</em>",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -735,7 +735,7 @@
     "name":"konukarihi",
     "atomic_number": 92, 
     "discovery_details":"1789 by Martin Heinrich Klaproth. Isolated 1841 by Eug&egrave;ne-Melchior P&eacute;ligot",
-    "etymology": "after Uranus (the planet). Ultimately derived from the Greek god of the sky",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -743,7 +743,7 @@
     "name":"konutangaroa",
     "atomic_number": 93,
     "discovery_details":"1940 by Edwin McMillan and Philip H. Abelson",
-    "etymology": "after Neptune (the planet). Ultimately derived from the Greek god of the sea",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -751,7 +751,7 @@
     "name":"konuwhiro",
     "atomic_number": 94, 
     "discovery_details":"1940–1 by Glenn T. Seaborg, Arthur Wahl, Joseph W. Kennedy, Edwin McMillan",
-    "etymology": "after Pluto (the planet). Ultimately derived from the Greek god of the underworld",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -759,7 +759,7 @@
     "name":"konumerika",
     "atomic_number": 95, 
     "discovery_details":"1944 by Glenn T. Seaborg, Ralph A. James, Leon O. Morgan, Albert Ghiorso",
-    "etymology": "after the Americas (Northern & Southern continents)",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -767,7 +767,7 @@
     "name":"kūriama*",
     "atomic_number": 96, 
     "discovery_details":"1944 by Glenn T. Seaborg, Ralph A. James, Albert Ghiorso",
-    "etymology": "after Marie Curie",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -775,7 +775,7 @@
     "name":"perkiliau**",
     "atomic_number": 97,
     "discovery_details":"1949 by Lawrence Berkeley National Laboratory",
-    "etymology": "after Berkeley, California, USA",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -783,7 +783,7 @@
     "name":"karepōniau*",
     "atomic_number": 98, 
     "discovery_details":"1950 by Lawrence Berkeley National Laboratory",
-    "etymology": "after California, USA",
+    "etymology": "",
     "description": ""
 },
                 {
@@ -791,7 +791,7 @@
     "name":"onehiamini*",
     "atomic_number": 99, 
     "discovery_details":"1952 by Lawrence Berkeley National Laboratory",
-    "etymology": "after Albert Einstein",
+    "etymology": "",
     "description": ""
 },
                  {
@@ -799,7 +799,7 @@
     "name":"whermio*",
     "atomic_number": 100, 
     "discovery_details":"1952 by Lawrence Berkeley National Laboratory",
-    "etymology": "after Enrico Fermi",
+    "etymology": "",
     "description": ""
 },
  {
@@ -807,7 +807,7 @@
     "name":"menetiniau*",
     "atomic_number": 101, 
     "discovery_details":"1955 by Lawrence Berkeley National Laboratory",
-    "etymology": "after Dmitri Mendeleev, father of the Periodic Table",
+    "etymology": "",
     "description": ""
 },                
               {
@@ -815,7 +815,7 @@
     "name": "nōpiliau*",
     "atomic_number":102,
     "discovery_details":"1966 by the Joint Institute for Nuclear Research",
-    "etymology": "after Alfred Nobel",
+    "etymology": "",
     "description": ""
 },
  {
@@ -823,7 +823,7 @@
     "name": "ngorinhiau*", 
     "atomic_number":103, 
     "discovery_details":"1961-1971 by JINR (USSR) & LBNL (USA)",
-    "etymology": "after Ernest Lawrence",
+    "etymology": "",
     "description": ""
 },
      {
@@ -831,7 +831,7 @@
     "name": "ruwhatiau*", 
     "atomic_number":104, 
     "discovery_details":"1964 in the Soviet Union. Confirmed 1969, USA.",
-    "etymology": "after Sir Ernest Rutherford (New Zealand)",
+    "etymology": "",
     "description": ""
 },   
      {
@@ -839,7 +839,7 @@
     "name": "tāpini", 
     "atomic_number":105, 
     "discovery_details":"1970, LBNL (USA) & JINR (Russian) (independently)",
-    "etymology": "after Dubna, Russia",
+    "etymology": "",
     "description": ""
 },    
      {
@@ -847,7 +847,7 @@
     "name": "hīporini*", 
     "atomic_number":106, 
     "discovery_details":"1974 by Lawrence Berkeley National Laboratory",
-    "etymology": "after the American nuclear chemist Glenn T. Seaborg",
+    "etymology": "",
     "description": ""
 },
  {
@@ -855,7 +855,7 @@
     "name": "poronau*", 
     "atomic_number":107, 
     "discovery_details":"1981 by Gesellschaft f&uuml;r Schwerionenforschung",
-    "etymology": "after Danish physicist Niels Bohr",
+    "etymology": "",
     "description": ""
 },  
      {
@@ -863,7 +863,7 @@
     "name": "ahaumini*", 
     "atomic_number":108, 
     "discovery_details":"1984 by Gesellschaft f&uuml;r Schwerionenforschung",
-    "etymology": "after the German state of Hesse",
+    "etymology": "",
     "description": ""
 },    
      {
@@ -871,7 +871,7 @@
     "name": "mīririmini*", 
     "atomic_number":109, 
     "discovery_details":"1982 by Gesellschaft f&uuml;r Schwerionenforschung",
-    "etymology": "after Lise Meitner (Austria/Sweden)",
+    "etymology": "",
     "description": ""
 },  
      {
@@ -879,7 +879,7 @@
     "name": "taramahiau**", 
     "atomic_number":110, 
     "discovery_details":"1994 by Gesellschaft f&uuml;r Schwerionenforschung",
-    "etymology": "after Darmstadt, Germany (location of its discovery)",
+    "etymology": "",
     "description": ""
 },   
      {
@@ -887,7 +887,7 @@
     "name": "rōtotiniau*", 
     "atomic_number":111, 
     "discovery_details":"1994 by Gesellschaft f&uuml;r Schwerionenforschung",
-    "etymology": "after Wilhelm R&ouml;ntgen (Germany)",
+    "etymology": "",
     "description": ""
 },    
      {
@@ -911,7 +911,7 @@
     "name": "whawharinau*", 
     "atomic_number":114, 
     "discovery_details":"1999 by JINR & LLNL",
-    "etymology": "after the Flerov Laboratory of Nuclear Reactions (ultimately after Georgy Flyorov)",
+    "etymology": "",
     "description": ""
 },    
      {
@@ -919,7 +919,7 @@
     "name": "mohokinau", 
     "atomic_number":115, 
     "discovery_details":"2003 by JINR and LLNL",
-    "etymology": "after Moscow, Russia",
+    "etymology": "",
     "description": ""
 },    
      {
@@ -927,7 +927,7 @@
     "name": "ngowharimini**", 
     "atomic_number":116, 
     "discovery_datails":"2000 by JINR & LLNL",
-    "etymology": "after Lawrence Livermore National Laboratory (ultimately after Livermore, California)",
+    "etymology": "",
     "description": ""
 },    
      {
@@ -935,7 +935,7 @@
     "name": "tenehinau*", 
     "atomic_number":117, 
     "discovery_details":"2009 by JINR, LLNL, Vanderbilt University & Oak Ridge National Laboratory",
-    "etymology": "after Tennessee, USA",
+    "etymology": "",
     "description": ""
 },    
      {
@@ -943,7 +943,7 @@
     "name": "okahēnu*", 
     "atomic_number":118, 
     "discovery_details":"2002 by JINR & LLNL",
-    "etymology": "after Yuri Oganessian",
+    "etymology": "",
     "description": ""
 }
 ]

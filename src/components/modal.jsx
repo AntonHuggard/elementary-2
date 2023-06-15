@@ -259,6 +259,8 @@ class Modal extends Component {
             const atomIndex = this.props.element.atomic_number - 1;
             const maoriAtom = maoriData.atoms[atomIndex];
             const elementName = this.props.language === "English"? this.props.element.name : maoriAtom.name;
+            const discDetails = this.props.language === "English"? this.props.element.discovery_details : this.props.element.discovery_date;
+            const etymology = this.props.language === "English"? this.props.element.etymology : maoriAtom.etymology;
 
             const labelAtomicNo = (this.props.language !== "English") ? `Tau iraoho` : `Atomic Number`;
             const labelAtomicMass = (this.props.language !== "English") ? `Tau karihi (o te ngota)` : `Relative Atomic Mass`;
@@ -287,8 +289,8 @@ class Modal extends Component {
                                 {labelEN}: {this.props.element.electronegativity} <br/>
                                 <span dangerouslySetInnerHTML={{ __html: labelElectronConfig }}></span>: <span dangerouslySetInnerHTML={{ __html: electron_config }} /> <br/>
                                 <div className="mobile_radioactive_indictaion">Radioactive: {this.props.element.radioactive}</div>
-                                {labelDiscovery}: <span dangerouslySetInnerHTML={{ __html: this.props.element.discovery_details }} /> <br/>
-                                Etymology: <span dangerouslySetInnerHTML={{ __html: this.props.element.etymology }} /> <br/>
+                                {labelDiscovery}: <span dangerouslySetInnerHTML={{ __html: discDetails }} /> <br/>
+                                Etymology: <span dangerouslySetInnerHTML={{ __html: etymology }} /> <br/>
                             </div>
                             <img className={radioactiveClasses} src={radioactiveImg} alt='radioactive symbol' />
                         </div>
