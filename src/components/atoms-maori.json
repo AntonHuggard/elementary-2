@@ -178,7 +178,7 @@
 },
                 {
     "symbol": "V",
-    "name":"whānatiau",
+    "name":"whānatiau*",
     "atomic_number": 23,
     "discovery_details":"1801 by Andr&eacute;s Manuel del R&iacute;o. Isolated in 1830 by Nils Gabriel Sefstr&ouml;m",
     "etymology": "after the Norse goddess of beauty & fertility, Vanad&iacute;s (Freyja)",
@@ -242,7 +242,7 @@
 },
                  {
     "symbol": "Ga",
-    "name":"*",
+    "name":"talahau*",
     "atomic_number": 31,
     "discovery_details":"1875 by Lecoq de Boisbaudran (France)",
     "etymology": "after <em>Gallia</em>, the Roman province <em>Gaul</em>. Roughly the area of modern France",
@@ -250,7 +250,7 @@
 },
                  {
     "symbol": "Ge",
-    "name":"*",
+    "name":"tamenau*",
     "atomic_number": 32,
     "discovery_details":"1886 by Clemens Winkler (Germany)",
     "etymology": "after Germany",
@@ -266,7 +266,7 @@
 },
                 {
     "symbol": "Se",
-    "name":"*",
+    "name":"henenau*",
     "atomic_number": 34,
     "discovery_details":"1817 by J&ouml;ns Jakob Berzelius & Johann Gottlieb Gahn",
     "etymology": "after Selene, the Greek moon goddess",
@@ -274,7 +274,7 @@
 },
                 {
     "symbol": "Br",
-    "name":"Pūkane",
+    "name":"pomini*",
     "atomic_number": 35,
     "discovery_details":"1825 by Antoine J&eacute;r&ocirc;me Balard (France) & Carl Jacob L&ouml;wig (Germany)",
     "etymology": "from the Greek word for <em>stench</em>",
@@ -282,7 +282,7 @@
 },
  {
     "symbol": "Kr",
-    "name":"*", 
+    "name":"kupiti*", 
     "atomic_number": 36,
     "discovery_details":"1898 by William Ramsay & Morris Travers",
     "etymology": "from Ancient Greek <em>Kryptos</em>, meaning <em>the hidden one</em>",
@@ -290,7 +290,7 @@
 },
  {
     "symbol": "Rb",
-    "name":"*",
+    "name":"pākurakura*",
     "atomic_number": 37,
     "discovery_details":"1861 by Robert Bunsen and Gustav Kirchhoff. Isolated by George de Hevesy",
     "etymology": "from the Latin <em>rubidus</em>, meaning <em>deep red</em>",
@@ -298,7 +298,7 @@
 },
                  {
     "symbol": "Sr",
-    "name":"*",
+    "name":"haumini*",
     "atomic_number": 38,
     "discovery_details":"1787 by William Cruickshank",
     "etymology": "after stronantine, which gets its name from the Scottish village of Strontian",
@@ -306,7 +306,7 @@
 },
                 {
     "symbol": "Y",
-    "name":"*",
+    "name":"itiri*",
     "atomic_number": 39,
     "discovery_details":"1794 Johan Gadolin",
     "etymology": "named after the Swedish village of Ytterby",
@@ -314,7 +314,7 @@
 },
                 {
     "symbol": "Zr",
-    "name":"*",
+    "name":"haukonau*",
     "atomic_number": 40,
     "discovery_details":"1789 Martin Heinrich Klaproth (Germany)",
     "etymology": "from Arabic <em>Zargon</em>, meaning <em>gold-coloured</em>",
@@ -322,7 +322,7 @@
 },
                 {
     "symbol": "Nb",
-    "name":"*",
+    "name":"ngapitiau",
     "atomic_number": 41,
     "discovery_details":"1801 by Charles Hatchett",
     "etymology": "after <em>Niobe</em> in Greek mythology",
@@ -330,7 +330,7 @@
 },
                  {
     "symbol": "Mo",
-    "name":"*",
+    "name":"mohatini*",
     "atomic_number": 42,
     "discovery_details":"1778 by Carl Wilhelm Scheele (Germany/Sweden)",
     "etymology": "from the Neo-Latin equivalent of Ancient Greek <em>molybdos</em>, meaning lead",
@@ -338,7 +338,7 @@
 },
                  {
     "symbol": "Tc",
-    "name":"*",
+    "name":"tekahiko*",
     "atomic_number": 43,
     "discovery_details":"1937 by Emilio Segr&egrave; and Carlo Perrier",
     "etymology": "from Greek, meaning <em>synthetic</em> with the -ium suffix",
@@ -362,7 +362,7 @@
 },
                  {
     "symbol": "Pd",
-    "name":"*",
+    "name":"palatinau",
     "atomic_number": 46,
     "discovery_details":"1802 by William Hyde Wollaston",
     "etymology": "after asteroid Pallas, which was named after Pallas Athena",
@@ -410,7 +410,7 @@
 },
                  {
     "symbol": "Te",
-    "name":"*", 
+    "name":"tirinau*", 
     "atomic_number": 52,
     "discovery_details":"1782 by Franz-Joseph M&uuml;ller von Reichenstein (Austria)",
     "etymology": "after the Roman Earth deity <em>Tellus</em>",
@@ -434,7 +434,7 @@
 },
  {
     "symbol":"Cs",
-    "name":"*",
+    "name":"hehenau*",
     "atomic_number": 55,
     "discovery_details":"1860 by Robert Bunsen and Gustav Kirchhoff. Isolated in 1882 by Carl Setterberg",
     "etymology": "from Latin <em>Caesius</em> (bluish-grey), after its spectral colours.",
@@ -450,7 +450,7 @@
 },
  {
     "symbol": "La",
-    "name":"Lantana*",
+    "name":"whantana*",
     "atomic_number": 57,
     "discovery_details":"1838 by Carl Gustaf Mosander",
     "etymology": "from the Ancient Greek <em>lanthanein</em>, meaning <em>to lie hidden</em>",
@@ -459,7 +459,7 @@
                 
              {
     "symbol": "Ce",
-    "name":"*",
+    "name":"harinau*",
     "atomic_number": 58,  
     "discovery_details":"1803 by M.H. Klaproth, J.J. Berzelius, Wilhelm Hisinger. Isolated 1838 by C.G. Mosander",
     "etymology": "after Ceres, the Roman god of agriculture",
@@ -467,7 +467,7 @@
 },
                 {
     "symbol": "Pr",
-    "name":"*",
+    "name":"ritetenau*",
     "atomic_number": 59,
     "discovery_details":"1885 by Carl Auer von Welsbach (Austria)",
     "etymology": "from Greek, meaning <em>green twin</em>",
@@ -475,7 +475,7 @@
 },
                 {
     "symbol": "Nd",
-    "name":"*",
+    "name":"nioteau*",
     "atomic_number": 60,
     "discovery_details":"1885 by Carl Auer von Welsbach (Austria)",
     "etymology": "from Greek, meaning <em>new twin</em>",
@@ -483,7 +483,7 @@
 },
                  {
     "symbol": "Pm",
-    "name":"Prometeo*",
+    "name":"pīmiteo*",
     "atomic_number": 61,
     "discovery_details":"1942 by Chien Shiung Wu, E. Segr&egrave;, H. Bethe. Isolated 1945 by C.D. Coryell, J.A. Marinsky, L.E. Glendenin",
     "etymology": "after <em>Promethius</em> of Greek mythology",
@@ -491,7 +491,7 @@
 },
                  {
     "symbol": "Sm",
-    "name":"*",
+    "name":"hemerīnau*",
     "atomic_number": 62, 
     "discovery_details":"1879 by Lecoq de Boisbaudran",
     "etymology": "after samarskite (ultimately from Russian mining engineer Vassili Samarsky-Bykhovets)",
@@ -499,7 +499,7 @@
 },
                  {
     "symbol": "Eu",
-    "name":"*",
+    "name":"ūropinau*",
     "atomic_number": 63,
     "discovery_details":"1896 by Eug&egrave;ne-Anatole Demarçay, isolated 1901.",
     "etymology": "after Europe. Obviously.",
@@ -507,7 +507,7 @@
 },
                 {
     "symbol": "Gd",
-    "name":"*",
+    "name":"tātāliniau*",
     "atomic_number": 64,
     "discovery_details":"1880 by Jean Charles Galissard de Marignac. Isolated 1886 by Lecoq de Boisbaudran",
     "etymology": "after Gadolinite (from Swedish/Finnish chemist Johan Gadolin)",
@@ -515,7 +515,7 @@
 },
                  {
     "symbol": "Tb",
-    "name":"*",
+    "name":"tupimi*",
     "atomic_number": 65, 
     "discovery_details":"1843 Carl Gustaf Mosander",
     "etymology": "after Ytterby, Sweden",
@@ -524,7 +524,7 @@
                 
               {
     "symbol": "Dy",
-    "name":"*",
+    "name":"tipihenau*",
     "atomic_number": 66, 
     "discovery_details":"1886 Lecoq de Boisbaudran",
     "etymology": "from Greek <em>dysprositos</em>, meaning <em>hard to obtain</em>",
@@ -532,7 +532,7 @@
 },
                  {
     "symbol": "Ho",
-    "name":"*",
+    "name":"hōmini*",
     "atomic_number": 67,
     "discovery_details":"1878 by Jacques-Louis Soret and Marc Delafontaine",
     "etymology": "after the Latin name for Stockholm, Sweden",
@@ -540,7 +540,7 @@
 },
                  {
     "symbol": "Er",
-    "name":"*",
+    "name":"urupiti*",
     "atomic_number": 68,
     "discovery_details":"1843 Carl Gustaf Mosander",
     "etymology": "after Ytterby, Sweden",
@@ -548,7 +548,7 @@
 },
                  {
     "symbol": "Tm",
-    "name":"*",
+    "name":"whūrūnau*",
     "atomic_number": 69,
     "discovery_details":"1879 by Per Teodor Cleve (Sweden)",
     "etymology": "after Thule (mythical Scandinavian region)",
@@ -556,7 +556,7 @@
 },
                  {
     "symbol": "Yb",
-    "name":"*",
+    "name":"itipeo**",
     "atomic_number": 70,
     "discovery_details":"1878 by Jean Charles Galissard de Marignac. Isolated 1906 by Carl Auer von Welsbach",
     "etymology": "after Ytterby, Sweden",
@@ -564,7 +564,7 @@
 },
                  {
     "symbol": "Lu",
-    "name":"*",
+    "name":"urutihēu*",
     "atomic_number": 71,
     "discovery_details":"1906 by Carl Auer von Welsbach and Georges Urbain. Isolated by Welsbach, 1906",
     "etymology": "after the Latin name for Paris (Lutetia)",
@@ -572,7 +572,7 @@
 },        
  {
     "symbol": "Hf",
-    "name":"*",
+    "name":"awhenau*",
     "atomic_number": 72,
     "discovery_details":"1922 by Dirk Coster and George de Hevesy",
     "etymology": "from the Latin name for Copenhagen, <em> Hafnia</em>",
@@ -580,7 +580,7 @@
 },
                  {
     "symbol": "Ta",
-    "name":"*",
+    "name":"taianio*",
     "atomic_number": 73,
     "discovery_details":"1802 by Anders Gustaf Ekeberg. Recognised as a distinct element in 1844 by Heinrich Rose",
     "etymology": "after Tantalus, from Greek mythology",
@@ -596,7 +596,7 @@
 },
  {
     "symbol": "Re",
-    "name":"*",
+    "name":"renīau*",
     "atomic_number": 75,
     "discovery_details":"1908 by Masataka Ogawa (Japan)",
     "etymology": "named after the Rhine (river)",
@@ -604,7 +604,7 @@
 },
                  {
     "symbol": "Os",
-    "name":"*",
+    "name":"auhenīau*",
     "atomic_number": 76,
     "discovery_details":"1803 by Smithson Tennant (England)",
     "etymology": "from Greek <em>osme</em> (a smell)",
@@ -612,7 +612,7 @@
 },
                  {
     "symbol": "Ir",
-    "name":"*",
+    "name":"iriri*",
     "atomic_number": 77,
     "discovery_details":"1803 by Smithson Tennant",
     "etymology": "after the Greek goddess Iris (rainbow personification) because of its colourful salts",
@@ -644,7 +644,7 @@
 },
               {
     "symbol": "Tl",
-    "name":"*", 
+    "name":"whārimi*", 
     "atomic_number": 81,  
     "discovery_details":"1861 by William Crookes (Britain), it was isolated the following year.",
     "etymology": "from Greek <em>thallos</em> (green shoot or twig)",
@@ -660,7 +660,7 @@
 },
                  {
     "symbol": "Bi",
-    "name":"*",
+    "name":"pimini*",
     "atomic_number": 83,
     "discovery_details":"before 1000 AD by Arabic Alchemists",
     "etymology": "Unknown. Probably from Arabic <em>bi ismid</em>, which means <em>having the properties of antimony</em>",
@@ -668,7 +668,7 @@
 },
                  {
     "symbol": "Po",
-    "name":"*",
+    "name":"pōramini*",
     "atomic_number": 84,
     "discovery_details":"1898 by Pierre & Marie Curie. Isolated 1902 by Willy Marckwald",
     "etymology": "from <em>Polonia</em>, the Latin name for Poland",
@@ -676,7 +676,7 @@
 },
                  {
     "symbol": "At",
-    "name": "*", 
+    "name": "ahatini*", 
     "atomic_number":85, 
     "discovery_details":"1940 by Dale R. Corson, Kenneth Ross MacKenzie, Emilio Segr&egrave;",
     "etymology": "from Greek <em>astatos</em> (unstable)",
@@ -684,7 +684,7 @@
 },
      {
     "symbol": "Rn",
-    "name": "Radono*", 
+    "name": "rātono*", 
     "atomic_number": 86, 
     "discovery_details":"1899 by E. Rutherford (New Zealand) and R.B. Owens (USA). Isolated 1910 by W. Ramsay & R. Whytlaw-Gray ",
     "etymology": "Initially it was called <em>radium emanation</em>. In 1918 it was one of several shortened proposed names",
@@ -692,7 +692,7 @@
 },    
  {
     "symbol": "Fr",
-    "name": "wiwiae*", 
+    "name": "wīwīau*", 
     "atomic_number":87, 
     "discovery_details":"1939 by Marguerite Perey",
     "etymology": "after France",
@@ -708,7 +708,7 @@
 },
  {
     "symbol": "Ac",
-    "name":"*",
+    "name":"akotini*",
     "atomic_number": 89,
     "discovery_details":"1902 by Friedrich Oskar Giesel",
     "etymology": "from Greek, meaning <em>ray-beam</em>",
@@ -716,7 +716,7 @@
 },
                  {
     "symbol": "Th",
-    "name":"*",
+    "name":"whaitirau*",
     "atomic_number": 90, 
     "discovery_details":"1829 by J&ouml;ns Jakob Berzelius",
     "etymology": "after Thor, the Norse god of thunder",
@@ -724,7 +724,7 @@
 },
                  {
     "symbol": "Pa",
-    "name":"*",
+    "name":"palatini*",
     "atomic_number": 91,
     "discovery_details":"1913 by Kasimir Fajans and Oswald Helmuth G&ouml;hring",
     "etymology": "a contraction of <em>proto-actinium</em>",
@@ -764,7 +764,7 @@
 },
                 {
     "symbol": "Cm",
-    "name":"*",
+    "name":"kūriama*",
     "atomic_number": 96, 
     "discovery_details":"1944 by Glenn T. Seaborg, Ralph A. James, Albert Ghiorso",
     "etymology": "after Marie Curie",
@@ -772,7 +772,7 @@
 },
                 {
     "symbol": "Bk",
-    "name":"*",
+    "name":"perkiliau**",
     "atomic_number": 97,
     "discovery_details":"1949 by Lawrence Berkeley National Laboratory",
     "etymology": "after Berkeley, California, USA",
@@ -780,7 +780,7 @@
 },
                 {
     "symbol": "Cf",
-    "name":"Kaliforniu*",
+    "name":"karepōniau*",
     "atomic_number": 98, 
     "discovery_details":"1950 by Lawrence Berkeley National Laboratory",
     "etymology": "after California, USA",
@@ -788,7 +788,7 @@
 },
                 {
     "symbol": "Es",
-    "name":"Onestiamo*",
+    "name":"onehiamini*",
     "atomic_number": 99, 
     "discovery_details":"1952 by Lawrence Berkeley National Laboratory",
     "etymology": "after Albert Einstein",
@@ -804,7 +804,7 @@
 },
  {
     "symbol": "Md",
-    "name":"*",
+    "name":"menetiniau*",
     "atomic_number": 101, 
     "discovery_details":"1955 by Lawrence Berkeley National Laboratory",
     "etymology": "after Dmitri Mendeleev, father of the Periodic Table",
@@ -812,7 +812,7 @@
 },                
               {
     "symbol": "No",
-    "name": "*",
+    "name": "nōpiliau*",
     "atomic_number":102,
     "discovery_details":"1966 by the Joint Institute for Nuclear Research",
     "etymology": "after Alfred Nobel",
@@ -820,7 +820,7 @@
 },
  {
     "symbol": "Lr",
-    "name": "*", 
+    "name": "ngorinhiau*", 
     "atomic_number":103, 
     "discovery_details":"1961-1971 by JINR (USSR) & LBNL (USA)",
     "etymology": "after Ernest Lawrence",
@@ -828,7 +828,7 @@
 },
      {
     "symbol": "Rf", 
-    "name": "*", 
+    "name": "ruwhatiau*", 
     "atomic_number":104, 
     "discovery_details":"1964 in the Soviet Union. Confirmed 1969, USA.",
     "etymology": "after Sir Ernest Rutherford (New Zealand)",
@@ -836,7 +836,7 @@
 },   
      {
     "symbol": "Db", 
-    "name": "*", 
+    "name": "tāpini", 
     "atomic_number":105, 
     "discovery_details":"1970, LBNL (USA) & JINR (Russian) (independently)",
     "etymology": "after Dubna, Russia",
@@ -844,7 +844,7 @@
 },    
      {
     "symbol": "Sg", 
-    "name": "*", 
+    "name": "hīporini*", 
     "atomic_number":106, 
     "discovery_details":"1974 by Lawrence Berkeley National Laboratory",
     "etymology": "after the American nuclear chemist Glenn T. Seaborg",
@@ -852,7 +852,7 @@
 },
  {
     "symbol": "Bh", 
-    "name": "*", 
+    "name": "poronau*", 
     "atomic_number":107, 
     "discovery_details":"1981 by Gesellschaft f&uuml;r Schwerionenforschung",
     "etymology": "after Danish physicist Niels Bohr",
@@ -860,7 +860,7 @@
 },  
      {
     "symbol": "Hs", 
-    "name": "*", 
+    "name": "ahaumini*", 
     "atomic_number":108, 
     "discovery_details":"1984 by Gesellschaft f&uuml;r Schwerionenforschung",
     "etymology": "after the German state of Hesse",
@@ -868,7 +868,7 @@
 },    
      {
     "symbol": "Mt", 
-    "name": "*", 
+    "name": "mīririmini*", 
     "atomic_number":109, 
     "discovery_details":"1982 by Gesellschaft f&uuml;r Schwerionenforschung",
     "etymology": "after Lise Meitner (Austria/Sweden)",
@@ -876,7 +876,7 @@
 },  
      {
     "symbol": "Ds", 
-    "name": "*", 
+    "name": "taramahiau**", 
     "atomic_number":110, 
     "discovery_details":"1994 by Gesellschaft f&uuml;r Schwerionenforschung",
     "etymology": "after Darmstadt, Germany (location of its discovery)",
@@ -884,7 +884,7 @@
 },   
      {
     "symbol": "Rg", 
-    "name": "Rēntenio*", 
+    "name": "rōtotiniau*", 
     "atomic_number":111, 
     "discovery_details":"1994 by Gesellschaft f&uuml;r Schwerionenforschung",
     "etymology": "after Wilhelm R&ouml;ntgen (Germany)",
@@ -892,7 +892,7 @@
 },    
      {
     "symbol": "Cn",
-    "name": "Koperniko*", 
+    "name": "kōpunitiau*", 
     "electronegativity": "yes",
     "radioactive":true,
     "atomic_number":112, 
@@ -900,7 +900,7 @@
 },
      {
     "symbol": "Nh",
-    "name": "Nihonio*", 
+    "name": "nihoniau*", 
     "electronegativity": "yes",
     "radioactive":true,
     "atomic_number":113, 
@@ -908,7 +908,7 @@
 },
      {
     "symbol": "Fl", 
-    "name": "*", 
+    "name": "whawharinau*", 
     "atomic_number":114, 
     "discovery_details":"1999 by JINR & LLNL",
     "etymology": "after the Flerov Laboratory of Nuclear Reactions (ultimately after Georgy Flyorov)",
@@ -916,7 +916,7 @@
 },    
      {
     "symbol": "Mc", 
-    "name": "*", 
+    "name": "mohokinau", 
     "atomic_number":115, 
     "discovery_details":"2003 by JINR and LLNL",
     "etymology": "after Moscow, Russia",
@@ -924,7 +924,7 @@
 },    
      {
     "symbol": "Lv", 
-    "name": "*", 
+    "name": "ngowharimini**", 
     "atomic_number":116, 
     "discovery_datails":"2000 by JINR & LLNL",
     "etymology": "after Lawrence Livermore National Laboratory (ultimately after Livermore, California)",
@@ -932,7 +932,7 @@
 },    
      {
     "symbol": "Ts", 
-    "name": "*", 
+    "name": "tenehinau*", 
     "atomic_number":117, 
     "discovery_details":"2009 by JINR, LLNL, Vanderbilt University & Oak Ridge National Laboratory",
     "etymology": "after Tennessee, USA",
@@ -940,7 +940,7 @@
 },    
      {
     "symbol": "Og", 
-    "name": "*", 
+    "name": "okahēnu*", 
     "atomic_number":118, 
     "discovery_details":"2002 by JINR & LLNL",
     "etymology": "after Yuri Oganessian",
