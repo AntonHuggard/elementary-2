@@ -1,0 +1,834 @@
+{ "atoms": [ 
+    {
+        "symbol": "H",
+        "name": "haitorana",
+        "atomic_number": 1,
+        "etymology": "Nā te Reekie, kaiwhakawhiti wai",
+        "description": ""
+    }, 
+    {
+    "symbol": "He",
+    "name": "haumāmā",
+    "atomic_number": 2,
+    "etymology": "Nā te Reekie kupu mō te rā, Helios",
+    "description": ""
+},
+                 {
+    "symbol": "Li",
+    "name": "konukōhatu",
+    "atomic_number": 3,
+    "etymology": "Nā te Reekie, te kupu 'lithos' e whakahua ana i te kōhatu",
+    "description": ""
+},
+ {
+    "symbol": "Be",
+    "name": "konuuku",
+    "atomic_number": 4,
+    "etymology": "Nā te pounamu Beryl",
+    "description": ""
+},
+         {
+    "symbol": "B",
+    "name": "pūtiwha",
+    "atomic_number": 5,
+    "etymology": "Nā te Borax",
+    "description": ""
+},
+                 {
+    "symbol": "C",
+    "name": "waro",
+    "atomic_number": 6,
+    "etymology": "Nā te Latin carbo, e whakarārangi ana ki te kōria me te hūmara",
+    "description": ""
+},
+                {
+    "symbol": "N",
+    "name":"hauota",
+    "atomic_number": 7,
+    "etymology": "Nā te Paranihi nitrogène, he whakahua i te whakaputa Potassium nitrate",
+    "description": ""
+},
+                {
+    "symbol": "O",
+    "name":"hāora",
+    "atomic_number": 8,
+    "etymology": "Whakatāwhia e Antoine Lavoisier, i te tau 1777",
+    "description": ""
+},
+                 {
+    "symbol": "F",
+    "name":"haukōwhai",
+    "atomic_number": 9,
+    "etymology": "Nā te Latin fluo, hei pouritanga",
+    "description": ""
+},             
+             {
+    "symbol": "Ne",
+    "name":"haukura",
+    "atomic_number": 10,
+    "etymology": "Te whakakōrero Reekie mō te Novum (te Reo Latin mō te hōu)",
+    "description": ""
+},
+ {
+    "symbol": "Na",
+    "name":"konutai",
+    "atomic_number": 11,
+    "etymology": "Kore mōhio. Whakaritea ana te tohu i te Natronium/Natrium",
+    "description": ""
+},
+ {
+    "symbol": "Mg",
+    "name":"konupora",
+    "atomic_number": 12,
+    "etymology": "ko a Magnesia, nā Kariki te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Al",
+    "name":"konumohe",
+    "atomic_number": 13,
+    "etymology": "I whakatakotoria ko a Aluminia (e whakatakotoria ana ko te Alum) te ingoa",
+    "description": ""
+},
+ {
+    "symbol": "Si",
+    "name":"takawai",
+    "atomic_number": 14,
+    "etymology": "Nā te Latin silex, he tuawhenua tānga-tau",
+    "description": ""
+},
+                {
+    "symbol": "P",
+    "name":"Parārenga",
+    "atomic_number": 15,
+    "etymology": "Nā te ingoa Reekie tawhito mō Venus, e whakapā atu ana ki te kaiwhakamaumaharatanga",
+    "description": ""
+},
+ {
+    "symbol": "S",
+    "name":"whānāriki",
+    "atomic_number": 16,
+    "etymology": "I whakaritea mai i te Latin sulphur",
+    "description": ""
+},
+ {
+    "symbol": "Cl",
+    "name":"haumāota",
+    "atomic_number": 17,
+    "etymology": "Nā te Reekie tawhito Khloros (mā whero-whero)",
+    "description": ""
+},
+                 {
+    "symbol": "Ar",
+    "name":"hauhauhā",
+    "atomic_number": 18,
+    "etymology": "I whakaritea mai i te kupu Reekie mō te whakawhetai",
+    "description": ""
+},
+                
+ {
+    "symbol": "K",
+    "name":"konurehu",
+    "atomic_number": 19,
+    "etymology": "Nā te Pot-ash. I ngā wā tawhito, i whakapau Potassium-containing salts mā te pōiringa i te pari. Ko K mai i a Kali, mai i Alkali",
+    "description": ""
+},
+                 {
+    "symbol": "Ca",
+    "name":"konupūmā",
+    "atomic_number": 20,
+    "etymology": "Nā te Latin calx, he whakahua i te kōwhaiwhai",
+    "description": ""
+},
+                {
+    "symbol": "Sc",
+    "name":"konutaketake",
+    "atomic_number": 21,
+    "etymology": "ko a Skandinavia te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Ti",
+    "name":"tini",
+    "atomic_number": 22,
+    "etymology": "ko ngā Taitini Reekie te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "V",
+    "name":"whānatiau*",
+    "atomic_number": 23,
+    "etymology": "ko te Atua wahine Norse mō te āhua me te whāngai, Vanadís (Freyja) te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Cr",
+    "name":"konukita",
+    "atomic_number": 24,
+    "etymology": "Nā te Reekie chroma, he whakahua i te tae",
+    "description": ""
+},
+                {
+    "symbol": "Mn",
+    "name":"konupango",
+    "atomic_number": 25,
+    "etymology": "ko a Magnesia i Kariki (tōna ingoa hōnore ko Magnesium) te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Fe",
+    "name":"pāraharaha",
+    "atomic_number": 26,
+    "etymology": "Nā te isarnon proto-Germanic. Ko tōna tohu matū-ā-ringa ka whakaritea mai i tōna ingoa Reekie ferrum",
+    "description": ""
+},
+ {
+    "symbol": "Co",
+    "name":"konukurahina",
+    "atomic_number": 27,
+    "etymology": "Nā Kobald, he kaitiaki i te pūrākau Germanic",
+    "description": ""
+},
+                {
+    "symbol": "Ni",
+    "name":"konukōreko",
+    "atomic_number": 28,
+    "etymology": "Nā te kaitiaki o te pūrākau Germanic",
+    "description": ""
+},
+                {
+    "symbol": "Cu",
+    "name":"kapa",
+    "atomic_number": 29,
+    "etymology": "ko a Cyprus, he wāhi whakakōhatu whakahirahira ki te tawhito Roma te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Zn",
+    "name":"konutea",
+    "atomic_number": 30,
+    "etymology": "ko a Zinke, te Reo Tiamana mō te niho. E pā ana. te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Ga",
+    "name":"talahau*",
+    "atomic_number": 31,
+    "etymology": "ko a Gallia, te rohe Roma Gaul. Tino whānui te whāinga, e whāia nei i Peretānia te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Ge",
+    "name":"tamenau*",
+    "atomic_number": 32,
+    "etymology": "ko a Tiamana te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "As",
+    "name":"konutāroki",
+    "atomic_number": 33,
+    "etymology": "Nā te kupu Reekie mō te whakakino",
+    "description": ""
+},
+                {
+    "symbol": "Se",
+    "name":"henenau*",
+    "atomic_number": 34,
+    "etymology": "ko a Selene, te Atua wahine o te marama Reekie te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Br",
+    "name":"pomini*",
+    "atomic_number": 35,
+    "etymology": "Nā te kupu Reekie mō te whakareka",
+    "description": ""
+},
+ {
+    "symbol": "Kr",
+    "name":"kupiti*", 
+    "atomic_number": 36,
+    "etymology": "Nā te Reekie tawhito Kryptos, he whakahua i te tangata huna",
+    "description": ""
+},
+ {
+    "symbol": "Rb",
+    "name":"pākurakura*",
+    "atomic_number": 37,
+    "etymology": "Nā te Latin rubidus, he whakahua i te whero tino",
+    "description": ""
+},
+                 {
+    "symbol": "Sr",
+    "name":"haumini*",
+    "atomic_number": 38,
+    "etymology": "ko stronantine, e whakapau ana i tōna ingoa i te taone Ōtiria o Strontian te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Y",
+    "name":"itiri*",
+    "atomic_number": 39,
+    "etymology": "Kua whakatūwhera ko te taone Sweedish o Ytterby te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Zr",
+    "name":"haukonau*",
+    "atomic_number": 40,
+    "etymology": "Nā te Reekie Arabi Zargon, he whakahua i te koura-pango",
+    "description": ""
+},
+                {
+    "symbol": "Nb",
+    "name":"ngapitiau",
+    "atomic_number": 41,
+    "etymology": "ko a Niobe i te pūrākau Reekie te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Mo",
+    "name":"mohatini*",
+    "atomic_number": 42,
+    "etymology": "Nā te Neo-Latin e tautuhi ana i te kupu Reekie tawhito molybdos, he whakahua i te rino",
+    "description": ""
+},
+                 {
+    "symbol": "Tc",
+    "name":"tekahiko*",
+    "atomic_number": 43,
+    "etymology": "Nā te Reekie, he whakahua i te hanga-ahurei ki te huinga -ium",
+    "description": ""
+},
+                 {
+    "symbol": "Ru",
+    "name":"rūtene",
+    "atomic_number": 44, 
+    "etymology": "ko a Ruthenia, te ingoa Reekie mō te rohe e whakahaere ana e te Kievan Rus te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Rh",
+    "name":"rihōdiama",
+    "atomic_number": 45,
+    "etymology": "ko te tae whero o tētahi whakakohu ka hanga ai ki te kōrara te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Pd",
+    "name":"palatinau",
+    "atomic_number": 46,
+    "etymology": "ko te whetu-toka Pallas, i whakatūwheratia ko a Pallas Athena te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Ag",
+    "name":"hiriwa",
+    "atomic_number": 47,
+    "etymology": "Whakamutunga rawa nā te silubra proto-Germanic. Ko tōna tohu ka puta i tōna ingoa, argentum",
+    "description": ""
+},
+                 {
+    "symbol": "Cd",
+    "name":"konuhirimā",
+    "atomic_number": 48,
+    "etymology": "ko a Cadmus o te pūrākau Reekie te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "In",
+    "name":"Iniamu",
+    "atomic_number": 49,
+    "etymology": "ko te kahurangi tino-mōhio o tōna whātia kitea (whakamutunga whakararuraru mai i India) te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Sn",
+    "name":"tini",
+    "atomic_number": 50,
+    "etymology": "Nā te tin-om proto-Germanic. Ko tōna tohu ka puta i tōna ingoa Reekie stannum",
+    "description": ""
+},
+                 {
+    "symbol": "Sb",
+    "name":"kakano",
+    "atomic_number": 51,
+    "etymology": "Nā tōna ingoa Reekie Byzantine, antimonium. Kāore i te mōhio i te pūtake o tēnei",
+    "description": ""
+},
+                 {
+    "symbol": "Te",
+    "name":"tirinau*", 
+    "atomic_number": 52,
+    "etymology": "ko te whānau whenua o te Roma, a Tellus te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "I",
+    "name":"konutawa",
+    "atomic_number": 53,
+    "etymology": "Nā te Reekie, he whakamāoritia hei whakakahau-taputapu",
+    "description": ""
+},
+                 {
+    "symbol": "Xe",
+    "name":"hautūāpōkere",
+    "atomic_number": 54,
+    "etymology": "Nā te Reekie xenos, he whakahua i te iwi whawhati",
+    "description": ""
+},
+ {
+    "symbol":"Cs",
+    "name":"hehenau*",
+    "atomic_number": 55,
+    "etymology": "Nā Caesius Latin (kōwhai-waitapu), ko ōna whakahaere tirohanga te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Ba",
+    "name":"konuokehu",
+    "atomic_number": 56,
+    "etymology": "Nā te baryta Alchemical e whakaritea ana mai i te Reekie Barys, he whakahua i te taumaha",
+    "description": ""
+},
+ {
+    "symbol": "La",
+    "name":"whantana*",
+    "atomic_number": 57,
+    "etymology": "Nā te Reekie Tawhito 'lanthanein', he whakahua i 'te whakatātare i te whakamā'",
+    "description": ""
+},
+                
+             {
+    "symbol": "Ce",
+    "name":"harinau*",
+    "atomic_number": 58,  
+    "etymology": "ko a Ceres, te atua Roma o te mahiwhenua te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Pr",
+    "name":"ritetenau*",
+    "atomic_number": 59,
+    "etymology": "Nā te Reekie, he whakahua i 'te tuarua-kākāriki'",
+    "description": ""
+},
+                {
+    "symbol": "Nd",
+    "name":"nioteau*",
+    "atomic_number": 60,
+    "etymology": "Nā te Reekie, he whakahua i 'te tuarua-hōu'",
+    "description": ""
+},
+                 {
+    "symbol": "Pm",
+    "name":"pīmiteo*",
+    "atomic_number": 61,
+    "etymology": "ko a Promethius o te pūrākau Reekie te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Sm",
+    "name":"hemerīnau*",
+    "atomic_number": 62, 
+    "etymology": "ko te samarskite (whakamutunga mai i te kaiwhakamahi hangarua Rūhiana Vassili Samarsky-Bykhovets) te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Eu",
+    "name":"ūropinau*",
+    "atomic_number": 63,
+    "etymology": "ko Ewhropā. Whakamārama noa iho. te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Gd",
+    "name":"tātāliniau*",
+    "atomic_number": 64,
+    "etymology": "ko a Gadolinite (mai i te kēmika Hōhāna Gadolin o Sweden/Finland) te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Tb",
+    "name":"tupimi*",
+    "atomic_number": 65, 
+    "etymology": "ko a Ytterby, Ūhepeti te ingoa",
+    "description": ""
+},
+                
+              {
+    "symbol": "Dy",
+    "name":"tipihenau*",
+    "atomic_number": 66, 
+    "etymology": "Nā te Reekie, he whakahua i te 'dysprositos' o te Reekie, he whakahua i 'te whakararuraru ki te whiwhi'",
+    "description": ""
+},
+                 {
+    "symbol": "Ho",
+    "name":"hōmini*",
+    "atomic_number": 67,
+    "etymology": "ko te ingoa Reekie mō Stockholm, Ūhepeti te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Er",
+    "name":"urupiti*",
+    "atomic_number": 68,
+    "etymology": "ko a Ytterby, Ūhepeti te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Tm",
+    "name":"whūrūnau*",
+    "atomic_number": 69,
+    "etymology": "ko Thule (te rohe whakapūpū e whakapono ana) te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Yb",
+    "name":"itipeo**",
+    "atomic_number": 70,
+    "etymology": "ko a Ytterby, Ūhepeti te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Lu",
+    "name":"urutihēu*",
+    "atomic_number": 71,
+    "etymology": "ko te ingoa Reekie mō Parihi (Lutetia) te ingoa",
+    "description": ""
+},        
+ {
+    "symbol": "Hf",
+    "name":"awhenau*",
+    "atomic_number": 72,
+    "etymology": "Nā te ingoa Reekie mō Kōpenhāgena, 'Hafnia'",
+    "description": ""
+},
+                 {
+    "symbol": "Ta",
+    "name":"taianio*",
+    "atomic_number": 73,
+    "etymology": "ko a Tantalus, o te pūrākau Reekie te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "W",
+    "name":"tangitene",
+    "atomic_number": 74,
+    "etymology": "Nā te Ūhepeti, he whakahua i 'te kōhatu taumaha'. I roto i te Tiamana, e kiia ana ko 'wolfram' (Hei reira, 'W')",
+    "description": ""
+},
+ {
+    "symbol": "Re",
+    "name":"renīau*",
+    "atomic_number": 75,
+    "etymology": "I whakarahingia ko te Rhine (awa) te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Os",
+    "name":"auhenīau*",
+    "atomic_number": 76,
+    "etymology": "Nā te Reekie 'osme' (he hāngū)",
+    "description": ""
+},
+                 {
+    "symbol": "Ir",
+    "name":"iriri*",
+    "atomic_number": 77,
+    "etymology": "ko te atua Reekie Iris (te tangata tipu o te āniwaniwa) i te whakararuraru ki ana tohumate āwhata te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Pt",
+    "name":"konukawata",
+    "atomic_number": 78, 
+    "etymology": "Nā te Sūpai 'platino' (he 'riki-āriki iti')",
+    "description": ""
+},
+                 {
+    "symbol": "Au",
+    "name":"Kōura",
+    "atomic_number": 79,
+    "etymology": "Nā te proto-Germanic 'gultha'. Ko tōna tohu ka puta i tōna ingoa Reekie 'aurum'",
+    "description": ""
+},
+                 {
+    "symbol": "Hg",
+    "name":"konuoi",
+    "atomic_number": 80,
+    "etymology": "ko te atua Rōmai. I mua, i te ingoa 'hydrargyrum' (Reekie, he whakahua i te 'wai-hōne') nō reira tōna tohu te ingoa",
+    "description": ""
+},
+              {
+    "symbol": "Tl",
+    "name":"whārimi*", 
+    "atomic_number": 81,  
+    "etymology": "",
+    "description": ""
+},
+                 {
+    "symbol": "Pb",
+    "name":"konumatā",
+    "atomic_number": 82,
+    "etymology": "",
+    "description": ""
+},
+                 {
+    "symbol": "Bi",
+    "name":"pimini*",
+    "atomic_number": 83,
+    "etymology": "Kāore tetahi e mōhio. I kiia pea mai i te Arāpaki 'bi ismid', he whakahua i 'te whaitua o te tatara'",
+    "description": ""
+},
+                 {
+    "symbol": "Po",
+    "name":"pōramini*",
+    "atomic_number": 84,
+    "etymology": "Nā 'Polonia' (te ingoa Arāmea mō Pōrana)",
+    "description": ""
+},
+                 {
+    "symbol": "At",
+    "name": "ahatini*", 
+    "atomic_number":85, 
+    "etymology": "Nā te Reekie 'astatos' (kore-tōtika)",
+    "description": ""
+},
+     {
+    "symbol": "Rn",
+    "name": "rātono*", 
+    "atomic_number": 86, 
+    "etymology": "I tua i te ingoa whakaputanga i te 'radium emanation'. I te tau 1918, he ingoa whakaputanga poto a rātou",
+    "description": ""
+},    
+ {
+    "symbol": "Fr",
+    "name": "wīwīau*", 
+    "atomic_number":87, 
+    "etymology": "whakaingoatia ki a Wīwī",
+    "description": ""
+},
+     {
+    "symbol": "Ra",
+    "name": "konuruke", 
+    "atomic_number":88, 
+    "etymology": "Nā te Reekie 'radius'. He whakahua 'mata' nō te whakararuraru i ōna whakapau",
+    "description": ""
+},
+ {
+    "symbol": "Ac",
+    "name":"akotini*",
+    "atomic_number": 89,
+    "etymology": "Nā te Reekie, he whakahua i 'te whararangi-paenga'",
+    "description": ""
+},
+                 {
+    "symbol": "Th",
+    "name":"whaitirau*",
+    "atomic_number": 90, 
+    "etymology": "ko a Tōra, te atua Norse o te koromakinga te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Pa",
+    "name":"palatini*",
+    "atomic_number": 91,
+    "etymology": "He whakaiti i te 'proto-actinium'",
+    "description": ""
+},
+                {
+    "symbol": "U",
+    "name":"konukarihi",
+    "atomic_number": 92, 
+    "etymology": "ko a Uranus (te whetū). Nō te whakatō i te atua Rēki o te rangi o te Reekie te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Np",
+    "name":"konutangaroa",
+    "atomic_number": 93,
+    "etymology": "ko a Neptune (te whetū). Nō te whakatō i te atua Rēki o te moana o te Reekie te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Pu",
+    "name":"konuwhiro",
+    "atomic_number": 94, 
+    "etymology": "ko a Pluto (te whetū). Nō te whakatō i te atua Rēki o te korenga o te Reekie te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Am",
+    "name":"konumerika",
+    "atomic_number": 95, 
+    "etymology": "ko ngā Amerika (nga motu Taitokerau me te Tonga) te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Cm",
+    "name":"kūriama*",
+    "atomic_number": 96, 
+    "etymology": "ko a Marie Curie te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Bk",
+    "name":"perkiliau**",
+    "atomic_number": 97,
+    "etymology": "ko Berkeley, California, USA te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Cf",
+    "name":"karepōniau*",
+    "atomic_number": 98, 
+    "etymology": "ko California, USA te ingoa",
+    "description": ""
+},
+                {
+    "symbol": "Es",
+    "name":"onehiamini*",
+    "atomic_number": 99, 
+    "etymology": "ko Albert Einstein te ingoa",
+    "description": ""
+},
+                 {
+    "symbol": "Fm",
+    "name":"whermio*",
+    "atomic_number": 100, 
+    "etymology": "ko Enrico Fermi te ingoa",
+    "description": ""
+},
+ {
+    "symbol": "Md",
+    "name":"menetiniau*",
+    "atomic_number": 101, 
+    "etymology": "ko Dmitri Mendeleev, te matua o te Ripanga Tūhono te ingoa",
+    "description": ""
+},                
+              {
+    "symbol": "No",
+    "name": "nōpiliau*",
+    "atomic_number":102,
+    "etymology": "ko Alfred Nobel te ingoa",
+    "description": ""
+},
+ {
+    "symbol": "Lr",
+    "name": "ngorinhiau*", 
+    "atomic_number":103, 
+    "etymology": "ko Ernest Lawrence te ingoa",
+    "description": ""
+},
+     {
+    "symbol": "Rf", 
+    "name": "ruwhatiau*", 
+    "atomic_number":104, 
+    "etymology": "ko Sir Ernest Rutherford (Niu Tīreni) te ingoa",
+    "description": ""
+},   
+     {
+    "symbol": "Db", 
+    "name": "tāpini", 
+    "atomic_number":105, 
+    "etymology": "ko Dubna, Rūhia te ingoa",
+    "description": ""
+},    
+     {
+    "symbol": "Sg", 
+    "name": "hīporini*", 
+    "atomic_number":106, 
+    "etymology": "ko te kēme hōkū-ātomi Amerikana Glenn T. Seaborg te ingoa",
+    "description": ""
+},
+ {
+    "symbol": "Bh", 
+    "name": "poronau*", 
+    "atomic_number":107, 
+    "etymology": "ko te kōmiri Tānara, Niels Bohr te ingoa",
+    "description": ""
+},  
+     {
+    "symbol": "Hs", 
+    "name": "ahaumini*", 
+    "atomic_number":108, 
+    "etymology": "ko te tāonenui o Hesse te ingoa",
+    "description": ""
+},    
+     {
+    "symbol": "Mt", 
+    "name": "mīririmini*", 
+    "atomic_number":109, 
+    "etymology": "ko a Lise Meitner (Austria/Suētana) te ingoa",
+    "description": ""
+},  
+     {
+    "symbol": "Ds", 
+    "name": "taramahiau**", 
+    "atomic_number":110, 
+    "etymology": "ko Darmstadt, Tiamana (wāhi o te kite) te ingoa",
+    "description": ""
+},   
+     {
+    "symbol": "Rg", 
+    "name": "rōtotiniau*", 
+    "atomic_number":111, 
+    "etymology": "ko Wilhelm Röntgen (Tiamana) te ingoa",
+    "description": ""
+},    
+     {
+    "symbol": "Cn",
+    "name": "kōpunitiau*", 
+    "electronegativity": "yes",
+    "radioactive":true,
+    "atomic_number":112, 
+    "description": ""
+},
+     {
+    "symbol": "Nh",
+    "name": "nihoniau*", 
+    "atomic_number":113, 
+    "etymology": "",
+    "description": ""
+},
+     {
+    "symbol": "Fl", 
+    "name": "whawharinau*", 
+    "atomic_number":114, 
+    "etymology": "ko te Rēti Raiti (Laboratorī Tūhono o ngā Tūmanako Whakarauaka, nō reira, Georgy Flyorov) te ingoa",
+    "description": ""
+},    
+     {
+    "symbol": "Mc", 
+    "name": "mohokinau", 
+    "atomic_number":115, 
+    "etymology": "ko Moskō, Rūhia te ingoa",
+    "description": ""
+},    
+     {
+    "symbol": "Lv", 
+    "name": "ngowharimini**", 
+    "atomic_number":116, 
+    "discovery_datails":"2000 by JINR & LLNL",
+    "etymology": "ko Lawrence Livermore National Laboratory (nō reira, Livermore, California) te ingoa",
+    "description": ""
+},    
+     {
+    "symbol": "Ts", 
+    "name": "tenehinau*", 
+    "atomic_number":117, 
+    "etymology": "ko Tennessee, USA te ingoa",
+    "description": ""
+},    
+     {
+    "symbol": "Og", 
+    "name": "okahēnu*", 
+    "atomic_number":118, 
+    "etymology": "ko Yuri Oganessian te ingoa",
+    "description": ""
+}
+]
+}

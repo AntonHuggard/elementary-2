@@ -19,6 +19,11 @@ const scaleNames = {
   'k': 'kelvin'
 };
 
+const languages = {
+  'en': 'English',
+  'mi': 'M&amacr;ori'
+}
+
 
 class Home extends Component {
 
@@ -30,7 +35,8 @@ class Home extends Component {
         inputOption: "text",
         units: scaleNames['c'],
         selectedElement: null,
-        periodicTableClass: "periodic-table default-view"
+        periodicTableClass: "periodic-table default-view",
+        language: languages['en'],
     };
     
     showElements = (show) => {
@@ -250,6 +256,14 @@ class Home extends Component {
         return " &#176;C";
     }
 
+    toggleLanguage = () => {
+      if (this.state.language === "English") {
+        this.setState({language: languages['mi']})
+      } else {
+        this.setState({language: languages['en']})
+      }
+    }
+
 
     render() {
 
@@ -261,17 +275,20 @@ class Home extends Component {
 
       return (
             <>
-                <Header />
+                <Header language={this.state.language} />
                 <SideMenu 
                     onToggleUnits={this.toggleUnits} 
-                    units={units} />
+                    units={units}
+                    onToggleLanguage={this.toggleLanguage} 
+                    language={this.state.language} />
                     
                 <div id='element_search_wrapper'>
                     <SearchBar
                         onHandleQuery={this.handleQuery}
                         onHandleFilter={this.handleFilterToggle}
                         onSelectFilter={this.handleFilter}
-                    />
+                        language={this.state.language} />
+
                     <ElectronegSlider onHandleElectronegativity={this.handleElectronegativity} />
 
                     <MeltingPtSlider 
@@ -289,7 +306,10 @@ class Home extends Component {
                     <DiscoverySlider onHandleDiscovery={this.handleDiscovery} />
                 </div>
 
-                <SliderMenu onSelectQuery={this.selectQueryType} inputOption={this.state.inputOption} />
+                <SliderMenu 
+                  onSelectQuery={this.selectQueryType} 
+                  inputOption={this.state.inputOption}
+                  language={this.state.language} />
 
                 <PeriodicTable 
                     atoms={atoms}
@@ -301,7 +321,8 @@ class Home extends Component {
                     element={selectedElement} 
                     units={units}
                     onConvertTemp={this.convertTemp}
-                    onGetUnitSymbol={this.getUnitSymbol} />
+                    onGetUnitSymbol={this.getUnitSymbol}
+                    language={this.state.language} />
 
             </>
         )

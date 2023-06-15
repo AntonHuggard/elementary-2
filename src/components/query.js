@@ -1,4 +1,5 @@
 import atomsJSON from './atoms.json';
+import atomsMaoriJSON from './atoms-maori.json';
 import compoundsJSON from './compounds.json'
 
 
@@ -11,6 +12,7 @@ function getMatchingElements (term, attr, precision=null, tolerance=0) {
     // tolerance = for numeric terms (eg. instead of needing exact values, allow say +/- 0.05)
 
     let atoms = atomsJSON.atoms;
+    let atomsMaori = atomsMaoriJSON.atoms;
     let compounds = compoundsJSON.compounds;
     let r = [];
 
@@ -50,6 +52,8 @@ function getMatchingElements (term, attr, precision=null, tolerance=0) {
                     compoundElements.forEach(elementSymbol => { r.push(elementSymbol) });
                 }
             });
+
+            atomsMaori.forEach(element => { if(element[attr].includes(term)) r.push(element.symbol) })
             break;
 
         case "symbol":
