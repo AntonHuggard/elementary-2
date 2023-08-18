@@ -4,6 +4,7 @@ import Hydrogen from './pages/Hydrogen';
 import Home from './pages/Home';
 import About from './pages/About';
 import Help from './pages/Help';
+import Ions from './pages/Ions'
 import NotFound from './pages/NotFound';
 import React, { Component } from 'react';
 
@@ -22,6 +23,7 @@ class App extends Component {
                 <Route path="/about" element={<About />} />
                 <Route path="/help" element={<Help />} />
                 <Route path="/hydrogen" element={<Hydrogen />} />
+                <Route path="/ions" element={<Ions />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
           </HashRouter>
