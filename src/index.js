@@ -7,6 +7,7 @@ import './style/modal.css';
 import './style/slider.css';
 import './style/sliderMenu.css';
 import './style/generic.css';
+import './style/ions.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

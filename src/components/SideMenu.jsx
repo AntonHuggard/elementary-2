@@ -28,7 +28,7 @@ class SideMenu extends Component {
                 <a href="/#/help">instructions/help</a>
                 <a href="/#/about">about</a>
                 {/* <button>quiz</button> */}
-                <button>secret button</button>
+                <a href="/#/ions">table of ions</a>
                 <button 
                     onClick={this.props.onToggleLanguage} 
                     dangerouslySetInnerHTML={{ __html:language_full_text }}></button>

@@ -16,7 +16,7 @@ class Sidenav extends Component {
                 <a href="/#/help">instructions/help</a>
                 <a href="/#/about">about</a>
                 {/* <button>quiz</button> */}
-                <button>secret button</button>
+                <a href="/#/ions">table of ions</a>
                 <button>super secret button</button>
                 
             </div>
