@@ -6,23 +6,23 @@ class SearchBar extends Component {
     render() {
         
         let placeholderText = "Search elements... ";
-        if (this.props.language !== "English") placeholderText = `Ngā huānga rapu`;
+        if (this.props.language === "mi") placeholderText = `Ngā huānga rapu`;
 
         let dropdownText = "filter";
-        if (this.props.language !== "English") dropdownText = `tātari`;
+        if (this.props.language === "mi") dropdownText = `tātari`;
 
         let optionNoFilter = "no filter";
-        if (this.props.language !== "English") optionNoFilter = `kahore he tātari`;
+        if (this.props.language === "mi") optionNoFilter = `kahore he tātari`;
 
         let optionSolid = "solid";
-        if (this.props.language !== "English") optionSolid = `mārō`;
+        if (this.props.language === "mi") optionSolid = `mārō`;
 
         let optionLiquid = "liquid";
-        if (this.props.language !== "English") optionLiquid = `wai`;
+        if (this.props.language === "mi") optionLiquid = `wai`;
 
         let optionGas = "gas";
-        if (this.props.language !== "English") optionGas = `hau`;
-        const optionSynthetic = (this.props.language !== "English") ? `horihori` : `synthetic`;
+        if (this.props.language === "mi") optionGas = `hau`;
+        const optionSynthetic = (this.props.language === "mi") ? `horihori` : `synthetic`;
 
         return ( 
             

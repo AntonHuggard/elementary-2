@@ -19,12 +19,6 @@ const scaleNames = {
   'k': 'kelvin'
 };
 
-const languages = {
-  'en': 'English',
-  'mi': 'M&amacr;ori'
-}
-
-
 class Home extends Component {
 
     state = {
@@ -36,7 +30,7 @@ class Home extends Component {
         units: scaleNames['c'],
         selectedElement: null,
         periodicTableClass: "periodic-table default-view",
-        language: languages['en'],
+        language: 'en',
     };
     
     showElements = (show) => {
@@ -257,10 +251,10 @@ class Home extends Component {
     }
 
     toggleLanguage = () => {
-      if (this.state.language === "English") {
-        this.setState({language: languages['mi']})
+      if (this.state.language === "en") {
+        this.setState({language: 'mi'})
       } else {
-        this.setState({language: languages['en']})
+        this.setState({language: 'en'})
       }
     }
 
