@@ -3,6 +3,11 @@ import magnifyingGlass from '../imgs/mgnf_glss_gry.png';
 
 class SearchBar extends Component {
 
+    clearSearch = () => {
+        document.getElementById("element_io").value = "";
+        this.props.onHandleQuery("");
+    }
+
     render() {
         
         let placeholderText = "Search elements... ";
@@ -42,6 +47,13 @@ class SearchBar extends Component {
                             this.props.onHandleQuery(e.target.value);
                         }}
                         />
+                    <div className="white-backgrd">
+                        <button
+                            id="clear-search-btn"
+                            className="white-backgrd hide-me"
+                            title="clear text"
+                            onClick={this.clearSearch}>&times;</button>
+                    </div>
                     <span 
                         className='unselectable'
                         id='filter-menu' 

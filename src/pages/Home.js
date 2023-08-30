@@ -108,6 +108,8 @@ class Home extends Component {
     
     handleQuery = (query) => {
           query === "" ? this.showElements(true): this.showElements(false);
+          const clearSearch = document.getElementById("clear-search-btn").classList;
+          query === "" ? clearSearch.add("hide-me"): clearSearch.remove("hide-me");
 
           let all_atoms = [];
           this.state.atoms.forEach(atom => { all_atoms.push(atom.symbol); });
@@ -155,7 +157,8 @@ class Home extends Component {
             document.getElementById("discovery_div").style.display = "block";
             this.handleDiscovery();
             break;
-          default:
+            // default case is the searchbar
+          default: 
             document.getElementById("element_search_container").style.display = "grid";
         }
     }
