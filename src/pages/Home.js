@@ -19,12 +19,6 @@ const scaleNames = {
   'k': 'kelvin'
 };
 
-const languages = {
-  'en': 'English',
-  'mi': 'M&amacr;ori'
-}
-
-
 class Home extends Component {
 
     state = {
@@ -36,7 +30,7 @@ class Home extends Component {
         units: scaleNames['c'],
         selectedElement: null,
         periodicTableClass: "periodic-table default-view",
-        language: languages['en'],
+        language: 'en',
     };
     
     showElements = (show) => {
@@ -114,6 +108,8 @@ class Home extends Component {
     
     handleQuery = (query) => {
           query === "" ? this.showElements(true): this.showElements(false);
+          const clearSearch = document.getElementById("clear-search-btn").classList;
+          query === "" ? clearSearch.add("hide-me"): clearSearch.remove("hide-me");
 
           let all_atoms = [];
           this.state.atoms.forEach(atom => { all_atoms.push(atom.symbol); });
@@ -161,7 +157,8 @@ class Home extends Component {
             document.getElementById("discovery_div").style.display = "block";
             this.handleDiscovery();
             break;
-          default:
+            // default case is the searchbar
+          default: 
             document.getElementById("element_search_container").style.display = "grid";
         }
     }
@@ -257,10 +254,10 @@ class Home extends Component {
     }
 
     toggleLanguage = () => {
-      if (this.state.language === "English") {
-        this.setState({language: languages['mi']})
+      if (this.state.language === "en") {
+        this.setState({language: 'mi'})
       } else {
-        this.setState({language: languages['en']})
+        this.setState({language: 'en'})
       }
     }
 

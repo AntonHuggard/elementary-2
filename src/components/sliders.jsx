@@ -24,10 +24,10 @@ class SliderMenu extends Component {
     render() {
         let sliderTitle = this.getSliderTitle(this.props.inputOption);
 
-        const labelMP = (this.props.language !== "English") ? `pae rewa` : `melting Point`;
-        const labelBP = (this.props.language !== "English") ? `hūnga` : `boiling Point`;
-        const labelDiscovery = (this.props.language !== "English") ? `kitea` : `discovery details`;
-        const labelEN = (this.props.language !== "English") ? `irahikotōraro` : `electronegativity`;
+        const labelMP = (this.props.language === "mi") ? `pae rewa` : `melting Point`;
+        const labelBP = (this.props.language === "mi") ? `hūnga` : `boiling Point`;
+        const labelDiscovery = (this.props.language === "mi") ? `kitea` : `discovery details`;
+        const labelEN = (this.props.language === "mi") ? `irahikotōraro` : `electronegativity`;
 
         return ( 
             <>

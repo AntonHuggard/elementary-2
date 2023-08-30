@@ -258,18 +258,18 @@ class Modal extends Component {
 
             const atomIndex = this.props.element.atomic_number - 1;
             const maoriAtom = maoriData.atoms[atomIndex];
-            const elementName = this.props.language === "English"? this.props.element.name : maoriAtom.name;
-            let discDetails = this.props.language === "English"? this.props.element.discovery_details : this.props.element.discovery_date;
+            const elementName = this.props.language === "en"? this.props.element.name : maoriAtom.name;
+            let discDetails = this.props.language === "en"? this.props.element.discovery_details : this.props.element.discovery_date;
             if (discDetails === 0) discDetails = "he wa roa i mua";
-            const etymology = this.props.language === "English"? this.props.element.etymology : maoriAtom.etymology;
+            const etymology = this.props.language === "en"? this.props.element.etymology : maoriAtom.etymology;
 
-            const labelAtomicNo = (this.props.language !== "English") ? `Tau iraoho` : `Atomic Number`;
-            const labelAtomicMass = (this.props.language !== "English") ? `Tau karihi (o te ngota)` : `Relative Atomic Mass`;
-            const labelMP = (this.props.language !== "English") ? `Pae rewa` : `Melting Point`;
-            const labelBP = (this.props.language !== "English") ? `Hūnga` : `Boiling Point`;
-            const labelElectronConfig = (this.props.language !== "English") ? `Irahiko whakatakoto` : `E<sup>-</sup> configuration`;
-            const labelDiscovery = (this.props.language !== "English") ? `Kitea` : `Discovery details`;
-            const labelEN = (this.props.language !== "English") ? `Irahikotōraro` : `Electronegativity`;
+            const labelAtomicNo = (this.props.language === "mi") ? `Tau iraoho` : `Atomic Number`;
+            const labelAtomicMass = (this.props.language === "mi") ? `Tau karihi (o te ngota)` : `Relative Atomic Mass`;
+            const labelMP = (this.props.language === "mi") ? `Pae rewa` : `Melting Point`;
+            const labelBP = (this.props.language === "mi") ? `Hūnga` : `Boiling Point`;
+            const labelElectronConfig = (this.props.language === "mi") ? `Irahiko whakatakoto` : `E<sup>-</sup> configuration`;
+            const labelDiscovery = (this.props.language === "mi") ? `Kitea` : `Discovery details`;
+            const labelEN = (this.props.language === "mi") ? `Irahikotōraro` : `Electronegativity`;
 
             return ( 
                 <div 

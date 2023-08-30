@@ -61,7 +61,7 @@ header span {
     max-width: 500px;
     display: grid;
     margin: auto;
-    grid-template-columns: 55px auto 100px;
+    grid-template-columns: 55px auto 30px 100px;
     grid-template-rows: 40px;
 }
 
@@ -91,6 +91,20 @@ header span {
     font-size: 18px;
 }
 
+.white-backgrd {
+    background-color: white;
+}
+
+#clear-search-btn {
+    border: 0;
+    color: gray;
+    font-size: 2em;
+}
+
+#clear-search-btn:hover {
+    cursor: pointer;
+}
+
 #element_search_container span {
     background-color: rgba(46, 46, 46, 0.205); 
     color: white;
@@ -112,7 +126,7 @@ header span {
 }
 
 #filter-accordian {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 4;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
