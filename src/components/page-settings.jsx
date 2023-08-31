@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import gear from '../imgs/Gear_icon.svg';
+// import gear from '../imgs/Gear_icon.svg';
 
 
 const languages = {
@@ -28,17 +28,17 @@ class PageSettings extends Component {
             <div id="settings-wrapper" className='hide-me'>
                 <div  id="settings-modal" >
                     <h2>settings</h2>
-
                     <hr/>
-                    <p>Units</p>
-
-                    <button onClick={this.props.onToggleUnits}>{this.props.units}</button>
-                    <p>Language</p>
-                    <button 
-                        onClick={this.props.onToggleLanguage} 
-                        dangerouslySetInnerHTML={{ __html:language_full_text }}></button>
-
-                    <button onClick={this.closeSettings} id='close-side-menu'>ok</button>
+                    <div id="settings-elements">
+                        <label>Temperature units</label>
+                        <button onClick={this.props.onToggleUnits}>{this.props.units}</button>
+                        <label>Language</label>
+                        <button 
+                            onClick={this.props.onToggleLanguage} 
+                            dangerouslySetInnerHTML={{ __html:language_full_text }}></button>
+                    </div>
+                    <hr/>
+                    <button onClick={this.closeSettings} id='close-settings'>back to science</button>
                 </div>
             </div>
             </>

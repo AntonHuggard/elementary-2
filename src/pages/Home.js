@@ -6,7 +6,7 @@ import BoilingPtSlider from '../components/boiling-pt-slider';
 import DiscoverySlider from '../components/discovery-slider';
 import SliderMenu from '../components/sliders';
 import Header from '../components/Header';
-import SideMenu from '../components/SideMenu';
+import Sidenav from '../components/SideNav';
 import atoms from '../components/atoms.json';
 import Modal from '../components/modal';
 import runQuery from '../components/query';
@@ -15,9 +15,9 @@ import React, { Component } from 'react';
 
 
 const scaleNames = {
-  'c': 'celsius',
-  'f': 'fahrenheit',
-  'k': 'kelvin'
+  'c': 'Celsius',
+  'f': 'Fahrenheit',
+  'k': 'Kelvin'
 };
 
 class Home extends Component {
@@ -229,10 +229,10 @@ class Home extends Component {
 
     toggleUnits = () => {
         switch(this.state.units) {
-          case "celsius": 
+          case "Celsius": 
             this.setState({ units : scaleNames['f'] });
             break;
-          case "fahrenheit": 
+          case "Fahrenheit": 
             this.setState({ units : scaleNames['k'] });
             break;
           default:
@@ -274,11 +274,7 @@ class Home extends Component {
       return (
             <>
                 <Header language={this.state.language} />
-                <SideMenu 
-                    onToggleUnits={this.toggleUnits} 
-                    units={units}
-                    onToggleLanguage={this.toggleLanguage} 
-                    language={this.state.language} />
+                <Sidenav />
                     
                 <div id='element_search_wrapper'>
                     <SearchBar

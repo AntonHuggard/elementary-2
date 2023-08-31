@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../components/Header';
-import SideMenu from '../components/SideMenu';
+import Sidenav from '../components/SideNav';
 import atoms from '../components/atoms.json';
 
 class Hydrogen extends Component {
@@ -30,9 +30,8 @@ class Hydrogen extends Component {
         return(
             <>
                 <Header />
-                <SideMenu 
-                    onHandleToggleUnits={this.handleToggleUnits} 
-                    units={this.state.units} />
+                <Sidenav />
+
                 <h1>{this.state.atom.symbol}: {this.state.atom.name}</h1>  
                 <p>{this.state.atom.name}</p>   
                 <p>{this.state.atom.id}</p>
