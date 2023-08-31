@@ -8,6 +8,7 @@ import './style/slider.css';
 import './style/sliderMenu.css';
 import './style/generic.css';
 import './style/ions.css';
+import './style/page-settings.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

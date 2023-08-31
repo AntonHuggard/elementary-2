@@ -10,6 +10,7 @@ import SideMenu from '../components/SideMenu';
 import atoms from '../components/atoms.json';
 import Modal from '../components/modal';
 import runQuery from '../components/query';
+import PageSettings from '../components/page-settings';
 import React, { Component } from 'react';
 
 
@@ -319,6 +320,12 @@ class Home extends Component {
                     units={units}
                     onConvertTemp={this.convertTemp}
                     onGetUnitSymbol={this.getUnitSymbol}
+                    language={this.state.language} />
+
+                <PageSettings 
+                    onToggleUnits={this.toggleUnits} 
+                    units={units}
+                    onToggleLanguage={this.toggleLanguage} 
                     language={this.state.language} />
 
             </>

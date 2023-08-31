@@ -106,14 +106,14 @@
             "elements": ["N", "C", "O", "H"]
         },
         {
-            "name": "",
-            "iupac-name": "",
-            "elements": []
+            "name": "ammonium",
+            "iupac-name": "ammonium",
+            "elements": ["N", "H"]
         },
         {
-            "name": "",
-            "iupac-name": "",
-            "elements": []
+            "name": "acetate",
+            "iupac-name": "ethanoic acid",
+            "elements": ["C", "H", "O"]
         },
         {
             "name": "",
