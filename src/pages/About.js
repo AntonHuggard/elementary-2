@@ -9,7 +9,7 @@ class About extends Component {
       render() {
         return(
             <>
-                <Header />
+                <Header pageSettings={false} />
                 <Sidenav />
                 
                 <div id='content'>

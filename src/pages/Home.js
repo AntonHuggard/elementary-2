@@ -273,7 +273,7 @@ class Home extends Component {
 
       return (
             <>
-                <Header language={this.state.language} />
+                <Header language={this.state.language} pageSettings={true} />
                 <Sidenav />
                     
                 <div id='element_search_wrapper'>

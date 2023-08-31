@@ -32,7 +32,7 @@ class PageSettings extends Component {
                     <div id="settings-elements">
                         <label>Temperature units</label>
                         <button onClick={this.props.onToggleUnits}>{this.props.units}</button>
-                        <label>Language</label>
+                        <label>Toggle language</label>
                         <button 
                             onClick={this.props.onToggleLanguage} 
                             dangerouslySetInnerHTML={{ __html:language_full_text }}></button>

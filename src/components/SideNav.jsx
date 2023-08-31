@@ -13,10 +13,10 @@ class Sidenav extends Component {
             <div id="side-menu" className='hide-menu'>
                 <button onClick={this.handleCloseMenu} id='close-side-menu'>close menu</button>
                 <a href="/#/home">periodic table</a>
+                <a href="/#/ions">table of ions</a>
                 <a href="/#/help">instructions/help</a>
                 <a href="/#/about">about</a>
                 {/* <button>quiz</button> */}
-                <a href="/#/ions">table of ions</a>
                 <button>super secret button</button>
                 
             </div>

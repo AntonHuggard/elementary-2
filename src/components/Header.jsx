@@ -28,10 +28,12 @@ class Header extends Component {
                         >menu</span>
                 </div>
                 <h1 dangerouslySetInnerHTML={{ __html: headerText }}></h1>
-                <div id="page-settings" className="header-clickable" onClick={this.showSettings}>
-                    <img src={gear} alt="settings" />
-                    <span className='unselectable'>settings</span>
-                </div>
+                {this.props.pageSettings ? 
+                    <div id="page-settings" className="header-clickable" onClick={this.showSettings}>
+                        <img src={gear} alt="settings" />
+                        <span className='unselectable'>settings</span>
+                    </div> : <div></div>
+                }
             </header>
         )
     }

@@ -7,7 +7,7 @@ class Ions extends Component {
         return (
             <>
                 <Header />
-                <Sidenav />
+                <Sidenav pageSettings={false} />
 
                 <div id='content'>
                     <h1>Table of Ions</h1>

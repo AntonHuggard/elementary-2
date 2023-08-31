@@ -9,7 +9,7 @@ class Help extends Component {
         return(
             <>
                 <Header />
-                <Sidenav />
+                <Sidenav pageSettings={false} />
                 <div id='content'>
                   <h1>Instructions</h1>
                   <h3>how to search</h3>
