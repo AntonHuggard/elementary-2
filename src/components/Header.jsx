@@ -20,18 +20,15 @@ class Header extends Component {
 
         return (
             <header>
-                <div onClick={this.handleShowMenu} className="header-clickable">
+                <div id='page-menu' className="header-clickable" onClick={this.handleShowMenu}>
                     <img src={menu} alt="navigation menu" />
-                    <span 
-                        id='settings-btn'  
-                        className='unselectable'
-                        >menu</span>
+                    <span className='unselectable top-menu-txt'>menu</span>
                 </div>
                 <h1 dangerouslySetInnerHTML={{ __html: headerText }}></h1>
                 {this.props.pageSettings ? 
                     <div id="page-settings" className="header-clickable" onClick={this.showSettings}>
                         <img src={gear} alt="settings" />
-                        <span className='unselectable'>settings</span>
+                        <span className='unselectable top-menu-txt'>settings</span>
                     </div> : <div></div>
                 }
             </header>
