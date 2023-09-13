@@ -6,8 +6,8 @@ const languages = {
     // NOTE there is a switcharoo on the full text name of the languages
     // This is because when it's in English you KNOW it's in English. 
     // It should be really obvious that clicking this toggles the language
-    'en': 'M&amacr;ori',
-    'mi': 'English'
+    'en': 'English',
+    'mi': 'M&amacr;ori'
 }
 
 class PageSettings extends Component {

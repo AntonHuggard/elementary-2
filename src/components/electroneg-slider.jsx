@@ -13,7 +13,7 @@ class ElectronegSlider extends Component {
               id="EN_slider" 
               onChange={this.props.onHandleElectronegativity} 
               />
-            <p id = "EN_display">0.42</p>
+            <p id = "EN_display">drag slider to change electronegativity</p>
         </div>
         );
     }
