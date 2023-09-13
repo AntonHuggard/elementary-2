@@ -26,7 +26,7 @@ class SliderMenu extends Component {
 
         const labelMP = (this.props.language === "mi") ? `pae rewa` : `melting Point`;
         const labelBP = (this.props.language === "mi") ? `hūnga` : `boiling Point`;
-        const labelDiscovery = (this.props.language === "mi") ? `kitea` : `discovery details`;
+        const labelDiscovery = (this.props.language === "mi") ? `kitea` : `discovery date`;
         const labelEN = (this.props.language === "mi") ? `irahikotōraro` : `electronegativity`;
 
         return ( 

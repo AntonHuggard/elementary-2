@@ -268,7 +268,7 @@ class Modal extends Component {
             const labelMP = (this.props.language === "mi") ? `Pae rewa` : `Melting Point`;
             const labelBP = (this.props.language === "mi") ? `Hūnga` : `Boiling Point`;
             const labelElectronConfig = (this.props.language === "mi") ? `Irahiko whakatakoto` : `E<sup>-</sup> configuration`;
-            const labelDiscovery = (this.props.language === "mi") ? `Kitea` : `Discovery details`;
+            const labelDiscovery = (this.props.language === "mi") ? `Kitea` : `Discovery date`;
             const labelEN = (this.props.language === "mi") ? `Irahikotōraro` : `Electronegativity`;
 
             return ( 

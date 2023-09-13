@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './style/index.css';
 import './style/main.css';
+import './style/header.css';
 import './style/periodic-table.css';
 import './style/modal.css';
 import './style/slider.css';
