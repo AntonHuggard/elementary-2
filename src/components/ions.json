@@ -2,7 +2,7 @@
     {
         "id": 0,
         "name": "Ammonium",
-        "charge": 4,
+        "charge": 1,
         "html": "NH<sub>4</sub><sup>+</sup>",
         "atoms": ["N", "H"]
     },
@@ -114,7 +114,7 @@
     {
         "id": 16,
         "name": "Sulfate",
-        "charge": 0,
+        "charge": -2,
         "html": "SO<sub>4</sub><sup>2-</sup>",
         "atoms": ["S", "O"]
     },
@@ -142,7 +142,7 @@
     {
         "id": 20,
         "name": "Bicarbonate",
-        "charge": -3,
+        "charge": -1,
         "html": "HCO<sub>3</sub><sup>-</sup>",
         "atoms": ["H", "C", "O"]
     },

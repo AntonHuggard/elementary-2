@@ -11,7 +11,7 @@ class IonTable extends Component {
         return ( 
                 <div id="ion-table">
                 {this.props.ions.map(i => (
-                    <Ion ion={i}/>
+                    <Ion key={i.id} ion={i}/>
                     ))
                     }
                 </div>

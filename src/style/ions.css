@@ -7,11 +7,23 @@
     display: grid;
 }
 
-#ion-table, #ion-table th, #ion-table td  {
+.ion-box  {
     border: 1px solid black;
-}
-
-#ion-table div {
-    width: 10%;
+    margin: 5px;
     text-align: center;
 }
+
+.ion-box p {
+    margin-bottom: 0;
+}
+.ion-name {
+    margin-top: 0;
+    padding-bottom: 1em;
+}
+
+.ion-col-1 { grid-column: 1; }
+.ion-col-2 { grid-column: 2; }
+.ion-col-3 { grid-column: 3; }
+.ion-col-4 { grid-column: 4; }
+.ion-col-5 { grid-column: 5; }
+.ion-col-6 { grid-column: 6; }

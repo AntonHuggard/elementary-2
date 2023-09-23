@@ -4,10 +4,14 @@ class Ion extends React.Component {
 
     render() {
 
+        const chrg = this.props.ion.charge;
+        const chargeColumn = chrg > 0? chrg + 3: Math.abs(chrg) ;
+        const ionClasses = "ion-box ion-col-"+chargeColumn
+
         return (
-                <div class="ion">
+                <div className={ionClasses} >
                     <p dangerouslySetInnerHTML={{ __html: this.props.ion.html }}></p>
-                    <label>{this.props.ion.name}</label>
+                    <p className="ion-name">{this.props.ion.name}</p>
                 </div>
         )
     }
