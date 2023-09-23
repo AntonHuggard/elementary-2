@@ -1,0 +1,185 @@
+{ "ions": [ 
+    {
+        "id": 0,
+        "name": "Ammonium",
+        "charge": 4,
+        "html": "NH<sub>4</sub><sup>+</sup>",
+        "atoms": ["N", "H"]
+    },
+    {
+        "id": 1,
+        "name": "",
+        "charge": 2,
+        "html": "Ca<sup>2+</sup>",
+        "atoms": ["Ca"]
+    },
+    {
+        "id": 2,
+        "name": "",
+        "charge": 3,
+        "html": "Al<sup>3+</sup>",
+        "atoms": ["Al"]
+    },
+    {
+        "id": 3,
+        "name": "Oxide",
+        "charge": -2,
+        "html": "O<sup>2-</sup>",
+        "atoms": ["O"]
+    },
+    {
+        "id": 4,
+        "name": "Hydroxide",
+        "charge": -1,
+        "html": "OH<sup>-</sup>",
+        "atoms": ["O", "H"]
+    },
+    {
+        "id": 5,
+        "name": "",
+        "charge": 1,
+        "html": "Na<sup>+</sup>",
+        "atoms": ["Na"]
+    },
+    {
+        "id": 6,
+        "name": "",
+        "charge": 2,
+        "html": "Mg<sup>2+</sup>",
+        "atoms": ["Mg"]
+    },
+    {
+        "id": 7,
+        "name": "Iron (III)",
+        "charge": 3,
+        "html": "Fe<sup>3+</sup>",
+        "atoms": ["Fe"]
+    },
+    {
+        "id": 8,
+        "name": "Sulfide",
+        "charge": -2,
+        "html": "S<sup>2-</sup>",
+        "atoms": ["S"]
+    },
+    {
+        "id": 9,
+        "name": "Chloride",
+        "charge": -1,
+        "html": "Cl<sup>-</sup>",
+        "atoms": ["Cl"]
+    },
+    {
+        "id": 10,
+        "name": "",
+        "charge": 1,
+        "html": "K<sup>+</sup>",
+        "atoms": ["K"]
+    },
+    {
+        "id": 11,
+        "name": "Copper (II)",
+        "charge": 2,
+        "html": "Cu<sup>2+</sup>",
+        "atoms": ["Cu"]
+    },
+    {
+        "id": 12,
+        "name": "Carbonate",
+        "charge": -2,
+        "html": "CO<sub>3</sub><sup>2-</sup>",
+        "atoms": ["C", "O"]
+    },
+    {
+        "id": 13,
+        "name": "Iodide",
+        "charge": -1,
+        "html": "I<sup>-</sup>",
+        "atoms": ["I"]
+    },
+    {
+        "id": 14,
+        "name": "",
+        "charge": 1,
+        "html": "Ag<sup>+</sup>",
+        "atoms": ["Ag"]
+    },
+    {
+        "id": 15,
+        "name": "",
+        "charge": 2,
+        "html": "Pb<sup>2+</sup>",
+        "atoms": ["Pb"]
+    },
+    {
+        "id": 16,
+        "name": "Sulfate",
+        "charge": 0,
+        "html": "SO<sub>4</sub><sup>2-</sup>",
+        "atoms": ["S", "O"]
+    },
+    {
+        "id": 17,
+        "name": "Nitrate",
+        "charge": -1,
+        "html": "NO<sub>3</sub><sup>-</sup>",
+        "atoms": ["N", "O"]
+    },
+    {
+        "id": 18,
+        "name": "",
+        "charge": 1,
+        "html": "H<sup>+</sup>",
+        "atoms": ["H"]
+    },
+    {
+        "id": 19,
+        "name": "Iron (II)",
+        "charge": 2,
+        "html": "Fe<sup>2+</sup>",
+        "atoms": ["Fe"]
+    },
+    {
+        "id": 20,
+        "name": "Bicarbonate",
+        "charge": -3,
+        "html": "HCO<sub>3</sub><sup>-</sup>",
+        "atoms": ["H", "C", "O"]
+    },
+    {
+        "id": 21,
+        "name": "",
+        "charge": 1,
+        "html": "Li<sup>+</sup>",
+        "atoms": ["Li"]
+    },
+    {
+        "id": 22,
+        "name": "",
+        "charge": 2,
+        "html": "Ba<sup>2+</sup>",
+        "atoms": ["Ba"]
+    },
+    {
+        "id": 23,
+        "name": "Fluoride",
+        "charge": -1,
+        "html": "F<sup>-</sup>",
+        "atoms": ["F"]
+    },
+    {
+        "id": 24,
+        "name": "",
+        "charge": 2,
+        "html": "Zn<sup>2+</sup>",
+        "atoms": ["Zn"]
+    },
+    {
+        "id": 25,
+        "name": "Acetate",
+        "charge": -1,
+        "html": "CH<sub>3</sub>COO<sup>-</sup>",
+        "atoms": ["C", "H"]
+    }
+    ]
+}
