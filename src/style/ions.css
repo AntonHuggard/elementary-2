@@ -4,13 +4,14 @@
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
 }
 
 #ion-table, #ion-table th, #ion-table td  {
     border: 1px solid black;
 }
 
-#ion-table td {
+#ion-table div {
     width: 10%;
     text-align: center;
 }
