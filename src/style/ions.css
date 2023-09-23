@@ -5,12 +5,13 @@
     margin-left: auto;
     margin-right: auto;
     display: grid;
+    text-align: center;
+    grid-auto-flow: column;
 }
 
 .ion-box  {
     border: 1px solid black;
     margin: 5px;
-    text-align: center;
 }
 
 .ion-box p {
