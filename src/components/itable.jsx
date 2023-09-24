@@ -4,10 +4,7 @@ import Ion from './ion'
 class IonTable extends Component {
 
     render() {
-        // console.log(this.props.ions);
-        // this.props.ions.forEach(i => {
-        //     console.log(i.html)
-        // });
+
         return ( 
                 <div id="ion-table">
                     <label className='ion-col-1'>-1</label>

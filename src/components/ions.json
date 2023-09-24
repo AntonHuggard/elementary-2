@@ -180,6 +180,27 @@
         "charge": -1,
         "html": "CH<sub>3</sub>COO<sup>-</sup>",
         "atoms": ["C", "H"]
+    },
+    {
+        "id": 26,
+        "name": "Nitride",
+        "charge": -3,
+        "html": "N<sup>3-</sup>",
+        "atoms": ["N"]
+    },
+    {
+        "id": 27,
+        "name": "Phosphide",
+        "charge": -3,
+        "html": "P<sup>3-</sup>",
+        "atoms": ["P"]
+    },
+    {
+        "id": 28,
+        "name": "Phosphite",
+        "charge": -3,
+        "html": "PO<sub>3</sub><sup>3-</sup>",
+        "atoms": ["P"]
     }
     ]
 }
