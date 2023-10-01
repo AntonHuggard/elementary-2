@@ -39,3 +39,22 @@
 .ion-col-4 { grid-column: 4; }
 .ion-col-5 { grid-column: 5; }
 .ion-col-6 { grid-column: 6; }
+
+
+@media only screen and (max-width: 780px) {
+
+    #ion-table {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .ion-col-4 { grid-column: 1; }
+    .ion-col-5 { grid-column: 2; }
+    .ion-col-6 { grid-column: 3; }
+
+    #cation-header {
+        grid-row: 10;
+        grid-column: 1 / span 3;
+    }
+
+    .cation-chrg-hdr { grid-row: 11; }
+}
