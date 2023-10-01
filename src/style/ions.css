@@ -10,6 +10,16 @@
     grid-template-columns: repeat(6, 1fr);
 }
 
+#anion-header {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+}
+
+#cation-header {
+    grid-row: 1;
+    grid-column: 4 / span 3;
+}
+
 .ion-box  {
     border: 1px solid black;
     margin: 5px;

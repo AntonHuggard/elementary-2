@@ -7,6 +7,8 @@ class IonTable extends Component {
 
         return ( 
                 <div id="ion-table">
+                    <label id="anion-header">Anions</label>
+                    <label id="cation-header">Cations</label>
                     <label className='ion-col-1'>-1</label>
                     <label className='ion-col-2'>-2</label>
                     <label className='ion-col-3'>-3</label>
