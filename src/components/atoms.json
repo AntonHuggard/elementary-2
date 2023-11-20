@@ -18,7 +18,9 @@
         "discovery_date": 1766,
         "discovery_details":"1766 by Henry Cavendish",
         "etymology": "from greek, <em>water-former</em>",
-        "description": ""
+        "description": "",
+        "human_namesake": false,
+        "language": "Greek"
     }, 
     {
     "symbol": "He",
@@ -39,7 +41,9 @@
     "discovery_date": 1868,
     "discovery_details":"1868 by Pierre Janssen & Norman Lockyer",
     "etymology": "from the Greek word for the sun, <em>Helios</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Li",
@@ -60,7 +64,9 @@
     "discovery_date":1817,
     "discovery_details":"1817 by Johan August Arfwedson",
     "etymology": "from the Greek <em>lithos</em>, meaning stone",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "Be",
@@ -81,7 +87,9 @@
     "discovery_date": 1798,
     "discovery_details":"1798 by Louis Nicolas Vauquelin",
     "etymology": "from the mineral beryl",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
          {
     "symbol": "B",
@@ -102,7 +110,9 @@
     "discovery_date": 1808,
     "discovery_details":"30<sup>th</sup> of June, 1808 by Joseph Louis Gay-Lussac and Louis Jacques Th&eacute;nard",
     "etymology": "from Borax",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "C",
@@ -123,7 +133,9 @@
     "discovery_date": 0,
     "discovery_details":"The Egyptians and Sumerians had diamonds before 3000 BC" ,
     "etymology": "from the Latin <em>carbo</em>, referring to coal & charcoal",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "N",
@@ -144,7 +156,9 @@
     "discovery_date": 1772,
     "discovery_details":"1772 by Scottish physician Daniel Rutherford",
     "etymology": "from the French <em>nitrog&egrave;ne</em>, which means <em>Potassium nitrate-producing</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "O",
@@ -165,7 +179,9 @@
     "discovery_date": 1771,
     "discovery_details":"Unknown. Either a Polish alchemist in 1604 or in 1771 by Swedish pharmacist Carl Wilhelm Scheele",
     "etymology": "Coined by Antoine Lavoisier, 1777",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "F",
@@ -186,7 +202,9 @@
     "discovery_date": 1810,
     "discovery_details":"1810 by Andr&eacute;-Marie Amp&egrave;re",
     "etymology": "from the Latin <em>fluo</em>, <em>to flow</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },             
              {
     "symbol": "Ne",
@@ -207,7 +225,9 @@
     "discovery_date": 1898,
     "discovery_details":"1898 by British chemists Sir William Ramsay & Morris W. Travers",
     "etymology": "Greek equivalent of <em>Novum</em> (Latin for <em>new</em>)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "Na",
@@ -228,7 +248,9 @@
     "discovery_date": 1807,
     "discovery_details":"1807 by Humphry Davy",
     "etymology": "Unknown. Its symbol is derived from Natronium/Natrium",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "Mg",
@@ -249,7 +271,9 @@
     "discovery_date": 1755,
     "discovery_details":"1755 by Joseph Black",
     "etymology": "after Magnesia, Greece",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Al",
@@ -270,7 +294,9 @@
     "discovery_date": 1824,
     "discovery_details":"1824  by Hans Christian &#216;rsted (Denmark)",
     "etymology": "Named after Aluminia (which is named after Alum)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "Si",
@@ -291,7 +317,9 @@
     "discovery_date": 1823,
     "discovery_details":"1823 by J&ouml;ns Jacob Berzelius",
     "etymology": "from flint in Latin, <em>silex</em> or <em>silicis</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "P",
@@ -312,7 +340,9 @@
     "discovery_date": 1669,
     "discovery_details":"1669 by German Alchemist Hennig Brand. Properly discovered by Antoine Lavoisier in 1777",
     "etymology": "from the Ancient Greek name for Venus, translates as <em>light-bearer</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "S",
@@ -333,7 +363,9 @@
     "discovery_date": 0,
     "discovery_details":"Before 2000 BC, China. Recognised as an element by Antoine Lavoisier in 1777",
     "etymology": "derived from Latin <em>sulpur</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "Cl",
@@ -354,7 +386,9 @@
     "discovery_date": 1774,
     "discovery_details":"1774 by Carl Wilhelm Scheele (Sweden/Germany)",
     "etymology": "from Ancient Greek <em>Khloros</em> (pale-green)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Ar",
@@ -375,7 +409,9 @@
     "discovery_date": 1894,
     "discovery_details":"1894 by Lord Rayleigh and William Ramsay",
     "etymology": "Derived from the Greek word for lazy",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 
  {
@@ -397,7 +433,9 @@
     "discovery_date": 1807,
     "discovery_details":"1807 by Humphry Davy",
     "etymology": "from <em>Pot-ash</em>. Historically potassium-containing salts were produced by boiling ash. K is from Kali, from Alkali",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Ca",
@@ -418,7 +456,9 @@
     "discovery_date": 1808,
     "discovery_details":"1808 by Humphry Davy",
     "etymology": "from Latin <em>calx</em>, meaning lime",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Sc",
@@ -439,7 +479,9 @@
     "discovery_date": 1879,
     "discovery_details":"1879 by Lars Fredrik Nilson",
     "etymology": "after Scandinavia",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Ti",
@@ -460,7 +502,9 @@
     "discovery_date": 1791,
     "discovery_details":"1791 by William Gregor",
     "etymology": "after the mythological Greek Titans",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "V",
@@ -481,7 +525,9 @@
     "discovery_date": 1801,
     "discovery_details":"1801 by Andr&eacute;s Manuel del R&iacute;o. Isolated in 1830 by Nils Gabriel Sefstr&ouml;m",
     "etymology": "after the Norse goddess of beauty & fertility, Vanad&iacute;s (Freyja)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Cr",
@@ -502,7 +548,9 @@
     "discovery_date": 1794,
     "discovery_details":"Discovered 1794, isolated in 1797 by Louis Nicolas Vauquelin",
     "etymology": "from Greek <em>chroma</em>, meaning <em>colour</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Mn",
@@ -523,7 +571,9 @@
     "discovery_date": 1774,
     "discovery_details":"1774 by Johann Gottlieb Gahn",
     "etymology": "after Magnesia in Greece (same as Magnesium)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Fe",
@@ -544,7 +594,9 @@
     "discovery_date": 0,
     "discovery_details":"Unknown. Before 5000 BC",
     "etymology": "from proto-Germanic <em>isarnon</em>. Its chemical symbol comes from its Latin name <em>ferrum</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "Co",
@@ -565,7 +617,9 @@
     "discovery_date": 1735,
     "discovery_details":"1735 by Georg Brandt",
     "etymology": "from Kobald, a sprite in Germainc mythology",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Ni",
@@ -586,7 +640,9 @@
     "discovery_date": 1751,
     "discovery_details":"1751 by Axel Fredrik Cronstedt",
     "etymology": "from the sprite of Germanic mythology",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Cu",
@@ -607,7 +663,9 @@
     "discovery_date": 0,
     "discovery_details":"before 9000 BC in the Middle East",
     "etymology": "after Cyprus, a significant mining location to Ancient Rome",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Zn",
@@ -628,7 +686,9 @@
     "discovery_date": 0,
     "discovery_details":"India before 1000 BC. Properly in 1746 by Andreas Sigismund Marggraf",
     "etymology": "after <em>Zinke</em>, German for prong. Probably.",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Ga",
@@ -649,7 +709,9 @@
     "discovery_date": 1875,
     "discovery_details":"1875 by Lecoq de Boisbaudran (France)",
     "etymology": "after <em>Gallia</em>, the Roman province <em>Gaul</em>. Roughly the area of modern France",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Ge",
@@ -670,7 +732,9 @@
     "discovery_date": 1886,
     "discovery_details":"1886 by Clemens Winkler (Germany)",
     "etymology": "after Germany",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "As",
@@ -691,7 +755,9 @@
     "discovery_date": 0,
     "discovery_details":"before 815 AD by Arabic Alchemists",
     "etymology": "from the Greek word for <em>stink</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Se",
@@ -712,7 +778,9 @@
     "discovery_date": 1817,
     "discovery_details":"1817 by J&ouml;ns Jakob Berzelius & Johann Gottlieb Gahn",
     "etymology": "after Selene, the Greek moon goddess",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Br",
@@ -733,7 +801,9 @@
     "discovery_date": 1825,
     "discovery_details":"1825 by Antoine J&eacute;r&ocirc;me Balard (France) & Carl Jacob L&ouml;wig (Germany)",
     "etymology": "from the Greek word for <em>stench</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "Kr",
@@ -754,7 +824,9 @@
     "discovery_date": 1898,
     "discovery_details":"1898 by William Ramsay & Morris Travers",
     "etymology": "from Ancient Greek <em>Kryptos</em>, meaning <em>the hidden one</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "Rb",
@@ -775,7 +847,9 @@
     "discovery_date": 1861,
     "discovery_details":"1861 by Robert Bunsen and Gustav Kirchhoff. Isolated by George de Hevesy",
     "etymology": "from the Latin <em>rubidus</em>, meaning <em>deep red</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Sr",
@@ -796,7 +870,9 @@
     "discovery_date": 1787,
     "discovery_details":"1787 by William Cruickshank",
     "etymology": "after stronantine, which gets its name from the Scottish village of Strontian",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Y",
@@ -817,7 +893,9 @@
     "discovery_date": 1794,
     "discovery_details":"1794 Johan Gadolin",
     "etymology": "named after the Swedish village of Ytterby",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Zr",
@@ -838,7 +916,9 @@
     "discovery_date": 1789,
     "discovery_details":"1789 Martin Heinrich Klaproth (Germany)",
     "etymology": "from Arabic <em>Zargon</em>, meaning <em>gold-coloured</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Nb",
@@ -859,7 +939,9 @@
     "discovery_date": 1801,
     "discovery_details":"1801 by Charles Hatchett",
     "etymology": "after <em>Niobe</em> in Greek mythology",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Mo",
@@ -880,7 +962,9 @@
     "discovery_date": 1778,
     "discovery_details":"1778 by Carl Wilhelm Scheele (Germany/Sweden)",
     "etymology": "from the Neo-Latin equivalent of Ancient Greek <em>molybdos</em>, meaning lead",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Tc",
@@ -901,7 +985,9 @@
     "discovery_date": 1937,
     "discovery_details":"1937 by Emilio Segr&egrave; and Carlo Perrier",
     "etymology": "from Greek, meaning <em>synthetic</em> with the -ium suffix",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Ru",
@@ -922,7 +1008,9 @@
     "discovery_date": 1844,
     "discovery_details":"1844 by Karl Ernst Claus (Russia)",
     "etymology": "after <em>Ruthenia</em>, the Latin name for the region controlled by the Kievan Rus",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Rh",
@@ -943,7 +1031,9 @@
     "discovery_date": 1804,
     "discovery_details":"1804 by William Hyde Wollaston",
     "etymology": "after the rose-colour of a compound it forms with Chlorine",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Pd",
@@ -964,7 +1054,9 @@
     "discovery_date": 1802,
     "discovery_details":"1802 by William Hyde Wollaston",
     "etymology": "after asteroid Pallas, which was named after Pallas Athena",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Ag",
@@ -985,7 +1077,9 @@
     "discovery_date": 0,
     "discovery_details":"before 5000 BC",
     "etymology": "ultimately from proto-Germanic <em>silubra</em>. Its symbol comes from its name, <em>argentum</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Cd",
@@ -1006,7 +1100,9 @@
     "discovery_date": 1817,
     "discovery_details":"1817 by Karl Samuel Leberecht Hermann and Friedrich Stromeyer",
     "etymology": "after Cadmus of Greek mythology",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "In",
@@ -1027,7 +1123,9 @@
     "discovery_date": 1863,
     "discovery_details":"1863 by Ferdinand Reich and Hieronymous Theodor Richter",
     "etymology": "after the inidgo blue of its visible spectrum (ultimately derived from <em>India</em>)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Sn",
@@ -1048,7 +1146,9 @@
     "discovery_date": 0,
     "discovery_details":"circa 3500 BC",
     "etymology": "from proto-Germanic <em>tin-om</em>. Its symbol is derived from its Latin name <em>stannum</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Sb",
@@ -1069,7 +1169,9 @@
     "discovery_date": 0,
     "discovery_details":"before 815 AD by Jabir ibn Hayyan",
     "etymology": "from its Byzantine Greek name, <em>antimonium</em>. The origin of this is unknown.",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Te",
@@ -1090,7 +1192,9 @@
     "discovery_date": 1782,
     "discovery_details":"1782 by Franz-Joseph M&uuml;ller von Reichenstein (Austria)",
     "etymology": "after the Roman Earth deity <em>Tellus</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "I",
@@ -1111,7 +1215,9 @@
     "discovery_date": 1811,
     "discovery_details":"1811 by Bernard Courtois (France)",
     "etymology": "from Greek, translated as <em>violet-coloured</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Xe",
@@ -1132,7 +1238,9 @@
     "discovery_date": 1898,
     "discovery_details": "1898 by William Ramsay and Morris Travers", 
     "etymology": "from the Greek <em>xenos</em>, meaning <em>foreigner</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol":"Cs",
@@ -1153,7 +1261,9 @@
     "discovery_date": 1860,
     "discovery_details":"1860 by Robert Bunsen and Gustav Kirchhoff. Isolated in 1882 by Carl Setterberg",
     "etymology": "from Latin <em>Caesius</em> (bluish-grey), after its spectral colours.",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Ba",
@@ -1174,7 +1284,9 @@
     "discovery_date": 1772,
     "discovery_details":"1772 by Carl Wilhelm Scheele. 1808 by Humphry Davy",
     "etymology": "from the Alchemical <em>baryta</em> which is derived from Greek <em>Barys</em>, meaning heavy",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "La",
@@ -1195,7 +1307,9 @@
     "discovery_date": 1838,
     "discovery_details":"1838 by Carl Gustaf Mosander",
     "etymology": "from the Ancient Greek <em>lanthanein</em>, meaning <em>to lie hidden</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 
              {
@@ -1217,7 +1331,9 @@
     "discovery_date": 1803,
     "discovery_details":"1803 by M.H. Klaproth, J.J. Berzelius, Wilhelm Hisinger. Isolated 1838 by C.G. Mosander",
     "etymology": "after Ceres, the Roman god of agriculture",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Pr",
@@ -1238,7 +1354,9 @@
     "discovery_date": 1885,
     "discovery_details":"1885 by Carl Auer von Welsbach (Austria)",
     "etymology": "from Greek, meaning <em>green twin</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Nd",
@@ -1259,7 +1377,9 @@
     "discovery_date": 1885,
     "discovery_details":"1885 by Carl Auer von Welsbach (Austria)",
     "etymology": "from Greek, meaning <em>new twin</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Pm",
@@ -1280,7 +1400,9 @@
     "discovery_date": 1942,
     "discovery_details":"1942 by Chien Shiung Wu, E. Segr&egrave;, H. Bethe. Isolated 1945 by C.D. Coryell, J.A. Marinsky, L.E. Glendenin",
     "etymology": "after <em>Promethius</em> of Greek mythology",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Sm",
@@ -1301,7 +1423,9 @@
     "discovery_date": 1879,
     "discovery_details":"1879 by Lecoq de Boisbaudran",
     "etymology": "after samarskite (ultimately from Russian mining engineer Vassili Samarsky-Bykhovets)",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },
                  {
     "symbol": "Eu",
@@ -1322,7 +1446,9 @@
     "discovery_date": 1896,
     "discovery_details":"1896 by Eug&egrave;ne-Anatole Demarçay, isolated 1901.",
     "etymology": "after Europe. Obviously.",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Gd",
@@ -1343,7 +1469,9 @@
     "discovery_date": 1880,
     "discovery_details":"1880 by Jean Charles Galissard de Marignac. Isolated 1886 by Lecoq de Boisbaudran",
     "etymology": "after Gadolinite (from Swedish/Finnish chemist Johan Gadolin)",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },
                  {
     "symbol": "Tb",
@@ -1364,7 +1492,9 @@
     "discovery_date": 1843,
     "discovery_details":"1843 Carl Gustaf Mosander",
     "etymology": "after Ytterby, Sweden",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 
               {
@@ -1386,7 +1516,9 @@
     "discovery_date": 1886,
     "discovery_details":"1886 Lecoq de Boisbaudran",
     "etymology": "from Greek <em>dysprositos</em>, meaning <em>hard to obtain</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Ho",
@@ -1407,7 +1539,9 @@
     "discovery_date": 1878,
     "discovery_details":"1878 by Jacques-Louis Soret and Marc Delafontaine",
     "etymology": "after the Latin name for Stockholm, Sweden",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Er",
@@ -1428,7 +1562,9 @@
     "discovery_date": 1843,
     "discovery_details":"1843 Carl Gustaf Mosander",
     "etymology": "after Ytterby, Sweden",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Tm",
@@ -1449,7 +1585,9 @@
     "discovery_date": 1879,
     "discovery_details":"1879 by Per Teodor Cleve (Sweden)",
     "etymology": "after Thule (mythical Scandinavian region)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Yb",
@@ -1470,7 +1608,9 @@
     "discovery_date": 1878,
     "discovery_details":"1878 by Jean Charles Galissard de Marignac. Isolated 1906 by Carl Auer von Welsbach",
     "etymology": "after Ytterby, Sweden",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Lu",
@@ -1491,7 +1631,9 @@
     "discovery_date": 1906,
     "discovery_details":"1906 by Carl Auer von Welsbach and Georges Urbain. Isolated by Welsbach, 1906",
     "etymology": "after the Latin name for Paris (Lutetia)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },        
  {
     "symbol": "Hf",
@@ -1512,7 +1654,9 @@
     "discovery_date": 1922,
     "discovery_details":"1922 by Dirk Coster and George de Hevesy",
     "etymology": "from the Latin name for Copenhagen, <em> Hafnia</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Ta",
@@ -1533,7 +1677,9 @@
     "discovery_date": 1802,
     "discovery_details":"1802 by Anders Gustaf Ekeberg. Recognised as a distinct element in 1844 by Heinrich Rose",
     "etymology": "after Tantalus, from Greek mythology",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "W",
@@ -1554,7 +1700,9 @@
     "discovery_date": 1781,
     "discovery_details":"1781 by Juan Jos&eacute; Elhuyar and Fausto Elhuyar. Isolated two years later",
     "etymology": "from Swedish, meaning <em>heavy stone</em>. In German, it is called <em>wolfram</em> (Hence, <em>W</em>)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "Re",
@@ -1575,7 +1723,9 @@
     "discovery_date": 1908,
     "discovery_details":"1908 by Masataka Ogawa (Japan)",
     "etymology": "named after the Rhine (river)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Os",
@@ -1596,7 +1746,9 @@
     "discovery_date": 1803,
     "discovery_details":"1803 by Smithson Tennant (England)",
     "etymology": "from Greek <em>osme</em> (a smell)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Ir",
@@ -1617,7 +1769,9 @@
     "discovery_date": 1803,
     "discovery_details":"1803 by Smithson Tennant",
     "etymology": "after the Greek goddess Iris (rainbow personification) because of its colourful salts",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Pt",
@@ -1638,7 +1792,9 @@
     "discovery_date": 1735,
     "discovery_details":"1735 by Antonio de Ulloa (Spain)",
     "etymology": "from Spanish <em>platino</em> (<em>little silver</em>)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Au",
@@ -1659,7 +1815,9 @@
     "discovery_date": 0,
     "discovery_details":"before 6000 BC, Middle East",
     "etymology": "from proto-Germanic <em>gultha</em>. Its symbol is from its Latin <em>aurum</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Hg",
@@ -1680,7 +1838,9 @@
     "discovery_date":0,
     "discovery_details":"Unknown. Before 1500 BC, Ancient Egypt",
     "etymology": "after the Roman god. Formerly called hydrargyrum (Greek, meaning <em>water-silver</em>), hence its symbol",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
               {
     "symbol": "Tl",
@@ -1701,7 +1861,9 @@
     "discovery_date": 1861,
     "discovery_details":"1861 by William Crookes (Britain), it was isolated the following year.",
     "etymology": "from Greek <em>thallos</em> (green shoot or twig)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Pb",
@@ -1722,7 +1884,9 @@
     "discovery_date": 0,
     "discovery_details":"7000 BC, Middle East",
     "etymology": "No one knows. It has been called the same thing for centuries. Symbol derived from latin <em>plumbum</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Bi",
@@ -1743,7 +1907,9 @@
     "discovery_date": 1000,
     "discovery_details":"before 1000 AD by Arabic Alchemists",
     "etymology": "Unknown. Probably from Arabic <em>bi ismid</em>, which means <em>having the properties of antimony</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Po",
@@ -1764,7 +1930,9 @@
     "discovery_date": 1898,
     "discovery_details":"1898 by Pierre & Marie Curie. Isolated 1902 by Willy Marckwald",
     "etymology": "from <em>Polonia</em>, the Latin name for Poland",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "At",
@@ -1785,7 +1953,9 @@
     "discovery_date": 1940,
     "discovery_details":"1940 by Dale R. Corson, Kenneth Ross MacKenzie, Emilio Segr&egrave;",
     "etymology": "from Greek <em>astatos</em> (unstable)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
      {
     "symbol": "Rn",
@@ -1806,7 +1976,9 @@
     "discovery_date":1899,
     "discovery_details":"1899 by E. Rutherford (New Zealand) and R.B. Owens (USA). Isolated 1910 by W. Ramsay & R. Whytlaw-Gray ",
     "etymology": "Initially it was called <em>radium emanation</em>. In 1918 it was one of several shortened proposed names",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },    
  {
     "symbol": "Fr",
@@ -1827,7 +1999,9 @@
     "discovery_date":1939,
     "discovery_details":"1939 by Marguerite Perey",
     "etymology": "after France",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
      {
     "symbol": "Ra",
@@ -1848,7 +2022,9 @@
     "discovery_date":1898,
     "discovery_details":"1898 by Pierre & Marie Curie. Isolated by Marie, 1910",
     "etymology": "from Latin <em>radius</em>. Meaning ray. Because of its emissions.",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
  {
     "symbol": "Ac",
@@ -1869,7 +2045,9 @@
     "discovery_date":1902,
     "discovery_details":"1902 by Friedrich Oskar Giesel",
     "etymology": "from Greek, meaning <em>ray-beam</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Th",
@@ -1890,7 +2068,9 @@
     "discovery_date": 1829,
     "discovery_details":"1829 by J&ouml;ns Jakob Berzelius",
     "etymology": "after Thor, the Norse god of thunder",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Pa",
@@ -1911,7 +2091,9 @@
     "discovery_date": 1913,
     "discovery_details":"1913 by Kasimir Fajans and Oswald Helmuth G&ouml;hring",
     "etymology": "a contraction of <em>proto-actinium</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "U",
@@ -1932,7 +2114,9 @@
     "discovery_date": 1789,
     "discovery_details":"1789 by Martin Heinrich Klaproth. Isolated 1841 by Eug&egrave;ne-Melchior P&eacute;ligot",
     "etymology": "after Uranus (the planet). Ultimately derived from the Greek god of the sky",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Np",
@@ -1953,7 +2137,9 @@
     "discovery_date": 1940,
     "discovery_details":"1940 by Edwin McMillan and Philip H. Abelson",
     "etymology": "after Neptune (the planet). Ultimately derived from the Greek god of the sea",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Pu",
@@ -1974,7 +2160,9 @@
     "discovery_date": 1940,
     "discovery_details":"1940–1 by Glenn T. Seaborg, Arthur Wahl, Joseph W. Kennedy, Edwin McMillan",
     "etymology": "after Pluto (the planet). Ultimately derived from the Greek god of the underworld",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                  {
     "symbol": "Am",
@@ -1995,7 +2183,9 @@
     "discovery_date": 1944,
     "discovery_details":"1944 by Glenn T. Seaborg, Ralph A. James, Leon O. Morgan, Albert Ghiorso",
     "etymology": "after the Americas (Northern & Southern continents)",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },
                 {
     "symbol": "Cm",
@@ -2016,7 +2206,9 @@
     "discovery_date": 1944,
     "discovery_details":"1944 by Glenn T. Seaborg, Ralph A. James, Albert Ghiorso",
     "etymology": "after Marie Curie",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },
                 {
     "symbol": "Bk",
@@ -2037,7 +2229,9 @@
     "discovery_date": 1949,
     "discovery_details":"1949 by Lawrence Berkeley National Laboratory",
     "etymology": "after Berkeley, California, USA",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Cf",
@@ -2058,7 +2252,9 @@
     "discovery_date": 1950,
     "discovery_details":"1950 by Lawrence Berkeley National Laboratory",
     "etymology": "after California, USA",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
                 {
     "symbol": "Es",
@@ -2079,7 +2275,9 @@
     "discovery_date": 1952,
     "discovery_details":"1952 by Lawrence Berkeley National Laboratory",
     "etymology": "after Albert Einstein",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },
                  {
     "symbol": "Fm",
@@ -2100,7 +2298,9 @@
     "discovery_date": 1952,
     "discovery_details":"1952 by Lawrence Berkeley National Laboratory",
     "etymology": "after Enrico Fermi",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },
  {
     "symbol": "Md",
@@ -2121,7 +2321,9 @@
     "discovery_date": 1955, 
     "discovery_details":"1955 by Lawrence Berkeley National Laboratory",
     "etymology": "after Dmitri Mendeleev, father of the Periodic Table",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },                
               {
     "symbol": "No",
@@ -2142,7 +2344,9 @@
     "discovery_date":1966,
     "discovery_details":"1966 by the Joint Institute for Nuclear Research",
     "etymology": "after Alfred Nobel",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },
  {
     "symbol": "Lr",
@@ -2163,7 +2367,9 @@
     "discovery_date":1971,
     "discovery_details":"1961-1971 by JINR (USSR) & LBNL (USA)",
     "etymology": "after Ernest Lawrence",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },
      {
     "symbol": "Rf", 
@@ -2184,7 +2390,9 @@
     "discovery_date":1964,
     "discovery_details":"1964 in the Soviet Union. Confirmed 1969, USA.",
     "etymology": "after Sir Ernest Rutherford (New Zealand)",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },   
      {
     "symbol": "Db", 
@@ -2205,7 +2413,9 @@
     "discovery_date":1970,
     "discovery_details":"1970, LBNL (USA) & JINR (Russian) (independently)",
     "etymology": "after Dubna, Russia",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },    
      {
     "symbol": "Sg", 
@@ -2226,7 +2436,9 @@
     "discovery_date":1974,
     "discovery_details":"1974 by Lawrence Berkeley National Laboratory",
     "etymology": "after the American nuclear chemist Glenn T. Seaborg",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },
  {
     "symbol": "Bh", 
@@ -2247,7 +2459,9 @@
     "discovery_date":1981,
     "discovery_details":"1981 by Gesellschaft f&uuml;r Schwerionenforschung",
     "etymology": "after Danish physicist Niels Bohr",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },  
      {
     "symbol": "Hs", 
@@ -2268,7 +2482,9 @@
     "discovery_date":1984,
     "discovery_details":"1984 by Gesellschaft f&uuml;r Schwerionenforschung",
     "etymology": "after the German state of Hesse",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },    
      {
     "symbol": "Mt", 
@@ -2289,7 +2505,9 @@
     "discovery_date":1982,
     "discovery_details":"1982 by Gesellschaft f&uuml;r Schwerionenforschung",
     "etymology": "after Lise Meitner (Austria/Sweden)",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },  
      {
     "symbol": "Ds", 
@@ -2310,7 +2528,9 @@
     "discovery_date":1994,
     "discovery_details":"1994 by Gesellschaft f&uuml;r Schwerionenforschung",
     "etymology": "after Darmstadt, Germany (location of its discovery)",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },   
      {
     "symbol": "Rg", 
@@ -2331,7 +2551,9 @@
     "discovery_date":1994, 
     "discovery_details":"1994 by Gesellschaft f&uuml;r Schwerionenforschung",
     "etymology": "after Wilhelm R&ouml;ntgen (Germany)",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },    
      {
     "symbol": "Cn",
@@ -2352,7 +2574,9 @@
     "discovery_date":1996,
     "discovery_details":"1996 by Gesellschaft f&uuml;r Schwerionenforschung",
     "etymology": "after Nicolaus Copernicus (of helicentric model fame)",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },
      {
     "symbol": "Nh",
@@ -2373,7 +2597,9 @@
     "discovery_date":2004,
     "discovery_details":"2004 by Riken (Japan)",
     "etymology": "from the Japanese name for Japan, <em>Nihon</em>",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },
      {
     "symbol": "Fl", 
@@ -2394,7 +2620,9 @@
     "discovery_date":1999,
     "discovery_details":"1999 by JINR & LLNL",
     "etymology": "after the Flerov Laboratory of Nuclear Reactions (ultimately after Georgy Flyorov)",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },    
      {
     "symbol": "Mc", 
@@ -2415,7 +2643,9 @@
     "discovery_date":2003,
     "discovery_details":"2003 by JINR and LLNL",
     "etymology": "after Moscow, Russia",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },    
      {
     "symbol": "Lv", 
@@ -2436,7 +2666,9 @@
     "discovery_date":2000,
     "discovery_datails":"2000 by JINR & LLNL",
     "etymology": "after Lawrence Livermore National Laboratory (ultimately after Livermore, California)",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 },    
      {
     "symbol": "Ts", 
@@ -2457,7 +2689,9 @@
     "discovery_date":2009,
     "discovery_details":"2009 by JINR, LLNL, Vanderbilt University & Oak Ridge National Laboratory",
     "etymology": "after Tennessee, USA",
-    "description": ""
+    "description": "",
+    "human_namesake": false,
+    "language": "Greek"
 },    
      {
     "symbol": "Og", 
@@ -2478,7 +2712,9 @@
     "discovery_date":2002,
     "discovery_details":"2002 by JINR & LLNL",
     "etymology": "after Yuri Oganessian",
-    "description": ""
+    "description": "",
+    "human_namesake": true,
+    "language": "Greek"
 }
 ]
 }
