@@ -311,3 +311,7 @@ h1, h3 {
         padding-top: 10px;
     }
 }
+
+.centre-text {
+    text-align: center;
+}

@@ -240,8 +240,8 @@ function runQuery(input) {
     } 
       
     // search by group
-    else if (q.match(/^group[-\s]?\d+$/i)) {
-        q = q.replace('group', '' );
+    else if ( (q.match(/^group[-\s]?\d+$/i)) || (q.match(/^grp[-\s]?\d+$/i)) ) {
+        q = q.includes('group')? q.replace('group', '' ) : q.replace('grp', '' );
         q = q.replace('-', '' );
         q = parseInt(q, 10);
         r = getMatchingElements(q, "group");
