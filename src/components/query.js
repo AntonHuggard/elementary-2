@@ -65,6 +65,14 @@ function getMatchingElements (term, attr, precision=null, tolerance=0) {
                 });
             break;
 
+        case "human_namesake":
+            // search by chemical symbol -- 2 letters
+            atoms.forEach(elmt => { 
+                if (elmt[attr]) 
+                    r.push(elmt.symbol) 
+                });
+            break;
+
         default:
             atoms.forEach(element => {
                 const dataType = typeof element[attr]
@@ -103,6 +111,11 @@ function runQuery(input) {
         (q.match(/^found (after|since|post) \d{3,4}?\s?$/i)) ) {
         const year = q.replace(/\D/g,'');
         r = getMatchingElements(parseInt(year), "discovery_date", "gt");
+    }
+    else if (
+        (q.match(/^named after (someone)?$/i)) || 
+        (q.match(/^namesake$/i)) ) {
+        r = getMatchingElements(true, "human_namesake");
     }
     // search by atomic number
     else if(q.match(/^\d{1,3}\s?$/i)) {

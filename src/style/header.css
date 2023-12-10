@@ -1,7 +1,7 @@
 
 
 header { 
-    background-color: rgba(46, 46, 46, 0.438); 
+    background-color: rgba(46, 46, 46, 0.75); 
     backdrop-filter: blur(20px);
     margin-bottom: 10px;
     display: grid;
