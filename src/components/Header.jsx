@@ -15,7 +15,7 @@ class Header extends Component {
 
     render() {
 
-        let headerText = `<div class='opt-title'>Searchable</div> periodic table`;
+        let headerText = `<div class='desktop-only-text'>Searchable</div> periodic table`;
         if (this.props.language === "mi") headerText = `Ripanga ngota`;
 
         return (

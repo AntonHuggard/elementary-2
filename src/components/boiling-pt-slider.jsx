@@ -52,7 +52,7 @@ class BoilingPtSlider extends Component {
                     className="slider" 
                     id="BP_slider" 
                     onChange={this.handleBoilingPoint} />
-                <p id = "BP_display">drag slider to change temperature</p>
+                <p id = "BP_display">drag slider <span class='desktop-only-text'>to change temperature</span></p>
             </div>
         );
     }
