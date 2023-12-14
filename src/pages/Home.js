@@ -243,14 +243,14 @@ class Home extends Component {
     convertTemp(value, r, outputUnits="celsius") { 
         // value is in deg C, r is number of dp to round to, outputUnits is convert to
 
-        if (outputUnits === "fahrenheit") return ((5/9)*(value - 32)).toFixed(r);
-        else if (outputUnits === "kelvin") return (Number(value) + 273.15).toFixed(r);
+        if (outputUnits === scaleNames['f']) return ((5/9)*(value - 32)).toFixed(r);
+        else if (outputUnits === scaleNames['k']) return (Number(value) + 273.15).toFixed(r);
         return value;
     }
 
     getUnitSymbol(units) {
-        if (units === "fahrenheit") return " &#176;F";
-        else if (units === "kelvin") return " K";
+        if (units === scaleNames['f']) return " &#176;F";
+        else if (units === scaleNames['k']) return " K";
         return " &#176;C";
     }
 
