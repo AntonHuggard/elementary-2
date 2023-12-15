@@ -44,7 +44,7 @@ class BoilingPtSlider extends Component {
     render() {
         
         return ( 
-            <div id="boiling_pt_div" className="slider_div">
+            <div id="boiling_pt_div" className="slider_div not-selectable">
                 <input 
                     type="range" 
                     min="-273" 

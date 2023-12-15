@@ -129,7 +129,8 @@ h1, h3 {
 }
 
 #filter-accordian button:hover {
-    background-color: #45aafc;
+    background-color: #7dc4ff;
+    cursor: pointer;
 }
 
 .slider-menu-icon { display: none; }
@@ -314,4 +315,13 @@ h1, h3 {
 
 .centre-text {
     text-align: center;
+}
+
+.not-selectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

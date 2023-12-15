@@ -44,7 +44,7 @@ class MeltingPtSlider extends Component {
     render() {
 
         return ( 
-            <div id="melting_pt_div" className="slider_div">
+            <div id="melting_pt_div" className="slider_div not-selectable">
                 <input 
                     type="range" 
                     min="-273" 

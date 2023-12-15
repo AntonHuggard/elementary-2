@@ -8,6 +8,13 @@ class SearchBar extends Component {
         this.props.onHandleQuery("");
     }
 
+    handler = () => {
+        if (! this.state.mouseOver) this.props.onHandleFilter();
+    }
+
+    mouseEnter = () => {this.setState({ mouseOver : true });}
+    mouseExit = () => {this.setState({ mouseOver : false });}
+
     render() {
         
         let placeholderText = "Search elements... ";
@@ -31,7 +38,7 @@ class SearchBar extends Component {
 
         return ( 
             
-                <div id="element_search_container" >
+                <div id="element_search_container" className='not-selectable'>
                     <img 
                         id='query-img'
                         src={magnifyingGlass} 
@@ -59,7 +66,12 @@ class SearchBar extends Component {
                         id='filter-menu' 
                         onClick={this.props.onHandleFilter}
                         >{dropdownText} &#8595;</span>
-                    <div id='filter-accordian' className='hide-me'>
+                    <div 
+                        id='filter-accordian' 
+                        className='hide-me'  
+                        onMouseEnter={this.mouseEnter}
+                        onMouseLeave={this.mouseExit}
+                        >
                         <button onClick={e => {this.props.onSelectFilter('clear')}}>{optionNoFilter}</button>
                         <button onClick={e => {this.props.onSelectFilter('s-block')}}>s-block</button>
                         <button onClick={e => {this.props.onSelectFilter('p-block')}}>p-block</button>

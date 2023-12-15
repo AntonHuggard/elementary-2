@@ -4,7 +4,7 @@ class ElectronegSlider extends Component {
 
     render() {
         return ( 
-            <div id="electronegativity_div" className="slider_div">
+            <div id="electronegativity_div" className="slider_div not-selectable">
             <input 
               type="range" 
               min="0" 

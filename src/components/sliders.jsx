@@ -24,14 +24,14 @@ class SliderMenu extends Component {
     render() {
         let sliderTitle = this.getSliderTitle(this.props.inputOption);
 
-        const labelMP = (this.props.language === "mi") ? `pae rewa` : `melting Point`;
-        const labelBP = (this.props.language === "mi") ? `hūnga` : `boiling Point`;
+        const labelMP = (this.props.language === "mi") ? `pae rewa` : `melting point`;
+        const labelBP = (this.props.language === "mi") ? `hūnga` : `boiling point`;
         const labelDiscovery = (this.props.language === "mi") ? `kitea` : `discovery date`;
         const labelEN = (this.props.language === "mi") ? `irahikotōraro` : `electronegativity`;
 
         return ( 
             <>
-            <div id='slider-menu'>
+            <div id='slider-menu' className='not-selectable'>
                 <button onClick={ () => {this.props.onSelectQuery("en-slider")} }>
                     <img src={electron} alt="electronegativity symbol" className='slider-menu-icon'/>
                     <span className='slider-menu-txt'>{labelEN}</span>
