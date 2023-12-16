@@ -52,7 +52,7 @@ class MeltingPtSlider extends Component {
                     className="slider" 
                     id="MP_slider" 
                     onChange={this.handleMeltingPoint} />
-                <p id="MP_display">drag slider <span class='desktop-only-text'>to change temperature</span></p>
+                <p id="MP_display">drag slider <span className='desktop-only-text'>to change temperature</span></p>
             </div>
         );
     }
