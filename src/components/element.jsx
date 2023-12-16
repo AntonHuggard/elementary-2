@@ -4,7 +4,7 @@ class Element extends React.Component {
 
     getClasses = atom => {
         const mainClass = atom.primary_class;
-        return "element-tile " + mainClass;
+        return "element-tile not-selectable " + mainClass;
     }
 
     render() {

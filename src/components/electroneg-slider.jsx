@@ -4,7 +4,7 @@ class ElectronegSlider extends Component {
 
     render() {
         return ( 
-            <div id="electronegativity_div" className="slider_div">
+            <div id="electronegativity_div" className="slider_div not-selectable">
             <input 
               type="range" 
               min="0" 
@@ -13,7 +13,7 @@ class ElectronegSlider extends Component {
               id="EN_slider" 
               onChange={this.props.onHandleElectronegativity} 
               />
-            <p id = "EN_display">drag slider to change electronegativity</p>
+            <p id = "EN_display">drag slider <span className='desktop-only-text'>to change electronegativity</span></p>
         </div>
         );
     }

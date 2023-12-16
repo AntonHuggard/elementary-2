@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
 import Sidenav from '../components/SideNav';
-import ions from '../components/ions.json'
-import IonTable from '../components/itable'
+import ions from '../components/ions.json';
+import IonTable from '../components/itable';
+import {Helmet} from "react-helmet";
 
 class Ions extends Component {
 
@@ -13,6 +14,9 @@ class Ions extends Component {
     render () {
         return (
             <>
+                <Helmet>
+                    <title>Table of Ions</title>
+                </Helmet>
                 <Header />
                 <Sidenav pageSettings={false} />
 

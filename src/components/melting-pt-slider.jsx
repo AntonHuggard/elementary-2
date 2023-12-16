@@ -44,7 +44,7 @@ class MeltingPtSlider extends Component {
     render() {
 
         return ( 
-            <div id="melting_pt_div" className="slider_div">
+            <div id="melting_pt_div" className="slider_div not-selectable">
                 <input 
                     type="range" 
                     min="-273" 
@@ -52,7 +52,7 @@ class MeltingPtSlider extends Component {
                     className="slider" 
                     id="MP_slider" 
                     onChange={this.handleMeltingPoint} />
-                <p id="MP_display">drag slider to change temperature</p>
+                <p id="MP_display">drag slider <span className='desktop-only-text'>to change temperature</span></p>
             </div>
         );
     }

@@ -4,7 +4,7 @@ class DiscoverySlider extends Component {
 
     render() {
         return ( 
-            <div id="discovery_div" className="slider_div">
+            <div id="discovery_div" className="slider_div not-selectable">
                 <input 
                 type="range" 
                 min="1600" 

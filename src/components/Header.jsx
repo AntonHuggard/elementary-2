@@ -15,11 +15,11 @@ class Header extends Component {
 
     render() {
 
-        let headerText = `<div class='opt-title'>Searchable</div> periodic table`;
+        let headerText = `<div class='desktop-only-text'>Searchable</div> periodic table`;
         if (this.props.language === "mi") headerText = `Ripanga ngota`;
 
         return (
-            <header>
+            <header className='not-selectable'>
                 <div id='page-menu' className="header-clickable" onClick={this.handleShowMenu}>
                     <img src={menu} alt="navigation menu" />
                     <span className='unselectable top-menu-txt'>menu</span>

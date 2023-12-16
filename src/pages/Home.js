@@ -12,6 +12,7 @@ import Modal from '../components/modal';
 import runQuery from '../components/query';
 import PageSettings from '../components/page-settings';
 import React, { Component } from 'react';
+import {Helmet} from "react-helmet";
 
 
 const scaleNames = {
@@ -32,6 +33,7 @@ class Home extends Component {
         selectedElement: null,
         periodicTableClass: "periodic-table default-view",
         language: 'en',
+        activeFilter: 'none',
     };
     
     showElements = (show) => {
@@ -74,36 +76,43 @@ class Home extends Component {
     handleFilter = (filter) => {
           this.showElements(false);
           let results = [];
-    
-          if (filter.match(/[spdf]-block\s?$/i)) { 
-            const block = filter[0];
-            results = this.filterElements(block, "block");
-          } else if(filter==='radioactive') {
-            results = this.filterElements(true, "radioactive");
-          } else if(filter==='gas') {
-            results = this.filterElements("gas", "state_at_standard_conditions");
-          } else if(filter==='liquid') {
-            results = this.filterElements("liquid", "state_at_standard_conditions");
-          } else if(filter==='solid') {
-            results = this.filterElements("solid", "state_at_standard_conditions");
-          } else if(filter==='nonmetal') {
-            results = this.filterElements("nonmetal", "metalness");
-          } else if(filter==='metal') {
-            results = this.filterElements("metal", "metalness");
-          } else if(filter==='metalloid') {
-            results = this.filterElements("metalloid", "metalness");
-          } else if(filter==='synthetic') {
-            this.state.atoms.forEach(elmt => { 
-              if(elmt.atomic_number >= 95) results.push(elmt.symbol) 
+
+          if (this.state.activeFilter !== filter) {
+            this.setState({activeFilter: filter})
+            if (filter.match(/[spdf]-block\s?$/i)) { 
+              const block = filter[0];
+              results = this.filterElements(block, "block");
+            } else if(filter==='radioactive') {
+              results = this.filterElements(true, "radioactive");
+            } else if(filter==='gas') {
+              results = this.filterElements("gas", "state_at_standard_conditions");
+            } else if(filter==='liquid') {
+              results = this.filterElements("liquid", "state_at_standard_conditions");
+            } else if(filter==='solid') {
+              results = this.filterElements("solid", "state_at_standard_conditions");
+            } else if(filter==='nonmetal') {
+              results = this.filterElements("nonmetal", "metalness");
+            } else if(filter==='metal') {
+              results = this.filterElements("metal", "metalness");
+            } else if(filter==='metalloid') {
+              results = this.filterElements("metalloid", "metalness");
+            } else if(filter==='synthetic') {
+              this.state.atoms.forEach(elmt => { 
+                if(elmt.atomic_number >= 95) results.push(elmt.symbol) 
+              });
+            } else {
+              this.state.atoms.forEach(elmt => { results.push(elmt.symbol) });
+            }
+      
+            results.forEach(symbol => {
+              let htmlAtom = document.getElementById(symbol);
+              htmlAtom.style.opacity = "100%";
             });
+
           } else {
-            this.state.atoms.forEach(elmt => { results.push(elmt.symbol) });
+            this.setState({activeFilter: 'none'});
+            this.showElements(true);
           }
-    
-          results.forEach(symbol => {
-            let htmlAtom = document.getElementById(symbol);
-            htmlAtom.style.opacity = "100%";
-          });
     
     }
     
@@ -217,14 +226,7 @@ class Home extends Component {
         else this.hideInputsExcept("search");
     }
     
-    handleFilterToggle = () => {
-        const filter_btn = document.getElementById('filter-menu');
-        const magnifying_glass = document.getElementById('query-img');
-        const filter_menu = document.getElementById('filter-accordian');
-        filter_btn.classList.toggle('expanded');
-        magnifying_glass.classList.toggle('expanded');
-        filter_menu.classList.toggle('hide-me');
-    }
+    
 
 
     toggleUnits = () => {
@@ -243,14 +245,14 @@ class Home extends Component {
     convertTemp(value, r, outputUnits="celsius") { 
         // value is in deg C, r is number of dp to round to, outputUnits is convert to
 
-        if (outputUnits === "fahrenheit") return ((5/9)*(value - 32)).toFixed(r);
-        else if (outputUnits === "kelvin") return (Number(value) + 273.15).toFixed(r);
+        if (outputUnits === scaleNames['f']) return ((5/9)*(value - 32)).toFixed(r);
+        else if (outputUnits === scaleNames['k']) return (Number(value) + 273.15).toFixed(r);
         return value;
     }
 
     getUnitSymbol(units) {
-        if (units === "fahrenheit") return " &#176;F";
-        else if (units === "kelvin") return " K";
+        if (units === scaleNames['f']) return " &#176;F";
+        else if (units === scaleNames['k']) return " K";
         return " &#176;C";
     }
 
@@ -273,13 +275,17 @@ class Home extends Component {
 
       return (
             <>
+
+                <Helmet>
+                    <title>Periodic Table</title>
+                </Helmet>
+
                 <Header language={this.state.language} pageSettings={true} />
                 <Sidenav />
                     
                 <div id='element_search_wrapper'>
                     <SearchBar
                         onHandleQuery={this.handleQuery}
-                        onHandleFilter={this.handleFilterToggle}
                         onSelectFilter={this.handleFilter}
                         language={this.state.language} />
 

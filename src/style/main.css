@@ -19,7 +19,7 @@ h1, h3 {
     font-weight: normal;
     margin-bottom: 0;
 }
-.opt-title { display: inline; }
+.desktop-only-text { display: inline; }
 
 .hide-me {
     display: none !important;
@@ -36,7 +36,7 @@ h1, h3 {
 #element_search_wrapper {
     width: 100vw;
     z-index: 1;
-    position: fixed;
+    position: absolute;
     display: block;
     margin: auto;
 }
@@ -129,7 +129,8 @@ h1, h3 {
 }
 
 #filter-accordian button:hover {
-    background-color: #45aafc;
+    background-color: #7dc4ff;
+    cursor: pointer;
 }
 
 .slider-menu-icon { display: none; }
@@ -285,7 +286,7 @@ h1, h3 {
 #slider-title { display: none; }
 
 @media only screen and (max-width: 485px) {
-    .opt-title { display: none; }
+    .desktop-only-text { display: none; }
     .slider-menu-icon { 
         display: block; 
         margin: auto;
@@ -310,4 +311,17 @@ h1, h3 {
         font-size: 1em;
         padding-top: 10px;
     }
+}
+
+.centre-text {
+    text-align: center;
+}
+
+.not-selectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

@@ -44,7 +44,7 @@ class BoilingPtSlider extends Component {
     render() {
         
         return ( 
-            <div id="boiling_pt_div" className="slider_div">
+            <div id="boiling_pt_div" className="slider_div not-selectable">
                 <input 
                     type="range" 
                     min="-273" 
@@ -52,7 +52,7 @@ class BoilingPtSlider extends Component {
                     className="slider" 
                     id="BP_slider" 
                     onChange={this.handleBoilingPoint} />
-                <p id = "BP_display">drag slider to change temperature</p>
+                <p id = "BP_display">drag slider <span className='desktop-only-text'>to change temperature</span></p>
             </div>
         );
     }
