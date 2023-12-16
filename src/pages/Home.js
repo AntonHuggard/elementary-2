@@ -226,14 +226,7 @@ class Home extends Component {
         else this.hideInputsExcept("search");
     }
     
-    handleFilterToggle = () => {
-        const filter_btn = document.getElementById('filter-menu');
-        const magnifying_glass = document.getElementById('query-img');
-        const filter_menu = document.getElementById('filter-accordian');
-        filter_btn.classList.toggle('expanded');
-        magnifying_glass.classList.toggle('expanded');
-        filter_menu.classList.toggle('hide-me');
-    }
+    
 
 
     toggleUnits = () => {
@@ -293,7 +286,6 @@ class Home extends Component {
                 <div id='element_search_wrapper'>
                     <SearchBar
                         onHandleQuery={this.handleQuery}
-                        onHandleFilter={this.handleFilterToggle}
                         onSelectFilter={this.handleFilter}
                         language={this.state.language} />
 
