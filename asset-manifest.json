@@ -1,21 +1,25 @@
 {
-  "main.css": "/static/css/main.c9dc402a.chunk.css",
-  "main.js": "/static/js/main.70bc82a1.chunk.js",
-  "main.js.map": "/static/js/main.70bc82a1.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.7314b764.js",
-  "runtime~main.js.map": "/static/js/runtime~main.7314b764.js.map",
-  "static/js/2.c1f310f4.chunk.js": "/static/js/2.c1f310f4.chunk.js",
-  "static/js/2.c1f310f4.chunk.js.map": "/static/js/2.c1f310f4.chunk.js.map",
-  "static/js/3.b95fb9f1.chunk.js": "/static/js/3.b95fb9f1.chunk.js",
-  "static/js/3.b95fb9f1.chunk.js.map": "/static/js/3.b95fb9f1.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.6503896e6d03178edad52953c54248b9.js": "/precache-manifest.6503896e6d03178edad52953c54248b9.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.c9dc402a.chunk.css.map": "/static/css/main.c9dc402a.chunk.css.map",
-  "static/media/Gear_icon.svg": "/static/media/Gear_icon.4a3a6a47.svg",
-  "static/media/Hamburger_icon.svg": "/static/media/Hamburger_icon.9f422480.svg",
-  "static/media/main.css": "/static/media/background.99d64bef.jpg",
-  "static/media/mediaeval.png": "/static/media/mediaeval.37417818.png",
-  "static/media/prehistoric.png": "/static/media/prehistoric.33aed809.png",
-  "static/media/toggle-units.png": "/static/media/toggle-units.72214008.png"
+  "files": {
+    "main.css": "/static/css/main.bc9dfc02.css",
+    "main.js": "/static/js/main.4aba243e.js",
+    "static/js/787.357bed1e.chunk.js": "/static/js/787.357bed1e.chunk.js",
+    "static/media/date-search.png": "/static/media/date-search.6dfc1be26b07e34fd6ca.png",
+    "static/media/row-search.png": "/static/media/row-search.63c71b75a7cf3f6e0d6d.png",
+    "static/media/background.jpg": "/static/media/background.9b95560936739bf493e7.jpg",
+    "static/media/num-search.png": "/static/media/num-search.d5a53c45eb2658be85c1.png",
+    "static/media/mediaeval.png": "/static/media/mediaeval.44c3fb7d5ddaaf8c8c32.png",
+    "static/media/settings-help.png": "/static/media/settings-help.02efb48085fffdbe3779.png",
+    "static/media/prehistoric.png": "/static/media/prehistoric.ceadbe53911497d00d11.png",
+    "static/media/toggle-help.png": "/static/media/toggle-help.7191d88e12e9f1442527.png",
+    "static/media/Gear_icon.svg": "/static/media/Gear_icon.69d50eaf15344b9e16e37e566614b763.svg",
+    "index.html": "/index.html",
+    "static/media/Hamburger_icon.svg": "/static/media/Hamburger_icon.b392b4824e1e687dab03254c2cea669a.svg",
+    "main.bc9dfc02.css.map": "/static/css/main.bc9dfc02.css.map",
+    "main.4aba243e.js.map": "/static/js/main.4aba243e.js.map",
+    "787.357bed1e.chunk.js.map": "/static/js/787.357bed1e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc9dfc02.css",
+    "static/js/main.4aba243e.js"
+  ]
 }
