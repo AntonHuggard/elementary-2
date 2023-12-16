@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import radioactiveImg from '../imgs/radioactive.png';
 import maoriData from '../components/atoms-maori.json';
 import getElectronConfig from './electron-config';
+import getTileSVG from './element-tile-svg';
 
 class Modal extends Component {
     
@@ -33,78 +34,10 @@ class Modal extends Component {
             const real_units = this.props.onGetUnitSymbol(units);
             const melting_pt = known_mp? mp + real_units : "<em>unknown</em>";
             const boiling_pt = known_bp? bp + real_units : "<em>unknown</em>";
-            const electron_config = getElectronConfig(this.props.element.atomic_number); //  bookmark
-            const isRadioactive = this.props.element.radioactive;
+            const electron_config = getElectronConfig(this.props.element.atomic_number);
+            const svg = getTileSVG(this.props.element);
 
-            const nonmetals_colour = "rgb(223, 0, 0)";
-            const alkali_metals_colour = "rgb(219, 102, 6)";
-            const alkaline_earth_metals_clour = "rgb(223, 182, 0)";
-            const metaux_pauvres_colour = "rgb(5, 148, 5)";
-            const metalloid_colour = "rgb(0, 179, 90)";
-            const nonmetal_colour = "#7c4cdb";
-            const lanthanoid_colour = "#5900b3";
-            const actinoid_colour = "#000099";
-            const noble_gas_colour = "rgb(99, 0, 124)";
-            const unknown_colour = "rgb(34, 34, 34)";
-            const transition_metal_colour = "rgb(21, 49, 85)";
-        
-            let fill_colour = "rgb(223, 0, 0)";
-            const text_colour = "white";
-
-            switch (this.props.element.primary_class) {
-                case 'non-metal':
-                    fill_colour = nonmetals_colour;
-                    break;
-                case 'alkali-metal':
-                    fill_colour = alkali_metals_colour;
-                    break;
-                case 'noble_gas':
-                    fill_colour = noble_gas_colour;
-                    break;
-                case 'alkaline-earth-metal':
-                    fill_colour = alkaline_earth_metals_clour;
-                    break;
-                case 'metalloid':
-                    fill_colour = metalloid_colour;
-                    break;
-                case 'non-metals':
-                    fill_colour = nonmetal_colour;
-                    break;
-                case 'metaux_pauvres':
-                    fill_colour = metaux_pauvres_colour;
-                    break;
-                case 'lanthanoid':
-                    fill_colour = lanthanoid_colour;
-                    break;
-                case 'actinoid':
-                    fill_colour = actinoid_colour;
-                    break;
-                case 'unknown':
-                    fill_colour = unknown_colour;
-                    break;
-                default:
-                    fill_colour = transition_metal_colour;
-            }
-
-            const svg = `
-                    <style>
-                        .chemical_symbol { 
-                            font: bold 90px sans-serif !important;
-                            fill: ${text_colour};
-                        }
-                        .number {
-                            font: bold 40px sans-serif;
-                            fill: ${text_colour};
-                        }
-                    </style>
-                    <rect width = "100%" height = "100%" style = "fill: white" />
-                    <rect x = "5%" y = "3%" width = "90%" height = "94%" style = "fill: ${fill_colour}" />
-                    <text x="75%" y="15%" dominant-baseline="middle" text-anchor="middle" class="number">${this.props.element.atomic_number}</text>
-                    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" class="chemical_symbol">${this.props.element.symbol}</text>
-                    <text x="50%" y="80%" dominant-baseline="middle" text-anchor="middle" class="number">${this.props.element.atomic_mass}</text>
-                `;
-
-            const radioactiveClasses = isRadioactive? "radioactive-symbol": "radioactive-symbol hide-me";
+            const raClasses = this.props.element.radioactive? "radioactive-symbol": "radioactive-symbol hide-me";
 
             const atomIndex = this.props.element.atomic_number - 1;
             const maoriAtom = maoriData.atoms[atomIndex];
@@ -143,7 +76,7 @@ class Modal extends Component {
                                 {labelDiscovery}: <span dangerouslySetInnerHTML={{ __html: discDetails }} /> <br/>
                                 Etymology: <span dangerouslySetInnerHTML={{ __html: etymology }} /> <br/>
                             </div>
-                            <img className={radioactiveClasses} src={radioactiveImg} alt='radioactive symbol' />
+                            <img className={raClasses} src={radioactiveImg} alt='radioactive symbol' />
                         </div>
                         {/* <div className= "item7">{this.props.element.name}</div> */}
                     </div>
