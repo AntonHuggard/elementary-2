@@ -3,12 +3,17 @@ import Header from '../components/Header';
 import Sidenav from '../components/SideNav';
 import prehistoric from '../imgs/prehistoric.png';
 import mediaeval from '../imgs/mediaeval.png';
+import {Helmet} from "react-helmet";
 
 class About extends Component {
 
       render() {
         return(
             <>
+                <Helmet>
+                    <title>About</title>
+                </Helmet>
+                
                 <Header pageSettings={false} />
                 <Sidenav />
                 

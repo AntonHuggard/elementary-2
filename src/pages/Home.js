@@ -12,6 +12,7 @@ import Modal from '../components/modal';
 import runQuery from '../components/query';
 import PageSettings from '../components/page-settings';
 import React, { Component } from 'react';
+import {Helmet} from "react-helmet";
 
 
 const scaleNames = {
@@ -273,6 +274,11 @@ class Home extends Component {
 
       return (
             <>
+
+                <Helmet>
+                    <title>Periodic Table</title>
+                </Helmet>
+
                 <Header language={this.state.language} pageSettings={true} />
                 <Sidenav />
                     

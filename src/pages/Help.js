@@ -6,12 +6,18 @@ import searchRow from '../imgs/row-search.png';
 import searchDate from '../imgs/date-search.png';
 import settingsHelp from '../imgs/settings-help.png';
 import unitToggle from '../imgs/toggle-help.png';
+import {Helmet} from "react-helmet";
 
 class Help extends Component {
 
       render() {
         return(
             <>
+
+                <Helmet>
+                    <title>Help</title>
+                </Helmet>
+
                 <Header />
                 <Sidenav pageSettings={false} />
                 <div id='content'>
