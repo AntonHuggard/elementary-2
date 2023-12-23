@@ -32,12 +32,16 @@ class Hydrogen extends Component {
                 <Header />
                 <Sidenav />
 
-                <h1>{this.state.atom.symbol}: {this.state.atom.name}</h1>  
-                <p>{this.state.atom.name}</p>   
-                <p>{this.state.atom.id}</p>
-                <p>{this.state.atom.atomic_mass}</p>   
-                <p>{this.state.atom.period}</p>   
-                <p>{this.state.atom.group}</p>   
+                <div id='content'>
+                  <h1>{this.state.atom.name}</h1>  
+                  <p>{this.state.atom.name}</p>   
+                  <p>{this.state.atom.id}</p>
+                  <p>{this.state.atom.atomic_mass}</p>   
+                  <p>{this.state.atom.period}</p>   
+                  <p>{this.state.atom.group}</p>   
+                </div>
+
+                
             </>
         );
       }

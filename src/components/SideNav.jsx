@@ -12,7 +12,7 @@ class Sidenav extends Component {
         return (
             <div id="side-menu" className='hide-menu'>
                 <button onClick={this.handleCloseMenu} id='close-side-menu'>close menu</button>
-                <a href="/#/home">periodic table (home)</a>
+                <a href="/">periodic table (home)</a>
                 <a href="/#/ions">table of ions</a>
                 <a href="/#/help">instructions/help</a>
                 <a href="/#/about">about</a>
