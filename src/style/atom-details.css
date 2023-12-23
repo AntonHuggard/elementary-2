@@ -14,3 +14,23 @@
     grid-row: 2;
     grid-column: 2;
 }
+
+@media only screen and (max-width: 550px) {
+    .atom-details {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .atom-details h1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #atom-container {
+        margin-top: 20px;
+        grid-row: 2;
+        grid-column: 1;
+    }
+    #atom-data {
+        grid-row: 3;
+        grid-column: 1;
+    }
+}
