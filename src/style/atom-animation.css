@@ -1,0 +1,49 @@
+#atom-container {
+    height: 220px;
+}
+#atom {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    margin: auto;
+    width: 300px;
+}
+#electron {
+    grid-row: 1;
+    grid-column: 1;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    z-index: 1;
+    animation: ORBIT 3s infinite linear;
+}
+#nucleus {
+    grid-row: 1;
+    grid-column: 1;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    margin-top: 85px;
+}
+@keyframes ORBIT { 
+    0% { 
+        transform: rotate(0deg) translateY(100px) rotate(0deg); 
+    } 
+    100% { 
+        transform: rotate(360deg) translateY(100px) rotate(-360deg); 
+    }
+}
+#s-orbital-path {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid rgb(48, 48, 48);
+    background-color: transparent;
+    grid-column: 1;
+    grid-row: 1;
+}

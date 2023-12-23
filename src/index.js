@@ -10,6 +10,8 @@ import './style/sliderMenu.css';
 import './style/generic.css';
 import './style/ions.css';
 import './style/page-settings.css';
+import './style/atom-details.css';
+import './style/atom-animation.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
