@@ -38,7 +38,7 @@ class Modal extends Component {
             const svg = getTileSVG(this.props.element);
 
             const raClasses = this.props.element.radioactive? "radioactive-symbol": "radioactive-symbol hide-me";
-            const hasPage = this.props.element.link != '/'? this.props.element.link: "hide-me";
+            const hasPage = this.props.element.link !== '/'? this.props.element.link: "hide-me";
 
             const atomIndex = this.props.element.atomic_number - 1;
             const maoriAtom = maoriData.atoms[atomIndex];
