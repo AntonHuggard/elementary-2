@@ -15,6 +15,35 @@
     grid-column: 2;
 }
 
+#atom-description {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+
+#historic-img {
+    width: 100%;
+    max-width: 500px;
+    grid-row: 4;
+    grid-column: 1 / span 2;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.horizontal-line {
+    width: 100%;
+    max-width: 700px;
+}
+
+#atom-etymology {
+    grid-row: 5;
+    grid-column: 1 / span 2;
+}
+
+#atom-discovery {
+    grid-row: 6;
+    grid-column: 1 / span 2;
+}
+
 @media only screen and (max-width: 550px) {
     .atom-details {
         display: grid;
@@ -31,6 +60,25 @@
     }
     #atom-data {
         grid-row: 3;
+        grid-column: 1;
+    }
+    #atom-description {
+        grid-row: 4;
+        grid-column: 1;
+    }
+    
+    #historic-img {
+        grid-row: 5;
+        grid-column: 1;
+    }
+    
+    #atom-etymology {
+        grid-row: 6;
+        grid-column: 1;
+    }
+    
+    #atom-discovery {
+        grid-row: 7;
         grid-column: 1;
     }
 }
