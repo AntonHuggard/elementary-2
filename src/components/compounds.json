@@ -96,9 +96,9 @@
             "elements": ["Fe", "Ni"]
         },
         {
-            "name": "",
+            "name": "water",
             "iupac-name": "",
-            "elements": []
+            "elements": ["H", "O"]
         },
         {
             "name": "tnt",
@@ -116,14 +116,14 @@
             "elements": ["C", "H", "O"]
         },
         {
-            "name": "",
+            "name": "hydroxide",
             "iupac-name": "",
-            "elements": []
+            "elements": ["H", "O"]
         },
         {
-            "name": "",
+            "name": "borane",
             "iupac-name": "",
-            "elements": []
+            "elements": ["B", "H"]
         },
         {
             "name": "",
