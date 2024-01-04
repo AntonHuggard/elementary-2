@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Header from '../components/Header';
-import Sidenav from '../components/SideNav';
-import atoms from '../components/atoms.json';
+import Header from '../../components/Header';
+import Sidenav from '../../components/SideNav';
+import atoms from '../../components/atoms.json';
 import {Helmet} from "react-helmet";
-import hindenburg from '../imgs/Hindenburg.jpg';
+import hindenburg from '../../imgs/Hindenburg.jpg';
 
 class Hydrogen extends Component {
 
@@ -50,7 +50,7 @@ class Hydrogen extends Component {
                     </div>
                     <div id="atom-container">
                         <div id="atom">
-                            <div id="electron"></div>
+                            <div id="electron-1" className='electron'></div>
                             <div id="nucleus"></div>
                             <div id="s-orbital-path"></div>
                         </div>
