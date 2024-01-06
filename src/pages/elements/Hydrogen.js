@@ -40,14 +40,16 @@ class Hydrogen extends Component {
                 <Sidenav />
 
                 <div id='content'>
+                  <h1>Hydrogen ({this.state.atom.symbol})</h1> 
                   <div className='atom-details'>
-                    <h1>{this.state.atom.name} ({this.state.atom.symbol})</h1>  
+                    
                     <div id='atom-data'>
                       <p>Atomic number: {this.state.atom.id}</p>
                       <p>Atomic mass: {this.state.atom.atomic_mass}</p>   
                       <p>Row/Period N<sup>o</sup> : {this.state.atom.period}</p>   
                       <p>Group N<sup>o</sup> : {this.state.atom.group}</p>   
                     </div>
+                    
                     <div id="atom-container">
                         <div id="atom">
                             <div id="electron-1" className='electron'></div>
@@ -55,23 +57,30 @@ class Hydrogen extends Component {
                             <div id="s-orbital-path"></div>
                         </div>
                     </div>
-                    <div id="atom-description" >
-                      <hr className='horizontal-line' />
-                      <h3>Description & Facts</h3>
-                      <p dangerouslySetInnerHTML={{ __html: this.state.atom.description }} />
-                    </div>
-                    <img id="historic-img" src={hindenburg} alt='Hindenburg disaster' />
-                    <div id="atom-etymology">
-                      <hr className='horizontal-line' />
-                      <h3>Etymology</h3>
-                      <p dangerouslySetInnerHTML={{ __html: this.state.atom.etymology }} />
-                    </div>
-                    <div id="atom-discovery">
-                      <hr className='horizontal-line' />
-                      <h3>Discovery</h3>
-                      <p dangerouslySetInnerHTML={{ __html: this.state.atom.discovery_details }} />
-                    </div>
+                    
                   </div>
+                  
+                  <div id="atom-description" >
+                    <hr className='horizontal-line' />
+                    <h3>About</h3>
+                    <p>
+                    Hydrogen is the first element and has smallest atomic mass. It is also the most abundant element in the universe. At standard conditions, it&apos;s a pretty boring colourless and odourless gas. On 6 May 1937 the German airship Hindenburg (filled with hydrogen gas) caught fire and killed 35 people. This marked the end of the airship era.
+                    </p> 
+                  </div>
+                  <img id="historic-img" src={hindenburg} alt='Hindenburg disaster' />
+                  
+                  <div id="atom-etymology">
+                    <hr className='horizontal-line' />
+                    <h3>Etymology</h3>
+                    <p dangerouslySetInnerHTML={{ __html: this.state.atom.etymology }} />
+                  </div>
+                  
+                  <div id="atom-discovery">
+                    <hr className='horizontal-line' />
+                    <h3>Discovery</h3>
+                    <p dangerouslySetInnerHTML={{ __html: this.state.atom.discovery_details }} />
+                  </div>
+
                 </div>
                 
             </>
