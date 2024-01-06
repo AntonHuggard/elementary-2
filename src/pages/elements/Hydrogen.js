@@ -59,26 +59,46 @@ class Hydrogen extends Component {
                     </div>
                     
                   </div>
+
+                  <hr className='horizontal-line' />
                   
-                  <div id="atom-description" >
-                    <hr className='horizontal-line' />
+                  <div>
                     <h3>About</h3>
                     <p>
                     Hydrogen is the first element and has smallest atomic mass. It is also the most abundant element in the universe. At standard conditions, it&apos;s a pretty boring colourless and odourless gas. On 6 May 1937 the German airship Hindenburg (filled with hydrogen gas) caught fire and killed 35 people. This marked the end of the airship era.
                     </p> 
                   </div>
                   <img id="historic-img" src={hindenburg} alt='Hindenburg disaster' />
+
+                  <hr className='horizontal-line' />
                   
-                  <div id="atom-etymology">
-                    <hr className='horizontal-line' />
+                  <div>
                     <h3>Etymology</h3>
                     <p dangerouslySetInnerHTML={{ __html: this.state.atom.etymology }} />
                   </div>
+
+                  <hr className='horizontal-line' />
                   
-                  <div id="atom-discovery">
-                    <hr className='horizontal-line' />
+                  <div>
                     <h3>Discovery</h3>
                     <p dangerouslySetInnerHTML={{ __html: this.state.atom.discovery_details }} />
+                  </div>
+
+                  <hr className='horizontal-line' />
+
+                  <div>
+                    <h3>Resources</h3>
+                    <p>RNZ's Elemental podcast <a href='https://www.rnz.co.nz/programmes/elemental/story/2018697133/hydrogen-number-1-in-the-universe'>Hydrogen</a></p>
+                    <iframe className='youtube-video'
+                      src="https://www.youtube.com/embed/6rdmpx39PRk">
+                    </iframe>
+                    <h4 className='video-title'>Periodic Videos: Hydrogen</h4>
+
+                    <iframe className='youtube-video'
+                      src="https://www.youtube.com/embed/qOTgeeTB_kA">
+                    </iframe>
+                    <h4 className='video-title'>Explosions</h4>
+                    
                   </div>
 
                 </div>

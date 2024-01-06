@@ -39,8 +39,8 @@ class Hydrogen extends Component {
                 <Sidenav />
 
                 <div id='content'>
+                <h1>Helium ({this.state.atom.symbol})</h1>  
                   <div className='atom-details'>
-                    <h1>Helium ({this.state.atom.symbol})</h1>  
                     <div id='atom-data'>
                       <p>Atomic number: {this.state.atom.id}</p>
                       <p>Atomic mass: {this.state.atom.atomic_mass}</p>   
@@ -56,21 +56,24 @@ class Hydrogen extends Component {
                         </div>
                     </div>
                   </div>
+
+                  <hr className='horizontal-line' />
                   
-                  <div id="atom-description" >
-                    <hr className='horizontal-line' />
+                  <div>
                     <h3>Description & Facts</h3>
                     <p dangerouslySetInnerHTML={{ __html: this.state.atom.description }} />
                   </div>
+
+                  <hr className='horizontal-line' />
                   
-                  <div id="atom-etymology">
-                    <hr className='horizontal-line' />
+                  <div>
                     <h3>Etymology</h3>
                     <p dangerouslySetInnerHTML={{ __html: this.state.atom.etymology }} />
                   </div>
+
+                  <hr className='horizontal-line' />
                   
-                  <div id="atom-discovery">
-                    <hr className='horizontal-line' />
+                  <div>
                     <h3>Discovery</h3>
                     <p dangerouslySetInnerHTML={{ __html: this.state.atom.discovery_details }} />
                   </div>
