@@ -2,7 +2,9 @@ import React, { Component } from 'react'
 import Header from '../components/Header';
 import Sidenav from '../components/SideNav';
 import prehistoric from '../imgs/prehistoric.png';
-import mediaeval from '../imgs/mediaeval.png';
+import mediaeval from '../imgs/mediaeval-2.png';
+import idea from '../imgs/website-idea.png';
+import firstVersion from '../imgs/version-1.png';
 import {Helmet} from "react-helmet";
 
 class About extends Component {
@@ -35,34 +37,44 @@ class About extends Component {
                       <br/>
                     </p>
                     <hr />
-                    <h3>history</h3>
+                    <h3>History</h3>
                     <p>
-                      This project started on Notepad on a computer at bFM (the Auckland University 
-                      student radio station).
+                      I had the idea for this project during a Computer Science lecture around September 2019. 
+                      After exams, I considered attempting to make 31 websites in 31 days. 
+                      I only got as far as writing down 31 ideas -- one of these was an "interactive periodic table".
+                      This is the earliest evidence I can find of the idea. 
+                    </p>
+                    <figure>
+                      <img src={idea} className="illustration" alt="first evidence of the idea" />
+                      <figcaption>
+                        My notebook, November 2019.
+                      </figcaption>
+                    </figure>
+                    <p>
+                      Development started in Notepad on a computer at bFM (the Auckland University student radio station).
                       I was manning the reception desk at the time and didn't have enough work to do so
-                      created a nondescript file called <em>d.html</em>. 
-                      I then slowly started chiselling away at the project in between responding
-                      to emails and uploading podcasts.
+                      created an inconspicuous file called <em>d.html</em>. 
+                      I was slowly chiselling away at this in between responding to emails and publishing podcasts.
                     </p>
                     <figure>
                       <img src={prehistoric} className="illustration" alt="first iteration of this project" />
                       <figcaption>
-                        This project circa Feb 2020 (before search was implemented).
+                        This project c. February 2020 (before search was implemented).
                       </figcaption>
                     </figure>
                     <p>
-                      Then along came Mr Covid and his 6 weeks of lockdown.
+                      I was at the bFM reception desk (March 2020) when, during one of the hourly news bulletins, they announced that the government was closing the border due to Covid-19.
                       <br/>
                       <br/>
-                      Then my friend Ben became a coach for the project. 
-                      He was able to point out the many, many stupid mistakes I was making and
-                      encouraged me to follow normal web development standards 
-                      (such as using CSS instead of abusing the newline tag).
+                      On my last day at the radio station before lockdown, I copied the d.html file onto a flash drive.
+                      I was lucky enough to receive the wage subsidy, so could treat the interactive periodic table as my full-time job.
+                      During this period, I made rapid progress and my friend Ben became a coach for the project. 
+                      He was able to point out the many, many stupid mistakes I was making and encouraged me to follow normal web development practices.
                     </p>
                     <figure>
                       <img src={mediaeval} className="illustration" alt="second iteration" />
                       <figcaption>
-                        A primitive version of the search feature was implemented.
+                        Clickable elements, 23 April 2020
                       </figcaption>
                     </figure>
 
@@ -70,6 +82,20 @@ class About extends Component {
                       The original plan was for these cards to be sent to high schools.
                       But, because the internet exists, all the questions and images were translated into webpages.
                       The quiz is now infintely scalable.  */}
+
+                    <p>
+                      By the end of 2020, the project had been completed.
+                    </p>
+                    <figure>
+                      <img src={firstVersion} className="illustration" alt="completed first version" />
+                      <figcaption>
+                        The completed first version of the project, December 2020.
+                      </figcaption>
+                    </figure>
+                    <p>
+                      Then, for no reason, in July 2022, I decided to rebuild the project using a new framework. 
+                      This (version 2) is what you are now looking at.
+                    </p>
                   <hr />
                   <h3>credits</h3>
                   <p>
