@@ -10,7 +10,8 @@ class Hydrogen extends Component {
     state = {
       atom: atoms.atoms[0],
       units: "celsius",
-      };
+      showIon: false
+    };
     
     
 
@@ -26,6 +27,10 @@ class Hydrogen extends Component {
           default:
             this.setState({ units : "celsius" });
         }
+      }
+
+      handleIonToggle = () => {
+        console.log('show ion');
       }
 
       render() {
@@ -49,13 +54,23 @@ class Hydrogen extends Component {
                       <p>Row/Period N<sup>o</sup> : {this.state.atom.period}</p>   
                       <p>Group N<sup>o</sup> : {this.state.atom.group}</p>   
                     </div>
-                    
+
                     <div id="atom-container">
+                      <div id="atom-graphics">
                         <div id="atom">
-                            <div id="electron-1" className='electron'></div>
-                            <div id="nucleus"></div>
-                            <div id="s-orbital-path"></div>
-                        </div>
+                              <div id="electron-1" className='electron'></div>
+                              <div id="nucleus"></div>
+                              <div id="s-orbital-path"></div>
+                          </div>
+                      </div>
+
+                      <div id="atom-control">
+                        {/* <label>ion</label> */}
+                        <label className="switch">
+                            <input type="checkbox" onClick={this.handleIonToggle}/>
+                            <span className="toggle round"></span>
+                        </label>
+                      </div>
                     </div>
                     
                   </div>
@@ -89,12 +104,12 @@ class Hydrogen extends Component {
                   <div>
                     <h3>Resources</h3>
                     <p>RNZ's Elemental podcast <a href='https://www.rnz.co.nz/programmes/elemental/story/2018697133/hydrogen-number-1-in-the-universe'>Hydrogen</a></p>
-                    <iframe className='youtube-video'
+                    <iframe className='youtube-video' title='video-1'
                       src="https://www.youtube.com/embed/6rdmpx39PRk">
                     </iframe>
                     <h4 className='video-title'>Periodic Videos: Hydrogen</h4>
 
-                    <iframe className='youtube-video'
+                    <iframe className='youtube-video' title='video-2'
                       src="https://www.youtube.com/embed/qOTgeeTB_kA">
                     </iframe>
                     <h4 className='video-title'>Explosions</h4>
