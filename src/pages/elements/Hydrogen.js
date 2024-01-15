@@ -58,9 +58,11 @@ class Hydrogen extends Component {
                     <div id="atom-container">
                       <div id="atom-graphics">
                         <div id="atom">
-                              <div id="electron-1" className='electron'></div>
+                              <div id="electron-1" className='electron ghost'></div>
                               <div id="nucleus"></div>
                               <div id="s-orbital-path"></div>
+                              <label id='ionic-charge'>+</label>
+                              <div id="ionic-charge-anti-border"></div>
                           </div>
                       </div>
 
