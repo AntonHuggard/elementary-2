@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.dcf44b18.css",
-    "main.js": "/static/js/main.116513e5.js",
+    "main.css": "/static/css/main.20e7001d.css",
+    "main.js": "/static/js/main.3551405b.js",
     "static/js/787.357bed1e.chunk.js": "/static/js/787.357bed1e.chunk.js",
     "static/media/date-search.png": "/static/media/date-search.6dfc1be26b07e34fd6ca.png",
     "static/media/row-search.png": "/static/media/row-search.63c71b75a7cf3f6e0d6d.png",
     "static/media/background.jpg": "/static/media/background.9b95560936739bf493e7.jpg",
+    "static/media/version-1.png": "/static/media/version-1.ecc90f4e36905256e6e0.png",
     "static/media/Hindenburg.jpg": "/static/media/Hindenburg.1e644ef4e6561a1371c6.jpg",
     "static/media/num-search.png": "/static/media/num-search.d5a53c45eb2658be85c1.png",
-    "static/media/mediaeval.png": "/static/media/mediaeval.44c3fb7d5ddaaf8c8c32.png",
+    "static/media/mediaeval-2.png": "/static/media/mediaeval-2.468622adeaf7baf2d88c.png",
     "static/media/settings-help.png": "/static/media/settings-help.02efb48085fffdbe3779.png",
     "static/media/prehistoric.png": "/static/media/prehistoric.ceadbe53911497d00d11.png",
+    "static/media/website-idea.png": "/static/media/website-idea.13aa2544f8272d6c38dc.png",
     "static/media/toggle-help.png": "/static/media/toggle-help.7191d88e12e9f1442527.png",
     "static/media/Gear_icon.svg": "/static/media/Gear_icon.69d50eaf15344b9e16e37e566614b763.svg",
     "index.html": "/index.html",
     "static/media/Hamburger_icon.svg": "/static/media/Hamburger_icon.b392b4824e1e687dab03254c2cea669a.svg",
-    "main.dcf44b18.css.map": "/static/css/main.dcf44b18.css.map",
-    "main.116513e5.js.map": "/static/js/main.116513e5.js.map",
+    "main.20e7001d.css.map": "/static/css/main.20e7001d.css.map",
+    "main.3551405b.js.map": "/static/js/main.3551405b.js.map",
     "787.357bed1e.chunk.js.map": "/static/js/787.357bed1e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcf44b18.css",
-    "static/js/main.116513e5.js"
+    "static/css/main.20e7001d.css",
+    "static/js/main.3551405b.js"
   ]
 }
