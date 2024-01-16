@@ -1,12 +1,12 @@
 
 #content {
-    /* background-color: rgba(49, 49, 49, 0.904);
+    background-color: rgba(49, 49, 49, 0.904);
     backdrop-filter: blur(5px);
     color: white;
-    border-radius: 20px; */
+    border-radius: 20px;
 }
 
-/* #content h1, #content h3 { color: white; } */
+#content h1, #content h3 { color: white; }
 
 #content h1 {
     font-size: 2em;
@@ -22,6 +22,7 @@
     grid-column: 1;
     display: grid;
     grid-template-rows: max-content max-content;
+    grid-row-gap: 15px;
 }
 #atom-data {
     grid-row: 2;

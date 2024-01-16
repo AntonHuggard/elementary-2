@@ -4,10 +4,10 @@ import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
 import {Helmet} from "react-helmet";
 
-class Helium extends Component {
+class Lithium extends Component {
 
     state = {
-      atom: atoms.atoms[1],
+      atom: atoms.atoms[2],
       units: "celsius",
       };
     
@@ -27,19 +27,29 @@ class Helium extends Component {
         }
       }
 
+      handleIonToggle = () => {
+        let electron = document.getElementById('electron-3');
+        let ionThingText = document.getElementById('ionic-charge');
+        let ionThingBorder = document.getElementById('ionic-charge-anti-border');
+
+        electron.classList.toggle('ghost');
+        ionThingText.classList.toggle('ghost');
+        ionThingBorder.classList.toggle('ghost');        
+      }
+
       render() {
         return(
             <>
 
                 <Helmet>
-                    <title>Helium</title>
+                    <title>Lithium</title>
                 </Helmet>
 
                 <Header language={this.state.language} pageSettings={false} />
                 <Sidenav />
 
                 <div id='content'>
-                <h1>Helium ({this.state.atom.symbol})</h1>  
+                <h1>Lithium ({this.state.atom.symbol})</h1>  
                   <div className='atom-details'>
                     <div id='atom-data'>
                       <p>Atomic number: {this.state.atom.id}</p>
@@ -51,8 +61,19 @@ class Helium extends Component {
                         <div id="atom">
                             <div id="electron-1" class="electron"></div>
                             <div id="electron-2" class="electron"></div>
-                            <div id="nucleus" className='noble-gas-nucleus'></div>
+                            <div id="electron-3" class="electron"></div>
+                            <div id="nucleus" className='alkali-metal-nucleus'></div>
                             <div id="s-orbital-path"></div>
+                            <div id="s2-orbital-path"></div>
+                            <label id='ionic-charge' className='alkali-metal-txt ghost'>+</label>
+                            <div id="ionic-charge-anti-border" className='ghost'></div>
+                        </div>
+                        <div id="atom-control">
+                          <label>show ion</label>
+                          <label className="switch">
+                              <input type="checkbox" onClick={this.handleIonToggle}/>
+                              <span className="toggle round"></span>
+                          </label>
                         </div>
                     </div>
                   </div>
@@ -85,4 +106,4 @@ class Helium extends Component {
       }
 }
 
-export default Helium;
+export default Lithium;

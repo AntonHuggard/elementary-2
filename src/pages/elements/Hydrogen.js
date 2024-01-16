@@ -73,7 +73,7 @@ class Hydrogen extends Component {
                       </div>
 
                       <div id="atom-control">
-                        {/* <label>ion</label> */}
+                        <label>show ion</label>
                         <label className="switch">
                             <input type="checkbox" onClick={this.handleIonToggle}/>
                             <span className="toggle round"></span>
