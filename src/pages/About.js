@@ -42,7 +42,7 @@ class About extends Component {
                       I had the idea for this project during a Computer Science lecture around September 2019. 
                       After exams, I considered attempting to make 31 websites in 31 days. 
                       I only got as far as writing down 31 ideas -- one of these was an "interactive periodic table".
-                      This is the earliest evidence I can find of the idea. 
+                      This is the earliest evidence I can find of the project. 
                     </p>
                     <figure>
                       <img src={idea} className="illustration" alt="first evidence of the idea" />
@@ -66,9 +66,9 @@ class About extends Component {
                       I was at the bFM reception desk (March 2020) when, during one of the hourly news bulletins, they announced that the government was closing the border due to Covid-19.
                       <br/>
                       <br/>
-                      On my last day at the radio station before lockdown, I copied the d.html file onto a flash drive.
-                      I was lucky enough to receive the wage subsidy, so could treat the interactive periodic table as my full-time job.
-                      During this period, I made rapid progress and my friend Ben became a coach for the project. 
+                      On my last day before lockdown, I copied the d.html file onto a flash drive.
+                      I was lucky enough to receive the wage subsidy, so could treat this project as my full-time job.
+                      During this period, I made rapid progress and my friend Ben became a coach/consultant. 
                       He was able to point out the many, many stupid mistakes I was making and encouraged me to follow normal web development practices.
                     </p>
                     <figure>
@@ -93,8 +93,12 @@ class About extends Component {
                       </figcaption>
                     </figure>
                     <p>
-                      Then, for no reason, in July 2022, I decided to rebuild the project using a new framework. 
-                      This (version 2) is what you are now looking at.
+                      Then, in July 2022, I decided to rebuild the project using a new framework -- ReactJS. 
+                      This is what you are now looking at.
+                    </p>
+                    <p>
+                      On 14 June 2023, I started working on a M<span dangerouslySetInnerHTML={{ __html:'&amacr;' }}></span>ori-language translation. 
+                      This was finished a day later.
                     </p>
                   <hr />
                   <h3>credits</h3>
