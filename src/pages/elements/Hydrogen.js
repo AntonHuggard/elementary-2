@@ -30,7 +30,13 @@ class Hydrogen extends Component {
       }
 
       handleIonToggle = () => {
-        console.log('show ion');
+        let electron = document.getElementById('electron-1');
+        let ionThingText = document.getElementById('ionic-charge');
+        let ionThingBorder = document.getElementById('ionic-charge-anti-border');
+
+        electron.classList.toggle('ghost');
+        ionThingText.classList.toggle('ghost');
+        ionThingBorder.classList.toggle('ghost');        
       }
 
       render() {
@@ -58,11 +64,11 @@ class Hydrogen extends Component {
                     <div id="atom-container">
                       <div id="atom-graphics">
                         <div id="atom">
-                              <div id="electron-1" className='electron ghost'></div>
+                              <div id="electron-1" className='electron'></div>
                               <div id="nucleus"></div>
                               <div id="s-orbital-path"></div>
-                              <label id='ionic-charge'>+</label>
-                              <div id="ionic-charge-anti-border"></div>
+                              <label id='ionic-charge' className='ghost'>+</label>
+                              <div id="ionic-charge-anti-border" className='ghost'></div>
                           </div>
                       </div>
 
