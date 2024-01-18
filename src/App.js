@@ -3,6 +3,7 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import Hydrogen from './pages/elements/Hydrogen';
 import Helium from './pages/elements/Helium';
 import Lithium from './pages/elements/Lithium';
+import Carbon from './pages/elements/Carbon';
 import Home from './pages/Home';
 import About from './pages/About';
 import Help from './pages/Help';
@@ -27,6 +28,7 @@ class App extends Component {
                 <Route path="/hydrogen" element={<Hydrogen />} />
                 <Route path="/helium" element={<Helium />} />
                 <Route path="/lithium" element={<Lithium />} />
+                <Route path="/carbon" element={<Carbon />} />
                 <Route path="/ions" element={<Ions />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
