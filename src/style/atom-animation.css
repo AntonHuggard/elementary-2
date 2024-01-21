@@ -28,16 +28,28 @@
     animation: ORBIT-2 3s infinite linear;
 }
 #electron-3 {
-    animation: ORBIT-3 3.5s infinite linear;
+    transform: rotate(0deg) translateY(125px) translateX(20px) rotate(0deg); 
 }
 #electron-4 {
-    animation: ORBIT-4 3.5s infinite linear;
+    transform: rotate(0deg) translateY(125px) translateX(-20px) rotate(0deg);
 }
 #electron-5 {
-    animation: ORBIT-5 3.5s infinite linear;
+    transform: rotate(0deg) translateY(-125px) translateX(20px) rotate(0deg); 
 }
 #electron-6 {
-    animation: ORBIT-6 3.5s infinite linear;
+    transform: rotate(0deg) translateY(-125px) translateX(-20px) rotate(0deg);
+}
+#electron-7 {
+    transform: rotate(0deg) translateY(20px) translateX(125px) rotate(0deg);
+}
+#electron-8 {
+    transform: rotate(0deg) translateY(-20px) translateX(125px) rotate(0deg);
+}
+#electron-9 {
+    transform: rotate(0deg) translateY(20px) translateX(-125px) rotate(0deg);
+}
+#electron-10 {
+    transform: rotate(0deg) translateY(-20px) translateX(-125px) rotate(0deg);
 }
 #nucleus {
     grid-row: 1;
@@ -133,6 +145,14 @@
     } 
     100% { 
         transform: rotate(360deg) translateX(-125px) rotate(-360deg); 
+    }
+}
+@keyframes ORBIT-7 { 
+    0% { 
+        transform: rotate(0deg) translateY(125px) rotate(0deg); 
+    } 
+    100% { 
+        transform: rotate(360deg) translateY(125px) rotate(-360deg); 
     }
 }
 #s-orbital-path {
