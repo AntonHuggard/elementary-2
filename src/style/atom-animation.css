@@ -62,8 +62,8 @@
     grid-row: 1;
     grid-column: 1;
     text-align: right;
-    margin-right: 15px;
-    font-size: 1.5em;
+    margin-right: 8px;
+    font-size: 1.3em;
     color: white;
     /* color: rgb(212, 13, 13); */
 }
@@ -75,8 +75,8 @@
     width: 25px;
     border-top: 2px solid rgb(97, 97, 97);
     border-right: 2px solid rgb(97, 97, 97);
-    margin-left: 245px;
-    margin-top: 25px;
+    margin-left: 255px;
+    margin-top: 27px;
 }
 .alkali-metal-txt { color: orange !important; }
 .ghost {

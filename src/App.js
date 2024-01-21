@@ -4,6 +4,7 @@ import Hydrogen from './pages/elements/Hydrogen';
 import Helium from './pages/elements/Helium';
 import Lithium from './pages/elements/Lithium';
 import Carbon from './pages/elements/Carbon'
+import Fluorine from './pages/elements/Fluorine';
 import Neon from './pages/elements/Neon';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -30,6 +31,7 @@ class App extends Component {
                 <Route path="/helium" element={<Helium />} />
                 <Route path="/lithium" element={<Lithium />} />
                 <Route path="/carbon" element={<Carbon />} />
+                <Route path="/fluorine" element={<Fluorine />} />
                 <Route path="/neon" element={<Neon />} />
                 <Route path="/ions" element={<Ions />} />
                 <Route path="*" element={<NotFound />} />
