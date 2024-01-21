@@ -21,36 +21,24 @@
     z-index: 1;
     transition: 0.5s;
 }
-#electron-1 {
-    animation: ORBIT 3s infinite linear;
-}
-#electron-2 {
-    animation: ORBIT-2 3s infinite linear;
-}
-#electron-3 {
-    transform: rotate(0deg) translateY(125px) translateX(20px) rotate(0deg); 
-}
-#electron-4 {
-    transform: rotate(0deg) translateY(125px) translateX(-20px) rotate(0deg);
-}
-#electron-5 {
-    transform: rotate(0deg) translateY(-125px) translateX(20px) rotate(0deg); 
-}
-#electron-6 {
-    transform: rotate(0deg) translateY(-125px) translateX(-20px) rotate(0deg);
-}
-#electron-7 {
-    transform: rotate(0deg) translateY(20px) translateX(125px) rotate(0deg);
-}
-#electron-8 {
-    transform: rotate(0deg) translateY(-20px) translateX(125px) rotate(0deg);
-}
-#electron-9 {
-    transform: rotate(0deg) translateY(20px) translateX(-125px) rotate(0deg);
-}
-#electron-10 {
-    transform: rotate(0deg) translateY(-20px) translateX(-125px) rotate(0deg);
-}
+#electron-1 { animation: ORBIT 3s infinite linear; }
+#electron-2 { animation: ORBIT-2 3s infinite linear; }
+
+#electron-3 { animation: ORBIT-3 5s infinite linear; }
+#electron-4 { animation: ORBIT-4 5s infinite linear; }
+#electron-5 { animation: ORBIT-5 5s infinite linear; }
+#electron-6 { animation: ORBIT-6 5s infinite linear; }
+
+#electron-3a { animation: ORBIT-3A 5s infinite linear; }
+#electron-4a { animation: ORBIT-4A 5s infinite linear; }
+#electron-5a { animation: ORBIT-5A 5s infinite linear; }
+#electron-6a { animation: ORBIT-6A 5s infinite linear; }
+#electron-7 { animation: ORBIT-7 5s infinite linear; }
+#electron-8 { animation: ORBIT-8 5s infinite linear; }
+#electron-9 { animation: ORBIT-9 5s infinite linear; }
+#electron-10 { animation: ORBIT-10 5s infinite linear; }
+
+
 #nucleus {
     grid-row: 1;
     grid-column: 1;
@@ -147,14 +135,72 @@
         transform: rotate(360deg) translateX(-125px) rotate(-360deg); 
     }
 }
-@keyframes ORBIT-7 { 
+@keyframes ORBIT-3A { 
     0% { 
-        transform: rotate(0deg) translateY(125px) rotate(0deg); 
+        transform: rotate(0deg) translateY(125px) translateX(20px) rotate(0deg); 
     } 
     100% { 
-        transform: rotate(360deg) translateY(125px) rotate(-360deg); 
+        transform: rotate(360deg) translateY(125px) translateX(20px) rotate(-360deg); 
     }
 }
+@keyframes ORBIT-4A { 
+    0% { 
+        transform: rotate(0deg) translateY(125px) translateX(-20px) rotate(0deg);
+    } 
+    100% { 
+        transform: rotate(360deg) translateY(125px) translateX(-20px) rotate(-360deg);
+    }
+}
+@keyframes ORBIT-5A { 
+    0% { 
+        transform: rotate(0deg) translateY(-125px) translateX(20px) rotate(0deg); 
+    } 
+    100% { 
+        transform: rotate(360deg) translateY(-125px) translateX(20px) rotate(-360deg); 
+    }
+}
+@keyframes ORBIT-6A { 
+    0% { 
+        transform: rotate(0deg) translateY(-125px) translateX(-20px) rotate(0deg);
+    } 
+    100% { 
+        transform: rotate(360deg) translateY(-125px) translateX(-20px) rotate(-360deg);
+    }
+}
+
+@keyframes ORBIT-7 { 
+    0% { 
+        transform: rotate(0deg) translateY(20px) translateX(125px) rotate(0deg);
+    } 
+    100% { 
+        transform: rotate(360deg) translateY(20px) translateX(125px) rotate(-3600deg);
+    }
+}
+@keyframes ORBIT-8 { 
+    0% { 
+        transform: rotate(0deg) translateY(-20px) translateX(125px) rotate(0deg);
+    } 
+    100% { 
+        transform: rotate(360deg) translateY(-20px) translateX(125px) rotate(-360deg);
+    }
+}
+@keyframes ORBIT-9 { 
+    0% { 
+        transform: rotate(0deg) translateY(20px) translateX(-125px) rotate(0deg);
+    } 
+    100% { 
+        transform: rotate(360deg) translateY(20px) translateX(-125px) rotate(-360deg);
+    }
+}
+@keyframes ORBIT-10 { 
+    0% { 
+        transform: rotate(0deg) translateY(-20px) translateX(-125px) rotate(0deg); 
+    } 
+    100% { 
+        transform: rotate(360deg) translateY(-20px) translateX(-125px) rotate(-360deg);
+    }
+}
+
 #s-orbital-path {
     margin: auto;
     height: 200px;

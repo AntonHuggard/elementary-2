@@ -51,16 +51,19 @@ class Neon extends Component {
                     </div>
                     <div id="atom-container">
                         <div id="atom">
-                            <div id="electron-1" class="electron"></div>
-                            <div id="electron-2" class="electron"></div>
-                            <div id="electron-3" class="electron"></div>
-                            <div id="electron-4" class="electron"></div>
-                            <div id="electron-5" class="electron"></div>
-                            <div id="electron-6" class="electron"></div>
-                            <div id="electron-7" class="electron"></div>
-                            <div id="electron-8" class="electron"></div>
-                            <div id="electron-9" class="electron"></div>
-                            <div id="electron-10" class="electron"></div>
+                            <div id="electron-1" className="electron"></div>
+                            <div id="electron-2" className="electron"></div>
+                            
+                            <div id="electron-3a" className="electron"></div>
+                            <div id="electron-4a" className="electron"></div>
+                            <div id="electron-5a" className="electron"></div>
+                            <div id="electron-6a" className="electron"></div>
+                            
+                            <div id="electron-7" className="electron"></div>
+                            <div id="electron-8" className="electron"></div>
+                            <div id="electron-9" className="electron"></div>
+                            <div id="electron-10" className="electron"></div>
+                            
                             <div id="nucleus" className='noble-gas-nucleus'></div>
                             <div id="s-orbital-path"></div>
                             <div id="s2-orbital-path"></div>
