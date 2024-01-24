@@ -6,6 +6,8 @@ import Lithium from './pages/elements/Lithium';
 import Carbon from './pages/elements/Carbon'
 import Fluorine from './pages/elements/Fluorine';
 import Neon from './pages/elements/Neon';
+import Oxygen from './pages/elements/Oxygen';
+import Gold from './pages/elements/Gold';
 import Home from './pages/Home';
 import About from './pages/About';
 import Help from './pages/Help';
@@ -33,6 +35,8 @@ class App extends Component {
                 <Route path="/carbon" element={<Carbon />} />
                 <Route path="/fluorine" element={<Fluorine />} />
                 <Route path="/neon" element={<Neon />} />
+                <Route path="/oxygen" element={<Oxygen />} />
+                <Route path="/gold" element={<Gold />} />
                 <Route path="/ions" element={<Ions />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
