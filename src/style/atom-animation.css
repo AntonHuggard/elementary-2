@@ -21,6 +21,10 @@
     z-index: 1;
     transition: 0.5s;
 }
+.d-electr {
+    width: 15px;
+    height: 15px;
+}
 #electron-1 { animation: ORBIT 3s infinite linear; }
 #electron-2 { animation: ORBIT-2 3s infinite linear; }
 
@@ -38,6 +42,16 @@
 #electron-9 { animation: ORBIT-9 5s infinite linear; }
 #electron-10 { animation: ORBIT-10 5s infinite linear; }
 
+#d-elctr-1 { transform: translateY(-100px) translateX(10px); }
+#d-elctr-2 { transform: translateY(-100px) translateX(-10px); }
+#d-elctr-3 { transform: translateY(calc(-10px + -100px * sin(18deg))) translateX(calc(-5px + 100px * cos(18deg))); }
+#d-elctr-4 { transform: translateY(calc(10px + -100px * sin(18deg))) translateX(calc(5px + 100px * cos(18deg))); }
+#d-elctr-5 { transform: translateY(calc(-10px + -100px * sin(18deg))) translateX(calc(5px + -100px * cos(18deg))); }
+#d-elctr-6 { transform: translateY(calc(10px + -100px * sin(18deg))) translateX(calc(-5px + -100px * cos(18deg))); }
+#d-elctr-7 { transform: translateY(calc(-8px + 100px * cos(36deg))) translateX(calc(8px + 100px * sin(36deg))); }
+#d-elctr-8 { transform: translateY(calc(8px + 100px * cos(36deg))) translateX(calc(-8px + 100px * sin(36deg))); }
+#d-elctr-9 { transform: translateY(calc(8px + 100px * cos(36deg))) translateX(calc(8px + -100px * sin(36deg))); }
+#d-elctr-10 { transform: translateY(calc(-8px + 100px * cos(36deg))) translateX(calc(-8px + -100px * sin(36deg))); }
 
 #nucleus {
     grid-row: 1;
@@ -51,12 +65,10 @@
     display: flex;
     align-items: center;
 }
-.noble-gas-nucleus {
-    background-color: blueviolet !important;
-}
-.alkali-metal-nucleus {
-    background-color: orange !important;
-}
+.noble-gas-nucleus      { background-color: blueviolet !important; }
+.alkali-metal-nucleus   { background-color: orange !important; }
+.transition-metal-nucleus { background-color: rgb(255, 230, 0) !important; }
+
 #ionic-charge {
     z-index: 2;
     grid-row: 1;
