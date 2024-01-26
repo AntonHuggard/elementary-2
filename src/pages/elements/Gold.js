@@ -28,7 +28,7 @@ class Gold extends Component {
       }
 
       handleIonToggle = () => {
-        let electron = document.getElementById('electron-3');
+        let electron = document.getElementById('s-elctr-1');
         let ionThingText = document.getElementById('ionic-charge');
         let ionThingBorder = document.getElementById('ionic-charge-anti-border');
 
@@ -71,10 +71,12 @@ class Gold extends Component {
                             <div id="d-elctr-9" class="electron d-electr"></div>
                             <div id="d-elctr-10" class="electron d-electr"></div>
 
+                            <div id="s-elctr-1" class="electron"></div>
+
                             <div id="nucleus" className='transition-metal-nucleus'></div>
                             <div id="s-orbital-path"></div>
                             <div id="s2-orbital-path"></div>
-                            <label id='ionic-charge' className='alkali-metal-txt ghost'>+</label>
+                            <label id='ionic-charge' className='ghost'>+</label>
                             <div id="ionic-charge-anti-border" className='ghost'></div>
                         </div>
                         <div id="atom-control">

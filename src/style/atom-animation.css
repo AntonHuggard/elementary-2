@@ -133,6 +133,17 @@
 	}
 }
 
+
+#s-elctr-1 { animation: ORBIT-S1 6s infinite linear; }
+@keyframes ORBIT-S1 { 
+	0% {
+		transform: rotate(0deg) translateY(-125px) translateX(0px) rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg) translateY(-125px) translateX(0px) rotate(360deg);
+	}
+}
+
 #nucleus {
     grid-row: 1;
     grid-column: 1;
