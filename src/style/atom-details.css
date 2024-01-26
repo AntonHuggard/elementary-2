@@ -36,6 +36,21 @@
     margin: auto;
 }
 
+#atom-control button {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-family: 'Sen', sans-serif;
+}
+
+#atom-control button:hover {
+  background-color: white;
+  color: rgb(0, 162, 255);
+  border: 2px solid rgb(0, 162, 255);
+  cursor: pointer;
+}
 
 h3 {
     text-align: center;
