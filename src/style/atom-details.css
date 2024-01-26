@@ -51,6 +51,12 @@
   border: 2px solid rgb(0, 162, 255);
   cursor: pointer;
 }
+#atom-control button.active {
+  background-color: white;
+  color: rgb(0, 162, 255);
+  border: 2px solid rgb(0, 162, 255);
+  box-shadow: 0px 0px 10px rgb(0, 162, 255);
+}
 
 h3 {
     text-align: center;

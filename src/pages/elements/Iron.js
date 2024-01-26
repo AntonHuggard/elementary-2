@@ -3,14 +3,14 @@ import Header from '../../components/Header';
 import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
 import {Helmet} from "react-helmet";
-import tut from '../../imgs/Tutankhamun.jpg';
 
 class Iron extends Component {
 
     state = {
       atom: atoms.atoms[25],
       units: "celsius",
-      };
+      ion: 0,
+    };
     
     
 
@@ -28,30 +28,61 @@ class Iron extends Component {
         }
       }
 
-      handleIon1Toggle = () => {
-        let electron = document.getElementById('s-elctr-1');
-        let electron2 = document.getElementById('s-elctr-2');
-        let ionThingText = document.getElementById('ionic-charge');
-        let ionThingBorder = document.getElementById('ionic-charge-anti-border');
+      getElectrons = () => {
+        let s1_electron = document.getElementById('s-elctr-1');
+        let s2_electron = document.getElementById('s-elctr-2');
+        let d2_electron = document.getElementById('d-elctr-2');
+        return [s1_electron, s2_electron, d2_electron];
+      }
 
-        electron.classList.toggle('ghost');
-        electron2.classList.toggle('ghost');
-        ionThingText.classList.toggle('ghost');
-        ionThingBorder.classList.toggle('ghost');        
+      
+      setToFe = () => {
+        let electrons = this.getElectrons();
+        electrons[0].classList.remove('ghost');
+        electrons[1].classList.remove('ghost');
+        electrons[2].classList.remove('ghost');
+      }
+      
+      setToFeII = () => {
+        let electrons = this.getElectrons();
+        electrons[0].classList.add('ghost');
+        electrons[1].classList.add('ghost');
+        electrons[2].classList.remove('ghost');
+      }
+
+      setToFeIII = () => {
+        let electrons = this.getElectrons();
+        electrons[0].classList.add('ghost');
+        electrons[1].classList.add('ghost');
+        electrons[2].classList.add('ghost');
+      }
+
+      handleIon1Toggle = () => {
+        if (this.state.ion !== 1) {
+          this.setState({ ion : 1 });
+          this.setToFeII();
+          document.getElementById('ionBtn1').classList.add("active");
+          document.getElementById('ionBtn2').classList.remove("active");
+        } else {
+          this.setState({ ion : 0 });
+          this.setToFe();
+          document.getElementById('ionBtn1').classList.remove("active");
+          document.getElementById('ionBtn2').classList.remove("active");
+        }      
       }
 
       handleIon2Toggle = () => {
-        let electron = document.getElementById('s-elctr-1');
-        let electron2 = document.getElementById('s-elctr-2');
-        let electron3 = document.getElementById('d-elctr-2');
-        let ionThingText = document.getElementById('ionic-charge');
-        let ionThingBorder = document.getElementById('ionic-charge-anti-border');
-
-        electron.classList.toggle('ghost');
-        electron2.classList.toggle('ghost');
-        electron3.classList.toggle('ghost');
-        ionThingText.classList.toggle('ghost');
-        ionThingBorder.classList.toggle('ghost');        
+        if (this.state.ion !== 2) {
+          this.setState({ ion : 2 });
+          this.setToFeIII();
+          document.getElementById('ionBtn2').classList.add("active");
+          document.getElementById('ionBtn1').classList.remove("active");
+        } else {
+          this.setState({ ion : 0 });
+          this.setToFe();
+          document.getElementById('ionBtn1').classList.remove("active");
+          document.getElementById('ionBtn2').classList.remove("active");
+        }      
       }
 
       render() {
@@ -77,15 +108,15 @@ class Iron extends Component {
                     </div>
                     <div id="atom-container">
                         <div id="atom">
-                            <div id="d-elctr-1" class="electron d-electr"></div>
-                            <div id="d-elctr-2" class="electron d-electr"></div>
-                            <div id="d-elctr-3" class="electron d-electr"></div>
-                            <div id="d-elctr-5" class="electron d-electr"></div>
-                            <div id="d-elctr-7" class="electron d-electr"></div>
-                            <div id="d-elctr-9" class="electron d-electr"></div>
+                            <div id="d-elctr-1" className="electron d-electr"></div>
+                            <div id="d-elctr-2" className="electron d-electr"></div>
+                            <div id="d-elctr-3" className="electron d-electr"></div>
+                            <div id="d-elctr-5" className="electron d-electr"></div>
+                            <div id="d-elctr-7" className="electron d-electr"></div>
+                            <div id="d-elctr-9" className="electron d-electr"></div>
 
-                            <div id="s-elctr-1" class="electron"></div>
-                            <div id="s-elctr-2" class="electron"></div>
+                            <div id="s-elctr-1" className="electron"></div>
+                            <div id="s-elctr-2" className="electron"></div>
 
                             <div id="nucleus" className='transition-metal-nucleus'></div>
                             <div id="s-orbital-path"></div>
@@ -94,8 +125,8 @@ class Iron extends Component {
                             <div id="ionic-charge-anti-border" className='ghost'></div>
                         </div>
                         <div id="atom-control">
-                          <button onClick={this.handleIon1Toggle}>(II)</button>
-                          <button onClick={this.handleIon2Toggle}>(III)</button>
+                          <button onClick={this.handleIon1Toggle} id="ionBtn1">(II)</button>
+                          <button onClick={this.handleIon2Toggle} id="ionBtn2">(III)</button>
                         </div>
                     </div>
                   </div>
