@@ -229,6 +229,24 @@ function runQuery(input) {
         r.push(getMatchingElements(110, "atomic_number"));
         r.push(getMatchingElements(111, "atomic_number"));
     } 
+    else if (q.match(/^noble metal?$/i)) {
+        r = getMatchingElements(29, "group");
+        r.push(getMatchingElements(33, "atomic_number"));
+        r.push(getMatchingElements(43, "atomic_number"));
+        r.push(getMatchingElements(44, "atomic_number"));
+        r.push(getMatchingElements(45, "atomic_number"));
+        r.push(getMatchingElements(46, "atomic_number"));
+        r.push(getMatchingElements(47, "atomic_number"));
+        r.push(getMatchingElements(51, "atomic_number"));
+        r.push(getMatchingElements(75, "atomic_number"));
+        r.push(getMatchingElements(76, "atomic_number"));
+        r.push(getMatchingElements(77, "atomic_number"));
+        r.push(getMatchingElements(78, "atomic_number"));
+        r.push(getMatchingElements(79, "atomic_number"));
+        r.push(getMatchingElements(80, "atomic_number"));
+        r.push(getMatchingElements(83, "atomic_number"));
+        r.push(getMatchingElements(84, "atomic_number"));
+    }
       
     // search by row/period
     else if (q.match(/^row[-\s]?[1-7]$/i) || q.match(/^period[-\s]?[1-7]$/i)) {
