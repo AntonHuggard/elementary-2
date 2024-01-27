@@ -4,6 +4,7 @@
     backdrop-filter: blur(5px);
     color: white;
     border-radius: 20px;
+    padding: 20px;
 }
 
 #content h1, #content h3 { color: white; }
@@ -13,33 +14,31 @@
 }
 
 .atom-details {
-    display: grid;
-    grid-template-columns: max-content 1fr;
+  display: block;
+  margin: auto;
 }
 
 #atom-container {
-    grid-row: 2;
-    grid-column: 1;
-    display: grid;
-    grid-template-rows: max-content max-content;
-    grid-row-gap: 15px;
-}
-#atom-data {
-    grid-row: 2;
-    grid-column: 2;
+    display: block;
+    margin: auto;
+    
 }
 
 #atom-control {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    column-gap: 10px;
+    width: max-content;
+    display: block;
     margin: auto;
+}
+
+#atom-control .toggle-label {
+  margin-right: 10px;
 }
 
 #atom-control button {
   background-color: transparent;
   color: white;
   padding: 10px 20px;
+  margin: 10px;
   border: 2px solid white;
   border-radius: 20px;
   font-family: 'Sen', sans-serif;

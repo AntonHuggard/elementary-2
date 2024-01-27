@@ -99,13 +99,7 @@ class Iron extends Component {
                 <div id='content'>
                 <h1>Iron ({this.state.atom.symbol})</h1>  
                   <div className='atom-details'>
-                    <div id='atom-data'>
-                      <p>Atomic number: {this.state.atom.id}</p>
-                      <p>Atomic mass: {this.state.atom.atomic_mass}</p>   
-                      <p>Row/Period N<sup>o</sup> : {this.state.atom.period}</p>   
-                      <p>Group N<sup>o</sup> : {this.state.atom.group}</p>  
-                      <p>Oxidation states: -4, -2, -1, +1, +2, +3, +4, +5, +6, +7</p> 
-                    </div>
+                    
                     <div id="atom-container">
                         <div id="atom">
                             <div id="d-elctr-1" className="electron d-electr"></div>
@@ -129,6 +123,14 @@ class Iron extends Component {
                           <button onClick={this.handleIon2Toggle} id="ionBtn2">(III)</button>
                         </div>
                     </div>
+                  </div>
+
+                  <div id='atom-data'>
+                      <p>Atomic number: {this.state.atom.id}</p>
+                      <p>Atomic mass: {this.state.atom.atomic_mass}</p>   
+                      <p>Row/Period N<sup>o</sup> : {this.state.atom.period}</p>   
+                      <p>Group N<sup>o</sup> : {this.state.atom.group}</p>  
+                      <p>Oxidation states: -4, -2, -1, +1, +2, +3, +4, +5, +6, +7</p> 
                   </div>
 
                   <hr className='horizontal-line' />

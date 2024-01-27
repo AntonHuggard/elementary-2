@@ -51,12 +51,7 @@ class Lithium extends Component {
                 <div id='content'>
                 <h1>Lithium ({this.state.atom.symbol})</h1>  
                   <div className='atom-details'>
-                    <div id='atom-data'>
-                      <p>Atomic number: {this.state.atom.id}</p>
-                      <p>Atomic mass: {this.state.atom.atomic_mass}</p>   
-                      <p>Row/Period N<sup>o</sup> : {this.state.atom.period}</p>   
-                      <p>Group N<sup>o</sup> : {this.state.atom.group}</p>   
-                    </div>
+                    
                     <div id="atom-container">
                         <div id="atom">
                             <div id="electron-1" class="electron"></div>
@@ -76,6 +71,13 @@ class Lithium extends Component {
                           </label>
                         </div>
                     </div>
+                  </div>
+
+                  <div id='atom-data'>
+                      <p>Atomic number: {this.state.atom.id}</p>
+                      <p>Atomic mass: {this.state.atom.atomic_mass}</p>   
+                      <p>Row/Period N<sup>o</sup> : {this.state.atom.period}</p>   
+                      <p>Group N<sup>o</sup> : {this.state.atom.group}</p>   
                   </div>
 
                   <hr className='horizontal-line' />
