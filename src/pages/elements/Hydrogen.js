@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from '../../components/Header';
 import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
+import IonToggleSwitch from '../../components/ion-toggle';
 import {Helmet} from "react-helmet";
 import hindenburg from '../../imgs/Hindenburg.jpg';
 
@@ -65,13 +66,7 @@ class Hydrogen extends Component {
                           </div>
                       </div>
 
-                      <div id="atom-control">
-                        <label className='toggle-label'>ion</label>
-                        <label className="switch">
-                            <input type="checkbox" onClick={this.handleIonToggle}/>
-                            <span className="toggle round"></span>
-                        </label>
-                      </div>
+                      <IonToggleSwitch onHandleIonToggle={this.handleIonToggle} />
                     </div>
                     
                   </div>

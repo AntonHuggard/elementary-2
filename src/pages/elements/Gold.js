@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from '../../components/Header';
 import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
+import IonToggleSwitch from '../../components/ion-toggle';
 import {Helmet} from "react-helmet";
 import tut from '../../imgs/Tutankhamun.jpg';
 
@@ -74,13 +75,7 @@ class Gold extends Component {
                             <label id='ionic-charge' className='ghost'>+</label>
                             <div id="ionic-charge-anti-border" className='ghost'></div>
                         </div>
-                        <div id="atom-control">
-                          <label>show ion</label>
-                          <label className="switch">
-                              <input type="checkbox" onClick={this.handleIonToggle}/>
-                              <span className="toggle round"></span>
-                          </label>
-                        </div>
+                        <IonToggleSwitch onHandleIonToggle={this.handleIonToggle} />
                     </div>
                   </div>
 
