@@ -4,6 +4,7 @@ import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
 import IonToggleSwitch from '../../components/ion-toggle';
 import {Helmet} from "react-helmet";
+import ore from '../../imgs/diamond-ore.png';
 
 class Carbon extends Component {
 
@@ -89,6 +90,10 @@ class Carbon extends Component {
                   <div>
                     <h3>Description & Facts</h3>
                     <p dangerouslySetInnerHTML={{ __html: this.state.atom.description }} />
+                    <figure>
+                      <img id="historic-img" src={ore} alt='Iron ore' />
+                      <figcaption>Diamond ore</figcaption>
+                    </figure>
                   </div>
 
                   <hr className='horizontal-line' />

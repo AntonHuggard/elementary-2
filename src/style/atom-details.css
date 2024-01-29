@@ -5,6 +5,7 @@
     color: white;
     border-radius: 20px;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 #content h1, #content h3 { color: white; }

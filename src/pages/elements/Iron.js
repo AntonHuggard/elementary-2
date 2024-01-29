@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
 import {Helmet} from "react-helmet";
+import ore from '../../imgs/iron-ore.png';
 
 class Iron extends Component {
 
@@ -140,6 +141,11 @@ class Iron extends Component {
                     <p>
                     Iron, represented by the chemical symbol Fe, is a fundamental element crucial to the evolution of human civilization. Its history is intertwined with the rise of metallurgy, marking the transition from the Stone Age to the Iron Age around 1200 BCE. Iron's significance lies in its exceptional strength and versatility, making it essential for tools, weapons, and infrastructure. In its chemical composition, iron readily forms compounds such as iron oxide, commonly known as rust, when exposed to oxygen and moisture. The transformative impact of iron on societies, from the forging of weapons to the construction of railways, underscores its pivotal role in shaping human progress and technological advancement.
                     </p>
+                    
+                    <figure>
+                      <img id="historic-img" src={ore} alt='Iron ore' />
+                      <figcaption>Iron ore</figcaption>
+                    </figure>
                   </div>
 
                   <hr className='horizontal-line' />
