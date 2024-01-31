@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
 import IonToggleSwitch from '../../components/ion-toggle';
@@ -111,6 +112,7 @@ class Carbon extends Component {
                   </div>
 
                 </div>
+                <Footer/>
                 
             </>
         );
