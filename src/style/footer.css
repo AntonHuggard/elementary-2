@@ -7,3 +7,14 @@ footer {
     background-color: rgba(49, 49, 49, 0.904);
     backdrop-filter: blur(20px);
 }
+
+footer p {
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+footer svg {
+    display: block;
+    margin: auto;
+}
