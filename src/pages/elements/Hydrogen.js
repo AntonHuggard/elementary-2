@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Header from '../../components/Header';
 import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
-import IonToggleSwitch from '../../components/ion-toggle';
+import AnimatedAtom from '../../components/atom-animation';
 import {Helmet} from "react-helmet";
 import hindenburg from '../../imgs/Hindenburg.jpg';
 
@@ -30,15 +30,7 @@ class Hydrogen extends Component {
         }
       }
 
-      handleIonToggle = () => {
-        let electron = document.getElementById('electron-1');
-        let ionThingText = document.getElementById('ionic-charge');
-        let ionThingBorder = document.getElementById('ionic-charge-anti-border');
-
-        electron.classList.toggle('ghost');
-        ionThingText.classList.toggle('ghost');
-        ionThingBorder.classList.toggle('ghost');        
-      }
+      
 
       render() {
         return(
@@ -55,19 +47,7 @@ class Hydrogen extends Component {
                   <h1>Hydrogen ({this.state.atom.symbol})</h1> 
                   <div className='atom-details'>
 
-                    <div id="atom-container">
-                      <div id="atom-graphics">
-                        <div id="atom">
-                              <div id="electron-1" className='electron'></div>
-                              <div id="nucleus"></div>
-                              <div id="s-orbital-path"></div>
-                              <label id='ionic-charge' className='ghost'>+</label>
-                              <div id="ionic-charge-anti-border" className='ghost'></div>
-                          </div>
-                      </div>
-
-                      <IonToggleSwitch onHandleIonToggle={this.handleIonToggle} />
-                    </div>
+                    <AnimatedAtom />
                     
                   </div>
 
