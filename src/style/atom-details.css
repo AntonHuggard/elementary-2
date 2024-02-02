@@ -22,6 +22,7 @@
 #atom-container {
     display: block;
     margin: auto;
+    height: max-content;
     
 }
 

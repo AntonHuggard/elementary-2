@@ -47,7 +47,7 @@ class Hydrogen extends Component {
                   <h1>Hydrogen ({this.state.atom.symbol})</h1> 
                   <div className='atom-details'>
 
-                    <AnimatedAtom />
+                    <AnimatedAtom atom={this.state.atom} />
                     
                   </div>
 
