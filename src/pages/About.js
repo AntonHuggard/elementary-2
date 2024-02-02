@@ -68,7 +68,7 @@ class About extends Component {
                       <br/>
                       On my last day before lockdown, I copied the d.html file onto a flash drive.
                       I was lucky enough to receive the wage subsidy, so could treat this project as my full-time job.
-                      During this period, I made rapid progress and my friend Ben became a coach/consultant. 
+                      During this period, I made rapid progress and my friend Benjamin became a coach/consultant. 
                       He was able to point out the many, many stupid mistakes I was making and encouraged me to follow normal web development practices.
                     </p>
                     <figure>
