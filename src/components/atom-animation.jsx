@@ -14,14 +14,17 @@ class AnimatedAtom extends Component {
     }
 
     getOrbitalHtml = (count) => {
-        if (count === 1) {
-            return <div id="s-orbital-path"></div>
-        } else {
-            return <>
-                <div id="s-orbital-path"></div>
-                <div id="s2-orbital-path"></div>
-            </>
+        const orbital_ids = [
+            "s-orbital-path", "s2-orbital-path", "p2-orbital-path", "s3-orbital-path", "p3-orbital-path",
+            "s4-orbital-path", "d3-orbital-path", "p4-orbital-path", "s5-orbital-path", "d4-orbital-path", 
+            "p5-orbital-path", "s6-orbital-path", "f4-orbital-path", "d5-orbital-path", "p6-orbital-path", 
+            "s7-orbital-path", "f5-orbital-path", "d6-orbital-path", "p7-orbital-path", 
+        ]
+        let htmlArray = []
+        for (let i=0; i < count; i++) {
+            htmlArray.push(<div className="electron-orbital" id={orbital_ids[i]}></div>)
         }
+        return htmlArray;
     }
 
     getOrbitalPopulations = () => {

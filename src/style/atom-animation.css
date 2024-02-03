@@ -6,7 +6,7 @@
     grid-template-columns: 1;
     grid-template-rows: 1;
     margin: auto;
-    width: 300px;
+    /* width: 300px; */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -315,23 +315,87 @@
     }
 }
 
-#s-orbital-path {
+.electron-orbital {
     margin: auto;
-    height: 200px;
-    width: 200px;
     border-radius: 50%;
     border: 2px solid rgb(172, 172, 172);
     background-color: transparent;
     grid-column: 1;
     grid-row: 1;
 }
+#s-orbital-path {
+    height: 200px;
+    width: 200px;    
+}
 #s2-orbital-path {
-    margin: auto;
     height: 250px;
     width: 250px;
-    border-radius: 50%;
-    border: 2px solid rgb(172, 172, 172);
-    background-color: transparent;
-    grid-column: 1;
-    grid-row: 1;
+}
+#p2-orbital-path {
+    height: 300px;
+    width: 300px;
+}
+#s3-orbital-path {
+    height: 350px;
+    width: 350px;
+}
+#p3-orbital-path {
+    height: 400px;
+    width: 400px;
+}
+#s4-orbital-path {
+    height: 450px;
+    width: 450px;
+}
+#d3-orbital-path {
+    height: 500px;
+    width: 500px;
+}
+#p4-orbital-path {
+    height: 550px;
+    width: 550px;
+}
+#s5-orbital-path {
+    height: 600px;
+    width: 600px;
+}
+#d4-orbital-path {
+    height: 650px;
+    width: 650px;
+}
+#p5-orbital-path {
+    height: 700px;
+    width: 700px;
+}
+#s6-orbital-path {
+    height: 750px;
+    width: 750px;
+}
+#f4-orbital-path {
+    height: 800px;
+    width: 800px;
+}
+#d5-orbital-path {
+    height: 850px;
+    width: 850px;
+}
+#p6-orbital-path {
+    height: 900px;
+    width: 900px;
+}
+#s7-orbital-path {
+    height: 950px;
+    width: 950px;
+}
+#f5-orbital-path {
+    height: 1000px;
+    width: 1000px;
+}
+#d6-orbital-path {
+    height: 1050px;
+    width: 1050px;
+}
+#p7-orbital-path {
+    height: 1100px;
+    width: 1100px;
 }
