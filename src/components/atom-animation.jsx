@@ -24,13 +24,35 @@ class AnimatedAtom extends Component {
         }
     }
 
-    getOrbitalCount = (atomicNo) => {
-        let orbital_population = [
-            2, 4, 10, 12, 18, 20, 30, 36, 38, 48, 54, 56, 70, 80, 86, 88, 102, 112, 118
-        ]
+    getOrbitalPopulations = () => {
+        let max_shell = 19;
+        let limit = 1;
+        let to_add = 1;
+        let hit_limit = false;
+        let result = 0;
+        let orbital_population = [];
+        for (let i=1; i <= max_shell; i++) {
+            result = result + to_add;
+            if (to_add === 1) {
+                if (hit_limit) {
+                    limit = limit + 2;
+                    hit_limit = false;
+                } 
+                else hit_limit = true;
+                to_add = limit;
+            } else to_add = to_add - 2;
+            orbital_population.push(result);
+        }
+        let orbital_sizes = orbital_population.map(o => o*2);
+        return orbital_sizes;
+    }
 
-        for (let i=0; i < orbital_population.length; i++) {
-            if (atomicNo <= orbital_population[i]) return i+1;
+    getOrbitalCount = (atomicNo) => {
+        let orbital_sizes = this.getOrbitalPopulations();
+        console.log(orbital_sizes);
+
+        for (let i=0; i < orbital_sizes.length; i++) {
+            if (atomicNo <= orbital_sizes[i]) return i+1;
         }
     }
 
