@@ -17,4 +17,5 @@ footer p {
 footer svg {
     display: block;
     margin: auto;
+    cursor: pointer;
 }

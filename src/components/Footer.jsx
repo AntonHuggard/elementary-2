@@ -11,7 +11,7 @@ class Footer extends Component {
         return (
             <footer className='not-selectable'>
 
-                <p>&copy; Anton Huggard 2020-2024. All rights reserved.</p>
+                <p>&copy; Anton Huggard 2024. All rights reserved.</p>
                 <svg 
                     height="32" aria-hidden="true" viewBox="0 0 16 16" 
                     version="1.1" width="32" data-view-component="true" fill="white"

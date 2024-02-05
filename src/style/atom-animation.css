@@ -376,26 +376,26 @@
     width: 800px;
 }
 #d5-orbital-path {
+    height: 820px;
+    width: 820px;
+}
+#p6-orbital-path {
     height: 850px;
     width: 850px;
 }
-#p6-orbital-path {
+#s7-orbital-path {
+    height: 875px;
+    width: 875px;
+}
+#f5-orbital-path {
     height: 900px;
     width: 900px;
 }
-#s7-orbital-path {
-    height: 950px;
-    width: 950px;
-}
-#f5-orbital-path {
-    height: 1000px;
-    width: 1000px;
-}
 #d6-orbital-path {
-    height: 1050px;
-    width: 1050px;
+    height: 925px;
+    width: 925px;
 }
 #p7-orbital-path {
-    height: 1100px;
-    width: 1100px;
+    height: 950px;
+    width: 950px;
 }
