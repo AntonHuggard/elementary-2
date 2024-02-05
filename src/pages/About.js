@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from '../components/Header';
 import Sidenav from '../components/SideNav';
+import Footer from '../components/Footer';
 import prehistoric from '../imgs/prehistoric.png';
 import mediaeval from '../imgs/mediaeval-2.png';
 import idea from '../imgs/website-idea.png';
@@ -107,6 +108,7 @@ class About extends Component {
                       Consultant: <a href='https://github.com/Benjamin-Piper'>Benjamin Piper</a><br/>
                   </p>
                 </div>
+                <Footer/>
             </>
         );
       }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
 import Sidenav from '../components/SideNav';
+import Footer from '../components/Footer';
 import ions from '../components/ions.json';
 import IonTable from '../components/itable';
 import {Helmet} from "react-helmet";
@@ -24,6 +25,7 @@ class Ions extends Component {
                     <h1>Table of Ions</h1>
                     <IonTable ions={this.state.ions} ></IonTable>
                 </div>
+                <Footer/>
             </>
         );
     }

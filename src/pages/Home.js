@@ -7,6 +7,7 @@ import DiscoverySlider from '../components/discovery-slider';
 import SliderMenu from '../components/sliders';
 import Header from '../components/Header';
 import Sidenav from '../components/SideNav';
+import Footer from '../components/Footer';
 import atoms from '../components/atoms.json';
 import Modal from '../components/modal';
 import runQuery from '../components/query';
@@ -329,6 +330,8 @@ class Home extends Component {
                     units={units}
                     onToggleLanguage={this.toggleLanguage} 
                     language={this.state.language} />
+                
+                <Footer/> 
 
             </>
         )

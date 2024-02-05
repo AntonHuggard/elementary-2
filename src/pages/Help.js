@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from '../components/Header';
 import Sidenav from '../components/SideNav';
+import Footer from '../components/Footer';
 import searchNum from '../imgs/num-search.png';
 import searchRow from '../imgs/row-search.png';
 import searchDate from '../imgs/date-search.png';
@@ -103,6 +104,7 @@ class Help extends Component {
                   </p>
         
                 </div>
+                <Footer/>
             </>
         );
       }
