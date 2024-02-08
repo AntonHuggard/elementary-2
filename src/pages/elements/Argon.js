@@ -4,7 +4,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
-import IonToggleSwitch from '../../components/ion-toggle';
+import AnimatedAtom from '../../components/atom-animation';
 import {Helmet} from "react-helmet";
 
 class Argon extends Component {
@@ -59,25 +59,8 @@ class Argon extends Component {
 
                 <div id='content'>
                 <h1>Argon ({this.state.atom.symbol})</h1>  
-                  <div className='atom-details'>
                     
-                    <div id="atom-container">
-                        <div id="atom">
-                            <div id="electron-1" class="electron"></div>
-                            <div id="electron-2" class="electron"></div>
-                            <div id="electron-3" class="electron"></div>
-                            <div id="electron-4" class="electron"></div>
-                            <div id="electron-5" class="electron"></div>
-                            <div id="electron-6" class="electron"></div>
-                            <div id="nucleus" className=''></div>
-                            <div id="s-orbital-path"></div>
-                            <div id="s2-orbital-path"></div>
-                            <label id='ionic-charge' className='ghost'>4+</label>
-                            <div id="ionic-charge-anti-border" className='ghost'></div>
-                        </div>
-                        <IonToggleSwitch onHandleIonToggle={this.handleIonToggle} />
-                    </div>
-                  </div>
+                  <AnimatedAtom atom={this.state.atom} />
 
                   <div id='atom-data'>
                       <p>Atomic number: {this.state.atom.id}</p>

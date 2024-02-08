@@ -59,7 +59,7 @@ class Oganesson extends Component {
 
                 <div id='content'>
                 <h1>Oganesson ({this.state.atom.symbol})</h1>  
-                  
+                    
                   <AnimatedAtom atom={this.state.atom} />
 
                   <div id='atom-data'>

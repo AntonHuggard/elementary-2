@@ -1,8 +1,10 @@
+
 import React, { Component } from 'react'
 import Header from '../../components/Header';
-import Sidenav from '../../components/SideNav';
 import Footer from '../../components/Footer';
+import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
+import AnimatedAtom from '../../components/atom-animation';
 import {Helmet} from "react-helmet";
 
 class Helium extends Component {
@@ -28,6 +30,22 @@ class Helium extends Component {
         }
       }
 
+      handleIonToggle = () => {
+        let electron1 = document.getElementById('electron-3');
+        let electron2 = document.getElementById('electron-4');
+        let electron3 = document.getElementById('electron-5');
+        let electron4 = document.getElementById('electron-6');
+        let ionThingText = document.getElementById('ionic-charge');
+        let ionThingBorder = document.getElementById('ionic-charge-anti-border');
+
+        electron1.classList.toggle('ghost');
+        electron2.classList.toggle('ghost');
+        electron3.classList.toggle('ghost');
+        electron4.classList.toggle('ghost');
+        ionThingText.classList.toggle('ghost');
+        ionThingBorder.classList.toggle('ghost');        
+      }
+
       render() {
         return(
             <>
@@ -42,14 +60,7 @@ class Helium extends Component {
                 <div id='content'>
                 <h1>Helium ({this.state.atom.symbol})</h1>  
                     
-                  <div id="atom-container">
-                      <div id="atom">
-                          <div id="electron-1" class="electron"></div>
-                          <div id="electron-2" class="electron"></div>
-                          <div id="nucleus" className='noble-gas-nucleus'></div>
-                          <div id="s-orbital-path" className="electron-orbital"></div>
-                      </div>
-                  </div>
+                  <AnimatedAtom atom={this.state.atom} />
 
                   <div id='atom-data'>
                       <p>Atomic number: {this.state.atom.id}</p>
@@ -88,3 +99,4 @@ class Helium extends Component {
 }
 
 export default Helium;
+    

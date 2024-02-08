@@ -1,18 +1,18 @@
+
 import React, { Component } from 'react'
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
 import AnimatedAtom from '../../components/atom-animation';
 import {Helmet} from "react-helmet";
-import hindenburg from '../../imgs/Hindenburg.jpg';
 
 class Hydrogen extends Component {
 
     state = {
       atom: atoms.atoms[0],
       units: "celsius",
-      showIon: false
-    };
+      };
     
     
 
@@ -30,7 +30,21 @@ class Hydrogen extends Component {
         }
       }
 
-      
+      handleIonToggle = () => {
+        let electron1 = document.getElementById('electron-3');
+        let electron2 = document.getElementById('electron-4');
+        let electron3 = document.getElementById('electron-5');
+        let electron4 = document.getElementById('electron-6');
+        let ionThingText = document.getElementById('ionic-charge');
+        let ionThingBorder = document.getElementById('ionic-charge-anti-border');
+
+        electron1.classList.toggle('ghost');
+        electron2.classList.toggle('ghost');
+        electron3.classList.toggle('ghost');
+        electron4.classList.toggle('ghost');
+        ionThingText.classList.toggle('ghost');
+        ionThingBorder.classList.toggle('ghost');        
+      }
 
       render() {
         return(
@@ -44,12 +58,9 @@ class Hydrogen extends Component {
                 <Sidenav />
 
                 <div id='content'>
-                  <h1>Hydrogen ({this.state.atom.symbol})</h1> 
-                  <div className='atom-details'>
-
-                    <AnimatedAtom atom={this.state.atom} />
+                <h1>Hydrogen ({this.state.atom.symbol})</h1>  
                     
-                  </div>
+                  <AnimatedAtom atom={this.state.atom} />
 
                   <div id='atom-data'>
                       <p>Atomic number: {this.state.atom.id}</p>
@@ -61,12 +72,9 @@ class Hydrogen extends Component {
                   <hr className='horizontal-line' />
                   
                   <div>
-                    <h3>About</h3>
-                    <p>
-                    Hydrogen is the first element and has smallest atomic mass. It is also the most abundant element in the universe. At standard conditions, it&apos;s a pretty boring colourless and odourless gas. On 6 May 1937 the German airship Hindenburg (filled with hydrogen gas) caught fire and killed 35 people. This marked the end of the airship era.
-                    </p> 
+                    <h3>Description & Facts</h3>
+                    <p dangerouslySetInnerHTML={{ __html: this.state.atom.description }} />
                   </div>
-                  <img id="historic-img" src={hindenburg} alt='Hindenburg disaster' />
 
                   <hr className='horizontal-line' />
                   
@@ -82,24 +90,8 @@ class Hydrogen extends Component {
                     <p dangerouslySetInnerHTML={{ __html: this.state.atom.discovery_details }} />
                   </div>
 
-                  <hr className='horizontal-line' />
-
-                  <div>
-                    <h3>Resources</h3>
-                    <p>RNZ's Elemental podcast <a href='https://www.rnz.co.nz/programmes/elemental/story/2018697133/hydrogen-number-1-in-the-universe'>Hydrogen</a></p>
-                    <iframe className='youtube-video' title='video-1'
-                      src="https://www.youtube.com/embed/6rdmpx39PRk">
-                    </iframe>
-                    <h4 className='video-title'>Periodic Videos: Hydrogen</h4>
-
-                    <iframe className='youtube-video' title='video-2'
-                      src="https://www.youtube.com/embed/qOTgeeTB_kA">
-                    </iframe>
-                    <h4 className='video-title'>Explosions</h4>
-                    
-                  </div>
-
                 </div>
+                <Footer/>
                 
             </>
         );
@@ -107,3 +99,4 @@ class Hydrogen extends Component {
 }
 
 export default Hydrogen;
+    

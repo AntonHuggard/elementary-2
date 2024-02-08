@@ -1,7 +1,10 @@
+
 import React, { Component } from 'react'
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
+import AnimatedAtom from '../../components/atom-animation';
 import {Helmet} from "react-helmet";
 
 class Neon extends Component {
@@ -27,7 +30,21 @@ class Neon extends Component {
         }
       }
 
-      
+      handleIonToggle = () => {
+        let electron1 = document.getElementById('electron-3');
+        let electron2 = document.getElementById('electron-4');
+        let electron3 = document.getElementById('electron-5');
+        let electron4 = document.getElementById('electron-6');
+        let ionThingText = document.getElementById('ionic-charge');
+        let ionThingBorder = document.getElementById('ionic-charge-anti-border');
+
+        electron1.classList.toggle('ghost');
+        electron2.classList.toggle('ghost');
+        electron3.classList.toggle('ghost');
+        electron4.classList.toggle('ghost');
+        ionThingText.classList.toggle('ghost');
+        ionThingBorder.classList.toggle('ghost');        
+      }
 
       render() {
         return(
@@ -42,32 +59,8 @@ class Neon extends Component {
 
                 <div id='content'>
                 <h1>Neon ({this.state.atom.symbol})</h1>  
-                  <div className='atom-details'>
                     
-                    <div id="atom-container">
-                        <div id="atom">
-                            <div id="electron-1" className="electron"></div>
-                            <div id="electron-2" className="electron"></div>
-                            
-                            <div id="electron-3a" className="electron"></div>
-                            <div id="electron-4a" className="electron"></div>
-                            <div id="electron-5a" className="electron"></div>
-                            <div id="electron-6a" className="electron"></div>
-                            
-                            <div id="electron-7" className="electron"></div>
-                            <div id="electron-8" className="electron"></div>
-                            <div id="electron-9" className="electron"></div>
-                            <div id="electron-10" className="electron"></div>
-                            
-                            <div id="nucleus" className='noble-gas-nucleus'></div>
-                            <div id="s-orbital-path"></div>
-                            <div id="s2-orbital-path"></div>
-                            <label id='ionic-charge' className='ghost'>4+</label>
-                            <div id="ionic-charge-anti-border" className='ghost'></div>
-                        </div>
-                        
-                    </div>
-                  </div>
+                  <AnimatedAtom atom={this.state.atom} />
 
                   <div id='atom-data'>
                       <p>Atomic number: {this.state.atom.id}</p>
@@ -98,6 +91,7 @@ class Neon extends Component {
                   </div>
 
                 </div>
+                <Footer/>
                 
             </>
         );
@@ -105,3 +99,4 @@ class Neon extends Component {
 }
 
 export default Neon;
+    
