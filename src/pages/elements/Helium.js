@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Header from '../../components/Header';
 import Sidenav from '../../components/SideNav';
+import Footer from '../../components/Footer';
 import atoms from '../../components/atoms.json';
 import {Helmet} from "react-helmet";
 
@@ -40,16 +41,14 @@ class Helium extends Component {
 
                 <div id='content'>
                 <h1>Helium ({this.state.atom.symbol})</h1>  
-                  <div className='atom-details'>
                     
-                    <div id="atom-container">
-                        <div id="atom">
-                            <div id="electron-1" class="electron"></div>
-                            <div id="electron-2" class="electron"></div>
-                            <div id="nucleus" className='noble-gas-nucleus'></div>
-                            <div id="s-orbital-path"></div>
-                        </div>
-                    </div>
+                  <div id="atom-container">
+                      <div id="atom">
+                          <div id="electron-1" class="electron"></div>
+                          <div id="electron-2" class="electron"></div>
+                          <div id="nucleus" className='noble-gas-nucleus'></div>
+                          <div id="s-orbital-path" className="electron-orbital"></div>
+                      </div>
                   </div>
 
                   <div id='atom-data'>
@@ -81,6 +80,7 @@ class Helium extends Component {
                   </div>
 
                 </div>
+                <Footer/>
                 
             </>
         );

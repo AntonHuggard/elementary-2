@@ -63,13 +63,14 @@ class AnimatedAtom extends Component {
         
         let atom = this.props.atom;
         let orbitalCount = this.getOrbitalCount(this.props.atom.atomic_number)
+        const nucleusClass = this.props.atom.primary_class + "-nucleus";
 
         return (
             <div className='atom-details'>
                 <div id="atom-container">
                     <div id="atom">
                         <div id="electron-1" className='electron'></div>
-                        <div id="nucleus"></div>
+                        <div id="nucleus" className={nucleusClass}></div>
                         {this.getOrbitalHtml(orbitalCount)}
                         <label id='ionic-charge' className='ghost'>+</label>
                         <div id="ionic-charge-anti-border" className='ghost'></div>

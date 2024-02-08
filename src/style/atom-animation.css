@@ -170,6 +170,7 @@
 .noble-gas-nucleus      { background-color: blueviolet !important; }
 .alkali-metal-nucleus   { background-color: orange !important; }
 .transition-metal-nucleus { background-color: rgb(255, 230, 0) !important; }
+.unknown-nucleus { background-color: rgb(32, 32, 32) !important; }
 
 #ionic-charge {
     z-index: 2;
@@ -328,74 +329,74 @@
     width: 200px;    
 }
 #s2-orbital-path {
-    height: 250px;
-    width: 250px;
+    height: 238px;
+    width: 238px;
 }
 #p2-orbital-path {
-    height: 300px;
-    width: 300px;
+    height: 276px;
+    width: 276px;
 }
 #s3-orbital-path {
-    height: 350px;
-    width: 350px;
+    height: 314px;
+    width: 314px;
 }
 #p3-orbital-path {
-    height: 400px;
-    width: 400px;
+    height: 352px;
+    width: 352px;
 }
 #s4-orbital-path {
-    height: 450px;
-    width: 450px;
+    height: 390px;
+    width: 390px;
 }
 #d3-orbital-path {
-    height: 500px;
-    width: 500px;
+    height: 428px;
+    width: 428px;
 }
 #p4-orbital-path {
-    height: 550px;
-    width: 550px;
+    height: 466px;
+    width: 466px;
 }
 #s5-orbital-path {
-    height: 600px;
-    width: 600px;
+    height: 504px;
+    width: 504px;
 }
 #d4-orbital-path {
-    height: 650px;
-    width: 650px;
+    height: 542px;
+    width: 542px;
 }
 #p5-orbital-path {
-    height: 700px;
-    width: 700px;
+    height: 580px;
+    width: 580px;
 }
 #s6-orbital-path {
-    height: 750px;
-    width: 750px;
+    height: 618px;
+    width: 618px;
 }
 #f4-orbital-path {
-    height: 800px;
-    width: 800px;
+    height: 656px;
+    width: 656px;
 }
 #d5-orbital-path {
-    height: 820px;
-    width: 820px;
+    height: 694px;
+    width: 694px;
 }
 #p6-orbital-path {
-    height: 850px;
-    width: 850px;
+    height: 732px;
+    width: 732px;
 }
 #s7-orbital-path {
-    height: 875px;
-    width: 875px;
+    height: 770px;
+    width: 770px;
 }
 #f5-orbital-path {
-    height: 900px;
-    width: 900px;
+    height: 808px;
+    width: 808px;
 }
 #d6-orbital-path {
-    height: 925px;
-    width: 925px;
+    height: 846px;
+    width: 846px;
 }
 #p7-orbital-path {
-    height: 950px;
-    width: 950px;
+    height: 884px;
+    width: 884px;
 }
