@@ -14,20 +14,21 @@
     grid-row: 1;
     grid-column: 1;
     margin: auto;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: rgb(0, 162, 255);
     box-shadow: 0 0 7px rgb(0, 162, 255);
     z-index: 1;
     transition: 0.5s;
 }
-.d-electr {
-    width: 15px;
-    height: 15px;
-}
-#electron-1 { animation: ORBIT 3s infinite linear; }
-#electron-2 { animation: ORBIT-2 3s infinite linear; }
+
+.orbital-1 { animation: ORBIT 3s infinite linear; }
+.orbital-2 { transform: translateY(250px); animation: ORBIT-2 3s infinite linear; }
+
+
+/* #electron-1 { animation: ORBIT 3s infinite linear; }
+#electron-2 { animation: ORBIT-2 3s infinite linear; } */
 
 #electron-3 { animation: ORBIT-3 5s infinite linear; }
 #electron-4 { animation: ORBIT-4 5s infinite linear; }
@@ -204,18 +205,18 @@
 
 @keyframes ORBIT { 
     0% { 
-        transform: rotate(0deg) translateY(100px) rotate(0deg); 
+        transform: rotate(0deg) translateY(700%) rotate(0deg); 
     } 
     100% { 
-        transform: rotate(360deg) translateY(100px) rotate(-360deg); 
+        transform: rotate(360deg) translateY(700%) rotate(-360deg); 
     }
 }
 @keyframes ORBIT-2 { 
     0% { 
-        transform: rotate(0deg) translateY(-100px) rotate(0deg); 
+        transform: rotate(0deg) translateY(-100%) rotate(0deg); 
     } 
     100% { 
-        transform: rotate(360deg) translateY(-100px) rotate(-360deg); 
+        transform: rotate(360deg) translateY(-100%) rotate(-360deg); 
     }
 }
 @keyframes ORBIT-3 { 

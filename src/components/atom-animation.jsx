@@ -3,7 +3,7 @@ import IonToggleSwitch from '../components/ion-toggle';
 import orbitalPopulation from '../components/orbitalPopulations.js';
 
 class AnimatedAtom extends Component {
-
+    
     handleIonToggle = () => {
         let electron = document.getElementById('electron-1');
         let ionThingText = document.getElementById('ionic-charge');
@@ -28,13 +28,13 @@ class AnimatedAtom extends Component {
         return htmlArray;
     }
 
-    getOrbitalCount = (atomicNo) => {
-        // returns the number of orbital rings given atomic number
+    getOrbitalCount(count) {
+        // returns the number of orbital rings given atomic number/number of electrons/whatever
 
         let orbital_sizes = orbitalPopulation();
 
         for (let i=0; i < orbital_sizes.length; i++) {
-            if (atomicNo <= orbital_sizes[i]) return i+1;
+            if (count <= orbital_sizes[i].size) return i+1;
         }
     }
 
@@ -42,7 +42,9 @@ class AnimatedAtom extends Component {
         let htmlArray = [];
         for (let i = 1; i <= atomicNo; i++) {
             let electronID = "electron-" + (i);
-            htmlArray.push(<div className="electron" id={electronID}></div>);
+            let electronClasses = "electron orbital-" + this.getOrbitalCount(i);
+
+            htmlArray.push(<div className={electronClasses} id={electronID}></div>);
             console.log(electronID);
         }
         return htmlArray;
