@@ -30,6 +30,8 @@
     --o2-width-pos: 120px;
     --o2-width-neg: calc(-1*var(--o2-width-pos));
     --o3-width: 139px;
+    --o4-width-pos: 157px;
+    --o4-width-neg: calc(-1*var(--o4-width-pos));
     
     --px: 10px;
     --py: 10px;
@@ -56,13 +58,15 @@
 #electron-3 { --width: var(--o2-width-pos); animation: ORBIT-S 5s infinite linear; }
 #electron-4 { --width: var(--o2-width-neg); animation: ORBIT-S 5s infinite linear; }
 
-#electron-5  { --px: var(--p1-x); --py: var(--p1-y); animation: ORBIT-P 5s infinite linear; }
-#electron-6  { --px: var(--p2-x); --py: var(--p2-y); animation: ORBIT-P 5s infinite linear; }
-#electron-7  { --px: var(--p3-x); --py: var(--p3-y); animation: ORBIT-P 5s infinite linear; }
-#electron-8  { --px: var(--p4-x); --py: var(--p4-y); animation: ORBIT-P 5s infinite linear; }
-#electron-9  { --px: var(--p5-x); --py: var(--p5-y); animation: ORBIT-P 5s infinite linear; }
-#electron-10 { --px: var(--p6-x); --py: var(--p6-y); animation: ORBIT-P 5s infinite linear; }
+#electron-5  { --px: var(--p1-x); --py: var(--p1-y); animation: ORBIT-P 6s infinite linear; }
+#electron-6  { --px: var(--p2-x); --py: var(--p2-y); animation: ORBIT-P 6s infinite linear; }
+#electron-7  { --px: var(--p3-x); --py: var(--p3-y); animation: ORBIT-P 6s infinite linear; }
+#electron-8  { --px: var(--p4-x); --py: var(--p4-y); animation: ORBIT-P 6s infinite linear; }
+#electron-9  { --px: var(--p5-x); --py: var(--p5-y); animation: ORBIT-P 6s infinite linear; }
+#electron-10 { --px: var(--p6-x); --py: var(--p6-y); animation: ORBIT-P 6s infinite linear; }
 
+#electron-11 { --width: var(--o4-width-pos); animation: ORBIT-S 6s infinite linear; }
+#electron-12 { --width: var(--o4-width-neg); animation: ORBIT-S 6s infinite linear; }
 
 @keyframes ORBIT-S { 
     0% { transform: rotate(0deg) translateY(var(--width)) rotate(0deg); } 
