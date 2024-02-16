@@ -23,26 +23,68 @@
     transition: 0.5s;
 }
 
-.orbital-1 { animation: ORBIT 3s infinite linear; }
-.orbital-2 { transform: translateY(250px); animation: ORBIT-2 3s infinite linear; }
+
+:root {
+    --o1-width-pos: 100px;
+    --o1-width-neg: calc(-1*var(--o1-width-pos));
+    --o2-width-pos: 120px;
+    --o2-width-neg: calc(-1*var(--o2-width-pos));
+    --o3-width: 139px;
+    
+    --px: 10px;
+    --py: 10px;
+
+    --p1-x: 11px;
+    --p1-y: calc(var(--o3-width) * -1);
+    --p2-x: calc(var(--o3-width) * cos(25deg));
+    --p2-y: calc(var(--o3-width) * sin(25deg));
+    --p3-x: calc(var(--o3-width) * cos(25deg) * -1);
+    --p3-y: calc(var(--o3-width) * sin(25deg));
+
+    --p4-x: -11px;
+    --p4-y: calc(var(--o3-width) * -1);
+    --p5-x: calc(var(--o3-width) * cos(34deg));
+    --p5-y: calc(var(--o3-width) * sin(34deg));
+    --p6-x: calc(var(--o3-width) * cos(34deg) * -1);
+    --p6-y: calc(var(--o3-width) * sin(34deg));
+}
 
 
-/* #electron-1 { animation: ORBIT 3s infinite linear; }
-#electron-2 { animation: ORBIT-2 3s infinite linear; } */
+#electron-1 { --width: var(--o1-width-pos); animation: ORBIT-S 3s infinite linear; }
+#electron-2 { --width: var(--o1-width-neg); animation: ORBIT-S 3s infinite linear; }
 
-#electron-3 { animation: ORBIT-3 5s infinite linear; }
-#electron-4 { animation: ORBIT-4 5s infinite linear; }
-#electron-5 { animation: ORBIT-5 5s infinite linear; }
-#electron-6 { animation: ORBIT-6 5s infinite linear; }
+#electron-3 { --width: var(--o2-width-pos); animation: ORBIT-S 5s infinite linear; }
+#electron-4 { --width: var(--o2-width-neg); animation: ORBIT-S 5s infinite linear; }
 
-#electron-3a { animation: ORBIT-3A 5s infinite linear; }
-#electron-4a { animation: ORBIT-4A 5s infinite linear; }
-#electron-5a { animation: ORBIT-5A 5s infinite linear; }
-#electron-6a { animation: ORBIT-6A 5s infinite linear; }
-#electron-7 { animation: ORBIT-7 5s infinite linear; }
-#electron-8 { animation: ORBIT-8 5s infinite linear; }
-#electron-9 { animation: ORBIT-9 5s infinite linear; }
-#electron-10 { animation: ORBIT-10 5s infinite linear; }
+#electron-5  { --px: var(--p1-x); --py: var(--p1-y); animation: ORBIT-P 5s infinite linear; }
+#electron-6  { --px: var(--p2-x); --py: var(--p2-y); animation: ORBIT-P 5s infinite linear; }
+#electron-7  { --px: var(--p3-x); --py: var(--p3-y); animation: ORBIT-P 5s infinite linear; }
+#electron-8  { --px: var(--p4-x); --py: var(--p4-y); animation: ORBIT-P 5s infinite linear; }
+#electron-9  { --px: var(--p5-x); --py: var(--p5-y); animation: ORBIT-P 5s infinite linear; }
+#electron-10 { --px: var(--p6-x); --py: var(--p6-y); animation: ORBIT-P 5s infinite linear; }
+
+
+@keyframes ORBIT-S { 
+    0% { transform: rotate(0deg) translateY(var(--width)) rotate(0deg); } 
+    100% { transform: rotate(360deg) translateY(var(--width)) rotate(-360deg); }
+}
+
+
+@keyframes ORBIT-P { 
+	0% {
+		transform: rotate(0deg) translateY(var(--py)) translateX(var(--px)) rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg) translateY(var(--py)) translateX(var(--px)) rotate(-360deg);
+	}
+}
+
+
+
+
+
+
+
 
 #d-elctr-1 { animation: ORBIT-D1 5s infinite linear; }
 @keyframes ORBIT-D1 { 
@@ -203,102 +245,36 @@
     box-shadow: none;
 }
 
-@keyframes ORBIT { 
-    0% { 
-        transform: rotate(0deg) translateY(700%) rotate(0deg); 
-    } 
-    100% { 
-        transform: rotate(360deg) translateY(700%) rotate(-360deg); 
-    }
-}
+
 @keyframes ORBIT-2 { 
-    0% { 
-        transform: rotate(0deg) translateY(-100%) rotate(0deg); 
-    } 
-    100% { 
-        transform: rotate(360deg) translateY(-100%) rotate(-360deg); 
-    }
+    0% { transform: rotate(0deg) translateY(-100px) rotate(0deg); } 
+    100% { transform: rotate(360deg) translateY(-100px) rotate(-360deg); }
 }
+/* 2s */
 @keyframes ORBIT-3 { 
-    0% { 
-        transform: rotate(0deg) translateY(125px) rotate(0deg); 
-    } 
-    100% { 
-        transform: rotate(360deg) translateY(125px) rotate(-360deg); 
-    }
+    0% { transform: rotate(0deg) translateY(-120px) rotate(0deg); } 
+    100% { transform: rotate(360deg) translateY(-120px) rotate(-360deg); }
 }
 @keyframes ORBIT-4 { 
-    0% { 
-        transform: rotate(0deg) translateY(-125px) rotate(0deg); 
-    } 
-    100% { 
-        transform: rotate(360deg) translateY(-125px) rotate(-360deg); 
-    }
+    0% { transform: rotate(0deg) translateY(var(--neg-width)) rotate(0deg); } 
+    100% { transform: rotate(360deg) translateY(var(--neg-width)) rotate(-360deg); }
 }
+/* 2p */
 @keyframes ORBIT-5 { 
-    0% { 
-        transform: rotate(0deg) translateX(125px) rotate(0deg); 
-    } 
-    100% { 
-        transform: rotate(360deg) translateX(125px) rotate(-360deg); 
-    }
+    0% { transform: rotate(0deg) translateX(140px) rotate(0deg); } 
+    100% { transform: rotate(360deg) translateX(140px) rotate(-360deg); }
 }
 @keyframes ORBIT-6 { 
-    0% { 
-        transform: rotate(0deg) translateX(-125px) rotate(0deg); 
-    } 
-    100% { 
-        transform: rotate(360deg) translateX(-125px) rotate(-360deg); 
-    }
+    0% { transform: rotate(0deg) translateX(-140px) rotate(0deg); } 
+    100% { transform: rotate(360deg) translateX(-140px) rotate(-360deg); }
 }
-@keyframes ORBIT-3A { 
-    0% { 
-        transform: rotate(0deg) translateY(125px) translateX(20px) rotate(0deg); 
-    } 
-    100% { 
-        transform: rotate(360deg) translateY(125px) translateX(20px) rotate(-360deg); 
-    }
-}
-@keyframes ORBIT-4A { 
-    0% { 
-        transform: rotate(0deg) translateY(125px) translateX(-20px) rotate(0deg);
-    } 
-    100% { 
-        transform: rotate(360deg) translateY(125px) translateX(-20px) rotate(-360deg);
-    }
-}
-@keyframes ORBIT-5A { 
-    0% { 
-        transform: rotate(0deg) translateY(-125px) translateX(20px) rotate(0deg); 
-    } 
-    100% { 
-        transform: rotate(360deg) translateY(-125px) translateX(20px) rotate(-360deg); 
-    }
-}
-@keyframes ORBIT-6A { 
-    0% { 
-        transform: rotate(0deg) translateY(-125px) translateX(-20px) rotate(0deg);
-    } 
-    100% { 
-        transform: rotate(360deg) translateY(-125px) translateX(-20px) rotate(-360deg);
-    }
-}
-
 @keyframes ORBIT-7 { 
-    0% { 
-        transform: rotate(0deg) translateY(20px) translateX(125px) rotate(0deg);
-    } 
-    100% { 
-        transform: rotate(360deg) translateY(20px) translateX(125px) rotate(-3600deg);
-    }
+    0% { transform: rotate(0deg) translateY(20px) translateX(125px) rotate(0deg);} 
+    100% { transform: rotate(360deg) translateY(20px) translateX(125px) rotate(-3600deg);}
 }
 @keyframes ORBIT-8 { 
-    0% { 
-        transform: rotate(0deg) translateY(-20px) translateX(125px) rotate(0deg);
-    } 
-    100% { 
-        transform: rotate(360deg) translateY(-20px) translateX(125px) rotate(-360deg);
-    }
+    0% { transform: rotate(0deg) translateY(-20px) translateX(125px) rotate(0deg);} 
+    100% { transform: rotate(360deg) translateY(-20px) translateX(125px) rotate(-360deg);}
 }
 @keyframes ORBIT-9 { 
     0% { 
