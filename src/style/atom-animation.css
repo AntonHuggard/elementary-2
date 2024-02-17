@@ -36,6 +36,7 @@
     --o6-width-pos: 195px;
     --o6-width-neg: calc(-1*var(--o6-width-pos));
     --o7-width: 216px;
+    --o8-width: 234px;
     
     --px: 10px;
     --py: 10px;
@@ -121,6 +122,13 @@
     --py: calc(var(--o7-width) * cos(75deg) * -1);   
     animation: ORBIT-P 10s infinite linear; 
 }
+
+#electron-31  { --px: calc(var(--o8-width) * sin(5deg));         --py: calc(var(--o8-width) * cos(5deg) * -1); animation: ORBIT-P 11s infinite linear; }
+#electron-32  { --px: calc(var(--o8-width) * cos(25deg));        --py: calc(var(--o8-width) * sin(25deg));     animation: ORBIT-P 11s infinite linear; }
+#electron-33  { --px: calc(var(--o8-width) * cos(25deg) * -1);   --py: calc(var(--o8-width) * sin(25deg));     animation: ORBIT-P 11s infinite linear; }
+#electron-34  { --px: calc(var(--o8-width) * sin(4deg) * -1);    --py: calc(var(--o8-width) * cos(5deg) * -1); animation: ORBIT-P 11s infinite linear; }
+#electron-35  { --px: calc(var(--o8-width) * cos(34deg));        --py: calc(var(--o8-width) * sin(34deg));     animation: ORBIT-P 11s infinite linear; }
+#electron-36  { --px: calc(var(--o8-width) * cos(34deg) * -1);   --py: calc(var(--o8-width) * sin(34deg));     animation: ORBIT-P 11s infinite linear; }
 
 
 @keyframes ORBIT-S { 
