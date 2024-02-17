@@ -43,6 +43,9 @@
 .orbital-8  { --orbital-size: 234px; --duration: 11s; }
 .orbital-9  { --orbital-size: 252px; --duration: 12s; }
 .orbital-10 { --orbital-size: 271px; --duration: 13s; }
+.orbital-11 { --orbital-size: 290px; --duration: 14s; }
+.orbital-12 { --orbital-size: 309px; --duration: 15s; }
+.orbital-13 { --orbital-size: 328px; --duration: 16s; }
 
 
 .s1 { --py: var(--orbital-size); }
@@ -54,7 +57,6 @@
 .p4  { --px: calc(var(--orbital-size) * sin(4deg) * -1);    --py: calc(var(--orbital-size) * cos(5deg) * -1); }
 .p5  { --px: calc(var(--orbital-size) * cos(34deg));        --py: calc(var(--orbital-size) * sin(34deg));  }
 .p6  { --px: calc(var(--orbital-size) * cos(34deg) * -1);   --py: calc(var(--orbital-size) * sin(34deg));  }
-
 
 .d1 { 
     --px: calc(var(--orbital-size) * sin(3deg));
@@ -97,10 +99,71 @@
     --py: calc(var(--orbital-size) * cos(75deg) * -1);   
 }
 
+.f1 { 
+    --px: calc(var(--orbital-size) * sin(3deg));
+    --py: calc(var(--orbital-size) * -1);   
+}
+.f2 { 
+    /* 360 deg / 7 = 51.4deg  -- bc of the pairs +3deg */
+    --px: calc(var(--orbital-size) * sin(54.4deg));
+    --py: calc(var(--orbital-size) * cos(54.4deg) * -1);  
+}
+.f3 { 
+    --px: calc(var(--orbital-size) * cos(15.9deg));
+    --py: calc(var(--orbital-size) * sin(15.9deg));  
+}
+.f4 { 
+    --px: calc(var(--orbital-size) * cos(67.3deg));
+    --py: calc(var(--orbital-size) * sin(67.3deg));  
+}
+.f5 { 
+    --px: calc(var(--orbital-size) * cos(67.3deg) * -1);
+    --py: calc(var(--orbital-size) * sin(67.3deg));  
+}
+.f6 { 
+    --px: calc(var(--orbital-size) * cos(15.9deg) * -1);
+    --py: calc(var(--orbital-size) * sin(15.9deg));  
+}
+.f7 { 
+    --px: calc(var(--orbital-size) * sin(54.4deg) * -1);
+    --py: calc(var(--orbital-size) * cos(54.4deg) * -1);  
+}
+.f8 { 
+    --px: calc(var(--orbital-size) * sin(3deg) * -1);
+    --py: calc(var(--orbital-size) * -1);   
+}
+.f9 { 
+    --px: calc(var(--orbital-size) * sin(48.4deg));
+    --py: calc(var(--orbital-size) * cos(48.4deg) * -1);  
+}
+.f10 { 
+    --px: calc(var(--orbital-size) * cos(9.9deg));
+    --py: calc(var(--orbital-size) * sin(9.9deg));  
+}
+.f11 { 
+    --px: calc(var(--orbital-size) * cos(61.3deg));
+    --py: calc(var(--orbital-size) * sin(61.3deg));  
+}
+.f12 { 
+    --px: calc(var(--orbital-size) * cos(61.3deg) * -1);
+    --py: calc(var(--orbital-size) * sin(61.3deg));  
+}
+.f13 { 
+    --px: calc(var(--orbital-size) * cos(9.9deg) * -1);
+    --py: calc(var(--orbital-size) * sin(9.9deg));  
+}
+.f14 { 
+    --px: calc(var(--orbital-size) * sin(48.4deg) * -1);
+    --py: calc(var(--orbital-size) * cos(48.4deg) * -1);  
+}
 
 
 .e-animation {
     animation: ORBIT var(--duration) infinite linear;
+}
+
+.e-static {
+    transform: translateY(var(--py)) translateX(var(--px));
 }
 
 @keyframes ORBIT { 
