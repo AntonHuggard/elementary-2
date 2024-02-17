@@ -46,6 +46,12 @@
 .orbital-11 { --orbital-size: 290px; --duration: 14s; }
 .orbital-12 { --orbital-size: 309px; --duration: 15s; }
 .orbital-13 { --orbital-size: 328px; --duration: 16s; }
+.orbital-14 { --orbital-size: 347px; --duration: 17s; }
+.orbital-15 { --orbital-size: 366px; --duration: 18s; }
+.orbital-16 { --orbital-size: 385px; --duration: 19s; }
+.orbital-17 { --orbital-size: 404px; --duration: 20s; }
+.orbital-18 { --orbital-size: 423px; --duration: 21s; }
+.orbital-19 { --orbital-size: 442px; --duration: 22s; }
 
 
 .s1 { --py: var(--orbital-size); }
