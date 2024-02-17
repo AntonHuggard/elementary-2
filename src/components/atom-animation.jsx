@@ -42,7 +42,7 @@ class AnimatedAtom extends Component {
         let htmlArray = [];
         for (let i = 1; i <= atomicNo; i++) {
             let electronID = "electron-" + (i);
-            let electronClasses = "electron orbital-" + this.getOrbitalCount(i);
+            let electronClasses = "electron e-animation orbital-" + this.getOrbitalCount(i);
 
             htmlArray.push(<div className={electronClasses} id={electronID}></div>);
             console.log(electronID);
