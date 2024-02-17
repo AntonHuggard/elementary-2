@@ -20,8 +20,6 @@ function orbitalPopulation () {
     }
     let orbital_sizes = orbital_population.map(o => o*2);
 
-    console.log(orbital_sizes);
-
     let orbital_data = [];
 
     for (let i=0; i < orbital_sizes.length; i++) {

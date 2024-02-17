@@ -38,14 +38,31 @@ class AnimatedAtom extends Component {
         }
     }
 
+    getElectronAddress(electronIDNumber) {
+        // returns the type of electron given its ID number
+        // eg., electron 1 = s1; electron 2 = s2; electron 3 = s1; ... electron 5 = p1
+
+        let story_so_far = orbitalPopulation(electronIDNumber);
+        for (let i=0; i < story_so_far.length; i++) {
+            if ((electronIDNumber <= story_so_far[i].size) && (electronIDNumber > 2)) {
+                let outer_shell_count = electronIDNumber - story_so_far[i-1].size;
+                let outer_shell_shape = story_so_far[i].orbital;
+                return outer_shell_shape + outer_shell_count;
+            } else if (electronIDNumber <= story_so_far[i].size) {
+                return "s" + electronIDNumber;
+            }
+        }
+    }
+
     getElectronHtml = (atomicNo) => {
         let htmlArray = [];
         for (let i = 1; i <= atomicNo; i++) {
             let electronID = "electron-" + (i);
-            let electronClasses = "electron e-animation orbital-" + this.getOrbitalCount(i);
+            let electron_type = this.getElectronAddress(i);
+
+            let electronClasses = "electron e-animation orbital-" + this.getOrbitalCount(i) + " " + electron_type;
 
             htmlArray.push(<div className={electronClasses} id={electronID}></div>);
-            console.log(electronID);
         }
         return htmlArray;
     }
