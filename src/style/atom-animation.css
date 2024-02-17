@@ -37,6 +37,8 @@
     --o6-width-neg: calc(-1*var(--o6-width-pos));
     --o7-width: 216px;
     --o8-width: 234px;
+    --o9-width-pos: 252px;
+    --o9-width-neg: calc(-1*var(--o9-width-pos));
     
     --px: 10px;
     --py: 10px;
@@ -130,6 +132,8 @@
 #electron-35  { --px: calc(var(--o8-width) * cos(34deg));        --py: calc(var(--o8-width) * sin(34deg));     animation: ORBIT-P 11s infinite linear; }
 #electron-36  { --px: calc(var(--o8-width) * cos(34deg) * -1);   --py: calc(var(--o8-width) * sin(34deg));     animation: ORBIT-P 11s infinite linear; }
 
+#electron-37 { --width: var(--o9-width-pos); animation: ORBIT-S 12s infinite linear; }
+#electron-38 { --width: var(--o9-width-neg); animation: ORBIT-S 12s infinite linear; }
 
 @keyframes ORBIT-S { 
     0% { transform: rotate(0deg) translateY(var(--width)) rotate(0deg); } 
