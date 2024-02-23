@@ -1,4 +1,4 @@
-#atom-container {
+#atom-graphics {
     height: 220px;
 }
 #atom {
@@ -6,20 +6,187 @@
     grid-template-columns: 1;
     grid-template-rows: 1;
     margin: auto;
-    width: 300px;
+    /* width: 300px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-#electron {
+.electron {
     grid-row: 1;
     grid-column: 1;
     margin: auto;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background-color: rgb(0, 162, 255);
     box-shadow: 0 0 7px rgb(0, 162, 255);
     z-index: 1;
-    animation: ORBIT 3s infinite linear;
+    transition: 0.5s;
 }
+
+:root {
+    --px: 0px;
+    --py: 0px;
+    --duration: 3s;
+}
+
+
+.orbital-1  { --orbital-size: 100px; }
+.orbital-2  { --orbital-size: 120px; --duration: 5s;  }
+.orbital-3  { --orbital-size: 139px; --duration: 6s;  }
+.orbital-4  { --orbital-size: 157px; --duration: 7s;  }
+.orbital-5  { --orbital-size: 176px; --duration: 8s;  }
+.orbital-6  { --orbital-size: 195px; --duration: 9s;  }
+.orbital-7  { --orbital-size: 216px; --duration: 10s; }
+.orbital-8  { --orbital-size: 234px; --duration: 11s; }
+.orbital-9  { --orbital-size: 252px; --duration: 12s; }
+.orbital-10 { --orbital-size: 271px; --duration: 13s; }
+.orbital-11 { --orbital-size: 290px; --duration: 14s; }
+.orbital-12 { --orbital-size: 309px; --duration: 15s; }
+.orbital-13 { --orbital-size: 328px; --duration: 16s; }
+.orbital-14 { --orbital-size: 347px; --duration: 17s; }
+.orbital-15 { --orbital-size: 366px; --duration: 18s; }
+.orbital-16 { --orbital-size: 385px; --duration: 19s; }
+.orbital-17 { --orbital-size: 404px; --duration: 20s; }
+.orbital-18 { --orbital-size: 423px; --duration: 21s; }
+.orbital-19 { --orbital-size: 442px; --duration: 22s; }
+
+@media only screen and (max-width: 940px) {
+    .electron {
+        --orbital-size: 140px !important;
+        --duration: 5s;
+    }
+}
+
+
+.s1 { --py: var(--orbital-size); }
+.s2 { --py: calc(var(--orbital-size) * -1); } 
+
+.p1  { --px: calc(var(--orbital-size) * sin(5deg));         --py: calc(var(--orbital-size) * cos(5deg) * -1); }
+.p2  { --px: calc(var(--orbital-size) * cos(25deg));        --py: calc(var(--orbital-size) * sin(25deg));  }
+.p3  { --px: calc(var(--orbital-size) * cos(25deg) * -1);   --py: calc(var(--orbital-size) * sin(25deg));  }
+.p4  { --px: calc(var(--orbital-size) * sin(4deg) * -1);    --py: calc(var(--orbital-size) * cos(5deg) * -1); }
+.p5  { --px: calc(var(--orbital-size) * cos(34deg));        --py: calc(var(--orbital-size) * sin(34deg));  }
+.p6  { --px: calc(var(--orbital-size) * cos(34deg) * -1);   --py: calc(var(--orbital-size) * sin(34deg));  }
+
+.d1 { 
+    --px: calc(var(--orbital-size) * sin(3deg));
+    --py: calc(var(--orbital-size) * -1);   
+}
+.d2 { 
+    --px: calc(var(--orbital-size) * sin(69deg));
+    --py: calc(var(--orbital-size) * cos(69deg) * -1);   
+}
+.d3 { 
+    --px: calc(var(--orbital-size) * sin(39deg));
+    --py: calc(var(--orbital-size) * cos(39deg));   
+}
+.d4 { 
+    --px: calc(var(--orbital-size) * sin(39deg) * -1);
+    --py: calc(var(--orbital-size) * cos(39deg));
+}
+.d5 { 
+    --px: calc(var(--orbital-size) * sin(69deg) * -1);
+    --py: calc(var(--orbital-size) * cos(69deg) * -1);   
+}
+.d6 { 
+    --px: calc(var(--orbital-size) * sin(3deg) * -1);
+    --py: calc(var(--orbital-size) * -1);   
+}
+.d7 { 
+    --px: calc(var(--orbital-size) * sin(75deg));
+    --py: calc(var(--orbital-size) * cos(75deg) * -1);
+}
+.d8 { 
+    --px: calc(var(--orbital-size) * sin(33deg));
+    --py: calc(var(--orbital-size) * cos(33deg));  
+}
+.d9 { 
+    --px: calc(var(--orbital-size) * sin(33deg) * -1);
+    --py: calc(var(--orbital-size) * cos(33deg));
+}
+.d10 { 
+    --px: calc(var(--orbital-size) * sin(75deg) * -1);
+    --py: calc(var(--orbital-size) * cos(75deg) * -1);   
+}
+
+.f1 { 
+    --px: calc(var(--orbital-size) * sin(3deg));
+    --py: calc(var(--orbital-size) * -1);   
+}
+.f2 { 
+    /* 360 deg / 7 = 51.4deg  -- bc of the pairs +3deg */
+    --px: calc(var(--orbital-size) * sin(54.4deg));
+    --py: calc(var(--orbital-size) * cos(54.4deg) * -1);  
+}
+.f3 { 
+    --px: calc(var(--orbital-size) * cos(15.9deg));
+    --py: calc(var(--orbital-size) * sin(15.9deg));  
+}
+.f4 { 
+    --px: calc(var(--orbital-size) * cos(67.3deg));
+    --py: calc(var(--orbital-size) * sin(67.3deg));  
+}
+.f5 { 
+    --px: calc(var(--orbital-size) * cos(67.3deg) * -1);
+    --py: calc(var(--orbital-size) * sin(67.3deg));  
+}
+.f6 { 
+    --px: calc(var(--orbital-size) * cos(15.9deg) * -1);
+    --py: calc(var(--orbital-size) * sin(15.9deg));  
+}
+.f7 { 
+    --px: calc(var(--orbital-size) * sin(54.4deg) * -1);
+    --py: calc(var(--orbital-size) * cos(54.4deg) * -1);  
+}
+.f8 { 
+    --px: calc(var(--orbital-size) * sin(3deg) * -1);
+    --py: calc(var(--orbital-size) * -1);   
+}
+.f9 { 
+    --px: calc(var(--orbital-size) * sin(48.4deg));
+    --py: calc(var(--orbital-size) * cos(48.4deg) * -1);  
+}
+.f10 { 
+    --px: calc(var(--orbital-size) * cos(9.9deg));
+    --py: calc(var(--orbital-size) * sin(9.9deg));  
+}
+.f11 { 
+    --px: calc(var(--orbital-size) * cos(61.3deg));
+    --py: calc(var(--orbital-size) * sin(61.3deg));  
+}
+.f12 { 
+    --px: calc(var(--orbital-size) * cos(61.3deg) * -1);
+    --py: calc(var(--orbital-size) * sin(61.3deg));  
+}
+.f13 { 
+    --px: calc(var(--orbital-size) * cos(9.9deg) * -1);
+    --py: calc(var(--orbital-size) * sin(9.9deg));  
+}
+.f14 { 
+    --px: calc(var(--orbital-size) * sin(48.4deg) * -1);
+    --py: calc(var(--orbital-size) * cos(48.4deg) * -1);  
+}
+
+
+.e-animation {
+    animation: ORBIT var(--duration) infinite linear;
+}
+
+.e-static {
+    transform: translateY(var(--py)) translateX(var(--px));
+}
+
+@keyframes ORBIT { 
+	0% {
+		transform: rotate(0deg) translateY(var(--py)) translateX(var(--px)) rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg) translateY(var(--py)) translateX(var(--px)) rotate(-360deg);
+	}
+}
+
+
+
 #nucleus {
     grid-row: 1;
     grid-column: 1;
@@ -27,24 +194,140 @@
     width: 40px;
     height: 40px;
     background-color: rgb(212, 13, 13);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
     border-radius: 50%;
-    margin-top: 85px;
+    display: flex;
+    align-items: center;
 }
-@keyframes ORBIT { 
-    0% { 
-        transform: rotate(0deg) translateY(100px) rotate(0deg); 
-    } 
-    100% { 
-        transform: rotate(360deg) translateY(100px) rotate(-360deg); 
-    }
+.noble_gas-nucleus      { background-color: blueviolet !important; }
+.alkali-metal-nucleus   { background-color: orange !important; }
+.transition-metal-nucleus { background-color: rgb(255, 230, 0) !important; }
+.unknown-nucleus { background-color: rgb(32, 32, 32) !important; }
+
+#ionic-charge {
+    z-index: 2;
+    grid-row: 1;
+    grid-column: 1;
+    text-align: right;
+    margin-right: 8px;
+    font-size: 1.3em;
+    color: white;
+    /* color: rgb(212, 13, 13); */
 }
-#s-orbital-path {
+#ionic-charge-anti-border {
+    z-index: 2;
+    grid-row: 1;
+    grid-column: 1;
+    height: 30px;
+    width: 25px;
+    border-top: 2px solid rgb(97, 97, 97);
+    border-right: 2px solid rgb(97, 97, 97);
+    margin-left: 255px;
+    margin-top: 27px;
+}
+.alkali-metal-txt { color: orange !important; }
+.ghost {
+    background-color: transparent;
+    border: none !important;
+    color: #ffffff; 
+    color: rgba(255, 255, 255, 0) !important;
+    box-shadow: none;
+}
+
+
+
+.electron-orbital {
     margin: auto;
-    height: 200px;
-    width: 200px;
     border-radius: 50%;
     border: 2px solid rgb(172, 172, 172);
     background-color: transparent;
     grid-column: 1;
     grid-row: 1;
+}
+
+#s-orbital-path {
+    height: 200px;
+    width: 200px;    
+}
+#s2-orbital-path {
+    height: 238px;
+    width: 238px;
+}
+#p2-orbital-path {
+    height: 276px;
+    width: 276px;
+}
+#s3-orbital-path {
+    height: 314px;
+    width: 314px;
+}
+#p3-orbital-path {
+    height: 352px;
+    width: 352px;
+}
+#s4-orbital-path {
+    height: 390px;
+    width: 390px;
+}
+#d3-orbital-path {
+    height: 428px;
+    width: 428px;
+}
+#p4-orbital-path {
+    height: 466px;
+    width: 466px;
+}
+#s5-orbital-path {
+    height: 504px;
+    width: 504px;
+}
+#d4-orbital-path {
+    height: 542px;
+    width: 542px;
+}
+#p5-orbital-path {
+    height: 580px;
+    width: 580px;
+}
+#s6-orbital-path {
+    height: 618px;
+    width: 618px;
+}
+#f4-orbital-path {
+    height: 656px;
+    width: 656px;
+}
+#d5-orbital-path {
+    height: 694px;
+    width: 694px;
+}
+#p6-orbital-path {
+    height: 732px;
+    width: 732px;
+}
+#s7-orbital-path {
+    height: 770px;
+    width: 770px;
+}
+#f5-orbital-path {
+    height: 808px;
+    width: 808px;
+}
+#d6-orbital-path {
+    height: 846px;
+    width: 846px;
+}
+#p7-orbital-path {
+    height: 884px;
+    width: 884px;
+}
+
+@media only screen and (max-width: 940px) {
+    .core {
+        display: none;
+    }
+    .outer-shell {
+        height: 280px !important;
+        width: 280px !important;
+    }
 }

@@ -1,48 +1,166 @@
-.atom-details {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-}
-.atom-details h1 {
-    grid-row: 1;
-    grid-column: 1 / span 2;
-}
-#atom-container {
-    grid-row: 2;
-    grid-column: 1;
-}
-#atom-data {
-    grid-row: 2;
-    grid-column: 2;
+
+#content {
+    background-color: rgba(49, 49, 49, 0.904);
+    backdrop-filter: blur(5px);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-#atom-description {
-    grid-row: 3;
-    grid-column: 1 / span 2;
+#content h1, #content h3 { color: white; }
+
+#content h1 {
+    font-size: 2em;
+}
+
+.atom-details {
+  display: block;
+  margin: auto;
+}
+
+#atom-container {
+    display: block;
+    margin: auto;
+    height: max-content;
+    
+}
+
+#atom-control {
+    width: max-content;
+    display: block;
+    margin: auto;
+}
+
+#atom-control .toggle-label {
+  margin-right: 10px;
+}
+
+#atom-control button {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-family: 'Sen', sans-serif;
+}
+
+#atom-control button:hover {
+  background-color: white;
+  color: rgb(0, 162, 255);
+  border: 2px solid rgb(0, 162, 255);
+  cursor: pointer;
+}
+#atom-control button.active {
+  background-color: white;
+  color: rgb(0, 162, 255);
+  border: 2px solid rgb(0, 162, 255);
+  box-shadow: 0px 0px 10px rgb(0, 162, 255);
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 10px;
 }
 
 #historic-img {
     width: 100%;
     max-width: 500px;
-    grid-row: 4;
-    grid-column: 1 / span 2;
     margin: auto;
+    display: block;
     border-radius: 20px;
 }
 
 .horizontal-line {
     width: 100%;
     max-width: 700px;
+    border: 1px solid grey;
 }
 
-#atom-etymology {
-    grid-row: 5;
-    grid-column: 1 / span 2;
+.youtube-video {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    margin: auto;
+    display: block;
+    border: none;
 }
 
-#atom-discovery {
-    grid-row: 6;
-    grid-column: 1 / span 2;
+.video-title {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: normal;
+    margin-top: 5px;
 }
+
+
+/* The switch - the box around the toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    /* margin: auto; */
+    /* padding-top: 10px; */
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The toggle */
+  .toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .3s;
+  }
+  
+  .toggle:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .3s;
+  }
+  
+  input:checked + .toggle {
+    background-color: rgb(0, 162, 255);
+  }
+  
+  input:focus + .toggle {
+    box-shadow: 0 0 1px rgb(0, 162, 255);
+  }
+  
+  input:checked + .toggle:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded toggles */
+  .toggle.round {
+    border-radius: 50px;
+  }
+  
+  .toggle.round:before {
+    border-radius: 50%;
+  }
 
 @media only screen and (max-width: 550px) {
     .atom-details {
@@ -60,25 +178,6 @@
     }
     #atom-data {
         grid-row: 3;
-        grid-column: 1;
-    }
-    #atom-description {
-        grid-row: 4;
-        grid-column: 1;
-    }
-    
-    #historic-img {
-        grid-row: 5;
-        grid-column: 1;
-    }
-    
-    #atom-etymology {
-        grid-row: 6;
-        grid-column: 1;
-    }
-    
-    #atom-discovery {
-        grid-row: 7;
         grid-column: 1;
     }
 }

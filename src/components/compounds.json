@@ -126,6 +126,11 @@
             "elements": ["B", "H"]
         },
         {
+            "name": "lapis lazuli",
+            "iupac-name": "",
+            "elements": ["Na", "Ca", "Al", "Si", "O", "S", "Cl"]
+        },
+        {
             "name": "",
             "iupac-name": "",
             "elements": []

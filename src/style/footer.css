@@ -1,0 +1,20 @@
+footer {
+    position: relative;
+    bottom: -300px;
+    height: 200px;
+    width: 100%;
+    background-color: rgba(49, 49, 49, 0.904);
+    backdrop-filter: blur(20px);
+}
+
+footer p {
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+footer svg {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}

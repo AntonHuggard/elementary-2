@@ -201,6 +201,13 @@
         "charge": -3,
         "html": "PO<sub>3</sub><sup>3-</sup>",
         "atoms": ["P"]
+    },
+    {
+        "id": 29,
+        "name": "Permanganate",
+        "charge": -1,
+        "html": "MnO<sub>4</sub><sup>-</sup>",
+        "atoms": ["Mn", "O"]
     }
     ]
 }

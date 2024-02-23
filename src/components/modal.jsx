@@ -38,7 +38,7 @@ class Modal extends Component {
             const svg = getTileSVG(this.props.element);
 
             const raClasses = this.props.element.radioactive? "radioactive-symbol": "radioactive-symbol hide-me";
-            const hasPage = this.props.element.link !== '/'? this.props.element.link: "hide-me";
+            const link = '/#/'+this.props.element.name;
 
             const atomIndex = this.props.element.atomic_number - 1;
             const maoriAtom = maoriData.atoms[atomIndex];
@@ -76,7 +76,7 @@ class Modal extends Component {
                                 <div className="mobile_radioactive_indictaion">Radioactive: {this.props.element.radioactive}</div>
                                 {labelDiscovery}: <span dangerouslySetInnerHTML={{ __html: discDetails }} /> <br/>
                                 Etymology: <span dangerouslySetInnerHTML={{ __html: etymology }} /> <br/>
-                                <a href={this.props.element.link} className={hasPage}>See details</a>
+                                <a href={link}>See details</a>
                             </div>
                             <img className={raClasses} src={radioactiveImg} alt='radioactive symbol' />
                         </div>
