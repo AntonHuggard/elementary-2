@@ -23,7 +23,8 @@ class AnimatedAtom extends Component {
         ];
         let htmlArray = [];
         for (let i=0; i < count; i++) {
-            htmlArray.push(<div className="electron-orbital" id={orbital_ids[i]}></div>);
+            let classes = i+1 === count? "electron-orbital valence outer-shell" : "electron-orbital core";
+            htmlArray.push(<div className={classes} id={orbital_ids[i]}></div>);
         }
         return htmlArray;
     }
@@ -54,13 +55,19 @@ class AnimatedAtom extends Component {
         }
     }
 
-    getElectronHtml = (atomicNo) => {
+    getElectronHtml = (atomicNo, orbitalCount) => {
         let htmlArray = [];
         for (let i = 1; i <= atomicNo; i++) {
             let electronID = "electron-" + (i);
             let electron_type = this.getElectronAddress(i);
+            let curr_orbital_num = this.getOrbitalCount(i);
+            let orbital_type = curr_orbital_num === orbitalCount? "valence" : "core";
 
-            let electronClasses = "electron e-animation orbital-" + this.getOrbitalCount(i) + " " + electron_type;
+            let electronClasses = 
+                "electron e-animation " + 
+                "orbital-" + curr_orbital_num + " " 
+                + electron_type + " "
+                + orbital_type;
 
             htmlArray.push(<div className={electronClasses} id={electronID}></div>);
         }
@@ -77,7 +84,7 @@ class AnimatedAtom extends Component {
             <div className='atom-details'>
                 <div id="atom-container">
                     <div id="atom">
-                        {this.getElectronHtml(atom.atomic_number)}
+                        {this.getElectronHtml(atom.atomic_number, orbitalCount)}
                         <div id="nucleus" className={nucleusClass}></div>
                         {this.getOrbitalHtml(orbitalCount)}
                         <label id='ionic-charge' className='ghost'>+</label>

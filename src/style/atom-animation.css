@@ -24,12 +24,9 @@
 }
 
 :root {
-    
     --px: 0px;
     --py: 0px;
-
     --duration: 3s;
-
 }
 
 
@@ -52,6 +49,13 @@
 .orbital-17 { --orbital-size: 404px; --duration: 20s; }
 .orbital-18 { --orbital-size: 423px; --duration: 21s; }
 .orbital-19 { --orbital-size: 442px; --duration: 22s; }
+
+@media only screen and (max-width: 940px) {
+    .electron {
+        --orbital-size: 140px !important;
+        --duration: 5s;
+    }
+}
 
 
 .s1 { --py: var(--orbital-size); }
@@ -240,6 +244,7 @@
     grid-column: 1;
     grid-row: 1;
 }
+
 #s-orbital-path {
     height: 200px;
     width: 200px;    
@@ -315,4 +320,14 @@
 #p7-orbital-path {
     height: 884px;
     width: 884px;
+}
+
+@media only screen and (max-width: 940px) {
+    .core {
+        display: none;
+    }
+    .outer-shell {
+        height: 280px !important;
+        width: 280px !important;
+    }
 }
