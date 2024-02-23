@@ -6,6 +6,7 @@ import Sidenav from '../../components/SideNav';
 import atoms from '../../components/atoms.json';
 import AnimatedAtom from '../../components/atom-animation';
 import {Helmet} from "react-helmet";
+import hindenburg from '../../imgs/Hindenburg.jpg';
 
 class Hydrogen extends Component {
 
@@ -73,8 +74,13 @@ class Hydrogen extends Component {
                   
                   <div>
                     <h3>Description & Facts</h3>
-                    <p dangerouslySetInnerHTML={{ __html: this.state.atom.description }} />
+                    <p>
+                    Hydrogen is the first element and has smallest atomic mass. It is also the most abundant element in the universe. At standard conditions, it&apos;s a pretty boring colourless and odourless gas. On 6 May 1937 the German airship Hindenburg (filled with hydrogen gas) caught fire and killed 35 people. This marked the end of the airship era.
+                    </p> 
+                  
+                  <img id="historic-img" src={hindenburg} alt='Hindenburg disaster' />
                   </div>
+                  
 
                   <hr className='horizontal-line' />
                   
