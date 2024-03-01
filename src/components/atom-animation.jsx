@@ -5,13 +5,13 @@ import orbitalPopulation from '../components/orbitalPopulations.js';
 class AnimatedAtom extends Component {
     
     handleIonToggle = () => {
-        let electron = document.getElementById('electron-1');
-        let ionThingText = document.getElementById('ionic-charge');
-        let ionThingBorder = document.getElementById('ionic-charge-anti-border');
+        // let electron = document.getElementById('electron-1');
+        // let ionThingText = document.getElementById('ionic-charge');
+        // let ionThingBorder = document.getElementById('ionic-charge-anti-border');
 
-        electron.classList.toggle('ghost');
-        ionThingText.classList.toggle('ghost');
-        ionThingBorder.classList.toggle('ghost');        
+        // electron.classList.toggle('ghost');
+        // ionThingText.classList.toggle('ghost');
+        // ionThingBorder.classList.toggle('ghost');        
     }
 
     getOrbitalHtml = (count) => {

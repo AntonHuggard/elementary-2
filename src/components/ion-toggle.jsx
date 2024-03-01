@@ -6,11 +6,11 @@ class IonToggleSwitch extends Component {
 
         return ( 
             <div id="atom-control">
-                <label className='toggle-label'>ion</label>
+                {/* <label className='toggle-label'>ion</label>
                 <label className="switch">
                     <input type="checkbox" onClick={this.props.onHandleIonToggle}/>
                     <span className="toggle round"></span>
-                </label>
+                </label> */}
             </div>
         );
     }
