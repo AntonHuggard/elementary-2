@@ -66,14 +66,16 @@ h1, h3 {
 }
 
 #element_search_container input {
+    -webkit-appearance: none;
     min-width: 150px;
     max-width: 645px;
-    height: 38px;
+    max-height: 38px;
     grid-column: 2;
     border: none;
     padding-left: 5px;
     outline: none;
     font-size: 18px;
+    border-radius: 0;
 }
 
 .white-backgrd {
@@ -254,10 +256,13 @@ h1, h3 {
         row-gap: 3px;
         grid-template-columns: repeat(18, 40px);
     }
+    
+    .element-tile { padding-top: 5px; }
+    
     .element-tile p {
         font-size: 1em;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
     }
     .element-tile label {
         display: none;
