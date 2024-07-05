@@ -1,4 +1,4 @@
-# [Elementary](https://antonhuggard.github.io/elementary/)
+# [Elementary](https://periodictable.co.nz/)
 ### The Searchable Periodic Table
 
 
